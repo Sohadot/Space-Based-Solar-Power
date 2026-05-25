@@ -1,0 +1,248 @@
+{
+  "asset": {
+    "domain": "space-based-solar-power.com",
+    "repository": "Space-Based-Solar-Power",
+    "sourceLanguage": "en",
+    "defaultLocale": "en",
+    "title": "Space-Based Solar Power",
+    "positioning": "Strategic Reference Layer for Space-Based Solar Power and Orbital Energy Infrastructure"
+  },
+  "languages": {
+    "en": {
+      "label": "English",
+      "pathPrefix": "",
+      "direction": "ltr",
+      "role": "Institutional Source Layer",
+      "status": "approved"
+    },
+    "ar": {
+      "label": "العربية",
+      "pathPrefix": "/ar",
+      "direction": "rtl",
+      "role": "Energy Sovereignty Edition",
+      "status": "approved"
+    },
+    "zh": {
+      "label": "中文",
+      "pathPrefix": "/zh",
+      "direction": "ltr",
+      "role": "Industrial Scale Edition",
+      "status": "approved"
+    },
+    "ja": {
+      "label": "日本語",
+      "pathPrefix": "/ja",
+      "direction": "ltr",
+      "role": "Precision Technology Edition",
+      "status": "approved"
+    },
+    "fr": {
+      "label": "Français",
+      "pathPrefix": "/fr",
+      "direction": "ltr",
+      "role": "European Policy and Aerospace Edition",
+      "status": "approved"
+    },
+    "de": {
+      "label": "Deutsch",
+      "pathPrefix": "/de",
+      "direction": "ltr",
+      "role": "Engineering and Grid-Integration Edition",
+      "status": "approved"
+    },
+    "es": {
+      "label": "Español",
+      "pathPrefix": "/es",
+      "direction": "ltr",
+      "role": "Global Expansion Edition",
+      "status": "approved"
+    }
+  },
+  "pages": [
+    {
+      "id": "home",
+      "slug": "",
+      "type": "core",
+      "template": "home.html",
+      "priority": 1.0,
+      "changefreq": "weekly",
+      "strategicRole": "Primary category gateway and asset thesis surface",
+      "locales": {
+        "en": {
+          "status": "approved",
+          "path": "/",
+          "title": "Space-Based Solar Power",
+          "description": "A strategic reference layer for space-based solar power, orbital energy infrastructure, wireless power transmission, energy sovereignty, and future space-industrial systems."
+        },
+        "ar": {
+          "status": "planned",
+          "path": "/ar/",
+          "title": "الطاقة الشمسية الفضائية",
+          "description": "طبقة مرجعية استراتيجية للطاقة الشمسية الفضائية والبنية التحتية للطاقة المدارية والسيادة الطاقية المستقبلية."
+        },
+        "zh": {
+          "status": "planned",
+          "path": "/zh/",
+          "title": "天基太阳能",
+          "description": "面向天基太阳能、轨道能源基础设施和未来空间工业系统的战略参考层。"
+        },
+        "ja": {
+          "status": "planned",
+          "path": "/ja/",
+          "title": "宇宙太陽光発電",
+          "description": "宇宙太陽光発電、軌道エネルギー基盤、無線電力伝送のための戦略的リファレンス層。"
+        },
+        "fr": {
+          "status": "planned",
+          "path": "/fr/",
+          "title": "Énergie solaire spatiale",
+          "description": "Couche de référence stratégique pour l’énergie solaire spatiale, l’infrastructure énergétique orbitale et la souveraineté énergétique future."
+        },
+        "de": {
+          "status": "planned",
+          "path": "/de/",
+          "title": "Weltraumgestützte Solarenergie",
+          "description": "Strategische Referenzschicht für weltraumgestützte Solarenergie, orbitale Energieinfrastruktur und Netzintegration."
+        },
+        "es": {
+          "status": "planned",
+          "path": "/es/",
+          "title": "Energía solar espacial",
+          "description": "Capa de referencia estratégica para energía solar espacial, infraestructura energética orbital y sistemas espaciales futuros."
+        }
+      }
+    },
+    {
+      "id": "what-is-sbsp",
+      "slug": "what-is-space-based-solar-power",
+      "type": "reference",
+      "template": "page.html",
+      "priority": 0.9,
+      "changefreq": "monthly",
+      "strategicRole": "Foundational definition and conceptual entry point",
+      "locales": {
+        "en": {
+          "status": "planned",
+          "path": "/what-is-space-based-solar-power/",
+          "title": "What Is Space-Based Solar Power?",
+          "description": "A precise explanation of space-based solar power, solar power satellites, wireless power transmission, rectennas, and orbital energy infrastructure."
+        },
+        "ar": {
+          "status": "planned",
+          "path": "/ar/what-is-space-based-solar-power/",
+          "title": "ما هي الطاقة الشمسية الفضائية؟",
+          "description": "شرح دقيق للطاقة الشمسية الفضائية والأقمار الشمسية ونقل الطاقة لاسلكيا والبنية التحتية للطاقة المدارية."
+        }
+      }
+    },
+    {
+      "id": "technology-stack",
+      "slug": "technology-stack",
+      "type": "reference",
+      "template": "page.html",
+      "priority": 0.85,
+      "changefreq": "monthly",
+      "strategicRole": "Technical architecture of the SBSP stack",
+      "locales": {
+        "en": {
+          "status": "planned",
+          "path": "/technology-stack/",
+          "title": "Technology Stack",
+          "description": "The core technology stack behind space-based solar power, including orbital solar arrays, wireless power transmission, rectennas, launch economics, and grid integration."
+        }
+      }
+    },
+    {
+      "id": "feasibility-and-constraints",
+      "slug": "feasibility-and-constraints",
+      "type": "reference",
+      "template": "page.html",
+      "priority": 0.85,
+      "changefreq": "monthly",
+      "strategicRole": "Credibility layer documenting barriers, constraints, and unresolved questions",
+      "locales": {
+        "en": {
+          "status": "planned",
+          "path": "/feasibility-and-constraints/",
+          "title": "Feasibility and Constraints",
+          "description": "A disciplined overview of the technical, economic, regulatory, safety, and grid-integration constraints shaping space-based solar power."
+        }
+      }
+    },
+    {
+      "id": "strategic-importance",
+      "slug": "strategic-importance",
+      "type": "reference",
+      "template": "page.html",
+      "priority": 0.85,
+      "changefreq": "monthly",
+      "strategicRole": "Geo-strategic framing for energy, defense, AI, and space infrastructure",
+      "locales": {
+        "en": {
+          "status": "planned",
+          "path": "/strategic-importance/",
+          "title": "Strategic Importance",
+          "description": "Why space-based solar power matters for energy sovereignty, defense resilience, artificial intelligence, grid security, and the future industrial geography of space."
+        }
+      }
+    },
+    {
+      "id": "global-programs",
+      "slug": "global-programs",
+      "type": "registry",
+      "template": "page.html",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "strategicRole": "Registry of institutional programs and research activity",
+      "locales": {
+        "en": {
+          "status": "planned",
+          "path": "/global-programs/",
+          "title": "Global Programs",
+          "description": "A governed tracker of institutional programs, research initiatives, and public-sector activity related to space-based solar power."
+        }
+      }
+    },
+    {
+      "id": "tools",
+      "slug": "tools",
+      "type": "tools-index",
+      "template": "page.html",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "strategicRole": "Gateway to strategic decision-support tools",
+      "locales": {
+        "en": {
+          "status": "planned",
+          "path": "/tools/",
+          "title": "Strategic Tools",
+          "description": "Strategic tools for researchers, companies, journalists, investors, and governments analyzing space-based solar power and orbital energy infrastructure."
+        }
+      }
+    },
+    {
+      "id": "orbital-energy-constraint-matrix",
+      "slug": "tools/orbital-energy-constraint-matrix",
+      "type": "tool",
+      "template": "tool.html",
+      "priority": 0.75,
+      "changefreq": "monthly",
+      "strategicRole": "First strategic tool; maps the core constraints shaping SBSP maturity",
+      "locales": {
+        "en": {
+          "status": "planned",
+          "path": "/tools/orbital-energy-constraint-matrix/",
+          "title": "Orbital Energy Constraint Matrix",
+          "description": "A strategic constraint matrix mapping the technical, economic, regulatory, infrastructure, and credibility barriers shaping space-based solar power."
+        }
+      }
+    }
+  ],
+  "publicationStatuses": {
+    "approved": "Allowed for production build",
+    "planned": "Defined but not published",
+    "draft": "In development only",
+    "review": "Requires review before publication",
+    "blocked": "Not allowed in production"
+  }
+}
