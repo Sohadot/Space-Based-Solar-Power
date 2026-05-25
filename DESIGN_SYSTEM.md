@@ -80,8 +80,10 @@ The color system expresses orbital energy capture, deep space void isolation, pr
 ```
  * **Rule of Noise:** The color palette must not become visually noisy.
  * **Functional Identity:** Gold represents orbital solar collection. Cyan represents wireless transmission and signal structure. Deep blue/black represents controlled space infrastructure. Muted text tones preserve institutional seriousness.
+
 ## 6. Typography
 Typography must be clear, institutional, and technically serious. The system utilizes stable platform-native font stacks before introducing external network fonts.
+
 ### Base Content Font Stack (High-Legibility Reading Surfaces)
 ```css
 font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -93,6 +95,7 @@ font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 
 ```
  * **Constraint:** External web-font injection requires a documented performance, security policy, and licensing decision under PROJECT_DOCTRINE.md.
+
 ## 7. Layout System
 The structural mechanics must support large conceptual sections, high-prestige text layouts, spatial canvas backgrounds, multilingual expansion, Arabic RTL processing, tool panels, and extensive reference tables.
 To enforce native bi-directional parity, the system mandates the use of CSS Logical Properties:
@@ -109,8 +112,10 @@ block-size: auto;
 
 ```
  * **Constraint:** Hard-coded spatial assumptions (left, right) are strictly prohibited in global layouts.
+
 ## 8. RTL and Multilingual Support
 The asset is built to serve English, Arabic, Chinese, Japanese, French, German, and Spanish. No component may assume English text density.
+
  * **Arabic Layout Execution:**
    ```html
    <html lang="ar" dir="rtl">
@@ -122,31 +127,40 @@ The asset is built to serve English, Arabic, Chinese, Japanese, French, German, 
    
    ```
  * **Structural Integrity Guardrails:** No navigation element may break wrap bounds when translated. The language switcher is structurally barred from generating routes to draft or unpublished variants as defined in pages.json.
+
 ## 9. Spatial Interface Rules
 WebGL, Three.js, canvas rendering, or spatial motion operate strictly as **progressive enhancements**.
  * The static HTML page must remain 100% readable, complete, and functional if WebGL fails, is blocked by corporate firewalls, or is disabled by user environment constraints.
- * Spatial elements must natively honor browser reduced-motion media queries (preprocessed-reduced-motion). They must not obscure text, distort interactive tools, or dominate mobile viewpoints.
+ * Spatial elements must natively honor browser reduced-motion media queries (prefers-reduced-motion). They must not obscure text, distort interactive tools, or dominate mobile viewpoints.
+
 ## 10. Motion System
 Motion is explicitly treated as a functional vector to communicate energy-logistical scale.
+
 ### Approved Kinetics
+
  * unaccelerated, slow orbital drift mimicking geosynchronous objects;
  * controlled, synchronized beam pulses tracking atmospheric pathing;
  * grid-line micro-activations upon calculations or value shifts;
  * heavy-inertia cinematic camera movements tied directly to active viewport scroll states.
+
 ### Prohibited Kinetics
+
  * random particle fields, meteor rains, or non-functional star-travel matrices;
  * constant aggressive looping animations that exhaust host GPU resources;
  * distracting parallax scripts that decoupling text layers from reading planes;
  * gaming-style free-fly camera systems that disorient the enterprise user.
+
 ## 11. Accessibility Requirements
 No visual effect may be allowed to degrade accessibility benchmarks. The production interface must guarantee:
  * validated semantic HTML element selection;
  * WCAG AAA readable contrast thresholds across all technical text layers;
  * complete keyboard navigation support with high-visibility focus states;
  * explicit text-first comprehension layers that do not rely on audio-visual cues.
+
 ## 12. Performance Requirements
 Initial production builds must prioritize a highly optimized, ultra-lightweight static shell.
 Future WebGL modules require isolated local bundling (zero external CDN delivery), rigid compliance with the project's Content Security Policy (SECURITY_POLICY.md), performance testing on restricted mobile bandwidth, and full fallback layer testing before merging into the production branch.
+
 ## 13. Component Classes
 The architecture is modular, enforcing consistency across all language variants via specific component classes:
  * sovereign-header: Global metadata branding bar and language selectors.
@@ -155,11 +169,13 @@ The architecture is modular, enforcing consistency across all language variants 
  * constraint-matrix: Grid boards housing simulator variable sliders.
  * reference-card & source-list: Sourced academic and institutional reference layers.
  * footer-governance-strip: The ultimate layer hosting decision log codes and copyright.
-## 14. Trust and Buyer Perception
-The final structural output must immediately project to institutional auditors that the asset is:
- 1. **Governed:** Built via institutional methodologies, not casual template engines.
- 2. **Source-Disciplined:** Transparent, factual, and legally unassailable.
- 3. **Acquisition-Ready:** Highly engineered, scalable, and impossible to duplicate without vast architectural effort.
-```
 
----
+## 14. Trust and Buyer Perception
+
+The final structural output must immediately project to institutional auditors that the asset is:
+
+1. **Governed:** Built through institutional methodology, documented decisions, and controlled development standards.
+2. **Source-Disciplined:** Transparent, factual, claim-boundary disciplined, and supported by verifiable references.
+3. **Acquisition-Ready:** Highly engineered, scalable, multilingual, and difficult to replicate without substantial conceptual, technical, editorial, and interface-design effort.
+
+The design must never make the asset feel like a disposable landing page, a generic technology template, or a speculative visual experiment.
