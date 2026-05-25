@@ -47,3 +47,23 @@ The project will develop a distinctive spatial interface language while preservi
 Future interface work must follow `INTERFACE_THESIS.md`, `SPATIAL_INTERFACE_CONCEPT.md`, and `DESIGN_SYSTEM.md`.
 
 The project will treat interface design as a strategic asset layer, not a cosmetic layer.
+
+---
+
+## [S1-DL-003] - 2026-05-25: Navigation and Source Registries Established
+
+**Status:** APPROVED
+
+**Context:** After establishing the asset thesis, project doctrine, multilingual policy, strategic tools policy, interface thesis, spatial interface concept, and design system, the project requires governed operational data before template or CSS implementation.
+
+**Decision:**
+
+1. Created `main/data/navigation.json` to prevent broken navigation, draft route exposure, placeholder links, and unavailable language variants.
+2. Created `main/data/sources.json` as the initial source registry for institutional, academic, and program-level SBSP references.
+3. Required navigation to expose only approved or published routes.
+4. Required source entries to define tier, authority, URL, intended use, claim boundary, and review status.
+5. Confirmed that future templates, pages, tools, and metadata must draw from these registries rather than hard-coded assumptions.
+
+**Consequences:**
+
+The project now has a controlled route and source foundation. Future build scripts must use these registries to generate navigation, source sections, sitemap entries, hreflang maps, and tool reference layers without exposing drafts, placeholders, or unsupported claims.
