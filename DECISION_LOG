@@ -1,0 +1,40 @@
+## [S1-DL-001] - 2026-05-25: Embodied Spatial Interface Direction Approved
+
+**Status:** APPROVED
+
+**Context:** The asset requires a visual language that expresses the conceptual transfer of energy sovereignty above the atmosphere. A cold abstract interface would not fully communicate the weight of orbital energy infrastructure, national resilience, AI energy demand, and space-industrial systems.
+
+**Decision:**
+
+1. Approved the embodied contextual spatial UI direction for the project.
+2. The interface will be organized around three narrative layers:
+   - Orbital Core;
+   - Power Beaming Vector;
+   - Infrastructure Base.
+3. The visual system may use WebGL/Three.js or similar spatial techniques, but only as progressive enhancement.
+4. The page must remain readable, indexable, accessible, and credible without WebGL.
+5. External CDN dependencies are prohibited in production unless explicitly approved through a documented security decision.
+6. WebGL work must begin as a governed prototype before entering the production interface.
+
+**Consequences:**
+
+The project will develop a distinctive spatial interface language while preserving performance, accessibility, multilingual/RTL integrity, SEO integrity, CSP compatibility, and source-controlled technical discipline.
+
+## [S1-DL-002] - 2026-05-25: Thesis-Driven Sovereign Interface Adopted
+
+**Status:** APPROVED
+
+**Context:** The project requires an interface language that does not merely decorate the asset, but embodies the asset’s governing thesis. The goal is to make Space-Based-Solar-Power.com a reference not only in content and SEO, but also in conceptual interface design.
+
+**Decision:**
+
+1. Adopted Thesis-Driven Sovereign Interface as the governing interface philosophy.
+2. The interface must embody the asset thesis rather than apply a generic visual style.
+3. The visual system must translate orbital energy infrastructure into a tangible spatial experience.
+4. The interface must remain institutional, accessible, multilingual, RTL-safe, SEO-safe, and performance-conscious.
+5. WebGL or spatial techniques may be used only when they clarify the category logic and do not become decorative spectacle.
+6. Every major design decision must connect back to the asset thesis, source discipline, user trust, and buyer logic.
+
+**Consequences:**
+
+Future interface work must be documented through INTERFACE_THESIS.md, SPATIAL_INTERFACE_CONCEPT.md, and DESIGN_SYSTEM.md before production implementation. The project will treat interface design as a strategic asset layer, not a cosmetic layer.
