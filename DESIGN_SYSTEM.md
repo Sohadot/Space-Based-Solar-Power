@@ -147,7 +147,7 @@ Motion is explicitly treated as a functional vector to communicate energy-logist
 
  * random particle fields, meteor rains, or non-functional star-travel matrices;
  * constant aggressive looping animations that exhaust host GPU resources;
- * distracting parallax scripts that decoupling text layers from reading planes;
+ * distracting parallax scripts that decouple text layers from reading planes;
  * gaming-style free-fly camera systems that disorient the enterprise user.
 
 ## 11. Accessibility Requirements
