@@ -1,0 +1,179 @@
+{
+  "asset": "space-based-solar-power.com",
+  "navigationPolicy": {
+    "rule": "Navigation must only expose approved or published routes.",
+    "noBrokenLinks": true,
+    "noComingSoonLinks": true,
+    "noDraftRoutes": true,
+    "languageSwitcherMustOnlyExposeAvailableVariants": true
+  },
+  "primary": [
+    {
+      "id": "home",
+      "label": {
+        "en": "Atlas",
+        "ar": "الأطلس"
+      },
+      "path": "/",
+      "status": "approved",
+      "expose": true,
+      "role": "Primary asset gateway"
+    }
+  ],
+  "plannedPrimary": [
+    {
+      "id": "what-is-sbsp",
+      "label": {
+        "en": "What Is SBSP?",
+        "ar": "ما هي الطاقة الشمسية الفضائية؟"
+      },
+      "path": "/what-is-space-based-solar-power/",
+      "status": "planned",
+      "expose": false,
+      "role": "Foundational definition page"
+    },
+    {
+      "id": "technology-stack",
+      "label": {
+        "en": "Technology Stack",
+        "ar": "الطبقة التقنية"
+      },
+      "path": "/technology-stack/",
+      "status": "planned",
+      "expose": false,
+      "role": "Technical architecture page"
+    },
+    {
+      "id": "feasibility-and-constraints",
+      "label": {
+        "en": "Constraints",
+        "ar": "القيود"
+      },
+      "path": "/feasibility-and-constraints/",
+      "status": "planned",
+      "expose": false,
+      "role": "Credibility and constraint layer"
+    },
+    {
+      "id": "strategic-importance",
+      "label": {
+        "en": "Strategic Importance",
+        "ar": "الأهمية الاستراتيجية"
+      },
+      "path": "/strategic-importance/",
+      "status": "planned",
+      "expose": false,
+      "role": "Geo-strategic framing page"
+    },
+    {
+      "id": "global-programs",
+      "label": {
+        "en": "Global Programs",
+        "ar": "البرامج العالمية"
+      },
+      "path": "/global-programs/",
+      "status": "planned",
+      "expose": false,
+      "role": "Institutional program registry"
+    },
+    {
+      "id": "tools",
+      "label": {
+        "en": "Strategic Tools",
+        "ar": "الأدوات الاستراتيجية"
+      },
+      "path": "/tools/",
+      "status": "planned",
+      "expose": false,
+      "role": "Tools gateway"
+    }
+  ],
+  "footer": [
+    {
+      "id": "asset-thesis",
+      "label": {
+        "en": "Asset Thesis",
+        "ar": "أطروحة الأصل"
+      },
+      "path": null,
+      "status": "documentation-only",
+      "expose": false,
+      "role": "Repository governance document"
+    },
+    {
+      "id": "source-policy",
+      "label": {
+        "en": "Source Policy",
+        "ar": "سياسة المصادر"
+      },
+      "path": null,
+      "status": "documentation-only",
+      "expose": false,
+      "role": "Repository governance document"
+    }
+  ],
+  "languageSwitcher": {
+    "policy": "Only expose language variants that are approved, generated, and route-valid.",
+    "defaultLocale": "en",
+    "availableForHome": [
+      {
+        "locale": "en",
+        "label": "English",
+        "path": "/",
+        "direction": "ltr",
+        "status": "approved",
+        "expose": true
+      }
+    ],
+    "plannedLocales": [
+      {
+        "locale": "ar",
+        "label": "العربية",
+        "path": "/ar/",
+        "direction": "rtl",
+        "status": "planned",
+        "expose": false
+      },
+      {
+        "locale": "zh",
+        "label": "中文",
+        "path": "/zh/",
+        "direction": "ltr",
+        "status": "planned",
+        "expose": false
+      },
+      {
+        "locale": "ja",
+        "label": "日本語",
+        "path": "/ja/",
+        "direction": "ltr",
+        "status": "planned",
+        "expose": false
+      },
+      {
+        "locale": "fr",
+        "label": "Français",
+        "path": "/fr/",
+        "direction": "ltr",
+        "status": "planned",
+        "expose": false
+      },
+      {
+        "locale": "de",
+        "label": "Deutsch",
+        "path": "/de/",
+        "direction": "ltr",
+        "status": "planned",
+        "expose": false
+      },
+      {
+        "locale": "es",
+        "label": "Español",
+        "path": "/es/",
+        "direction": "ltr",
+        "status": "planned",
+        "expose": false
+      }
+    ]
+  }
+}
