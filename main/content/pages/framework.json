@@ -1,0 +1,455 @@
+{
+  "id": "framework",
+  "route": "/framework/",
+  "language": "en",
+  "pageType": "reference_hub",
+  "status": "approved_for_launch",
+  "title": "Orbital Energy Infrastructure Framework",
+  "metaDescription": "A framework for understanding space-based solar power as an infrastructure chain connecting orbit, wireless power transmission, rectennas, grids, AI demand, defense resilience, and future space-industrial systems.",
+  "h1": "Orbital Energy Infrastructure Framework",
+  "strategicRole": "Central analytical map of the asset and primary internal-link hub for understanding space-based solar power as a complete infrastructure chain.",
+  "primaryAudience": [
+    "researchers",
+    "journalists",
+    "investors",
+    "governments",
+    "companies",
+    "engineers",
+    "analysts",
+    "strategic buyers",
+    "policy observers"
+  ],
+  "seoCluster": [
+    "orbital energy infrastructure",
+    "space energy infrastructure",
+    "space-based solar power framework",
+    "space-based solar power infrastructure",
+    "wireless power transmission from space",
+    "rectenna infrastructure",
+    "AI energy demand"
+  ],
+  "hero": {
+    "eyebrow": "Analytical Framework",
+    "title": "Space-based solar power is an infrastructure chain, not a single device.",
+    "subtitle": "The framework of Space-Based-Solar-Power.com maps SBSP from sunlight and orbital collection to wireless power transmission, terrestrial reception, grid resilience, AI energy demand, defense relevance, and future space-industrial systems.",
+    "thesis": "To understand space-based solar power seriously, it must be studied as an end-to-end infrastructure category: orbital collection, transmission, reception, integration, governance, demand, and strategic use."
+  },
+  "sections": [
+    {
+      "id": "why-framework-matters",
+      "heading": "Why the framework matters",
+      "body": [
+        "Space-based solar power is often described too narrowly as solar panels in space. That description is incomplete.",
+        "A serious reference framework must explain the complete infrastructure chain: how energy is collected in orbit, converted, transmitted, received, integrated into terrestrial or space-based systems, governed, financed, regulated, and used.",
+        "This framework exists to prevent shallow explanations. It gives researchers, journalists, investors, governments, companies, engineers, and strategic buyers a structured way to understand where each concept, claim, constraint, and program fits inside the broader SBSP category."
+      ],
+      "links": [
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        },
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "framework-spine",
+      "heading": "The infrastructure chain",
+      "body": [
+        "The content spine of the asset is an orbital energy infrastructure chain.",
+        "The chain begins with sunlight and orbital energy collection, then moves through solar power satellites or orbital platforms, wireless power transmission, atmospheric crossing, rectenna or receiving infrastructure, terrestrial grid integration, AI and high-density energy demand, defense and disaster-response relevance, remote infrastructure, and future lunar or space-industrial extension.",
+        "Every major page in the asset must connect back to this chain. If a topic does not fit into the framework, it should not become a public page unless a documented decision expands the category."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "layer-1-sunlight",
+      "heading": "Layer 1 — Sunlight as the primary energy source",
+      "body": [
+        "The first layer of the framework is sunlight itself. Space-based solar power begins with the idea that solar energy can be collected beyond the atmospheric and day-night limitations that affect terrestrial solar systems.",
+        "This does not automatically make SBSP superior to terrestrial energy systems. It simply defines the starting premise: energy collection above the atmosphere may offer different continuity characteristics, but only if the rest of the infrastructure chain can be made technically, economically, and operationally credible.",
+        "For this asset, sunlight is not treated as a decorative symbol. It is the first input in a governed infrastructure chain."
+      ],
+      "links": [
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        },
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "layer-2-orbital-collection",
+      "heading": "Layer 2 — Orbital energy collection",
+      "body": [
+        "The second layer is orbital energy collection. This includes solar power satellites, orbital solar arrays, modular space platforms, and future in-space energy infrastructure concepts.",
+        "This layer raises immediate questions about launch mass, orbital construction, assembly, maintenance, radiation exposure, orbital operations, platform stability, and long-term system durability.",
+        "Orbital collection is the visual and conceptual core of the asset, but it is not the entire system. Without transmission, reception, and integration, orbital collection alone does not create usable energy infrastructure."
+      ],
+      "links": [
+        {
+          "label": "Space solar power satellites",
+          "path": "/space-solar-power-satellites/"
+        },
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": [
+        "jaxa-ssps-research",
+        "caltech-space-solar-power-project"
+      ]
+    },
+    {
+      "id": "layer-3-power-conversion",
+      "heading": "Layer 3 — Conversion and system architecture",
+      "body": [
+        "Collected solar energy must be converted into a form that can be transmitted or used. This layer includes power conversion, onboard electrical architecture, thermal management, beam-forming systems, structural design, control systems, and platform-level coordination.",
+        "The framework treats this layer as part of the technology stack rather than a background detail. A satellite or orbital platform is not only a collector; it must also operate as an integrated power system.",
+        "Technical claims in this layer require source discipline because efficiency, mass, thermal behavior, and system scale can strongly affect feasibility."
+      ],
+      "links": [
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "layer-4-wireless-transmission",
+      "heading": "Layer 4 — Wireless power transmission",
+      "body": [
+        "The fourth layer is wireless power transmission. This includes proposed microwave, laser, or hybrid transmission pathways from orbital platforms to receiving systems.",
+        "This layer is often misunderstood. Transmission is not simply a beam drawn between orbit and Earth. It involves beam control, safety, atmospheric passage, efficiency losses, target accuracy, regulation, public legitimacy, and system governance.",
+        "For this reason, the asset treats wireless power transmission as both a technical layer and a trust layer. Claims about transmission must be carefully bounded."
+      ],
+      "links": [
+        {
+          "label": "Wireless power transmission",
+          "path": "/wireless-power-transmission/"
+        },
+        {
+          "label": "Microwave power beaming",
+          "path": "/microwave-power-beaming/"
+        },
+        {
+          "label": "Laser power transmission",
+          "path": "/laser-power-transmission/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": [
+        "caltech-sspd-wireless-power-2023"
+      ]
+    },
+    {
+      "id": "layer-5-atmospheric-crossing",
+      "heading": "Layer 5 — Atmospheric crossing and safety boundary",
+      "body": [
+        "Any proposed space-to-Earth power transmission pathway must cross the atmosphere. That makes atmospheric behavior, safety, weather interaction, beam control, regulatory approval, and public acceptance part of the infrastructure chain.",
+        "The framework does not treat atmospheric crossing as a minor detail. It is a boundary between a space system and public terrestrial infrastructure.",
+        "This boundary is one reason the asset rejects hype. A concept may be physically plausible while still facing major engineering, safety, regulatory, and legitimacy constraints."
+      ],
+      "links": [
+        {
+          "label": "SBSP safety",
+          "path": "/sbsp-safety/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "layer-6-reception",
+      "heading": "Layer 6 — Rectenna and receiving infrastructure",
+      "body": [
+        "The sixth layer is reception. For many SBSP concepts, this includes rectenna fields or other receiving infrastructure capable of converting transmitted energy into usable electrical power.",
+        "Reception is not merely a technical endpoint. It raises questions about land use, footprint, grid connection, safety zones, public legitimacy, maintenance, siting, and resilience.",
+        "The framework treats rectenna infrastructure as one of the most important bridges between a space-energy concept and terrestrial energy reality."
+      ],
+      "links": [
+        {
+          "label": "Rectenna infrastructure",
+          "path": "/rectenna-infrastructure/"
+        },
+        {
+          "label": "Grid integration",
+          "path": "/sbsp-grid-integration/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "layer-7-grid-integration",
+      "heading": "Layer 7 — Grid integration and energy use",
+      "body": [
+        "The seventh layer is integration with energy demand. A receiving system only becomes strategically meaningful if its energy can be connected to grids, remote systems, industrial loads, emergency infrastructure, or future space-industrial applications.",
+        "Grid integration determines whether SBSP is discussed as a speculative concept, a remote power option, a resilience layer, a baseload-like supplement, or a specialized infrastructure capability.",
+        "This layer connects the technical system to the real operating needs of states, companies, utilities, data centers, defense planners, and infrastructure operators."
+      ],
+      "links": [
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "SBSP grid integration",
+          "path": "/sbsp-grid-integration/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "layer-8-ai-demand",
+      "heading": "Layer 8 — AI and high-density energy demand",
+      "body": [
+        "The eighth layer is future high-density energy demand, including artificial intelligence infrastructure, hyperscale computing, orbital computing concepts, and energy-intensive industrial systems.",
+        "This layer must be handled carefully. The asset does not claim that SBSP will inevitably power AI data centers. It treats the relationship as a long-horizon strategic convergence: advanced computation increases the importance of continuous, resilient, and scalable energy discussions.",
+        "By including AI energy demand in the framework, the asset connects SBSP to one of the strongest future energy-demand narratives while maintaining claim discipline."
+      ],
+      "links": [
+        {
+          "label": "SBSP and AI energy demand",
+          "path": "/sbsp-and-ai-energy-demand/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "layer-9-defense-resilience",
+      "heading": "Layer 9 — Defense, disaster response, and resilience",
+      "body": [
+        "The ninth layer is resilience. Space-based power concepts are often discussed in relation to remote power, disaster response, military logistics, critical infrastructure, island grids, and national resilience.",
+        "This layer does not mean that SBSP is already a defense system or emergency power product. It means that the strategic use cases require careful mapping.",
+        "The framework must help governments, journalists, analysts, and companies distinguish between plausible strategic relevance and unsupported operational claims."
+      ],
+      "links": [
+        {
+          "label": "SBSP and defense resilience",
+          "path": "/sbsp-and-defense-resilience/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "layer-10-lunar-space-industrial",
+      "heading": "Layer 10 — Lunar and space-industrial extension",
+      "body": [
+        "The final layer extends the framework beyond Earth. Space-based power may also matter for satellites, lunar infrastructure, orbital manufacturing, in-space operations, and future space-industrial systems.",
+        "This does not make every lunar or orbital power claim credible. It means that the framework must account for power as a foundational constraint of future space activity.",
+        "The asset therefore treats SBSP as part of a broader orbital energy infrastructure conversation, not only as a space-to-Earth electricity concept."
+      ],
+      "links": [
+        {
+          "label": "SBSP and lunar infrastructure",
+          "path": "/sbsp-and-lunar-infrastructure/"
+        },
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "framework-and-tools",
+      "heading": "How the framework supports strategic tools",
+      "body": [
+        "The framework is also the foundation of the asset’s tools layer.",
+        "The Orbital Energy Constraint Matrix can map constraints across the infrastructure chain. The Claim Boundary Checker can classify statements according to source and maturity. The Global Program Tracker can locate institutional activity within the system. The Use-Case Fit Evaluator can connect applications to infrastructure requirements.",
+        "Tools must not operate outside the framework. A tool that produces an output without showing where it fits inside the infrastructure chain weakens the asset."
+      ],
+      "links": [
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "framework-and-interface",
+      "heading": "How the framework shapes the interface",
+      "body": [
+        "The interface must not decorate the asset. It must embody the asset’s thesis.",
+        "The framework gives the interface its structure: Orbital Core, Power Beaming Vector, and Infrastructure Base. These are not visual ornaments. They correspond to the real analytical layers of the SBSP infrastructure chain.",
+        "This is why the asset’s interface should eventually feel like an embodied orbital energy atlas rather than a generic space-themed website."
+      ],
+      "links": [
+        {
+          "label": "Manifesto",
+          "path": "/manifesto/"
+        },
+        {
+          "label": "Home",
+          "path": "/"
+        }
+      ],
+      "sourceRefs": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Home",
+      "path": "/",
+      "reason": "Connects the framework back to the primary sovereign gateway."
+    },
+    {
+      "label": "What Is Space-Based Solar Power?",
+      "path": "/what-is-space-based-solar-power/",
+      "reason": "Defines the category before deeper infrastructure analysis."
+    },
+    {
+      "label": "Technology Stack",
+      "path": "/technology-stack/",
+      "reason": "Explains the technical layers represented in the framework."
+    },
+    {
+      "label": "Feasibility and Constraints",
+      "path": "/feasibility-and-constraints/",
+      "reason": "Documents the barriers that shape the maturity of each framework layer."
+    },
+    {
+      "label": "Strategic Importance",
+      "path": "/strategic-importance/",
+      "reason": "Explains why the infrastructure chain matters for energy sovereignty, AI demand, defense resilience, and space systems."
+    },
+    {
+      "label": "Global Programs",
+      "path": "/global-programs/",
+      "reason": "Connects the framework to institutional and research activity."
+    },
+    {
+      "label": "Sources",
+      "path": "/sources/",
+      "reason": "Provides source discipline and claim-boundary support."
+    },
+    {
+      "label": "Tools",
+      "path": "/tools/",
+      "reason": "Shows how the framework supports future strategic tools."
+    },
+    {
+      "label": "Methodology",
+      "path": "/methodology/",
+      "reason": "Defines the evaluation method behind the framework."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "nasa-otps-sbsp-2024",
+      "usage": "Used for constraint-aware framing across feasibility, economics, system assumptions, and maturity boundaries."
+    },
+    {
+      "sourceId": "nasa-otps-sbsp-summary-2024",
+      "usage": "Used as a public-facing NASA summary reference for SBSP assessment context."
+    },
+    {
+      "sourceId": "esa-solaris-2024",
+      "usage": "Used to support institutional program context and European interest in space-based solar power."
+    },
+    {
+      "sourceId": "jaxa-ssps-research",
+      "usage": "Used for SSPS concept explanation and historical research lineage."
+    },
+    {
+      "sourceId": "caltech-sspd-wireless-power-2023",
+      "usage": "Used for demonstration-level wireless power transmission context, not for commercial-scale readiness claims."
+    },
+    {
+      "sourceId": "caltech-space-solar-power-project",
+      "usage": "Used for academic project background and concept lineage."
+    }
+  ],
+  "claimBoundary": "This page provides the analytical framework for understanding space-based solar power as an infrastructure chain. It combines conceptual framing, technical explanation, and strategic interpretation. It does not claim that SBSP is commercially mature, economically inevitable, technically resolved, or operationally deployed at infrastructure scale.",
+  "qualityStatus": {
+    "metadataComplete": true,
+    "internalLinksDefined": true,
+    "sourceBoundaryDefined": true,
+    "placeholderFree": true,
+    "readyForTemplate": true
+  }
+}
