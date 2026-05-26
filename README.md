@@ -1362,8 +1362,7 @@ The first release must demonstrate:
 
 The objective is not to prove that a static site can exist.
 
-The objective is to prove that Space-Based-Solar-Power.com has begun operating as a live sovereign reference asset..
-```
+The objective is to prove that Space-Based-Solar-Power.com has begun operating as a live sovereign reference asset.
 
 ---
 
