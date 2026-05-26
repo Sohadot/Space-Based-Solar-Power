@@ -1,0 +1,548 @@
+{
+  "id": "sources",
+  "route": "/sources/",
+  "language": "en",
+  "pageType": "source_registry_page",
+  "status": "approved_for_launch",
+  "title": "Sources and Claim Boundaries",
+  "metaDescription": "The source discipline, citation hierarchy, and claim-boundary logic behind Space-Based-Solar-Power.com and its treatment of space-based solar power claims.",
+  "h1": "Sources and Claim Boundaries",
+  "strategicRole": "Public trust layer explaining how the asset uses institutional sources, academic research, enterprise disclosures, claim classification, and constraint-aware interpretation.",
+  "primaryAudience": [
+    "researchers",
+    "journalists",
+    "investors",
+    "governments",
+    "companies",
+    "engineers",
+    "analysts",
+    "strategic buyers",
+    "policy observers"
+  ],
+  "seoCluster": [
+    "space-based solar power sources",
+    "space solar power research",
+    "SBSP reports",
+    "NASA space-based solar power",
+    "ESA SOLARIS",
+    "JAXA SSPS",
+    "Caltech space solar power",
+    "space-based solar power feasibility"
+  ],
+  "hero": {
+    "eyebrow": "Source Discipline",
+    "title": "A reference asset is only as strong as its claim boundaries.",
+    "subtitle": "Space-Based-Solar-Power.com uses a governed source hierarchy to distinguish institutional reports, academic research, enterprise disclosures, technical explanations, strategic interpretation, unresolved scenarios, and speculative future pathways.",
+    "thesis": "The asset does not treat every statement as equal. It separates what is sourced, what is interpreted, what is modeled, what is unresolved, and what remains speculative."
+  },
+  "sections": [
+    {
+      "id": "why-sources-matter",
+      "heading": "Why sources matter",
+      "body": [
+        "Space-based solar power is a high-ambition field. It sits between energy, aerospace, wireless power transmission, grid infrastructure, national resilience, artificial intelligence energy demand, defense logistics, and future space-industrial systems.",
+        "Because the field is complex and not yet commercially mature at infrastructure scale, weak source discipline can quickly turn a reference asset into a hype surface.",
+        "This page explains how Space-Based-Solar-Power.com handles sources, claim boundaries, institutional signals, technical demonstrations, company statements, and strategic interpretation."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "source-hierarchy",
+      "heading": "Source hierarchy",
+      "body": [
+        "The asset uses a source hierarchy because not all sources carry the same evidentiary weight.",
+        "Tier 1 sources include official institutional and sovereign sources: space agencies, government energy bodies, public-sector research institutions, and intergovernmental organizations.",
+        "Tier 2 sources include peer-reviewed academic research, technical literature, engineering publications, and recognized research outputs.",
+        "Tier 3 sources include enterprise disclosures, company updates, project pages, and formal organizational communications. These may be useful, but they must be treated as organization-specific claims unless independently supported."
+      ],
+      "links": [
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-space-solar-power-project"
+      ]
+    },
+    {
+      "id": "tier-1-institutional-sources",
+      "heading": "Tier 1 — Institutional and sovereign sources",
+      "body": [
+        "Tier 1 sources are the preferred foundation for major claims about space-based solar power programs, feasibility assessments, policy interest, and institutional activity.",
+        "Examples include NASA reports, ESA program materials, JAXA research pages, national space agency publications, government energy studies, and public-sector technical assessments.",
+        "A Tier 1 source can support institutional framing, but it must still be read carefully. A government or agency study may show interest, research, or assessment activity. It does not automatically prove commercial deployment or economic maturity."
+      ],
+      "links": [
+        {
+          "label": "NASA and institutional assessment context",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "nasa-otps-sbsp-summary-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research"
+      ]
+    },
+    {
+      "id": "tier-2-academic-sources",
+      "heading": "Tier 2 — Academic and technical sources",
+      "body": [
+        "Tier 2 sources include academic research, technical demonstrations, engineering papers, energy system models, and recognized scholarly outputs.",
+        "These sources are important for understanding mechanisms, models, component-level progress, system assumptions, and scenario-based analysis.",
+        "Academic or technical work must not be overextended. A demonstration, model, or research article can support a specific claim, but it should not be generalized into full commercial readiness unless the evidence supports that conclusion."
+      ],
+      "links": [
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": [
+        "caltech-sspd-wireless-power-2023",
+        "caltech-space-solar-power-project",
+        "joule-european-sbsp-2025"
+      ]
+    },
+    {
+      "id": "tier-3-enterprise-disclosures",
+      "heading": "Tier 3 — Enterprise and program disclosures",
+      "body": [
+        "Enterprise disclosures may help identify company activity, program positioning, technical claims, project direction, and market narratives.",
+        "However, company announcements, pitch materials, and marketing pages are not neutral proof of feasibility, economics, safety, or deployment readiness.",
+        "When enterprise sources are used, the asset must label them as company claims or program disclosures unless supported by independent institutional or academic evidence."
+      ],
+      "links": [
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "claim-classes",
+      "heading": "Claim classification",
+      "body": [
+        "The asset classifies important claims before publication.",
+        "A claim may be a source-verified fact, institutional summary, technical explanation, strategic interpretation, company claim, unresolved scenario, or speculative future pathway.",
+        "This classification protects the asset from overstating the field. It also helps readers understand whether they are reading established information, a technical explanation, a program signal, or a strategic interpretation."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "source-verified-fact",
+      "heading": "Source-verified fact",
+      "body": [
+        "A source-verified fact is a statement directly supported by a credible source.",
+        "The source must be specific enough to support the statement being made. A broad institutional page should not be used to support a highly specific technical or economic claim unless the page actually contains that claim.",
+        "Source-verified facts should be used carefully and with date awareness, especially in a field where costs, programs, and technical maturity may change."
+      ],
+      "links": [
+        {
+          "label": "Sources methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "institutional-summary",
+      "heading": "Institutional summary",
+      "body": [
+        "An institutional summary is a public-facing summary from a credible institution, agency, research body, or program.",
+        "These summaries are useful for explaining what an institution is studying or communicating publicly.",
+        "However, a summary may simplify deeper technical reports. When detailed claims matter, the asset should prefer the deeper report, technical paper, or primary document."
+      ],
+      "links": [
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-summary-2024"
+      ]
+    },
+    {
+      "id": "technical-explanation",
+      "heading": "Technical explanation",
+      "body": [
+        "A technical explanation describes how a system, component, concept, or mechanism works.",
+        "Technical explanation is allowed when it is accurate and bounded, but it must not become an unsupported performance claim.",
+        "For example, explaining the role of wireless power transmission is different from claiming that a specific full-scale transmission system is commercially ready."
+      ],
+      "links": [
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        }
+      ],
+      "sourceRefs": [
+        "jaxa-ssps-research",
+        "caltech-sspd-wireless-power-2023"
+      ]
+    },
+    {
+      "id": "strategic-interpretation",
+      "heading": "Strategic interpretation",
+      "body": [
+        "Strategic interpretation is necessary because SBSP is not only technical. It connects to energy sovereignty, grid resilience, AI energy demand, defense relevance, remote infrastructure, and future space-industrial systems.",
+        "Strategic interpretation must be labeled through careful language. It may explain why a topic matters, what questions it raises, or how it fits into a long-horizon infrastructure category.",
+        "It must not present future scenarios as guaranteed outcomes."
+      ],
+      "links": [
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Manifesto",
+          "path": "/manifesto/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "company-claim",
+      "heading": "Company claim",
+      "body": [
+        "A company claim is a statement made by an enterprise, startup, contractor, developer, or private program about its own work, plans, capabilities, or market direction.",
+        "Company claims may be relevant, especially in an emerging field, but they must not be presented as neutral proof.",
+        "The asset may report that a company says something, but it must avoid turning company positioning into established technical or economic fact."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "unresolved-scenarios",
+      "heading": "Unresolved scenarios",
+      "body": [
+        "Some SBSP questions are unresolved. These include commercial economics, launch mass, large-scale orbital assembly, long-term maintenance, grid integration, regulatory acceptance, public legitimacy, safety governance, and infrastructure financing.",
+        "The asset may discuss unresolved scenarios, but it must not collapse uncertainty into certainty.",
+        "Where uncertainty exists, the content should say so directly."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "joule-european-sbsp-2025"
+      ]
+    },
+    {
+      "id": "speculative-future-pathways",
+      "heading": "Speculative future pathways",
+      "body": [
+        "Speculative future pathways are allowed only when clearly labeled as long-horizon possibilities.",
+        "These may include future orbital computing, lunar energy infrastructure, space-industrial power networks, or strategic applications that are not yet mature.",
+        "Speculation must serve analytical clarity. It must not be used to inflate the asset, exaggerate technology readiness, or imply certain commercial outcomes."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "initial-source-register",
+      "heading": "Initial source register",
+      "body": [
+        "The initial source register includes institutional, academic, and program-level references that help define the early public foundation of the asset.",
+        "These sources are not used as decoration. Each source must have a defined use, claim boundary, and review status.",
+        "The source register will expand as the asset grows into deeper reference pages, tools, articles, glossary entries, program profiles, and multilingual editions."
+      ],
+      "links": [
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "nasa-otps-sbsp-summary-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-sspd-wireless-power-2023",
+        "caltech-space-solar-power-project",
+        "joule-european-sbsp-2025"
+      ]
+    },
+    {
+      "id": "nasa-source-use",
+      "heading": "NASA source use",
+      "body": [
+        "NASA sources are used for institutional assessment and public-facing context around SBSP feasibility, cost, emissions, technical assumptions, and unresolved capability gaps.",
+        "They must not be used to claim that SBSP is commercially mature, economically superior, or ready for near-term infrastructure deployment unless the specific source supports such a claim.",
+        "NASA material is especially important for the asset’s constraint-aware posture."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "nasa-otps-sbsp-summary-2024"
+      ]
+    },
+    {
+      "id": "esa-source-use",
+      "heading": "ESA SOLARIS source use",
+      "body": [
+        "ESA SOLARIS material is used to describe European institutional interest, program framing, and the public-sector exploration of space-based solar power.",
+        "It should not be treated as proof of commercial deployment.",
+        "For this asset, ESA material helps locate SBSP inside a European policy, aerospace, and energy-system conversation."
+      ],
+      "links": [
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": [
+        "esa-solaris-2024"
+      ]
+    },
+    {
+      "id": "jaxa-source-use",
+      "heading": "JAXA SSPS source use",
+      "body": [
+        "JAXA material is used to support the historical and technical lineage of Space Solar Power Systems research.",
+        "It is especially relevant to the Japanese precision technology edition and the long-running institutional study of SSPS concepts.",
+        "It must not be used to imply that a full commercial SBSP infrastructure system is already deployed."
+      ],
+      "links": [
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        }
+      ],
+      "sourceRefs": [
+        "jaxa-ssps-research"
+      ]
+    },
+    {
+      "id": "caltech-source-use",
+      "heading": "Caltech source use",
+      "body": [
+        "Caltech material is used for academic project context and demonstration-level wireless power transmission activity.",
+        "A demonstration can be significant without proving commercial infrastructure readiness.",
+        "The asset must therefore present Caltech references as evidence of research and demonstration progress, not as proof that full-scale SBSP has been solved."
+      ],
+      "links": [
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": [
+        "caltech-sspd-wireless-power-2023",
+        "caltech-space-solar-power-project"
+      ]
+    },
+    {
+      "id": "sources-and-tools",
+      "heading": "How sources support tools",
+      "body": [
+        "The strategic tools layer must be source-aware.",
+        "The Orbital Energy Constraint Matrix, Claim Boundary Checker, Global Program Tracker, Journalist Brief Builder, Investor Due Diligence Checklist, and Government Strategic Fit Matrix must not produce unsupported outputs.",
+        "Tools may classify, organize, and guide. They must not invent certainty."
+      ],
+      "links": [
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "source-review",
+      "heading": "Source review and updates",
+      "body": [
+        "Sources must be reviewed when content is updated, when tools change logic, when major reports are released, when source URLs break, or when localized editions modify technical framing.",
+        "The asset should not reuse outdated source interpretations without context.",
+        "A source register must remain alive, governed, and connected to the content system."
+      ],
+      "links": [
+        {
+          "label": "Articles and briefs",
+          "path": "/articles/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Methodology",
+      "path": "/methodology/",
+      "reason": "Explains the evaluation method that governs source use and claim classification."
+    },
+    {
+      "label": "Feasibility and Constraints",
+      "path": "/feasibility-and-constraints/",
+      "reason": "Uses source discipline to explain unresolved barriers and institutional realism."
+    },
+    {
+      "label": "Global Programs",
+      "path": "/global-programs/",
+      "reason": "Applies source classification to institutional programs and research activity."
+    },
+    {
+      "label": "Technology Stack",
+      "path": "/technology-stack/",
+      "reason": "Requires sources for technical explanations and component claims."
+    },
+    {
+      "label": "Tools",
+      "path": "/tools/",
+      "reason": "Shows how sources support future strategic tools and claim-boundary systems."
+    },
+    {
+      "label": "Framework",
+      "path": "/framework/",
+      "reason": "Connects source discipline to the broader orbital energy infrastructure chain."
+    },
+    {
+      "label": "Strategic Importance",
+      "path": "/strategic-importance/",
+      "reason": "Supports careful strategic interpretation without unsupported certainty."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "nasa-otps-sbsp-2024",
+      "usage": "Core institutional source for NASA-assessed feasibility, cost, emissions, constraints, and capability-gap framing."
+    },
+    {
+      "sourceId": "nasa-otps-sbsp-summary-2024",
+      "usage": "Public-facing NASA summary of the 2024 OTPS report. Used for general institutional context."
+    },
+    {
+      "sourceId": "esa-solaris-2024",
+      "usage": "Used for ESA SOLARIS program framing and European institutional interest."
+    },
+    {
+      "sourceId": "jaxa-ssps-research",
+      "usage": "Used for JAXA SSPS concept explanation and Japanese research lineage."
+    },
+    {
+      "sourceId": "caltech-sspd-wireless-power-2023",
+      "usage": "Used for demonstration-level wireless power transmission context, not commercial-scale readiness."
+    },
+    {
+      "sourceId": "caltech-space-solar-power-project",
+      "usage": "Used for Caltech project background and academic research context."
+    },
+    {
+      "sourceId": "joule-european-sbsp-2025",
+      "usage": "Used for modeled European-scale scenario context and explicit limitations."
+    }
+  ],
+  "claimBoundary": "This page explains the asset’s source hierarchy and claim-boundary discipline. It does not claim that any source proves commercial maturity, economic inevitability, technical resolution, investment attractiveness, policy correctness, or operational deployment of SBSP at infrastructure scale.",
+  "qualityStatus": {
+    "metadataComplete": true,
+    "internalLinksDefined": true,
+    "sourceBoundaryDefined": true,
+    "placeholderFree": true,
+    "readyForTemplate": true
+  }
+}
