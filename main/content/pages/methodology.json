@@ -1,0 +1,366 @@
+{
+  "id": "methodology",
+  "route": "/methodology/",
+  "language": "en",
+  "pageType": "methodology_page",
+  "status": "approved_for_launch",
+  "title": "Methodology",
+  "metaDescription": "How Space-Based-Solar-Power.com evaluates sources, claims, constraints, institutional programs, strategic tools, and unresolved scenarios in space-based solar power.",
+  "h1": "Methodology",
+  "strategicRole": "Defines the asset's evaluation logic for sources, claims, constraints, institutional programs, company disclosures, strategic tools, and unresolved scenarios.",
+  "primaryAudience": [
+    "researchers",
+    "journalists",
+    "investors",
+    "governments",
+    "companies",
+    "engineers",
+    "analysts",
+    "strategic buyers"
+  ],
+  "seoCluster": [
+    "space-based solar power methodology",
+    "SBSP claims",
+    "space solar power feasibility",
+    "SBSP constraints",
+    "space-based solar power sources",
+    "orbital energy infrastructure analysis"
+  ],
+  "hero": {
+    "eyebrow": "Evaluation Discipline",
+    "title": "How this asset evaluates space-based solar power.",
+    "subtitle": "The methodology of Space-Based-Solar-Power.com exists to separate source-verified facts, institutional summaries, technical explanations, company claims, strategic interpretation, unresolved scenarios, and speculative future pathways.",
+    "thesis": "A sovereign reference asset must not merely collect information. It must govern how information is classified, connected, sourced, questioned, and published."
+  },
+  "sections": [
+    {
+      "id": "why-methodology-matters",
+      "heading": "Why methodology matters",
+      "body": [
+        "Space-based solar power sits at the intersection of space systems, energy infrastructure, wireless power transmission, grid resilience, artificial intelligence energy demand, defense logistics, public policy, and long-horizon capital formation.",
+        "That intersection creates a high risk of exaggerated claims, misunderstood demonstrations, premature commercial narratives, weak journalism, and speculative investment language.",
+        "This methodology exists to prevent the asset from becoming a hype surface. It defines how the site evaluates claims, sources, constraints, programs, tools, and strategic interpretation before content enters the public reference layer."
+      ],
+      "links": [
+        {
+          "label": "Sources and claim boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "nasa-otps-sbsp-summary-2024"
+      ]
+    },
+    {
+      "id": "source-hierarchy",
+      "heading": "Source hierarchy",
+      "body": [
+        "The asset uses a controlled source hierarchy. Not every source has the same evidentiary weight.",
+        "Tier 1 sources include official institutional and sovereign sources such as space agencies, government energy bodies, public-sector research institutions, and intergovernmental organizations.",
+        "Tier 2 sources include peer-reviewed academic research, technical literature, engineering publications, and recognized research outputs.",
+        "Tier 3 sources include enterprise disclosures, project pages, company announcements, and formal program communications. These may be useful, but they must be treated as organization-specific claims unless independently supported."
+      ],
+      "links": [
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-space-solar-power-project"
+      ]
+    },
+    {
+      "id": "claim-classification",
+      "heading": "Claim classification",
+      "body": [
+        "Every important claim must be classified before publication.",
+        "The asset distinguishes between source-verified facts, institutional summaries, technical explanations, strategic interpretation, company claims, unresolved scenarios, and speculative future pathways.",
+        "This classification prevents a research demonstration from being presented as commercial deployment, a company announcement from being treated as neutral proof, or a strategic possibility from being framed as inevitable."
+      ],
+      "links": [
+        {
+          "label": "Sources and claim boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "constraint-methodology",
+      "heading": "Constraint methodology",
+      "body": [
+        "Space-based solar power should be evaluated through the constraints that shape whether it can become mature infrastructure.",
+        "The asset tracks constraints across launch economics, orbital assembly, wireless power transmission, rectenna footprint, grid integration, safety, regulation, maintenance, space debris, public legitimacy, and capital formation.",
+        "A constraint is not treated as a dismissal of the field. It is treated as part of the serious reference structure needed by governments, investors, journalists, researchers, companies, and engineers."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "program-registry-methodology",
+      "heading": "Program registry methodology",
+      "body": [
+        "Institutional programs are important signals, but they must be interpreted carefully.",
+        "A NASA report, an ESA initiative, a JAXA research page, an academic demonstration, or a national study can show institutional attention, research activity, or technical progress. It does not automatically prove commercial readiness.",
+        "The global program registry must distinguish between official programs, research studies, technical demonstrations, policy interest, company claims, and operational deployment."
+      ],
+      "links": [
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-summary-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-sspd-wireless-power-2023"
+      ]
+    },
+    {
+      "id": "strategic-interpretation",
+      "heading": "Strategic interpretation",
+      "body": [
+        "The asset includes strategic interpretation because SBSP is not only a technical concept. It is also connected to energy sovereignty, grid resilience, AI energy demand, defense logistics, remote infrastructure, and future space-industrial systems.",
+        "Strategic interpretation is allowed when it is clearly marked as interpretation rather than established fact.",
+        "The site may explain why SBSP matters to governments, investors, companies, journalists, and future buyers, but it must not present long-horizon strategic possibilities as guaranteed outcomes."
+      ],
+      "links": [
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Manifesto",
+          "path": "/manifesto/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tools-methodology",
+      "heading": "Strategic tools methodology",
+      "body": [
+        "The tools layer is designed to make the structure of the category visible. It is not designed to predict the future of SBSP or provide financial, legal, procurement, or policy advice.",
+        "Early tools must prioritize qualitative and source-disciplined frameworks before numerical calculators. The first priority tool is the Orbital Energy Constraint Matrix, because it can organize constraints without pretending to produce exact economic certainty.",
+        "Any future numerical tool must disclose methodology, assumptions, source ranges, limitations, versioning, and claim boundaries before publication."
+      ],
+      "links": [
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "no-prediction-rule",
+      "heading": "No-prediction rule",
+      "body": [
+        "The asset does not predict that space-based solar power will become commercially dominant, economically inevitable, or technically resolved within a specific timeframe.",
+        "It may evaluate scenarios, constraints, programs, and strategic relevance, but it must avoid unsupported certainty.",
+        "This rule is especially important for cost, launch economics, power delivery, safety, commercial readiness, and claims related to artificial intelligence energy demand or national security."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources and claim boundaries",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "no-investment-advice-rule",
+      "heading": "No investment, legal, or policy advice",
+      "body": [
+        "The asset may provide decision-support frameworks, due-diligence questions, claim classifications, and constraint maps.",
+        "It must not provide investment recommendations, financial advice, legal advice, procurement guidance, or government policy instructions.",
+        "For investors, governments, companies, and analysts, the asset should help define better questions. It should not replace professional review, technical diligence, legal counsel, policy analysis, or financial advice."
+      ],
+      "links": [
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "content-publication-method",
+      "heading": "Publication method",
+      "body": [
+        "No public page may exist only because a keyword exists. A page must define the category, clarify the framework, explain a constraint, support a strategic audience, strengthen internal linking, improve source trust, enable a tool, support multilingual authority, or serve buyer logic.",
+        "Every page must have a defined route, metadata, strategic role, audience, internal links, source notes where needed, claim boundary, and quality status.",
+        "The first public release must include enough visible depth to function as a serious reference foundation, while still preventing fake pages, placeholder routes, unsupported claims, and unreviewed localized shells."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Articles and briefs",
+          "path": "/articles/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "methodology-outcome",
+      "heading": "The outcome of this methodology",
+      "body": [
+        "The outcome is a reference asset that can scale without becoming random.",
+        "As the site expands into reference pages, tools, glossary entries, question pages, comparison pages, regional pages, articles, and multilingual editions, the methodology protects the asset from thin content, broken links, fake authority, and weak claims.",
+        "The objective is to make Space-Based-Solar-Power.com useful enough to become a public reference, disciplined enough to earn trust, and structured enough to become a strategic acquisition asset."
+      ],
+      "links": [
+        {
+          "label": "Home",
+          "path": "/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Sources",
+      "path": "/sources/",
+      "reason": "Provides the public source hierarchy and claim-boundary trust layer."
+    },
+    {
+      "label": "Framework",
+      "path": "/framework/",
+      "reason": "Defines the orbital energy infrastructure chain used by the methodology."
+    },
+    {
+      "label": "Feasibility and Constraints",
+      "path": "/feasibility-and-constraints/",
+      "reason": "Applies the methodology to the major barriers shaping SBSP maturity."
+    },
+    {
+      "label": "Tools",
+      "path": "/tools/",
+      "reason": "Introduces the strategic tools governed by this methodology."
+    },
+    {
+      "label": "Global Programs",
+      "path": "/global-programs/",
+      "reason": "Applies source and claim classification to institutional and program activity."
+    },
+    {
+      "label": "Technology Stack",
+      "path": "/technology-stack/",
+      "reason": "Connects methodology to the technical structure of SBSP."
+    },
+    {
+      "label": "Strategic Importance",
+      "path": "/strategic-importance/",
+      "reason": "Defines where strategic interpretation is useful but must remain bounded."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "nasa-otps-sbsp-2024",
+      "usage": "Used as a key institutional reference for constraint-aware evaluation and no-hype framing."
+    },
+    {
+      "sourceId": "nasa-otps-sbsp-summary-2024",
+      "usage": "Used as a public-facing institutional summary reference."
+    },
+    {
+      "sourceId": "esa-solaris-2024",
+      "usage": "Used as an example of institutional program framing that must not be confused with commercial deployment."
+    },
+    {
+      "sourceId": "jaxa-ssps-research",
+      "usage": "Used as an example of long-running institutional research lineage."
+    },
+    {
+      "sourceId": "caltech-sspd-wireless-power-2023",
+      "usage": "Used as an example of demonstration-level progress that must not be generalized into commercial-scale readiness."
+    },
+    {
+      "sourceId": "caltech-space-solar-power-project",
+      "usage": "Used as a project-level reference that requires claim-boundary discipline."
+    }
+  ],
+  "claimBoundary": "This page defines the evaluation methodology of the asset. It does not make technical, economic, investment, legal, procurement, or policy recommendations. It provides a framework for classifying sources, claims, constraints, programs, strategic interpretation, and tools.",
+  "qualityStatus": {
+    "metadataComplete": true,
+    "internalLinksDefined": true,
+    "sourceBoundaryDefined": true,
+    "placeholderFree": true,
+    "readyForTemplate": true
+  }
+}
