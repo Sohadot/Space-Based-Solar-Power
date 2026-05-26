@@ -67,3 +67,59 @@ The project will treat interface design as a strategic asset layer, not a cosmet
 **Consequences:**
 
 The project now has a controlled route and source foundation. Future build scripts must use these registries to generate navigation, source sections, sitemap entries, hreflang maps, and tool reference layers without exposing drafts, placeholders, or unsupported claims.
+
+## [S1-DL-004] - 2026-05-25: Sovereign Reference Launch v1 Approved
+
+**Status:** APPROVED
+
+**Context:** The asset is not intended to launch as a minimal landing page or technical proof. Space-Based-Solar-Power.com is being developed as a sovereign-grade, multilingual, source-disciplined, interface-driven reference asset for governments, investors, journalists, researchers, companies, engineers, analysts, and future strategic buyers.
+
+**Decision:**
+
+1. Approved `Sovereign Reference Launch v1` as the first public release direction.
+2. Rejected minimal proof launch logic limited to home/about/robots/sitemap.
+3. Required the first public release to include the core sovereign reference surfaces:
+   - `/`
+   - `/about/`
+   - `/methodology/`
+   - `/framework/`
+   - `/manifesto/`
+   - `/sources/`
+   - `/tools/`
+   - `/articles/`
+   - `robots.txt`
+   - `sitemap.xml`
+   - `static/css/main.css`
+4. Required the architecture to prepare the first reference expansion cluster across SBSP definitions, technology, constraints, strategy, programs, orbital infrastructure, wireless power transmission, rectenna infrastructure, economics, safety, AI energy demand, defense resilience, and lunar infrastructure.
+5. Confirmed that governance must enable high-quality publication and expansion, not trap the asset in documentation-only status.
+6. Confirmed that no public route may be exposed unless it is complete, internally linked, metadata-controlled, source-disciplined, and quality-gate approved.
+
+**Consequences:**
+
+The project moves toward a serious public reference launch rather than a minimal technical proof. Future work must prioritize visible authority, strong internal linking, SEO-readiness, source discipline, interface depth, and scalable expansion under strict quality control.
+
+---
+
+## [S1-DL-005] - 2026-05-25: Governed Interface Wireframe Approved
+
+**Status:** APPROVED
+
+**Context:** The project requires a first executable interface structure that translates the thesis-driven sovereign interface doctrine into a buildable layout without collapsing into a generic dark technology page, decorative sci-fi dashboard, fake telemetry system, or WebGL spectacle.
+
+**Decision:**
+
+1. Approved the `Orbital Sovereignty Control Interface` as the first executable interface wireframe direction.
+2. Defined four primary zones:
+   - Sovereign Header;
+   - Left Governed Telemetry Rail;
+   - Persistent Spatial Canvas;
+   - Orbital Energy Constraint Matrix;
+   - Governance Strip.
+3. Required all telemetry-style labels to be scenario, claim-boundary, or methodology-aware rather than fake operational data.
+4. Required canvas/WebGL to remain progressive enhancement.
+5. Required mobile layout to become a Governed Atlas Scroll rather than a forced desktop control panel.
+6. Required the first implementation to prioritize semantic content, source posture, methodology access, framework clarity, and SEO-safe structure before advanced spatial rendering.
+
+**Consequences:**
+
+Future HTML, CSS, and JavaScript implementation must follow `INTERFACE_WIREFRAME.md`, `DESIGN_SYSTEM.md`, `SPATIAL_INTERFACE_CONCEPT.md`, and `INTERFACE_THESIS.md`. No production interface may rely on fake telemetry, unsupported numerical claims, or WebGL-dependent comprehension.
