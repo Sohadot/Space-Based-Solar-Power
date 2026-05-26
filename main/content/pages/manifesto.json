@@ -1,0 +1,379 @@
+{
+  "id": "manifesto",
+  "route": "/manifesto/",
+  "language": "en",
+  "pageType": "conceptual_anchor",
+  "status": "approved_for_launch",
+  "title": "Manifesto: Moving Energy Sovereignty Above the Atmosphere",
+  "metaDescription": "The conceptual manifesto for Space-Based-Solar-Power.com: moving energy sovereignty above the atmosphere through orbital energy infrastructure, wireless power transmission, grid resilience, AI energy demand, and future space-industrial systems.",
+  "h1": "Moving Energy Sovereignty Above the Atmosphere",
+  "strategicRole": "Carries the deep conceptual story and symbolic center of gravity of the asset while preserving institutional realism and claim-boundary discipline.",
+  "primaryAudience": [
+    "journalists",
+    "investors",
+    "governments",
+    "companies",
+    "researchers",
+    "analysts",
+    "strategic buyers",
+    "general serious readers"
+  ],
+  "seoCluster": [
+    "energy sovereignty",
+    "space-based solar power future",
+    "orbital energy infrastructure",
+    "space energy geopolitics",
+    "space-based solar power strategic importance",
+    "future energy infrastructure"
+  ],
+  "hero": {
+    "eyebrow": "Conceptual Manifesto",
+    "title": "Energy sovereignty is moving above the atmosphere.",
+    "subtitle": "Space-Based-Solar-Power.com frames space-based solar power not as a decorative future technology, but as a serious infrastructure question: what happens when civilization begins to study energy collection, transmission, and strategic power beyond terrestrial geography?",
+    "thesis": "Space-Based Solar Power is the proposed transfer of energy sovereignty above the atmosphere — a future infrastructure layer connecting sunlight, orbit, wireless power transmission, terrestrial grids, artificial intelligence, defense resilience, and the next industrial geography of space."
+  },
+  "sections": [
+    {
+      "id": "not-solar-panels-in-space",
+      "heading": "This is not only a story about solar panels in space",
+      "body": [
+        "Space-based solar power is often reduced to a simple image: solar panels in orbit sending energy to Earth.",
+        "That image is useful, but it is not enough. It misses the deeper structure of the category.",
+        "The real question is not whether a solar panel can exist above the atmosphere. The real question is whether energy can become a governed orbital infrastructure layer: collected above weather and night, transmitted across the atmospheric boundary, received by terrestrial or space-based systems, and integrated into the strategic demands of grids, computation, defense, and future industry."
+      ],
+      "links": [
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        },
+        {
+          "label": "Orbital Energy Infrastructure Framework",
+          "path": "/framework/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "energy-has-always-been-geography",
+      "heading": "Energy has always been geography",
+      "body": [
+        "For centuries, energy power has been shaped by geography.",
+        "Rivers, coal basins, oil fields, gas corridors, uranium supply chains, solar belts, wind corridors, maritime chokepoints, pipelines, grids, and storage systems have all defined where energy could be produced, moved, defended, priced, and controlled.",
+        "Space-based solar power introduces a more radical possibility: the study of energy infrastructure above terrestrial geography."
+      ],
+      "links": [
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "above-weather-above-night",
+      "heading": "Above weather. Above night. Not above constraints.",
+      "body": [
+        "The promise of space-based solar power begins with continuity. An orbital collection system may avoid some limitations that define terrestrial solar generation, including weather and the day-night cycle.",
+        "But this promise does not eliminate constraints. It only moves the problem into a larger infrastructure chain.",
+        "Launch economics, orbital assembly, transmission efficiency, safety, rectenna footprint, grid integration, public legitimacy, regulation, maintenance, capital formation, and space debris all remain central barriers.",
+        "A serious manifesto must not confuse strategic imagination with operational maturity."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources and claim boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "nasa-otps-sbsp-summary-2024"
+      ]
+    },
+    {
+      "id": "sovereignty-above-atmosphere",
+      "heading": "The proposed transfer of energy sovereignty",
+      "body": [
+        "Energy sovereignty is usually discussed in terms of national resources, fuel independence, generation capacity, grid control, storage, interconnection, and strategic reserves.",
+        "Space-based solar power expands the language of sovereignty. It asks whether energy collection could become partially orbital, whether power delivery could become more flexible, whether remote or strategic demand could be supported from above, and whether the future geography of energy may include space itself.",
+        "This is why Space-Based-Solar-Power.com does not frame SBSP as a gadget. It frames it as a proposed infrastructure category."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "grid-ai-defense-space",
+      "heading": "The category connects grid, AI, defense, and space industry",
+      "body": [
+        "A narrow energy site would discuss generation alone.",
+        "A serious SBSP reference asset must discuss the systems that could make orbital power strategically meaningful: terrestrial grids, remote infrastructure, disaster response, defense resilience, artificial intelligence energy demand, satellite operations, lunar infrastructure, and future space-industrial systems.",
+        "The value of the category is not only in the energy source. It is in the network of uses, constraints, institutions, and strategic decisions that form around it."
+      ],
+      "links": [
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": [
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-sspd-wireless-power-2023"
+      ]
+    },
+    {
+      "id": "reference-before-hype",
+      "heading": "A reference layer before the hype cycle hardens",
+      "body": [
+        "Emerging technologies often pass through a period where public language becomes unstable.",
+        "Claims expand faster than evidence. Demonstrations are mistaken for deployment. Company announcements are treated as proof. Strategic possibilities are marketed as near-term certainty. Journalists need simple explanations, investors need due diligence, governments need policy context, and the public needs clarity.",
+        "Space-Based-Solar-Power.com exists to build a disciplined reference layer before the category is fully shaped by hype, weak explanations, or promotional narratives."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "the-interface-is-a-manifesto",
+      "heading": "The interface is also part of the manifesto",
+      "body": [
+        "This asset cannot be represented by a generic template.",
+        "The interface must not decorate the asset. It must embody the asset’s thesis.",
+        "For this project, the approved direction is an embodied orbital energy atlas: a visual and spatial system where the user can understand the relationship between orbital collection, power beaming, terrestrial reception, grid resilience, AI demand, defense relevance, and space-industrial extension.",
+        "The interface must be serious, accessible, mobile-safe, SEO-safe, performance-conscious, and institutionally credible. WebGL or spatial motion may only be used when it clarifies the category."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "About the asset",
+          "path": "/about/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tools-as-public-instruments",
+      "heading": "Tools as public instruments of understanding",
+      "body": [
+        "A reference asset should not only explain a category. It should help serious users reason about it.",
+        "The strategic tools layer will serve researchers, companies, journalists, investors, governments, engineers, and analysts by organizing constraints, claim boundaries, programs, use cases, readiness questions, and due-diligence frameworks.",
+        "These tools are not prediction engines. They do not replace technical, financial, legal, policy, or procurement review. Their purpose is to make the structure of the category visible."
+      ],
+      "links": [
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "multilingual-sovereignty",
+      "heading": "A multilingual asset for a global infrastructure question",
+      "body": [
+        "Space-based solar power is not a single-market topic.",
+        "It touches American, European, Japanese, Chinese, Middle Eastern, and wider global questions of energy, aerospace, industrial policy, defense, artificial intelligence, climate strategy, and infrastructure resilience.",
+        "The asset is therefore multilingual by design. English remains the institutional source layer. Arabic serves the energy-sovereignty edition. Chinese, Japanese, French, German, and Spanish are planned as strategic editions that must be built with quality, not raw translation volume."
+      ],
+      "links": [
+        {
+          "label": "About",
+          "path": "/about/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "economic-value-without-damaging-trust",
+      "heading": "Economic value without damaging trust",
+      "body": [
+        "The asset is being developed to create long-horizon strategic value, not quick low-quality revenue.",
+        "Respectful future monetization may include research briefs, intelligence products, institutional sponsorship, strategic inquiries, professional tools, or controlled lead-generation surfaces.",
+        "Monetization must reinforce authority. It must not turn the asset into a low-trust ad surface, affiliate shell, or speculative sales page."
+      ],
+      "links": [
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Articles and briefs",
+          "path": "/articles/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "category-artifact",
+      "heading": "From domain name to category artifact",
+      "body": [
+        "The domain is the beginning, not the asset.",
+        "The asset becomes valuable when the domain is connected to a thesis, framework, content architecture, source model, tools, interface doctrine, multilingual structure, SEO discipline, technical quality, measurement history, and buyer logic.",
+        "A future buyer should not see only a web address. A future buyer should see a governed category position: a digital artifact that defines, explains, and structures an emerging infrastructure field."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "manifesto-close",
+      "heading": "The thesis",
+      "body": [
+        "Space-based solar power is not only a question of technology. It is a question of how civilization may eventually organize energy beyond the atmosphere.",
+        "The field may take decades. It may change direction. It may face economic limits, political resistance, technical setbacks, safety concerns, or competing technologies.",
+        "But the question is important enough to deserve a serious reference layer now.",
+        "Space-Based-Solar-Power.com exists to build that layer."
+      ],
+      "links": [
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        },
+        {
+          "label": "Sources and claim boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Home",
+      "path": "/",
+      "reason": "Returns readers to the primary sovereign gateway."
+    },
+    {
+      "label": "Framework",
+      "path": "/framework/",
+      "reason": "Connects the manifesto to the analytical infrastructure chain."
+    },
+    {
+      "label": "Methodology",
+      "path": "/methodology/",
+      "reason": "Clarifies how conceptual framing is kept separate from unsupported claims."
+    },
+    {
+      "label": "Sources",
+      "path": "/sources/",
+      "reason": "Provides source hierarchy and claim-boundary support."
+    },
+    {
+      "label": "Feasibility and Constraints",
+      "path": "/feasibility-and-constraints/",
+      "reason": "Balances the manifesto with institutional realism."
+    },
+    {
+      "label": "Strategic Importance",
+      "path": "/strategic-importance/",
+      "reason": "Connects the conceptual thesis to energy sovereignty, AI, defense, and infrastructure."
+    },
+    {
+      "label": "Tools",
+      "path": "/tools/",
+      "reason": "Shows how the asset will become a decision-support reference system."
+    },
+    {
+      "label": "Global Programs",
+      "path": "/global-programs/",
+      "reason": "Connects the manifesto to institutional activity and research programs."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "nasa-otps-sbsp-2024",
+      "usage": "Used to balance conceptual ambition with feasibility and constraint realism."
+    },
+    {
+      "sourceId": "nasa-otps-sbsp-summary-2024",
+      "usage": "Used as a public-facing institutional summary for the need for careful SBSP assessment."
+    },
+    {
+      "sourceId": "esa-solaris-2024",
+      "usage": "Used to support the statement that major institutions are studying the field, without implying deployment."
+    },
+    {
+      "sourceId": "jaxa-ssps-research",
+      "usage": "Used to support the idea that SBSP has a long institutional research lineage."
+    },
+    {
+      "sourceId": "caltech-sspd-wireless-power-2023",
+      "usage": "Used as demonstration-level context, not proof of commercial-scale readiness."
+    }
+  ],
+  "claimBoundary": "This page is the conceptual manifesto of the asset. It uses strategic interpretation and symbolic framing, but it does not claim that space-based solar power is commercially mature, economically inevitable, technically resolved, or operationally deployed at infrastructure scale. All technical, economic, safety, and program claims must be interpreted through the methodology and source boundaries.",
+  "qualityStatus": {
+    "metadataComplete": true,
+    "internalLinksDefined": true,
+    "sourceBoundaryDefined": true,
+    "placeholderFree": true,
+    "readyForTemplate": true
+  }
+}
