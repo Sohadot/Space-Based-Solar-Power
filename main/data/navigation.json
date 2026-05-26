@@ -1,11 +1,19 @@
 {
   "asset": "space-based-solar-power.com",
+  "navigationModel": "Sovereign Reference Launch v1",
   "navigationPolicy": {
-    "rule": "Navigation must only expose approved or published routes.",
+    "rule": "Navigation must only expose approved launch routes that exist in the production build.",
     "noBrokenLinks": true,
     "noComingSoonLinks": true,
     "noDraftRoutes": true,
+    "noEmptyArticleArchive": true,
+    "noFakeTools": true,
     "languageSwitcherMustOnlyExposeAvailableVariants": true
+  },
+  "header": {
+    "brand": "SPACE-BASED-SOLAR-POWER.COM",
+    "layer": "ORBITAL ENERGY REFERENCE",
+    "mode": "Thesis-Driven Sovereign Interface"
   },
   "primary": [
     {
@@ -15,12 +23,78 @@
         "ar": "الأطلس"
       },
       "path": "/",
-      "status": "approved",
+      "status": "approved_for_launch",
       "expose": true,
-      "role": "Primary asset gateway"
+      "role": "Primary sovereign gateway"
+    },
+    {
+      "id": "about",
+      "label": {
+        "en": "About",
+        "ar": "حول الأصل"
+      },
+      "path": "/about/",
+      "status": "approved_for_launch",
+      "expose": true,
+      "role": "Trust and asset identity page"
+    },
+    {
+      "id": "methodology",
+      "label": {
+        "en": "Methodology",
+        "ar": "المنهجية"
+      },
+      "path": "/methodology/",
+      "status": "approved_for_launch",
+      "expose": true,
+      "role": "Claim, source, and evaluation methodology"
+    },
+    {
+      "id": "framework",
+      "label": {
+        "en": "Framework",
+        "ar": "الإطار"
+      },
+      "path": "/framework/",
+      "status": "approved_for_launch",
+      "expose": true,
+      "role": "Central analytical framework"
+    },
+    {
+      "id": "manifesto",
+      "label": {
+        "en": "Manifesto",
+        "ar": "البيان"
+      },
+      "path": "/manifesto/",
+      "status": "approved_for_launch",
+      "expose": true,
+      "role": "Conceptual anchor"
+    },
+    {
+      "id": "sources",
+      "label": {
+        "en": "Sources",
+        "ar": "المصادر"
+      },
+      "path": "/sources/",
+      "status": "approved_for_launch",
+      "expose": true,
+      "role": "Source and claim-boundary trust layer"
+    },
+    {
+      "id": "tools",
+      "label": {
+        "en": "Tools",
+        "ar": "الأدوات"
+      },
+      "path": "/tools/",
+      "status": "approved_for_launch",
+      "expose": true,
+      "role": "Strategic tools gateway"
     }
   ],
-  "plannedPrimary": [
+  "reference": [
     {
       "id": "what-is-sbsp",
       "label": {
@@ -28,8 +102,8 @@
         "ar": "ما هي الطاقة الشمسية الفضائية؟"
       },
       "path": "/what-is-space-based-solar-power/",
-      "status": "planned",
-      "expose": false,
+      "status": "approved_for_launch",
+      "expose": true,
       "role": "Foundational definition page"
     },
     {
@@ -39,8 +113,8 @@
         "ar": "الطبقة التقنية"
       },
       "path": "/technology-stack/",
-      "status": "planned",
-      "expose": false,
+      "status": "approved_for_launch",
+      "expose": true,
       "role": "Technical architecture page"
     },
     {
@@ -50,8 +124,8 @@
         "ar": "القيود"
       },
       "path": "/feasibility-and-constraints/",
-      "status": "planned",
-      "expose": false,
+      "status": "approved_for_launch",
+      "expose": true,
       "role": "Credibility and constraint layer"
     },
     {
@@ -61,8 +135,8 @@
         "ar": "الأهمية الاستراتيجية"
       },
       "path": "/strategic-importance/",
-      "status": "planned",
-      "expose": false,
+      "status": "approved_for_launch",
+      "expose": true,
       "role": "Geo-strategic framing page"
     },
     {
@@ -72,56 +146,141 @@
         "ar": "البرامج العالمية"
       },
       "path": "/global-programs/",
-      "status": "planned",
-      "expose": false,
+      "status": "approved_for_launch",
+      "expose": true,
       "role": "Institutional program registry"
-    },
-    {
-      "id": "tools",
-      "label": {
-        "en": "Strategic Tools",
-        "ar": "الأدوات الاستراتيجية"
-      },
-      "path": "/tools/",
-      "status": "planned",
-      "expose": false,
-      "role": "Tools gateway"
     }
   ],
   "footer": [
     {
-      "id": "asset-thesis",
+      "id": "articles",
       "label": {
-        "en": "Asset Thesis",
-        "ar": "أطروحة الأصل"
+        "en": "Articles",
+        "ar": "المقالات"
       },
-      "path": null,
-      "status": "documentation-only",
-      "expose": false,
-      "role": "Repository governance document"
+      "path": "/articles/",
+      "status": "approved_for_launch",
+      "expose": true,
+      "role": "Governed analysis gateway"
     },
     {
-      "id": "source-policy",
+      "id": "methodology",
       "label": {
-        "en": "Source Policy",
-        "ar": "سياسة المصادر"
+        "en": "Methodology",
+        "ar": "المنهجية"
       },
-      "path": null,
-      "status": "documentation-only",
-      "expose": false,
-      "role": "Repository governance document"
+      "path": "/methodology/",
+      "status": "approved_for_launch",
+      "expose": true,
+      "role": "Evaluation discipline"
+    },
+    {
+      "id": "sources",
+      "label": {
+        "en": "Sources",
+        "ar": "المصادر"
+      },
+      "path": "/sources/",
+      "status": "approved_for_launch",
+      "expose": true,
+      "role": "Source discipline"
+    },
+    {
+      "id": "framework",
+      "label": {
+        "en": "Framework",
+        "ar": "الإطار"
+      },
+      "path": "/framework/",
+      "status": "approved_for_launch",
+      "expose": true,
+      "role": "Analytical hub"
+    }
+  ],
+  "plannedExpansion": [
+    {
+      "id": "orbital-energy-infrastructure",
+      "path": "/orbital-energy-infrastructure/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "wireless-power-transmission",
+      "path": "/wireless-power-transmission/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "microwave-power-beaming",
+      "path": "/microwave-power-beaming/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "laser-power-transmission",
+      "path": "/laser-power-transmission/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "rectenna-infrastructure",
+      "path": "/rectenna-infrastructure/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "space-solar-power-satellites",
+      "path": "/space-solar-power-satellites/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "sbsp-economics",
+      "path": "/sbsp-economics/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "sbsp-safety",
+      "path": "/sbsp-safety/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "sbsp-grid-integration",
+      "path": "/sbsp-grid-integration/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "sbsp-and-ai-energy-demand",
+      "path": "/sbsp-and-ai-energy-demand/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "sbsp-and-defense-resilience",
+      "path": "/sbsp-and-defense-resilience/",
+      "status": "expansion_cluster_1",
+      "expose": false
+    },
+    {
+      "id": "sbsp-and-lunar-infrastructure",
+      "path": "/sbsp-and-lunar-infrastructure/",
+      "status": "expansion_cluster_1",
+      "expose": false
     }
   ],
   "languageSwitcher": {
-    "policy": "Only expose language variants that are approved, generated, and route-valid.",
+    "policy": "Only expose language variants that are published, reviewed, generated, and route-valid.",
     "defaultLocale": "en",
-    "availableForHome": [
+    "visible": [
       {
         "locale": "en",
         "label": "English",
         "path": "/",
         "direction": "ltr",
-        "status": "approved",
+        "status": "approved_for_launch",
         "expose": true
       }
     ],
@@ -131,7 +290,7 @@
         "label": "العربية",
         "path": "/ar/",
         "direction": "rtl",
-        "status": "planned",
+        "status": "future",
         "expose": false
       },
       {
@@ -139,7 +298,7 @@
         "label": "中文",
         "path": "/zh/",
         "direction": "ltr",
-        "status": "planned",
+        "status": "future",
         "expose": false
       },
       {
@@ -147,7 +306,7 @@
         "label": "日本語",
         "path": "/ja/",
         "direction": "ltr",
-        "status": "planned",
+        "status": "future",
         "expose": false
       },
       {
@@ -155,7 +314,7 @@
         "label": "Français",
         "path": "/fr/",
         "direction": "ltr",
-        "status": "planned",
+        "status": "future",
         "expose": false
       },
       {
@@ -163,7 +322,7 @@
         "label": "Deutsch",
         "path": "/de/",
         "direction": "ltr",
-        "status": "planned",
+        "status": "future",
         "expose": false
       },
       {
@@ -171,9 +330,15 @@
         "label": "Español",
         "path": "/es/",
         "direction": "ltr",
-        "status": "planned",
+        "status": "future",
         "expose": false
       }
     ]
+  },
+  "governanceStrip": {
+    "decisionLog": "S1-DL-004",
+    "framework": "Sovereign Reference Launch v1",
+    "interface": "Thesis-Driven Sovereign Interface",
+    "mode": "Static content primary; WebGL optional after governance approval"
   }
 }
