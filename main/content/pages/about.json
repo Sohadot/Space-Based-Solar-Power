@@ -1,0 +1,318 @@
+{
+  "id": "about",
+  "route": "/about/",
+  "language": "en",
+  "pageType": "trust_page",
+  "status": "approved_for_launch",
+  "title": "About Space-Based-Solar-Power.com",
+  "metaDescription": "About the sovereign reference asset for space-based solar power, orbital energy infrastructure, source discipline, strategic tools, multilingual authority, and acquisition-ready category positioning.",
+  "h1": "About Space-Based-Solar-Power.com",
+  "strategicRole": "Explains what the asset is, what it is not, who it serves, why it is governed, and how it is being developed into a multilingual sovereign reference asset for the SBSP category.",
+  "primaryAudience": [
+    "researchers",
+    "journalists",
+    "investors",
+    "governments",
+    "companies",
+    "engineers",
+    "analysts",
+    "strategic buyers",
+    "institutional observers"
+  ],
+  "seoCluster": [
+    "space-based solar power reference",
+    "orbital energy infrastructure",
+    "space solar power research",
+    "SBSP reference asset",
+    "space-based solar power methodology"
+  ],
+  "hero": {
+    "eyebrow": "Asset Identity",
+    "title": "A governed reference layer for orbital energy infrastructure.",
+    "subtitle": "Space-Based-Solar-Power.com is being built as a sovereign-grade, multilingual, source-disciplined reference asset for space-based solar power and the future infrastructure logic of orbital energy.",
+    "thesis": "The asset exists to make the SBSP category legible, credible, and strategically understandable for serious audiences before the field reaches commercial saturation."
+  },
+  "sections": [
+    {
+      "id": "what-this-asset-is",
+      "heading": "What this asset is",
+      "body": [
+        "Space-Based-Solar-Power.com is a strategic digital asset dedicated to Space-Based Solar Power, orbital energy infrastructure, wireless power transmission, terrestrial reception, grid resilience, artificial intelligence energy demand, defense relevance, and future space-industrial systems.",
+        "The asset is not being developed as a normal website. It is being built as a governed reference system: a structured public layer that defines concepts, maps constraints, organizes sources, supports serious audiences, and prepares the domain for long-horizon strategic value.",
+        "Its purpose is to become one of the clearest public reference points for understanding SBSP as an infrastructure category rather than a narrow technical curiosity."
+      ],
+      "links": [
+        {
+          "label": "Explore the framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Read the manifesto",
+          "path": "/manifesto/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "what-this-asset-is-not",
+      "heading": "What this asset is not",
+      "body": [
+        "This asset is not a general renewable-energy blog, a news aggregator, an affiliate shell, a speculative investment page, or a promotional hype surface.",
+        "It does not claim that space-based solar power is already commercially mature, economically inevitable, technically resolved, or superior to every terrestrial energy pathway.",
+        "It also does not treat company announcements, program statements, or conceptual demonstrations as proof of full infrastructure readiness. Every serious claim must be understood through the asset’s methodology, source hierarchy, and claim-boundary discipline."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources and claim boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "nasa-otps-sbsp-summary-2024"
+      ]
+    },
+    {
+      "id": "governing-thesis",
+      "heading": "The governing thesis",
+      "body": [
+        "The governing thesis of the asset is that Space-Based Solar Power represents the proposed transfer of energy sovereignty above the atmosphere.",
+        "That framing does not mean that SBSP is already an operational global energy system. It means the category sits at the intersection of sunlight, orbit, wireless power transmission, terrestrial grids, artificial intelligence, defense resilience, and the next industrial geography of space.",
+        "The asset’s job is to make that intersection visible without exaggerating what has been proven."
+      ],
+      "links": [
+        {
+          "label": "Manifesto",
+          "path": "/manifesto/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "who-the-asset-serves",
+      "heading": "Who the asset serves",
+      "body": [
+        "The asset is designed for serious audiences that need disciplined orientation inside a complex emerging field.",
+        "Researchers need definitions, sources, terminology, program context, and claim boundaries. Journalists need neutral explanations, common exaggerations to avoid, and source-aware framing. Investors need due-diligence questions, constraint awareness, and commercial-readiness discipline. Governments and policy observers need energy-sovereignty, grid-resilience, and infrastructure-risk framing. Companies and engineers need technology-stack clarity and system-level context.",
+        "The asset also serves future strategic buyers by accumulating category authority, multilingual architecture, source discipline, interface depth, and acquisition-ready documentation."
+      ],
+      "links": [
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "sovereign-methodology",
+      "heading": "A sovereign methodology, not a content pile",
+      "body": [
+        "The asset is being built under a sovereign asset methodology. That means content, navigation, sources, interface, SEO, tools, monetization, and future expansion are governed as parts of one strategic system.",
+        "Pages are not created because keywords exist. A page must define the category, clarify the framework, explain a constraint, serve a serious audience, strengthen internal linking, support source trust, enable a tool, improve multilingual authority, or serve buyer logic.",
+        "This approach is designed to prevent thin pages, broken links, fake authority, random SEO, unreviewed translations, unsupported claims, and disposable web design."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "interface-as-asset-layer",
+      "heading": "The interface is part of the asset",
+      "body": [
+        "The interface is not treated as decoration. It must embody the asset’s thesis.",
+        "For Space-Based-Solar-Power.com, the approved interface direction is a thesis-driven sovereign interface: a controlled spatial system that can eventually express orbital energy collection, power beaming, terrestrial reception, grid resilience, AI energy demand, defense relevance, and lunar or space-industrial extension.",
+        "Spatial motion, WebGL, Three.js, canvas rendering, and 3D effects may only be used if they clarify the category. They must not become spectacle, gaming aesthetics, or a substitute for accessible, indexable, source-disciplined content."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Manifesto",
+          "path": "/manifesto/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "multilingual-posture",
+      "heading": "Multilingual by strategy, not translation volume",
+      "body": [
+        "The asset is multilingual by design because SBSP is a global infrastructure topic touching energy, space, industry, defense, public policy, and capital formation across multiple regions.",
+        "English is the institutional source layer. Arabic is the energy-sovereignty edition. Chinese, Japanese, French, German, and Spanish are planned as future strategic editions, each with its own regional emphasis and source discipline.",
+        "Localized content must not be raw machine translation. Every language edition must preserve technical accuracy, institutional tone, metadata quality, internal-link integrity, and claim-boundary discipline."
+      ],
+      "links": [
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "reference-launch",
+      "heading": "The first public foundation",
+      "body": [
+        "The first public release is not intended to be a minimal proof page. It is intended to be a sovereign reference launch.",
+        "The launch foundation includes the home page, about page, methodology, framework, manifesto, sources, tools, articles, and the first reference cluster: what is space-based solar power, technology stack, feasibility and constraints, strategic importance, and global programs.",
+        "This structure creates visible depth from the beginning while preserving strict controls against broken links, fake pages, placeholder archives, unsupported claims, and premature localized shells."
+      ],
+      "links": [
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "asset-value",
+      "heading": "From domain name to category position",
+      "body": [
+        "The value of Space-Based-Solar-Power.com is not intended to remain limited to the domain name.",
+        "The asset is being developed through a combination of exact-match category ownership, conceptual framing, source-backed content, multilingual architecture, strategic tools, distinctive interface language, clean technical implementation, SEO discipline, monetization restraint, and future acquisition logic.",
+        "A future buyer should not see only a website. A future buyer should see a governed category position."
+      ],
+      "links": [
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Home",
+      "path": "/",
+      "reason": "Returns users to the primary sovereign gateway."
+    },
+    {
+      "label": "Methodology",
+      "path": "/methodology/",
+      "reason": "Explains how claims, sources, constraints, programs, and tools are evaluated."
+    },
+    {
+      "label": "Framework",
+      "path": "/framework/",
+      "reason": "Defines the central orbital energy infrastructure framework."
+    },
+    {
+      "label": "Manifesto",
+      "path": "/manifesto/",
+      "reason": "Carries the conceptual story of moving energy sovereignty above the atmosphere."
+    },
+    {
+      "label": "Sources",
+      "path": "/sources/",
+      "reason": "Provides source hierarchy and claim-boundary discipline."
+    },
+    {
+      "label": "Tools",
+      "path": "/tools/",
+      "reason": "Introduces the strategic tools layer."
+    },
+    {
+      "label": "What Is Space-Based Solar Power?",
+      "path": "/what-is-space-based-solar-power/",
+      "reason": "Gives users the foundational definition of the category."
+    },
+    {
+      "label": "Feasibility and Constraints",
+      "path": "/feasibility-and-constraints/",
+      "reason": "Connects asset identity to institutional realism and unresolved barriers."
+    },
+    {
+      "label": "Strategic Importance",
+      "path": "/strategic-importance/",
+      "reason": "Connects the asset to energy sovereignty, AI demand, defense resilience, and space infrastructure."
+    },
+    {
+      "label": "Global Programs",
+      "path": "/global-programs/",
+      "reason": "Shows the institutional and program context behind the field."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "nasa-otps-sbsp-2024",
+      "usage": "Used to support the asset’s no-hype posture and constraint-aware framing. The page must not use this source to claim commercial maturity."
+    },
+    {
+      "sourceId": "nasa-otps-sbsp-summary-2024",
+      "usage": "Used as a public-facing NASA summary reference for explaining why source discipline matters."
+    },
+    {
+      "sourceId": "esa-solaris-2024",
+      "usage": "Used to support institutional interest in space-based solar power without treating program interest as deployment proof."
+    },
+    {
+      "sourceId": "jaxa-ssps-research",
+      "usage": "Used to support the historical and technical lineage of SSPS as a research field."
+    }
+  ],
+  "claimBoundary": "This page defines the identity, purpose, audience, governance, and value logic of the asset. It provides strategic and institutional framing. It does not claim that SBSP is commercially mature, technically resolved, economically inevitable, or ready for operational deployment.",
+  "qualityStatus": {
+    "metadataComplete": true,
+    "internalLinksDefined": true,
+    "sourceBoundaryDefined": true,
+    "placeholderFree": true,
+    "readyForTemplate": true
+  }
+}
