@@ -123,3 +123,36 @@ The project moves toward a serious public reference launch rather than a minimal
 **Consequences:**
 
 Future HTML, CSS, and JavaScript implementation must follow `INTERFACE_WIREFRAME.md`, `DESIGN_SYSTEM.md`, `SPATIAL_INTERFACE_CONCEPT.md`, and `INTERFACE_THESIS.md`. No production interface may rely on fake telemetry, unsupported numerical claims, or WebGL-dependent comprehension.
+
+---
+
+## [S1-DL-006] - 2026-05-25: Pages and Navigation Registries Aligned with Content Map
+
+**Status:** APPROVED
+
+**Context:** `CONTENT_MAP.md` redefined the first public release as Sovereign Reference Launch v1, requiring a serious reference foundation rather than a minimal proof layer. The data registries must now match the approved content architecture.
+
+**Decision:**
+
+1. Updated `main/data/pages.json` to include all Sovereign Reference Launch v1 routes:
+   - `/`
+   - `/about/`
+   - `/methodology/`
+   - `/framework/`
+   - `/manifesto/`
+   - `/sources/`
+   - `/tools/`
+   - `/articles/`
+   - `/what-is-space-based-solar-power/`
+   - `/technology-stack/`
+   - `/feasibility-and-constraints/`
+   - `/strategic-importance/`
+   - `/global-programs/`
+2. Added first expansion cluster routes as non-public expansion entries.
+3. Updated `main/data/navigation.json` so navigation exposes only approved launch routes.
+4. Kept language variants planned but hidden until reviewed, generated, and validated.
+5. Confirmed that sitemap and navigation must not expose incomplete, draft, localized, or expansion pages until quality-gate approved.
+
+**Consequences:**
+
+The project data layer now matches the sovereign content map. Future templates, sitemap generation, navigation rendering, and internal-link logic must draw from these registries instead of hard-coded route assumptions.
