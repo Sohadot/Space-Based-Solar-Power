@@ -1,0 +1,503 @@
+{
+  "id": "articles",
+  "route": "/articles/",
+  "language": "en",
+  "pageType": "analysis_gateway",
+  "status": "approved_for_launch",
+  "title": "Articles and Briefs",
+  "metaDescription": "The governed analysis layer for Space-Based-Solar-Power.com: source briefs, constraint briefs, program briefs, policy briefs, technology briefs, market structure briefs, and claim reviews.",
+  "h1": "Articles and Briefs",
+  "strategicRole": "Introduces the governed analysis layer without creating a fake article archive, placeholder posts, or random blog behavior.",
+  "primaryAudience": [
+    "journalists",
+    "researchers",
+    "investors",
+    "governments",
+    "companies",
+    "engineers",
+    "analysts",
+    "policy observers",
+    "strategic buyers"
+  ],
+  "seoCluster": [
+    "space-based solar power articles",
+    "SBSP analysis",
+    "space solar power briefs",
+    "orbital energy analysis",
+    "space-based solar power research briefs",
+    "SBSP claim reviews",
+    "space solar power policy briefs"
+  ],
+  "hero": {
+    "eyebrow": "Governed Analysis Layer",
+    "title": "Analysis without random blogging.",
+    "subtitle": "The articles layer of Space-Based-Solar-Power.com is designed for source-disciplined briefs, constraint analysis, program interpretation, technology explanations, policy framing, and claim reviews connected to the asset’s reference framework.",
+    "thesis": "Articles must not chase the news cycle randomly. Every article must strengthen the framework, clarify a constraint, explain a source, review a claim, support a serious audience, or improve the asset’s reference authority."
+  },
+  "sections": [
+    {
+      "id": "why-articles-exist",
+      "heading": "Why the articles layer exists",
+      "body": [
+        "The articles layer exists to extend the reference system without weakening it.",
+        "Space-based solar power is a field where public claims, institutional programs, demonstrations, company announcements, technical papers, and policy narratives can easily be misunderstood. A governed analysis layer allows the asset to interpret developments without becoming a random news site.",
+        "Articles must serve the framework. They must connect back to methodology, sources, constraints, global programs, tools, and the broader orbital energy infrastructure chain."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "not-a-blog",
+      "heading": "This is not a normal blog",
+      "body": [
+        "The articles section must not behave like a generic blog, content farm, news feed, or SEO filler archive.",
+        "No article may exist only because a topic is trending. No article may be published only to capture a keyword. No article may repeat information already covered by a core reference page without adding analysis, source interpretation, or decision-useful structure.",
+        "The articles layer is a governed briefing layer. It is designed to help serious readers interpret the field, not to inflate page count."
+      ],
+      "links": [
+        {
+          "label": "Content methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "anti-fake-archive-rule",
+      "heading": "No fake archive",
+      "body": [
+        "The launch version of this page must not display fake articles, placeholder titles, fake authors, fake dates, empty cards, or coming-soon article previews.",
+        "If no articles are published yet, the page should explain the article standards, approved article categories, and publication rules rather than pretending that an archive exists.",
+        "This protects the asset from fake authority and preserves institutional trust."
+      ],
+      "links": [
+        {
+          "label": "Sources and claim boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "approved-article-types",
+      "heading": "Approved article types",
+      "body": [
+        "Only certain article types are approved for this asset.",
+        "Approved formats include source briefs, constraint briefs, program briefs, market structure briefs, policy briefs, technology briefs, and claim reviews.",
+        "Each format must serve a specific role in the reference system. It must either explain a source, clarify a technical or economic constraint, interpret institutional activity, frame a policy question, map a technology layer, review a public claim, or connect a development to the asset’s framework."
+      ],
+      "links": [
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "source-briefs",
+      "heading": "Source briefs",
+      "body": [
+        "Source briefs explain important reports, studies, institutional statements, or technical papers without overextending them.",
+        "A source brief must answer what the source says, what it does not say, what claims it can support, which claims it cannot support, and how it should be connected to the asset’s framework.",
+        "Source briefs are especially important for NASA reports, ESA program documents, JAXA research pages, academic demonstrations, and major peer-reviewed work."
+      ],
+      "links": [
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "nasa-otps-sbsp-summary-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-sspd-wireless-power-2023"
+      ]
+    },
+    {
+      "id": "constraint-briefs",
+      "heading": "Constraint briefs",
+      "body": [
+        "Constraint briefs focus on the barriers shaping SBSP maturity.",
+        "Approved topics include launch economics, orbital assembly, wireless transmission efficiency, atmospheric crossing, rectenna footprint, grid integration, regulation, safety, space debris, maintenance, public legitimacy, and capital formation.",
+        "Constraint briefs must not be pessimistic filler. Their purpose is to make the field more credible by explaining what must be solved before SBSP can become mature infrastructure."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "program-briefs",
+      "heading": "Program briefs",
+      "body": [
+        "Program briefs explain institutional and research activity without overstating deployment readiness.",
+        "A program brief may cover NASA assessment work, ESA SOLARIS, JAXA SSPS, Caltech’s Space Solar Power Project, national studies, academic demonstrations, or future public-sector research programs.",
+        "Each program brief must distinguish program interest, technical demonstration, research lineage, policy framing, and operational deployment status."
+      ],
+      "links": [
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-summary-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-space-solar-power-project"
+      ]
+    },
+    {
+      "id": "market-structure-briefs",
+      "heading": "Market structure briefs",
+      "body": [
+        "Market structure briefs explore how SBSP could relate to future energy markets, aerospace supply chains, launch economics, grid systems, AI infrastructure, defense logistics, and space-industrial demand.",
+        "These briefs must not become investment pitches. They should map categories, incentives, constraints, stakeholders, and uncertainties.",
+        "The purpose is to help investors, companies, analysts, and strategic buyers understand how the market could form, not to predict guaranteed commercial outcomes."
+      ],
+      "links": [
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "policy-briefs",
+      "heading": "Policy briefs",
+      "body": [
+        "Policy briefs explore public-sector questions connected to SBSP.",
+        "Topics may include energy sovereignty, grid resilience, safety governance, spectrum or transmission regulation, international coordination, space debris, land-use concerns, strategic infrastructure, and public legitimacy.",
+        "Policy briefs must not provide policy instructions. They should frame questions, identify constraints, and connect readers to sources and methodology."
+      ],
+      "links": [
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "technology-briefs",
+      "heading": "Technology briefs",
+      "body": [
+        "Technology briefs explain technical layers without pretending to replace engineering review.",
+        "Approved subjects include solar power satellites, orbital solar arrays, wireless power transmission, microwave power beaming, laser transmission, rectenna infrastructure, grid integration, orbital assembly, and system architecture.",
+        "Technology briefs should link upward to the technology stack and framework, sideways to related components, and backward to sources and methodology."
+      ],
+      "links": [
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "jaxa-ssps-research",
+        "caltech-sspd-wireless-power-2023"
+      ]
+    },
+    {
+      "id": "claim-reviews",
+      "heading": "Claim reviews",
+      "body": [
+        "Claim reviews examine public statements about SBSP and classify them according to the asset’s claim-boundary system.",
+        "A claim review may classify a statement as source-verified, institutional summary, technical explanation, company claim, unresolved scenario, strategic interpretation, speculative future pathway, overstated, or unsupported.",
+        "The purpose is not to attack the field. The purpose is to help readers understand what evidence is actually available."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources and claim boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Strategic tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "first-approved-article-directions",
+      "heading": "First approved article directions",
+      "body": [
+        "The first future articles should support the launch foundation rather than distract from it.",
+        "Approved initial directions include: why SBSP is a grid question, not only a space question; the difference between concept demonstration and commercial readiness; why rectenna footprint matters; how to read SBSP claims without hype; and how institutional programs should be interpreted.",
+        "These article directions are not placeholders. They are approved editorial directions that may become articles only when each has a source map, internal-link plan, metadata profile, and quality status."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "article-requirements",
+      "heading": "Article publication requirements",
+      "body": [
+        "Every article must define its route, title, meta description, primary audience, SEO cluster, source boundary, internal links, and strategic role before publication.",
+        "Every article must link to at least one parent hub, at least two related pages, one trust page, and one next-step route.",
+        "An article may not enter the sitemap until it is complete, source-disciplined, internally linked, metadata-controlled, placeholder-free, and quality-gate approved."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "articles-and-seo",
+      "heading": "How articles strengthen SEO",
+      "body": [
+        "Articles strengthen SEO only when they reinforce the reference structure.",
+        "A strong article should link to core pages, glossary terms, tools, program pages, source pages, or constraint pages. It should not become an isolated post.",
+        "The goal is not to publish frequently for the sake of frequency. The goal is to build a durable internal network of analysis that supports topical authority around space-based solar power and orbital energy infrastructure."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        },
+        {
+          "label": "Technology stack",
+          "path": "/technology-stack/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "articles-and-buyer-logic",
+      "heading": "Articles and buyer logic",
+      "body": [
+        "The articles layer also supports buyer logic.",
+        "A future strategic buyer should see that the asset is capable of producing disciplined analysis, not merely static pages.",
+        "A governed article archive can eventually show editorial depth, source trust, topical authority, and category leadership. But a fake archive would damage that value. This is why the launch page explains the standard before pretending to contain a library."
+      ],
+      "links": [
+        {
+          "label": "About the asset",
+          "path": "/about/"
+        },
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "articles-and-monetization",
+      "heading": "Articles and future monetization",
+      "body": [
+        "The articles layer can support respectful future monetization through premium briefs, research summaries, strategic intelligence products, sponsorship-aligned educational resources, or professional inquiry pathways.",
+        "This monetization must not weaken trust. It must not turn the site into a low-value ad surface or a generic lead-generation shell.",
+        "The most valuable future revenue layer is one that reinforces the asset’s reference authority."
+      ],
+      "links": [
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Methodology",
+      "path": "/methodology/",
+      "reason": "Defines how articles must evaluate sources, claims, constraints, and strategic interpretation."
+    },
+    {
+      "label": "Sources",
+      "path": "/sources/",
+      "reason": "Provides source hierarchy and claim-boundary discipline for future articles."
+    },
+    {
+      "label": "Framework",
+      "path": "/framework/",
+      "reason": "Ensures all articles map back to the orbital energy infrastructure chain."
+    },
+    {
+      "label": "Global Programs",
+      "path": "/global-programs/",
+      "reason": "Supports future program briefs and institutional analysis."
+    },
+    {
+      "label": "Feasibility and Constraints",
+      "path": "/feasibility-and-constraints/",
+      "reason": "Supports constraint briefs and no-hype analysis."
+    },
+    {
+      "label": "Technology Stack",
+      "path": "/technology-stack/",
+      "reason": "Supports technology briefs and component explanations."
+    },
+    {
+      "label": "Strategic Importance",
+      "path": "/strategic-importance/",
+      "reason": "Supports policy, market, and strategic interpretation briefs."
+    },
+    {
+      "label": "Tools",
+      "path": "/tools/",
+      "reason": "Connects articles to future claim checks, constraint matrices, and program trackers."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "nasa-otps-sbsp-2024",
+      "usage": "Approved for future source briefs and constraint briefs, especially around feasibility, cost, emissions, and system assumptions."
+    },
+    {
+      "sourceId": "nasa-otps-sbsp-summary-2024",
+      "usage": "Approved for future public-facing institutional summary briefs."
+    },
+    {
+      "sourceId": "esa-solaris-2024",
+      "usage": "Approved for future program briefs on ESA SOLARIS and European institutional framing."
+    },
+    {
+      "sourceId": "jaxa-ssps-research",
+      "usage": "Approved for future technology and program briefs related to SSPS research lineage."
+    },
+    {
+      "sourceId": "caltech-sspd-wireless-power-2023",
+      "usage": "Approved for future technology and claim-boundary briefs on demonstration-level wireless power transmission."
+    },
+    {
+      "sourceId": "caltech-space-solar-power-project",
+      "usage": "Approved for future academic project background briefs."
+    },
+    {
+      "sourceId": "joule-european-sbsp-2025",
+      "usage": "Approved for future model-focused briefs with explicit limitation statements."
+    }
+  ],
+  "claimBoundary": "This page introduces the governed analysis layer and approved article standards. It does not claim that articles already exist unless they are actually published. It must not display fake posts, fake authors, fake dates, placeholder cards, or empty archives.",
+  "qualityStatus": {
+    "metadataComplete": true,
+    "internalLinksDefined": true,
+    "sourceBoundaryDefined": true,
+    "placeholderFree": true,
+    "readyForTemplate": true
+  }
+}
