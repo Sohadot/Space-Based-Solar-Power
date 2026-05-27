@@ -57,28 +57,41 @@ def validate_required_links():
                 error(f"Page '{pid}': requiredInternalLink '{link}' not in published routes")
 
 
+def is_internal_build_link_valid(public_dir: Path, href: str) -> bool:
+    """
+    Validate internal links against the generated public/ directory.
+    Root '/' resolves to public/index.html.
+    Directory routes like '/about/' resolve to public/about/index.html.
+    File routes like '/robots.txt' resolve to public/robots.txt.
+    """
+    if not href:
+        return True
+    href = href.strip()
+    if href.startswith("#"):
+        return True
+    if href.startswith(("http://", "https://", "mailto:", "tel:")):
+        return True
+    href = href.split("#", 1)[0].split("?", 1)[0]
+    if href == "/":
+        return (public_dir / "index.html").exists()
+    clean = href.lstrip("/")
+    if href.endswith("/"):
+        return (public_dir / clean / "index.html").exists()
+    return (public_dir / clean).exists() or (public_dir / clean / "index.html").exists()
+
+
 def validate_public_html_links():
     if not PUBLIC_DIR.exists():
         return
 
-    href_pattern = re.compile(r'href="(/[^"#?]*)"')
-    published_paths = set()
-    for html_file in PUBLIC_DIR.rglob("index.html"):
-        relative = html_file.parent.relative_to(PUBLIC_DIR)
-        path = "/" + str(relative).replace("\\", "/")
-        if path == "/":
-            published_paths.add("/")
-        else:
-            published_paths.add(path + "/")
-
+    href_pattern = re.compile(r'href="(/[^"]*)"')
     for html_file in PUBLIC_DIR.rglob("index.html"):
         content = html_file.read_text(encoding="utf-8")
         for match in href_pattern.finditer(content):
             href = match.group(1)
             if href.startswith("/static"):
                 continue
-            normalized = href if href.endswith("/") else href + "/"
-            if normalized not in published_paths and href not in published_paths:
+            if not is_internal_build_link_valid(PUBLIC_DIR, href):
                 error(f"{html_file.relative_to(ROOT)}: broken link '{href}'")
 
 
