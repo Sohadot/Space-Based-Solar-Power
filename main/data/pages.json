@@ -83,7 +83,7 @@
       "changefreq": "weekly",
       "primaryAudience": ["all audiences"],
       "title": "Space-Based Solar Power",
-      "description": "A strategic reference layer for space-based solar power, orbital energy infrastructure, wireless power transmission, energy sovereignty, and future space-industrial systems.",
+      "description": "Strategic reference for space-based solar power, orbital energy infrastructure, wireless power transmission, and energy sovereignty.",
       "primarySeoCluster": ["space-based solar power", "space solar power", "orbital energy infrastructure"],
       "strategicRole": "Primary atlas gateway introducing the governing thesis, framework, methodology, source posture, tools layer, and sovereign interface direction.",
       "requiredInternalLinks": [
@@ -114,7 +114,7 @@
       "changefreq": "monthly",
       "primaryAudience": ["researchers", "journalists", "companies", "investors", "governments", "buyers"],
       "title": "About Space-Based-Solar-Power.com",
-      "description": "About the sovereign reference asset for space-based solar power, orbital energy infrastructure, source discipline, strategic tools, and multilingual category authority.",
+      "description": "About Space-Based-Solar-Power.com: sovereign reference for space-based solar power, orbital energy infrastructure, source discipline, and strategic tools.",
       "primarySeoCluster": ["space-based solar power reference", "orbital energy infrastructure"],
       "strategicRole": "Explains what the asset is, what it is not, who it serves, and why it is governed as a strategic reference layer.",
       "requiredInternalLinks": ["/", "/methodology/", "/framework/", "/manifesto/", "/sources/"],
@@ -154,7 +154,7 @@
       "changefreq": "monthly",
       "primaryAudience": ["all serious audiences"],
       "title": "Orbital Energy Infrastructure Framework",
-      "description": "A framework for understanding space-based solar power as an infrastructure chain connecting orbit, power beaming, rectennas, grids, AI demand, defense resilience, and space-industrial systems.",
+      "description": "The analytical framework connecting space-based solar power, orbital collection, power beaming, rectennas, grid integration, and strategic resilience.",
       "primarySeoCluster": ["orbital energy infrastructure", "space energy infrastructure", "space-based solar power framework"],
       "strategicRole": "Central analytical map of the asset and main internal-link hub.",
       "requiredInternalLinks": [
@@ -282,7 +282,7 @@
       "changefreq": "monthly",
       "primaryAudience": ["engineers", "companies", "researchers", "investors", "journalists"],
       "title": "Technology Stack",
-      "description": "The technology stack behind space-based solar power, including orbital solar arrays, wireless power transmission, rectennas, launch economics, and grid integration.",
+      "description": "The technology stack behind space-based solar power: orbital arrays, wireless power transmission, rectennas, launch economics, and grid integration.",
       "primarySeoCluster": ["space-based solar power technology", "solar power satellite technology", "wireless power transmission from space"],
       "strategicRole": "Maps the technical layers of SBSP.",
       "requiredInternalLinks": ["/framework/", "/what-is-space-based-solar-power/", "/feasibility-and-constraints/", "/global-programs/", "/sources/"],
@@ -361,7 +361,7 @@
       "priority": 0.8,
       "changefreq": "monthly",
       "title": "Orbital Energy Infrastructure",
-      "description": "A reference page on orbital energy infrastructure as the broader category connecting space-based solar power, wireless power transmission, terrestrial grids, and space-industrial systems.",
+      "description": "Reference on orbital energy infrastructure: the broader category connecting space-based solar power, wireless transmission, grids, and space-industrial systems.",
       "strategicRole": "Deepens the framework beyond exact-match SBSP.",
       "requiredInternalLinks": ["/framework/", "/technology-stack/", "/strategic-importance/", "/sources/"]
     },
@@ -565,7 +565,7 @@
       "priority": 0.75,
       "changefreq": "monthly",
       "title": "Orbital Energy Constraint Matrix",
-      "description": "A strategic constraint matrix for understanding launch economics, transmission pathways, receiving footprint, grid integration, safety, regulation, and claim boundaries in space-based solar power.",
+      "description": "Constraint matrix for space-based solar power: launch economics, transmission pathways, receiving footprint, grid integration, safety, and claim boundaries.",
       "strategicRole": "First approved tool page after foundation launch.",
       "requiredInternalLinks": ["/tools/", "/feasibility-and-constraints/", "/methodology/", "/sources/"],
       "sourceBoundary": "No unsupported numerical predictions. Qualitative constraint classification only unless methodology is approved."
@@ -634,7 +634,7 @@
       "priority": 0.65,
       "changefreq": "monthly",
       "title": "Space-Based Solar Power vs Terrestrial Solar",
-      "description": "A disciplined comparison of space-based solar power and terrestrial solar across intermittency, infrastructure, maturity, cost logic, land use, and deployment constraints.",
+      "description": "Disciplined comparison of space-based solar power and terrestrial solar across intermittency, infrastructure, cost, land use, and deployment constraints.",
       "strategicRole": "Comparison-intent SEO page supporting practical evaluation.",
       "requiredInternalLinks": ["/what-is-space-based-solar-power/", "/feasibility-and-constraints/", "/technology-stack/", "/sources/"]
     }

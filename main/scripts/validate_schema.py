@@ -53,7 +53,9 @@ def validate_pages_json():
         pid = p.get("id", "<no-id>")
 
         for field in PAGE_REQUIRED_FIELDS:
-            if field not in p or p[field] is None or p[field] == "":
+            val = p.get(field)
+            # slug is allowed to be empty string (root page has slug "")
+            if val is None or (val == "" and field != "slug"):
                 error(f"pages.json page '{pid}': missing required field '{field}'")
 
         if p.get("status") and p["status"] not in APPROVED_STATUSES:
@@ -92,7 +94,8 @@ def validate_glossary_terms():
     if not data:
         return
     REQUIRED = ["id", "term", "slug", "path", "domain", "definition", "status"]
-    for term in data.get("terms", []):
+    terms = data if isinstance(data, list) else data.get("terms", [])
+    for term in terms:
         tid = term.get("id", "<no-id>")
         for field in REQUIRED:
             if not term.get(field):
@@ -109,7 +112,8 @@ def validate_question_bank():
     if not data:
         return
     REQUIRED = ["id", "question", "slug", "path", "category", "answer", "status"]
-    for q in data.get("questions", []):
+    questions = data if isinstance(data, list) else data.get("questions", [])
+    for q in questions:
         qid = q.get("id", "<no-id>")
         for field in REQUIRED:
             if not q.get(field):
@@ -125,10 +129,15 @@ def validate_program_registry():
     data = load_json(path)
     if not data:
         return
-    VALID_STATUSES = {"active", "concluded", "announced", "research_phase",
-                     "demonstration_phase", "commercial_phase"}
+    VALID_STATUSES = {
+        "active", "concluded", "announced", "research_phase",
+        "demonstration_phase", "commercial_phase",
+        "active_study", "active_research", "active_research_and_demonstration",
+        "active_development", "historically_significant_active",
+    }
     REQUIRED = ["id", "programName", "institution", "country", "status", "description"]
-    for prog in data.get("programs", []):
+    programs = data if isinstance(data, list) else data.get("programs", [])
+    for prog in programs:
         pid = prog.get("id", "<no-id>")
         for field in REQUIRED:
             if not prog.get(field):
