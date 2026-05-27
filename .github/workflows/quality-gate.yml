@@ -1,0 +1,68 @@
+name: Sovereign Quality Gate
+
+on:
+  push:
+    branches:
+      - main
+      - 'claude/**'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  quality-gate:
+    name: Sovereign Quality Gate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate Schema
+        run: python main/scripts/validate_schema.py
+
+      - name: Validate Content
+        run: python main/scripts/validate_content.py
+
+      - name: Validate Links (pre-build)
+        run: python main/scripts/validate_links.py
+
+      - name: Validate Sources
+        run: python main/scripts/validate_sources.py
+
+      - name: Validate Claims
+        run: python main/scripts/validate_claims.py
+
+      - name: Validate SEO (pre-build)
+        run: python main/scripts/validate_seo.py
+
+      - name: Run Build
+        run: python main/scripts/build.py
+
+      - name: Validate Sitemap (post-build)
+        run: python main/scripts/validate_sitemap.py
+
+      - name: Validate SEO (post-build)
+        run: python main/scripts/validate_seo.py
+
+      - name: Validate Links (post-build)
+        run: python main/scripts/validate_links.py
+
+      - name: Validate Internal Link Graph
+        run: python main/scripts/validate_internal_link_graph.py
+
+      - name: Quality Gate Final Check
+        run: python main/scripts/quality_gate.py
+
+      - name: Upload build artifacts
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-build
+          path: public/
+          retention-days: 7
