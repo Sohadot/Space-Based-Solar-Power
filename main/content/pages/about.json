@@ -59,7 +59,7 @@
       "body": [
         "This asset is not a general renewable-energy blog, a news aggregator, an affiliate shell, a speculative investment page, or a promotional hype surface.",
         "It does not claim that space-based solar power is already commercially mature, economically inevitable, technically resolved, or superior to every terrestrial energy pathway.",
-        "It also does not treat company announcements, program statements, or conceptual demonstrations as proof of full infrastructure readiness. Every serious claim must be understood through the asset’s methodology, source hierarchy, and claim-boundary discipline."
+        "It also does not treat company announcements, program statements, or conceptual demonstrations as proof of full infrastructure readiness. Every serious claim must be understood through the asset's methodology, source hierarchy, and claim-boundary discipline."
       ],
       "links": [
         {
@@ -86,7 +86,7 @@
       "body": [
         "The governing thesis of the asset is that Space-Based Solar Power represents the proposed transfer of energy sovereignty above the atmosphere.",
         "That framing does not mean that SBSP is already an operational global energy system. It means the category sits at the intersection of sunlight, orbit, wireless power transmission, terrestrial grids, artificial intelligence, defense resilience, and the next industrial geography of space.",
-        "The asset’s job is to make that intersection visible without exaggerating what has been proven."
+        "The asset's job is to make that intersection visible while separating documented evidence, strategic interpretation, unresolved scenarios, and speculative future pathways."
       ],
       "links": [
         {
@@ -152,7 +152,7 @@
       "id": "interface-as-asset-layer",
       "heading": "The interface is part of the asset",
       "body": [
-        "The interface is not treated as decoration. It must embody the asset’s thesis.",
+        "The interface is not treated as decoration. It must embody the asset's thesis.",
         "For Space-Based-Solar-Power.com, the approved interface direction is a thesis-driven sovereign interface: a controlled spatial system that can eventually express orbital energy collection, power beaming, terrestrial reception, grid resilience, AI energy demand, defense relevance, and lunar or space-industrial extension.",
         "Spatial motion, WebGL, Three.js, canvas rendering, and 3D effects may only be used if they clarify the category. They must not become spectacle, gaming aesthetics, or a substitute for accessible, indexable, source-disciplined content."
       ],
@@ -292,7 +292,7 @@
   "sourceNotes": [
     {
       "sourceId": "nasa-otps-sbsp-2024",
-      "usage": "Used to support the asset’s no-hype posture and constraint-aware framing. The page must not use this source to claim commercial maturity."
+      "usage": "Used to support the asset's no-hype posture and constraint-aware framing. The page must not use this source to claim commercial maturity."
     },
     {
       "sourceId": "nasa-otps-sbsp-summary-2024",
