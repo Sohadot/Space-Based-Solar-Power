@@ -9,24 +9,220 @@
   <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body>
-  <header>
-    <nav aria-label="Primary navigation">
-      <a href="/">Space-Based Solar Power</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="home-link" href="/">Space-Based Solar Power</a>
     </nav>
   </header>
-  <main>
+  <main class="page-container">
     <h1>Technology Stack</h1>
-    <div class="page-body"></div>
-    <nav aria-label="Related pages">
-      <ul>
-        <li><a href="/framework/">/framework/</a></li>
-        <li><a href="/what-is-space-based-solar-power/">/what-is-space-based-solar-power/</a></li>
-        <li><a href="/feasibility-and-constraints/">/feasibility-and-constraints/</a></li>
-        <li><a href="/global-programs/">/global-programs/</a></li>
-        <li><a href="/sources/">/sources/</a></li>
-        <li><a href="/methodology/">/methodology/</a></li>
-      </ul>
-    </nav>
+    <div class="hero">
+  <p class="hero-eyebrow">Technical Reference Layer</p>
+  <p class="hero-title">Space-based solar power is a stack of interdependent systems.</p>
+  <p class="hero-subtitle">The SBSP technology stack connects orbital solar collection, power conversion, wireless transmission, atmospheric passage, receiving infrastructure, grid integration, operations, and governance into one infrastructure chain.</p>
+  <blockquote class="hero-thesis">No single component makes SBSP real. The technology only becomes meaningful when the full stack can operate together under technical, economic, safety, regulatory, and infrastructure constraints.</blockquote>
+</div>
+    <section class="page-section">
+  <h2>Why the technology stack matters</h2>
+  <p>Space-based solar power is often described as a simple system: collect sunlight in space and send energy to Earth.</p>
+  <p>That simplification hides the real technical challenge. SBSP requires an interdependent stack of orbital platforms, energy conversion systems, wireless transmission architectures, receiving infrastructure, grid integration, operational control, launch economics, maintenance logic, safety governance, and regulatory legitimacy.</p>
+  <p>The purpose of this page is to map the stack clearly without implying that the full system is already commercially mature.</p>
+  <div class="section-links">
+    <a href="/framework/">Orbital Energy Infrastructure Framework</a>
+    <a href="/feasibility-and-constraints/">Feasibility and Constraints</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>The SBSP technology stack</h2>
+  <p>The technical stack can be understood as a chain of required system layers.</p>
+  <p>The chain begins with orbital solar collection and continues through power conversion, beam formation, wireless transmission, atmospheric crossing, ground or space-based reception, power conditioning, grid or mission integration, monitoring, maintenance, and governance.</p>
+  <p>Each layer creates its own technical questions. A strong orbital array does not solve transmission. A successful transmission demonstration does not solve rectenna deployment. A receiving system does not solve grid integration. A concept is only as mature as the full chain that supports it.</p>
+  <div class="section-links">
+    <a href="/what-is-space-based-solar-power/">What is space-based solar power?</a>
+    <a href="/sources/">Sources and Claim Boundaries</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Orbital solar arrays</h2>
+  <p>Orbital solar arrays are the collection layer of an SBSP system.</p>
+  <p>They would need to capture solar energy in space, maintain orientation, withstand the orbital environment, manage degradation, and operate at a scale that is meaningful for power delivery.</p>
+  <p>This layer raises questions about system mass, modularity, deployment method, structural stability, thermal behavior, radiation exposure, long-term durability, and maintenance.</p>
+  <div class="section-links">
+    <a href="/framework/">Framework</a>
+    <a href="/global-programs/">Global Programs</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Solar power satellites and orbital platforms</h2>
+  <p>A solar power satellite is usually described as an orbital platform designed to collect solar energy and support power transmission.</p>
+  <p>In practice, the platform must operate as a large integrated system. It may include collection surfaces, structural trusses, power management systems, transmission equipment, control systems, thermal systems, communications, and station-keeping logic.</p>
+  <p>The platform is not merely a satellite in the conventional communications sense. It is closer to an orbital energy facility, and that distinction is important for understanding system scale and feasibility.</p>
+  <div class="section-links">
+    <a href="/what-is-space-based-solar-power/">What is space-based solar power?</a>
+    <a href="/feasibility-and-constraints/">Feasibility and Constraints</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Power conversion and onboard electrical architecture</h2>
+  <p>Collected solar energy must be converted, conditioned, and managed before it can be transmitted or used.</p>
+  <p>This layer includes onboard electrical architecture, power electronics, conversion efficiency, thermal management, energy routing, fault handling, and system-level control.</p>
+  <p>Conversion losses and thermal constraints matter because SBSP concepts often depend on large-scale power flows. Small assumptions at the component level can become major feasibility factors at infrastructure scale.</p>
+  <div class="section-links">
+    <a href="/framework/">Framework</a>
+    <a href="/sources/">Sources</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Beam formation and transmission control</h2>
+  <p>Wireless power transmission requires more than generating energy. The system must form, direct, control, and monitor a transmission pathway.</p>
+  <p>Depending on the concept, this may involve microwave beam formation, laser transmission, phased arrays, targeting systems, safety controls, feedback systems, and coordination between the orbital platform and receiving infrastructure.</p>
+  <p>Transmission control is one of the most important trust layers in SBSP because it affects safety, public legitimacy, regulation, and infrastructure reliability.</p>
+  <div class="section-links">
+    <a href="/feasibility-and-constraints/">Feasibility and Constraints</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Microwave power beaming</h2>
+  <p>Microwave power beaming is one proposed pathway for transmitting energy from a space-based system to a receiving infrastructure layer.</p>
+  <p>Microwave concepts are often associated with rectenna reception, beam control, large receiving footprints, safety rules, and regulatory considerations.</p>
+  <p>A microwave pathway may be conceptually attractive for some SBSP architectures, but it must be evaluated through efficiency, beam spread, atmospheric behavior, receiver design, safety governance, and public acceptance.</p>
+  <div class="section-links">
+    <a href="/sources/">Sources</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Laser power transmission</h2>
+  <p>Laser power transmission is another proposed pathway for wireless energy transfer.</p>
+  <p>Laser-based concepts may differ from microwave concepts in beam characteristics, receiver design, atmospheric sensitivity, safety requirements, pointing precision, and application suitability.</p>
+  <p>This asset does not treat microwave or laser pathways as automatically superior. Each transmission pathway must be evaluated against its intended use case, constraints, safety profile, and maturity.</p>
+  <div class="section-links">
+    <a href="/feasibility-and-constraints/">Feasibility and Constraints</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Atmospheric crossing</h2>
+  <p>For space-to-Earth power delivery, the transmission pathway must cross the atmosphere.</p>
+  <p>Atmospheric crossing introduces questions about attenuation, weather, beam stability, safety margins, targeting, aviation and spectrum concerns, public legitimacy, and regulatory acceptance.</p>
+  <p>This layer is one reason SBSP must be understood as a space system and a public infrastructure system at the same time.</p>
+  <div class="section-links">
+    <a href="/feasibility-and-constraints/">Feasibility and Constraints</a>
+    <a href="/sources/">Sources</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Receiving infrastructure</h2>
+  <p>Receiving infrastructure is the layer where transmitted energy is captured and converted into usable electricity.</p>
+  <p>For microwave SBSP concepts, receiving infrastructure is often discussed through rectennas. The receiver is not a minor accessory. It is a major infrastructure element with footprint, siting, grid connection, safety, maintenance, and public-acceptance implications.</p>
+  <p>The receiving layer is where the orbital concept becomes physically connected to Earth-side infrastructure.</p>
+  <div class="section-links">
+    <a href="/framework/">Framework</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Rectenna systems</h2>
+  <p>A rectenna is a receiving antenna system associated with converting electromagnetic energy into electrical power.</p>
+  <p>In the SBSP context, rectenna systems are often discussed as large-scale receiving fields for microwave transmission concepts.</p>
+  <p>Rectenna infrastructure must be evaluated as both a technical system and an infrastructure footprint. Land use, safety zones, grid proximity, maintenance, public trust, and regulatory review all matter.</p>
+  <div class="section-links">
+    <a href="/what-is-space-based-solar-power/">What is space-based solar power?</a>
+    <a href="/feasibility-and-constraints/">Feasibility and Constraints</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Grid connection and power conditioning</h2>
+  <p>After reception, energy must be conditioned, controlled, and integrated into a usable system.</p>
+  <p>For terrestrial use, this means connection to grids, microgrids, industrial loads, remote infrastructure, emergency systems, or specialized high-demand facilities.</p>
+  <p>Grid integration affects whether SBSP is treated as a general power source, a strategic resilience layer, a remote power option, or a specialized infrastructure capability.</p>
+  <div class="section-links">
+    <a href="/strategic-importance/">Strategic Importance</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Launch, deployment, and orbital assembly</h2>
+  <p>The technology stack depends heavily on launch and deployment.</p>
+  <p>Large SBSP systems may require substantial mass to orbit, modular deployment, in-space assembly, robotic operations, maintenance access, and long-term orbital management.</p>
+  <p>Launch economics are therefore not a secondary issue. They shape the feasibility of the entire stack.</p>
+  <div class="section-links">
+    <a href="/feasibility-and-constraints/">Feasibility and Constraints</a>
+    <a href="/sources/">Sources</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Operations and maintenance</h2>
+  <p>A mature SBSP system would need long-term operations and maintenance.</p>
+  <p>Operational questions include platform health monitoring, fault detection, orbital adjustments, degradation management, beam control, cybersecurity, safety systems, debris avoidance, and repair or replacement strategy.</p>
+  <p>These requirements mean that SBSP should not be evaluated only as a construction problem. It is also an operations problem.</p>
+  <div class="section-links">
+    <a href="/feasibility-and-constraints/">Feasibility and Constraints</a>
+    <a href="/methodology/">Methodology</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Software, monitoring, and control systems</h2>
+  <p>The technology stack also includes software and control infrastructure.</p>
+  <p>A space-based power system would require monitoring, coordination, targeting, fault response, safety logic, telemetry, model validation, grid coordination, and operational governance.</p>
+  <p>For this reason, the asset’s own interface must avoid fake telemetry. It may represent scenarios and system layers, but it must not imply that it controls or reports from a real operational SBSP system.</p>
+  <div class="section-links">
+    <a href="/methodology/">Methodology</a>
+    <a href="/framework/">Framework</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>Safety, regulation, and governance</h2>
+  <p>The SBSP technology stack cannot be separated from safety and governance.</p>
+  <p>Transmission pathways, receiving systems, orbital operations, grid integration, public exposure, land use, aviation, spectrum, space debris, and international coordination may all create regulatory or legitimacy questions.</p>
+  <p>A technically plausible system still needs governance before it can become trusted infrastructure.</p>
+  <div class="section-links">
+    <a href="/sources/">Sources and Claim Boundaries</a>
+    <a href="/feasibility-and-constraints/">Feasibility and Constraints</a>
+    <a href="/strategic-importance/">Strategic Importance</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>System maturity depends on the full stack</h2>
+  <p>SBSP maturity cannot be evaluated through one component alone.</p>
+  <p>A strong orbital collection concept does not prove transmission maturity. A successful transmission demonstration does not prove grid-scale economics. A program study does not prove commercial deployment. A cost assumption does not prove affordability.</p>
+  <p>This is why Space-Based-Solar-Power.com evaluates the stack as a system of dependencies.</p>
+  <div class="section-links">
+    <a href="/methodology/">Methodology</a>
+    <a href="/tools/">Tools</a>
+    <a href="/global-programs/">Global Programs</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>How this stack supports future tools</h2>
+  <p>The technology stack will become the foundation for future tools.</p>
+  <p>The Orbital Energy Constraint Matrix can map constraints across launch, orbital construction, transmission, receiving footprint, grid connection, safety, and governance. The Claim Boundary Checker can classify statements about each technical layer. The Use-Case Fit Evaluator can connect applications to stack requirements.</p>
+  <p>Tools must remain source-aware and methodology-aware. They must not compress a complex stack into misleading certainty.</p>
+  <div class="section-links">
+    <a href="/tools/">Strategic Tools</a>
+    <a href="/sources/">Sources</a>
+  </div>
+</section>
+<section class="page-section">
+  <h2>The technical meaning of SBSP</h2>
+  <p>The technical meaning of SBSP is not captured by the phrase solar panels in space.</p>
+  <p>It is a stack of orbital, electrical, transmission, receiving, terrestrial, operational, safety, and governance layers.</p>
+  <p>Understanding that stack is the first step toward evaluating the field seriously.</p>
+  <div class="section-links">
+    <a href="/feasibility-and-constraints/">Feasibility and Constraints</a>
+    <a href="/strategic-importance/">Strategic Importance</a>
+    <a href="/global-programs/">Global Programs</a>
+  </div>
+</section>
+  <nav class="ref-nav" aria-label="Explore">
+    <p class="ref-nav-label">Explore</p>
+    <ul>
+      <li><a href="/framework/">Framework</a></li>
+      <li><a href="/what-is-space-based-solar-power/">What Is Space-Based Solar Power?</a></li>
+      <li><a href="/feasibility-and-constraints/">Feasibility and Constraints</a></li>
+      <li><a href="/sources/">Sources</a></li>
+      <li><a href="/methodology/">Methodology</a></li>
+      <li><a href="/global-programs/">Global Programs</a></li>
+      <li><a href="/strategic-importance/">Strategic Importance</a></li>
+      <li><a href="/tools/">Tools</a></li>
+    </ul>
+  </nav>
   </main>
 </body>
 </html>
