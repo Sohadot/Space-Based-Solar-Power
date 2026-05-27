@@ -1,10 +1,8 @@
 {
   "version": "1.0.0",
-  "description": "Publication Trial v1A — controlled first generated publication set under the Sovereign Generation Engine.",
-  "trial_id": "v1a",
-  "date": "2026-05-27",
-  "purpose": "Controlled proof that the Sovereign Generation Engine produces real generated pages that pass schema, content, source, claim-boundary, SEO, sitemap, link, and internal-link graph validation at a small but meaningful scale.",
-  "glossary": [
+  "phase": "publication_trial_v1a",
+  "description": "Controlled first publication trial for the Sovereign Generation Engine v1. Generates 23 content pages + 3 hub pages from seed data through the full validator stack.",
+  "glossaryTerms": [
     "space-based-solar-power",
     "solar-power-satellite",
     "wireless-power-transmission",
@@ -12,69 +10,34 @@
     "laser-power-transmission",
     "rectenna",
     "geostationary-orbit",
-    "orbital-assembly",
+    "launch-economics",
     "energy-sovereignty",
-    "grid-resilience"
+    "technology-readiness-level"
   ],
   "questions": [
     "what-is-space-based-solar-power",
     "how-does-space-based-solar-power-work",
-    "what-is-trl-sbsp",
-    "what-is-sbsp-safety",
-    "what-is-rectenna-footprint-question",
     "why-is-sbsp-not-commercially-deployed",
     "what-are-the-main-sbsp-constraints",
-    "which-countries-research-sbsp"
+    "what-is-a-rectenna",
+    "what-is-microwave-vs-laser-beaming",
+    "which-countries-research-sbsp",
+    "what-is-esa-solaris"
   ],
   "programs": [
-    "nasa-space-solar-power-revisit",
     "esa-solaris",
     "jaxa-ssps",
+    "nasa-space-solar-power-revisit",
     "caltech-sspp",
     "uk-space-energy-initiative"
   ],
-  "substitutions": [
-    {
-      "type": "question",
-      "requested": "is-space-based-solar-power-possible",
-      "substituted": "what-is-trl-sbsp",
-      "reason": "No question with ID 'is-space-based-solar-power-possible' exists in question_bank.json. 'what-is-trl-sbsp' covers SBSP technical feasibility and readiness with full answerBoundary."
-    },
-    {
-      "type": "question",
-      "requested": "how-large-would-a-rectenna-be",
-      "substituted": "what-is-rectenna-footprint-question",
-      "reason": "No question with that ID exists. 'what-is-rectenna-footprint-question' (slug: how-large-rectenna-for-sbsp) is the existing equivalent covering rectenna size requirements."
-    },
-    {
-      "type": "question",
-      "requested": "why-is-sbsp-not-commercial-yet",
-      "substituted": "why-is-sbsp-not-commercially-deployed",
-      "reason": "Exact ID not found. 'why-is-sbsp-not-commercially-deployed' is the existing equivalent with full answerBoundary."
-    },
-    {
-      "type": "question",
-      "requested": "who-is-working-on-space-based-solar-power",
-      "substituted": "which-countries-research-sbsp",
-      "reason": "No question with that ID exists. 'which-countries-research-sbsp' is the strongest existing equivalent covering all major SBSP research programs."
-    },
-    {
-      "type": "program",
-      "requested": "nasa-space-based-solar-power",
-      "substituted": "nasa-space-solar-power-revisit",
-      "reason": "Actual ID in program_registry.json is 'nasa-space-solar-power-revisit'. Covers NASA 1979 Reference Study and modern assessments with full claimBoundary and sourceRef."
-    },
-    {
-      "type": "program",
-      "requested": "caltech-space-solar-power-project",
-      "substituted": "caltech-sspp",
-      "reason": "Actual ID in program_registry.json is 'caltech-sspp'. Covers the Caltech Space Solar Power Project including MAPLE orbital demonstration with full claimBoundary and sourceRef."
-    },
-    {
-      "type": "program",
-      "requested": "uk-space-based-solar-power",
-      "substituted": "uk-space-energy-initiative",
-      "reason": "No program with ID 'uk-space-based-solar-power' exists. 'uk-space-energy-initiative' has strong sourceRef (frazer-nash-2021-sbsp-study, uk-government-energy-strategy) and explicit claimBoundary. Selected over 'china-sbsp-programme' because source boundary is clearer and consistently verifiable from open sources."
-    }
-  ]
+  "hubs": [
+    "/glossary/",
+    "/questions/",
+    "/programs/"
+  ],
+  "substitutions": [],
+  "totalContentPages": 23,
+  "totalHubPages": 3,
+  "totalPages": 26
 }
