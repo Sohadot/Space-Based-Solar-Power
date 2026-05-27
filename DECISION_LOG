@@ -200,6 +200,30 @@ Next phase is `Sovereign Expansion Seed Pack v1A`: 30 glossary terms, 25 questio
 
 ---
 
+## [S1-DL-012] - 2026-05-27: Generated Public Output Temporarily Tracked for Auditability
+
+**Status:** APPROVED
+
+**Context:** Publication Trial v1A generated public output from the Sovereign Generation Engine. The repository currently tracks the generated `public/` directory so the generated HTML, sitemap, robots.txt, and static assets can be reviewed directly during early publication trials.
+
+**Decision:**
+
+1. Keep generated `public/` output tracked during early publication trials.
+2. Treat `public/` as auditable generated output, not as the source of truth.
+3. Confirm that the source of truth remains:
+   - governance documents;
+   - `main/data/`;
+   - `main/content/`;
+   - `main/templates/`;
+   - `main/scripts/`.
+4. Reassess whether `public/` should remain tracked once GitHub Pages deployment is fully automated via GitHub Actions.
+
+**Consequences:**
+
+Generated output can be reviewed directly in GitHub during early validation. Future workflow decisions may move `public/` to build artifacts only, without tracking in the repository, once the deployment pipeline no longer requires reviewed committed output.
+
+---
+
 ## [S1-DL-011] - 2026-05-27: Publication Trial v1A Completed
 
 **Status:** APPROVED

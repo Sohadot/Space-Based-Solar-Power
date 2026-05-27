@@ -451,6 +451,9 @@ def main():
     write_robots(sitemap_ref)
     print(f"  [ROBOTS] robots.txt")
 
+    (PUBLIC_DIR / ".nojekyll").write_text("", encoding="utf-8")
+    print(f"  [NOJEKYLL] .nojekyll")
+
     print("\nBuild complete.")
     print(f"Generated: {len(generated)} pages")
     print(f"Sitemap URLs: {len(all_sitemap_urls)}")
