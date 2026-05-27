@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "phase": "publication_trial_v1a",
+  "description": "Controlled first publication trial for the Sovereign Generation Engine v1. Generates 23 content pages + 3 hub pages from seed data through the full validator stack.",
+  "glossaryTerms": [
+    "space-based-solar-power",
+    "solar-power-satellite",
+    "wireless-power-transmission",
+    "microwave-power-beaming",
+    "laser-power-transmission",
+    "rectenna",
+    "geostationary-orbit",
+    "launch-economics",
+    "energy-sovereignty",
+    "technology-readiness-level"
+  ],
+  "questions": [
+    "what-is-space-based-solar-power",
+    "how-does-space-based-solar-power-work",
+    "why-is-sbsp-not-commercially-deployed",
+    "what-are-the-main-sbsp-constraints",
+    "what-is-a-rectenna",
+    "what-is-microwave-vs-laser-beaming",
+    "which-countries-research-sbsp",
+    "what-is-esa-solaris"
+  ],
+  "programs": [
+    "esa-solaris",
+    "jaxa-ssps",
+    "nasa-space-solar-power-revisit",
+    "caltech-sspp",
+    "uk-space-energy-initiative"
+  ],
+  "hubs": [
+    "/glossary/",
+    "/questions/",
+    "/programs/"
+  ],
+  "substitutions": [],
+  "totalContentPages": 23,
+  "totalHubPages": 3,
+  "totalPages": 26
+}

@@ -36,24 +36,70 @@ def approved_pages(pages_data: dict) -> list:
     ]
 
 
-def generate_html(page: dict, content: dict | None) -> str:
+def load_seed_data() -> dict:
+    """Load all seed data files keyed by ID for fast lookup."""
+    seed = {"glossary": {}, "questions": {}, "programs": {}}
+
+    glossary_path = DATA_DIR / "glossary_terms.json"
+    if glossary_path.exists():
+        data = load_json(glossary_path)
+        terms = data if isinstance(data, list) else data.get("terms", [])
+        for t in terms:
+            seed["glossary"][t["id"]] = t
+
+    questions_path = DATA_DIR / "question_bank.json"
+    if questions_path.exists():
+        data = load_json(questions_path)
+        questions = data if isinstance(data, list) else data.get("questions", [])
+        for q in questions:
+            seed["questions"][q["id"]] = q
+
+    programs_path = DATA_DIR / "program_registry.json"
+    if programs_path.exists():
+        data = load_json(programs_path)
+        programs = data if isinstance(data, list) else data.get("programs", [])
+        for p in programs:
+            seed["programs"][p["id"]] = p
+
+    return seed
+
+
+def load_trial_manifest() -> dict | None:
+    path = DATA_DIR / "publication_trial_v1a.json"
+    if path.exists():
+        return load_json(path)
+    return None
+
+
+def _escape_html(text: str) -> str:
+    return (
+        text.replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace('"', "&quot;")
+    )
+
+
+def _build_nav_links(links: list) -> str:
+    parts = []
+    for link in links:
+        parts.append(f'        <li><a href="{link}">{link}</a></li>')
+    return "\n".join(parts)
+
+
+def _page_shell(page: dict, h1: str, body: str) -> str:
     title = page.get("title", "")
     description = page.get("description", "")
     path = page.get("path", "/")
     canonical = f"{DOMAIN}{path}"
-    h1 = content.get("h1", title) if content else title
-    body = content.get("body", "") if content else ""
-    internal_links_html = ""
-    for link in page.get("requiredInternalLinks", []):
-        internal_links_html += f'<li><a href="{link}">{link}</a></li>\n'
-
+    nav_links = _build_nav_links(page.get("requiredInternalLinks", []))
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title}</title>
-  <meta name="description" content="{description}">
+  <title>{_escape_html(title)}</title>
+  <meta name="description" content="{_escape_html(description)}">
   <link rel="canonical" href="{canonical}">
   <link rel="stylesheet" href="/static/css/main.css">
 </head>
@@ -64,11 +110,11 @@ def generate_html(page: dict, content: dict | None) -> str:
     </nav>
   </header>
   <main>
-    <h1>{h1}</h1>
+    <h1>{_escape_html(h1)}</h1>
     <div class="page-body">{body}</div>
     <nav aria-label="Related pages">
       <ul>
-{internal_links_html}
+{nav_links}
       </ul>
     </nav>
   </main>
@@ -76,7 +122,122 @@ def generate_html(page: dict, content: dict | None) -> str:
 </html>"""
 
 
-def write_page(page: dict, content: dict | None):
+def generate_glossary_term_html(term: dict, page: dict) -> str:
+    h1 = term.get("term", page["title"])
+    short = _escape_html(term.get("shortDefinition", ""))
+    definition = _escape_html(term.get("definition", ""))
+    claim = _escape_html(term.get("claimBoundary", ""))
+    body = f'<p class="short-definition">{short}</p>\n'
+    body += f'<div class="definition"><p>{definition}</p></div>\n'
+    if claim:
+        body += f'<aside class="claim-boundary"><strong>Claim boundary:</strong> {claim}</aside>\n'
+    return _page_shell(page, h1, body)
+
+
+def generate_question_html(question: dict, page: dict) -> str:
+    h1 = question.get("question", page["title"])
+    answer = _escape_html(question.get("answer", ""))
+    boundary = _escape_html(question.get("answerBoundary", ""))
+    body = f'<div class="answer"><p>{answer}</p></div>\n'
+    if boundary:
+        body += f'<aside class="answer-boundary"><strong>Answer boundary:</strong> {boundary}</aside>\n'
+    return _page_shell(page, h1, body)
+
+
+def generate_program_html(program: dict, page: dict) -> str:
+    h1 = program.get("programName", page["title"])
+    institution = _escape_html(program.get("institution", ""))
+    country = _escape_html(program.get("country", ""))
+    start_year = program.get("startYear", "")
+    status = _escape_html(program.get("status", "").replace("_", " "))
+    description = _escape_html(program.get("description", ""))
+    claim = _escape_html(program.get("claimBoundary", ""))
+
+    meta = []
+    if institution:
+        meta.append(f'<dt>Institution</dt><dd>{institution}</dd>')
+    if country:
+        meta.append(f'<dt>Country</dt><dd>{country}</dd>')
+    if start_year:
+        meta.append(f'<dt>Start year</dt><dd>{start_year}</dd>')
+    if status:
+        meta.append(f'<dt>Status</dt><dd>{status}</dd>')
+
+    body = f'<dl class="program-meta">{"".join(meta)}</dl>\n'
+    body += f'<div class="program-description"><p>{description}</p></div>\n'
+    if claim:
+        body += f'<aside class="claim-boundary"><strong>Claim boundary:</strong> {claim}</aside>\n'
+    return _page_shell(page, h1, body)
+
+
+def generate_glossary_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
+    h1 = page.get("title", "SBSP Glossary")
+    term_ids = (trial_manifest or {}).get("glossaryTerms", [])
+    items = []
+    for tid in term_ids:
+        term = seed_data["glossary"].get(tid)
+        if not term:
+            continue
+        t_path = term.get("path", f"/glossary/{term.get('slug', tid)}/")
+        t_name = _escape_html(term.get("term", tid))
+        t_short = _escape_html(term.get("shortDefinition", ""))
+        items.append(
+            f'<li><a href="{t_path}">{t_name}</a>'
+            + (f' — {t_short}' if t_short else '')
+            + '</li>'
+        )
+    list_html = "\n".join(f"      {item}" for item in items)
+    body = f'<ul class="glossary-index">\n{list_html}\n    </ul>\n'
+    return _page_shell(page, h1, body)
+
+
+def generate_questions_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
+    h1 = page.get("title", "SBSP Questions")
+    question_ids = (trial_manifest or {}).get("questions", [])
+    items = []
+    for qid in question_ids:
+        q = seed_data["questions"].get(qid)
+        if not q:
+            continue
+        q_path = q.get("path", f"/questions/{q.get('slug', qid)}/")
+        q_text = _escape_html(q.get("question", qid))
+        items.append(f'<li><a href="{q_path}">{q_text}</a></li>')
+    list_html = "\n".join(f"      {item}" for item in items)
+    body = f'<ul class="questions-index">\n{list_html}\n    </ul>\n'
+    return _page_shell(page, h1, body)
+
+
+def generate_programs_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
+    h1 = page.get("title", "SBSP Program Profiles")
+    program_ids = (trial_manifest or {}).get("programs", [])
+    items = []
+    for pid in program_ids:
+        prog = seed_data["programs"].get(pid)
+        if not prog:
+            continue
+        p_path = prog.get("path", f"/programs/{prog.get('slug', pid)}/")
+        p_name = _escape_html(prog.get("programName", pid))
+        p_inst = _escape_html(prog.get("institution", ""))
+        items.append(
+            f'<li><a href="{p_path}">{p_name}</a>'
+            + (f' — {p_inst}' if p_inst else '')
+            + '</li>'
+        )
+    list_html = "\n".join(f"      {item}" for item in items)
+    body = f'<ul class="programs-index">\n{list_html}\n    </ul>\n'
+    return _page_shell(page, h1, body)
+
+
+def generate_html(page: dict, content: dict | None) -> str:
+    title = page.get("title", "")
+    h1 = content.get("h1", title) if content else title
+    body = content.get("body", "") if content else ""
+    return _page_shell(page, h1, body)
+
+
+def write_page(page: dict, content: dict | None,
+               seed_data: dict | None = None,
+               trial_manifest: dict | None = None):
     path = page.get("path", "/")
     if path == "/":
         out_path = PUBLIC_DIR / "index.html"
@@ -84,7 +245,29 @@ def write_page(page: dict, content: dict | None):
         slug_path = path.strip("/")
         out_path = PUBLIC_DIR / slug_path / "index.html"
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(generate_html(page, content), encoding="utf-8")
+
+    seed_source = page.get("seedSource")
+    seed_id = page.get("seedId")
+
+    if seed_data and seed_source == "glossary_term" and seed_id:
+        term = seed_data["glossary"].get(seed_id)
+        html = generate_glossary_term_html(term, page) if term else generate_html(page, content)
+    elif seed_data and seed_source == "question" and seed_id:
+        question = seed_data["questions"].get(seed_id)
+        html = generate_question_html(question, page) if question else generate_html(page, content)
+    elif seed_data and seed_source == "program" and seed_id:
+        program = seed_data["programs"].get(seed_id)
+        html = generate_program_html(program, page) if program else generate_html(page, content)
+    elif seed_data and seed_source == "glossary_hub":
+        html = generate_glossary_hub_html(page, seed_data, trial_manifest)
+    elif seed_data and seed_source == "questions_hub":
+        html = generate_questions_hub_html(page, seed_data, trial_manifest)
+    elif seed_data and seed_source == "programs_hub":
+        html = generate_programs_hub_html(page, seed_data, trial_manifest)
+    else:
+        html = generate_html(page, content)
+
+    out_path.write_text(html, encoding="utf-8")
     return str(out_path.relative_to(ROOT))
 
 
@@ -190,7 +373,6 @@ def categorize_pages(pages: list) -> dict:
 def build_sitemaps(all_sitemap_urls: list, categories: dict) -> list:
     """Generate sitemap files. Returns list of sitemap relative paths."""
     sitemap_files = []
-    today = date.today().isoformat()
 
     core_urls = generate_sitemap_urls(categories["core"])
     if core_urls:
@@ -222,6 +404,12 @@ def main():
     pages = approved_pages(pages_data)
     print(f"Approved pages: {len(pages)}")
 
+    seed_data = load_seed_data()
+    trial_manifest = load_trial_manifest()
+    if trial_manifest:
+        print(f"Trial manifest: {trial_manifest.get('phase', 'unknown')} "
+              f"({trial_manifest.get('totalPages', '?')} pages)")
+
     if PUBLIC_DIR.exists():
         shutil.rmtree(PUBLIC_DIR)
     PUBLIC_DIR.mkdir(parents=True)
@@ -238,7 +426,7 @@ def main():
     for page in pages:
         page_id = page.get("id", "")
         content = load_page_content(page_id)
-        out = write_page(page, content)
+        out = write_page(page, content, seed_data=seed_data, trial_manifest=trial_manifest)
         generated.append(out)
         print(f"  [GEN] {page.get('path')}")
 
