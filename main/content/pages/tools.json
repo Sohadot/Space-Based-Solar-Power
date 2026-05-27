@@ -1,0 +1,448 @@
+{
+  "id": "tools",
+  "route": "/tools/",
+  "language": "en",
+  "pageType": "tools_gateway",
+  "status": "approved_for_launch",
+  "title": "Strategic Tools",
+  "metaDescription": "Governed strategic tools for understanding space-based solar power constraints, claim boundaries, global programs, use cases, investors, journalists, governments, and orbital energy readiness.",
+  "h1": "Strategic Tools",
+  "strategicRole": "Introduces the governed strategic tools layer as a decision-support and reference system for serious SBSP audiences without pretending unfinished tools are already live.",
+  "primaryAudience": [
+    "researchers",
+    "journalists",
+    "investors",
+    "governments",
+    "companies",
+    "engineers",
+    "analysts",
+    "strategic buyers",
+    "policy observers"
+  ],
+  "seoCluster": [
+    "space-based solar power tools",
+    "SBSP analysis tools",
+    "orbital energy tools",
+    "space-based solar power constraints",
+    "SBSP due diligence",
+    "space solar power readiness",
+    "orbital energy constraint matrix"
+  ],
+  "hero": {
+    "eyebrow": "Strategic Instruments",
+    "title": "Tools for reasoning about orbital energy infrastructure.",
+    "subtitle": "The tools layer of Space-Based-Solar-Power.com is designed to help serious users classify constraints, evaluate claims, understand programs, compare use cases, and frame due-diligence questions without turning uncertainty into false precision.",
+    "thesis": "The tools do not predict the future of space-based solar power. They make the strategic structure of the category visible."
+  },
+  "sections": [
+    {
+      "id": "why-tools-matter",
+      "heading": "Why tools matter",
+      "body": [
+        "A serious reference asset should not only explain a category. It should help serious users reason about it.",
+        "Space-based solar power involves technical systems, economic assumptions, institutional programs, public legitimacy, regulation, infrastructure constraints, and strategic use cases. These layers are difficult to understand through articles alone.",
+        "The tools layer exists to convert the asset’s methodology, framework, source discipline, and constraint logic into structured instruments for researchers, journalists, investors, governments, companies, engineers, analysts, and future strategic buyers."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "not-prediction-engines",
+      "heading": "These tools are not prediction engines",
+      "body": [
+        "The tools do not claim to predict whether SBSP will become commercially dominant, when it will mature, or which company, government, or technology pathway will win.",
+        "They do not provide investment advice, financial advice, legal advice, procurement guidance, engineering certification, or government policy instructions.",
+        "Their purpose is to organize uncertainty, expose assumptions, classify claims, map constraints, and guide better questions."
+      ],
+      "links": [
+        {
+          "label": "Sources and claim boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tool-class-orbital-energy-constraint-matrix",
+      "heading": "Orbital Energy Constraint Matrix",
+      "body": [
+        "The Orbital Energy Constraint Matrix is the first priority tool because it is the safest and most useful initial instrument.",
+        "It will organize the major constraints shaping SBSP maturity, including launch economics, orbital assembly, wireless power transmission, rectenna footprint, grid integration, safety, regulation, public legitimacy, space debris, maintenance, and capital formation.",
+        "The matrix is not intended to output a single readiness score in the first phase. It is intended to make the constraint structure visible."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "tool-class-glossary-navigator",
+      "heading": "SBSP Glossary Navigator",
+      "body": [
+        "The SBSP Glossary Navigator will help users understand the terminology of orbital energy infrastructure.",
+        "It will connect terms such as space-based solar power, solar power satellite, rectenna, wireless power transmission, microwave power beaming, laser power transmission, geostationary orbit, orbital assembly, energy sovereignty, and grid resilience.",
+        "The glossary must not become a thin SEO dictionary. Each term must explain its role inside the SBSP framework, what it should not be confused with, and which pages it connects to."
+      ],
+      "links": [
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tool-class-global-program-tracker",
+      "heading": "Global Program Tracker",
+      "body": [
+        "The Global Program Tracker will organize institutional and program-level activity around SBSP.",
+        "It must distinguish between official institutional programs, academic projects, company claims, technical demonstrations, policy interest, and commercial deployment status.",
+        "The tracker is designed for journalists, researchers, governments, investors, and companies that need a governed view of who is studying the field and what each source actually supports."
+      ],
+      "links": [
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-summary-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-sspd-wireless-power-2023"
+      ]
+    },
+    {
+      "id": "tool-class-use-case-fit",
+      "heading": "Use-Case Fit Evaluator",
+      "body": [
+        "The Use-Case Fit Evaluator will help users think through possible SBSP applications without assuming that every use case is equally plausible.",
+        "Candidate use cases may include terrestrial grid support, remote infrastructure, disaster response, defense logistics, AI compute facilities, island grids, lunar infrastructure, satellite servicing, and orbital manufacturing.",
+        "The evaluator should explain what each use case requires, what constraints matter most, which assumptions are unresolved, and which related pages or sources should be reviewed."
+      ],
+      "links": [
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tool-class-claim-boundary-checker",
+      "heading": "Claim Boundary Checker",
+      "body": [
+        "The Claim Boundary Checker will help users classify SBSP statements.",
+        "A claim may be source-verified, an institutional summary, a technical explanation, a company claim, an unresolved scenario, a strategic interpretation, or a speculative future pathway.",
+        "The tool’s purpose is to reduce hype, not to police legitimate inquiry. It helps journalists, investors, researchers, and public-sector observers avoid treating demonstrations, announcements, or scenarios as proof of full infrastructure readiness."
+      ],
+      "links": [
+        {
+          "label": "Sources and claim boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tool-class-journalist-brief-builder",
+      "heading": "Journalist Brief Builder",
+      "body": [
+        "The Journalist Brief Builder will help reporters explain SBSP without overstating the field.",
+        "It should provide neutral definitions, known facts, unresolved constraints, common exaggerations to avoid, relevant source categories, and questions to ask experts.",
+        "The tool should not generate promotional copy. It should help journalism become clearer, more accurate, and more source-aware."
+      ],
+      "links": [
+        {
+          "label": "What is space-based solar power?",
+          "path": "/what-is-space-based-solar-power/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tool-class-investor-due-diligence",
+      "heading": "Investor Due Diligence Checklist",
+      "body": [
+        "The Investor Due Diligence Checklist will help investors ask better questions about SBSP-related claims.",
+        "It may cover technology stack position, hardware demonstration status, launch dependency, transmission pathway, regulatory exposure, customer segment, economics assumptions, failure modes, and source quality.",
+        "The checklist must not provide financial advice, investment recommendations, valuation guidance, or signals to buy, sell, invest, or avoid. It is a structured question framework only."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tool-class-government-fit",
+      "heading": "Government Strategic Fit Matrix",
+      "body": [
+        "The Government Strategic Fit Matrix will help public-sector observers think through SBSP as a long-horizon infrastructure question.",
+        "It may consider energy import dependency, grid resilience, space program maturity, defense energy requirements, industrial base, remote infrastructure, policy ambition, and public legitimacy.",
+        "The matrix must not provide policy instructions. It should provide structured questions and strategic categories that help governments and analysts frame the topic responsibly."
+      ],
+      "links": [
+        {
+          "label": "Strategic importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Global programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tool-class-readiness-index",
+      "heading": "Orbital Energy Readiness Index",
+      "body": [
+        "The Orbital Energy Readiness Index is a future high-sensitivity tool and must be treated carefully.",
+        "It should not collapse a complex field into a misleading single number. If developed, it should display separate dimensions such as technology readiness, launch economics readiness, policy readiness, grid integration readiness, safety and legitimacy readiness, and strategic relevance.",
+        "This tool requires a dedicated methodology before publication."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "numerical-tool-restriction",
+      "heading": "Numerical tools require stronger governance",
+      "body": [
+        "Numerical calculators and economic models are not part of the first live tools layer.",
+        "Future tools such as launch cost sensitivity explorers, rectenna footprint scenario models, wireless power transmission pathway models, or orbital power delivery models require methodology documentation, source ranges, assumptions, limitations, versioning, and quality-gate validation.",
+        "The asset must avoid false precision. A beautiful calculator with weak assumptions would damage trust more than it would create value."
+      ],
+      "links": [
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "interface-and-tools",
+      "heading": "How tools connect to the interface",
+      "body": [
+        "The tools layer should eventually connect to the asset’s interface doctrine.",
+        "The Orbital Sovereignty Control Interface can show constraints, claim boundaries, transmission pathways, receiving infrastructure, AI demand, and program signals as structured interface states.",
+        "However, the interface must not fake telemetry. Tool-linked visuals must remain scenario-aware, source-aware, and methodology-aware."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Manifesto",
+          "path": "/manifesto/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tools-and-revenue",
+      "heading": "Tools and future respectful revenue",
+      "body": [
+        "The tools layer can eventually support respectful revenue without damaging the asset’s strategic value.",
+        "Possible future monetization paths include premium research briefs, institutional sponsorship, professional tool access, strategic inquiries, research partnerships, and controlled lead generation.",
+        "Monetization must reinforce trust. It must not turn the asset into a cheap ad surface or speculative product page."
+      ],
+      "links": [
+        {
+          "label": "Articles and briefs",
+          "path": "/articles/"
+        },
+        {
+          "label": "About the asset",
+          "path": "/about/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "tool-publication-standard",
+      "heading": "Tool publication standard",
+      "body": [
+        "No tool may enter production unless it is complete, tested, source-disciplined, internally linked, metadata-complete, accessible, responsive, free of broken outputs, and approved under the quality gate.",
+        "A tool must explain what it does, what it does not do, what assumptions it uses, which sources or source classes support it, and what limitations apply.",
+        "The first release of the tools page is therefore a governed tools gateway, not a fake tools archive."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Feasibility and constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Methodology",
+      "path": "/methodology/",
+      "reason": "Defines the rules that govern tool outputs, assumptions, claims, and source use."
+    },
+    {
+      "label": "Sources",
+      "path": "/sources/",
+      "reason": "Provides the source and claim-boundary foundation for future tools."
+    },
+    {
+      "label": "Framework",
+      "path": "/framework/",
+      "reason": "Defines the infrastructure chain that tools must map to."
+    },
+    {
+      "label": "Feasibility and Constraints",
+      "path": "/feasibility-and-constraints/",
+      "reason": "Provides the constraint structure that the first tool should organize."
+    },
+    {
+      "label": "Global Programs",
+      "path": "/global-programs/",
+      "reason": "Supports the future Global Program Tracker."
+    },
+    {
+      "label": "What Is Space-Based Solar Power?",
+      "path": "/what-is-space-based-solar-power/",
+      "reason": "Provides foundational definitions for tool users."
+    },
+    {
+      "label": "Articles and Briefs",
+      "path": "/articles/",
+      "reason": "Connects tools to future source briefs, program briefs, and claim reviews."
+    },
+    {
+      "label": "Strategic Importance",
+      "path": "/strategic-importance/",
+      "reason": "Connects tools to government, investor, AI, defense, and infrastructure use cases."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "nasa-otps-sbsp-2024",
+      "usage": "Used as a core source for future constraint classification and no-hype tool logic."
+    },
+    {
+      "sourceId": "nasa-otps-sbsp-summary-2024",
+      "usage": "Used as a public-facing source for explaining institutional assessment context."
+    },
+    {
+      "sourceId": "esa-solaris-2024",
+      "usage": "Used as an institutional program source for future program-tracking logic."
+    },
+    {
+      "sourceId": "jaxa-ssps-research",
+      "usage": "Used as a research-lineage source for terminology and program context."
+    },
+    {
+      "sourceId": "caltech-sspd-wireless-power-2023",
+      "usage": "Used as a demonstration-level source for future claim-boundary and program tracker logic."
+    }
+  ],
+  "claimBoundary": "This page introduces the approved strategic tools layer and tool roadmap. It does not claim that all tools are live. It does not provide investment, legal, procurement, engineering certification, or government policy advice. Numerical tools require separate methodology and quality-gate approval before publication.",
+  "qualityStatus": {
+    "metadataComplete": true,
+    "internalLinksDefined": true,
+    "sourceBoundaryDefined": true,
+    "placeholderFree": true,
+    "readyForTemplate": true
+  }
+}
