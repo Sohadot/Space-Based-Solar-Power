@@ -62,6 +62,18 @@
       "maxOutboundLinks": 100,
       "requiredInbound": 3
     },
+    "/questions/": {
+      "role": "questions_hub",
+      "label": "Questions",
+      "maxOutboundLinks": 100,
+      "requiredInbound": 1
+    },
+    "/programs/": {
+      "role": "programs_hub",
+      "label": "Program Profiles",
+      "maxOutboundLinks": 50,
+      "requiredInbound": 1
+    },
     "/what-is-space-based-solar-power/": {
       "role": "definition_hub",
       "label": "What Is SBSP",
