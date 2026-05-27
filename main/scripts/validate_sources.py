@@ -47,7 +47,8 @@ def validate_program_sources(known_sources: set):
     data = load_json(path)
     if not data:
         return
-    for prog in data.get("programs", []):
+    programs = data if isinstance(data, list) else data.get("programs", [])
+    for prog in programs:
         pid = prog.get("id", "<no-id>")
         source_refs = prog.get("sourceRef", [])
         if not source_refs:
@@ -67,7 +68,8 @@ def validate_glossary_sources(known_sources: set):
     data = load_json(path)
     if not data:
         return
-    for term in data.get("terms", []):
+    terms = data if isinstance(data, list) else data.get("terms", [])
+    for term in terms:
         tid = term.get("id", "<no-id>")
         ref = term.get("sourceRef")
         if ref and known_sources and ref not in known_sources:
@@ -81,7 +83,8 @@ def validate_question_sources(known_sources: set):
     data = load_json(path)
     if not data:
         return
-    for q in data.get("questions", []):
+    questions = data if isinstance(data, list) else data.get("questions", [])
+    for q in questions:
         qid = q.get("id", "<no-id>")
         ref = q.get("sourceRef")
         if ref and known_sources and ref not in known_sources:
