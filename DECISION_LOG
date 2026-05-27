@@ -197,3 +197,28 @@ The project data layer now matches the sovereign content map. Future templates, 
 The project may now move from manually created foundation pages into controlled data-driven expansion. Future glossary, question, program, comparison, regional, article, and multilingual pages must be generated through the engine and blocked by the quality gate if they fail schema, source, claim, SEO, link, sitemap, or internal link graph validation.
 
 Next phase is `Sovereign Expansion Seed Pack v1A`: 30 glossary terms, 25 question pages, 10 program profiles, 10 comparison pages, 8 audience guides, 1 qualitative tool page — approximately 84 new pages to verify engine integrity before large-scale expansion.
+
+---
+
+## [S1-DL-009] - 2026-05-27: Sovereign Quality Gate Passed on Main
+
+**Status:** APPROVED
+
+**Context:** After establishing Sovereign Generation Engine v1 and Seed Pack v1A, the project required a full CI validation pass on `main` to confirm that the build system, validators, sitemap logic, SEO checks, source validation, claim boundaries, post-build link validation, and internal-link graph validation operate together without blocking errors.
+
+**Decision:**
+
+1. Confirmed that the Sovereign Quality Gate workflow passed on `main`.
+2. Confirmed that the generation engine can build the public output and validate it through the full pipeline.
+3. Confirmed that prior issues were resolved:
+   - root route resolution in post-build link validation;
+   - root-array seed data handling;
+   - required source boundaries for constraint pages;
+   - forbidden certainty phrase in content;
+   - orphan page and trust-link requirements;
+   - self-hub exemption in internal-link graph validation.
+4. Confirmed that old failed workflow runs are historical and do not represent the current validated state.
+
+**Consequences:**
+
+The repository is now ready to move from engine stabilization into controlled publication trials. Future expansion must proceed through staged seed packs, generated output, quality-gate validation, sitemap eligibility checks, and internal-link graph governance.
