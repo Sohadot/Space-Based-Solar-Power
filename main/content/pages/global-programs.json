@@ -1,0 +1,608 @@
+{
+  "id": "global-programs",
+  "route": "/global-programs/",
+  "language": "en",
+  "pageType": "institutional_registry_hub",
+  "status": "approved_for_launch",
+  "title": "Global Programs",
+  "metaDescription": "A governed tracker of institutional programs, research initiatives, public-sector activity, academic demonstrations, and claim boundaries related to space-based solar power.",
+  "h1": "Global Programs",
+  "strategicRole": "Introduces global SBSP programs and institutional activity while distinguishing official assessment, research lineage, technical demonstration, policy interest, company claims, and operational deployment status.",
+  "primaryAudience": [
+    "journalists",
+    "researchers",
+    "governments",
+    "companies",
+    "investors",
+    "engineers",
+    "analysts",
+    "policy observers",
+    "strategic buyers"
+  ],
+  "seoCluster": [
+    "NASA space-based solar power",
+    "ESA SOLARIS",
+    "JAXA SSPS",
+    "Caltech space solar power",
+    "space-based solar power programs",
+    "space solar power research",
+    "global SBSP programs",
+    "orbital energy infrastructure programs",
+    "space-based solar power research initiatives"
+  ],
+  "hero": {
+    "eyebrow": "Institutional Program Registry",
+    "title": "Who is studying space-based solar power — and what their activity actually proves.",
+    "subtitle": "The global programs layer tracks institutional assessment, public-sector interest, academic research, technical demonstrations, and program-level activity around space-based solar power without confusing attention with deployment.",
+    "thesis": "Institutional activity matters, but it must be classified carefully. A report, program, study, or demonstration may signal serious interest or technical progress; it does not automatically prove commercial readiness or infrastructure-scale deployment."
+  },
+  "sections": [
+    {
+      "id": "why-programs-matter",
+      "heading": "Why global programs matter",
+      "body": [
+        "Space-based solar power is not only a private technology topic. It has been studied, assessed, and discussed by public institutions, space agencies, academic groups, and research programs.",
+        "Global program activity matters because it shows where the field is being evaluated, which institutions consider it strategically relevant, what kinds of technical work are being explored, and which constraints remain visible in public assessment.",
+        "This page exists to give journalists, researchers, governments, companies, investors, engineers, and analysts a governed entry point into SBSP program activity without overstating what any program proves."
+      ],
+      "links": [
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-summary-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-space-solar-power-project"
+      ]
+    },
+    {
+      "id": "program-classification",
+      "heading": "Program classification",
+      "body": [
+        "The asset does not treat every program signal as equal.",
+        "A program entry may represent an institutional assessment, a policy initiative, a research lineage, an academic project, a technical demonstration, a modeling study, a company disclosure, or a future deployment claim.",
+        "Each category must be interpreted differently. Institutional interest is not deployment. A demonstration is not full-scale commercial readiness. A company claim is not neutral proof. A model is not a guaranteed outcome."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "nasa",
+      "heading": "NASA — institutional assessment and feasibility framing",
+      "body": [
+        "NASA is one of the core institutional reference points for this asset because its public SBSP material supports careful discussion of feasibility, cost, emissions, system assumptions, and unresolved capability gaps.",
+        "NASA material should be used to understand institutional assessment and constraint-aware framing. It must not be used to claim that SBSP is commercially mature, economically superior, or ready for near-term infrastructure deployment unless the specific source supports such a statement.",
+        "For this asset, NASA sources belong primarily to feasibility, constraints, methodology, source discipline, and no-hype evaluation."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "nasa-otps-sbsp-summary-2024"
+      ]
+    },
+    {
+      "id": "esa-solaris",
+      "heading": "ESA SOLARIS — European institutional interest",
+      "body": [
+        "ESA SOLARIS is important because it places space-based solar power inside a European institutional, aerospace, energy, and policy conversation.",
+        "The asset uses ESA material to describe program framing, European interest, and institutional exploration of clean energy from space.",
+        "ESA SOLARIS should not be interpreted as proof that commercial SBSP deployment is already solved. It is a program signal requiring source-aware interpretation."
+      ],
+      "links": [
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": [
+        "esa-solaris-2024"
+      ]
+    },
+    {
+      "id": "jaxa-ssps",
+      "heading": "JAXA SSPS — research lineage and technical framing",
+      "body": [
+        "JAXA material is important because Japan has a long-running public research lineage around Space Solar Power Systems.",
+        "For this asset, JAXA sources are especially relevant to concept explanation, wireless power transmission framing, Japanese technical lineage, and the future Japanese edition of the asset.",
+        "JAXA SSPS material should be used to explain research history and technical concept development. It must not be used to imply that full commercial SBSP infrastructure is already deployed."
+      ],
+      "links": [
+        {
+          "label": "What Is Space-Based Solar Power?",
+          "path": "/what-is-space-based-solar-power/"
+        },
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "jaxa-ssps-research"
+      ]
+    },
+    {
+      "id": "caltech",
+      "heading": "Caltech Space Solar Power Project — academic project and demonstration context",
+      "body": [
+        "Caltech’s Space Solar Power Project is relevant because it provides academic project context and public information about demonstration-level work in space solar power.",
+        "The asset may use Caltech material to discuss research progress, wireless power transmission demonstration context, and academic exploration of space solar power technologies.",
+        "A demonstration is significant, but it must not be generalized into commercial-scale SBSP readiness. The asset must distinguish demonstration-level evidence from infrastructure-scale maturity."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": [
+        "caltech-sspd-wireless-power-2023",
+        "caltech-space-solar-power-project"
+      ]
+    },
+    {
+      "id": "peer-reviewed-modeling",
+      "heading": "Peer-reviewed modeling and scenario studies",
+      "body": [
+        "Peer-reviewed modeling studies can be valuable because they test scenarios, assumptions, system costs, decarbonization relevance, grid implications, or technical pathways.",
+        "However, a model is not a guaranteed forecast. Model outputs depend on assumptions, boundaries, inputs, and methodology.",
+        "The asset may use peer-reviewed scenario studies to explain possible pathways and limitations, but it must not convert modeled results into certain future outcomes."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "joule-european-sbsp-2025"
+      ]
+    },
+    {
+      "id": "country-and-regional-activity",
+      "heading": "Country and regional activity",
+      "body": [
+        "Space-based solar power may become relevant to country and regional analysis because the category intersects with space capability, energy strategy, industrial policy, grid resilience, defense logistics, and long-term infrastructure planning.",
+        "Future regional pages may cover the United States, Japan, China, the United Kingdom, Europe, Gulf states, and other relevant regions only when strong sources are registered and reviewed.",
+        "Country and regional pages must not become speculative geopolitical essays. They require source discipline, clear claim boundaries, and careful distinction between interest, research, policy framing, and deployment."
+      ],
+      "links": [
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Articles and Briefs",
+          "path": "/articles/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "enterprise-disclosures",
+      "heading": "Enterprise and company disclosures",
+      "body": [
+        "Companies, startups, contractors, and private projects may issue claims about SBSP technologies, deployment plans, launch assumptions, market opportunities, or technical performance.",
+        "These disclosures can be relevant, but they must be labeled correctly. A company claim is not neutral proof.",
+        "The asset may track enterprise disclosures in future program profiles or articles, but such claims must be separated from institutional reports, academic research, and source-verified facts."
+      ],
+      "links": [
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "program-status-taxonomy",
+      "heading": "Program status taxonomy",
+      "body": [
+        "Future program entries should use a controlled status taxonomy.",
+        "Approved status classes include institutional assessment, public program framing, research lineage, academic project, technical demonstration, modeling study, company disclosure, policy interest, unresolved scenario, and operational deployment claim.",
+        "This taxonomy prevents the asset from treating every public signal as equal. It also helps journalists, researchers, investors, governments, and companies understand what a program entry actually proves."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Strategic Tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "what-programs-do-not-prove",
+      "heading": "What programs do not automatically prove",
+      "body": [
+        "A program does not automatically prove commercial readiness.",
+        "A public study does not automatically prove economic superiority. A technical demonstration does not automatically prove infrastructure scale. A company announcement does not automatically prove deployment. A national interest signal does not automatically prove policy commitment.",
+        "This page exists to make those distinctions explicit."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "journalist-use",
+      "heading": "How journalists should use this page",
+      "body": [
+        "Journalists can use this page to identify which institutions and research programs are connected to SBSP and how to avoid overstating their meaning.",
+        "The safest journalistic use is to distinguish between assessment, research, demonstration, program framing, company claim, and deployment.",
+        "The page should help journalists ask better questions: What has been demonstrated? At what scale? By whom? With what source? What remains unresolved? What does the source not prove?"
+      ],
+      "links": [
+        {
+          "label": "Articles and Briefs",
+          "path": "/articles/"
+        },
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "What Is Space-Based Solar Power?",
+          "path": "/what-is-space-based-solar-power/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "investor-use",
+      "heading": "How investors should use this page",
+      "body": [
+        "Investors can use this page to understand the institutional and research landscape without confusing public interest with investable maturity.",
+        "The page should help investors identify which claims require deeper due diligence, which sources are institutional, which are academic, which are enterprise-specific, and which assumptions remain unresolved.",
+        "The asset does not provide investment advice. It helps structure better questions."
+      ],
+      "links": [
+        {
+          "label": "Strategic Tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "government-use",
+      "heading": "How governments and policy observers should use this page",
+      "body": [
+        "Governments and policy observers can use this page to understand which institutions are studying SBSP and what kinds of program activity exist.",
+        "The page can support energy strategy, space policy, grid resilience, defense logistics, industrial policy, and public-sector research discussions.",
+        "It does not provide policy instructions. It provides a governed map of program signals and the claim boundaries around them."
+      ],
+      "links": [
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "company-use",
+      "heading": "How companies should use this page",
+      "body": [
+        "Companies can use this page to understand how the public reference layer classifies SBSP programs, research, and institutional activity.",
+        "A company working in launch, power electronics, wireless transmission, grid systems, aerospace, defense, AI infrastructure, or energy strategy can use the program map to understand where its work might fit in the broader stack.",
+        "The page also clarifies that enterprise claims must be bounded and source-aware if they are used in future profiles, tools, or articles."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "future-program-profiles",
+      "heading": "Future program profiles",
+      "body": [
+        "Future expansion may include individual program profiles for NASA-related SBSP assessment, ESA SOLARIS, JAXA SSPS, Caltech’s Space Solar Power Project, and other institutional or regional programs once sources are reviewed.",
+        "Each profile must define institution, region, program type, source, status, claim boundary, relevance to SBSP, related pages, and what the program does not prove.",
+        "No program profile may be published as a placeholder."
+      ],
+      "links": [
+        {
+          "label": "Content standards in methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Articles and Briefs",
+          "path": "/articles/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-summary-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-space-solar-power-project"
+      ]
+    },
+    {
+      "id": "global-program-tracker",
+      "heading": "Connection to the Global Program Tracker",
+      "body": [
+        "This page is the foundation for the future Global Program Tracker tool.",
+        "The tracker should allow users to view institutional activity by program type, source tier, claim class, region, technology layer, and maturity status.",
+        "The tracker must not imply that every program is equivalent or that public activity equals deployment. It must remain governed by the methodology and source registry."
+      ],
+      "links": [
+        {
+          "label": "Strategic Tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "programs-and-seo",
+      "heading": "How the program layer strengthens SEO",
+      "body": [
+        "The global programs layer strengthens SEO by connecting high-intent institutional queries to a governed reference structure.",
+        "Users searching for NASA space-based solar power, ESA SOLARIS, JAXA SSPS, Caltech space solar power, or global SBSP programs should find careful explanations rather than hype or disconnected summaries.",
+        "The asset should use program queries to build authority, but never at the expense of source accuracy or claim discipline."
+      ],
+      "links": [
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "What Is Space-Based Solar Power?",
+          "path": "/what-is-space-based-solar-power/"
+        },
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "programs-and-buyer-logic",
+      "heading": "Program tracking and buyer logic",
+      "body": [
+        "The global programs layer also strengthens buyer logic.",
+        "A future strategic buyer should see that Space-Based-Solar-Power.com is not only defining SBSP conceptually. It is preparing a source-aware registry of institutional activity around the category.",
+        "This gives the asset practical value for media, research, investment, government, and enterprise audiences."
+      ],
+      "links": [
+        {
+          "label": "About the asset",
+          "path": "/about/"
+        },
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "global-programs-conclusion",
+      "heading": "Program activity must be visible and bounded",
+      "body": [
+        "A serious SBSP reference asset must show who is studying the field.",
+        "But visibility without boundaries creates hype. This page therefore tracks global program activity through a disciplined lens: source, status, relevance, and limitation.",
+        "The result is a program layer that supports public understanding without pretending that the future has already arrived."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        }
+      ],
+      "sourceRefs": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Sources",
+      "path": "/sources/",
+      "reason": "Provides the source hierarchy and claim-boundary rules behind program tracking."
+    },
+    {
+      "label": "Methodology",
+      "path": "/methodology/",
+      "reason": "Explains how programs, claims, sources, and unresolved scenarios are classified."
+    },
+    {
+      "label": "Technology Stack",
+      "path": "/technology-stack/",
+      "reason": "Connects program activity to technical system layers."
+    },
+    {
+      "label": "Feasibility and Constraints",
+      "path": "/feasibility-and-constraints/",
+      "reason": "Balances institutional activity with constraint-aware realism."
+    },
+    {
+      "label": "Strategic Importance",
+      "path": "/strategic-importance/",
+      "reason": "Explains why program activity matters for energy, space, AI, defense, and infrastructure strategy."
+    },
+    {
+      "label": "What Is Space-Based Solar Power?",
+      "path": "/what-is-space-based-solar-power/",
+      "reason": "Connects program tracking to the foundational definition of SBSP."
+    },
+    {
+      "label": "Tools",
+      "path": "/tools/",
+      "reason": "Connects this page to the future Global Program Tracker."
+    },
+    {
+      "label": "Articles and Briefs",
+      "path": "/articles/",
+      "reason": "Connects program activity to future program briefs and source briefs."
+    },
+    {
+      "label": "Framework",
+      "path": "/framework/",
+      "reason": "Places program activity inside the orbital energy infrastructure chain."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "nasa-otps-sbsp-2024",
+      "usage": "Used for NASA feasibility and constraint assessment context."
+    },
+    {
+      "sourceId": "nasa-otps-sbsp-summary-2024",
+      "usage": "Used as public-facing NASA SBSP assessment context."
+    },
+    {
+      "sourceId": "esa-solaris-2024",
+      "usage": "Used for ESA SOLARIS program framing and European institutional interest."
+    },
+    {
+      "sourceId": "jaxa-ssps-research",
+      "usage": "Used for JAXA SSPS research lineage and concept explanation."
+    },
+    {
+      "sourceId": "caltech-sspd-wireless-power-2023",
+      "usage": "Used for demonstration-level wireless power transmission context."
+    },
+    {
+      "sourceId": "caltech-space-solar-power-project",
+      "usage": "Used for Caltech Space Solar Power Project background and academic project context."
+    },
+    {
+      "sourceId": "joule-european-sbsp-2025",
+      "usage": "Used for future model-aware program and scenario discussion with limitation boundaries."
+    }
+  ],
+  "claimBoundary": "This page introduces global programs and institutional activity related to space-based solar power. It does not claim that any program proves commercial maturity, economic inevitability, technical resolution, operational deployment, or policy adoption. Program activity must be interpreted through source class, program type, maturity status, and claim boundary.",
+  "qualityStatus": {
+    "metadataComplete": true,
+    "internalLinksDefined": true,
+    "sourceBoundaryDefined": true,
+    "placeholderFree": true,
+    "readyForTemplate": true
+  }
+}
