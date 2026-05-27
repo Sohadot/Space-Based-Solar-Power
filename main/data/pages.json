@@ -465,7 +465,8 @@
       "title": "SBSP Economics",
       "description": "A disciplined reference page on space-based solar power economics, launch cost sensitivity, system scale, and commercial-readiness constraints.",
       "strategicRole": "Supports due diligence and economic realism.",
-      "requiredInternalLinks": ["/feasibility-and-constraints/", "/methodology/", "/sources/", "/tools/"]
+      "requiredInternalLinks": ["/feasibility-and-constraints/", "/methodology/", "/sources/", "/tools/"],
+      "sourceBoundary": "This page is a planned constraint reference page. It may discuss SBSP economics, launch cost sensitivity, system scale, lifecycle cost, and commercial-readiness constraints, but it must not claim economic viability, investment attractiveness, commercial maturity, or cost certainty without source-reviewed evidence and approved methodology."
     },
     {
       "id": "sbsp-safety",
@@ -482,7 +483,8 @@
       "title": "SBSP Safety",
       "description": "A reference page on safety considerations for space-based solar power, including transmission, reception, regulation, and public legitimacy.",
       "strategicRole": "Supports public trust and constraint discipline.",
-      "requiredInternalLinks": ["/feasibility-and-constraints/", "/technology-stack/", "/sources/", "/methodology/"]
+      "requiredInternalLinks": ["/feasibility-and-constraints/", "/technology-stack/", "/sources/", "/methodology/"],
+      "sourceBoundary": "This page is a planned constraint reference page. It may discuss safety, transmission exposure, receiving infrastructure, regulation, public legitimacy, and operational governance, but it must not claim that any SBSP transmission pathway is proven safe at infrastructure scale without source-reviewed evidence and approved methodology."
     },
     {
       "id": "sbsp-grid-integration",
