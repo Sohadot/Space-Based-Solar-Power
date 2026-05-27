@@ -222,3 +222,38 @@ Next phase is `Sovereign Expansion Seed Pack v1A`: 30 glossary terms, 25 questio
 **Consequences:**
 
 The repository is now ready to move from engine stabilization into controlled publication trials. Future expansion must proceed through staged seed packs, generated output, quality-gate validation, sitemap eligibility checks, and internal-link graph governance.
+
+---
+
+## [S1-DL-010] - 2026-05-27: Publication Trial v1A Initiated
+
+**Status:** APPROVED
+
+**Context:** The Sovereign Generation Engine v1 passed the full quality gate on `main`. The project now requires a controlled publication trial to confirm that seed data can produce real generated pages that pass schema, content, source, claim, SEO, sitemap, link, and internal-link graph validation.
+
+**Decision:**
+
+1. Initiated Publication Trial v1A.
+2. Approved a controlled first generated publication set:
+   - 10 glossary pages;
+   - 8 question pages;
+   - 5 program profiles.
+3. Confirmed that seed data is not automatically public content.
+4. Required all publication-trial pages to pass:
+   - schema validation;
+   - content validation;
+   - source validation;
+   - claim-boundary validation;
+   - SEO validation;
+   - sitemap eligibility;
+   - post-build link validation;
+   - internal-link graph validation.
+5. Confirmed that generated parent hubs (`/glossary/`, `/questions/`, `/programs/`) may only be published if they contain real content listing the generated trial pages.
+6. Confirmed that this stage is not bulk expansion. It is a controlled proof that the generation system can publish high-quality reference pages.
+7. Documented all ID substitutions where requested IDs did not match existing seed data IDs. No pages were invented. Every substituted ID is the closest existing equivalent with full `claimBoundary`, `sourceRef` (where applicable), and required fields.
+
+**Consequences:**
+
+The project may now test generated glossary, question, and program pages under strict governance. Future expansion to hundreds or thousands of pages remains blocked until Publication Trial v1A passes the full quality gate on the feature branch `claude/publication-trial-v1a-P8gpb`.
+
+See `PUBLICATION_TRIAL_PLAN.md` and `main/data/publication_trial_v1a.json` for complete selection and eligibility rules.
