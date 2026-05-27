@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /draft/
 Disallow: /staging/
-Sitemap: https://space-based-solar-power.com/sitemap_index.xml
+Sitemap: https://space-based-solar-power.com/sitemap.xml
