@@ -1,0 +1,350 @@
+{
+  "version": "1.0.0",
+  "description": "Sovereign internal link graph for Space-Based-Solar-Power.com. Defines link rules per page type, hub definitions, and graph integrity requirements.",
+  "hubDefinitions": {
+    "/": {
+      "role": "primary_gateway",
+      "label": "Home",
+      "maxOutboundLinks": 20,
+      "requiredInbound": 0
+    },
+    "/framework/": {
+      "role": "central_hub",
+      "label": "Framework",
+      "maxOutboundLinks": 40,
+      "requiredInbound": 5
+    },
+    "/methodology/": {
+      "role": "trust_hub",
+      "label": "Methodology",
+      "maxOutboundLinks": 30,
+      "requiredInbound": 8
+    },
+    "/sources/": {
+      "role": "source_hub",
+      "label": "Sources",
+      "maxOutboundLinks": 50,
+      "requiredInbound": 8
+    },
+    "/feasibility-and-constraints/": {
+      "role": "credibility_hub",
+      "label": "Feasibility and Constraints",
+      "maxOutboundLinks": 50,
+      "requiredInbound": 6
+    },
+    "/strategic-importance/": {
+      "role": "strategic_hub",
+      "label": "Strategic Importance",
+      "maxOutboundLinks": 40,
+      "requiredInbound": 5
+    },
+    "/global-programs/": {
+      "role": "registry_hub",
+      "label": "Global Programs",
+      "maxOutboundLinks": 100,
+      "requiredInbound": 5
+    },
+    "/tools/": {
+      "role": "tools_hub",
+      "label": "Strategic Tools",
+      "maxOutboundLinks": 30,
+      "requiredInbound": 5
+    },
+    "/glossary/": {
+      "role": "glossary_hub",
+      "label": "Glossary",
+      "maxOutboundLinks": 200,
+      "requiredInbound": 3
+    },
+    "/articles/": {
+      "role": "analysis_hub",
+      "label": "Articles",
+      "maxOutboundLinks": 100,
+      "requiredInbound": 3
+    },
+    "/what-is-space-based-solar-power/": {
+      "role": "definition_hub",
+      "label": "What Is SBSP",
+      "maxOutboundLinks": 20,
+      "requiredInbound": 5
+    }
+  },
+  "rules": [
+    {
+      "pageType": "sovereign_gateway",
+      "parentHub": null,
+      "requiredOutboundLinks": [
+        "/about/",
+        "/methodology/",
+        "/framework/",
+        "/manifesto/",
+        "/sources/",
+        "/tools/",
+        "/what-is-space-based-solar-power/",
+        "/feasibility-and-constraints/",
+        "/strategic-importance/",
+        "/global-programs/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/what-is-space-based-solar-power/",
+      "minInternalLinks": 8
+    },
+    {
+      "pageType": "trust_page",
+      "parentHub": "/",
+      "requiredOutboundLinks": [
+        "/",
+        "/methodology/",
+        "/framework/",
+        "/sources/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/framework/",
+      "minInternalLinks": 4
+    },
+    {
+      "pageType": "methodology_page",
+      "parentHub": "/",
+      "requiredOutboundLinks": [
+        "/sources/",
+        "/framework/",
+        "/feasibility-and-constraints/",
+        "/tools/",
+        "/global-programs/"
+      ],
+      "trustPage": "/sources/",
+      "nextStepPage": "/sources/",
+      "minInternalLinks": 4
+    },
+    {
+      "pageType": "reference_hub",
+      "parentHub": "/",
+      "requiredOutboundLinks": [
+        "/what-is-space-based-solar-power/",
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/strategic-importance/",
+        "/global-programs/",
+        "/sources/"
+      ],
+      "trustPage": "/sources/",
+      "nextStepPage": "/tools/",
+      "minInternalLinks": 6
+    },
+    {
+      "pageType": "foundational_reference",
+      "parentHub": "/framework/",
+      "requiredOutboundLinks": [
+        "/framework/",
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "trustPage": "/sources/",
+      "nextStepPage": "/tools/",
+      "minInternalLinks": 5
+    },
+    {
+      "pageType": "technical_reference",
+      "parentHub": "/framework/",
+      "requiredOutboundLinks": [
+        "/framework/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/feasibility-and-constraints/",
+      "minInternalLinks": 4
+    },
+    {
+      "pageType": "credibility_hub",
+      "parentHub": "/methodology/",
+      "requiredOutboundLinks": [
+        "/methodology/",
+        "/sources/",
+        "/technology-stack/",
+        "/strategic-importance/",
+        "/tools/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/tools/",
+      "minInternalLinks": 5
+    },
+    {
+      "pageType": "strategic_reference",
+      "parentHub": "/strategic-importance/",
+      "requiredOutboundLinks": [
+        "/strategic-importance/",
+        "/framework/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/tools/",
+      "minInternalLinks": 4
+    },
+    {
+      "pageType": "institutional_registry_hub",
+      "parentHub": "/sources/",
+      "requiredOutboundLinks": [
+        "/sources/",
+        "/methodology/",
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/strategic-importance/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/feasibility-and-constraints/",
+      "minInternalLinks": 5
+    },
+    {
+      "pageType": "glossary_term",
+      "parentHub": "/glossary/",
+      "requiredOutboundLinks": [
+        "/glossary/"
+      ],
+      "conditionalLinks": [
+        {"condition": "has_parent_concept", "link": "parent_concept_page"},
+        {"condition": "has_related_terms", "link": "related_term_pages"},
+        {"condition": "has_source_ref", "link": "/sources/"}
+      ],
+      "trustPage": "/sources/",
+      "nextStepPage": "related_reference_page",
+      "minInternalLinks": 3
+    },
+    {
+      "pageType": "question_answer",
+      "parentHub": "/what-is-space-based-solar-power/",
+      "requiredOutboundLinks": [
+        "/methodology/"
+      ],
+      "conditionalLinks": [
+        {"condition": "has_glossary_terms", "link": "glossary_term_pages"},
+        {"condition": "has_program_ref", "link": "/global-programs/"}
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "related_reference_page",
+      "minInternalLinks": 3
+    },
+    {
+      "pageType": "comparison_page",
+      "parentHub": "/feasibility-and-constraints/",
+      "requiredOutboundLinks": [
+        "/feasibility-and-constraints/",
+        "/methodology/",
+        "/sources/"
+      ],
+      "trustPage": "/sources/",
+      "nextStepPage": "/tools/",
+      "minInternalLinks": 4
+    },
+    {
+      "pageType": "country_profile",
+      "parentHub": "/global-programs/",
+      "requiredOutboundLinks": [
+        "/global-programs/",
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/feasibility-and-constraints/",
+      "minInternalLinks": 4
+    },
+    {
+      "pageType": "program_profile",
+      "parentHub": "/global-programs/",
+      "requiredOutboundLinks": [
+        "/global-programs/",
+        "/sources/"
+      ],
+      "conditionalLinks": [
+        {"condition": "has_technology_focus", "link": "/technology-stack/"},
+        {"condition": "has_country_page", "link": "country_profile_page"}
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/feasibility-and-constraints/",
+      "minInternalLinks": 3
+    },
+    {
+      "pageType": "use_case_profile",
+      "parentHub": "/strategic-importance/",
+      "requiredOutboundLinks": [
+        "/strategic-importance/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/tools/",
+      "minInternalLinks": 3
+    },
+    {
+      "pageType": "constraint_page",
+      "parentHub": "/feasibility-and-constraints/",
+      "requiredOutboundLinks": [
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "conditionalLinks": [
+        {"condition": "has_technology_context", "link": "/technology-stack/"},
+        {"condition": "has_related_constraint", "link": "related_constraint_page"}
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/tools/",
+      "minInternalLinks": 3
+    },
+    {
+      "pageType": "source_brief",
+      "parentHub": "/sources/",
+      "requiredOutboundLinks": [
+        "/sources/",
+        "/methodology/"
+      ],
+      "conditionalLinks": [
+        {"condition": "has_citing_pages", "link": "citing_page_paths"}
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "related_source_brief_page",
+      "minInternalLinks": 3
+    },
+    {
+      "pageType": "audience_guide",
+      "parentHub": "/",
+      "requiredOutboundLinks": [
+        "/methodology/",
+        "/tools/"
+      ],
+      "conditionalLinks": [
+        {"condition": "audience_is_researcher", "link": "/sources/"},
+        {"condition": "audience_is_investor", "link": "/feasibility-and-constraints/"},
+        {"condition": "audience_is_journalist", "link": "/methodology/"},
+        {"condition": "audience_is_government", "link": "/strategic-importance/"}
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/tools/",
+      "minInternalLinks": 4
+    },
+    {
+      "pageType": "tool_page",
+      "parentHub": "/tools/",
+      "requiredOutboundLinks": [
+        "/tools/",
+        "/methodology/",
+        "/sources/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/feasibility-and-constraints/",
+      "minInternalLinks": 3
+    }
+  ],
+  "orphanPreventionRules": {
+    "enforced": true,
+    "minimumInboundLinks": 1,
+    "exceptions": [],
+    "scanScope": "all_approved_pages"
+  },
+  "linkTextRules": {
+    "forbiddenAnchorTexts": ["click here", "read more", "here", "link", "this page", "more"],
+    "requireDescriptiveAnchors": true,
+    "allowNaturalVariation": true
+  }
+}

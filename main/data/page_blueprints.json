@@ -1,0 +1,465 @@
+{
+  "version": "1.0.0",
+  "description": "Required structure definitions for every page type. The build system enforces blueprints during generation. The validation system rejects pages that violate them.",
+  "blueprints": {
+    "sovereign_gateway": {
+      "description": "Home page. Primary atlas gateway for the entire asset.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["thesis", "framework_overview", "methodology_signal", "tools_signal", "interface_philosophy", "navigation_paths"],
+      "minContentLength": 500,
+      "maxContentLength": 8000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true,
+        "requireMetaDescription": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 8,
+        "requireTrustPage": true,
+        "requireNextStep": true
+      },
+      "sitemapEligibility": "always",
+      "navigationEligibility": "always"
+    },
+    "trust_page": {
+      "description": "Institutional identity and operating posture pages (about, contact).",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["what_this_is", "what_this_is_not", "operating_posture", "audience_served"],
+      "minContentLength": 400,
+      "maxContentLength": 6000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "methodology_page": {
+      "description": "Pages defining how the asset evaluates sources, claims, and constraints.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["source_hierarchy", "claim_classification", "constraint_methodology", "no_prediction_rule", "no_advice_rule"],
+      "minContentLength": 600,
+      "maxContentLength": 8000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "reference_hub": {
+      "description": "Central analytical maps and framework pages.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["overview", "framework_structure", "why_it_matters", "related_pages", "source_note"],
+      "minContentLength": 600,
+      "maxContentLength": 10000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 6,
+        "requireTrustPage": true,
+        "requireNextStep": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "foundational_reference": {
+      "description": "Primary definition pages (what is SBSP, technology stack, etc.).",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["definition", "how_it_works", "why_it_matters", "what_remains_unresolved", "related_pages", "source_note"],
+      "minContentLength": 700,
+      "maxContentLength": 12000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 5,
+        "requireTrustPage": true,
+        "requireNextStep": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "technical_reference": {
+      "description": "Technical deep-dive pages on specific technology components.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["technical_overview", "how_it_works", "current_state", "constraints", "claim_boundary", "related_pages"],
+      "minContentLength": 600,
+      "maxContentLength": 10000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireTrustPage": true,
+        "requireNextStep": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "credibility_hub": {
+      "description": "Feasibility and constraint overview pages.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["overview", "constraint_categories", "current_status", "why_it_matters", "source_discipline"],
+      "minContentLength": 700,
+      "maxContentLength": 12000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 5,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "strategic_reference": {
+      "description": "Strategic context pages connecting SBSP to geopolitics, defense, AI, etc.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["strategic_overview", "connections", "constraints", "claim_boundary", "related_pages"],
+      "minContentLength": 600,
+      "maxContentLength": 10000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "source_registry_page": {
+      "description": "Source and citation trust layer pages.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["source_hierarchy", "claim_tiers", "institutional_sources", "how_sources_are_used", "what_sources_do_not_prove"],
+      "minContentLength": 600,
+      "maxContentLength": 8000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireTrustPage": false
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "institutional_registry_hub": {
+      "description": "Registry hubs for programs, institutions, and global activity.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["registry_overview", "program_categories", "claim_discipline", "related_pages"],
+      "minContentLength": 600,
+      "maxContentLength": 10000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 5,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "glossary_term": {
+      "description": "Individual glossary entry pages. Generated from glossary_terms.json.",
+      "requiredFields": ["id", "term", "slug", "path", "domain", "definition", "shortDefinition", "relatedTerms", "pageLinks", "status", "sitemap", "seoTitle", "seoDescription"],
+      "requiredSections": ["definition", "context", "related_terms", "source_note"],
+      "minContentLength": 200,
+      "maxContentLength": 3000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true,
+        "titlePattern": "{term} — SBSP Glossary"
+      },
+      "linkRequirements": {
+        "minInternalLinks": 3,
+        "requireParentHub": "/glossary/",
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved",
+      "generatedFrom": "main/data/glossary_terms.json"
+    },
+    "question_answer": {
+      "description": "Long-tail question pages. Generated from question_bank.json.",
+      "requiredFields": ["id", "question", "slug", "path", "category", "answer", "answerBoundary", "pageLinks", "status", "sitemap", "seoTitle", "seoDescription"],
+      "requiredSections": ["answer", "context", "constraints", "related_questions"],
+      "minContentLength": 300,
+      "maxContentLength": 5000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 3,
+        "requireTrustPage": true,
+        "requireNextStep": true
+      },
+      "sitemapEligibility": "when_approved",
+      "generatedFrom": "main/data/question_bank.json"
+    },
+    "comparison_page": {
+      "description": "Structured comparison pages. Generated from comparison_matrix.json.",
+      "requiredFields": ["id", "subjectA", "subjectB", "dimensions", "sourceBoundary"],
+      "requiredSections": ["overview", "dimension_comparison", "constraints", "claim_boundary", "related"],
+      "minContentLength": 500,
+      "maxContentLength": 8000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved",
+      "generatedFrom": "main/data/comparison_matrix.json"
+    },
+    "program_profile": {
+      "description": "Institutional program pages. Generated from program_registry.json.",
+      "requiredFields": ["id", "programName", "institution", "country", "status", "description", "claimBoundary", "sourceRef"],
+      "requiredSections": ["program_overview", "program_details", "current_status", "claim_boundary", "sources"],
+      "minContentLength": 350,
+      "maxContentLength": 6000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 3,
+        "requireParentHub": "/global-programs/",
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved",
+      "generatedFrom": "main/data/program_registry.json"
+    },
+    "country_profile": {
+      "description": "Country and region pages. Generated from country_registry.json.",
+      "requiredFields": ["id", "country", "region", "sbspRelevance", "institutionalActivity", "sourceBoundary", "claimBoundary"],
+      "requiredSections": ["country_overview", "institutional_activity", "strategic_context", "constraints", "claim_boundary", "sources"],
+      "minContentLength": 400,
+      "maxContentLength": 6000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireParentHub": "/global-programs/",
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved",
+      "generatedFrom": "main/data/country_registry.json"
+    },
+    "use_case_profile": {
+      "description": "Use-case pages. Generated from use_case_registry.json.",
+      "requiredFields": ["id", "useCase", "domain", "sbspFit", "constraints", "sourceBoundary"],
+      "requiredSections": ["use_case_overview", "sbsp_fit", "constraints", "claim_boundary", "related"],
+      "minContentLength": 300,
+      "maxContentLength": 5000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 3,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved",
+      "generatedFrom": "main/data/use_case_registry.json"
+    },
+    "constraint_page": {
+      "description": "Individual constraint deep-dive pages.",
+      "requiredFields": ["id", "constraint", "domain", "severity", "description", "sourceBoundary", "claimBoundary"],
+      "requiredSections": ["constraint_statement", "technical_context", "current_status", "claim_boundary", "sources"],
+      "minContentLength": 350,
+      "maxContentLength": 5000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 3,
+        "requireParentHub": "/feasibility-and-constraints/",
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "source_brief": {
+      "description": "Source summary and claim extraction pages.",
+      "requiredFields": ["id", "sourceTitle", "sourceType", "institution", "year", "summary", "claimsExtracted", "claimBoundary"],
+      "requiredSections": ["source_summary", "key_claims", "claim_boundaries", "related_pages"],
+      "minContentLength": 250,
+      "maxContentLength": 4000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 3,
+        "requireParentHub": "/sources/",
+        "requireTrustPage": false
+      },
+      "sitemapEligibility": "when_approved",
+      "generatedFrom": "main/data/source_claims.json"
+    },
+    "audience_guide": {
+      "description": "Audience-specific entry path pages.",
+      "requiredFields": ["id", "audience", "primaryNeeds", "recommendedPages", "tools", "warnings"],
+      "requiredSections": ["audience_context", "recommended_path", "tools_available", "important_boundaries"],
+      "minContentLength": 250,
+      "maxContentLength": 4000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved",
+      "generatedFrom": "main/data/audience_guides.json"
+    },
+    "tools_gateway": {
+      "description": "Tools index and roadmap pages.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["tools_overview", "tool_roadmap", "no_prediction_rule", "no_advice_rule"],
+      "minContentLength": 400,
+      "maxContentLength": 6000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "tool_page": {
+      "description": "Individual tool pages.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "title", "description", "sourceBoundary"],
+      "requiredSections": ["tool_overview", "what_it_does", "what_it_does_not_do", "methodology_note"],
+      "minContentLength": 400,
+      "maxContentLength": 8000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 3,
+        "requireParentHub": "/tools/",
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "analysis_gateway": {
+      "description": "Articles and analysis index pages.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks"],
+      "requiredSections": ["gateway_overview", "article_categories", "editorial_rules"],
+      "minContentLength": 300,
+      "maxContentLength": 5000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved"
+    },
+    "conceptual_anchor": {
+      "description": "Manifesto and deep conceptual narrative pages.",
+      "requiredFields": ["id", "slug", "path", "type", "template", "status", "sitemap", "navigation", "title", "description", "requiredInternalLinks", "sourceBoundary"],
+      "requiredSections": ["core_thesis", "conceptual_narrative", "strategic_meaning", "constraints_acknowledged", "related_pages"],
+      "minContentLength": 600,
+      "maxContentLength": 10000,
+      "seoRequirements": {
+        "titleMaxLength": 70,
+        "descriptionMin": 50,
+        "descriptionMax": 160,
+        "requireH1": true,
+        "requireCanonical": true
+      },
+      "linkRequirements": {
+        "minInternalLinks": 4,
+        "requireTrustPage": true
+      },
+      "sitemapEligibility": "when_approved"
+    }
+  }
+}
