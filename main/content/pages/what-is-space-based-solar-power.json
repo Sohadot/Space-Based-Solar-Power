@@ -1,0 +1,443 @@
+{
+  "id": "what-is-sbsp",
+  "route": "/what-is-space-based-solar-power/",
+  "language": "en",
+  "pageType": "foundational_reference",
+  "status": "approved_for_launch",
+  "title": "What Is Space-Based Solar Power?",
+  "metaDescription": "A precise explanation of space-based solar power, solar power satellites, wireless power transmission, rectenna reception, orbital energy infrastructure, and the constraints shaping SBSP maturity.",
+  "h1": "What Is Space-Based Solar Power?",
+  "strategicRole": "Primary definition page for the category, explaining SBSP as an end-to-end infrastructure concept rather than a simple image of solar panels in space.",
+  "primaryAudience": [
+    "researchers",
+    "journalists",
+    "investors",
+    "governments",
+    "companies",
+    "engineers",
+    "analysts",
+    "policy observers",
+    "general serious readers",
+    "strategic buyers"
+  ],
+  "seoCluster": [
+    "what is space-based solar power",
+    "space-based solar power",
+    "space based solar power",
+    "space solar power",
+    "solar power satellite",
+    "orbital solar power",
+    "wireless power transmission from space",
+    "rectenna",
+    "orbital energy infrastructure"
+  ],
+  "hero": {
+    "eyebrow": "Foundational Definition",
+    "title": "Space-based solar power is an infrastructure concept, not only a satellite concept.",
+    "subtitle": "Space-based solar power refers to proposed systems that would collect solar energy in space and transmit usable power to receiving infrastructure on Earth or to future space-based users.",
+    "thesis": "To understand SBSP seriously, it must be framed as an infrastructure chain: orbital collection, power conversion, wireless transmission, atmospheric crossing, receiving infrastructure, grid or mission integration, governance, safety, economics, and strategic use."
+  },
+  "sections": [
+    {
+      "id": "definition",
+      "heading": "Definition",
+      "body": [
+        "Space-based solar power, often abbreviated as SBSP, refers to proposed systems that would collect solar energy in space and transmit power to a receiving system, usually on Earth, through wireless power transmission.",
+        "The common public image is simple: solar power satellites in orbit collect sunlight and send energy to Earth. The complete concept is more complex. It requires orbital platforms, energy conversion, beam control, transmission through or across atmospheric conditions, receiving infrastructure, grid connection, safety governance, regulatory approval, and economic justification.",
+        "For this asset, SBSP is treated as a future infrastructure category rather than a single device."
+      ],
+      "links": [
+        {
+          "label": "Orbital Energy Infrastructure Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        }
+      ],
+      "sourceRefs": [
+        "jaxa-ssps-research",
+        "nasa-otps-sbsp-summary-2024"
+      ]
+    },
+    {
+      "id": "simple-explanation",
+      "heading": "A simple explanation",
+      "body": [
+        "At a basic level, SBSP proposes to place solar energy collection systems in space, where sunlight may be available with different continuity characteristics than terrestrial solar power.",
+        "The collected energy would then need to be converted and transmitted to a receiving point. Many concepts discuss microwave or laser power transmission, while receiving systems are often described through rectenna infrastructure or other power-reception architectures.",
+        "The concept is attractive because it appears to address some limitations of terrestrial solar generation, especially night and weather. But the concept also introduces major space, transmission, safety, land-use, regulatory, and economic constraints."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "not-a-solved-system",
+      "heading": "Not a solved commercial system",
+      "body": [
+        "SBSP should not be described as if it already exists as mature commercial infrastructure.",
+        "Research programs, institutional studies, technical demonstrations, and system models are important, but they do not automatically prove that full-scale space-based solar power is economically mature, operationally deployed, or ready to replace existing energy systems.",
+        "This distinction is central to the site’s methodology. A concept can be strategically important while still being technically, economically, and institutionally unresolved."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "caltech-sspd-wireless-power-2023"
+      ]
+    },
+    {
+      "id": "infrastructure-chain",
+      "heading": "The SBSP infrastructure chain",
+      "body": [
+        "A serious explanation of SBSP must follow the full infrastructure chain.",
+        "The chain begins with sunlight and orbital collection. It continues through solar power satellites or orbital platforms, power conversion, wireless transmission, atmospheric crossing, receiving infrastructure, grid integration, and final use cases such as terrestrial grid support, remote power, AI-scale energy demand, defense resilience, or future space-industrial systems.",
+        "If any major link in this chain is weak, unresolved, too costly, unsafe, unregulated, or publicly unacceptable, the system cannot be treated as mature infrastructure."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "orbital-collection",
+      "heading": "Orbital collection",
+      "body": [
+        "The orbital collection layer is the part of the concept where solar energy is gathered in space.",
+        "This may involve solar power satellites, modular orbital arrays, or future space-based energy platforms. These systems would need to survive the space environment, maintain orientation, manage thermal and electrical systems, and operate at scales large enough to matter for power delivery.",
+        "Orbital collection is visually central to the concept, but it is only one part of the system. Without transmission and receiving infrastructure, collected energy does not become usable power."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Global Programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": [
+        "jaxa-ssps-research",
+        "caltech-space-solar-power-project"
+      ]
+    },
+    {
+      "id": "wireless-power-transmission",
+      "heading": "Wireless power transmission",
+      "body": [
+        "Wireless power transmission is the proposed pathway for moving collected energy from an orbital platform to a receiving system.",
+        "Many SBSP concepts discuss microwave transmission, laser transmission, or related directed-energy pathways. The specific pathway affects efficiency, safety, atmospheric interaction, receiver design, beam control, regulatory exposure, and public legitimacy.",
+        "Transmission claims require careful boundaries. A demonstration of wireless power transmission does not automatically prove full-scale commercial SBSP feasibility."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "caltech-sspd-wireless-power-2023",
+        "jaxa-ssps-research"
+      ]
+    },
+    {
+      "id": "rectenna-reception",
+      "heading": "Receiving infrastructure and rectennas",
+      "body": [
+        "A receiving system is required to convert transmitted energy into usable electrical power.",
+        "Many SBSP discussions refer to rectennas, which are receiving antenna systems associated with microwave power transmission concepts. A rectenna is not just a technical component; it is also an infrastructure footprint, siting question, safety question, grid-connection question, and public-acceptance question.",
+        "Receiving infrastructure is one reason SBSP must be evaluated as a terrestrial and orbital system together."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "grid-integration",
+      "heading": "Grid and use-case integration",
+      "body": [
+        "After energy is received, it must be integrated into a useful demand system.",
+        "Potential demand contexts may include terrestrial grids, remote infrastructure, island grids, disaster response, defense logistics, AI data centers, industrial systems, or future lunar and orbital infrastructure.",
+        "Each use case has different requirements. A system that may be conceptually interesting for one use case may not be practical, economic, safe, or necessary for another."
+      ],
+      "links": [
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "why-it-matters",
+      "heading": "Why space-based solar power matters",
+      "body": [
+        "SBSP matters because it asks whether energy generation, energy transmission, and energy sovereignty may eventually extend beyond the atmosphere.",
+        "It connects energy policy, aerospace capability, wireless power transmission, grid resilience, AI-scale demand, defense logistics, and future space-industrial systems.",
+        "Even if SBSP remains technically and economically difficult, the category is important enough to require clear definitions, careful source boundaries, and disciplined public explanation."
+      ],
+      "links": [
+        {
+          "label": "Manifesto",
+          "path": "/manifesto/"
+        },
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "main-constraints",
+      "heading": "Main constraints",
+      "body": [
+        "The most important SBSP constraints include launch economics, orbital assembly, system mass, wireless transmission performance, atmospheric effects, receiving footprint, safety, regulatory approval, grid connection, maintenance, space debris, capital formation, and public legitimacy.",
+        "These constraints do not make the field irrelevant. They make it a serious infrastructure question.",
+        "A credible reference asset should explain the constraints as clearly as it explains the promise."
+      ],
+      "links": [
+        {
+          "label": "Feasibility and Constraints",
+          "path": "/feasibility-and-constraints/"
+        },
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "common-misunderstandings",
+      "heading": "Common misunderstandings",
+      "body": [
+        "One common misunderstanding is that SBSP is simply terrestrial solar moved into orbit. In reality, the space environment, launch requirements, transmission pathway, receiving infrastructure, and grid integration challenges make it a different category.",
+        "Another misunderstanding is that a successful demonstration proves full commercial readiness. Demonstrations matter, but they must be interpreted according to scale, system context, source quality, and claim boundaries.",
+        "A third misunderstanding is that SBSP must be discussed only as an energy technology. It also belongs to discussions about strategic infrastructure, AI energy demand, defense resilience, space logistics, and future industrial geography."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Global Programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Articles and Briefs",
+          "path": "/articles/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "terms-to-know",
+      "heading": "Key terms to know",
+      "body": [
+        "Important terms include space-based solar power, space solar power, solar power satellite, orbital solar array, wireless power transmission, microwave power beaming, laser power transmission, rectenna, geostationary orbit, orbital assembly, grid integration, energy sovereignty, and orbital energy infrastructure.",
+        "These terms should not be treated as isolated glossary entries. Each term belongs somewhere inside the infrastructure chain.",
+        "The site’s future glossary will connect each term to its role, related concepts, constraints, sources, and relevant pages."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "institutional-activity",
+      "heading": "Institutional activity",
+      "body": [
+        "Space-based solar power has been studied by major institutions, agencies, academic groups, and public-sector programs.",
+        "Institutional activity is important because it shows that the concept is being examined seriously. But institutional interest does not automatically mean deployment readiness.",
+        "The asset’s global program registry is designed to help readers distinguish between assessment, research, demonstration, policy interest, company claims, and operational deployment."
+      ],
+      "links": [
+        {
+          "label": "Global Programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-summary-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research",
+        "caltech-space-solar-power-project"
+      ]
+    },
+    {
+      "id": "how-this-site-uses-the-definition",
+      "heading": "How this site uses the definition",
+      "body": [
+        "Space-Based-Solar-Power.com uses the definition of SBSP as the starting point for a larger reference architecture.",
+        "The asset connects the definition to a methodology, framework, source register, constraint map, strategic tools layer, article standards, and future multilingual editions.",
+        "The purpose is not only to answer what SBSP is, but to build the reference structure needed to understand why the field matters, what constrains it, who is studying it, and how claims should be evaluated."
+      ],
+      "links": [
+        {
+          "label": "About the asset",
+          "path": "/about/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Framework",
+      "path": "/framework/",
+      "reason": "Places the definition inside the full orbital energy infrastructure chain."
+    },
+    {
+      "label": "Technology Stack",
+      "path": "/technology-stack/",
+      "reason": "Explains the system components behind the definition."
+    },
+    {
+      "label": "Feasibility and Constraints",
+      "path": "/feasibility-and-constraints/",
+      "reason": "Documents the unresolved barriers that shape SBSP maturity."
+    },
+    {
+      "label": "Sources",
+      "path": "/sources/",
+      "reason": "Provides source hierarchy and claim-boundary discipline."
+    },
+    {
+      "label": "Methodology",
+      "path": "/methodology/",
+      "reason": "Explains how SBSP claims are classified and evaluated."
+    },
+    {
+      "label": "Strategic Importance",
+      "path": "/strategic-importance/",
+      "reason": "Connects the definition to energy sovereignty, AI demand, defense resilience, and space infrastructure."
+    },
+    {
+      "label": "Global Programs",
+      "path": "/global-programs/",
+      "reason": "Shows institutional and research activity around the field."
+    },
+    {
+      "label": "Tools",
+      "path": "/tools/",
+      "reason": "Introduces decision-support tools connected to the definition."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "nasa-otps-sbsp-2024",
+      "usage": "Used for constraint-aware framing and to avoid presenting SBSP as commercially mature."
+    },
+    {
+      "sourceId": "nasa-otps-sbsp-summary-2024",
+      "usage": "Used as public-facing NASA context for SBSP assessment."
+    },
+    {
+      "sourceId": "jaxa-ssps-research",
+      "usage": "Used for SSPS concept explanation and institutional research lineage."
+    },
+    {
+      "sourceId": "caltech-sspd-wireless-power-2023",
+      "usage": "Used for demonstration-level wireless power transmission context, not for full-scale commercial readiness."
+    },
+    {
+      "sourceId": "caltech-space-solar-power-project",
+      "usage": "Used for academic project background and general concept lineage."
+    },
+    {
+      "sourceId": "esa-solaris-2024",
+      "usage": "Used for institutional interest and program framing, not deployment proof."
+    }
+  ],
+  "claimBoundary": "This page defines and explains space-based solar power as a concept and infrastructure category. It does not claim that SBSP is commercially mature, economically inevitable, technically resolved, or operationally deployed at infrastructure scale. Demonstrations, programs, and studies must be interpreted through source and claim boundaries.",
+  "qualityStatus": {
+    "metadataComplete": true,
+    "internalLinksDefined": true,
+    "sourceBoundaryDefined": true,
+    "placeholderFree": true,
+    "readyForTemplate": true
+  }
+}
