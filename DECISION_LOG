@@ -30,7 +30,7 @@ The project will develop a distinctive spatial interface language while preservi
 
 **Status:** APPROVED
 
-**Context:** The project requires an interface language that does not merely decorate the asset, but embodies the asset’s governing thesis. The goal is to make Space-Based-Solar-Power.com a reference not only in content, SEO, multilingual structure, and strategic tools, but also in conceptual interface design.
+**Context:** The project requires an interface language that does not merely decorate the asset, but embodies the asset's governing thesis. The goal is to make Space-Based-Solar-Power.com a reference not only in content, SEO, multilingual structure, and strategic tools, but also in conceptual interface design.
 
 **Decision:**
 
@@ -156,3 +156,44 @@ Future HTML, CSS, and JavaScript implementation must follow `INTERFACE_WIREFRAME
 **Consequences:**
 
 The project data layer now matches the sovereign content map. Future templates, sitemap generation, navigation rendering, and internal-link logic must draw from these registries instead of hard-coded route assumptions.
+
+---
+
+## [S1-DL-007] - 2026-05-27: Sovereign Generation Engine v1 Established
+
+**Status:** APPROVED
+
+**Context:** The project required a scalable generation and validation system before expanding into large-scale reference content. Manual page creation alone cannot support a sovereign-grade, multilingual, source-disciplined asset intended to scale into glossary pages, question pages, program profiles, comparisons, regional pages, tools, and future multilingual editions.
+
+**Decision:**
+
+1. Established `Sovereign Generation Engine v1`.
+2. Added governing architecture documentation:
+   - `GENERATION_ENGINE.md`
+   - `DATA_MODEL.md`
+   - `INTERNAL_LINK_GRAPH_POLICY.md`
+   - `QUALITY_GATE.md`
+   - `SITEMAP_POLICY.md`
+3. Added core sovereign data files:
+   - `main/data/ontology.json`
+   - `main/data/page_blueprints.json`
+   - `main/data/internal_link_graph.json`
+4. Added build and validation scripts:
+   - `main/scripts/build.py` — generates `public/`, `robots.txt`, and sitemap index from approved registries
+   - `main/scripts/validate_schema.py` — blocks missing fields, unknown statuses, duplicate IDs
+   - `main/scripts/validate_content.py` — blocks placeholders, thin content, AI filler
+   - `main/scripts/validate_links.py` — blocks broken internal links pre- and post-build
+   - `main/scripts/validate_sources.py` — blocks unresolved sourceRef values
+   - `main/scripts/validate_claims.py` — blocks certainty claims without source boundaries
+   - `main/scripts/validate_seo.py` — blocks missing title, description, H1, canonical
+   - `main/scripts/validate_sitemap.py` — blocks unapproved URLs in sitemap
+   - `main/scripts/validate_internal_link_graph.py` — blocks orphan pages, hub budget violations
+   - `main/scripts/quality_gate.py` — aggregates all validators and blocks the build on any failure
+5. Added `.github/workflows/quality-gate.yml` to enforce validation on every push to `main` and every pull request.
+6. Confirmed that large-scale expansion must proceed through structured data and governed templates, not loose HTML or random page creation.
+
+**Consequences:**
+
+The project may now move from manually created foundation pages into controlled data-driven expansion. Future glossary, question, program, comparison, regional, article, and multilingual pages must be generated through the engine and blocked by the quality gate if they fail schema, source, claim, SEO, link, sitemap, or internal link graph validation.
+
+Next phase is `Sovereign Expansion Seed Pack v1A`: 30 glossary terms, 25 question pages, 10 program profiles, 10 comparison pages, 8 audience guides, 1 qualitative tool page — approximately 84 new pages to verify engine integrity before large-scale expansion.
