@@ -200,6 +200,32 @@ Next phase is `Sovereign Expansion Seed Pack v1A`: 30 glossary terms, 25 questio
 
 ---
 
+## [S1-DL-011] - 2026-05-27: Publication Trial v1A Completed
+
+**Status:** APPROVED
+
+**Context:** After the Sovereign Generation Engine v1 passed the full quality gate on `main`, the project initiated Publication Trial v1A to prove that selected seed data could generate real public reference pages under strict validation.
+
+**Decision:**
+
+1. Completed Publication Trial v1A.
+2. Generated a controlled publication set from seed data:
+   - 10 glossary pages;
+   - 8 question pages;
+   - 5 program profiles;
+   - 3 hub pages;
+   - 13 foundation pages already governed by the core content system.
+3. Confirmed that the generated output contains 39 public pages and 39 sitemap URLs.
+4. Confirmed that the build system, sitemap logic, SEO checks, source validation, claim validation, link validation, and internal-link graph validation pass before and after publication build.
+5. Confirmed that seed data is not automatically public content; only selected and validated publication-trial items are generated.
+6. Confirmed that generated `public/` output is currently tracked for auditability during early publication trials.
+
+**Consequences:**
+
+The asset has proven its first controlled generated publication layer. Future expansion may proceed to a larger controlled batch only after reviewing the generated output quality, internal-link behavior, sitemap structure, and public deployment path. The next required step before v1B expansion is a Deployment Readiness Pass to decide and implement how `public/` is served — GitHub Actions → GitHub Pages is the correct path before scaling output.
+
+---
+
 ## [S1-DL-010] - 2026-05-27: Publication Trial v1A Initiated
 
 **Status:** APPROVED
