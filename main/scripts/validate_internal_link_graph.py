@@ -63,11 +63,13 @@ def validate_required_hub_links(pages_data: dict, graph_data: dict):
             continue
         pid = p.get("id", "<no-id>")
         ptype = p.get("type", "")
+        page_path = p.get("path", "")
         rule = rules_by_type.get(ptype)
         if not rule:
             continue
 
         required_links = set(rule.get("requiredOutboundLinks", []))
+        required_links.discard(page_path)  # A page must not require a self-link
         page_links = set(p.get("requiredInternalLinks", []))
         missing = required_links - page_links
         for m in missing:

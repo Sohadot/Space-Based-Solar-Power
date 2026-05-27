@@ -93,6 +93,7 @@
         "/manifesto/",
         "/sources/",
         "/tools/",
+        "/articles/",
         "/what-is-space-based-solar-power/",
         "/feasibility-and-constraints/",
         "/strategic-importance/",
@@ -285,7 +286,7 @@
       "description": "The technology stack behind space-based solar power: orbital arrays, wireless power transmission, rectennas, launch economics, and grid integration.",
       "primarySeoCluster": ["space-based solar power technology", "solar power satellite technology", "wireless power transmission from space"],
       "strategicRole": "Maps the technical layers of SBSP.",
-      "requiredInternalLinks": ["/framework/", "/what-is-space-based-solar-power/", "/feasibility-and-constraints/", "/global-programs/", "/sources/"],
+      "requiredInternalLinks": ["/framework/", "/what-is-space-based-solar-power/", "/feasibility-and-constraints/", "/global-programs/", "/sources/", "/methodology/"],
       "sourceBoundary": "Technical claims require source entries or methodology boundaries."
     },
     {
@@ -325,7 +326,7 @@
       "description": "Why space-based solar power matters for energy sovereignty, defense resilience, artificial intelligence, grid security, and future space-industrial systems.",
       "primarySeoCluster": ["space-based solar power strategic importance", "energy sovereignty", "space energy geopolitics", "AI energy demand"],
       "strategicRole": "Explains why SBSP matters beyond technical novelty.",
-      "requiredInternalLinks": ["/framework/", "/manifesto/", "/feasibility-and-constraints/", "/global-programs/", "/sources/"],
+      "requiredInternalLinks": ["/framework/", "/manifesto/", "/feasibility-and-constraints/", "/global-programs/", "/sources/", "/methodology/"],
       "sourceBoundary": "Strategic interpretation must be clearly separated from technical certainty."
     },
     {
