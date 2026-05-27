@@ -431,7 +431,7 @@
       "title": "Rectenna Infrastructure",
       "description": "A reference page on rectenna infrastructure, receiving footprint, grid connection, and terrestrial reception for space-based solar power.",
       "strategicRole": "Explains the terrestrial receiving layer of SBSP.",
-      "requiredInternalLinks": ["/framework/", "/technology-stack/", "/feasibility-and-constraints/", "/grid-integration/"]
+      "requiredInternalLinks": ["/framework/", "/technology-stack/", "/feasibility-and-constraints/", "/sbsp-grid-integration/"]
     },
     {
       "id": "space-solar-power-satellites",
