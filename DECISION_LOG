@@ -1,3 +1,33 @@
+## [S1-DL-014] - 2026-05-27: Post-Deployment Verification and Presentation Activation Initiated
+
+**Status:** APPROVED
+
+**Context:** After the first successful GitHub Pages deployment of `space-based-solar-power.com`, post-deployment verification revealed two blocking issues: (1) live pages rendered as raw default HTML with no sovereign visual system, because `build.py` was writing a 2-line CSS placeholder instead of a real design; (2) `/sitemap.xml` returned 404 while `robots.txt` pointed to `sitemap_index.xml`, because the sitemap logic only wrote `sitemap.xml` when a single sub-sitemap existed, writing `sitemap_index.xml` otherwise. Both issues block production credibility and must be resolved before any v1B expansion.
+
+**Decision:**
+
+1. Initiated Post-Deployment Verification and Presentation Activation phase.
+2. **Blocked v1B expansion** until this phase is resolved, confirmed, and merged to `main`.
+3. Fixed sitemap canonical availability:
+   - `build.py` now always writes `public/sitemap.xml` as the canonical crawlable entry point, regardless of how many sub-sitemaps exist.
+   - When multiple sub-sitemaps are present, `sitemap.xml` is written as a sitemap index. `sitemap_index.xml` is kept as a backward-compatible alias.
+   - `robots.txt` now always points to `sitemap.xml`.
+   - `validate_sitemap.py` now fails the build if `public/sitemap.xml` is absent.
+   - `validate_sitemap.py` now detects sitemap index format and validates sub-sitemap file references instead of falsely treating index entries as page URLs.
+4. Activated baseline sovereign visual system:
+   - Created `main/static/css/main.css` with a full dark orbital design system using system font stacks. No external CDN dependencies.
+   - `build.py` now copies `main/static/css/main.css` to `public/static/css/main.css` instead of writing a generated stub.
+   - HTML structure updated: header/nav carry design system classes; home page renders hero block (eyebrow, title, subtitle, thesis) and structured sections; foundation pages render `sections[]` content with headings, body paragraphs, and section links; hub pages include intro text from page description; reference nav uses readable labels.
+   - Section links in content files are filtered against the `approved_for_launch` paths set before rendering as hrefs, preventing expansion-cluster paths not present in `public/` from causing post-build link validation failures.
+5. Required all changes to pass the full quality gate (8/8) before merging.
+6. Confirmed that no existing generated pages are removed, no validators are weakened, and no new content pages are added as part of this phase.
+
+**Consequences:**
+
+The asset now serves its sovereign visual system on all 39 published pages. The canonical sitemap entry point is accessible at `/sitemap.xml`. Future expansion phases (v1B and beyond) remain blocked until this branch is reviewed and merged to `main`. The design system in `main/static/css/main.css` is the governed baseline for all future interface work; changes must follow the interface thesis and design system doctrine.
+
+---
+
 ## [S1-DL-001] - 2026-05-25: Embodied Spatial Interface Direction Approved
 
 **Status:** APPROVED
