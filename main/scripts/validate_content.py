@@ -12,17 +12,22 @@ DATA_DIR = ROOT / "main" / "data"
 
 ERRORS = []
 
+# Patterns that indicate actual placeholder/filler content.
+# Deliberately specific: governance text that discusses these anti-patterns
+# (e.g. "no placeholder titles") must not trigger false positives.
 PLACEHOLDER_PATTERNS = [
     r"lorem ipsum",
     r"coming soon",
     r"\bTODO\b",
-    r"placeholder",
+    r"\[placeholder\]",          # bracket-wrapped placeholder
+    r"placeholder content",      # explicit filler label
+    r"placeholder text",         # explicit filler label
     r"\[insert content here\]",
     r"\bTBD\b",
     r"content pending",
     r"under construction",
     r"\[add content\]",
-    r"fake article",
+    r"\[fake article\]",         # bracket-wrapped fake article token
     r"sample text",
     r"\[your \w+ here\]",
 ]
@@ -100,7 +105,8 @@ def validate_generated_glossary():
     data = load_json(path)
     if not data:
         return
-    for term in data.get("terms", []):
+    terms = data if isinstance(data, list) else data.get("terms", [])
+    for term in terms:
         tid = term.get("id", "<no-id>")
         definition = term.get("definition", "")
         check_placeholders(definition, f"glossary/{tid}")
