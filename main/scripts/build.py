@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "main" / "data"
 CONTENT_DIR = ROOT / "main" / "content" / "pages"
 SCRIPTS_DIR = ROOT / "main" / "scripts"
+STATIC_DIR = ROOT / "main" / "static"
 PUBLIC_DIR = ROOT / "public"
 SITEMAPS_DIR = PUBLIC_DIR / "sitemaps"
 
@@ -80,10 +81,16 @@ def _escape_html(text: str) -> str:
     )
 
 
+def _path_to_label(path: str) -> str:
+    slug = path.strip("/").split("/")[-1] if path.strip("/") else ""
+    return slug.replace("-", " ").title() if slug else "Home"
+
+
 def _build_nav_links(links: list) -> str:
     parts = []
     for link in links:
-        parts.append(f'        <li><a href="{link}">{link}</a></li>')
+        label = _path_to_label(link)
+        parts.append(f'        <li><a href="{link}">{_escape_html(label)}</a></li>')
     return "\n".join(parts)
 
 
@@ -93,6 +100,14 @@ def _page_shell(page: dict, h1: str, body: str) -> str:
     path = page.get("path", "/")
     canonical = f"{DOMAIN}{path}"
     nav_links = _build_nav_links(page.get("requiredInternalLinks", []))
+    ref_nav = ""
+    if nav_links:
+        ref_nav = f"""  <nav class="ref-nav" aria-label="Related pages">
+    <p class="ref-nav-label">Related</p>
+    <ul>
+{nav_links}
+    </ul>
+  </nav>"""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,19 +119,105 @@ def _page_shell(page: dict, h1: str, body: str) -> str:
   <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body>
-  <header>
-    <nav aria-label="Primary navigation">
-      <a href="/">Space-Based Solar Power</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="home-link" href="/">Space-Based Solar Power</a>
     </nav>
   </header>
-  <main>
+  <main class="page-container">
     <h1>{_escape_html(h1)}</h1>
-    <div class="page-body">{body}</div>
-    <nav aria-label="Related pages">
-      <ul>
-{nav_links}
-      </ul>
+    {body}
+{ref_nav}
+  </main>
+</body>
+</html>"""
+
+
+def render_content_sections_html(sections: list, approved_paths: set) -> str:
+    """Render content sections, filtering links to only approved_for_launch paths."""
+    html_parts = []
+    for section in sections:
+        heading = _escape_html(section.get("heading", ""))
+        body_paras = section.get("body", [])
+        links = section.get("links", [])
+
+        parts = ['<section class="page-section">']
+        if heading:
+            parts.append(f'  <h2>{heading}</h2>')
+        for para in body_paras:
+            parts.append(f'  <p>{_escape_html(para)}</p>')
+        visible_links = [lk for lk in links if lk.get("path") in approved_paths]
+        if visible_links:
+            parts.append('  <div class="section-links">')
+            for lk in visible_links:
+                label = _escape_html(lk.get("label", lk.get("path", "")))
+                parts.append(f'    <a href="{lk["path"]}">{label}</a>')
+            parts.append('  </div>')
+        parts.append('</section>')
+        html_parts.append("\n".join(parts))
+    return "\n".join(html_parts)
+
+
+def generate_home_html(page: dict, content: dict, approved_paths: set) -> str:
+    hero = content.get("hero", {})
+    sections = content.get("sections", [])
+    internal_links = content.get("internalLinks", [])
+    h1 = content.get("h1", page.get("title", ""))
+
+    eyebrow = _escape_html(hero.get("eyebrow", ""))
+    hero_title = _escape_html(hero.get("title", ""))
+    subtitle = _escape_html(hero.get("subtitle", ""))
+    thesis = _escape_html(hero.get("thesis", ""))
+
+    hero_parts = ['<div class="hero">']
+    if eyebrow:
+        hero_parts.append(f'  <p class="hero-eyebrow">{eyebrow}</p>')
+    if hero_title:
+        hero_parts.append(f'  <p class="hero-title">{hero_title}</p>')
+    if subtitle:
+        hero_parts.append(f'  <p class="hero-subtitle">{subtitle}</p>')
+    if thesis:
+        hero_parts.append(f'  <blockquote class="hero-thesis">{thesis}</blockquote>')
+    hero_parts.append('</div>')
+    hero_html = "\n".join(hero_parts)
+
+    sections_html = render_content_sections_html(sections, approved_paths)
+
+    nav_items = []
+    for lk in internal_links:
+        if lk.get("path") in approved_paths:
+            label = _escape_html(lk.get("label", ""))
+            nav_items.append(f'      <li><a href="{lk["path"]}">{label}</a></li>')
+    ref_nav = ""
+    if nav_items:
+        ref_nav = ('  <nav class="ref-nav" aria-label="Explore">\n'
+                   '    <p class="ref-nav-label">Explore</p>\n'
+                   '    <ul>\n' + "\n".join(nav_items) + '\n    </ul>\n  </nav>')
+
+    title = _escape_html(page.get("title", ""))
+    description = _escape_html(page.get("description", ""))
+    canonical = f"{DOMAIN}{page.get('path', '/')}"
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content="{description}">
+  <link rel="canonical" href="{canonical}">
+  <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="home-link" href="/">Space-Based Solar Power</a>
     </nav>
+  </header>
+  <main class="page-container">
+    <h1>{_escape_html(h1)}</h1>
+    {hero_html}
+    {sections_html}
+{ref_nav}
   </main>
 </body>
 </html>"""
@@ -172,6 +273,7 @@ def generate_program_html(program: dict, page: dict) -> str:
 
 def generate_glossary_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
     h1 = page.get("title", "SBSP Glossary")
+    description = _escape_html(page.get("description", ""))
     term_ids = (trial_manifest or {}).get("glossaryTerms", [])
     items = []
     for tid in term_ids:
@@ -187,12 +289,14 @@ def generate_glossary_hub_html(page: dict, seed_data: dict, trial_manifest: dict
             + '</li>'
         )
     list_html = "\n".join(f"      {item}" for item in items)
-    body = f'<ul class="glossary-index">\n{list_html}\n    </ul>\n'
+    intro = f'<p class="hub-intro">{description}</p>\n' if description else ""
+    body = intro + f'<ul class="glossary-index">\n{list_html}\n    </ul>\n'
     return _page_shell(page, h1, body)
 
 
 def generate_questions_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
     h1 = page.get("title", "SBSP Questions")
+    description = _escape_html(page.get("description", ""))
     question_ids = (trial_manifest or {}).get("questions", [])
     items = []
     for qid in question_ids:
@@ -203,12 +307,14 @@ def generate_questions_hub_html(page: dict, seed_data: dict, trial_manifest: dic
         q_text = _escape_html(q.get("question", qid))
         items.append(f'<li><a href="{q_path}">{q_text}</a></li>')
     list_html = "\n".join(f"      {item}" for item in items)
-    body = f'<ul class="questions-index">\n{list_html}\n    </ul>\n'
+    intro = f'<p class="hub-intro">{description}</p>\n' if description else ""
+    body = intro + f'<ul class="questions-index">\n{list_html}\n    </ul>\n'
     return _page_shell(page, h1, body)
 
 
 def generate_programs_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
     h1 = page.get("title", "SBSP Program Profiles")
+    description = _escape_html(page.get("description", ""))
     program_ids = (trial_manifest or {}).get("programs", [])
     items = []
     for pid in program_ids:
@@ -224,20 +330,30 @@ def generate_programs_hub_html(page: dict, seed_data: dict, trial_manifest: dict
             + '</li>'
         )
     list_html = "\n".join(f"      {item}" for item in items)
-    body = f'<ul class="programs-index">\n{list_html}\n    </ul>\n'
+    intro = f'<p class="hub-intro">{description}</p>\n' if description else ""
+    body = intro + f'<ul class="programs-index">\n{list_html}\n    </ul>\n'
     return _page_shell(page, h1, body)
 
 
-def generate_html(page: dict, content: dict | None) -> str:
+def generate_html(page: dict, content: dict | None,
+                  approved_paths: set | None = None) -> str:
+    if approved_paths is None:
+        approved_paths = set()
     title = page.get("title", "")
     h1 = content.get("h1", title) if content else title
-    body = content.get("body", "") if content else ""
+    if content and content.get("sections"):
+        body = render_content_sections_html(content["sections"], approved_paths)
+    else:
+        body = content.get("body", "") if content else ""
     return _page_shell(page, h1, body)
 
 
 def write_page(page: dict, content: dict | None,
                seed_data: dict | None = None,
-               trial_manifest: dict | None = None):
+               trial_manifest: dict | None = None,
+               approved_paths: set | None = None):
+    if approved_paths is None:
+        approved_paths = set()
     path = page.get("path", "/")
     if path == "/":
         out_path = PUBLIC_DIR / "index.html"
@@ -251,21 +367,23 @@ def write_page(page: dict, content: dict | None,
 
     if seed_data and seed_source == "glossary_term" and seed_id:
         term = seed_data["glossary"].get(seed_id)
-        html = generate_glossary_term_html(term, page) if term else generate_html(page, content)
+        html = generate_glossary_term_html(term, page) if term else generate_html(page, content, approved_paths)
     elif seed_data and seed_source == "question" and seed_id:
         question = seed_data["questions"].get(seed_id)
-        html = generate_question_html(question, page) if question else generate_html(page, content)
+        html = generate_question_html(question, page) if question else generate_html(page, content, approved_paths)
     elif seed_data and seed_source == "program" and seed_id:
         program = seed_data["programs"].get(seed_id)
-        html = generate_program_html(program, page) if program else generate_html(page, content)
+        html = generate_program_html(program, page) if program else generate_html(page, content, approved_paths)
     elif seed_data and seed_source == "glossary_hub":
         html = generate_glossary_hub_html(page, seed_data, trial_manifest)
     elif seed_data and seed_source == "questions_hub":
         html = generate_questions_hub_html(page, seed_data, trial_manifest)
     elif seed_data and seed_source == "programs_hub":
         html = generate_programs_hub_html(page, seed_data, trial_manifest)
+    elif content and content.get("hero"):
+        html = generate_home_html(page, content, approved_paths)
     else:
-        html = generate_html(page, content)
+        html = generate_html(page, content, approved_paths)
 
     out_path.write_text(html, encoding="utf-8")
     return str(out_path.relative_to(ROOT))
@@ -419,16 +537,25 @@ def main():
 
     static_css = PUBLIC_DIR / "static" / "css"
     static_css.mkdir(parents=True)
-    (static_css / "main.css").write_text(
-        "/* main.css — generated placeholder */\nbody { font-family: sans-serif; max-width: 900px; margin: auto; }\n",
-        encoding="utf-8"
-    )
+    source_css = STATIC_DIR / "css" / "main.css"
+    if source_css.exists():
+        shutil.copy2(source_css, static_css / "main.css")
+        print("  [CSS] main/static/css/main.css → public/static/css/main.css")
+    else:
+        print("  [WARN] main/static/css/main.css not found — writing placeholder")
+        (static_css / "main.css").write_text(
+            "/* main.css — placeholder */\nbody { font-family: sans-serif; max-width: 900px; margin: auto; }\n",
+            encoding="utf-8"
+        )
+
+    approved_paths = {p["path"] for p in pages}
 
     generated = []
     for page in pages:
         page_id = page.get("id", "")
         content = load_page_content(page_id)
-        out = write_page(page, content, seed_data=seed_data, trial_manifest=trial_manifest)
+        out = write_page(page, content, seed_data=seed_data,
+                         trial_manifest=trial_manifest, approved_paths=approved_paths)
         generated.append(out)
         print(f"  [GEN] {page.get('path')}")
 
