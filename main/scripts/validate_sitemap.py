@@ -83,14 +83,39 @@ def validate_robots_sitemap_ref():
             error(f"robots.txt: Sitemap reference '{fname}' does not exist")
 
 
+def is_sitemap_index(content: str) -> bool:
+    return "<sitemapindex" in content
+
+
+def validate_sitemap_xml_exists():
+    if not (PUBLIC_DIR / "sitemap.xml").exists():
+        error("public/sitemap.xml does not exist — canonical sitemap entry point is missing")
+
+
+def validate_sitemap_xml_index_refs(content: str):
+    """When sitemap.xml is a sitemap index, validate that referenced files exist."""
+    refs = re.findall(r"<loc>(.+?)</loc>", content)
+    for ref in refs:
+        fname = ref.replace(DOMAIN + "/", "")
+        file_path = PUBLIC_DIR / fname
+        if not file_path.exists():
+            error(f"sitemap.xml (index): references non-existent file '{fname}'")
+
+
 def main() -> int:
     print("validate_sitemap.py")
     print("-" * 40)
     approved_paths = load_approved_paths()
 
+    validate_sitemap_xml_exists()
+
     sitemap_xml = PUBLIC_DIR / "sitemap.xml"
     if sitemap_xml.exists():
-        validate_sitemap_file(sitemap_xml, approved_paths)
+        content = sitemap_xml.read_text(encoding="utf-8")
+        if is_sitemap_index(content):
+            validate_sitemap_xml_index_refs(content)
+        else:
+            validate_sitemap_file(sitemap_xml, approved_paths)
 
     sitemaps_dir = PUBLIC_DIR / "sitemaps"
     if sitemaps_dir.exists():

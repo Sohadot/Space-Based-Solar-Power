@@ -312,7 +312,9 @@ def write_sitemap_file(urls: list, out_path: Path):
     out_path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def write_sitemap_index(sitemap_files: list):
+def write_sitemap_index(sitemap_files: list, out_path: Path | None = None):
+    if out_path is None:
+        out_path = PUBLIC_DIR / "sitemap_index.xml"
     today = date.today().isoformat()
     lines = ['<?xml version="1.0" encoding="UTF-8"?>']
     lines.append('<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
@@ -322,7 +324,7 @@ def write_sitemap_index(sitemap_files: list):
         lines.append(f"    <lastmod>{today}</lastmod>")
         lines.append("  </sitemap>")
     lines.append("</sitemapindex>")
-    (PUBLIC_DIR / "sitemap_index.xml").write_text("\n".join(lines), encoding="utf-8")
+    out_path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def write_robots(sitemap_ref: str):
@@ -435,9 +437,11 @@ def main():
     sitemap_files = build_sitemaps(all_sitemap_urls, categories)
 
     if len(sitemap_files) > 1:
-        write_sitemap_index(sitemap_files)
-        sitemap_ref = "sitemap_index.xml"
-        print(f"  [SITEMAP] sitemap_index.xml ({len(sitemap_files)} files)")
+        # Always write sitemap.xml as canonical entry point for crawlers
+        write_sitemap_index(sitemap_files, PUBLIC_DIR / "sitemap.xml")
+        # Keep sitemap_index.xml as alias for backward compatibility
+        write_sitemap_index(sitemap_files, PUBLIC_DIR / "sitemap_index.xml")
+        print(f"  [SITEMAP] sitemap.xml (index, {len(sitemap_files)} files)")
     else:
         single = sitemap_files[0] if sitemap_files else None
         if single:
@@ -445,10 +449,10 @@ def main():
                 (SITEMAPS_DIR / Path(single).name).read_text(encoding="utf-8"),
                 encoding="utf-8"
             )
-        sitemap_ref = "sitemap.xml"
         print(f"  [SITEMAP] sitemap.xml ({len(all_sitemap_urls)} URLs)")
 
-    write_robots(sitemap_ref)
+    # Always point robots.txt to sitemap.xml
+    write_robots("sitemap.xml")
     print(f"  [ROBOTS] robots.txt")
 
     (PUBLIC_DIR / ".nojekyll").write_text("", encoding="utf-8")
