@@ -1,0 +1,583 @@
+{
+  "id": "feasibility-and-constraints",
+  "route": "/feasibility-and-constraints/",
+  "language": "en",
+  "pageType": "credibility_hub",
+  "status": "approved_for_launch",
+  "title": "Feasibility and Constraints",
+  "metaDescription": "A disciplined overview of the technical, economic, regulatory, safety, launch, transmission, rectenna, grid-integration, and public-legitimacy constraints shaping space-based solar power.",
+  "h1": "Feasibility and Constraints",
+  "strategicRole": "Primary credibility hub explaining why space-based solar power is strategically important but not yet mature infrastructure.",
+  "primaryAudience": [
+    "investors",
+    "journalists",
+    "governments",
+    "researchers",
+    "companies",
+    "engineers",
+    "analysts",
+    "policy observers",
+    "strategic buyers"
+  ],
+  "seoCluster": [
+    "space-based solar power feasibility",
+    "SBSP constraints",
+    "space solar power feasibility",
+    "SBSP economics",
+    "space-based solar power cost",
+    "space-based solar power safety",
+    "rectenna footprint",
+    "wireless power transmission constraints",
+    "orbital energy infrastructure constraints"
+  ],
+  "hero": {
+    "eyebrow": "Credibility Layer",
+    "title": "Space-based solar power matters because it is difficult.",
+    "subtitle": "A serious reference asset must explain both the promise of orbital energy infrastructure and the constraints that prevent SBSP from being treated as mature commercial infrastructure today.",
+    "thesis": "The value of SBSP cannot be judged by imagination alone. It must be evaluated through launch economics, orbital assembly, wireless transmission, rectenna footprint, grid integration, safety, regulation, public legitimacy, maintenance, capital formation, and institutional readiness."
+  },
+  "sections": [
+    {
+      "id": "why-constraints-matter",
+      "heading": "Why constraints matter",
+      "body": [
+        "Space-based solar power attracts attention because it appears to offer a powerful strategic idea: collecting solar energy above the atmosphere and transmitting usable power to Earth or future space-based infrastructure.",
+        "But the seriousness of the concept depends on the constraints. Launch cost, orbital construction, transmission efficiency, receiving footprint, safety, regulation, grid integration, maintenance, capital formation, and public legitimacy all shape whether SBSP can move from concept to mature infrastructure.",
+        "This page exists to make the constraint structure visible. It does not dismiss SBSP. It protects the asset from hype by showing what must be solved."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "not-a-dismissal",
+      "heading": "A constraint is not a dismissal",
+      "body": [
+        "A constraint does not mean a field is irrelevant. In emerging infrastructure categories, constraints are the evidence of seriousness.",
+        "If a system requires large orbital platforms, long-duration operations, wireless transmission, public receiving infrastructure, and grid connection, then constraint analysis is not optional.",
+        "For this asset, constraint pages are not pessimistic content. They are the credibility layer that allows governments, investors, journalists, researchers, companies, and engineers to evaluate the category without exaggeration."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "constraint-map",
+      "heading": "The SBSP constraint map",
+      "body": [
+        "The primary constraint categories are launch economics, orbital assembly, system mass, power conversion, wireless transmission, atmospheric crossing, rectenna footprint, grid integration, safety, regulation, public legitimacy, space debris, operations, maintenance, capital formation, and commercial maturity.",
+        "These categories interact. Launch economics affect system scale. System scale affects assembly. Assembly affects maintenance. Transmission affects safety and regulation. Receiving footprint affects public legitimacy. Grid integration affects market value.",
+        "A single optimistic assumption cannot solve the full constraint chain."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Strategic Tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "launch-economics",
+      "heading": "Launch economics",
+      "body": [
+        "Launch economics are one of the central feasibility constraints for SBSP.",
+        "Large space-based power systems may require significant mass to orbit, repeated launches, modular deployment, assembly operations, replacement capacity, and long-term maintenance logistics.",
+        "Lower launch costs may improve the outlook for some concepts, but launch cost alone does not solve transmission, receiving infrastructure, safety, grid integration, regulation, or commercial readiness."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "orbital-assembly",
+      "heading": "Orbital assembly and deployment",
+      "body": [
+        "Large SBSP systems may require complex deployment or assembly in orbit.",
+        "This raises questions about modular construction, robotics, platform stability, thermal management, system alignment, launch packaging, replacement strategy, and long-term operational reliability.",
+        "A concept that looks simple in a diagram may become far more complex when translated into orbital construction and maintenance."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Global Programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024",
+        "jaxa-ssps-research"
+      ]
+    },
+    {
+      "id": "system-mass-and-scale",
+      "heading": "System mass and infrastructure scale",
+      "body": [
+        "SBSP concepts often depend on large system scale. Scale matters because energy infrastructure must deliver useful power, not only demonstrate a physical principle.",
+        "System mass, structural design, deployment method, thermal behavior, material requirements, replacement cycles, and orbital operations all affect whether a concept can move from demonstration to infrastructure.",
+        "The asset must therefore distinguish between component-level feasibility and full-system feasibility."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "wireless-transmission-performance",
+      "heading": "Wireless transmission performance",
+      "body": [
+        "Wireless power transmission is one of the defining layers of SBSP.",
+        "Transmission performance depends on the chosen pathway, beam control, conversion efficiency, atmospheric behavior, receiver design, distance, safety margins, and operational coordination between orbital and receiving systems.",
+        "A successful demonstration of wireless power transmission is important, but it must not be treated as proof of full commercial SBSP maturity."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "What Is Space-Based Solar Power?",
+          "path": "/what-is-space-based-solar-power/"
+        }
+      ],
+      "sourceRefs": [
+        "caltech-sspd-wireless-power-2023",
+        "jaxa-ssps-research"
+      ]
+    },
+    {
+      "id": "atmospheric-crossing",
+      "heading": "Atmospheric crossing",
+      "body": [
+        "For space-to-Earth power delivery, the transmission pathway must pass through or interact with atmospheric conditions.",
+        "This creates constraints around attenuation, weather, beam stability, safety, pointing accuracy, public exposure, aviation considerations, spectrum or regulatory questions, and system reliability.",
+        "Atmospheric crossing is not a minor technical detail. It is the boundary between a space system and public infrastructure."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "rectenna-footprint",
+      "heading": "Rectenna footprint and receiving infrastructure",
+      "body": [
+        "Receiving infrastructure is one of the most visible constraints in many SBSP concepts.",
+        "A rectenna or receiving system may require land, siting, safety zones, grid access, maintenance, public acceptance, environmental review, and operational governance.",
+        "The receiving footprint connects the orbital concept to terrestrial politics, land use, public trust, and grid reality."
+      ],
+      "links": [
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        },
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "grid-integration",
+      "heading": "Grid integration",
+      "body": [
+        "A receiving system is not enough. Energy must be integrated into a useful demand system.",
+        "Grid integration raises questions about power conditioning, dispatchability, reliability, interconnection, market structure, transmission infrastructure, regulatory approvals, resilience value, and compatibility with existing energy systems.",
+        "SBSP should not be evaluated only as generation. It must also be evaluated as grid infrastructure."
+      ],
+      "links": [
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "safety",
+      "heading": "Safety and public legitimacy",
+      "body": [
+        "Safety is not only a technical requirement. It is also a public legitimacy requirement.",
+        "Wireless transmission pathways, receiving infrastructure, land use, exposure concerns, aviation coordination, environmental review, operational controls, and emergency procedures all shape whether SBSP can be trusted as public infrastructure.",
+        "A system can be technically interesting and still fail if public legitimacy is weak."
+      ],
+      "links": [
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "regulation",
+      "heading": "Regulation and governance",
+      "body": [
+        "SBSP may involve energy regulation, space regulation, spectrum or transmission rules, safety governance, land-use review, environmental review, international coordination, and grid interconnection requirements.",
+        "The regulatory pathway may vary by jurisdiction, technology pathway, receiving infrastructure, orbital architecture, and use case.",
+        "This asset does not provide legal advice or policy instructions. It identifies regulatory questions that serious audiences should consider."
+      ],
+      "links": [
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "space-debris",
+      "heading": "Space debris and orbital environment",
+      "body": [
+        "Large orbital energy systems would operate inside an orbital environment that already carries debris, traffic management, collision risk, radiation, and long-term sustainability concerns.",
+        "Any serious SBSP architecture must consider how large structures are deployed, monitored, protected, maintained, deorbited, or otherwise managed over time.",
+        "Space debris is therefore part of the infrastructure discussion, not an unrelated space-policy issue."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Global Programs",
+          "path": "/global-programs/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "maintenance-and-lifecycle",
+      "heading": "Maintenance and lifecycle",
+      "body": [
+        "Energy infrastructure is not only built. It is operated, maintained, repaired, upgraded, financed, and eventually retired or replaced.",
+        "For SBSP, maintenance may involve orbital operations, remote diagnostics, replacement modules, robotic servicing, degradation management, debris avoidance, cybersecurity, and long-term system health.",
+        "Lifecycle economics may therefore be as important as initial deployment cost."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "capital-formation",
+      "heading": "Capital formation and commercial readiness",
+      "body": [
+        "SBSP is capital-intensive by nature. It may require long development cycles, launch capacity, orbital construction, receiving infrastructure, regulatory approval, customer commitments, insurance structures, and patient capital.",
+        "Commercial readiness therefore cannot be judged only by technical possibility.",
+        "A field may be scientifically plausible while still lacking the economics, institutions, financing, regulation, or demand structure needed for mature deployment."
+      ],
+      "links": [
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        },
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-2024"
+      ]
+    },
+    {
+      "id": "institutional-readiness",
+      "heading": "Institutional readiness",
+      "body": [
+        "Institutional readiness includes the ability of governments, agencies, regulators, utilities, grid operators, aerospace firms, financiers, and public stakeholders to support or evaluate SBSP responsibly.",
+        "Institutional interest is important, but it is not the same as deployment readiness.",
+        "This distinction matters because institutional programs, studies, and demonstrations can be misread as evidence that the field is closer to deployment than it actually is."
+      ],
+      "links": [
+        {
+          "label": "Global Programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        }
+      ],
+      "sourceRefs": [
+        "nasa-otps-sbsp-summary-2024",
+        "esa-solaris-2024",
+        "jaxa-ssps-research"
+      ]
+    },
+    {
+      "id": "ai-demand-constraint",
+      "heading": "AI demand does not remove constraints",
+      "body": [
+        "Artificial intelligence and hyperscale computing may increase interest in high-density, resilient, and continuous energy supply.",
+        "That strategic context makes SBSP more relevant to long-horizon energy discussion, but it does not solve the technical or economic constraints of orbital power delivery.",
+        "The asset may connect SBSP to AI energy demand, but it must not claim that AI demand makes SBSP inevitable."
+      ],
+      "links": [
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Framework",
+          "path": "/framework/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "defense-resilience-constraint",
+      "heading": "Defense relevance does not equal operational readiness",
+      "body": [
+        "Remote power, disaster response, and defense resilience are important strategic contexts for SBSP.",
+        "However, strategic relevance does not mean that the technology is ready for operational deployment in defense or emergency contexts.",
+        "The asset must distinguish between use-case interest and readiness."
+      ],
+      "links": [
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        },
+        {
+          "label": "Tools",
+          "path": "/tools/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "common-overstatements",
+      "heading": "Common overstatements to avoid",
+      "body": [
+        "The asset must avoid common overstatements such as claiming that SBSP will soon replace terrestrial energy, that a demonstration proves full-scale feasibility, that launch cost reduction alone solves the system, or that institutional interest proves deployment.",
+        "It must also avoid treating company announcements as neutral proof or presenting long-horizon scenarios as near-term certainty.",
+        "The goal is not to weaken the category. The goal is to make the category credible."
+      ],
+      "links": [
+        {
+          "label": "Sources and Claim Boundaries",
+          "path": "/sources/"
+        },
+        {
+          "label": "Articles and Briefs",
+          "path": "/articles/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "constraint-matrix-connection",
+      "heading": "Connection to the Orbital Energy Constraint Matrix",
+      "body": [
+        "This page is the foundation for the future Orbital Energy Constraint Matrix.",
+        "The matrix should help users organize launch economics, orbital assembly, transmission pathway, receiving footprint, grid integration, safety, regulation, public legitimacy, and claim boundaries.",
+        "The first version of the matrix should be qualitative and source-disciplined. It must not produce unsupported numerical certainty."
+      ],
+      "links": [
+        {
+          "label": "Strategic Tools",
+          "path": "/tools/"
+        },
+        {
+          "label": "Methodology",
+          "path": "/methodology/"
+        },
+        {
+          "label": "Sources",
+          "path": "/sources/"
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "constraint-conclusion",
+      "heading": "The credibility of the category depends on its constraints",
+      "body": [
+        "A weak SBSP website would focus only on promise.",
+        "A serious SBSP reference asset must explain the constraints with equal discipline.",
+        "Space-Based-Solar-Power.com treats constraints as the foundation of credibility, due diligence, and long-term category authority."
+      ],
+      "links": [
+        {
+          "label": "Technology Stack",
+          "path": "/technology-stack/"
+        },
+        {
+          "label": "Global Programs",
+          "path": "/global-programs/"
+        },
+        {
+          "label": "Strategic Importance",
+          "path": "/strategic-importance/"
+        }
+      ],
+      "sourceRefs": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Methodology",
+      "path": "/methodology/",
+      "reason": "Defines how constraints and unresolved scenarios are classified."
+    },
+    {
+      "label": "Sources",
+      "path": "/sources/",
+      "reason": "Provides the source and claim-boundary foundation for constraint analysis."
+    },
+    {
+      "label": "Technology Stack",
+      "path": "/technology-stack/",
+      "reason": "Connects constraints to the SBSP system layers."
+    },
+    {
+      "label": "Framework",
+      "path": "/framework/",
+      "reason": "Places constraints inside the full orbital energy infrastructure chain."
+    },
+    {
+      "label": "Strategic Importance",
+      "path": "/strategic-importance/",
+      "reason": "Balances constraints with strategic relevance."
+    },
+    {
+      "label": "Tools",
+      "path": "/tools/",
+      "reason": "Connects constraints to the future Orbital Energy Constraint Matrix."
+    },
+    {
+      "label": "Global Programs",
+      "path": "/global-programs/",
+      "reason": "Shows how institutional programs must be interpreted through constraints."
+    },
+    {
+      "label": "What Is Space-Based Solar Power?",
+      "path": "/what-is-space-based-solar-power/",
+      "reason": "Connects feasibility back to the foundational definition."
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "nasa-otps-sbsp-2024",
+      "usage": "Primary institutional source for feasibility, cost, emissions, system assumptions, and constraint-aware framing. Must not be used as proof of commercial maturity."
+    },
+    {
+      "sourceId": "nasa-otps-sbsp-summary-2024",
+      "usage": "Public-facing NASA summary used for general assessment context."
+    },
+    {
+      "sourceId": "esa-solaris-2024",
+      "usage": "Used for institutional program interest and European framing, not proof of deployment."
+    },
+    {
+      "sourceId": "jaxa-ssps-research",
+      "usage": "Used for long-running SSPS research context and technical concept lineage."
+    },
+    {
+      "sourceId": "caltech-sspd-wireless-power-2023",
+      "usage": "Used for demonstration-level wireless power transmission context. Must not be generalized into commercial-scale feasibility."
+    },
+    {
+      "sourceId": "joule-european-sbsp-2025",
+      "usage": "Used for modeled European-scale scenario context with explicit limitation awareness."
+    }
+  ],
+  "claimBoundary": "This page evaluates feasibility and constraints at a reference level. It does not claim that SBSP is commercially mature, economically inevitable, technically resolved, operationally deployed at infrastructure scale, or superior to existing energy systems. Constraints are presented as part of serious evaluation, not as investment, legal, policy, engineering, or procurement advice.",
+  "qualityStatus": {
+    "metadataComplete": true,
+    "internalLinksDefined": true,
+    "sourceBoundaryDefined": true,
+    "placeholderFree": true,
+    "readyForTemplate": true
+  }
+}
