@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Sovereign Generation Engine v1 — Build Script.
 
-Reads approved page registries and data sources, generates public/,
-robot.txt, and sitemap files. Blocks any route not approved in pages.json.
+Sprint 2: Interface and Reference Launch Correction.
+Upgraded templates: home page renders sovereign atlas gateway;
+foundation pages use reference section cards;
+glossary/question/program pages use governed reference card structure.
 """
 
 import json
@@ -23,6 +25,47 @@ SITEMAPS_DIR = PUBLIC_DIR / "sitemaps"
 APPROVED_STATUSES = {"approved_for_launch"}
 SITEMAP_BATCH_SIZE = 10_000
 DOMAIN = "https://space-based-solar-power.com"
+
+# Seven core infrastructure layers for the telemetry panel.
+# Phase labels represent documented research/program state.
+# Do not modify without a DECISION_LOG entry.
+TELEMETRY_LAYERS = [
+    {"label": "Orbital Core", "value": "Solar Collection Array", "phase": "Research Phase"},
+    {"label": "Power Beaming Vector", "value": "Microwave / Laser Transmission", "phase": "Demonstration Phase"},
+    {"label": "Rectenna / Terrestrial Reception", "value": "Ground Reception Infrastructure", "phase": "Concept Phase"},
+    {"label": "Grid Resilience", "value": "National Energy Infrastructure", "phase": "Strategic Study"},
+    {"label": "AI Energy Demand", "value": "High-Density Compute Power", "phase": "Emerging Pressure"},
+    {"label": "Defense / Disaster Resilience", "value": "Strategic Power Continuity", "phase": "Strategic Framing"},
+    {"label": "Lunar &amp; Space-Industrial", "value": "Off-Earth Infrastructure", "phase": "Concept Phase"},
+]
+
+# Primary active constraints shown in the home page constraint matrix preview.
+CONSTRAINT_PREVIEW = [
+    {"name": "Launch Economics", "status": "Active Constraint"},
+    {"name": "Orbital Assembly at Scale", "status": "Active Constraint"},
+    {"name": "Wireless Transmission Performance", "status": "Active Constraint"},
+    {"name": "Rectenna Deployment Scale", "status": "Active Constraint"},
+    {"name": "Safety and Regulatory Acceptance", "status": "Active Constraint"},
+]
+
+# Reference atlas card descriptions keyed by path.
+REF_ATLAS_DESCS = {
+    "/about/": ("Asset Identity", "What this asset is and what it is not."),
+    "/methodology/": ("Evaluation Framework", "How claims, sources, and constraints are evaluated."),
+    "/framework/": ("Infrastructure Map", "The orbital energy infrastructure chain."),
+    "/manifesto/": ("Conceptual Foundation", "Moving energy sovereignty above the atmosphere."),
+    "/what-is-space-based-solar-power/": ("Definition", "Foundational definition of the category."),
+    "/technology-stack/": ("Technical Reference", "Technical layers of SBSP systems."),
+    "/feasibility-and-constraints/": ("Constraint Analysis", "The barriers and unresolved questions."),
+    "/strategic-importance/": ("Geopolitical Layer", "Energy sovereignty, AI, defense, and space infrastructure."),
+    "/global-programs/": ("Program Registry", "Institutional activity and program tracking."),
+    "/tools/": ("Strategic Tools", "Governed tools for decision-support."),
+    "/sources/": ("Source Registry", "Institutional, academic, and program-level references."),
+    "/articles/": ("Analysis Layer", "Source-disciplined analysis and category commentary."),
+    "/glossary/": ("Terminology", "Governed glossary of SBSP and orbital energy terms."),
+    "/questions/": ("Reference Questions", "Answered questions with source and answer boundaries."),
+    "/programs/": ("Program Profiles", "Detailed profiles of institutional SBSP programs."),
+}
 
 
 def load_json(path: Path) -> dict:
@@ -86,6 +129,10 @@ def _path_to_label(path: str) -> str:
     return slug.replace("-", " ").title() if slug else "Home"
 
 
+def _link_chip(path: str, label: str) -> str:
+    return f'<a class="link-chip" href="{path}">{_escape_html(label)}</a>'
+
+
 def _build_nav_links(links: list) -> str:
     parts = []
     for link in links:
@@ -122,6 +169,10 @@ def _page_shell(page: dict, h1: str, body: str) -> str:
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary navigation">
       <a class="home-link" href="/">Space-Based Solar Power</a>
+      <div class="mission-status" aria-label="Site status">
+        <span class="mission-status-dot" aria-hidden="true"></span>
+        <span>Reference Active</span>
+      </div>
     </nav>
   </header>
   <main class="page-container">
@@ -134,7 +185,7 @@ def _page_shell(page: dict, h1: str, body: str) -> str:
 
 
 def render_content_sections_html(sections: list, approved_paths: set) -> str:
-    """Render content sections, filtering links to only approved_for_launch paths."""
+    """Render content sections as plain sections (fallback for pages without structured sections)."""
     html_parts = []
     for section in sections:
         heading = _escape_html(section.get("heading", ""))
@@ -158,6 +209,107 @@ def render_content_sections_html(sections: list, approved_paths: set) -> str:
     return "\n".join(html_parts)
 
 
+def render_reference_cards_html(sections: list, approved_paths: set) -> str:
+    """Render content sections as governed reference section cards."""
+    html_parts = []
+    for section in sections:
+        heading = _escape_html(section.get("heading", ""))
+        body_paras = section.get("body", [])
+        links = section.get("links", [])
+
+        parts = ['<div class="reference-section">']
+        if heading:
+            parts.append('  <div class="reference-section-header">')
+            parts.append(f'    <h2>{heading}</h2>')
+            parts.append('  </div>')
+        parts.append('  <div class="reference-section-body">')
+        for para in body_paras:
+            parts.append(f'    <p>{_escape_html(para)}</p>')
+        parts.append('  </div>')
+        visible_links = [lk for lk in links if lk.get("path") in approved_paths]
+        if visible_links:
+            parts.append('  <div class="reference-section-links">')
+            for lk in visible_links:
+                label = _escape_html(lk.get("label", lk.get("path", "")))
+                parts.append(f'    {_link_chip(lk["path"], lk.get("label", lk.get("path", "")))}')
+            parts.append('  </div>')
+        parts.append('</div>')
+        html_parts.append("\n".join(parts))
+    return "\n".join(html_parts)
+
+
+def _render_telemetry_panel() -> str:
+    parts = ['<div class="telemetry-panel" aria-label="Infrastructure system layers">']
+    for layer in TELEMETRY_LAYERS:
+        parts.append('  <div class="telemetry-card">')
+        parts.append(f'    <p class="telemetry-card-label">{layer["label"]}</p>')
+        parts.append(f'    <p class="telemetry-card-value">{layer["value"]}</p>')
+        parts.append(f'    <p class="telemetry-card-phase">{layer["phase"]}</p>')
+        parts.append('  </div>')
+    parts.append('</div>')
+    return "\n".join(parts)
+
+
+def _render_ref_atlas_grid(internal_links: list, approved_paths: set) -> str:
+    parts = ['<nav class="ref-atlas-nav" aria-label="Reference atlas navigation">']
+    parts.append('  <p class="ref-atlas-nav-label">Reference Atlas</p>')
+    parts.append('  <div class="ref-atlas-grid">')
+    for lk in internal_links:
+        lpath = lk.get("path", "")
+        if lpath not in approved_paths:
+            continue
+        label = lk.get("label", _path_to_label(lpath))
+        cat, desc = REF_ATLAS_DESCS.get(lpath, ("", ""))
+        parts.append(f'    <a href="{lpath}" class="ref-atlas-card">')
+        if cat:
+            parts.append(f'      <p class="ref-atlas-card-label">{_escape_html(cat)}</p>')
+        parts.append(f'      <p class="ref-atlas-card-title">{_escape_html(label)}</p>')
+        if desc:
+            parts.append(f'      <p class="ref-atlas-card-desc">{_escape_html(desc)}</p>')
+        parts.append('    </a>')
+    parts.append('  </div>')
+    parts.append('</nav>')
+    return "\n".join(parts)
+
+
+def _render_constraint_preview(approved_paths: set) -> str:
+    constraint_link = "/feasibility-and-constraints/"
+    has_link = constraint_link in approved_paths
+    parts = ['<div class="constraint-matrix-preview">']
+    parts.append('  <div class="constraint-matrix-header">')
+    parts.append('    <span class="constraint-matrix-title">Orbital Energy Constraint Matrix — Preview</span>')
+    if has_link:
+        parts.append(f'    <a href="{constraint_link}" class="constraint-matrix-link">Full analysis</a>')
+    parts.append('  </div>')
+    for c in CONSTRAINT_PREVIEW:
+        parts.append('  <div class="constraint-row">')
+        parts.append(f'    <span class="constraint-name">{_escape_html(c["name"])}</span>')
+        parts.append(f'    <span class="constraint-status">{_escape_html(c["status"])}</span>')
+        parts.append('  </div>')
+    parts.append('</div>')
+    return "\n".join(parts)
+
+
+def _render_source_trust_block(approved_paths: set) -> str:
+    methodology_link = "/methodology/"
+    sources_link = "/sources/"
+    parts = ['<div class="source-trust-block">']
+    parts.append('  <p class="source-trust-label">Source &amp; Methodology Posture</p>')
+    parts.append('  <p class="source-trust-desc">All claims on this site are tied to verifiable institutional, academic, or program-level sources. Technical and economic claims are qualified with defined boundaries. The asset distinguishes between source-verified facts, institutional summaries, conceptual framing, and unresolved scenarios.</p>')
+    links = []
+    if methodology_link in approved_paths:
+        links.append(f'<a href="{methodology_link}">Read the methodology</a>')
+    if sources_link in approved_paths:
+        links.append(f'<a href="{sources_link}">Source registry</a>')
+    if links:
+        parts.append('  <div class="source-trust-links">')
+        for lnk in links:
+            parts.append(f'    {lnk}')
+        parts.append('  </div>')
+    parts.append('</div>')
+    return "\n".join(parts)
+
+
 def generate_home_html(page: dict, content: dict, approved_paths: set) -> str:
     hero = content.get("hero", {})
     sections = content.get("sections", [])
@@ -169,7 +321,7 @@ def generate_home_html(page: dict, content: dict, approved_paths: set) -> str:
     subtitle = _escape_html(hero.get("subtitle", ""))
     thesis = _escape_html(hero.get("thesis", ""))
 
-    hero_parts = ['<div class="hero">']
+    hero_parts = ['<div class="orbital-atlas-hero">']
     if eyebrow:
         hero_parts.append(f'  <p class="hero-eyebrow">{eyebrow}</p>')
     if hero_title:
@@ -181,18 +333,11 @@ def generate_home_html(page: dict, content: dict, approved_paths: set) -> str:
     hero_parts.append('</div>')
     hero_html = "\n".join(hero_parts)
 
+    telemetry_html = _render_telemetry_panel()
+    atlas_html = _render_ref_atlas_grid(internal_links, approved_paths)
+    constraint_html = _render_constraint_preview(approved_paths)
+    trust_html = _render_source_trust_block(approved_paths)
     sections_html = render_content_sections_html(sections, approved_paths)
-
-    nav_items = []
-    for lk in internal_links:
-        if lk.get("path") in approved_paths:
-            label = _escape_html(lk.get("label", ""))
-            nav_items.append(f'      <li><a href="{lk["path"]}">{label}</a></li>')
-    ref_nav = ""
-    if nav_items:
-        ref_nav = ('  <nav class="ref-nav" aria-label="Explore">\n'
-                   '    <p class="ref-nav-label">Explore</p>\n'
-                   '    <ul>\n' + "\n".join(nav_items) + '\n    </ul>\n  </nav>')
 
     title = _escape_html(page.get("title", ""))
     description = _escape_html(page.get("description", ""))
@@ -211,13 +356,20 @@ def generate_home_html(page: dict, content: dict, approved_paths: set) -> str:
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary navigation">
       <a class="home-link" href="/">Space-Based Solar Power</a>
+      <div class="mission-status" aria-label="Site status">
+        <span class="mission-status-dot" aria-hidden="true"></span>
+        <span>Reference Active</span>
+      </div>
     </nav>
   </header>
   <main class="page-container">
     <h1>{_escape_html(h1)}</h1>
     {hero_html}
+    {telemetry_html}
+    {atlas_html}
+    {constraint_html}
+    {trust_html}
     {sections_html}
-{ref_nav}
   </main>
 </body>
 </html>"""
@@ -228,10 +380,33 @@ def generate_glossary_term_html(term: dict, page: dict) -> str:
     short = _escape_html(term.get("shortDefinition", ""))
     definition = _escape_html(term.get("definition", ""))
     claim = _escape_html(term.get("claimBoundary", ""))
-    body = f'<p class="short-definition">{short}</p>\n'
-    body += f'<div class="definition"><p>{definition}</p></div>\n'
+    internal_links = page.get("requiredInternalLinks", [])
+
+    parts = ['<div class="reference-card">']
+    parts.append('  <div class="reference-card-type">Glossary Term</div>')
+    parts.append('  <div class="reference-card-body">')
+    if short:
+        parts.append(f'    <p class="reference-card-short">{short}</p>')
+    if definition:
+        parts.append(f'    <div class="reference-card-full"><p>{definition}</p></div>')
+    parts.append('  </div>')
     if claim:
-        body += f'<aside class="claim-boundary"><strong>Claim boundary:</strong> {claim}</aside>\n'
+        parts.append('  <div class="reference-card-boundary">')
+        parts.append('    <p class="reference-card-boundary-label">Claim Boundary</p>')
+        parts.append(f'    <p class="reference-card-boundary-text">{claim}</p>')
+        parts.append('  </div>')
+    if internal_links:
+        parts.append('  <div class="reference-card-links">')
+        for lk in internal_links:
+            parts.append(f'    {_link_chip(lk, _path_to_label(lk))}')
+        parts.append('  </div>')
+    parts.append('  <div class="reference-card-source-links">')
+    parts.append('    <span class="reference-card-source-label">Source &amp; methodology</span>')
+    parts.append('    <a class="link-chip" href="/methodology/">Methodology</a>')
+    parts.append('    <a class="link-chip" href="/sources/">Sources</a>')
+    parts.append('  </div>')
+    parts.append('</div>')
+    body = "\n".join(parts)
     return _page_shell(page, h1, body)
 
 
@@ -239,9 +414,31 @@ def generate_question_html(question: dict, page: dict) -> str:
     h1 = question.get("question", page["title"])
     answer = _escape_html(question.get("answer", ""))
     boundary = _escape_html(question.get("answerBoundary", ""))
-    body = f'<div class="answer"><p>{answer}</p></div>\n'
+    internal_links = page.get("requiredInternalLinks", [])
+
+    parts = ['<div class="reference-card">']
+    parts.append('  <div class="reference-card-type">Reference Question</div>')
+    parts.append('  <div class="reference-card-body">')
+    if answer:
+        parts.append(f'    <div class="reference-card-full"><p>{answer}</p></div>')
+    parts.append('  </div>')
     if boundary:
-        body += f'<aside class="answer-boundary"><strong>Answer boundary:</strong> {boundary}</aside>\n'
+        parts.append('  <div class="reference-card-boundary">')
+        parts.append('    <p class="reference-card-boundary-label">Answer Boundary</p>')
+        parts.append(f'    <p class="reference-card-boundary-text">{boundary}</p>')
+        parts.append('  </div>')
+    if internal_links:
+        parts.append('  <div class="reference-card-links">')
+        for lk in internal_links:
+            parts.append(f'    {_link_chip(lk, _path_to_label(lk))}')
+        parts.append('  </div>')
+    parts.append('  <div class="reference-card-source-links">')
+    parts.append('    <span class="reference-card-source-label">Source &amp; methodology</span>')
+    parts.append('    <a class="link-chip" href="/methodology/">Methodology</a>')
+    parts.append('    <a class="link-chip" href="/sources/">Sources</a>')
+    parts.append('  </div>')
+    parts.append('</div>')
+    body = "\n".join(parts)
     return _page_shell(page, h1, body)
 
 
@@ -253,21 +450,43 @@ def generate_program_html(program: dict, page: dict) -> str:
     status = _escape_html(program.get("status", "").replace("_", " "))
     description = _escape_html(program.get("description", ""))
     claim = _escape_html(program.get("claimBoundary", ""))
+    internal_links = page.get("requiredInternalLinks", [])
 
-    meta = []
+    meta_rows = []
     if institution:
-        meta.append(f'<dt>Institution</dt><dd>{institution}</dd>')
+        meta_rows.append(f'<dt>Institution</dt><dd>{institution}</dd>')
     if country:
-        meta.append(f'<dt>Country</dt><dd>{country}</dd>')
+        meta_rows.append(f'<dt>Country</dt><dd>{country}</dd>')
     if start_year:
-        meta.append(f'<dt>Start year</dt><dd>{start_year}</dd>')
+        meta_rows.append(f'<dt>Start year</dt><dd>{start_year}</dd>')
     if status:
-        meta.append(f'<dt>Status</dt><dd>{status}</dd>')
+        meta_rows.append(f'<dt>Status</dt><dd>{status}</dd>')
 
-    body = f'<dl class="program-meta">{"".join(meta)}</dl>\n'
-    body += f'<div class="program-description"><p>{description}</p></div>\n'
+    parts = ['<div class="reference-card">']
+    parts.append('  <div class="reference-card-type">Program Profile</div>')
+    if meta_rows:
+        parts.append('  <dl class="program-meta">' + "".join(meta_rows) + '</dl>')
+    parts.append('  <div class="reference-card-body">')
+    if description:
+        parts.append(f'    <div class="reference-card-full"><p>{description}</p></div>')
+    parts.append('  </div>')
     if claim:
-        body += f'<aside class="claim-boundary"><strong>Claim boundary:</strong> {claim}</aside>\n'
+        parts.append('  <div class="reference-card-boundary">')
+        parts.append('    <p class="reference-card-boundary-label">Claim Boundary</p>')
+        parts.append(f'    <p class="reference-card-boundary-text">{claim}</p>')
+        parts.append('  </div>')
+    if internal_links:
+        parts.append('  <div class="reference-card-links">')
+        for lk in internal_links:
+            parts.append(f'    {_link_chip(lk, _path_to_label(lk))}')
+        parts.append('  </div>')
+    parts.append('  <div class="reference-card-source-links">')
+    parts.append('    <span class="reference-card-source-label">Source &amp; methodology</span>')
+    parts.append('    <a class="link-chip" href="/methodology/">Methodology</a>')
+    parts.append('    <a class="link-chip" href="/sources/">Sources</a>')
+    parts.append('  </div>')
+    parts.append('</div>')
+    body = "\n".join(parts)
     return _page_shell(page, h1, body)
 
 
@@ -342,7 +561,7 @@ def generate_html(page: dict, content: dict | None,
     title = page.get("title", "")
     h1 = content.get("h1", title) if content else title
     if content and content.get("sections"):
-        body = render_content_sections_html(content["sections"], approved_paths)
+        body = render_reference_cards_html(content["sections"], approved_paths)
     else:
         body = content.get("body", "") if content else ""
     return _page_shell(page, h1, body)
@@ -564,9 +783,7 @@ def main():
     sitemap_files = build_sitemaps(all_sitemap_urls, categories)
 
     if len(sitemap_files) > 1:
-        # Always write sitemap.xml as canonical entry point for crawlers
         write_sitemap_index(sitemap_files, PUBLIC_DIR / "sitemap.xml")
-        # Keep sitemap_index.xml as alias for backward compatibility
         write_sitemap_index(sitemap_files, PUBLIC_DIR / "sitemap_index.xml")
         print(f"  [SITEMAP] sitemap.xml (index, {len(sitemap_files)} files)")
     else:
@@ -578,7 +795,6 @@ def main():
             )
         print(f"  [SITEMAP] sitemap.xml ({len(all_sitemap_urls)} URLs)")
 
-    # Always point robots.txt to sitemap.xml
     write_robots("sitemap.xml")
     print(f"  [ROBOTS] robots.txt")
 
