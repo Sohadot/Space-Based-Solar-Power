@@ -1,6 +1,4 @@
 {
-  "version": "1.0.0",
-  "description": "Sovereign Expansion Seed Pack v1A — 30 SBSP glossary terms.",
   "terms": [
     {
       "id": "space-based-solar-power",
@@ -10,15 +8,28 @@
       "domain": "technical",
       "definition": "Space-based solar power (SBSP) is the concept of collecting solar energy in Earth orbit using large photovoltaic or solar concentrating arrays aboard spacecraft, converting that energy into electromagnetic radiation — typically microwave or laser — and transmitting it wirelessly to Earth-based receiving stations. At the receiving station, the electromagnetic energy is reconverted into electricity and delivered to the grid. Unlike terrestrial solar installations, an orbital system would operate above Earth's atmosphere, receiving solar irradiance continuously and without weather interference. The concept was formally proposed by aerospace engineer Peter Glaser in 1968. SBSP has been studied by NASA, the U.S. Department of Energy, ESA, JAXA, and academic institutions for decades. As of 2026, no full-scale SBSP system has been deployed commercially. The concept remains at varying technology readiness levels across its component subsystems.",
       "shortDefinition": "Collecting solar energy in Earth orbit and transmitting it wirelessly to ground receivers for conversion to grid electricity.",
-      "relatedTerms": ["solar-power-satellite", "wireless-power-transmission", "rectenna", "microwave-power-beaming", "orbital-energy-infrastructure"],
+      "relatedTerms": [
+        "solar-power-satellite",
+        "wireless-power-transmission",
+        "rectenna",
+        "microwave-power-beaming",
+        "orbital-energy-infrastructure"
+      ],
       "parentConcept": "sbsp",
       "sourceRef": null,
       "claimBoundary": "Concept is established in literature. No commercial-scale system has been deployed. Technical readiness claims require specific source citation.",
-      "pageLinks": ["/what-is-space-based-solar-power/", "/framework/", "/technology-stack/", "/feasibility-and-constraints/", "/sources/"],
+      "pageLinks": [
+        "/what-is-space-based-solar-power/",
+        "/framework/",
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Space-Based Solar Power — SBSP Glossary",
-      "seoDescription": "Definition of space-based solar power: collecting solar energy in orbit and transmitting it wirelessly to Earth-based receivers. Concept, history, and claim boundaries."
+      "seoDescription": "Definition of space-based solar power: collecting solar energy in orbit and transmitting it wirelessly to Earth-based receivers. Concept, history, and claim boundaries.",
+      "cluster": "core-infrastructure"
     },
     {
       "id": "solar-power-satellite",
@@ -28,15 +39,27 @@
       "domain": "technical",
       "definition": "A solar power satellite (SPS) is a large spacecraft placed in Earth orbit — typically geostationary orbit at approximately 35,786 km altitude — equipped with extensive photovoltaic panels or solar concentrators to collect sunlight and convert it to electrical power. That power is then converted to microwave or laser radiation for wireless transmission to a ground-based receiving station. The SPS concept was first formally described by Peter Glaser in 1968 and was the subject of a major 1979 NASA/DOE Reference System Study. The term is often used interchangeably with space-based solar power, though technically an SPS is one component of the broader SBSP system. No full-scale SPS has been built or deployed. Demonstrators at small scale have been tested, including JAXA ground demonstrations and the Caltech MAPLE orbital experiment in 2023.",
       "shortDefinition": "A spacecraft in Earth orbit designed to collect solar energy and transmit it wirelessly to a ground receiver.",
-      "relatedTerms": ["space-based-solar-power", "geostationary-orbit", "microwave-power-beaming", "phased-array-antenna", "wireless-power-transmission"],
+      "relatedTerms": [
+        "space-based-solar-power",
+        "geostationary-orbit",
+        "microwave-power-beaming",
+        "phased-array-antenna",
+        "wireless-power-transmission"
+      ],
       "parentConcept": "sps",
       "sourceRef": null,
       "claimBoundary": "Concept and history are documented. No full-scale SPS has been deployed. Claims about deployment timelines require institutional source citation.",
-      "pageLinks": ["/technology-stack/", "/what-is-space-based-solar-power/", "/global-programs/", "/sources/"],
+      "pageLinks": [
+        "/technology-stack/",
+        "/what-is-space-based-solar-power/",
+        "/global-programs/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Solar Power Satellite — SBSP Glossary",
-      "seoDescription": "Definition of solar power satellite: a spacecraft in orbit collecting solar energy and transmitting it wirelessly to Earth. History, concept, and claim boundaries."
+      "seoDescription": "Definition of solar power satellite: a spacecraft in orbit collecting solar energy and transmitting it wirelessly to Earth. History, concept, and claim boundaries.",
+      "cluster": "core-infrastructure"
     },
     {
       "id": "wireless-power-transmission",
@@ -46,15 +69,27 @@
       "domain": "technical",
       "definition": "Wireless power transmission (WPT) is the transfer of electrical energy from a source to a receiver without physical conductors, using electromagnetic radiation as the transmission medium. In the context of space-based solar power, WPT refers to the transmission of energy from an orbital platform to a terrestrial receiving station using either microwave frequencies (typically 2.45 GHz or 5.8 GHz) or laser wavelengths. WPT was demonstrated at laboratory scale in the 1960s and 1970s. Subsequent demonstrations have proven the basic physics at progressively larger scales. However, the efficiency, pointing precision, and beam-forming requirements for a full-scale SBSP system transmitting from geostationary orbit have not yet been demonstrated. End-to-end efficiency — from solar input to grid output — remains a critical metric and an area of active research.",
       "shortDefinition": "The transfer of electrical energy without physical conductors, using microwave or laser radiation as the transmission medium.",
-      "relatedTerms": ["microwave-power-beaming", "laser-power-transmission", "rectenna", "phased-array-antenna", "beaming-efficiency"],
+      "relatedTerms": [
+        "microwave-power-beaming",
+        "laser-power-transmission",
+        "rectenna",
+        "phased-array-antenna",
+        "beaming-efficiency"
+      ],
       "parentConcept": "wpt",
       "sourceRef": null,
       "claimBoundary": "Basic WPT physics is established. Full-scale SBSP transmission has not been demonstrated. Efficiency claims require specific experimental citations.",
-      "pageLinks": ["/wireless-power-transmission/", "/technology-stack/", "/feasibility-and-constraints/", "/methodology/"],
+      "pageLinks": [
+        "/wireless-power-transmission/",
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/methodology/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Wireless Power Transmission — SBSP Glossary",
-      "seoDescription": "Definition of wireless power transmission in the context of space-based solar power. Principles, current state, and claim boundaries."
+      "seoDescription": "Definition of wireless power transmission in the context of space-based solar power. Principles, current state, and claim boundaries.",
+      "cluster": "transmission-reception"
     },
     {
       "id": "microwave-power-beaming",
@@ -64,15 +99,27 @@
       "domain": "technical",
       "definition": "Microwave power beaming is the transmission of electrical energy using microwave-frequency electromagnetic radiation, typically in the 2.45 GHz or 5.8 GHz industrial, scientific, and medical (ISM) bands. In SBSP designs, microwave beaming converts DC electrical power aboard an orbital platform into a directed microwave beam using a large phased array transmitting antenna, propagates that beam through the atmosphere, and receives it at a ground station equipped with a rectenna array. Microwave frequencies were selected in early SBSP designs because they pass through clouds and rain with relatively low attenuation and can achieve beam-forming at the large apertures required for orbital distances. The main constraints include the large aperture sizes required for both transmitting and receiving arrays, regulatory coordination for frequency use, safety exclusion zones around the receiving beam, and pointing accuracy requirements from geostationary altitude.",
       "shortDefinition": "Using microwave-frequency electromagnetic radiation to transmit energy wirelessly from an orbital source to a terrestrial rectenna array.",
-      "relatedTerms": ["wireless-power-transmission", "rectenna", "phased-array-antenna", "laser-power-transmission", "beaming-efficiency"],
+      "relatedTerms": [
+        "wireless-power-transmission",
+        "rectenna",
+        "phased-array-antenna",
+        "laser-power-transmission",
+        "beaming-efficiency"
+      ],
       "parentConcept": "microwave-beaming",
       "sourceRef": null,
       "claimBoundary": "Physics of microwave beaming is established. GEO-to-Earth scale power transmission has not been demonstrated. Specific efficiency figures require source citation.",
-      "pageLinks": ["/microwave-power-beaming/", "/wireless-power-transmission/", "/technology-stack/", "/feasibility-and-constraints/"],
+      "pageLinks": [
+        "/microwave-power-beaming/",
+        "/wireless-power-transmission/",
+        "/technology-stack/",
+        "/feasibility-and-constraints/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Microwave Power Beaming — SBSP Glossary",
-      "seoDescription": "Definition of microwave power beaming in space-based solar power. Frequencies, physics, constraints, and claim boundaries."
+      "seoDescription": "Definition of microwave power beaming in space-based solar power. Frequencies, physics, constraints, and claim boundaries.",
+      "cluster": "transmission-reception"
     },
     {
       "id": "laser-power-transmission",
@@ -82,15 +129,26 @@
       "domain": "technical",
       "definition": "Laser power transmission is a form of wireless power transmission that uses concentrated laser light — typically in the near-infrared spectrum — to deliver energy from a source to a photovoltaic receiver. In SBSP contexts, a laser transmitter aboard an orbital platform would direct a high-intensity beam at a ground-based or airborne receiver equipped with photovoltaic cells tuned to the laser wavelength. Compared to microwave beaming, laser transmission offers a much smaller beam footprint and does not require regulatory frequency coordination. However, it faces significant constraints including atmospheric absorption and scattering (particularly in clouds and precipitation), pointing accuracy requirements at orbital distances, and safety concerns related to the intensity of the beam. Laser WPT has been demonstrated at laboratory and short-range scales. Its viability for full-scale SBSP applications remains under research.",
       "shortDefinition": "Using concentrated laser light to transmit energy wirelessly from an orbital source to a photovoltaic receiver.",
-      "relatedTerms": ["wireless-power-transmission", "microwave-power-beaming", "beaming-efficiency", "solar-power-satellite"],
+      "relatedTerms": [
+        "wireless-power-transmission",
+        "microwave-power-beaming",
+        "beaming-efficiency",
+        "solar-power-satellite"
+      ],
       "parentConcept": "laser-transmission",
       "sourceRef": null,
       "claimBoundary": "Demonstrated at laboratory and short-range scale. Full-scale SBSP laser transmission not demonstrated. Atmospheric constraints are established physics.",
-      "pageLinks": ["/laser-power-transmission/", "/wireless-power-transmission/", "/feasibility-and-constraints/", "/sources/"],
+      "pageLinks": [
+        "/laser-power-transmission/",
+        "/wireless-power-transmission/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Laser Power Transmission — SBSP Glossary",
-      "seoDescription": "Definition of laser power transmission in space-based solar power. Comparison with microwave beaming, constraints, and claim boundaries."
+      "seoDescription": "Definition of laser power transmission in space-based solar power. Comparison with microwave beaming, constraints, and claim boundaries.",
+      "cluster": "transmission-reception"
     },
     {
       "id": "rectenna",
@@ -100,15 +158,27 @@
       "domain": "technical",
       "definition": "A rectenna (rectifying antenna) is a device that receives microwave energy and converts it directly into direct current (DC) electricity using a combination of a receiving dipole or microstrip antenna and a rectifying diode circuit. Rectennas are the primary receiving technology for microwave-based wireless power transmission systems and would form the terrestrial receiving infrastructure for an SBSP system. The efficiency of individual rectenna elements can exceed 80% under optimal conditions. However, the overall system efficiency — including beam formation, atmospheric propagation, and conversion losses — is considerably lower. A full SBSP receiving station would consist of a large array of rectenna elements covering a substantial land or water area, connected to power conditioning equipment for grid injection. The rectenna concept was demonstrated by William Brown at Raytheon in 1964.",
       "shortDefinition": "A rectifying antenna array that converts received microwave energy into direct current electricity at the SBSP ground receiving station.",
-      "relatedTerms": ["microwave-power-beaming", "rectenna-footprint", "wireless-power-transmission", "beaming-efficiency", "grid-integration"],
+      "relatedTerms": [
+        "microwave-power-beaming",
+        "rectenna-footprint",
+        "wireless-power-transmission",
+        "beaming-efficiency",
+        "grid-integration"
+      ],
       "parentConcept": "rectenna",
       "sourceRef": null,
       "claimBoundary": "Rectenna technology is demonstrated. Large-scale SBSP rectenna farms have not been built. Individual element efficiency claims require specific experimental citations.",
-      "pageLinks": ["/rectenna-infrastructure/", "/wireless-power-transmission/", "/technology-stack/", "/feasibility-and-constraints/"],
+      "pageLinks": [
+        "/rectenna-infrastructure/",
+        "/wireless-power-transmission/",
+        "/technology-stack/",
+        "/feasibility-and-constraints/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Rectenna — SBSP Glossary",
-      "seoDescription": "Definition of rectenna in space-based solar power. How rectifying antennas convert microwave energy to DC electricity, history, and constraints."
+      "seoDescription": "Definition of rectenna in space-based solar power. How rectifying antennas convert microwave energy to DC electricity, history, and constraints.",
+      "cluster": "transmission-reception"
     },
     {
       "id": "rectenna-footprint",
@@ -118,15 +188,26 @@
       "domain": "technical",
       "definition": "Rectenna footprint refers to the land or water area required for a rectenna receiving array to capture the power transmitted by an SBSP system operating at a given power level and beam frequency. Because microwave beams spread as they propagate over the distance from geostationary orbit, the receiving area required for a multi-gigawatt system is substantial — estimates in reference studies have ranged from tens to hundreds of square kilometers depending on system design, frequency, and power level. The rectenna footprint is one of the primary infrastructure constraints on SBSP deployment. In densely populated or agriculturally critical regions, securing large receiving areas is a significant challenge. Some designs propose offshore or desert-sited rectennas to reduce land-use conflicts. The beam is not a hazard to aircraft or humans at safe power density levels, but exclusion zone requirements add to the effective footprint.",
       "shortDefinition": "The land or water area required for the rectenna receiving array to capture transmitted SBSP power, a primary infrastructure constraint.",
-      "relatedTerms": ["rectenna", "microwave-power-beaming", "beaming-efficiency", "grid-integration"],
+      "relatedTerms": [
+        "rectenna",
+        "microwave-power-beaming",
+        "beaming-efficiency",
+        "grid-integration"
+      ],
       "parentConcept": "rectenna-footprint",
       "sourceRef": null,
       "claimBoundary": "Footprint estimates vary significantly by system design and power level. Specific area figures require reference to design study assumptions.",
-      "pageLinks": ["/rectenna-infrastructure/", "/feasibility-and-constraints/", "/sbsp-economics/", "/methodology/"],
+      "pageLinks": [
+        "/rectenna-infrastructure/",
+        "/feasibility-and-constraints/",
+        "/sbsp-economics/",
+        "/methodology/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Rectenna Footprint — SBSP Glossary",
-      "seoDescription": "Definition of rectenna footprint in SBSP. Land area requirements, infrastructure constraints, and why footprint matters for deployment planning."
+      "seoDescription": "Definition of rectenna footprint in SBSP. Land area requirements, infrastructure constraints, and why footprint matters for deployment planning.",
+      "cluster": "transmission-reception"
     },
     {
       "id": "geostationary-orbit",
@@ -136,15 +217,26 @@
       "domain": "technical",
       "definition": "Geostationary orbit (GEO) is a circular orbit in Earth's equatorial plane at an altitude of approximately 35,786 km, where a satellite's orbital period matches Earth's rotation period of 23 hours, 56 minutes, and 4 seconds. This synchrony causes the satellite to remain stationary above a fixed point on the equator as seen from the ground. GEO is the preferred orbit for most SBSP designs because a satellite at this altitude receives sunlight for approximately 99% of the year (briefly eclipsed during equinox periods) and can illuminate a fixed ground receiving station continuously. The altitude means that the satellite must transmit power over a very long distance, requiring large aperture transmitting and receiving arrays. Launching mass to GEO is significantly more expensive per kilogram than launching to low Earth orbit, making launch economics a central constraint for GEO-based SBSP systems.",
       "shortDefinition": "Earth orbit at 35,786 km altitude where satellites remain stationary above a fixed equatorial point, receiving near-continuous sunlight.",
-      "relatedTerms": ["solar-power-satellite", "low-earth-orbit", "launch-economics", "space-based-solar-power"],
+      "relatedTerms": [
+        "solar-power-satellite",
+        "low-earth-orbit",
+        "launch-economics",
+        "space-based-solar-power"
+      ],
       "parentConcept": "geo-orbit",
       "sourceRef": null,
       "claimBoundary": "Orbital mechanics of GEO are established physics. Economic and engineering implications for SBSP require source citation for specific figures.",
-      "pageLinks": ["/technology-stack/", "/what-is-space-based-solar-power/", "/feasibility-and-constraints/", "/sources/"],
+      "pageLinks": [
+        "/technology-stack/",
+        "/what-is-space-based-solar-power/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Geostationary Orbit — SBSP Glossary",
-      "seoDescription": "Definition of geostationary orbit for SBSP. Why GEO is preferred for solar power satellites, altitude, solar access, and launch cost implications."
+      "seoDescription": "Definition of geostationary orbit for SBSP. Why GEO is preferred for solar power satellites, altitude, solar access, and launch cost implications.",
+      "cluster": "core-infrastructure"
     },
     {
       "id": "low-earth-orbit",
@@ -154,15 +246,26 @@
       "domain": "technical",
       "definition": "Low Earth orbit (LEO) is defined as the region of space at altitudes approximately between 160 km and 2,000 km above Earth's surface, with orbital periods typically between 88 and 127 minutes. LEO is significantly cheaper to reach per kilogram than geostationary orbit, which has prompted some SBSP design proposals based on large constellations of smaller power satellites in LEO. However, LEO SBSP systems face distinct constraints: each individual satellite is only above the horizon of a given ground station for short periods, requiring either a large constellation of satellites to provide continuous coverage or an energy storage solution on the ground. LEO also has a significantly higher space debris density than GEO, increasing collision risk for large solar array structures. The lower altitude means smaller aperture requirements for transmission, but the intermittency challenge is fundamental to LEO-based designs.",
       "shortDefinition": "Earth orbit between 160 and 2,000 km altitude, cheaper to reach than GEO but requiring large constellations for continuous SBSP coverage.",
-      "relatedTerms": ["geostationary-orbit", "solar-power-satellite", "launch-economics", "space-debris"],
+      "relatedTerms": [
+        "geostationary-orbit",
+        "solar-power-satellite",
+        "launch-economics",
+        "space-debris"
+      ],
       "parentConcept": "leo-orbit",
       "sourceRef": null,
       "claimBoundary": "LEO orbital mechanics are established. Trade-offs between LEO and GEO SBSP designs are analytical; specific performance figures require source citation.",
-      "pageLinks": ["/technology-stack/", "/feasibility-and-constraints/", "/what-is-space-based-solar-power/", "/sources/"],
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/what-is-space-based-solar-power/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Low Earth Orbit — SBSP Glossary",
-      "seoDescription": "Definition of low Earth orbit in the SBSP context. Trade-offs between LEO and GEO for solar power satellites, cost, intermittency, and debris risk."
+      "seoDescription": "Definition of low Earth orbit in the SBSP context. Trade-offs between LEO and GEO for solar power satellites, cost, intermittency, and debris risk.",
+      "cluster": "core-infrastructure"
     },
     {
       "id": "phased-array-antenna",
@@ -172,15 +275,26 @@
       "domain": "technical",
       "definition": "A phased array antenna is an antenna system composed of multiple individual radiating elements whose phase and amplitude can be controlled independently. By adjusting the relative phase of each element, the system can electronically steer the direction of the combined beam without mechanical movement. In SBSP applications, a large phased array transmitting antenna aboard the satellite would form and direct the microwave power beam toward the ground receiving station with sufficient precision to illuminate the rectenna array. Phased arrays enable rapid, flexible beam steering and can compensate for satellite attitude changes. The challenge for SBSP is the scale: transmitting sufficient power from GEO requires a phased array potentially kilometers in diameter to achieve a beam small enough for practical receiving area sizes. Manufacturing, deploying, and maintaining such arrays in orbit has not been demonstrated.",
       "shortDefinition": "An antenna system using multiple electronically controlled elements to steer a beam without mechanical movement, critical for SBSP transmission.",
-      "relatedTerms": ["microwave-power-beaming", "wireless-power-transmission", "solar-power-satellite", "orbital-assembly"],
+      "relatedTerms": [
+        "microwave-power-beaming",
+        "wireless-power-transmission",
+        "solar-power-satellite",
+        "orbital-assembly"
+      ],
       "parentConcept": "phased-array",
       "sourceRef": null,
       "claimBoundary": "Phased array technology is established in radar and communications. SBSP-scale arrays have not been deployed. Size and efficiency claims require source citation.",
-      "pageLinks": ["/technology-stack/", "/wireless-power-transmission/", "/feasibility-and-constraints/", "/methodology/"],
+      "pageLinks": [
+        "/technology-stack/",
+        "/wireless-power-transmission/",
+        "/feasibility-and-constraints/",
+        "/methodology/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Phased Array Antenna — SBSP Glossary",
-      "seoDescription": "Definition of phased array antenna in space-based solar power. Electronic beam steering, SBSP role, scale challenges, and claim boundaries."
+      "seoDescription": "Definition of phased array antenna in space-based solar power. Electronic beam steering, SBSP role, scale challenges, and claim boundaries.",
+      "cluster": "transmission-reception"
     },
     {
       "id": "launch-economics",
@@ -190,15 +304,26 @@
       "domain": "economic",
       "definition": "Launch economics refers to the cost structure of transporting mass from Earth's surface to orbit, expressed typically as cost per kilogram to a specific orbit. For SBSP, launch economics is the dominant economic constraint: constructing a multi-gigawatt solar power satellite requires placing an enormous mass in geostationary orbit, which historically cost tens of thousands of dollars per kilogram. The emergence of partially reusable launch vehicles has reduced costs to low Earth orbit substantially since 2015. However, GEO delivery remains more expensive than LEO due to the additional propulsion required. The economic viability of SBSP systems is heavily sensitive to launch cost assumptions. Studies projecting SBSP economic competitiveness typically depend on launch cost reductions of one to two orders of magnitude below legacy costs. Whether and when those reductions will be achievable for heavy GEO payloads at SBSP-relevant mass scales is uncertain and model-dependent.",
       "shortDefinition": "The cost structure of delivering mass to orbit, the primary economic constraint determining whether SBSP can compete with terrestrial energy sources.",
-      "relatedTerms": ["sbsp-economics", "geostationary-orbit", "orbital-assembly", "space-based-solar-power"],
+      "relatedTerms": [
+        "sbsp-economics",
+        "geostationary-orbit",
+        "orbital-assembly",
+        "space-based-solar-power"
+      ],
       "parentConcept": "launch-economics",
       "sourceRef": null,
       "claimBoundary": "Current launch costs are published by providers. Future cost projections are model-dependent and must be cited with methodology and assumptions.",
-      "pageLinks": ["/sbsp-economics/", "/feasibility-and-constraints/", "/methodology/", "/sources/"],
+      "pageLinks": [
+        "/sbsp-economics/",
+        "/feasibility-and-constraints/",
+        "/methodology/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Launch Economics — SBSP Glossary",
-      "seoDescription": "Definition of launch economics in SBSP. Why cost-to-orbit dominates SBSP viability, current trends, and why projections require careful source discipline."
+      "seoDescription": "Definition of launch economics in SBSP. Why cost-to-orbit dominates SBSP viability, current trends, and why projections require careful source discipline.",
+      "cluster": "constraints-governance"
     },
     {
       "id": "orbital-assembly",
@@ -208,15 +333,26 @@
       "domain": "technical",
       "definition": "Orbital assembly refers to the construction or integration of large structures in space from components that were launched separately. For SBSP, an operational solar power satellite would be far too large to launch as a single unit. It must be assembled in orbit from modules delivered by many launches, potentially using robotic systems, in-space manufacturing infrastructure, or a combination of both. Orbital assembly is one of the most significant technical challenges for SBSP: it requires reliable rendezvous and docking systems, robust robotic construction capabilities, compatible structural interfaces between modules, and the ability to perform assembly operations in the thermal and radiation environment of geostationary orbit. No large-scale orbital assembly operation has been conducted to date, though the International Space Station represents a relevant historical precedent for modular assembly in a lower orbit.",
       "shortDefinition": "Constructing large space structures in orbit from separately launched modules, a critical capability requirement for SBSP deployment.",
-      "relatedTerms": ["solar-power-satellite", "launch-economics", "in-space-manufacturing", "geostationary-orbit"],
+      "relatedTerms": [
+        "solar-power-satellite",
+        "launch-economics",
+        "in-space-manufacturing",
+        "geostationary-orbit"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "Orbital assembly concept is established. No large-scale GEO assembly has been demonstrated. Claims about assembly timelines require institutional source citation.",
-      "pageLinks": ["/technology-stack/", "/feasibility-and-constraints/", "/sbsp-economics/", "/sources/"],
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sbsp-economics/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Orbital Assembly — SBSP Glossary",
-      "seoDescription": "Definition of orbital assembly in SBSP. Why large-scale in-orbit construction is required, technical challenges, and readiness boundaries."
+      "seoDescription": "Definition of orbital assembly in SBSP. Why large-scale in-orbit construction is required, technical challenges, and readiness boundaries.",
+      "cluster": "constraints-governance"
     },
     {
       "id": "energy-sovereignty",
@@ -226,15 +362,26 @@
       "domain": "strategic",
       "definition": "Energy sovereignty describes a nation's or region's capacity to secure its own energy supply independently of external political, economic, or geographic vulnerabilities. It encompasses not only physical energy production but the ability to control energy infrastructure, supply chains, and access without dependence on potentially adversarial or unreliable partners. In strategic analyses of SBSP, energy sovereignty is one of the central motivating arguments: because orbital solar collection occurs above territorial atmosphere, an SBSP-capable nation could theoretically access a continuous, weather-independent, geography-independent energy source. However, SBSP as a contribution to energy sovereignty is a long-horizon argument. The technology and infrastructure required to make SBSP a meaningful energy source do not yet exist at commercial scale. The argument is strategic and analytical, not operational.",
       "shortDefinition": "A nation's capacity to control its own energy supply independently of external vulnerabilities, a core strategic argument for long-horizon SBSP development.",
-      "relatedTerms": ["grid-resilience", "defense-resilience", "space-based-solar-power", "ai-energy-demand"],
+      "relatedTerms": [
+        "grid-resilience",
+        "defense-resilience",
+        "space-based-solar-power",
+        "ai-energy-demand"
+      ],
       "parentConcept": "energy-sovereignty",
       "sourceRef": null,
       "claimBoundary": "Energy sovereignty is an established strategic concept. SBSP as a sovereignty instrument is a long-horizon analytical argument, not an operational claim.",
-      "pageLinks": ["/strategic-importance/", "/manifesto/", "/feasibility-and-constraints/", "/methodology/"],
+      "pageLinks": [
+        "/strategic-importance/",
+        "/manifesto/",
+        "/feasibility-and-constraints/",
+        "/methodology/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Energy Sovereignty — SBSP Glossary",
-      "seoDescription": "Definition of energy sovereignty in the SBSP context. Strategic arguments, long-horizon framing, and claim boundaries for sovereignty-based SBSP rationale."
+      "seoDescription": "Definition of energy sovereignty in the SBSP context. Strategic arguments, long-horizon framing, and claim boundaries for sovereignty-based SBSP rationale.",
+      "cluster": "grid-energy-systems"
     },
     {
       "id": "grid-resilience",
@@ -244,15 +391,26 @@
       "domain": "strategic",
       "definition": "Grid resilience is the ability of an electricity grid system to anticipate, withstand, adapt to, and recover from disruptions. Disruptions may include extreme weather events, natural disasters, physical attacks on infrastructure, cyberattacks on control systems, or supply chain interruptions affecting fuel or component availability. A resilient grid maintains power delivery or restores it rapidly even under adverse conditions. SBSP is positioned in some strategic analyses as a potential long-horizon contributor to grid resilience because it would provide a power source independent of weather, fuel supply chains, and ground-level infrastructure vulnerabilities. However, an SBSP system would itself introduce new vulnerabilities — including the receiving ground station as a fixed infrastructure target and the orbital satellite as a space asset. The net resilience contribution of SBSP is an analytical question, not a settled conclusion.",
       "shortDefinition": "An electricity grid's capacity to withstand and recover from disruptions, one of the strategic dimensions invoked in SBSP long-horizon planning.",
-      "relatedTerms": ["energy-sovereignty", "defense-resilience", "space-based-solar-power", "grid-integration"],
+      "relatedTerms": [
+        "energy-sovereignty",
+        "defense-resilience",
+        "space-based-solar-power",
+        "grid-integration"
+      ],
       "parentConcept": "grid-resilience",
       "sourceRef": null,
       "claimBoundary": "Grid resilience is an established energy security concept. SBSP as a resilience asset is a long-horizon argument requiring temporal and technical qualifications.",
-      "pageLinks": ["/strategic-importance/", "/sbsp-and-defense-resilience/", "/feasibility-and-constraints/", "/sources/"],
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sbsp-and-defense-resilience/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Grid Resilience — SBSP Glossary",
-      "seoDescription": "Definition of grid resilience in the SBSP context. How SBSP relates to energy grid security, long-horizon framing, and claim boundaries."
+      "seoDescription": "Definition of grid resilience in the SBSP context. How SBSP relates to energy grid security, long-horizon framing, and claim boundaries.",
+      "cluster": "grid-energy-systems"
     },
     {
       "id": "space-debris",
@@ -262,15 +420,26 @@
       "domain": "technical",
       "definition": "Space debris refers to non-functional objects in Earth orbit, including defunct satellites, spent rocket stages, fragments from collisions or explosions, and discarded hardware. Space debris poses a significant safety and operational risk to active satellites and, by extension, to any large-scale SBSP infrastructure. At low Earth orbit altitudes, the debris environment is particularly dense, making large structures more vulnerable to impacts. Geostationary orbit has a lower debris density but any collision at GEO creates fragments that remain in a valuable orbital slot for very long periods. For SBSP systems, which would involve very large physical structures in orbit, debris mitigation strategies are a necessary part of system design. International coordination through bodies such as the Inter-Agency Space Debris Coordination Committee (IADC) governs debris mitigation guidelines, though compliance is voluntary.",
       "shortDefinition": "Non-functional objects in Earth orbit that pose collision risks to operational satellites and large-scale SBSP infrastructure.",
-      "relatedTerms": ["geostationary-orbit", "low-earth-orbit", "solar-power-satellite", "orbital-assembly"],
+      "relatedTerms": [
+        "geostationary-orbit",
+        "low-earth-orbit",
+        "solar-power-satellite",
+        "orbital-assembly"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "Space debris is a documented, measured risk. Specific impact probability claims for SBSP structures require design-specific analysis and source citation.",
-      "pageLinks": ["/feasibility-and-constraints/", "/technology-stack/", "/sbsp-safety/", "/sources/"],
+      "pageLinks": [
+        "/feasibility-and-constraints/",
+        "/technology-stack/",
+        "/sbsp-safety/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Space Debris — SBSP Glossary",
-      "seoDescription": "Definition of space debris as a constraint for SBSP. Collision risk, debris environment, mitigation requirements, and claim boundaries."
+      "seoDescription": "Definition of space debris as a constraint for SBSP. Collision risk, debris environment, mitigation requirements, and claim boundaries.",
+      "cluster": "constraints-governance"
     },
     {
       "id": "technology-readiness-level",
@@ -280,15 +449,25 @@
       "domain": "institutional",
       "definition": "Technology Readiness Level (TRL) is a standardized scale, originally developed by NASA, used to assess the maturity of a technology. The scale runs from TRL 1 (basic principles observed and reported) to TRL 9 (actual system proven in mission operations). TRL assessments are used by space agencies, governments, and investors to evaluate how close a technology is to deployment. For SBSP, different component subsystems sit at very different TRL levels. Individual rectenna elements and basic phased array antennas may be at TRL 5 or higher. A complete SBSP system — integrating solar collection, power conversion, high-power phased array beaming, atmospheric propagation, and large-scale rectenna reception — has not been demonstrated and would not be considered high TRL as a system. TRL assessments must be component-specific, not system-level generalizations, to be meaningful.",
       "shortDefinition": "A NASA-originated scale from 1 to 9 measuring technology maturity, used to contextualize SBSP component and system readiness.",
-      "relatedTerms": ["space-based-solar-power", "solar-power-satellite", "wireless-power-transmission"],
+      "relatedTerms": [
+        "space-based-solar-power",
+        "solar-power-satellite",
+        "wireless-power-transmission"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "TRL framework is established. TRL assessments for specific SBSP components vary and must be cited from institutional sources.",
-      "pageLinks": ["/feasibility-and-constraints/", "/methodology/", "/global-programs/", "/sources/"],
+      "pageLinks": [
+        "/feasibility-and-constraints/",
+        "/methodology/",
+        "/global-programs/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Technology Readiness Level — SBSP Glossary",
-      "seoDescription": "Definition of Technology Readiness Level (TRL) in the SBSP context. Scale, component variation, and why TRL claims require component-specific sourcing."
+      "seoDescription": "Definition of Technology Readiness Level (TRL) in the SBSP context. Scale, component variation, and why TRL claims require component-specific sourcing.",
+      "cluster": "constraints-governance"
     },
     {
       "id": "solar-irradiance",
@@ -298,15 +477,25 @@
       "domain": "technical",
       "definition": "Solar irradiance is the power per unit area received from the Sun in the form of electromagnetic radiation. The solar constant — the mean irradiance at Earth's mean orbital distance from the Sun — is approximately 1,361 W/m² above the atmosphere. This is one of the fundamental physical advantages of space-based solar power over terrestrial installations: in orbit, a solar array receives irradiance continuously (except during brief eclipse periods) and without the attenuation, scattering, and absorption losses imposed by Earth's atmosphere. Terrestrial solar irradiance varies significantly with latitude, weather, time of day, and season, and averages roughly 170 W/m² globally as a usable figure. The higher and more consistent irradiance in orbit is a key reason why orbital solar collection can theoretically deliver significantly more energy per unit of panel area than ground-based solar.",
       "shortDefinition": "Power per unit area received from the Sun. In orbit, approximately 1,361 W/m² without atmospheric losses — a core physical advantage of SBSP.",
-      "relatedTerms": ["space-based-solar-power", "solar-power-satellite", "beaming-efficiency"],
+      "relatedTerms": [
+        "space-based-solar-power",
+        "solar-power-satellite",
+        "beaming-efficiency"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "Solar constant is established physics. Comparison with terrestrial averages depends on location-specific assumptions and must be contextualized.",
-      "pageLinks": ["/what-is-space-based-solar-power/", "/technology-stack/", "/framework/", "/sources/"],
+      "pageLinks": [
+        "/what-is-space-based-solar-power/",
+        "/technology-stack/",
+        "/framework/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Solar Irradiance — SBSP Glossary",
-      "seoDescription": "Definition of solar irradiance and the solar constant in SBSP. Why continuous orbital irradiance is a fundamental physical advantage over terrestrial solar."
+      "seoDescription": "Definition of solar irradiance and the solar constant in SBSP. Why continuous orbital irradiance is a fundamental physical advantage over terrestrial solar.",
+      "cluster": "core-infrastructure"
     },
     {
       "id": "beaming-efficiency",
@@ -316,15 +505,26 @@
       "domain": "technical",
       "definition": "Beaming efficiency in SBSP refers to the end-to-end efficiency of the wireless power transmission chain, from the conversion of DC electrical power into transmitted electromagnetic radiation at the satellite to the reconversion of received radiation into DC electricity at the ground station. The chain includes: DC-to-RF conversion efficiency at the transmitter, aperture efficiency of the transmitting antenna, atmospheric propagation losses, aperture efficiency of the receiving rectenna, and RF-to-DC conversion efficiency of the rectenna elements. Each stage introduces losses. Individual component efficiencies may be well characterized in laboratory settings, but the combined end-to-end system efficiency under realistic large-scale conditions is an important parameter that has not been validated at SBSP-relevant power and distance scales. Reported component efficiencies and claimed system efficiencies must be distinguished carefully.",
       "shortDefinition": "The end-to-end efficiency of converting DC power at the satellite to DC power at the ground, a critical performance metric for SBSP economics.",
-      "relatedTerms": ["wireless-power-transmission", "microwave-power-beaming", "rectenna", "phased-array-antenna"],
+      "relatedTerms": [
+        "wireless-power-transmission",
+        "microwave-power-beaming",
+        "rectenna",
+        "phased-array-antenna"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "Component efficiencies are measurable. System-level end-to-end efficiency at SBSP scale has not been demonstrated. Claims must distinguish component from system performance.",
-      "pageLinks": ["/wireless-power-transmission/", "/technology-stack/", "/feasibility-and-constraints/", "/methodology/"],
+      "pageLinks": [
+        "/wireless-power-transmission/",
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/methodology/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Beaming Efficiency — SBSP Glossary",
-      "seoDescription": "Definition of beaming efficiency in SBSP. End-to-end transmission chain, component vs. system efficiency, and why claims require careful source discipline."
+      "seoDescription": "Definition of beaming efficiency in SBSP. End-to-end transmission chain, component vs. system efficiency, and why claims require careful source discipline.",
+      "cluster": "transmission-reception"
     },
     {
       "id": "sbsp-economics",
@@ -334,15 +534,27 @@
       "domain": "economic",
       "definition": "SBSP economics refers to the analysis of the costs and financial viability of constructing, deploying, and operating a space-based solar power system. The major cost categories include: launch costs to deliver system mass to orbit, satellite manufacturing costs, in-orbit assembly infrastructure, wireless power transmission hardware (phased array, power management), ground receiving infrastructure (rectenna farm, grid connection), operations and maintenance, and financing over a multi-decade asset life. SBSP economic analyses are highly sensitive to assumptions about future launch costs, manufacturing scale, financing conditions, and energy market prices. Results from different studies vary widely. Economic competitiveness with terrestrial energy sources has not been demonstrated. Most economic analyses frame SBSP as a potential future option contingent on significant reductions in launch costs and improvements in manufacturing efficiency, not a near-term commercial opportunity.",
       "shortDefinition": "The cost and viability analysis of SBSP systems, spanning launch, manufacturing, transmission, and reception infrastructure, highly sensitive to future assumptions.",
-      "relatedTerms": ["launch-economics", "orbital-assembly", "beaming-efficiency", "grid-integration", "space-based-solar-power"],
+      "relatedTerms": [
+        "launch-economics",
+        "orbital-assembly",
+        "beaming-efficiency",
+        "grid-integration",
+        "space-based-solar-power"
+      ],
       "parentConcept": "sbsp-economics",
       "sourceRef": null,
       "claimBoundary": "Economic analyses are available from multiple institutions but vary widely. All specific cost or competitiveness claims require methodology and assumption disclosure.",
-      "pageLinks": ["/sbsp-economics/", "/feasibility-and-constraints/", "/methodology/", "/sources/"],
+      "pageLinks": [
+        "/sbsp-economics/",
+        "/feasibility-and-constraints/",
+        "/methodology/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "SBSP Economics — SBSP Glossary",
-      "seoDescription": "Definition of SBSP economics. Major cost categories, sensitivity to launch cost assumptions, and why economic competitiveness claims require careful source discipline."
+      "seoDescription": "Definition of SBSP economics. Major cost categories, sensitivity to launch cost assumptions, and why economic competitiveness claims require careful source discipline.",
+      "cluster": "constraints-governance"
     },
     {
       "id": "grid-integration",
@@ -352,15 +564,26 @@
       "domain": "technical",
       "definition": "Grid integration in the SBSP context refers to the technical, regulatory, and infrastructure process of connecting SBSP-generated electricity to the existing electricity grid. The rectenna converts microwave energy to DC power; this must be conditioned, inverted to AC where required, and stepped up to transmission voltage for delivery to the grid. SBSP's near-continuous generation profile — relatively steady day and night, weather-independent — is a potentially favorable characteristic for grid integration compared to intermittent terrestrial renewables. However, an SBSP ground station represents a large, fixed point source of power that must be integrated into regional transmission infrastructure. Regulatory approval, grid balancing requirements, and the absence of existing standards for GEO-to-ground power delivery mean that grid integration of SBSP would require new regulatory frameworks in addition to engineering solutions.",
       "shortDefinition": "The process of connecting SBSP-generated DC power from the rectenna array into the existing AC electricity transmission and distribution grid.",
-      "relatedTerms": ["rectenna", "rectenna-footprint", "sbsp-economics", "grid-resilience"],
+      "relatedTerms": [
+        "rectenna",
+        "rectenna-footprint",
+        "sbsp-economics",
+        "grid-resilience"
+      ],
       "parentConcept": "grid-integration",
       "sourceRef": null,
       "claimBoundary": "Grid integration principles are established. SBSP-specific grid integration has not been implemented. Regulatory requirements are jurisdiction-dependent.",
-      "pageLinks": ["/sbsp-grid-integration/", "/rectenna-infrastructure/", "/feasibility-and-constraints/", "/sources/"],
+      "pageLinks": [
+        "/sbsp-grid-integration/",
+        "/rectenna-infrastructure/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Grid Integration — SBSP Glossary",
-      "seoDescription": "Definition of grid integration for SBSP. How rectenna DC output connects to the power grid, regulatory context, and integration challenges."
+      "seoDescription": "Definition of grid integration for SBSP. How rectenna DC output connects to the power grid, regulatory context, and integration challenges.",
+      "cluster": "grid-energy-systems"
     },
     {
       "id": "in-space-manufacturing",
@@ -370,15 +593,26 @@
       "domain": "technical",
       "definition": "In-space manufacturing (ISM) refers to the fabrication or processing of materials, components, or structures in the space environment rather than on Earth's surface. For SBSP, in-space manufacturing is relevant as a potential solution to the mass-launch bottleneck: instead of launching all satellite components from Earth, ISM could enable construction of large solar arrays using materials sourced from asteroids, the Moon, or other space resources. ISM could also reduce the total mass that must be lifted through Earth's gravity well, dramatically changing the economics of SBSP at large scale. ISM capabilities relevant to SBSP remain at early development stages. Concepts include orbital manufacturing facilities, autonomous robotic construction, and use of in-situ resource utilization (ISRU) for material supply. No operational ISM system relevant to SBSP scale exists as of 2026.",
       "shortDefinition": "Fabricating or assembling structures in space rather than on Earth, a potential long-horizon solution to SBSP's mass-to-orbit cost challenge.",
-      "relatedTerms": ["orbital-assembly", "launch-economics", "solar-power-satellite", "cis-lunar-space"],
+      "relatedTerms": [
+        "orbital-assembly",
+        "launch-economics",
+        "solar-power-satellite",
+        "cis-lunar-space"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "ISM concept is established. Operational ISM relevant to SBSP does not exist. Capability claims require specific institutional source citation.",
-      "pageLinks": ["/technology-stack/", "/feasibility-and-constraints/", "/sbsp-and-lunar-infrastructure/", "/sources/"],
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sbsp-and-lunar-infrastructure/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "In-Space Manufacturing — SBSP Glossary",
-      "seoDescription": "Definition of in-space manufacturing for SBSP. How orbital fabrication could change SBSP economics, current readiness, and claim boundaries."
+      "seoDescription": "Definition of in-space manufacturing for SBSP. How orbital fabrication could change SBSP economics, current readiness, and claim boundaries.",
+      "cluster": "strategic-demand"
     },
     {
       "id": "cis-lunar-space",
@@ -388,15 +622,26 @@
       "domain": "technical",
       "definition": "Cis-lunar space is the region of space between Earth and the Moon, including the lunar surface and lunar orbital environments. It encompasses Earth's orbital neighborhoods, the Earth-Moon Lagrange points, and lunar orbit. In the context of SBSP and orbital energy infrastructure, cis-lunar space is relevant as the potential location of future power systems that could serve both Earth and space-industrial operations. Concepts include power satellites in high Earth orbit or at Lagrange points that could serve lunar surface operations, or lunar-sourced materials feeding in-space manufacturing of SBSP components. Cis-lunar development is currently in very early stages with no commercial energy infrastructure deployed. References to SBSP in cis-lunar contexts are primarily conceptual and long-horizon.",
       "shortDefinition": "The region between Earth and the Moon, including lunar orbit, relevant to long-horizon SBSP and space-industrial energy concepts.",
-      "relatedTerms": ["in-space-manufacturing", "lunar-power-infrastructure", "orbital-assembly", "space-based-solar-power"],
+      "relatedTerms": [
+        "in-space-manufacturing",
+        "lunar-power-infrastructure",
+        "orbital-assembly",
+        "space-based-solar-power"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "Cis-lunar space is a defined orbital region. Energy infrastructure concepts for this region are early-stage and require careful temporal framing.",
-      "pageLinks": ["/sbsp-and-lunar-infrastructure/", "/strategic-importance/", "/framework/", "/sources/"],
+      "pageLinks": [
+        "/sbsp-and-lunar-infrastructure/",
+        "/strategic-importance/",
+        "/framework/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Cis-Lunar Space — SBSP Glossary",
-      "seoDescription": "Definition of cis-lunar space in the SBSP and orbital energy context. Long-horizon concepts, current readiness, and claim boundaries."
+      "seoDescription": "Definition of cis-lunar space in the SBSP and orbital energy context. Long-horizon concepts, current readiness, and claim boundaries.",
+      "cluster": "strategic-demand"
     },
     {
       "id": "orbital-energy-infrastructure",
@@ -406,15 +651,26 @@
       "domain": "technical",
       "definition": "Orbital energy infrastructure is the broader conceptual category encompassing all systems that generate, store, transmit, or distribute energy using platforms in Earth orbit or beyond. It includes space-based solar power, power satellites, orbital power transfer systems, and future cis-lunar energy networks. The term distinguishes energy systems that derive their operational advantage from the orbital environment — continuous solar access, gravity-independent positioning, global reach — from ground-based energy infrastructure. SBSP is the most discussed component of orbital energy infrastructure, but the concept extends to any future orbital energy capability. The phrase is used in this asset to contextualize SBSP within a larger strategic framework rather than treating it as an isolated technology.",
       "shortDefinition": "The broader category of energy systems operating in orbit, of which SBSP is the primary current concept, with potential future extensions to cis-lunar systems.",
-      "relatedTerms": ["space-based-solar-power", "solar-power-satellite", "cis-lunar-space", "energy-sovereignty"],
+      "relatedTerms": [
+        "space-based-solar-power",
+        "solar-power-satellite",
+        "cis-lunar-space",
+        "energy-sovereignty"
+      ],
       "parentConcept": "orbital-energy",
       "sourceRef": null,
       "claimBoundary": "Orbital energy infrastructure is a conceptual framing category. Individual technology claims within it require specific source citation.",
-      "pageLinks": ["/framework/", "/orbital-energy-infrastructure/", "/strategic-importance/", "/methodology/"],
+      "pageLinks": [
+        "/framework/",
+        "/orbital-energy-infrastructure/",
+        "/strategic-importance/",
+        "/methodology/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Orbital Energy Infrastructure — SBSP Glossary",
-      "seoDescription": "Definition of orbital energy infrastructure: the broader category encompassing SBSP and future orbital energy systems. Framework context and claim boundaries."
+      "seoDescription": "Definition of orbital energy infrastructure: the broader category encompassing SBSP and future orbital energy systems. Framework context and claim boundaries.",
+      "cluster": "core-infrastructure"
     },
     {
       "id": "peter-glaser-proposal",
@@ -424,15 +680,25 @@
       "domain": "institutional",
       "definition": "The Glaser Proposal refers to the seminal 1968 paper by aerospace engineer Peter Glaser of Arthur D. Little, Inc., titled 'Power from the Sun: Its Future,' published in Science magazine. In this paper, Glaser proposed the concept of a solar power satellite: a large spacecraft in geostationary orbit equipped with solar panels, a microwave transmitter, and a ground-based rectenna receiver. Glaser's proposal was the first formal articulation of the space-based solar power concept and established the basic architecture that subsequent research programs — including the 1979 NASA/DOE Reference System Study — followed. The proposal is a historical reference point, not a current technical specification. Any use of figures or conclusions from the 1968 proposal must be contextualized as reflecting 1960s technology assumptions.",
       "shortDefinition": "Peter Glaser's 1968 paper formally proposing the solar power satellite concept — the foundational reference for SBSP research history.",
-      "relatedTerms": ["solar-power-satellite", "space-based-solar-power", "nasa-1979-reference-study"],
+      "relatedTerms": [
+        "solar-power-satellite",
+        "space-based-solar-power",
+        "nasa-1979-reference-study"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "The 1968 proposal is a documented historical reference. Its technical figures reflect 1960s assumptions and must not be cited as current capability estimates.",
-      "pageLinks": ["/what-is-space-based-solar-power/", "/global-programs/", "/sources/", "/methodology/"],
+      "pageLinks": [
+        "/what-is-space-based-solar-power/",
+        "/global-programs/",
+        "/sources/",
+        "/methodology/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Glaser Proposal — SBSP Glossary",
-      "seoDescription": "Definition of the Glaser Proposal: Peter Glaser's 1968 paper that founded the SBSP concept. Historical context and why its figures must not be used as current estimates."
+      "seoDescription": "Definition of the Glaser Proposal: Peter Glaser's 1968 paper that founded the SBSP concept. Historical context and why its figures must not be used as current estimates.",
+      "cluster": "core-infrastructure"
     },
     {
       "id": "nasa-1979-reference-study",
@@ -442,15 +708,26 @@
       "domain": "institutional",
       "definition": "The NASA 1979 Reference System Study (formally the NASA/DOE Concept Development and Evaluation Program) was a comprehensive two-year assessment conducted by NASA and the U.S. Department of Energy to evaluate the technical, economic, and environmental feasibility of a satellite solar power station. The study defined a reference SBSP architecture — a 5 GW satellite in geostationary orbit transmitting via microwave to an 80 km² rectenna — and produced detailed cost estimates, technology requirements, and environmental impact assessments. The study concluded that SBSP was technically feasible in principle but that the economics were not competitive with other energy sources given 1970s launch costs and technology. The 1979 study remains a foundational document in SBSP research history. Its figures and conclusions are widely cited but must be contextualized as reflecting late-1970s cost structures and technology levels.",
       "shortDefinition": "The landmark 1979 NASA/DOE study that defined a reference SBSP architecture and assessed feasibility, a foundational historical document in the field.",
-      "relatedTerms": ["space-based-solar-power", "solar-power-satellite", "peter-glaser-proposal", "launch-economics"],
+      "relatedTerms": [
+        "space-based-solar-power",
+        "solar-power-satellite",
+        "peter-glaser-proposal",
+        "launch-economics"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "The 1979 study is a documented institutional reference. Its economic conclusions reflect 1970s cost structures. Figures must not be used as current estimates without re-baselining.",
-      "pageLinks": ["/global-programs/", "/sources/", "/sbsp-economics/", "/methodology/"],
+      "pageLinks": [
+        "/global-programs/",
+        "/sources/",
+        "/sbsp-economics/",
+        "/methodology/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "NASA 1979 Reference System Study — SBSP Glossary",
-      "seoDescription": "Definition of the NASA 1979 Reference System Study. Architecture, conclusions, historical importance, and why its figures require careful contextualizing."
+      "seoDescription": "Definition of the NASA 1979 Reference System Study. Architecture, conclusions, historical importance, and why its figures require careful contextualizing.",
+      "cluster": "core-infrastructure"
     },
     {
       "id": "defense-resilience",
@@ -460,15 +737,26 @@
       "domain": "strategic",
       "definition": "Defense resilience in the SBSP context refers to the potential value of space-based power systems for military energy supply in austere, remote, or contested environments. Military operations at forward operating bases or in disaster-response scenarios face significant energy logistics challenges: fuel must be transported over potentially vulnerable supply lines. A power beaming system that could deliver electricity directly to forward locations without fuel convoys has been studied by defense research organizations as a long-horizon capability concept. The U.S. Naval Research Laboratory and the U.S. Air Force Research Laboratory have both conducted research into wireless power transmission relevant to this use case. Claims about SBSP as a near-term defense energy solution are not supported; SBSP for defense applications is a long-horizon research concept.",
       "shortDefinition": "The potential value of SBSP power beaming for military energy supply in remote or contested environments, a long-horizon defense research concept.",
-      "relatedTerms": ["energy-sovereignty", "grid-resilience", "space-based-solar-power", "wireless-power-transmission"],
+      "relatedTerms": [
+        "energy-sovereignty",
+        "grid-resilience",
+        "space-based-solar-power",
+        "wireless-power-transmission"
+      ],
       "parentConcept": "defense-resilience",
       "sourceRef": null,
       "claimBoundary": "Defense research programs are documented. Operational military SBSP capability does not exist. Claims about defense applications require institutional source citation.",
-      "pageLinks": ["/sbsp-and-defense-resilience/", "/strategic-importance/", "/global-programs/", "/sources/"],
+      "pageLinks": [
+        "/sbsp-and-defense-resilience/",
+        "/strategic-importance/",
+        "/global-programs/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Defense Resilience — SBSP Glossary",
-      "seoDescription": "Definition of defense resilience in the SBSP context. Military power logistics, research programs, and why operational claims require careful source discipline."
+      "seoDescription": "Definition of defense resilience in the SBSP context. Military power logistics, research programs, and why operational claims require careful source discipline.",
+      "cluster": "strategic-demand"
     },
     {
       "id": "ai-energy-demand",
@@ -478,15 +766,25 @@
       "domain": "strategic",
       "definition": "AI energy demand refers to the electricity consumption of artificial intelligence infrastructure, including large-scale model training, inference serving, and the data center operations supporting these workloads. Growth in AI compute has been associated with rapid increases in data center electricity demand globally. This demand growth has renewed interest in large-scale, continuous power sources that could supply energy-intensive computing facilities. SBSP is mentioned in some strategic analyses as a potential very long-horizon energy source for AI infrastructure because it would theoretically supply continuous, geography-flexible power. However, SBSP is not a near-term solution to AI energy demand: the technology and infrastructure required do not exist at commercial scale, and the timeline for SBSP deployment would extend decades beyond current AI infrastructure planning horizons. References to SBSP as an AI energy solution must be framed as long-horizon analytical scenarios, not operational plans.",
       "shortDefinition": "The growing electricity demand from AI training and inference infrastructure, invoked as a long-horizon motivation for SBSP development.",
-      "relatedTerms": ["energy-sovereignty", "grid-resilience", "space-based-solar-power"],
+      "relatedTerms": [
+        "energy-sovereignty",
+        "grid-resilience",
+        "space-based-solar-power"
+      ],
       "parentConcept": "ai-energy-demand",
       "sourceRef": null,
       "claimBoundary": "AI energy demand growth is documented. SBSP as an AI power solution is a long-horizon analytical framing. No operational connection exists at current technology levels.",
-      "pageLinks": ["/sbsp-and-ai-energy-demand/", "/strategic-importance/", "/feasibility-and-constraints/", "/methodology/"],
+      "pageLinks": [
+        "/sbsp-and-ai-energy-demand/",
+        "/strategic-importance/",
+        "/feasibility-and-constraints/",
+        "/methodology/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "AI Energy Demand — SBSP Glossary",
-      "seoDescription": "Definition of AI energy demand in the SBSP context. Data center growth, long-horizon framing, and why SBSP-as-AI-power requires careful temporal qualification."
+      "seoDescription": "Definition of AI energy demand in the SBSP context. Data center growth, long-horizon framing, and why SBSP-as-AI-power requires careful temporal qualification.",
+      "cluster": "strategic-demand"
     },
     {
       "id": "claim-boundary",
@@ -496,15 +794,25 @@
       "domain": "institutional",
       "definition": "A claim boundary is a declared limit on what a statement, analysis, or source can responsibly assert given the evidence available. In SBSP analysis, claim boundaries are essential because the field involves a mix of established physics, engineering extrapolations, economic models with high sensitivity to uncertain inputs, strategic interpretations, and speculative long-horizon scenarios. A claim boundary statement explicitly distinguishes what is known from what is modeled, what is demonstrated from what is theorized, and what is strategically argued from what is technically proven. This asset uses claim boundaries as a governance mechanism: every technical claim, economic projection, and strategic argument must be accompanied by a statement defining the basis and limits of the claim. Claim boundaries protect both the reader and the asset's credibility.",
       "shortDefinition": "A declared limit on what a statement or source can responsibly assert — a core governance mechanism for maintaining accuracy in SBSP analysis.",
-      "relatedTerms": ["space-based-solar-power", "technology-readiness-level", "sbsp-economics"],
+      "relatedTerms": [
+        "space-based-solar-power",
+        "technology-readiness-level",
+        "sbsp-economics"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "This term itself defines claim boundary practice. No further boundary required.",
-      "pageLinks": ["/methodology/", "/sources/", "/feasibility-and-constraints/", "/framework/"],
+      "pageLinks": [
+        "/methodology/",
+        "/sources/",
+        "/feasibility-and-constraints/",
+        "/framework/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Claim Boundary — SBSP Glossary",
-      "seoDescription": "Definition of claim boundary as used in SBSP analysis. Why distinguishing demonstrated facts from models and interpretations is essential for credible reference content."
+      "seoDescription": "Definition of claim boundary as used in SBSP analysis. Why distinguishing demonstrated facts from models and interpretations is essential for credible reference content.",
+      "cluster": "constraints-governance"
     },
     {
       "id": "sbsp-safety",
@@ -514,15 +822,26 @@
       "domain": "technical",
       "definition": "SBSP safety encompasses the considerations related to human health, environmental impact, aviation safety, and regulatory compliance associated with the operation of a space-based solar power system. The primary safety question concerns the microwave power beam: at what power density does the beam pose a risk to humans, aircraft, or ecosystems that intercept it? International safety guidelines exist for microwave exposure (e.g., IEEE and ICNIRP standards), and SBSP designs generally assume beam power densities at the center of the rectenna that are at or below these limits, with exclusion zones preventing public access. Aircraft safety corridors would need to be established. Additional safety considerations include orbital debris generated by large satellites, radiofrequency interference with communications systems, and environmental impacts of large ground receiving stations. Specific safety parameters are design-dependent and require regulatory coordination.",
       "shortDefinition": "The health, environmental, aviation, and regulatory safety considerations for SBSP, centered on microwave beam exposure and exclusion zones.",
-      "relatedTerms": ["microwave-power-beaming", "rectenna-footprint", "space-debris", "wireless-power-transmission"],
+      "relatedTerms": [
+        "microwave-power-beaming",
+        "rectenna-footprint",
+        "space-debris",
+        "wireless-power-transmission"
+      ],
       "parentConcept": "sbsp-safety",
       "sourceRef": null,
       "claimBoundary": "Safety guidelines exist. SBSP-specific regulatory frameworks do not yet exist. Safety claims for specific designs require engineering analysis and regulatory review.",
-      "pageLinks": ["/sbsp-safety/", "/feasibility-and-constraints/", "/technology-stack/", "/sources/"],
+      "pageLinks": [
+        "/sbsp-safety/",
+        "/feasibility-and-constraints/",
+        "/technology-stack/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "SBSP Safety — SBSP Glossary",
-      "seoDescription": "Definition of SBSP safety considerations. Microwave beam exposure, exclusion zones, aviation corridors, debris, and regulatory requirements."
+      "seoDescription": "Definition of SBSP safety considerations. Microwave beam exposure, exclusion zones, aviation corridors, debris, and regulatory requirements.",
+      "cluster": "constraints-governance"
     },
     {
       "id": "specific-mass",
@@ -532,15 +851,26 @@
       "domain": "technical",
       "definition": "Specific mass, in the context of space power systems, is the mass per unit of electrical power output of a system or component, expressed in kilograms per kilowatt (kg/kW). It is a key figure of merit for SBSP satellite design: the lower the specific mass of the solar arrays, power conversion systems, and structural elements, the less mass must be launched to orbit to achieve a given power output, directly reducing the dominant cost driver. Achieving low specific mass requires lightweight, high-efficiency solar cells, minimal structural mass, and dense power conversion electronics. Advances in thin-film solar cells, lightweight composite structures, and integrated power electronics have progressively reduced specific mass estimates for proposed SBSP designs. However, specific mass figures vary widely across design proposals and must be evaluated with reference to the specific design assumptions used.",
       "shortDefinition": "Mass per unit of power output (kg/kW) for a space power system, a key figure of merit linking satellite design to launch economics.",
-      "relatedTerms": ["launch-economics", "solar-power-satellite", "sbsp-economics", "orbital-assembly"],
+      "relatedTerms": [
+        "launch-economics",
+        "solar-power-satellite",
+        "sbsp-economics",
+        "orbital-assembly"
+      ],
       "parentConcept": null,
       "sourceRef": null,
       "claimBoundary": "Specific mass is a standard engineering metric. Published figures vary by design. Any specific value must be cited with its design-study source.",
-      "pageLinks": ["/technology-stack/", "/sbsp-economics/", "/feasibility-and-constraints/", "/sources/"],
+      "pageLinks": [
+        "/technology-stack/",
+        "/sbsp-economics/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "Specific Mass — SBSP Glossary",
-      "seoDescription": "Definition of specific mass (kg/kW) for space power systems. Why it links satellite design to launch economics and why cited values must reference design assumptions."
+      "seoDescription": "Definition of specific mass (kg/kW) for space power systems. Why it links satellite design to launch economics and why cited values must reference design assumptions.",
+      "cluster": "constraints-governance"
     },
     {
       "id": "esa-solaris",
@@ -550,15 +880,25 @@
       "domain": "institutional",
       "definition": "ESA SOLARIS is the European Space Agency's preparatory initiative to study the feasibility of space-based solar power for European energy needs and to assess whether ESA should develop a European SBSP program. Initiated as a formal initiative around 2022, SOLARIS includes technical studies of system architectures, economic assessments, analysis of European industrial capabilities, and policy engagement with EU energy authorities. SOLARIS does not represent a commitment to build or deploy an SBSP system; it is a feasibility and preparation program. Its conclusions and recommendations inform whether ESA and its member states choose to invest further in SBSP. The SOLARIS initiative places Europe among the institutional actors actively assessing SBSP alongside JAXA and historically NASA. Claims about SOLARIS outcomes, timelines, or commitments require current ESA source citation.",
       "shortDefinition": "The European Space Agency's preparatory initiative studying SBSP feasibility for European energy policy, initiated around 2022.",
-      "relatedTerms": ["space-based-solar-power", "jaxa-ssps", "nasa-sbsp-studies"],
+      "relatedTerms": [
+        "space-based-solar-power",
+        "jaxa-ssps",
+        "nasa-sbsp-studies"
+      ],
       "parentConcept": "esa-solaris",
       "sourceRef": null,
       "claimBoundary": "SOLARIS is a documented ESA initiative. Program status and conclusions require current ESA source verification. No deployment commitment has been made.",
-      "pageLinks": ["/global-programs/", "/sources/", "/methodology/", "/framework/"],
+      "pageLinks": [
+        "/global-programs/",
+        "/sources/",
+        "/methodology/",
+        "/framework/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "ESA SOLARIS — SBSP Glossary",
-      "seoDescription": "Definition of ESA SOLARIS: the European Space Agency's SBSP feasibility initiative. Purpose, scope, and why claims about its outcomes require current ESA sources."
+      "seoDescription": "Definition of ESA SOLARIS: the European Space Agency's SBSP feasibility initiative. Purpose, scope, and why claims about its outcomes require current ESA sources.",
+      "cluster": "strategic-demand"
     },
     {
       "id": "jaxa-ssps",
@@ -568,15 +908,1222 @@
       "domain": "institutional",
       "definition": "JAXA SSPS refers to the Japan Aerospace Exploration Agency's Space Solar Power Systems program, one of the world's longest-running institutional SBSP research initiatives. JAXA has been conducting SBSP research since the 1990s, producing technical studies, roadmaps, and ground and orbital demonstration experiments. A notable JAXA milestone was a 2015 ground demonstration of microwave wireless power transmission at the kilowatt scale. JAXA has published long-term roadmaps envisioning potential SBSP deployment in the 2030s, though these roadmaps represent planning scenarios and research targets rather than funded commitments. Technical claims about JAXA program outcomes, specifications, or timelines require current JAXA source citation.",
       "shortDefinition": "JAXA's long-running Space Solar Power Systems research program, including microwave WPT demonstrations and long-term development roadmaps.",
-      "relatedTerms": ["space-based-solar-power", "esa-solaris", "wireless-power-transmission", "microwave-power-beaming"],
+      "relatedTerms": [
+        "space-based-solar-power",
+        "esa-solaris",
+        "wireless-power-transmission",
+        "microwave-power-beaming"
+      ],
       "parentConcept": "jaxa-ssps",
       "sourceRef": null,
       "claimBoundary": "JAXA program is documented. Roadmap timelines are planning scenarios, not funded commitments. Technical claims require current JAXA source verification.",
-      "pageLinks": ["/global-programs/", "/sources/", "/wireless-power-transmission/", "/methodology/"],
+      "pageLinks": [
+        "/global-programs/",
+        "/sources/",
+        "/wireless-power-transmission/",
+        "/methodology/"
+      ],
       "status": "approved",
       "sitemap": false,
       "seoTitle": "JAXA SSPS — SBSP Glossary",
-      "seoDescription": "Definition of JAXA's Space Solar Power Systems program. History, demonstrations, roadmaps, and why timeline claims require current source verification."
+      "seoDescription": "Definition of JAXA's Space Solar Power Systems program. History, demonstrations, roadmaps, and why timeline claims require current source verification.",
+      "cluster": "strategic-demand"
+    },
+    {
+      "id": "space-solar-power-system",
+      "term": "Space Solar Power System",
+      "slug": "space-solar-power-system",
+      "path": "/glossary/space-solar-power-system/",
+      "domain": "technical",
+      "cluster": "core-infrastructure",
+      "definition": "A space solar power system (SSPS) is the complete integrated architecture encompassing orbital solar collection, power conversion, wireless power transmission, atmospheric transit, and ground-based reception and grid delivery. Unlike treating SBSP as only a satellite concept, the SSPS framing emphasizes that every component of the chain must function at scale for the system to work. The term is used particularly in Japanese national and JAXA program documentation, though similar system-level framing appears in NASA and ESA studies. The SSPS concept requires concurrent advances in orbital photovoltaic efficiency, power beaming performance, atmospheric propagation, rectenna scale, and terrestrial grid integration before commercial operation becomes credible.",
+      "shortDefinition": "The complete integrated architecture for collecting solar energy in space, transmitting it to Earth, and delivering it to users.",
+      "relatedTerms": [
+        "space-based-solar-power",
+        "solar-power-satellite",
+        "orbital-energy-infrastructure",
+        "wireless-power-transmission"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "System-level SSPS concepts are well-documented in national program literature. No complete SSPS has been deployed at commercial scale as of 2026.",
+      "pageLinks": [
+        "/framework/",
+        "/technology-stack/",
+        "/global-programs/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Space Solar Power System — SBSP Glossary",
+      "seoDescription": "Definition of space solar power system: the complete integrated architecture from orbital collection to terrestrial power delivery."
+    },
+    {
+      "id": "space-to-earth-power-transmission",
+      "term": "Space-to-Earth Power Transmission",
+      "slug": "space-to-earth-power-transmission",
+      "path": "/glossary/space-to-earth-power-transmission/",
+      "domain": "technical",
+      "cluster": "core-infrastructure",
+      "definition": "Space-to-earth power transmission describes the complete energy delivery pathway from an orbital platform to a terrestrial receiving station. It encompasses beam generation, power conversion aboard the orbital platform, beam propagation through space and the atmosphere, reception at a terrestrial rectenna or photovoltaic receiver, and conversion to grid-compatible electricity. The term is directional and system-level: it defines the full chain between generation source and end use, including the transmission medium choice between microwave and laser frequencies, the atmospheric interaction profile, and the energy conversion efficiency at each step. Challenges include atmospheric absorption, beam divergence over long distances, beam control accuracy, receiver size, and safety governance.",
+      "shortDefinition": "The complete pathway moving electrical energy from an orbital platform to Earth-based receivers.",
+      "relatedTerms": [
+        "power-beaming",
+        "wireless-power-transmission",
+        "atmospheric-attenuation",
+        "rectenna-field"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "The concept and component technologies are established in research literature. Commercial space-to-earth power transmission at grid scale has not been demonstrated.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/framework/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Space-to-Earth Power Transmission — SBSP Glossary",
+      "seoDescription": "Definition of space-to-earth power transmission: the energy pathway from orbital platforms to terrestrial receivers in SBSP systems."
+    },
+    {
+      "id": "orbital-power-generation",
+      "term": "Orbital Power Generation",
+      "slug": "orbital-power-generation",
+      "path": "/glossary/orbital-power-generation/",
+      "domain": "technical",
+      "cluster": "core-infrastructure",
+      "definition": "Orbital power generation refers to the production of electrical energy by systems operating in Earth orbit, primarily through solar photovoltaic conversion of solar radiation above the atmosphere. In the SBSP context, the term emphasizes the orbital operating environment: solar irradiance is approximately 1,361 W/m² and is available without weather or nighttime interruption for much of a geostationary orbit. Orbital power generation does not automatically produce net benefit; the generated energy must be converted, transmitted, received, and reconverted to electricity on Earth with acceptable total system efficiency. The concept is distinguished from space power systems that supply only local spacecraft demand by its intent to export power to terrestrial users or future in-space facilities.",
+      "shortDefinition": "Electrical power generation performed by systems operating in Earth orbit and intended for export to terrestrial or in-space users.",
+      "relatedTerms": [
+        "space-based-solar-power",
+        "solar-power-satellite",
+        "orbital-energy-infrastructure",
+        "power-beaming"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Solar power generation in orbit is well-established at spacecraft scale. Generation at grid-relevant scales for SBSP has not been deployed.",
+      "pageLinks": [
+        "/framework/",
+        "/technology-stack/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Orbital Power Generation — SBSP Glossary",
+      "seoDescription": "Definition of orbital power generation: solar energy production by spacecraft in Earth orbit for potential transmission to terrestrial users."
+    },
+    {
+      "id": "space-energy-grid",
+      "term": "Space Energy Grid",
+      "slug": "space-energy-grid",
+      "path": "/glossary/space-energy-grid/",
+      "domain": "strategic",
+      "cluster": "core-infrastructure",
+      "definition": "A space energy grid is a long-horizon concept in which multiple orbital energy collection and transmission platforms operate in a coordinated architecture to provide continuous, distributed, and strategically diversified power supply. Unlike a single solar power satellite, a space energy grid would use multiple assets in complementary orbits or positions to provide redundancy, coverage across multiple receiver locations, and the ability to redirect power toward different demand centers. The concept extends SBSP from a single point-to-point power system to an orbital energy infrastructure layer analogous to terrestrial electrical grids. No space energy grid has been deployed; the concept remains in the strategic planning and concept phase.",
+      "shortDefinition": "A coordinated architecture of multiple orbital energy assets providing distributed and redundant power supply.",
+      "relatedTerms": [
+        "space-based-solar-power",
+        "orbital-energy-infrastructure",
+        "orbital-power-generation",
+        "energy-sovereignty"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "The space energy grid concept is described in strategic and academic SBSP literature. No space energy grid exists or has been formally approved for development.",
+      "pageLinks": [
+        "/framework/",
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Space Energy Grid — SBSP Glossary",
+      "seoDescription": "Definition of space energy grid: a coordinated orbital architecture for distributed energy supply from multiple solar power satellites."
+    },
+    {
+      "id": "solar-power-satellite-array",
+      "term": "Solar Power Satellite Array",
+      "slug": "solar-power-satellite-array",
+      "path": "/glossary/solar-power-satellite-array/",
+      "domain": "technical",
+      "cluster": "core-infrastructure",
+      "definition": "A solar power satellite array is a configuration in which multiple discrete solar power satellites are positioned and coordinated to function as a collective energy collection and transmission system. Arrays may be designed to concentrate beam energy toward a single receiver, provide redundancy against individual satellite failure, or cover different reception points depending on demand patterns. Array configurations are studied in the context of scalable SBSP architectures where a single large monolithic satellite is considered impractical for initial deployment, and phased approaches to power collection and beam formation offer alternative technical pathways. Array coordination introduces additional challenges of beam synchronization, interference management, and orbital positioning.",
+      "shortDefinition": "Multiple coordinated solar power satellites operating as a collective SBSP collection and transmission system.",
+      "relatedTerms": [
+        "solar-power-satellite",
+        "space-based-solar-power",
+        "modular-solar-power-satellite",
+        "phased-array-transmitter"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Array architectures for SBSP are studied in concept and system design phases. No multi-satellite SBSP array has been deployed.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/framework/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Solar Power Satellite Array — SBSP Glossary",
+      "seoDescription": "Definition of solar power satellite array: multiple coordinated satellites operating as a collective SBSP collection and transmission system."
+    },
+    {
+      "id": "modular-solar-power-satellite",
+      "term": "Modular Solar Power Satellite",
+      "slug": "modular-solar-power-satellite",
+      "path": "/glossary/modular-solar-power-satellite/",
+      "domain": "technical",
+      "cluster": "core-infrastructure",
+      "definition": "A modular solar power satellite is an SBSP system architecture in which the overall platform is composed of discrete units that can be launched separately and assembled or aggregated in orbit to build the final system incrementally. Modularity is a proposed solution to the central SBSP constraint of mass-to-orbit economics: instead of launching a single enormous platform, many smaller units are launched over time on smaller or more cost-effective rockets, and the orbital assembly challenge replaces the single-launch mass challenge. Modular approaches introduce their own technical challenges including on-orbit docking and assembly, structural integrity of assembled modules, power routing between modules, and maintaining beam coherence across a distributed structure. Modular designs are explored by NASA, ESA, JAXA, and academic programs as a potential pathway to incremental SBSP development.",
+      "shortDefinition": "An SBSP platform built from multiple individually launched components assembled incrementally in orbit.",
+      "relatedTerms": [
+        "solar-power-satellite",
+        "orbital-assembly",
+        "mass-to-orbit",
+        "solar-power-satellite-array"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Modular SBSP architectures are studied in research and concept phases. No modular solar power satellite has been assembled or demonstrated in orbit.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Modular Solar Power Satellite — SBSP Glossary",
+      "seoDescription": "Definition of modular solar power satellite: an SBSP platform built from multiple individually launched components assembled in orbit."
+    },
+    {
+      "id": "geostationary-solar-power-platform",
+      "term": "Geostationary Solar Power Platform",
+      "slug": "geostationary-solar-power-platform",
+      "path": "/glossary/geostationary-solar-power-platform/",
+      "domain": "technical",
+      "cluster": "core-infrastructure",
+      "definition": "A geostationary solar power platform is a solar power satellite or SBSP system deployed in geostationary orbit at approximately 35,786 km altitude, where it remains stationary relative to a fixed point on Earth's equator. The geostationary position is favored in many SBSP concepts because it enables continuous power delivery to a dedicated rectenna site without complex beam tracking between a moving transmitter and a fixed receiver. However, geostationary orbit also imposes significant constraints: the transmission distance is large, increasing beam divergence and transmission loss; the altitude requires enormous photovoltaic area to produce useful power at the receiver; and launch costs to geostationary transfer orbit are significantly higher than to lower orbits.",
+      "shortDefinition": "An SBSP system positioned in geostationary orbit to provide continuous power to a fixed terrestrial receiver.",
+      "relatedTerms": [
+        "geostationary-orbit",
+        "solar-power-satellite",
+        "space-based-solar-power",
+        "mass-to-orbit"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Geostationary orbit is well-understood as an operational environment. Solar power satellites in geostationary orbit have been studied extensively but not deployed.",
+      "pageLinks": [
+        "/framework/",
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Geostationary Solar Power Platform — SBSP Glossary",
+      "seoDescription": "Definition of geostationary solar power platform: an SBSP system in geostationary orbit providing continuous power to a fixed terrestrial receiver."
+    },
+    {
+      "id": "space-based-power-station",
+      "term": "Space-Based Power Station",
+      "slug": "space-based-power-station",
+      "path": "/glossary/space-based-power-station/",
+      "domain": "technical",
+      "cluster": "core-infrastructure",
+      "definition": "A space-based power station is an orbital facility whose primary function is large-scale electrical energy collection and wireless transmission to one or more terrestrial receiving sites. The term is used interchangeably with solar power satellite in many contexts, though space-based power station can also encompass concepts that use energy sources beyond direct solar photovoltaics. In all current SBSP concepts, solar irradiance is the energy source. A space-based power station would operate at a scale fundamentally different from space power systems supplying only satellites or space stations: it would be designed to generate power equivalent to a conventional terrestrial power plant, typically cited as hundreds of megawatts to gigawatts, and deliver it to a terrestrial grid.",
+      "shortDefinition": "An orbital facility designed for large-scale solar energy collection and wireless transmission to terrestrial users.",
+      "relatedTerms": [
+        "space-based-solar-power",
+        "solar-power-satellite",
+        "orbital-energy-infrastructure",
+        "orbital-power-generation"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "The concept of a space-based power station is established in SBSP literature. No such facility has been constructed or operated.",
+      "pageLinks": [
+        "/framework/",
+        "/technology-stack/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Space-Based Power Station — SBSP Glossary",
+      "seoDescription": "Definition of space-based power station: an orbital facility for large-scale solar energy collection and wireless transmission to terrestrial users."
+    },
+    {
+      "id": "orbital-energy-reference-layer",
+      "term": "Orbital Energy Reference Layer",
+      "slug": "orbital-energy-reference-layer",
+      "path": "/glossary/orbital-energy-reference-layer/",
+      "domain": "strategic",
+      "cluster": "core-infrastructure",
+      "definition": "The orbital energy reference layer is a conceptual organizing framework that treats Earth orbit as a potential infrastructure layer for energy collection and distribution, analogous to how terrestrial infrastructure layers support energy transmission and distribution on the ground. In this framework, solar power satellites, power beaming systems, receiving infrastructure, and grid interconnection represent different layers of a complete orbital energy infrastructure stack. The term is used in strategic, policy, and reference-architecture contexts rather than engineering specifications. It helps frame SBSP not as a single device or program but as a category of infrastructure development with implications for energy sovereignty, national strategy, space logistics, and long-term industrialization of the space environment.",
+      "shortDefinition": "A conceptual framework treating Earth orbit as an energy infrastructure layer for solar collection and terrestrial power delivery.",
+      "relatedTerms": [
+        "orbital-energy-infrastructure",
+        "space-based-solar-power",
+        "energy-sovereignty",
+        "space-industrial-energy"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "The orbital energy reference layer is a conceptual framing used in strategic and reference documents. It does not describe an existing deployed infrastructure layer.",
+      "pageLinks": [
+        "/framework/",
+        "/strategic-importance/",
+        "/manifesto/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Orbital Energy Reference Layer — SBSP Glossary",
+      "seoDescription": "Definition of orbital energy reference layer: a framework treating Earth orbit as an energy infrastructure layer for solar collection and transmission."
+    },
+    {
+      "id": "power-beaming",
+      "term": "Power Beaming",
+      "slug": "power-beaming",
+      "path": "/glossary/power-beaming/",
+      "domain": "technical",
+      "cluster": "transmission-reception",
+      "definition": "Power beaming is the wireless transmission of electrical energy from a source to a receiver using directed electromagnetic radiation, typically at microwave or laser frequencies. In the SBSP context, power beaming is the core transmission mechanism that enables energy collected in orbit to reach terrestrial users without physical connection. The two primary approaches — microwave power beaming and laser power beaming — differ in atmospheric interaction, efficiency, safety profile, regulatory environment, and receiver design requirements. Power beaming has been demonstrated at laboratory and small-scale field levels. Extending these demonstrations to the power densities, transmission distances, and system sizes required for commercial SBSP represents a major unsolved engineering and economic challenge.",
+      "shortDefinition": "Wireless transmission of electrical energy using directed electromagnetic radiation, typically microwave or laser.",
+      "relatedTerms": [
+        "microwave-power-beaming",
+        "laser-power-transmission",
+        "beam-control",
+        "atmospheric-attenuation",
+        "rectenna"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Power beaming has been demonstrated at small scale. Commercial SBSP power beaming at grid-relevant power levels and orbital distances has not been achieved.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Power Beaming — SBSP Glossary",
+      "seoDescription": "Definition of power beaming: wireless transmission of electrical energy using directed microwave or laser radiation from source to receiver."
+    },
+    {
+      "id": "microwave-transmission-pathway",
+      "term": "Microwave Transmission Pathway",
+      "slug": "microwave-transmission-pathway",
+      "path": "/glossary/microwave-transmission-pathway/",
+      "domain": "technical",
+      "cluster": "transmission-reception",
+      "definition": "The microwave transmission pathway in SBSP encompasses the complete chain of energy conversion, beam formation, atmospheric propagation, and reception for a microwave-based power delivery system. Starting from conversion of solar-generated DC power to microwave radiation aboard the orbital transmitter, through the phased-array transmitter aperture, across the atmospheric propagation path, to the rectenna array where microwave energy is reconverted to DC electricity, each step involves efficiency losses and technical constraints. Microwave frequencies in the 2.45 GHz or 5.8 GHz range are commonly studied for SBSP because they pass through cloud cover and precipitation with relatively low attenuation compared to optical frequencies. The microwave pathway requires precise beam control to maintain alignment with the terrestrial rectenna across orbital motion.",
+      "shortDefinition": "The end-to-end microwave energy pathway from orbital transmitter through atmosphere to terrestrial rectenna.",
+      "relatedTerms": [
+        "power-beaming",
+        "microwave-power-beaming",
+        "phased-array-transmitter",
+        "atmospheric-attenuation",
+        "rectenna-field"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Microwave transmission pathways are well-understood in principle and demonstrated at sub-scale. Full orbital-to-ground microwave transmission for SBSP has not been demonstrated.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Microwave Transmission Pathway — SBSP Glossary",
+      "seoDescription": "Definition of microwave transmission pathway: the end-to-end microwave energy system from orbital transmitter to ground rectenna in SBSP."
+    },
+    {
+      "id": "laser-transmission-pathway",
+      "term": "Laser Transmission Pathway",
+      "slug": "laser-transmission-pathway",
+      "path": "/glossary/laser-transmission-pathway/",
+      "domain": "technical",
+      "cluster": "transmission-reception",
+      "definition": "The laser transmission pathway in SBSP encompasses the complete chain from conversion of solar or DC power to laser radiation, through beam formation and optical steering, across the atmospheric propagation path, to a photovoltaic or thermophotovoltaic receiver where laser energy is converted back to electricity. Laser-based SBSP concepts offer smaller transmitter and receiver apertures compared to microwave approaches due to shorter wavelengths, but atmospheric effects including absorption, scattering, and turbulence create different and often more severe efficiency losses, particularly under adverse weather. Safety requirements for laser beams at the power intensities required for SBSP are stringent. Laser pathways are studied for specific applications including remote power for space missions and niche terrestrial scenarios where receiver aperture constraints favor optical approaches.",
+      "shortDefinition": "The end-to-end laser energy pathway from orbital platform through atmosphere to terrestrial photovoltaic receiver.",
+      "relatedTerms": [
+        "power-beaming",
+        "laser-power-transmission",
+        "atmospheric-attenuation",
+        "power-conversion-efficiency"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Laser power transmission is demonstrated at laboratory scale and in directed-energy research. Orbital-to-ground laser SBSP has not been deployed.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Laser Transmission Pathway — SBSP Glossary",
+      "seoDescription": "Definition of laser transmission pathway: the end-to-end laser energy system from orbital platform to terrestrial photovoltaic receiver in SBSP."
+    },
+    {
+      "id": "beam-control",
+      "term": "Beam Control",
+      "slug": "beam-control",
+      "path": "/glossary/beam-control/",
+      "domain": "technical",
+      "cluster": "transmission-reception",
+      "definition": "Beam control in power beaming systems refers to the engineering processes and hardware systems responsible for pointing, tracking, and maintaining an energy beam directed at a specified receiver location while managing beam quality, divergence, and unintended radiation. In the SBSP context, beam control must maintain alignment between an orbital transmitter moving at orbital velocity and a terrestrial rectenna or photovoltaic receiver, correcting for orbital motion, atmospheric variations, transmitter platform dynamics, and potential interference. Beam control is implemented through retrodirective steering arrays, pilot signal feedback from the receiver, or combined approaches. Failures or degradation in beam control create both efficiency losses and safety hazards requiring automatic beam shutdown systems.",
+      "shortDefinition": "The processes maintaining accurate direction and intensity of a transmitted energy beam toward its target receiver.",
+      "relatedTerms": [
+        "beam-steering",
+        "power-beaming",
+        "phased-array-transmitter",
+        "safety-boundary"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Beam control techniques are established in phased-array radar and directed-energy research. Precision beam control for commercial SBSP power delivery has not been demonstrated at operational scale.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Beam Control — SBSP Glossary",
+      "seoDescription": "Definition of beam control: maintaining accurate direction and intensity of power beaming transmissions toward terrestrial receivers in SBSP systems."
+    },
+    {
+      "id": "beam-steering",
+      "term": "Beam Steering",
+      "slug": "beam-steering",
+      "path": "/glossary/beam-steering/",
+      "domain": "technical",
+      "cluster": "transmission-reception",
+      "definition": "Beam steering is the capability to redirect an energy beam from one target receiver to another, or to track a moving receiver, using electronic or mechanical control. In SBSP systems, beam steering enables an orbital platform to track a terrestrial receiver as the satellite moves through its orbit, or to shift power delivery between receiving sites depending on demand. Electronic beam steering through phased arrays is preferred over mechanical approaches because it allows rapid redirection without moving parts at orbital altitudes. Beam steering range and speed determine the operational flexibility of an SBSP system, including the ability to respond to demand shifts, receiver outages, or safety conditions requiring immediate beam redirection.",
+      "shortDefinition": "Active redirection of an energy beam to track terrestrial receivers or shift power delivery between sites.",
+      "relatedTerms": [
+        "beam-control",
+        "phased-array-transmitter",
+        "power-beaming",
+        "microwave-transmission-pathway"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Electronic beam steering is a mature technology in phased-array applications. Orbital-scale beam steering for SBSP power delivery has not been demonstrated in operational systems.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Beam Steering — SBSP Glossary",
+      "seoDescription": "Definition of beam steering: active redirection of an energy beam to track terrestrial receivers or shift power delivery in SBSP systems."
+    },
+    {
+      "id": "phased-array-transmitter",
+      "term": "Phased Array Transmitter",
+      "slug": "phased-array-transmitter",
+      "path": "/glossary/phased-array-transmitter/",
+      "domain": "technical",
+      "cluster": "transmission-reception",
+      "definition": "A phased array transmitter is an antenna architecture in which many individual radiating elements emit electromagnetic signals with controlled phase relationships, creating constructive interference that forms and steers a directed beam without physical movement of the antenna structure. In SBSP, phased array transmitters are the primary proposed technology for generating and steering microwave power beams from orbital platforms toward terrestrial rectennas. The ability to electronically control beam direction, shape, and power density distribution enables precise targeting of terrestrial receivers and the retrodirective feedback control needed for beam safety. SBSP-scale phased array transmitters would require large aperture areas — potentially hundreds of meters to kilometers — to achieve useful power density at Earth's surface.",
+      "shortDefinition": "A multi-element antenna forming and steering a directed power beam through electronically controlled constructive interference.",
+      "relatedTerms": [
+        "beam-control",
+        "beam-steering",
+        "power-beaming",
+        "microwave-transmission-pathway",
+        "phased-array-antenna"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Phased array transmitters are mature technology in radar, satellite communications, and electronic warfare. SBSP-scale phased array transmitters for power delivery have not been deployed in orbit.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Phased Array Transmitter — SBSP Glossary",
+      "seoDescription": "Definition of phased array transmitter: multi-element antenna forming a steerable power beam for SBSP transmission through constructive interference."
+    },
+    {
+      "id": "atmospheric-attenuation",
+      "term": "Atmospheric Attenuation",
+      "slug": "atmospheric-attenuation",
+      "path": "/glossary/atmospheric-attenuation/",
+      "domain": "technical",
+      "cluster": "transmission-reception",
+      "definition": "Atmospheric attenuation refers to the reduction in beam energy intensity that occurs when electromagnetic radiation passes through Earth's atmosphere due to absorption and scattering by atmospheric gases, water vapor, clouds, precipitation, and aerosols. For SBSP power beaming, the degree of attenuation depends on the transmission frequency or wavelength. Microwave frequencies typically used in SBSP proposals experience relatively low attenuation under most atmospheric conditions, allowing power transmission through cloud cover and moderate precipitation. Laser frequencies experience substantially higher attenuation, particularly under overcast or rainy conditions, which limits the operational availability of laser SBSP pathways. Atmospheric attenuation affects both total system efficiency and the geographic and meteorological conditions under which a receiving site can operate effectively.",
+      "shortDefinition": "Reduction of beam energy intensity as electromagnetic radiation passes through the atmosphere due to absorption and scattering.",
+      "relatedTerms": [
+        "power-beaming",
+        "microwave-transmission-pathway",
+        "laser-transmission-pathway",
+        "power-conversion-efficiency"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Atmospheric attenuation of electromagnetic radiation is well-characterized in the scientific literature. Operational SBSP experience with atmospheric attenuation under system conditions does not exist.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Atmospheric Attenuation — SBSP Glossary",
+      "seoDescription": "Definition of atmospheric attenuation: reduction of beam energy as microwave or laser radiation passes through the atmosphere in SBSP transmission."
+    },
+    {
+      "id": "rectenna-field",
+      "term": "Rectenna Field",
+      "slug": "rectenna-field",
+      "path": "/glossary/rectenna-field/",
+      "domain": "technical",
+      "cluster": "transmission-reception",
+      "definition": "A rectenna field is the complete terrestrial receiving installation for a microwave power beaming system, consisting of a large array of individual rectenna elements collectively covering sufficient area to receive, convert, and deliver transmitted microwave energy to the power grid. Individual rectenna elements are relatively simple devices combining an antenna and a rectifying diode circuit, but the field-level system involves interconnection, power conditioning, grid connection, structural support, land management, and safety infrastructure. SBSP concepts typically require rectenna fields covering hundreds of hectares to square kilometers to receive multi-gigawatt beams at acceptable power density. The land requirement and proximity to populated areas are significant planning and public-acceptance considerations.",
+      "shortDefinition": "A large-area deployment of rectenna elements forming an integrated ground-based microwave power receiving system.",
+      "relatedTerms": [
+        "rectenna",
+        "receiving-antenna-array",
+        "land-footprint",
+        "microwave-transmission-pathway",
+        "power-conversion-efficiency"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Individual rectenna elements are well-demonstrated. Rectenna fields at the scale required for commercial SBSP have not been constructed.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/framework/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Rectenna Field — SBSP Glossary",
+      "seoDescription": "Definition of rectenna field: the large-area terrestrial rectenna array for receiving and converting microwave power beams in SBSP systems."
+    },
+    {
+      "id": "receiving-antenna-array",
+      "term": "Receiving Antenna Array",
+      "slug": "receiving-antenna-array",
+      "path": "/glossary/receiving-antenna-array/",
+      "domain": "technical",
+      "cluster": "transmission-reception",
+      "definition": "A receiving antenna array is the organized collection of individual antenna elements at the terrestrial end of a power beaming system, arranged to capture energy from an incoming electromagnetic beam. In microwave SBSP systems, the receiving antenna array is the core component of the rectenna field. Array design must balance individual element spacing for efficient energy capture, structural requirements for large-area deployment, electrical interconnection for power aggregation, and accommodation of varying beam intensity profiles across the array aperture. The aperture size of the receiving antenna array — typically measured in km² for SBSP — is determined by the transmitted beam power density at the receiver and acceptable power density limits for safety and land use regulations.",
+      "shortDefinition": "An array of antenna elements at the terrestrial receiving station designed to capture transmitted power beam energy.",
+      "relatedTerms": [
+        "rectenna-field",
+        "rectenna",
+        "microwave-transmission-pathway",
+        "land-footprint"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Receiving antenna arrays are demonstrated at research scale in wireless power transmission experiments. Commercial SBSP-scale receiving arrays have not been deployed.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Receiving Antenna Array — SBSP Glossary",
+      "seoDescription": "Definition of receiving antenna array: the terrestrial antenna collection system for capturing and converting microwave power beam energy in SBSP."
+    },
+    {
+      "id": "power-conversion-efficiency",
+      "term": "Power Conversion Efficiency",
+      "slug": "power-conversion-efficiency",
+      "path": "/glossary/power-conversion-efficiency/",
+      "domain": "technical",
+      "cluster": "transmission-reception",
+      "definition": "Power conversion efficiency in the SBSP context refers to the ratio of useful electrical power output to the energy input at any individual stage of the SBSP energy chain, or to the overall system efficiency from solar irradiance to grid-delivered electricity. Each stage of the SBSP chain — photovoltaic conversion in orbit, conversion to microwave or laser, atmospheric transmission, reception and rectification, and power conditioning — has its own efficiency factor, and these multiply together to determine the overall system conversion efficiency. High efficiency at each stage is critical because SBSP system economics depend strongly on the power delivered per unit of orbital platform mass or per unit of cost. Published efficiency values for individual components may not apply directly to full-scale SBSP systems operating in the combined conditions of space and atmospheric transmission.",
+      "shortDefinition": "The ratio of usable electrical power output to energy input at any conversion stage in the SBSP energy chain.",
+      "relatedTerms": [
+        "power-beaming",
+        "atmospheric-attenuation",
+        "rectenna-field",
+        "beaming-efficiency"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Component-level efficiency values are published in engineering literature. Integrated SBSP system efficiency at commercial scale has not been demonstrated.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Power Conversion Efficiency — SBSP Glossary",
+      "seoDescription": "Definition of power conversion efficiency: the ratio of useful electrical output to energy input at each stage of the SBSP energy delivery chain."
+    },
+    {
+      "id": "baseload-power",
+      "term": "Baseload Power",
+      "slug": "baseload-power",
+      "path": "/glossary/baseload-power/",
+      "domain": "technical",
+      "cluster": "grid-energy-systems",
+      "definition": "Baseload power refers to the continuous, stable generation capacity that operates to meet the minimum level of electricity demand on a grid at all times, including overnight and periods of low demand. Baseload power plants run at consistently high capacity factors and provide the foundation of grid stability. SBSP proponents argue that an orbital solar power system could provide baseload-compatible power, unlike terrestrial wind or solar which are intermittent. This is because a geostationary orbital platform receives near-continuous solar irradiance regardless of Earth's day-night cycle or weather patterns. Whether SBSP could function as true baseload depends on the transmission system's continuous operability, the beam control system's reliability, the rectenna field's availability, and the grid integration architecture.",
+      "shortDefinition": "Continuous stable electrical power generation meeting minimum grid demand at all times, regardless of weather or time of day.",
+      "relatedTerms": [
+        "dispatchable-energy",
+        "grid-resilience",
+        "energy-security",
+        "grid-integration"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Baseload power concepts are well-established in power systems engineering. SBSP's ability to provide true baseload has not been demonstrated in operational systems.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Baseload Power — SBSP Glossary",
+      "seoDescription": "Definition of baseload power: continuous stable power generation meeting minimum grid demand, a potential advantage for geostationary SBSP systems."
+    },
+    {
+      "id": "dispatchable-energy",
+      "term": "Dispatchable Energy",
+      "slug": "dispatchable-energy",
+      "path": "/glossary/dispatchable-energy/",
+      "domain": "technical",
+      "cluster": "grid-energy-systems",
+      "definition": "Dispatchable energy refers to electricity generation capacity that can be activated, adjusted, or shut down according to grid demand signals, as opposed to variable renewable generation that depends on natural resource availability. Grid operators rely on dispatchable sources to balance supply and demand in real time and to respond to unexpected demand peaks or supply failures. SBSP concepts are sometimes described as potentially dispatchable because the orbital transmitter can in principle direct its beam, adjust power level, or switch between receivers, giving operators some control over when and where power is delivered. However, this potential dispatchability is subject to orbital geometry constraints, beam safety requirements, transmission system availability, and the as-yet-undemonstrated control systems required for commercial operation.",
+      "shortDefinition": "Energy that can be generated and delivered to the grid on demand at controlled rates and timing.",
+      "relatedTerms": [
+        "baseload-power",
+        "grid-resilience",
+        "grid-integration",
+        "energy-security"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Dispatchable energy as a concept is established in power systems. SBSP dispatchability is a design claim that has not been validated in operational systems.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Dispatchable Energy — SBSP Glossary",
+      "seoDescription": "Definition of dispatchable energy: controllable power generation available on demand, relevant to how SBSP is positioned relative to intermittent renewables."
+    },
+    {
+      "id": "energy-security",
+      "term": "Energy Security",
+      "slug": "energy-security",
+      "path": "/glossary/energy-security/",
+      "domain": "strategic",
+      "cluster": "grid-energy-systems",
+      "definition": "Energy security refers to the conditions under which a nation, organization, or critical system can reliably access sufficient energy to meet operational, economic, and strategic needs without unacceptable vulnerability to supply disruption, price volatility, or geopolitical pressure. Energy security encompasses source diversity, supply chain resilience, storage capacity, transmission infrastructure redundancy, and the absence of undue dependence on hostile or unreliable suppliers. SBSP is discussed in energy security contexts as a potential pathway to space-derived energy independent of terrestrial geopolitical supply chains, though this strategic benefit must be weighed against the new vulnerabilities introduced by orbital asset dependence, space situational awareness requirements, and the geopolitical complexity of orbital infrastructure ownership and access.",
+      "shortDefinition": "A nation's or organization's ability to maintain reliable access to sufficient energy without unacceptable supply vulnerability.",
+      "relatedTerms": [
+        "energy-sovereignty",
+        "grid-resilience",
+        "defense-energy-resilience",
+        "strategic-energy-logistics"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Energy security as a concept is well-established in policy and strategic literature. SBSP's contribution to energy security has not been demonstrated in operational systems.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Energy Security — SBSP Glossary",
+      "seoDescription": "Definition of energy security: reliable access to sufficient energy without unacceptable vulnerability, a primary strategic argument for SBSP development."
+    },
+    {
+      "id": "remote-power-supply",
+      "term": "Remote Power Supply",
+      "slug": "remote-power-supply",
+      "path": "/glossary/remote-power-supply/",
+      "domain": "strategic",
+      "cluster": "grid-energy-systems",
+      "definition": "Remote power supply refers to the challenge of delivering reliable electrical energy to locations that are not economically or practically connected to large centralized grid infrastructure, including remote communities, military forward operating bases, disaster zones, island systems, and polar installations. Remote power is typically expensive because conventional fuel supply requires long transport distances, and grid extension to remote areas carries high capital costs. SBSP is studied as a potential remote power solution because an orbital transmitter can, in principle, direct power to a portable or modular rectenna anywhere within its coverage area without requiring terrestrial grid infrastructure. The receiving infrastructure must still be deployed and maintained, and SBSP must be economically competitive with alternative remote power solutions.",
+      "shortDefinition": "Provision of electrical power to locations distant from major grid infrastructure or conventional fuel supply chains.",
+      "relatedTerms": [
+        "baseload-power",
+        "island-grid",
+        "critical-infrastructure-power",
+        "disaster-response-power"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Remote power challenges are well-documented. SBSP as a remote power solution has not been commercially demonstrated.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Remote Power Supply — SBSP Glossary",
+      "seoDescription": "Definition of remote power supply: delivering energy to locations disconnected from major grids, a potential SBSP application for isolated regions."
+    },
+    {
+      "id": "island-grid",
+      "term": "Island Grid",
+      "slug": "island-grid",
+      "path": "/glossary/island-grid/",
+      "domain": "technical",
+      "cluster": "grid-energy-systems",
+      "definition": "An island grid is an electrical power system that operates independently of major interconnected grid networks, typically found on physically isolated islands, remote communities, or other locations where interconnection with broader grid infrastructure is physically or economically impractical. Island grids face challenges including limited generation diversity, vulnerability to single-point failures, high fuel import costs, and difficulty integrating high proportions of variable renewable generation without substantial storage. SBSP has been discussed as a potential solution for island grids because it could provide continuous baseload-compatible power to a receiving installation without requiring interconnection with mainland grids. Pacific island nations, remote Arctic communities, and military island installations are among the scenarios commonly discussed.",
+      "shortDefinition": "An electrical grid operating in isolation from larger interconnected networks, typically in geographically isolated regions.",
+      "relatedTerms": [
+        "baseload-power",
+        "remote-power-supply",
+        "grid-resilience",
+        "dispatchable-energy"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Island grid challenges are well-documented. SBSP as an island grid power solution has not been commercially demonstrated.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Island Grid — SBSP Glossary",
+      "seoDescription": "Definition of island grid: isolated electrical systems in remote regions, a potential SBSP application for continuous baseload power provision."
+    },
+    {
+      "id": "critical-infrastructure-power",
+      "term": "Critical Infrastructure Power",
+      "slug": "critical-infrastructure-power",
+      "path": "/glossary/critical-infrastructure-power/",
+      "domain": "strategic",
+      "cluster": "grid-energy-systems",
+      "definition": "Critical infrastructure power refers to the electrical supply requirements of systems and facilities whose continuous operation is essential to public safety, national security, economic function, or population welfare, including data centers, hospitals, communications networks, water treatment systems, defense installations, and financial infrastructure. Resilience of power supply to critical infrastructure is a priority concern in national security and emergency management planning. SBSP is discussed in this context as a potential alternative or supplementary power source for critical infrastructure that could provide power resilience against terrestrial disruptions including natural disasters, grid failures, or physical attacks. The relevance of SBSP to critical infrastructure power depends on reliability, cost, and availability of orbital systems that have not been built.",
+      "shortDefinition": "Power provision essential to systems whose failure would cause severe disruption to public safety, security, or national function.",
+      "relatedTerms": [
+        "defense-energy-resilience",
+        "grid-resilience",
+        "disaster-response-power",
+        "remote-power-supply"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Critical infrastructure power requirements are well-documented. SBSP's role in critical infrastructure power supply has not been demonstrated operationally.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Critical Infrastructure Power — SBSP Glossary",
+      "seoDescription": "Definition of critical infrastructure power: energy provision for essential systems whose failure threatens public safety or national function."
+    },
+    {
+      "id": "disaster-response-power",
+      "term": "Disaster Response Power",
+      "slug": "disaster-response-power",
+      "path": "/glossary/disaster-response-power/",
+      "domain": "strategic",
+      "cluster": "grid-energy-systems",
+      "definition": "Disaster response power refers to the emergency provision of electrical energy during and after natural disasters, infrastructure attacks, or humanitarian crises when normal grid infrastructure has been damaged or destroyed. Disaster response power is typically provided through portable generators, microgrids, or military mobile power systems. SBSP has been discussed as a potential disaster response tool because an orbital system could potentially direct a power beam to a portable receiving station deployed to an affected area, providing power without depending on ground-based fuel supply chains or damaged grid infrastructure. This application faces practical challenges including the deployment time of receiving equipment, orbital coverage availability, and the cost and complexity of the orbital system relative to conventional alternatives.",
+      "shortDefinition": "Emergency electrical power provision in response to natural disasters, infrastructure failures, or humanitarian crises.",
+      "relatedTerms": [
+        "remote-power-supply",
+        "critical-infrastructure-power",
+        "defense-energy-resilience",
+        "island-grid"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Disaster response power needs are documented. SBSP for disaster response has been studied conceptually but not operationally demonstrated.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Disaster Response Power — SBSP Glossary",
+      "seoDescription": "Definition of disaster response power: emergency electrical provision when normal infrastructure is unavailable, a proposed SBSP use case."
+    },
+    {
+      "id": "mass-to-orbit",
+      "term": "Mass to Orbit",
+      "slug": "mass-to-orbit",
+      "path": "/glossary/mass-to-orbit/",
+      "domain": "technical",
+      "cluster": "constraints-governance",
+      "definition": "Mass to orbit is the quantity of material that must be lifted from Earth's surface to an orbital altitude to construct, supply, and maintain a space system. For SBSP, mass to orbit is the fundamental economic constraint because all solar panels, structural elements, transmitter arrays, power electronics, and station-keeping systems must either be launched from Earth or produced from space-sourced materials that do not yet exist at commercial scale. The cost of launch — historically measured in thousands to tens of thousands of dollars per kilogram — dominates SBSP cost estimates. Reductions in launch cost driven by reusable launch vehicles are frequently cited as a condition for SBSP economic viability, though the mass required for SBSP at commercial scale remains enormous even at significantly reduced per-kilogram costs.",
+      "shortDefinition": "The mass of material that must be transported from Earth to orbit to construct and operate an SBSP system.",
+      "relatedTerms": [
+        "launch-economics",
+        "orbital-assembly",
+        "modular-solar-power-satellite",
+        "specific-mass"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Mass-to-orbit requirements are calculable from engineering analyses. Actual SBSP construction has not been undertaken; cost projections depend on future launch economics that have not been fully realized.",
+      "pageLinks": [
+        "/feasibility-and-constraints/",
+        "/technology-stack/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Mass to Orbit — SBSP Glossary",
+      "seoDescription": "Definition of mass to orbit: the material that must be launched from Earth to construct SBSP systems, the primary cost constraint for the concept."
+    },
+    {
+      "id": "space-debris-risk",
+      "term": "Space Debris Risk",
+      "slug": "space-debris-risk",
+      "path": "/glossary/space-debris-risk/",
+      "domain": "technical",
+      "cluster": "constraints-governance",
+      "definition": "Space debris risk in the SBSP context refers to both the risk that debris in Earth orbit poses to large SBSP platforms and the risk that SBSP development might contribute to debris accumulation through mission failures, structural degradation, or collisions. SBSP platforms would be among the largest human-made structures ever placed in orbit, making them significant targets for existing debris and potential contributors to the debris environment if they break up or shed components. The Kessler syndrome — a cascade of debris collisions rendering certain orbital regions unusable — is a long-term concern. SBSP concepts must address debris avoidance, impact resistance, end-of-life disposal, and the cumulative environmental impact of large-scale orbital industrial activity.",
+      "shortDefinition": "The risk to SBSP platforms from orbital collision debris and the risk that SBSP operations contribute to debris accumulation.",
+      "relatedTerms": [
+        "orbital-assembly",
+        "safety-boundary",
+        "spectrum-regulation",
+        "public-legitimacy",
+        "space-debris"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Space debris as an orbital safety concern is well-established. SBSP-specific debris risks depend on designs and orbital regimes that have not been finalized.",
+      "pageLinks": [
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Space Debris Risk — SBSP Glossary",
+      "seoDescription": "Definition of space debris risk: orbital collision and debris generation risks relevant to large SBSP platform construction and operation."
+    },
+    {
+      "id": "spectrum-regulation",
+      "term": "Spectrum Regulation",
+      "slug": "spectrum-regulation",
+      "path": "/glossary/spectrum-regulation/",
+      "domain": "governance",
+      "cluster": "constraints-governance",
+      "definition": "Spectrum regulation refers to the national and international framework for assigning rights to use specific electromagnetic frequency bands, administered globally through the International Telecommunication Union (ITU) and nationally through regulatory agencies such as the FCC in the United States and Ofcom in the United Kingdom. SBSP systems using microwave power beaming would require allocation of specific frequency bands for high-power point-to-point transmission not covered under standard telecommunications frameworks. Obtaining spectrum allocations for commercial SBSP would require internationally coordinated regulatory processes, potential frequency coordination with satellite communications and radio astronomy users, and new regulatory frameworks that do not yet exist for high-power orbital-to-ground energy transmission.",
+      "shortDefinition": "The international governance framework allocating rights to use specific electromagnetic frequency bands.",
+      "relatedTerms": [
+        "public-legitimacy",
+        "safety-boundary",
+        "microwave-transmission-pathway",
+        "power-beaming"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Spectrum regulation frameworks are well-established. SBSP-specific spectrum allocations do not currently exist and would require new international regulatory processes.",
+      "pageLinks": [
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Spectrum Regulation — SBSP Glossary",
+      "seoDescription": "Definition of spectrum regulation: international governance of electromagnetic frequency allocation, a legal prerequisite for SBSP microwave power beaming."
+    },
+    {
+      "id": "public-legitimacy",
+      "term": "Public Legitimacy",
+      "slug": "public-legitimacy",
+      "path": "/glossary/public-legitimacy/",
+      "domain": "governance",
+      "cluster": "constraints-governance",
+      "definition": "Public legitimacy in the SBSP context refers to the social and political acceptance that SBSP technology and infrastructure projects would need from affected populations, policymakers, and international communities to move from concept to deployment. Public legitimacy is distinct from technical feasibility or economic viability: a technology can be technically proven and economically competitive yet fail to achieve deployment because it lacks public trust or political support. SBSP faces potential public legitimacy challenges related to perceived risks of high-power beam transmission, land requirements for rectenna fields, spectrum interference concerns, and broader anxieties about militarization of space or unequal access to orbital energy resources. Public legitimacy must be earned through transparent communication, rigorous safety governance, and sustained community engagement.",
+      "shortDefinition": "The social and political acceptance that SBSP projects must earn from communities, regulators, and international bodies.",
+      "relatedTerms": [
+        "safety-boundary",
+        "spectrum-regulation",
+        "land-footprint",
+        "sbsp-safety"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "The importance of public acceptance for infrastructure projects is well-documented. SBSP public legitimacy challenges are speculative since no public SBSP deployment has been proposed at the scale requiring formal community approval.",
+      "pageLinks": [
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Public Legitimacy — SBSP Glossary",
+      "seoDescription": "Definition of public legitimacy: social and political acceptance that SBSP projects must earn from communities, regulators, and international bodies."
+    },
+    {
+      "id": "safety-boundary",
+      "term": "Safety Boundary",
+      "slug": "safety-boundary",
+      "path": "/glossary/safety-boundary/",
+      "domain": "governance",
+      "cluster": "constraints-governance",
+      "definition": "A safety boundary in the SBSP context is a defined threshold limiting potential hazard exposure to people, wildlife, aircraft, and other assets from the electromagnetic radiation produced by a power beaming system. Safety boundaries for microwave SBSP might include maximum permissible exposure levels for the beam footprint, exclusion zones around the rectenna field, beam intensity limits for transient illumination of off-target areas, and interlocking systems that terminate transmission if the beam deviates from the authorized target zone. Establishing appropriate safety boundaries requires rigorous dosimetry, risk modeling, regulatory review, and public consultation. Safety boundaries are a governance prerequisite for SBSP operation rather than a technical performance specification.",
+      "shortDefinition": "A defined limit on acceptable hazard exposure from SBSP operations, required for regulatory approval and safe operation.",
+      "relatedTerms": [
+        "public-legitimacy",
+        "spectrum-regulation",
+        "sbsp-safety",
+        "beam-control"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Safety standards for electromagnetic radiation exposure are established for many applications. SBSP-specific safety boundaries for large-scale power beaming do not yet exist as formal regulatory requirements.",
+      "pageLinks": [
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Safety Boundary — SBSP Glossary",
+      "seoDescription": "Definition of safety boundary: defined limits on hazard exposure from SBSP power beaming, required for regulatory approval and safe operation."
+    },
+    {
+      "id": "land-footprint",
+      "term": "Land Footprint",
+      "slug": "land-footprint",
+      "path": "/glossary/land-footprint/",
+      "domain": "technical",
+      "cluster": "constraints-governance",
+      "definition": "Land footprint in the SBSP context refers to the total terrestrial area that a receiving installation requires, including the active rectenna or photovoltaic receiver surface, safety buffer zones to maintain acceptable power density limits at the perimeter, access roads, support facilities, and grid connection infrastructure. For large-scale SBSP systems delivering hundreds of megawatts to gigawatts, rectenna field land footprints are typically estimated at tens to hundreds of square kilometers depending on allowed power density limits. Land footprint is a significant practical constraint because securing contiguous land areas of this size at reasonable cost, with appropriate grid access, community acceptance, and compatible land use, is challenging in densely populated or agriculturally productive regions.",
+      "shortDefinition": "The terrestrial area required for SBSP receiving infrastructure, including rectenna fields, buffer zones, and support facilities.",
+      "relatedTerms": [
+        "rectenna-field",
+        "receiving-antenna-array",
+        "public-legitimacy",
+        "safety-boundary"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Land footprint estimates for SBSP are derived from engineering analysis of power density requirements. Actual land acquisition for SBSP has not occurred.",
+      "pageLinks": [
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Land Footprint — SBSP Glossary",
+      "seoDescription": "Definition of land footprint: the terrestrial area required for SBSP receiving infrastructure, a significant siting constraint for commercial systems."
+    },
+    {
+      "id": "commercial-readiness",
+      "term": "Commercial Readiness",
+      "slug": "commercial-readiness",
+      "path": "/glossary/commercial-readiness/",
+      "domain": "governance",
+      "cluster": "constraints-governance",
+      "definition": "Commercial readiness in the SBSP context refers to the condition in which an SBSP technology or system has sufficiently resolved the technical, economic, regulatory, safety, and operational challenges to be viable as a commercial energy product competing with alternative power sources. Commercial readiness extends beyond technology readiness level to include market economics, insurance and liability frameworks, supply chain maturity, long-term operational maintenance provisions, regulatory approvals, and investor confidence. SBSP is broadly considered not commercially ready as of 2026, with significant gaps remaining in launch economics, orbital construction capability, system efficiency, spectrum allocation, and safety governance frameworks.",
+      "shortDefinition": "The technical, economic, and regulatory maturity required for SBSP to compete as a viable commercial energy product.",
+      "relatedTerms": [
+        "technology-readiness",
+        "launch-economics",
+        "public-legitimacy",
+        "sbsp-economics"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Commercial readiness is an assessment framework. SBSP is not considered commercially ready by major institutional assessments as of 2026.",
+      "pageLinks": [
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Commercial Readiness — SBSP Glossary",
+      "seoDescription": "Definition of commercial readiness: the technical, economic, and regulatory maturity required for SBSP to compete as a commercial energy product."
+    },
+    {
+      "id": "technology-readiness",
+      "term": "Technology Readiness",
+      "slug": "technology-readiness",
+      "path": "/glossary/technology-readiness/",
+      "domain": "technical",
+      "cluster": "constraints-governance",
+      "definition": "Technology readiness is a general assessment of how advanced a technology is toward meeting the requirements of its intended operational application. In SBSP contexts, technology readiness is often discussed using the Technology Readiness Level (TRL) scale, which ranges from TRL 1 (basic principles observed) to TRL 9 (system proven in operational environment). Different components of the SBSP system chain — photovoltaics, phased array transmitters, structural assembly in orbit, rectenna arrays, power conditioning — operate at different TRL levels, and the system-level readiness is typically limited by the least mature component. Technology readiness assessments must be interpreted carefully: high TRL for a component in terrestrial or laboratory context does not automatically translate to readiness for the scale, environmental conditions, and system integration required by SBSP.",
+      "shortDefinition": "A general assessment of how mature a technology is relative to the requirements of its intended operational application.",
+      "relatedTerms": [
+        "technology-readiness-level",
+        "commercial-readiness",
+        "launch-economics",
+        "orbital-assembly"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "The TRL framework is an established assessment tool. Published TRL values for SBSP components vary by source and must be evaluated against specific system requirements they describe.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Technology Readiness — SBSP Glossary",
+      "seoDescription": "Definition of technology readiness: how mature SBSP component and system technologies are relative to commercial operational requirements."
+    },
+    {
+      "id": "hyperscale-computing-power",
+      "term": "Hyperscale Computing Power",
+      "slug": "hyperscale-computing-power",
+      "path": "/glossary/hyperscale-computing-power/",
+      "domain": "strategic",
+      "cluster": "strategic-demand",
+      "definition": "Hyperscale computing power refers to the electrical energy requirements of very large data center facilities and artificial intelligence computing infrastructure, where individual facilities may consume hundreds of megawatts to gigawatts continuously. The rapid growth of AI training, inference, and cloud computing workloads has driven dramatic increases in data center energy demand, creating pressure on electricity grids, increasing carbon footprint concerns, and accelerating interest in new power sources. SBSP is discussed in this context as a potential future energy source for hyperscale facilities because it could provide continuous, location-flexible, and potentially low-carbon power at the scale required. This connection between SBSP and AI energy demand makes the field relevant to technology and strategic planning discussions beyond traditional energy policy.",
+      "shortDefinition": "Electrical power required by very large data center and AI infrastructure at scales that strain conventional energy systems.",
+      "relatedTerms": [
+        "ai-energy-demand",
+        "mission-critical-power",
+        "energy-security",
+        "baseload-power"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Hyperscale computing power demand trends are documented. SBSP as a solution for hyperscale power demand has not been commercially demonstrated.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Hyperscale Computing Power — SBSP Glossary",
+      "seoDescription": "Definition of hyperscale computing power: energy requirements of large AI and data center infrastructure, a driver of interest in SBSP power supply."
+    },
+    {
+      "id": "defense-energy-resilience",
+      "term": "Defense Energy Resilience",
+      "slug": "defense-energy-resilience",
+      "path": "/glossary/defense-energy-resilience/",
+      "domain": "strategic",
+      "cluster": "strategic-demand",
+      "definition": "Defense energy resilience is the capability of military and defense systems to maintain reliable access to electrical power during adversarial attacks, grid disruptions, natural disasters, expeditionary operations, or any scenario that compromises conventional energy supply infrastructure. Defense energy resilience is a priority concern for modern military forces because contemporary warfare depends heavily on electronic systems, communications, logistics, and intelligence infrastructure that require continuous power. SBSP is discussed as a potential contribution to defense energy resilience because an orbital power system would be physically independent of terrestrial grid infrastructure and supply chains that can be targeted or disrupted. This potential must be weighed against the vulnerability of orbital assets to anti-satellite capabilities.",
+      "shortDefinition": "The capacity of military and defense infrastructure to maintain power supply under adversarial conditions or supply disruptions.",
+      "relatedTerms": [
+        "energy-security",
+        "critical-infrastructure-power",
+        "strategic-energy-logistics",
+        "mission-critical-power"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Defense energy resilience requirements are documented. SBSP's contribution to defense energy resilience is a strategic concept that has not been operationally tested.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Defense Energy Resilience — SBSP Glossary",
+      "seoDescription": "Definition of defense energy resilience: military power supply reliability under adversarial conditions, a strategic use case for SBSP development."
+    },
+    {
+      "id": "lunar-power-infrastructure",
+      "term": "Lunar Power Infrastructure",
+      "slug": "lunar-power-infrastructure",
+      "path": "/glossary/lunar-power-infrastructure/",
+      "domain": "strategic",
+      "cluster": "strategic-demand",
+      "definition": "Lunar power infrastructure encompasses the electrical power generation, storage, transmission, and distribution systems required to support sustained lunar surface operations, lunar orbit stations, and transportation systems operating in the Earth-Moon system. As space agencies and commercial entities plan for permanent lunar presence through programs such as NASA's Artemis and ESA's lunar exploration initiatives, reliable power supply is a foundational requirement. SBSP technology and orbital power transmission concepts are relevant to lunar power infrastructure because some proposed lunar surface power solutions involve orbital relays, beamed power delivery to shadowed polar regions, or cislunar power architecture that draws on SBSP development heritage. Power for lunar manufacturing, life support, propellant production, and communication is among the key enabling constraints for sustained lunar operations.",
+      "shortDefinition": "Power systems designed to support sustained human and robotic operations on or near the Moon.",
+      "relatedTerms": [
+        "space-industrial-energy",
+        "cislunar-energy-infrastructure",
+        "orbital-manufacturing-power",
+        "long-duration-space-power"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Lunar power requirements are documented in space agency planning documents. Lunar power infrastructure has not been constructed at the scale required for sustained operations.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Lunar Power Infrastructure — SBSP Glossary",
+      "seoDescription": "Definition of lunar power infrastructure: power systems for sustained lunar operations, relevant to cislunar SBSP applications and space industrial development."
+    },
+    {
+      "id": "space-industrial-energy",
+      "term": "Space Industrial Energy",
+      "slug": "space-industrial-energy",
+      "path": "/glossary/space-industrial-energy/",
+      "domain": "strategic",
+      "cluster": "strategic-demand",
+      "definition": "Space industrial energy refers to the electrical and thermal power required to support manufacturing, resource processing, and production activities conducted in space environments, including Earth orbit, lunar orbit, the lunar surface, and potentially other destinations. As concepts for space-based manufacturing, asteroid mining, in-space propellant production, and orbital construction mature, the power requirements for these activities become a design constraint. SBSP technology is relevant to space industrial energy because an orbital power generation system could supply energy not only downward to terrestrial users but also to in-space industrial facilities, spacecraft, and propellant depots operating in the same orbital or cislunar environment. This dual-use potential connects SBSP to the broader space economy development agenda.",
+      "shortDefinition": "Energy supply for manufacturing, processing, and industrial operations conducted in space environments.",
+      "relatedTerms": [
+        "orbital-manufacturing-power",
+        "cislunar-energy-infrastructure",
+        "lunar-power-infrastructure",
+        "long-duration-space-power"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Space industrial activity is at early commercial and concept stages. Space industrial energy requirements from SBSP sources have not been operationally demonstrated.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Space Industrial Energy — SBSP Glossary",
+      "seoDescription": "Definition of space industrial energy: power for manufacturing and industrial operations in space, linking SBSP to the broader space economy development."
+    },
+    {
+      "id": "orbital-manufacturing-power",
+      "term": "Orbital Manufacturing Power",
+      "slug": "orbital-manufacturing-power",
+      "path": "/glossary/orbital-manufacturing-power/",
+      "domain": "strategic",
+      "cluster": "strategic-demand",
+      "definition": "Orbital manufacturing power refers to the electrical energy needed to support material processing, fabrication, and assembly activities performed in Earth orbit. As the space industry explores orbital manufacturing for products that benefit from microgravity, vacuum, or continuous solar exposure — including ultra-pure materials, fiber optics, pharmaceutical crystals, and in-space structural components — the power required for these processes becomes a design and economic constraint. An orbital solar power system could provide the large-scale continuous power needed for industrial manufacturing processes in orbit without depending on fuel supplies from Earth. The connection between SBSP technology development and orbital manufacturing creates a potential economic use case that complements the terrestrial power delivery mission.",
+      "shortDefinition": "Electrical power required for manufacturing activities conducted in Earth orbit.",
+      "relatedTerms": [
+        "space-industrial-energy",
+        "cislunar-energy-infrastructure",
+        "orbital-energy-infrastructure",
+        "in-space-manufacturing"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Orbital manufacturing concepts are under early commercial development. Orbital manufacturing at industrial scale requiring orbital power infrastructure has not been demonstrated.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Orbital Manufacturing Power — SBSP Glossary",
+      "seoDescription": "Definition of orbital manufacturing power: energy for in-orbit manufacturing and fabrication, a space economy use case for SBSP infrastructure."
+    },
+    {
+      "id": "cislunar-energy-infrastructure",
+      "term": "Cislunar Energy Infrastructure",
+      "slug": "cislunar-energy-infrastructure",
+      "path": "/glossary/cislunar-energy-infrastructure/",
+      "domain": "strategic",
+      "cluster": "strategic-demand",
+      "definition": "Cislunar energy infrastructure refers to power generation, storage, and distribution systems designed to serve the cislunar operational space — the region between Earth's atmosphere and the Moon's orbit, including Earth-Moon Lagrange points, lunar orbit, and lunar transit trajectories. As space agencies and commercial operators develop lunar programs, orbital stations, and transportation systems operating in the cislunar environment, a coherent energy supply architecture becomes a foundational requirement. SBSP concepts and orbital power relay architectures are discussed as components of eventual cislunar energy infrastructure. The cislunar domain is increasingly recognized as strategic space with implications for national security, commercial resource exploitation, and long-term human expansion.",
+      "shortDefinition": "Energy systems intended to serve the operational zone between Earth and the Moon.",
+      "relatedTerms": [
+        "lunar-power-infrastructure",
+        "space-industrial-energy",
+        "orbital-manufacturing-power",
+        "orbital-energy-infrastructure"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Cislunar operational concepts are under active development by space agencies. Cislunar energy infrastructure at operational scale has not been deployed.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Cislunar Energy Infrastructure — SBSP Glossary",
+      "seoDescription": "Definition of cislunar energy infrastructure: power systems for the Earth-Moon region, connecting SBSP development to the evolving cislunar space economy."
+    },
+    {
+      "id": "strategic-energy-logistics",
+      "term": "Strategic Energy Logistics",
+      "slug": "strategic-energy-logistics",
+      "path": "/glossary/strategic-energy-logistics/",
+      "domain": "strategic",
+      "cluster": "strategic-demand",
+      "definition": "Strategic energy logistics refers to the planning, supply chain management, and infrastructure development needed to ensure energy availability for national security operations, military expeditionary activities, critical infrastructure, and long-duration strategic missions where conventional fuel supply chains may be unavailable or unreliable. Energy logistics is a recognized vulnerability in modern military and national security planning: fuel supply lines are targets, remote operations are logistically constrained, and dependence on geopolitically volatile fuel sources creates strategic risk. SBSP is discussed in strategic energy logistics contexts because an orbital energy system could theoretically deliver power to virtually any point on Earth or in cislunar space with minimal dependence on terrestrial supply chains.",
+      "shortDefinition": "Planning and provision of energy supply for strategic operations, national security, or long-range missions.",
+      "relatedTerms": [
+        "defense-energy-resilience",
+        "energy-security",
+        "mission-critical-power",
+        "critical-infrastructure-power"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Strategic energy logistics challenges are documented in defense and policy literature. SBSP as a strategic logistics solution is a conceptual discussion without operational demonstration.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Strategic Energy Logistics — SBSP Glossary",
+      "seoDescription": "Definition of strategic energy logistics: energy supply planning for security operations and long-range missions, a use case shaping SBSP strategic interest."
+    },
+    {
+      "id": "mission-critical-power",
+      "term": "Mission Critical Power",
+      "slug": "mission-critical-power",
+      "path": "/glossary/mission-critical-power/",
+      "domain": "strategic",
+      "cluster": "strategic-demand",
+      "definition": "Mission critical power refers to electrical energy provision where interruption or degradation would directly cause failure of a specified operational mission or create an unacceptable safety risk to personnel or systems. In defense and space contexts, mission critical power includes life support systems, command and control communications, navigation, propulsion, and intelligence collection. SBSP is discussed as a potential provider of mission critical power in scenarios where conventional terrestrial power infrastructure is unavailable, including expeditionary military operations, disaster relief, remote scientific missions, and eventually deep-space or lunar missions. The reliability standards for mission critical power systems are substantially higher than for commercial grid applications.",
+      "shortDefinition": "Power provision essential to the success or safety of a specified operational mission.",
+      "relatedTerms": [
+        "defense-energy-resilience",
+        "critical-infrastructure-power",
+        "strategic-energy-logistics",
+        "long-duration-space-power"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Mission critical power requirements are documented in defense and space system standards. SBSP as a mission critical power source has not been operationally demonstrated.",
+      "pageLinks": [
+        "/strategic-importance/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Mission Critical Power — SBSP Glossary",
+      "seoDescription": "Definition of mission critical power: essential energy provision for operations where failure would cause mission failure or unacceptable safety risk."
+    },
+    {
+      "id": "long-duration-space-power",
+      "term": "Long Duration Space Power",
+      "slug": "long-duration-space-power",
+      "path": "/glossary/long-duration-space-power/",
+      "domain": "technical",
+      "cluster": "strategic-demand",
+      "definition": "Long duration space power refers to power generation and supply systems that must operate continuously and reliably over months, years, or decades in the space environment without replacement or significant maintenance from Earth. Space-based solar power satellites, lunar surface power systems, deep space probes, and long-duration crewed missions all require power systems that can function through radiation exposure, temperature cycling, micrometeorite impacts, and component aging with high reliability. The development of durable power systems for long-duration space operation is both a prerequisite for SBSP and a technology area that SBSP development would advance. Degradation rates of photovoltaic cells in the space radiation environment, longevity of power electronics, and maintenance access in orbit are key challenges.",
+      "shortDefinition": "Power systems designed for continuous reliable operation over extended periods in the space environment.",
+      "relatedTerms": [
+        "space-industrial-energy",
+        "orbital-power-generation",
+        "lunar-power-infrastructure",
+        "specific-mass"
+      ],
+      "parentConcept": "sbsp",
+      "sourceRef": null,
+      "claimBoundary": "Long-duration space power is a documented engineering challenge. SBSP-scale long-duration space power operation has not been demonstrated at commercial scale.",
+      "pageLinks": [
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "status": "approved",
+      "sitemap": true,
+      "seoTitle": "Long Duration Space Power — SBSP Glossary",
+      "seoDescription": "Definition of long duration space power: energy systems for continuous multi-year space operation, a prerequisite for viable SBSP infrastructure."
     }
   ]
 }
