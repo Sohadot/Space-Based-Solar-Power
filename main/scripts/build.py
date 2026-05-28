@@ -108,7 +108,19 @@ def load_seed_data() -> dict:
     return seed
 
 
+CLUSTER_ORDER = [
+    ("core-infrastructure", "Core Infrastructure"),
+    ("transmission-reception", "Transmission and Reception"),
+    ("grid-energy-systems", "Grid and Energy Systems"),
+    ("constraints-governance", "Constraints and Governance"),
+    ("strategic-demand", "Strategic Demand and Space Industry"),
+]
+
+
 def load_trial_manifest() -> dict | None:
+    v1b_path = DATA_DIR / "publication_v1b_a.json"
+    if v1b_path.exists():
+        return load_json(v1b_path)
     path = DATA_DIR / "publication_trial_v1a.json"
     if path.exists():
         return load_json(path)
@@ -486,24 +498,35 @@ def generate_glossary_hub_html(page: dict, seed_data: dict, trial_manifest: dict
     h1 = page.get("title", "SBSP Glossary")
     description = _escape_html(page.get("description", ""))
     term_ids = (trial_manifest or {}).get("glossaryTerms", [])
-    items = []
+    terms_by_cluster: dict[str, list] = {}
     for tid in term_ids:
         term = seed_data["glossary"].get(tid)
         if not term:
             continue
-        t_path = term.get("path", f"/glossary/{term.get('slug', tid)}/")
-        t_name = _escape_html(term.get("term", tid))
-        t_short = _escape_html(term.get("shortDefinition", ""))
-        items.append(
-            f'<li><a href="{t_path}">{t_name}</a>'
-            + (f' — {t_short}' if t_short else '')
-            + '</li>'
-        )
-    list_html = "\n".join(f"      {item}" for item in items)
-    intro = f'<p class="hub-intro">{description}</p>\n' if description else ""
-    body = (intro
-            + f'<ul class="glossary-index">\n{list_html}\n    </ul>\n'
-            + _render_hub_source_footer())
+        cluster = term.get("cluster", "core-infrastructure")
+        terms_by_cluster.setdefault(cluster, []).append(term)
+    parts = []
+    if description:
+        parts.append(f'<p class="hub-intro">{description}</p>')
+    for cluster_id, cluster_label in CLUSTER_ORDER:
+        terms = terms_by_cluster.get(cluster_id, [])
+        if not terms:
+            continue
+        parts.append('<div class="hub-cluster">')
+        parts.append(f'  <h2 class="hub-cluster-label">{_escape_html(cluster_label)}</h2>')
+        parts.append('  <ul class="glossary-index">')
+        for term in terms:
+            t_path = term.get("path", f"/glossary/{term.get('slug', term.get('id'))}/")
+            t_name = _escape_html(term.get("term", ""))
+            t_short = _escape_html(term.get("shortDefinition", ""))
+            entry = f'    <li><a href="{t_path}">{t_name}</a>'
+            if t_short:
+                entry += f" — {t_short}"
+            entry += "</li>"
+            parts.append(entry)
+        parts.append("  </ul>")
+        parts.append("</div>")
+    body = "\n".join(parts) + "\n" + _render_hub_source_footer()
     return _page_shell(page, h1, body)
 
 

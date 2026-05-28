@@ -574,6 +574,21 @@ h1 {
   opacity: 0.75;
 }
 
+/* ---- Glossary cluster groups ---- */
+.hub-cluster {
+  margin-bottom: 2.5rem;
+}
+.hub-cluster-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+
 /* ---- Hub source footer ---- */
 .hub-source-links {
   margin-top: 2rem;
