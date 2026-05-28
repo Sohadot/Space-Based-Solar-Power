@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectenna Arrays for SBSP Power Reception — Technology Reference</title>
+  <meta name="description" content="Ground-based rectifying antenna arrays for SBSP: microwave-to-DC conversion, element design, efficiency characteristics, and field scale requirements.">
+  <link rel="canonical" href="https://space-based-solar-power.com/technology/rectenna-arrays/">
+  <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="home-link" href="/">Space-Based Solar Power</a>
+      <div class="mission-status" aria-label="Site status">
+        <span class="mission-status-dot" aria-hidden="true"></span>
+        <span>Reference Active</span>
+      </div>
+    </nav>
+  </header>
+  <main class="page-container">
+    <h1>Rectenna Arrays for Wireless Power Reception</h1>
+    <div class="reference-card">
+  <div class="reference-card-type">Technology Reference</div>
+  <div class="reference-card-body">
+    <div class="reference-card-full"><p>Rectenna arrays are ground-based receiving systems for wireless power transmission that convert microwave energy into direct-current electricity. The term 'rectenna' combines 'rectifying antenna'—each element consists of a receiving dipole or patch antenna connected to a rectifying circuit (typically a Schottky diode bridge) that converts the oscillating microwave voltage into DC. In a rectenna array, thousands to millions of these elements are arranged in a grid to intercept the incoming microwave beam from the SBSP satellite and convert it collectively into DC power. Individual rectenna elements can achieve RF-to-DC conversion efficiencies of 80–90% at optimal power density levels, though efficiency decreases significantly at very low or very high input power densities. For SBSP applications, the rectenna field must be large enough to intercept the full beam footprint—proposed rectenna fields range from several square kilometers to tens of square kilometers for gigawatt-class systems—and must be designed for continuous outdoor exposure over multi-decade operational lifetimes.</p></div>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Infrastructure Role</p>
+    <p class="reference-card-section-body">Rectenna arrays are the primary receiving element of the SBSP ground segment, converting the transmitted microwave beam into usable DC electricity. They are the interface between the wireless power transmission subsystem and the terrestrial power grid. Rectenna efficiency and coverage area directly determine the effective power delivered to the grid from a given transmitted beam power.</p>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Subsystem Relationship</p>
+    <p class="reference-card-section-body">Rectenna arrays receive microwave power from the orbital phased-array transmitter. They interface downstream with power conditioning systems that convert the DC output to grid-compatible AC power. The rectenna field layout must account for the beam's Gaussian power density profile to maximize collection efficiency. Land management systems must maintain exclusion zones and physical access for maintenance.</p>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Feasibility and Readiness</p>
+    <p class="reference-card-section-body">Rectenna elements and small arrays are at TRL 9 for laboratory and small-scale demonstrations. Rectenna fields at the scale required for SBSP (km²) have not been built or operated. Long-term outdoor degradation of rectenna elements under continuous RF exposure, weather, and UV has not been characterized at operational scale. Efficiency at the power densities proposed for SBSP links has been demonstrated in controlled experiments.</p>
+  </div>
+  <div class="reference-card-boundary">
+    <p class="reference-card-boundary-label">Feasibility and Claim Boundary</p>
+    <p class="reference-card-boundary-text">This page documents rectenna array technology for SBSP based on published technical literature and laboratory demonstrations. It does not claim that full-scale SBSP rectenna fields have been constructed or that long-term operational performance at SBSP scale has been verified. Efficiency figures cited reflect controlled laboratory measurements; field-scale system performance includes additional losses not fully characterized.</p>
+  </div>
+  <div class="reference-card-links">
+    <a class="link-chip" href="/technology/">Technology</a>
+    <a class="link-chip" href="/technology-stack/">Technology Stack</a>
+    <a class="link-chip" href="/feasibility-and-constraints/">Feasibility And Constraints</a>
+    <a class="link-chip" href="/sources/">Sources</a>
+    <a class="link-chip" href="/methodology/">Methodology</a>
+    <a class="link-chip" href="/glossary/rectenna/">Rectenna</a>
+    <a class="link-chip" href="/glossary/rectenna-field/">Rectenna Field</a>
+    <a class="link-chip" href="/questions/what-is-a-rectenna/">What Is A Rectenna</a>
+    <a class="link-chip" href="/questions/how-large-rectenna-for-sbsp/">How Large Rectenna For Sbsp</a>
+  </div>
+  <div class="reference-card-source-links">
+    <span class="reference-card-source-label">Source &amp; methodology</span>
+    <a class="link-chip" href="/methodology/">Methodology</a>
+    <a class="link-chip" href="/sources/">Sources</a>
+  </div>
+</div>
+  </main>
+</body>
+</html>

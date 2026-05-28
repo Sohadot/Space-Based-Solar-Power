@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autonomous Fault Detection for SBSP — Technology Reference</title>
+  <meta name="description" content="Distributed health monitoring and anomaly detection for SBSP satellites: sensor networks, machine learning diagnostics, and module-level fault localization.">
+  <link rel="canonical" href="https://space-based-solar-power.com/technology/autonomous-fault-detection/">
+  <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="home-link" href="/">Space-Based Solar Power</a>
+      <div class="mission-status" aria-label="Site status">
+        <span class="mission-status-dot" aria-hidden="true"></span>
+        <span>Reference Active</span>
+      </div>
+    </nav>
+  </header>
+  <main class="page-container">
+    <h1>Autonomous Fault Detection for SBSP Satellites</h1>
+    <div class="reference-card">
+  <div class="reference-card-type">Technology Reference</div>
+  <div class="reference-card-body">
+    <div class="reference-card-full"><p>Autonomous fault detection for space-based solar power satellites refers to the onboard and remote systems that continuously monitor the health and performance of the orbital platform—its photovoltaic modules, power electronics, structural elements, thermal systems, and transmission components—and identify failures, degradation, or anomalies without requiring constant human operator oversight. For a satellite comprising potentially millions of modules spread over kilometers, manual monitoring is impractical; the system must detect and localize failures autonomously and either trigger autonomous corrective action or generate actionable maintenance requests for robotic servicing. Fault detection approaches for SBSP include distributed sensor networks embedded in modules, power output anomaly detection algorithms that identify underperforming cells or sections, structural health monitoring via embedded strain gauges or acoustic sensors, thermal anomaly detection via infrared monitoring, and comparison of transmission beam performance against expected models. Machine learning and pattern recognition approaches are increasingly important for distinguishing genuine faults from normal operational variation in large distributed systems.</p></div>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Infrastructure Role</p>
+    <p class="reference-card-section-body">Autonomous fault detection is the operational intelligence layer that enables SBSP satellites to function reliably over their intended multi-decade service life. Without effective fault detection, degradation goes unrecognized until significant power output loss has occurred, and maintenance robotics cannot be efficiently directed to failed components. Fault detection quality directly affects the economic performance and operational lifetime of the SBSP asset.</p>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Subsystem Relationship</p>
+    <p class="reference-card-section-body">Fault detection systems interface with all monitored subsystems—solar cells, power electronics, structural health, thermal management, and transmission. They generate outputs consumed by the robotic servicing dispatch system and the ground operations center. Communication architecture must support the telemetry bandwidth required to transmit sufficient health monitoring data from the satellite to ground-based analysis systems.</p>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Feasibility and Readiness</p>
+    <p class="reference-card-section-body">Automated fault detection is well-established for conventional satellites (TRL 9 for basic telemetry monitoring). Distributed health monitoring across millions of modules and kilometers of structure with the resolution and responsiveness required for SBSP is at TRL 3–5. Machine learning-based anomaly detection for large distributed space systems has been studied but not operationally validated at SBSP scale or system complexity.</p>
+  </div>
+  <div class="reference-card-boundary">
+    <p class="reference-card-boundary-label">Feasibility and Claim Boundary</p>
+    <p class="reference-card-boundary-text">This page describes autonomous fault detection for SBSP based on spacecraft health monitoring principles and published autonomous systems research. It does not claim that SBSP-scale distributed fault detection systems have been designed, built, or operated, or that machine learning approaches for SBSP health monitoring have been validated in operational environments. The reliability and detection latency requirements for SBSP fault detection have not been formally established.</p>
+  </div>
+  <div class="reference-card-links">
+    <a class="link-chip" href="/technology/">Technology</a>
+    <a class="link-chip" href="/technology-stack/">Technology Stack</a>
+    <a class="link-chip" href="/feasibility-and-constraints/">Feasibility And Constraints</a>
+    <a class="link-chip" href="/sources/">Sources</a>
+    <a class="link-chip" href="/methodology/">Methodology</a>
+    <a class="link-chip" href="/glossary/space-debris-risk/">Space Debris Risk</a>
+    <a class="link-chip" href="/glossary/technology-readiness/">Technology Readiness</a>
+    <a class="link-chip" href="/questions/what-is-space-debris-risk-sbsp/">What Is Space Debris Risk Sbsp</a>
+    <a class="link-chip" href="/questions/technology-readiness-level-sbsp/">Technology Readiness Level Sbsp</a>
+  </div>
+  <div class="reference-card-source-links">
+    <span class="reference-card-source-label">Source &amp; methodology</span>
+    <a class="link-chip" href="/methodology/">Methodology</a>
+    <a class="link-chip" href="/sources/">Sources</a>
+  </div>
+</div>
+  </main>
+</body>
+</html>

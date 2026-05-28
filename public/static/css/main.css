@@ -861,6 +861,110 @@ a:hover { color: var(--text); }
   .ref-atlas-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ---- Technology hub status panel ---- */
+.tech-status-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+.tech-status-stat {
+  background: var(--surface);
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.tech-status-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+.tech-status-label {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+/* ---- Technology hub expansion note ---- */
+.tech-expansion-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+  border-left: 2px solid var(--border);
+  padding: 0.5rem 0.85rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.65;
+  max-width: 640px;
+}
+
+/* ---- Technology cluster jump index ---- */
+.tech-cluster-jump {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 2rem;
+  padding: 0.75rem 1rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.tech-cluster-jump-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-right: 0.4rem;
+}
+.tech-cluster-jump-link {
+  font-size: 0.72rem;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+.tech-cluster-jump-link:hover {
+  background: var(--surface-alt);
+  text-decoration: underline;
+}
+
+/* ---- Technology hub page list ---- */
+.tech-index {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem;
+}
+.tech-index li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+.tech-index li:last-child { border-bottom: none; }
+
+/* ---- Technology page reference card sections ---- */
+.reference-card-section {
+  margin-bottom: 1.1rem;
+}
+.reference-card-section-label {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+.reference-card-section-body {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
 /* ---- Reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   *,
