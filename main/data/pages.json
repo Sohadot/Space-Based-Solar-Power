@@ -1,1 +1,11 @@
-placeholder - will be replaced
+{
+  "asset": {
+    "domain": "space-based-solar-power.com",
+    "repository": "Space-Based-Solar-Power",
+    "sourceLanguage": "en",
+    "defaultLocale": "en",
+    "title": "Space-Based Solar Power",
+    "positioning": "Strategic Reference Layer for Space-Based Solar Power and Orbital Energy Infrastructure",
+    "launchModel": "Sovereign Reference Launch v1"
+  }
+}
