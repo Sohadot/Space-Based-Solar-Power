@@ -79,6 +79,12 @@
       "label": "What Is SBSP",
       "maxOutboundLinks": 20,
       "requiredInbound": 5
+    },
+    "/technology/": {
+      "role": "technology_hub",
+      "label": "Technology Reference",
+      "maxOutboundLinks": 50,
+      "requiredInbound": 3
     }
   },
   "rules": [
@@ -346,6 +352,32 @@
       "trustPage": "/methodology/",
       "nextStepPage": "/feasibility-and-constraints/",
       "minInternalLinks": 3
+    },
+    {
+      "pageType": "technology_page",
+      "parentHub": "/technology/",
+      "requiredOutboundLinks": [
+        "/technology/",
+        "/technology-stack/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/feasibility-and-constraints/",
+      "minInternalLinks": 5
+    },
+    {
+      "pageType": "technology_index",
+      "parentHub": "/",
+      "requiredOutboundLinks": [
+        "/technology-stack/",
+        "/framework/",
+        "/feasibility-and-constraints/",
+        "/sources/"
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/feasibility-and-constraints/",
+      "minInternalLinks": 5
     }
   ],
   "orphanPreventionRules": {
