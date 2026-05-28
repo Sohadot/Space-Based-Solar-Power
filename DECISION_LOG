@@ -1,3 +1,39 @@
+## [V1B-DL-003] - 2026-05-28: v1B-A Glossary Expansion Live Verification Approved
+
+**Status:** APPROVED
+
+**Context:** Sprint v1B-A (Glossary Source Expansion) and its surface correction were merged via PR #8 and PR #9 and deployed to GitHub Pages on main. Live verification was performed against the production site at space-based-solar-power.com.
+
+**Verification Results:**
+
+1. **Merge commit on main:** `a70b0e75` — Merge pull request #9. PR #8 (`ad65bf08`) and PR #9 (`a70b0e7`) both confirmed in main log. ✓
+2. **GitHub Pages deployment:** Live site reflects all v1B-A changes. ✓
+3. **Quality gate 11/11 on main:** All 11 validators pass. ✓
+4. **`/glossary/` live surface:** Page loads with status panel showing "53 governed terms" and "5 source clusters", cluster jump navigation, and 5 labelled cluster sections (Core Infrastructure, Transmission and Reception, Grid and Energy Systems, Constraints and Governance, Strategic Demand and Space Industry). ✓
+5. **53 published glossary terms:** 53 unique child term links confirmed in hub. ✓
+6. **10 sampled term pages across all 5 clusters:** All 11 sampled terms (space-solar-power-system, orbital-power-generation, power-beaming, phased-array-transmitter, atmospheric-attenuation, baseload-power, island-grid, mass-to-orbit, spectrum-regulation, hyperscale-computing-power, defense-energy-resilience) confirmed present with definition, claimBoundary, page links, and source/methodology footer. ✓
+7. **Term page content quality:** Claim boundaries correctly distinguish demonstrated research from commercial deployment. Example: "Power beaming has been demonstrated at small scale. Commercial SBSP power beaming at grid-relevant power levels and orbital distances has not been achieved." ✓
+8. **`/sitemap.xml`:** Valid sitemap index referencing 4 sub-sitemaps: sitemap-core.xml, sitemap-glossary-001.xml, sitemap-questions-001.xml, sitemap-programs-001.xml. ✓
+9. **Glossary sitemap:** `sitemap-glossary-001.xml` contains 53 URLs, including all new term paths. ✓
+10. **`/robots.txt`:** Points to `https://space-based-solar-power.com/sitemap.xml`. ✓
+11. **Legacy ref-nav patterns:** 0 matches across all 82 HTML pages for all 4 forbidden patterns. ✓
+12. **DECISION_LOG prior IDs:** S1-DL-010 ✓, S1-DL-014 ✓, S2-DL-001 ✓, S2B-DL-001 ✓, S2B-DL-002 ✓, V1B-DL-001 ✓, V1B-DL-002 ✓ — all present. ✓
+
+**Confirmed State:**
+
+- Glossary layer: 10 → 53 published terms
+- Generated pages: 39 → 82
+- Quality validators: 10 → 11
+- Glossary hub: 5 clusters, 56 outbound links (within 200-link budget)
+- Homepage: expansion module visible at `/`
+- Google Search Console: BLOCKED (unchanged)
+
+**Consequences:**
+
+The v1B-A glossary source expansion is confirmed live, verified, and correctly deployed. The terminology layer is now a substantive reference foundation. The next controlled expansion may proceed to v1B-B — Questions Expansion, using the expanded glossary as the internal-link and terminology layer.
+
+---
+
 ## [V1B-DL-002] - 2026-05-28: Glossary Expansion Surface Correction
 
 **Status:** APPROVED
