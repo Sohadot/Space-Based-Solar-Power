@@ -1,3 +1,39 @@
+## [V1B-DL-005] - 2026-05-28: v1B-B Questions Expansion Live Verification Approved
+
+**Status:** APPROVED
+
+**Context:** Sprint v1B-B (Questions Reference Expansion) was merged via PR #10 and deployed to GitHub Pages on main. Live verification was performed against the production site at space-based-solar-power.com.
+
+**Verification Results:**
+
+1. **Merge commit on main:** `2dac1f2` — Merge pull request #10 confirmed in main log. ✓
+2. **GitHub Pages deployment:** Live site reflects all v1B-B changes. ✓
+3. **Quality gate 12/12 on main:** All 12 validators pass. ✓
+4. **`/questions/` live surface:** Page loads with status panel showing "56 reference questions" and "7 question clusters", cluster jump navigation, expansion note, and 7 labelled cluster sections (Foundational Questions, Technology, Feasibility and Constraints, Safety and Regulation, Grid and Energy Systems, AI, Defense, and Strategic Demand, Programs and Institutions). ✓
+5. **56 published question links in hub:** 56 unique child question links confirmed. ✓
+6. **Sitemap:** `sitemap-questions-001.xml` contains 57 URLs = 1 hub (`/questions/`) + 56 individual question pages. Both hub and child pages have `sitemap: true`. Count is correct. ✓
+7. **Sample question pages (3 clusters verified live):**
+   - `/questions/what-is-mass-to-orbit-constraint-sbsp/` — answer, answerBoundary, internal links, source/methodology footer. ✓
+   - `/questions/can-sbsp-provide-baseload-power/` — answer, answerBoundary, internal links, source/methodology footer. ✓
+   - `/questions/what-is-defense-energy-resilience-sbsp/` — answer, answerBoundary, internal links, source/methodology footer. ✓
+8. **Legacy ref-nav patterns:** 0 matches across all HTML pages for all 4 forbidden patterns. ✓
+9. **DECISION_LOG prior IDs:** S1-DL-010 ✓, S1-DL-014 ✓, S2-DL-001 ✓, S2B-DL-001 ✓, S2B-DL-002 ✓, V1B-DL-001 ✓, V1B-DL-002 ✓, V1B-DL-003 ✓, V1B-DL-004 ✓ — all present. ✓
+
+**Confirmed State:**
+
+- Questions layer: 8 → 56 published (48 new page entries: 30 new + 18 activated from bank)
+- Generated pages: 82 → 130
+- Quality validators: 11 → 12
+- Questions hub: 7 clusters, 59 outbound links
+- Questions sitemap: 57 URLs (hub + 56 pages)
+- Google Search Console: BLOCKED (unchanged)
+
+**Consequences:**
+
+The v1B-B questions reference expansion is confirmed live, verified, and correctly deployed. The asset now has a governed terminology layer (53 terms) and a governed Q&A layer (56 questions), both source-disciplined and claim-boundary controlled. The next controlled expansion may proceed to v1B-C — Technology Reference pages.
+
+---
+
 ## [V1B-DL-004] - 2026-05-28: v1B-B Questions Reference Expansion Initiated
 
 **Status:** APPROVED
