@@ -1,3 +1,46 @@
+## [S2B-DL-002] - 2026-05-28: Sprint 2B Post-Merge Live Verification Approved
+
+**Status:** APPROVED
+
+**Context:** Sprint 2B was merged to main through PR #7 (merge commit `da506a6`) and deployed live to GitHub Pages. The post-merge live verification confirmed that the production site reflects the Sprint 2B output integrity and hub recovery corrections. Local verification on main also confirmed 10/10 quality gate, 0 legacy nav matches, and all required DECISION_LOG IDs present.
+
+**Decision:** Approve Sprint 2B as the restored technical, governance, and interface foundation for Space-Based-Solar-Power.com.
+
+**Verified (local — main branch `da506a6`):**
+
+1. Commit `5dd7ed8` is present in `main` history.
+2. Quality gate: 10/10 validators passed — APPROVED.
+3. DECISION_LOG IDs present: S1-DL-010 ✓, S1-DL-014 ✓, S2-DL-001 ✓, S2B-DL-001 ✓. No prior IDs removed.
+4. Legacy nav patterns in public HTML: 0 matches for `<nav class="ref-nav"`, `aria-label="Explore"`, `aria-label="Related pages"`, `ref-nav-label`.
+5. `/glossary/` hub: 10 child links + source/methodology footer (hub-source-links). Not empty.
+6. `/questions/` hub: 8 child links + source/methodology footer. Not empty.
+7. `/programs/` hub: 5 child links + source/methodology footer. Not empty.
+8. `public/what-is-space-based-solar-power/index.html`: 292 lines, 14 h2 sections — rich content restored via slug fallback fix in `write_page()`.
+9. `public/sitemap.xml`: `<sitemapindex>` format with 4 sub-sitemaps (core, glossary-001, questions-001, programs-001).
+10. `public/robots.txt`: `Sitemap: https://space-based-solar-power.com/sitemap.xml`
+
+**Verified (live — space-based-solar-power.com):**
+
+1. Homepage: "Reference Active" status, telemetry panel (7 layers), reference atlas grid, constraint matrix preview, source/trust block visible. No ref-nav.
+2. `/sitemap.xml`: Sitemap index pointing to 4 sub-sitemaps.
+3. `/robots.txt`: Points to `https://space-based-solar-power.com/sitemap.xml`.
+4. `/glossary/`: 10 term links + Methodology/Sources footer. No ref-nav.
+5. `/questions/`: 8 question links + Methodology/Sources footer. No ref-nav.
+6. `/programs/`: 5 program links + Methodology/Sources footer. No ref-nav.
+7. `/what-is-space-based-solar-power/`: 20+ h2 sections rendered. Not the previous 36-line stub.
+8. Core internal links (glossary term, question page, program page): all load without 404.
+9. No `ref-nav` class found on any tested live page.
+
+**Consequences:**
+
+- Sprint 2B is approved as the live foundation.
+- v1B expansion preparation may begin after this decision is committed.
+- Google Search Console submission remains blocked until the first approved v1B reference expansion batch is deployed and verified, unless explicitly authorized.
+- Future work must preserve the append-only decision log rule enforced by `validate_decision_log.py`.
+- No manual public output patches are permitted; all public pages must be generated through `build.py` and pass the full quality gate (currently 10 validators).
+
+---
+
 ## [S2B-DL-001] - 2026-05-28: Output Integrity, Hub Recovery, and Append-Only Governance Correction
 
 **Status:** APPROVED
