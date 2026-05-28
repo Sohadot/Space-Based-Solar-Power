@@ -20,6 +20,7 @@ VALIDATORS = [
     "validate_internal_link_graph.py",
     "validate_output_integrity.py",
     "validate_decision_log.py",
+    "validate_glossary.py",
 ]
 
 
