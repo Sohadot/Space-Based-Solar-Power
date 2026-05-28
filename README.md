@@ -40,7 +40,7 @@ The governing thesis of the asset is:
 
 > **Space-Based Solar Power is the proposed transfer of energy sovereignty above the atmosphere — a future infrastructure layer connecting sunlight, orbit, wireless power transmission, terrestrial grids, artificial intelligence, defense resilience, and the next industrial geography of space.**
 
-This thesis controls the asset’s content, interface, multilingual architecture, strategic tools, source policy, SEO logic, monetization posture, and buyer-facing value.
+This thesis controls the asset's content, interface, multilingual architecture, strategic tools, source policy, SEO logic, monetization posture, and buyer-facing value.
 
 The asset treats Space-Based Solar Power as more than a technical idea.
 
@@ -61,7 +61,7 @@ It treats SBSP as a future infrastructure chain connecting:
 
 The conceptual story of this asset is not:
 
-> “Solar panels in space.”
+> "Solar panels in space."
 
 The conceptual story is:
 
@@ -342,13 +342,13 @@ Each language edition functions as a strategic regional lens while preserving te
 
 Approved language hierarchy:
 
-1. **English** — Institutional Source Layer  
-2. **Arabic** — Energy Sovereignty Edition  
-3. **Chinese** — Industrial Scale Edition  
-4. **Japanese** — Precision Technology Edition  
-5. **French** — European Policy and Aerospace Edition  
-6. **German** — Engineering and Grid-Integration Edition  
-7. **Spanish** — Global Expansion Edition  
+1. **English** — Institutional Source Layer
+2. **Arabic** — Energy Sovereignty Edition
+3. **Chinese** — Industrial Scale Edition
+4. **Japanese** — Precision Technology Edition
+5. **French** — European Policy and Aerospace Edition
+6. **German** — Engineering and Grid-Integration Edition
+7. **Spanish** — Global Expansion Edition
 
 English is the source-of-truth layer unless a future documented decision changes this rule.
 
@@ -600,31 +600,29 @@ These require:
 
 ## 12. Interface Philosophy
 
-The interface is part of the asset’s value.
+The interface is part of the asset's value.
 
 The governing design principle is:
 
-> **The interface must not decorate the asset. The interface must embody the asset’s thesis.**
+> **The interface must not decorate the asset. The interface must embody the asset's thesis.**
 
 The approved interface philosophy is:
 
 **Thesis-Driven Sovereign Interface**
 
-For this project, the approved spatial concept is:
+The approved interface concept is:
 
-**The Embodied Orbital Energy Atlas**
+**Sovereign Spatial Interface**
 
-The interface should translate orbital energy infrastructure into a tangible, structured, spatial experience.
+The interface must translate orbital energy infrastructure into a tangible, structured, spatial experience organized around seven core system layers:
 
-The visual system must express the relationship between:
-
-- orbital solar collection;
-- power beaming;
-- terrestrial rectenna reception;
-- grid resilience;
-- AI energy demand;
-- defense and disaster-response relevance;
-- lunar and space-industrial extension.
+- Orbital Core;
+- Power Beaming Vector;
+- Rectenna / Terrestrial Reception;
+- Grid Resilience;
+- AI Energy Demand;
+- Defense / Disaster Resilience;
+- Lunar and Space-Industrial Extension.
 
 The interface must remain:
 
@@ -762,7 +760,7 @@ Future monetization may include:
 - educational resources;
 - sponsored research surfaces only when clearly governed.
 
-Any monetization layer must reinforce the asset’s authority rather than extract short-term value from it.
+Any monetization layer must reinforce the asset's authority rather than extract short-term value from it.
 
 The preferred monetization posture is:
 
@@ -809,7 +807,7 @@ Repository gateway and high-level operating document.
 
 ### `ASSET_THESIS.md`
 
-Defines the asset’s strategic thesis, category position, conceptual story, and value logic.
+Defines the asset's strategic thesis, category position, conceptual story, and value logic.
 
 ### `PROJECT_DOCTRINE.md`
 
@@ -829,7 +827,11 @@ Defines the approved tool layer, tool restrictions, numerical model restrictions
 
 ### `INTERFACE_THESIS.md`
 
-Defines the principle that the interface must embody the asset thesis.
+Defines the principle that the interface must embody the asset thesis. Specifies the Sovereign Spatial Interface concept and all 7 core system layers.
+
+### `SPATIAL_INTERFACE_V1_PLAN.md`
+
+Defines the first concrete implementation plan for the Sovereign Spatial Interface.
 
 ### `SPATIAL_INTERFACE_CONCEPT.md`
 
@@ -839,18 +841,6 @@ Defines the Embodied Orbital Energy Atlas and spatial narrative layers.
 
 Defines visual character, color, typography, motion, accessibility, performance, RTL, and trust rules.
 
-### `SECURITY_POLICY.md`
-
-Defines security rules, external dependency posture, CSP approach, measurement governance, and safe script rules.
-
-### `SEO_POLICY.md`
-
-Defines SEO clusters, metadata standards, sitemap rules, no-random-SEO discipline, and indexation posture.
-
-### `MONETIZATION_PRINCIPLES.md`
-
-Defines monetization boundaries and future revenue options.
-
 ### `QUALITY_GATE.md`
 
 Defines the validation requirements before publication.
@@ -859,9 +849,13 @@ Defines the validation requirements before publication.
 
 Defines approved public pages, content roles, internal-link logic, and publishing sequence.
 
-### `DECISION_LOG.md`
+### `DECISION_LOG`
 
 Records strategic, technical, editorial, SEO, localization, monetization, design, and governance decisions.
+
+### `REFERENCE_LAUNCH_V1B_PLAN.md`
+
+Defines the controlled 300–500 page v1B expansion plan across 8 content clusters.
 
 ---
 
@@ -877,112 +871,43 @@ Space-Based-Solar-Power/
 ├── SOURCE_POLICY.md
 ├── STRATEGIC_TOOLS_POLICY.md
 ├── INTERFACE_THESIS.md
+├── SPATIAL_INTERFACE_V1_PLAN.md
 ├── SPATIAL_INTERFACE_CONCEPT.md
 ├── DESIGN_SYSTEM.md
-├── SECURITY_POLICY.md
-├── SEO_POLICY.md
-├── MONETIZATION_PRINCIPLES.md
+├── REFERENCE_LAUNCH_V1B_PLAN.md
 ├── QUALITY_GATE.md
 ├── CONTENT_MAP.md
-├── DECISION_LOG.md
+├── DECISION_LOG
 │
 ├── main/
 │   ├── data/
 │   │   ├── pages.json
 │   │   ├── navigation.json
 │   │   ├── sources.json
-│   │   ├── languages.json
+│   │   ├── glossary_terms.json
+│   │   ├── question_bank.json
+│   │   ├── program_registry.json
 │   │   ├── tools.json
-│   │   ├── articles.json
-│   │   ├── glossary.json
-│   │   ├── programs.json
-│   │   ├── seo.json
-│   │   ├── redirects.json
-│   │   └── schema.json
+│   │   └── publication_trial_v1a.json
 │   │
 │   ├── content/
 │   │   ├── pages/
-│   │   │   ├── home.json
-│   │   │   ├── about.json
-│   │   │   ├── methodology.json
-│   │   │   ├── framework.json
-│   │   │   ├── manifesto.json
-│   │   │   ├── what-is-space-based-solar-power.json
-│   │   │   ├── technology-stack.json
-│   │   │   ├── feasibility-and-constraints.json
-│   │   │   ├── strategic-importance.json
-│   │   │   └── global-programs.json
-│   │   │
-│   │   ├── tools/
-│   │   │   ├── orbital-energy-constraint-matrix.json
-│   │   │   ├── sbsp-glossary-navigator.json
-│   │   │   ├── global-program-tracker.json
-│   │   │   ├── use-case-fit-evaluator.json
-│   │   │   ├── claim-boundary-checker.json
-│   │   │   ├── journalist-brief-builder.json
-│   │   │   ├── investor-due-diligence-checklist.json
-│   │   │   ├── government-strategic-fit-matrix.json
-│   │   │   └── orbital-energy-readiness-index.json
-│   │   │
-│   │   ├── articles/
-│   │   │   ├── README.md
-│   │   │   └── drafts/
-│   │   │
-│   │   ├── glossary/
-│   │   │   └── terms.json
-│   │   │
-│   │   ├── programs/
-│   │   │   └── registry.json
-│   │   │
 │   │   └── localized/
-│   │       ├── ar/
-│   │       ├── zh/
-│   │       ├── ja/
-│   │       ├── fr/
-│   │       ├── de/
-│   │       └── es/
-│   │
-│   ├── templates/
-│   │   ├── base.html
-│   │   ├── home.html
-│   │   ├── page.html
-│   │   ├── reference-page.html
-│   │   ├── article.html
-│   │   ├── tool.html
-│   │   ├── methodology.html
-│   │   ├── framework.html
-│   │   ├── manifesto.html
-│   │   ├── glossary-term.html
-│   │   └── program-profile.html
 │   │
 │   ├── static/
-│   │   ├── css/
-│   │   │   └── main.css
-│   │   │
-│   │   ├── js/
-│   │   │   ├── site.js
-│   │   │   ├── tools.js
-│   │   │   └── spatial-interface.js
-│   │   │
-│   │   └── assets/
-│   │       ├── social-preview.svg
-│   │       ├── diagrams/
-│   │       ├── icons/
-│   │       ├── interface/
-│   │       ├── references/
-│   │       ├── charts/
-│   │       └── brand/
+│   │   └── css/
+│   │       └── main.css
 │   │
 │   └── scripts/
 │       ├── build.py
 │       ├── validate_links.py
 │       ├── validate_seo.py
 │       ├── validate_content.py
-│       ├── validate_hreflang.py
 │       ├── validate_sources.py
-│       ├── validate_assets.py
 │       ├── validate_schema.py
-│       ├── update_sitemap.py
+│       ├── validate_claims.py
+│       ├── validate_sitemap.py
+│       ├── validate_internal_link_graph.py
 │       └── quality_gate.py
 │
 ├── public/
@@ -998,12 +923,10 @@ Space-Based-Solar-Power/
 │   ├── global-programs/
 │   ├── tools/
 │   ├── articles/
-│   ├── ar/
-│   ├── zh/
-│   ├── ja/
-│   ├── fr/
-│   ├── de/
-│   ├── es/
+│   ├── sources/
+│   ├── glossary/
+│   ├── questions/
+│   ├── programs/
 │   ├── robots.txt
 │   ├── sitemap.xml
 │   └── static/
@@ -1012,12 +935,6 @@ Space-Based-Solar-Power/
     └── workflows/
         └── quality-gate.yml
 ```
-
-This structure separates governance, data, content, templates, static assets, scripts, generated public output, and automation.
-
-The repository must not treat content as loose HTML.
-
-Public pages, tools, articles, localized editions, glossary entries, program profiles, and interface assets should be generated from controlled source files and registered in the appropriate data files.
 
 ---
 
@@ -1113,41 +1030,13 @@ The `main/static/assets/` directory contains controlled visual and reference ass
 
 For conceptual and technical diagrams.
 
-Examples:
-
-- SBSP infrastructure chain;
-- orbital-to-terrestrial energy pathway;
-- rectenna system map;
-- grid integration diagram;
-- constraint matrix diagram.
-
 ### `icons/`
 
 For interface icons and semantic markers.
 
-Examples:
-
-- orbital collection;
-- beam transmission;
-- rectenna;
-- grid;
-- AI compute;
-- defense resilience;
-- lunar infrastructure;
-- source-verified claim;
-- unresolved scenario.
-
 ### `interface/`
 
 For spatial UI elements.
-
-Examples:
-
-- orbital array geometry;
-- beam overlays;
-- grid node visuals;
-- spatial atlas components;
-- fallback visual states.
 
 ### `references/`
 
@@ -1196,14 +1085,6 @@ The production build must not include:
 - sitemap entries for unpublished pages;
 - unsupported technical claims;
 - uncontrolled third-party scripts.
-
-The core reference routes `/about/`, `/methodology/`, `/framework/`, `/manifesto/`, `/tools/`, and `/articles/` may not be published until each has:
-
-- a defined strategic role;
-- source boundary;
-- internal-link map;
-- metadata profile;
-- quality-gate status.
 
 ---
 
@@ -1279,90 +1160,59 @@ Failure of the quality gate blocks publication.
 
 ## 25. Current Project Phase
 
-Current status:
-
 ```text
-Governance foundation established.
-Sovereign Reference Launch v1 approved.
-Public reference expansion is the next operational objective.
+Phase: Sprint 2 — Interface and Reference Launch Correction.
+Status: Live technical foundation deployed. Interface correction in progress.
+Blocked: v1B content expansion, Google Search Console submission.
+Next: Sovereign Spatial Interface implementation + 300–500 page reference launch.
 ```
 
-The project is not being prepared for a minimal proof page.
+### Live Technical Foundation
 
-The next objective is to publish a serious sovereign reference foundation that proves the asset can operate publicly as a multilingual, source-disciplined, SEO-controlled, institutionally credible category reference layer.
+39 pages are deployed and verified through the full quality gate on GitHub Pages. The technical pipeline is confirmed: build engine, validator stack, sitemap, robots.txt, CSS delivery, and page structure all function correctly.
 
-### Sovereign Reference Launch v1
+**This deployment is not the final strategic reference launch.** It is the verified technical foundation only.
 
-The first public release must include the core sovereign reference surfaces:
+### What the current deployment confirms
 
-```text
-/
- /about/
- /methodology/
- /framework/
- /manifesto/
- /sources/
- /tools/
- /articles/
-robots.txt
-sitemap.xml
-static/css/main.css
-```
+- The Sovereign Generation Engine generates quality-gate-approved pages.
+- The full validator stack passes: schema, content, sources, claims, SEO, sitemap, links, internal-link graph.
+- GitHub Pages serves the asset at `space-based-solar-power.com`.
+- The dark orbital CSS baseline is live on all 39 pages.
 
-These routes are not decorative site sections. They are the first visible institutional proof that the asset has a thesis, methodology, framework, manifesto, source posture, tools architecture, article layer, and technical publication discipline.
+### What the current deployment is NOT
 
-### First Reference Expansion Cluster
+- It is not the intended Sovereign Spatial Interface.
+- It is not the planned 300–500 page reference launch.
+- It is not ready for Google Search Console submission as the strategic launch.
+- It is not the basis for v1B bulk expansion.
 
-The first release must also prepare the architecture for the first reference expansion cluster:
+### Sprint 2 — Interface and Reference Launch Correction
 
-```text
-/what-is-space-based-solar-power/
- /technology-stack/
- /feasibility-and-constraints/
- /strategic-importance/
- /global-programs/
- /orbital-energy-infrastructure/
- /wireless-power-transmission/
- /rectenna-infrastructure/
- /space-solar-power-satellites/
- /sbsp-economics/
- /sbsp-safety/
- /sbsp-grid-integration/
- /sbsp-and-ai-energy-demand/
- /sbsp-and-defense-resilience/
- /sbsp-and-lunar-infrastructure/
-```
+Sprint 2 corrects the interface and template system before v1B expansion begins. Tasks:
 
-These pages may be prepared in the content architecture, data registry, and internal-link map before publication. They must not be publicly exposed until they are complete, internally linked, metadata-controlled, source-disciplined, and quality-gate approved.
+1. Upgraded `INTERFACE_THESIS.md` — formally defines the Sovereign Spatial Interface, all 7 core system layers, and required UX principles.
+2. Created `SPATIAL_INTERFACE_V1_PLAN.md` — specifies the first real interface implementation: Mission Control header, telemetry panel, orbital atlas hero, reference atlas grid, constraint matrix preview, source/trust layer.
+3. Created `REFERENCE_LAUNCH_V1B_PLAN.md` — defines the controlled 300–500 page expansion plan across 8 content clusters.
+4. Upgraded `main/scripts/build.py` templates — home page renders as sovereign atlas gateway; foundation pages use reference cards; glossary/question/program pages use governed reference card structure.
+5. Expanded `main/static/css/main.css` — adds mission control panels, telemetry cards, reference atlas grid, constraint matrix preview, governed reference cards, reduced motion support.
+6. Updated `README.md` — this section.
+7. Regenerated `public/` output — reflects new templates and CSS.
 
-### Multilingual Release Rule
+### Blocked Until Sprint 2 Passes Quality Gate
 
-The multilingual architecture must be visible from the beginning, but no localized page may be published unless it is complete, reviewed, internally linked, metadata-controlled, source-disciplined, canonical-valid, hreflang-valid, and quality-gate approved.
+- Google Search Console submission.
+- v1B content cluster expansion.
+- Any random bulk content generation.
+- Treating the current 39-page deployment as the strategic reference launch.
 
-Arabic, Chinese, Japanese, French, German, and Spanish editions must not appear as empty language shells, placeholder routes, or unreviewed machine translations.
+### v1B Reference Launch Target
 
-### Launch Validation Requirements
+After Sprint 2 is merged to `main` and quality-gate approved, the next phase is **Reference Launch v1B**: a controlled 300–500 page expansion across 8 defined content clusters.
 
-The first release must demonstrate:
+The full plan is defined in `REFERENCE_LAUNCH_V1B_PLAN.md`.
 
-- conceptual authority;
-- institutional seriousness;
-- source discipline;
-- methodological clarity;
-- interface doctrine;
-- internal-link logic;
-- SEO readiness;
-- technical trust;
-- no broken links;
-- no placeholder pages;
-- no fake article archive;
-- no unsupported claims.
-
-### Objective
-
-The objective is not to prove that a static site can exist.
-
-The objective is to prove that Space-Based-Solar-Power.com has begun operating as a live sovereign reference asset.
+No random expansion. No small symbolic batches. A serious, governed, cluster-complete reference launch.
 
 ---
 
