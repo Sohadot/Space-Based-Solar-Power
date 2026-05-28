@@ -21,6 +21,7 @@ VALIDATORS = [
     "validate_output_integrity.py",
     "validate_decision_log.py",
     "validate_glossary.py",
+    "validate_questions.py",
 ]
 
 
