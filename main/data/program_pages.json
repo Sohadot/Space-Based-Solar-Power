@@ -14,11 +14,30 @@
     "technology_relationship": "SOLARIS assessments span the full SBSP technology chain, including high-efficiency photovoltaic conversion, microwave wireless power transmission, phased array transmitter systems, in-space assembly, and ground receiving infrastructure. Technology readiness evaluations are a core component of the initiative's mandate, with TRL assessments covering all major subsystems.",
     "feasibility_boundary": "SOLARIS is a study initiative, not a development programme. All outputs are pre-decisional assessments. No launch or deployment schedule exists. The programme's role is to determine whether a development commitment would be justified, not to commit to one.",
     "claim_boundary": "No claim should be made that ESA has committed to building a space-based solar power system. SOLARIS outputs represent study-phase findings, not funded development milestones. TRL assessments from SOLARIS reflect current research status and should not be interpreted as readiness for deployment.",
-    "related_glossary_terms": ["space-based-solar-power", "wireless-power-transmission", "microwave-power-beaming", "technology-readiness-level", "geostationary-orbit", "energy-security"],
-    "related_questions": ["what-is-esa-solaris", "which-countries-research-sbsp", "what-is-trl-sbsp", "what-is-sbsp-and-energy-sovereignty", "what-are-the-main-sbsp-constraints"],
-    "related_technology_pages": ["microwave-power-transmission", "phased-array-transmitter-systems", "high-efficiency-solar-cells", "in-space-assembly-methods", "ground-receiving-infrastructure"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "technology-readiness-level",
+      "geostationary-orbit",
+      "energy-security"
+    ],
+    "related_questions": [
+      "what-is-esa-solaris",
+      "which-countries-research-sbsp",
+      "what-is-trl-sbsp",
+      "what-is-sbsp-and-energy-sovereignty",
+      "what-are-the-main-sbsp-constraints"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "phased-array-transmitter-systems",
+      "high-efficiency-solar-cells",
+      "in-space-assembly-methods",
+      "ground-receiving-infrastructure"
+    ],
     "source_footer": "Based on publicly available ESA SOLARIS initiative documentation, ESA Ministerial Council materials, and ESA published technical study references. All feasibility and TRL assessments reflect ESA's own published study-phase findings.",
-    "seoTitle": "ESA SOLARIS Initiative — Space-Based Solar Power Feasibility Study",
+    "seoTitle": "ESA SOLARIS Initiative \u2014 Space-Based Solar Power Feasibility Study",
     "seoDescription": "ESA SOLARIS is Europe's formal space-based solar power feasibility initiative, assessing system architectures and TRL status before any development commitment."
   },
   {
@@ -36,12 +55,30 @@
     "technology_relationship": "JAXA SSPS research is most directly relevant to microwave power transmission, phased array transmitter systems, rectenna arrays, and beam steering and beam control technologies. JAXA has conducted laboratory and outdoor wireless power transmission experiments and has contributed to international understanding of atmospheric effects on microwave beaming.",
     "feasibility_boundary": "JAXA's SSPS programme is a research programme, not a funded development or deployment programme. Demonstration experiments confirm technology feasibility at sub-scale, not commercial or operational scale. No funded orbital demonstration mission has been confirmed.",
     "claim_boundary": "JAXA SSPS research demonstrates technical progress in wireless power transmission subsystems at research scale. No claim should be made that JAXA has demonstrated a complete operational SBSP system or committed to a deployment timeline. All roadmap targets are planning references, not funded programme milestones.",
-    "related_glossary_terms": ["solar-power-satellite", "wireless-power-transmission", "microwave-power-beaming", "rectenna", "beam-steering", "phased-array-transmitter"],
-    "related_questions": ["what-is-jaxa-ssps", "which-countries-research-sbsp", "what-is-microwave-vs-laser-beaming", "what-is-trl-sbsp", "how-does-beam-steering-work-sbsp"],
-    "related_technology_pages": ["microwave-power-transmission", "phased-array-transmitter-systems", "rectenna-arrays", "beam-control"],
+    "related_glossary_terms": [
+      "solar-power-satellite",
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "rectenna",
+      "beam-steering",
+      "phased-array-transmitter"
+    ],
+    "related_questions": [
+      "what-is-jaxa-ssps",
+      "which-countries-research-sbsp",
+      "what-is-microwave-vs-laser-beaming",
+      "what-is-trl-sbsp",
+      "how-does-beam-steering-work-sbsp"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "phased-array-transmitter-systems",
+      "rectenna-arrays",
+      "phased-array-transmitter-systems"
+    ],
     "source_footer": "Based on publicly available JAXA SSPS programme documentation, JAXA published research papers, and Japanese government space policy documents. All technical claims reflect JAXA's own published research-phase findings.",
-    "seoTitle": "JAXA Space Solar Power Systems Programme — Japan SBSP Research",
-    "seoDescription": "JAXA's SSPS programme is one of the world's longest-running space-based solar power research efforts, focusing on wireless power transmission and system architecture."
+    "seoTitle": "JAXA Space Solar Power Systems Programme \u2014 Japan SBSP Research",
+    "seoDescription": "JAXA's SSPS programme is one of the world's longest-running space-based solar power research efforts, focusing on wireless power transmission and system."
   },
   {
     "id": "nasa-sbsp-revisit",
@@ -58,12 +95,30 @@
     "technology_relationship": "NASA SBSP exploratory research covers high-efficiency solar cells, modular spacecraft architecture, in-space assembly, wireless power transmission, and launch economics as primary technology domains. The programme also examines power conversion efficiency and thermal management as critical subsystem constraints.",
     "feasibility_boundary": "NASA's SBSP exploratory programme is not a funded development programme. It is a pre-decisional technology assessment and research scoping activity. No NASA SBSP development programme of record exists as of the knowledge boundary of this reference layer.",
     "claim_boundary": "NASA's SBSP revisit does not constitute a commitment to develop or deploy a space-based solar power system. All outputs are study-phase assessments. The programme's findings on technology readiness reflect research-phase evaluations, not deployment-ready conclusions.",
-    "related_glossary_terms": ["space-based-solar-power", "technology-readiness-level", "launch-economics", "mass-to-orbit", "space-solar-power-system"],
-    "related_questions": ["what-did-nasa-sspp-revisit-find", "what-is-nasa-1979-study", "what-is-trl-sbsp", "what-is-launch-economics-sbsp", "what-is-sbsp-commercial-readiness-gap"],
-    "related_technology_pages": ["high-efficiency-solar-cells", "modular-spacecraft-architecture", "in-space-assembly-methods", "heavy-lift-launch-requirements"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "technology-readiness-level",
+      "launch-economics",
+      "mass-to-orbit",
+      "space-solar-power-system"
+    ],
+    "related_questions": [
+      "what-did-nasa-sspp-revisit-find",
+      "what-is-nasa-1979-study",
+      "what-is-trl-sbsp",
+      "what-is-launch-economics-sbsp",
+      "what-is-sbsp-commercial-readiness-gap"
+    ],
+    "related_technology_pages": [
+      "high-efficiency-solar-cells",
+      "modular-spacecraft-architecture",
+      "in-space-assembly-methods",
+      "heavy-lift-launch-requirements"
+    ],
     "source_footer": "Based on publicly available NASA SBSP study publications, NASA technical reports, and US government space policy documents. All assessments reflect NASA's published study-phase findings and do not represent funded programme commitments.",
-    "seoTitle": "NASA Space Solar Power Revisit — US SBSP Exploratory Research Programme",
-    "seoDescription": "NASA's SBSP exploratory research reassesses space-based solar power feasibility in light of advances in photovoltaics, launch costs, and wireless power transmission since 1979."
+    "seoTitle": "NASA Space Solar Power Revisit \u2014 US SBSP Exploratory Research",
+    "seoDescription": "NASA's SBSP exploratory research reassesses space-based solar power feasibility in light of advances in photovoltaics, launch costs, and wireless power.",
+    "path": "/programs/nasa-space-solar-power-revisit/"
   },
   {
     "id": "isro-sbsp-study",
@@ -80,11 +135,25 @@
     "technology_relationship": "ISRO SBSP studies engage with high-efficiency solar cells, heavy lift launch requirements, and wireless power transmission as primary technology domains. India's developing expertise in satellite technology and launch systems is relevant to future SBSP system component development.",
     "feasibility_boundary": "ISRO's SBSP activities are study-phase engagements, not funded development programmes. No ISRO SBSP development programme of record has been publicly confirmed. All assessments reflect early-stage institutional interest.",
     "claim_boundary": "ISRO's SBSP study activities do not represent a commitment to develop or deploy a space-based solar power system. Institutional engagement at study phase should not be interpreted as a development decision or near-term deployment trajectory.",
-    "related_glossary_terms": ["space-based-solar-power", "energy-sovereignty", "launch-economics", "technology-readiness-level"],
-    "related_questions": ["which-countries-research-sbsp", "what-is-sbsp-and-energy-sovereignty", "what-is-launch-economics-sbsp", "what-is-trl-sbsp"],
-    "related_technology_pages": ["high-efficiency-solar-cells", "heavy-lift-launch-requirements", "microwave-power-transmission"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "energy-sovereignty",
+      "launch-economics",
+      "technology-readiness-level"
+    ],
+    "related_questions": [
+      "which-countries-research-sbsp",
+      "what-is-sbsp-and-energy-sovereignty",
+      "what-is-launch-economics-sbsp",
+      "what-is-trl-sbsp"
+    ],
+    "related_technology_pages": [
+      "high-efficiency-solar-cells",
+      "heavy-lift-launch-requirements",
+      "microwave-power-transmission"
+    ],
     "source_footer": "Based on publicly available ISRO statements, Indian government energy and space policy documents, and international SBSP survey literature. No classified or non-public ISRO programme information is referenced.",
-    "seoTitle": "ISRO Space Solar Power Study — India SBSP Research Activities",
+    "seoTitle": "ISRO Space Solar Power Study \u2014 India SBSP Research Activities",
     "seoDescription": "ISRO has examined space-based solar power as a long-term energy technology relevant to India's energy security and expanding space programme capabilities."
   },
   {
@@ -102,11 +171,26 @@
     "technology_relationship": "DLR SBSP research engages with high-efficiency solar cells, solar array structural design, large space structure dynamics, and wireless power transmission as primary technology domains. DLR's photovoltaic expertise is particularly relevant to the solar collection subsystem.",
     "feasibility_boundary": "DLR's SBSP activities are assessment and research contributions, not a funded national German SBSP development programme. All findings are research-phase outputs within the European cooperative research framework.",
     "claim_boundary": "DLR's SBSP assessments do not represent a German national commitment to develop a space-based solar power system. Contributions to ESA and European research frameworks are study-phase inputs, not development commitments.",
-    "related_glossary_terms": ["space-based-solar-power", "solar-power-satellite", "technology-readiness-level", "wireless-power-transmission"],
-    "related_questions": ["which-countries-research-sbsp", "what-is-esa-solaris", "what-is-trl-sbsp", "how-large-is-sbsp-solar-array"],
-    "related_technology_pages": ["high-efficiency-solar-cells", "solar-array-structural-design", "large-space-structure-dynamics", "microwave-power-transmission"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "solar-power-satellite",
+      "technology-readiness-level",
+      "wireless-power-transmission"
+    ],
+    "related_questions": [
+      "which-countries-research-sbsp",
+      "what-is-esa-solaris",
+      "what-is-trl-sbsp",
+      "how-large-is-sbsp-solar-array"
+    ],
+    "related_technology_pages": [
+      "high-efficiency-solar-cells",
+      "solar-array-structural-design",
+      "large-space-structure-dynamics",
+      "microwave-power-transmission"
+    ],
     "source_footer": "Based on publicly available DLR research publications, ESA programme documentation referencing DLR participation, and European SBSP study reports. All findings reflect published research-phase assessments.",
-    "seoTitle": "DLR Space Solar Power Assessment — German Aerospace SBSP Research",
+    "seoTitle": "DLR Space Solar Power Assessment \u2014 German Aerospace SBSP Research",
     "seoDescription": "Germany's DLR contributes technical expertise in photovoltaics and large space structures to European space-based solar power feasibility assessments."
   },
   {
@@ -124,18 +208,31 @@
     "technology_relationship": "KARI SBSP studies engage with high-efficiency solar cells, power conversion and conditioning, and wireless power transmission as primary technology domains relevant to South Korea's industrial capabilities.",
     "feasibility_boundary": "KARI SBSP activities are study-phase engagements, not funded development programmes. No Korean national SBSP development commitment has been publicly announced.",
     "claim_boundary": "KARI's SBSP study activities do not represent a Korean national commitment to develop space-based solar power. Institutional interest at study phase should not be represented as a funded programme or near-term deployment plan.",
-    "related_glossary_terms": ["space-based-solar-power", "energy-sovereignty", "technology-readiness-level", "wireless-power-transmission"],
-    "related_questions": ["which-countries-research-sbsp", "what-is-sbsp-and-energy-sovereignty", "what-is-trl-sbsp"],
-    "related_technology_pages": ["high-efficiency-solar-cells", "power-conversion-and-conditioning", "microwave-power-transmission"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "energy-sovereignty",
+      "technology-readiness-level",
+      "wireless-power-transmission"
+    ],
+    "related_questions": [
+      "which-countries-research-sbsp",
+      "what-is-sbsp-and-energy-sovereignty",
+      "what-is-trl-sbsp"
+    ],
+    "related_technology_pages": [
+      "high-efficiency-solar-cells",
+      "power-conversion-and-conditioning",
+      "microwave-power-transmission"
+    ],
     "source_footer": "Based on publicly available KARI research documentation, South Korean government space policy references, and international SBSP survey literature.",
-    "seoTitle": "KARI SBSP Study — South Korea Space Solar Power Research",
+    "seoTitle": "KARI SBSP Study \u2014 South Korea Space Solar Power Research",
     "seoDescription": "South Korea's KARI has studied space-based solar power within its long-range space technology planning and national energy security research framework."
   },
   {
     "id": "cnes-sbsp",
     "slug": "cnes-sbsp",
     "title": "CNES Space Solar Power Concept Study",
-    "institution": "Centre National d'Études Spatiales",
+    "institution": "Centre National d'\u00c9tudes Spatiales",
     "country_or_region": "France",
     "program_status": "active_study",
     "activity_type": "space_agency_study",
@@ -146,11 +243,25 @@
     "technology_relationship": "CNES SBSP concept studies engage with solar array structural design, microwave power transmission, and geostationary satellite platform architecture as primary technology domains within France's space industrial base.",
     "feasibility_boundary": "CNES SBSP activities are concept study engagements, not funded development programmes. All outputs are study-phase assessments contributing to the European research framework.",
     "claim_boundary": "CNES concept study engagement does not represent a French national commitment to develop space-based solar power. All study outputs are pre-decisional and should not be interpreted as development milestones.",
-    "related_glossary_terms": ["space-based-solar-power", "geostationary-orbit", "energy-security", "solar-power-satellite"],
-    "related_questions": ["which-countries-research-sbsp", "what-is-esa-solaris", "what-is-geostationary-orbit-for-sbsp", "what-is-sbsp-and-energy-sovereignty"],
-    "related_technology_pages": ["solar-array-structural-design", "microwave-power-transmission", "spacecraft-thermal-control"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "geostationary-orbit",
+      "energy-security",
+      "solar-power-satellite"
+    ],
+    "related_questions": [
+      "which-countries-research-sbsp",
+      "what-is-esa-solaris",
+      "what-is-geostationary-orbit-for-sbsp",
+      "what-is-sbsp-and-energy-sovereignty"
+    ],
+    "related_technology_pages": [
+      "solar-array-structural-design",
+      "microwave-power-transmission",
+      "spacecraft-thermal-control"
+    ],
     "source_footer": "Based on publicly available CNES documentation, ESA programme references to CNES participation, and European SBSP study reports. All findings reflect published study-phase assessments.",
-    "seoTitle": "CNES Space Solar Power Study — France SBSP Concept Research",
+    "seoTitle": "CNES Space Solar Power Study \u2014 France SBSP Concept Research",
     "seoDescription": "France's CNES engages in space-based solar power concept studies as part of the European SBSP research effort and national long-range technology assessment."
   },
   {
@@ -168,12 +279,28 @@
     "technology_relationship": "The initiative's technical work spans microwave power transmission, phased array transmitter systems, large space structure design, in-space assembly, and ground receiving infrastructure. The CASSIOPeiA architecture concept introduces a distinctive non-tracking reflector-based approach to SBSP system design.",
     "feasibility_boundary": "The UK Space Energy Initiative operates as an advocacy and research consortium. Its roadmap targets for demonstration and operational phases are planning aspirations contingent on government commitment and funding that has not been secured as of this reference layer's knowledge boundary.",
     "claim_boundary": "The UK Space Energy Initiative's roadmap targets and cost projections are planning-phase outputs from an advocacy consortium. They should not be represented as funded programme milestones or confirmed government commitments. All timeline references are conditional on policy and funding decisions not yet made.",
-    "related_glossary_terms": ["space-based-solar-power", "wireless-power-transmission", "microwave-power-beaming", "energy-security", "commercial-readiness"],
-    "related_questions": ["what-is-uk-space-energy-initiative", "which-countries-research-sbsp", "what-is-sbsp-and-energy-sovereignty", "what-is-sbsp-commercial-readiness-gap"],
-    "related_technology_pages": ["microwave-power-transmission", "phased-array-transmitter-systems", "in-space-assembly-methods", "ground-receiving-infrastructure"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "energy-security",
+      "commercial-readiness"
+    ],
+    "related_questions": [
+      "what-is-uk-space-energy-initiative",
+      "which-countries-research-sbsp",
+      "what-is-sbsp-and-energy-sovereignty",
+      "what-is-sbsp-commercial-readiness-gap"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "phased-array-transmitter-systems",
+      "in-space-assembly-methods",
+      "ground-receiving-infrastructure"
+    ],
     "source_footer": "Based on publicly available UK Space Energy Initiative reports, the Frazer-Nash feasibility study, CASSIOPeiA architecture documentation, and UK government consultation responses. All roadmap references are planning-phase outputs from the initiative, not confirmed government commitments.",
-    "seoTitle": "UK Space Energy Initiative — British SBSP Research and Advocacy",
-    "seoDescription": "The UK Space Energy Initiative is a consortium advancing space-based solar power research and advocacy in Britain, producing the CASSIOPeiA concept and Frazer-Nash feasibility study."
+    "seoTitle": "UK Space Energy Initiative \u2014 British SBSP Research and Advocacy",
+    "seoDescription": "The UK Space Energy Initiative is a consortium advancing space-based solar power research and advocacy in Britain, producing the CASSIOPeiA concept and."
   },
   {
     "id": "china-sbsp-programme",
@@ -190,12 +317,31 @@
     "technology_relationship": "Chinese SBSP research engages with microwave power transmission, phased array transmitter systems, rectenna arrays, large space structure design, in-space assembly, and high-efficiency photovoltaics as primary technology domains. Ground demonstration experiments have tested wireless power beaming at increasing power levels and distances.",
     "feasibility_boundary": "China's SBSP programme has conducted ground demonstrations but has not launched an orbital SBSP demonstration mission as of the knowledge boundary of this reference layer. Published roadmap targets for orbital demonstration represent planning aspirations, not confirmed funded milestones. The gap between ground demonstration and orbital deployment at scale remains the primary feasibility boundary.",
     "claim_boundary": "China's SBSP research represents meaningful technical progress in ground demonstration, but does not represent orbital deployment capability or a near-term operational SBSP system. Roadmap targets are planning references and should not be presented as confirmed commitments. The claim boundary is current ground-demonstration capability, not orbital or operational capability.",
-    "related_glossary_terms": ["space-based-solar-power", "wireless-power-transmission", "microwave-power-beaming", "rectenna", "technology-readiness-level", "energy-sovereignty"],
-    "related_questions": ["what-is-sbsp-and-china", "which-countries-research-sbsp", "what-is-trl-sbsp", "what-is-sbsp-commercial-readiness-gap", "what-is-microwave-vs-laser-beaming"],
-    "related_technology_pages": ["microwave-power-transmission", "phased-array-transmitter-systems", "rectenna-arrays", "high-efficiency-solar-cells", "in-space-assembly-methods"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "rectenna",
+      "technology-readiness-level",
+      "energy-sovereignty"
+    ],
+    "related_questions": [
+      "what-is-sbsp-and-china",
+      "which-countries-research-sbsp",
+      "what-is-trl-sbsp",
+      "what-is-sbsp-commercial-readiness-gap",
+      "what-is-microwave-vs-laser-beaming"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "phased-array-transmitter-systems",
+      "rectenna-arrays",
+      "high-efficiency-solar-cells",
+      "in-space-assembly-methods"
+    ],
     "source_footer": "Based on publicly available Chinese SBSP research publications, international SBSP survey literature citing Chinese programme milestones, and publicly reported programme documentation. Roadmap targets are sourced from published Chinese planning documents and are identified as planning references, not confirmed commitments.",
-    "seoTitle": "China Space-Based Solar Power Programme — SBSP Research and Demonstration",
-    "seoDescription": "China runs one of the world's most active SBSP research and ground demonstration programmes, with national strategic priority status and published orbital roadmap targets."
+    "seoTitle": "China Space-Based Solar Power Programme \u2014 SBSP Research and",
+    "seoDescription": "China runs one of the world's most active SBSP research and ground demonstration programmes, with national strategic priority status and published orbital."
   },
   {
     "id": "meti-sbsp-roadmap",
@@ -212,11 +358,27 @@
     "technology_relationship": "METI roadmap technology targets span microwave power transmission, high-efficiency photovoltaics, large space structure deployment, in-space assembly, and rectenna arrays as primary technology domains requiring coordinated industrial development.",
     "feasibility_boundary": "METI roadmap targets are industrial planning aspirations, not funded programme commitments. The roadmap reflects a desired development trajectory, and individual milestones are contingent on technology advancement, cost reduction, and policy decisions not yet finalised.",
     "claim_boundary": "METI roadmap targets should not be presented as confirmed government commitments or funded programme milestones. They are planning references that represent a desired trajectory, subject to revision. No operational SBSP deployment timeline has been confirmed as a funded government commitment.",
-    "related_glossary_terms": ["space-based-solar-power", "solar-power-satellite", "wireless-power-transmission", "energy-security", "commercial-readiness"],
-    "related_questions": ["what-is-jaxa-ssps", "which-countries-research-sbsp", "what-is-sbsp-commercial-readiness-gap", "what-is-sbsp-economic-challenge"],
-    "related_technology_pages": ["microwave-power-transmission", "high-efficiency-solar-cells", "in-space-assembly-methods", "rectenna-arrays"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "solar-power-satellite",
+      "wireless-power-transmission",
+      "energy-security",
+      "commercial-readiness"
+    ],
+    "related_questions": [
+      "what-is-jaxa-ssps",
+      "which-countries-research-sbsp",
+      "what-is-sbsp-commercial-readiness-gap",
+      "what-is-sbsp-economic-challenge"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "high-efficiency-solar-cells",
+      "in-space-assembly-methods",
+      "rectenna-arrays"
+    ],
     "source_footer": "Based on publicly available METI SBSP roadmap documents, Japanese government energy policy publications, and international SBSP survey literature. Roadmap targets are identified as planning references from METI documents, not confirmed funded commitments.",
-    "seoTitle": "Japan METI SBSP Industry Roadmap — Space Solar Power Industrial Planning",
+    "seoTitle": "Japan METI SBSP Industry Roadmap \u2014 Space Solar Power Industrial",
     "seoDescription": "Japan's METI has developed space solar power industry roadmaps coordinating JAXA research, industrial participation, and long-range deployment planning targets."
   },
   {
@@ -234,12 +396,26 @@
     "technology_relationship": "EU space power concept studies engage with the full SBSP technology spectrum, including solar collection, wireless power transmission, in-space assembly, and ground receiving systems, within the context of European industrial capability assessment.",
     "feasibility_boundary": "EU space power concept studies are pre-decisional policy research activities. No EU-level funded SBSP development programme has been established. All outputs are study-phase inputs to European energy and space policy deliberations.",
     "claim_boundary": "EU-level SBSP concept engagement does not represent a European Union commitment to develop or fund a space-based solar power system. Study outputs are pre-decisional policy research findings, not development mandates.",
-    "related_glossary_terms": ["space-based-solar-power", "energy-security", "technology-readiness-level", "space-solar-power-system"],
-    "related_questions": ["which-countries-research-sbsp", "what-is-esa-solaris", "what-is-sbsp-and-energy-sovereignty", "what-is-strategic-importance-sbsp"],
-    "related_technology_pages": ["microwave-power-transmission", "in-space-assembly-methods", "high-efficiency-solar-cells"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "energy-security",
+      "technology-readiness-level",
+      "space-solar-power-system"
+    ],
+    "related_questions": [
+      "which-countries-research-sbsp",
+      "what-is-esa-solaris",
+      "what-is-sbsp-and-energy-sovereignty",
+      "what-is-strategic-importance-sbsp"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "in-space-assembly-methods",
+      "high-efficiency-solar-cells"
+    ],
     "source_footer": "Based on publicly available European Commission research publications, ESA member state study reports, and EU energy and space policy documents. All study-phase findings are clearly distinguished from development commitments.",
-    "seoTitle": "EU Space Power System Concept Studies — European SBSP Policy Research",
-    "seoDescription": "European Union space power concept studies examine SBSP's potential role in European energy strategy, drawing on Commission and ESA member state research institutions."
+    "seoTitle": "EU Space Power System Concept Studies \u2014 European SBSP Policy Research",
+    "seoDescription": "European Union space power concept studies examine SBSP's potential role in European energy strategy, drawing on Commission and ESA member state research."
   },
   {
     "id": "india-sbsp-national",
@@ -256,12 +432,26 @@
     "technology_relationship": "Indian SBSP research engages with wireless power transmission, high-efficiency solar cells, and launch economics as primary technology domains, with particular relevance given India's developing heavy lift launch capabilities.",
     "feasibility_boundary": "India's SBSP national research activities are study-phase engagements. No funded Indian national SBSP development programme has been publicly confirmed.",
     "claim_boundary": "India's national SBSP research interest does not represent a funded development commitment. Institutional engagement should not be interpreted as a confirmed national programme or near-term deployment plan.",
-    "related_glossary_terms": ["space-based-solar-power", "energy-sovereignty", "remote-power-supply", "technology-readiness-level"],
-    "related_questions": ["which-countries-research-sbsp", "what-is-sbsp-and-energy-sovereignty", "can-sbsp-power-remote-communities", "what-is-trl-sbsp"],
-    "related_technology_pages": ["high-efficiency-solar-cells", "microwave-power-transmission", "heavy-lift-launch-requirements"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "energy-sovereignty",
+      "remote-power-supply",
+      "technology-readiness-level"
+    ],
+    "related_questions": [
+      "which-countries-research-sbsp",
+      "what-is-sbsp-and-energy-sovereignty",
+      "can-sbsp-power-remote-communities",
+      "what-is-trl-sbsp"
+    ],
+    "related_technology_pages": [
+      "high-efficiency-solar-cells",
+      "microwave-power-transmission",
+      "heavy-lift-launch-requirements"
+    ],
     "source_footer": "Based on publicly available Indian research publications, ISRO programme documentation, and international SBSP survey literature. No classified or non-public programme information is referenced.",
-    "seoTitle": "India National Space Solar Power Research — SBSP Policy and Study Activities",
-    "seoDescription": "India's national SBSP research interest spans ISRO technical studies and national energy research bodies, reflecting India's energy security and space programme ambitions."
+    "seoTitle": "India National Space Solar Power Research \u2014 SBSP Policy and Study",
+    "seoDescription": "India's national SBSP research interest spans ISRO technical studies and national energy research bodies, reflecting India's energy security and space."
   },
   {
     "id": "cassiopeia-concept",
@@ -278,12 +468,28 @@
     "technology_relationship": "CASSIOPeiA's architecture concept engages directly with phased array transmitter systems, modular spacecraft architecture, power conversion and conditioning, and solar array structural design as primary technology domains. Its distinctive geometry creates unique requirements for beam steering and distributed power electronics.",
     "feasibility_boundary": "CASSIOPeiA is a design concept at study phase. No funded development programme or orbital demonstration mission has been committed. The concept's feasibility remains subject to analysis of manufacturing, deployment, and in-space operational challenges not yet fully resolved.",
     "claim_boundary": "CASSIOPeiA should be presented as an innovative architectural concept at study phase, not as a validated design ready for development. Its study-phase analysis has produced promising conceptual results, but full feasibility demonstration requires development-phase investment not yet committed.",
-    "related_glossary_terms": ["solar-power-satellite", "phased-array-transmitter", "modular-solar-power-satellite", "beam-steering", "wireless-power-transmission"],
-    "related_questions": ["what-is-uk-space-energy-initiative", "what-are-the-three-sbsp-subsystems", "what-is-phased-array-transmitter-sbsp", "how-does-beam-steering-work-sbsp"],
-    "related_technology_pages": ["phased-array-transmitter-systems", "modular-spacecraft-architecture", "power-conversion-and-conditioning", "solar-array-structural-design"],
+    "related_glossary_terms": [
+      "solar-power-satellite",
+      "phased-array-transmitter",
+      "modular-solar-power-satellite",
+      "beam-steering",
+      "wireless-power-transmission"
+    ],
+    "related_questions": [
+      "what-is-uk-space-energy-initiative",
+      "what-are-the-three-sbsp-subsystems",
+      "what-is-phased-array-transmitter-sbsp",
+      "how-does-beam-steering-work-sbsp"
+    ],
+    "related_technology_pages": [
+      "phased-array-transmitter-systems",
+      "modular-spacecraft-architecture",
+      "power-conversion-and-conditioning",
+      "solar-array-structural-design"
+    ],
     "source_footer": "Based on publicly available CASSIOPeiA architecture documentation, UK Space Energy Initiative publications, Frazer-Nash feasibility study references, and international conference presentations by the concept's developers.",
-    "seoTitle": "CASSIOPeiA SBSP Architecture — UK Space Solar Power Concept Design",
-    "seoDescription": "CASSIOPeiA is a distinctive non-tracking spherical SBSP satellite architecture concept from the UK, using distributed photovoltaics and phased array microwave transmission."
+    "seoTitle": "CASSIOPeiA SBSP Architecture \u2014 UK Space Solar Power Concept Design",
+    "seoDescription": "CASSIOPeiA is a distinctive non-tracking spherical SBSP satellite architecture concept from the UK, using distributed photovoltaics and phased array."
   },
   {
     "id": "frazer-nash-sbsp-study",
@@ -300,12 +506,29 @@
     "technology_relationship": "The Frazer-Nash study assessed all major SBSP technology subsystems, including high-efficiency solar cells, microwave power transmission, phased array transmitters, in-space assembly, modular spacecraft architecture, and ground receiving infrastructure, with TRL assessments for each subsystem.",
     "feasibility_boundary": "The Frazer-Nash study concluded that SBSP is technically feasible in principle at TRL levels of individual subsystems, but that system-level integration and demonstration at scale has not been achieved. Economic feasibility requires cost reductions not yet demonstrated.",
     "claim_boundary": "The Frazer-Nash study should be cited as a feasibility assessment, not as confirmation that SBSP is economically viable or ready for development commitment. Its conclusions identify substantial remaining technology and cost challenges and should not be selectively cited to suggest readiness beyond what the study itself concludes.",
-    "related_glossary_terms": ["space-based-solar-power", "technology-readiness-level", "commercial-readiness", "wireless-power-transmission", "launch-economics"],
-    "related_questions": ["what-is-uk-space-energy-initiative", "what-is-trl-sbsp", "what-is-sbsp-commercial-readiness-gap", "what-is-sbsp-economic-challenge"],
-    "related_technology_pages": ["microwave-power-transmission", "high-efficiency-solar-cells", "phased-array-transmitter-systems", "in-space-assembly-methods", "ground-receiving-infrastructure"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "technology-readiness-level",
+      "commercial-readiness",
+      "wireless-power-transmission",
+      "launch-economics"
+    ],
+    "related_questions": [
+      "what-is-uk-space-energy-initiative",
+      "what-is-trl-sbsp",
+      "what-is-sbsp-commercial-readiness-gap",
+      "what-is-sbsp-economic-challenge"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "high-efficiency-solar-cells",
+      "phased-array-transmitter-systems",
+      "in-space-assembly-methods",
+      "ground-receiving-infrastructure"
+    ],
     "source_footer": "Based on the publicly available Frazer-Nash Consultancy Space Solar Power feasibility study, commissioned by the UK government and publicly released. All citations accurately represent the study's published conclusions and do not selectively overstate readiness findings.",
-    "seoTitle": "Frazer-Nash SBSP Feasibility Study — UK Space Solar Power Assessment",
-    "seoDescription": "The Frazer-Nash feasibility study is the UK government's comprehensive SBSP technical and economic assessment, a primary reference for international space solar power policy."
+    "seoTitle": "Frazer-Nash SBSP Feasibility Study \u2014 UK Space Solar Power Assessment",
+    "seoDescription": "The Frazer-Nash feasibility study is the UK government's comprehensive SBSP technical and economic assessment, a primary reference for international space."
   },
   {
     "id": "afrl-sbsp",
@@ -322,12 +545,28 @@
     "technology_relationship": "AFRL SBSP research engages directly with phased array transmitter systems, high-efficiency solar cells, power conversion and conditioning, and microwave power transmission as primary technology domains. AFRL's SSPIDR programme (in partnership with Northrop Grumman) represents the highest-profile US defense-linked SBSP technology demonstration effort.",
     "feasibility_boundary": "AFRL research operates at component and subsystem technology demonstration level. No AFRL-led orbital SBSP system deployment has been planned or funded. Research outputs demonstrate component-level feasibility, not system-level operational capability.",
     "claim_boundary": "AFRL research demonstrates progress in SBSP-relevant technology components but does not demonstrate a complete operational SBSP system. Defense research investment in SBSP-related technologies should not be interpreted as a US military commitment to deploy space-based solar power.",
-    "related_glossary_terms": ["wireless-power-transmission", "microwave-power-beaming", "defense-energy-resilience", "phased-array-transmitter", "technology-readiness-level"],
-    "related_questions": ["what-is-sbsp-and-defense", "what-is-defense-energy-resilience-sbsp", "what-is-trl-sbsp", "what-is-phased-array-transmitter-sbsp"],
-    "related_technology_pages": ["phased-array-transmitter-systems", "microwave-power-transmission", "high-efficiency-solar-cells", "power-conversion-and-conditioning"],
+    "related_glossary_terms": [
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "defense-energy-resilience",
+      "phased-array-transmitter",
+      "technology-readiness-level"
+    ],
+    "related_questions": [
+      "what-is-sbsp-and-defense",
+      "what-is-defense-energy-resilience-sbsp",
+      "what-is-trl-sbsp",
+      "what-is-phased-array-transmitter-sbsp"
+    ],
+    "related_technology_pages": [
+      "phased-array-transmitter-systems",
+      "microwave-power-transmission",
+      "high-efficiency-solar-cells",
+      "power-conversion-and-conditioning"
+    ],
     "source_footer": "Based on publicly available AFRL research publications, DARPA programme references, US defense energy strategy documents, and publicly reported SSPIDR programme information. No classified defence research is referenced.",
-    "seoTitle": "AFRL Space Solar Power Programme — US Air Force SBSP Research",
-    "seoDescription": "The US Air Force Research Laboratory conducts SBSP-relevant research in wireless power transmission and photovoltaics, with links to defense energy resilience and the SSPIDR programme."
+    "seoTitle": "AFRL Space Solar Power Programme \u2014 US Air Force SBSP Research",
+    "seoDescription": "The US Air Force Research Laboratory conducts SBSP-relevant research in wireless power transmission and photovoltaics, with links to defense energy."
   },
   {
     "id": "northrop-grumman-sspidr",
@@ -344,12 +583,31 @@
     "technology_relationship": "SSPIDR development is directly focused on phased array transmitter systems, modular spacecraft architecture, high-efficiency solar cells, power conversion and conditioning, and microwave power transmission. The modular tile concept is a primary architectural innovation with direct relevance to scalable SBSP system design.",
     "feasibility_boundary": "SSPIDR is a technology demonstration programme at component and prototype scale. Demonstration of modular tile performance at laboratory or orbital scale does not constitute demonstration of a full operational SBSP system. The gap between tile-level demonstration and gigawatt-scale operational deployment remains the primary feasibility boundary.",
     "claim_boundary": "SSPIDR results should be described as technology component demonstrations, not as proof of SBSP commercial or operational feasibility. Successful tile demonstrations advance TRL for specific subsystems but do not resolve system-level integration, mass, cost, and deployment challenges.",
-    "related_glossary_terms": ["wireless-power-transmission", "microwave-power-beaming", "phased-array-transmitter", "modular-solar-power-satellite", "defense-energy-resilience", "technology-readiness-level"],
-    "related_questions": ["what-is-sbsp-and-defense", "what-is-defense-energy-resilience-sbsp", "what-is-phased-array-transmitter-sbsp", "what-is-trl-sbsp", "what-are-the-three-sbsp-subsystems"],
-    "related_technology_pages": ["phased-array-transmitter-systems", "modular-spacecraft-architecture", "high-efficiency-solar-cells", "power-conversion-and-conditioning", "microwave-power-transmission"],
+    "related_glossary_terms": [
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "phased-array-transmitter",
+      "modular-solar-power-satellite",
+      "defense-energy-resilience",
+      "technology-readiness-level"
+    ],
+    "related_questions": [
+      "what-is-sbsp-and-defense",
+      "what-is-defense-energy-resilience-sbsp",
+      "what-is-phased-array-transmitter-sbsp",
+      "what-is-trl-sbsp",
+      "what-are-the-three-sbsp-subsystems"
+    ],
+    "related_technology_pages": [
+      "phased-array-transmitter-systems",
+      "modular-spacecraft-architecture",
+      "high-efficiency-solar-cells",
+      "power-conversion-and-conditioning",
+      "microwave-power-transmission"
+    ],
     "source_footer": "Based on publicly available Northrop Grumman SSPIDR programme announcements, AFRL programme documentation, and publicly reported programme milestone information. No classified programme details are referenced.",
-    "seoTitle": "Northrop Grumman SSPIDR — US Defense SBSP Technology Demonstration",
-    "seoDescription": "Northrop Grumman's SSPIDR programme develops modular photovoltaic and microwave tile technology for space-based wireless power transmission, funded by the US Air Force."
+    "seoTitle": "Northrop Grumman SSPIDR \u2014 US Defense SBSP Technology Demonstration",
+    "seoDescription": "Northrop Grumman's SSPIDR programme develops modular photovoltaic and microwave tile technology for space-based wireless power transmission, funded by the."
   },
   {
     "id": "nrl-wpt",
@@ -366,12 +624,29 @@
     "technology_relationship": "NRL WPT research is directly relevant to microwave power transmission, rectenna arrays, phased array transmitter systems, and power conversion and conditioning as primary technology domains. NRL's historical experiments provide early TRL evidence for these subsystems.",
     "feasibility_boundary": "NRL's historical WPT research demonstrated subsystem-level feasibility at laboratory and outdoor demonstration scale. Demonstrations from this period do not resolve system-level integration, orbital deployment, or cost feasibility for a complete SBSP system.",
     "claim_boundary": "NRL's historical WPT research should be cited as foundational experimental evidence for microwave WPT subsystem feasibility, not as demonstration of complete SBSP system feasibility. Historical demonstrations at kilowatt scale do not imply readiness for gigawatt-scale orbital deployment.",
-    "related_glossary_terms": ["wireless-power-transmission", "microwave-power-beaming", "rectenna", "power-conversion-efficiency", "phased-array-transmitter"],
-    "related_questions": ["what-is-microwave-vs-laser-beaming", "what-is-a-rectenna", "what-is-sbsp-and-defense", "what-is-nasa-1979-study", "what-is-power-conversion-efficiency-sbsp"],
-    "related_technology_pages": ["microwave-power-transmission", "rectenna-arrays", "power-conversion-and-conditioning", "phased-array-transmitter-systems"],
+    "related_glossary_terms": [
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "rectenna",
+      "power-conversion-efficiency",
+      "phased-array-transmitter"
+    ],
+    "related_questions": [
+      "what-is-microwave-vs-laser-beaming",
+      "what-is-a-rectenna",
+      "what-is-sbsp-and-defense",
+      "what-is-nasa-1979-study",
+      "what-is-power-conversion-efficiency-sbsp"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "rectenna-arrays",
+      "power-conversion-and-conditioning",
+      "phased-array-transmitter-systems"
+    ],
     "source_footer": "Based on publicly available NRL research publications, historical WPT demonstration reports, NASA 1979 reference system study citations, and published histories of wireless power transmission research. All historical claims are sourced from the published scientific literature.",
-    "seoTitle": "NRL Wireless Power Transmission — US Naval Research SBSP Foundational Work",
-    "seoDescription": "The US Naval Research Laboratory's historical wireless power transmission research established foundational microwave beaming and rectenna technology evidence cited in SBSP feasibility studies."
+    "seoTitle": "NRL Wireless Power Transmission \u2014 US Naval Research SBSP",
+    "seoDescription": "The US Naval Research Laboratory's historical wireless power transmission research established foundational microwave beaming and rectenna technology."
   },
   {
     "id": "dod-sbsp-energy-logistics",
@@ -388,12 +663,27 @@
     "technology_relationship": "DoD SBSP energy logistics studies engage with wireless power transmission, phased array transmitter systems, power conversion and conditioning, and defense energy resilience as primary technology domains. Near-term applications focus on terrestrial power beaming demonstrations relevant to military operational scenarios.",
     "feasibility_boundary": "DoD SBSP energy logistics studies are strategic planning and technology assessment activities. No DoD orbital SBSP deployment programme has been confirmed. Near-term power beaming demonstrations are at early TRL levels and do not constitute operational capability.",
     "claim_boundary": "DoD interest in SBSP-related technologies should not be presented as a military commitment to deploy space-based solar power. Strategic interest and technology exploration are distinct from programmed acquisition. All DoD SBSP-related activities are at research and study phase.",
-    "related_glossary_terms": ["defense-energy-resilience", "wireless-power-transmission", "strategic-energy-logistics", "mission-critical-power", "space-based-solar-power"],
-    "related_questions": ["what-is-sbsp-and-defense", "what-is-defense-energy-resilience-sbsp", "what-is-strategic-importance-sbsp", "what-is-trl-sbsp"],
-    "related_technology_pages": ["microwave-power-transmission", "phased-array-transmitter-systems", "power-conversion-and-conditioning"],
+    "related_glossary_terms": [
+      "defense-energy-resilience",
+      "wireless-power-transmission",
+      "strategic-energy-logistics",
+      "mission-critical-power",
+      "space-based-solar-power"
+    ],
+    "related_questions": [
+      "what-is-sbsp-and-defense",
+      "what-is-defense-energy-resilience-sbsp",
+      "what-is-strategic-importance-sbsp",
+      "what-is-trl-sbsp"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "phased-array-transmitter-systems",
+      "power-conversion-and-conditioning"
+    ],
     "source_footer": "Based on publicly available DoD energy strategy documents, DARPA programme references, and published defense energy logistics research. No classified defence programme information is referenced.",
-    "seoTitle": "US DoD Space-Based Energy Logistics — Defense SBSP Strategy Studies",
-    "seoDescription": "The US Department of Defense studies space-based solar power and wireless power transmission for defense energy resilience, forward base logistics, and operational sustainability."
+    "seoTitle": "US DoD Space-Based Energy Logistics \u2014 Defense SBSP Strategy Studies",
+    "seoDescription": "The US Department of Defense studies space-based solar power and wireless power transmission for defense energy resilience, forward base logistics, and."
   },
   {
     "id": "caltech-sspp",
@@ -410,12 +700,31 @@
     "technology_relationship": "Caltech SSPP research engages directly with phased array transmitter systems, high-efficiency solar cells, modular spacecraft architecture, power conversion and conditioning, and microwave power transmission. The MAPLE experiment demonstrated the beam steering and wireless power transmission elements of the SBSP transmission subsystem.",
     "feasibility_boundary": "The MAPLE experiment demonstrated wireless power transmission from orbit at milliwatt scale in a controlled research experiment. This demonstration does not establish commercial, operational, or utility-scale wireless power delivery capability. The gap between milliwatt-scale research demonstration and gigawatt-scale operational SBSP remains the defining feasibility boundary.",
     "claim_boundary": "The MAPLE experiment should be described as a proof-of-concept research demonstration of orbital wireless power beaming, not as a demonstration of SBSP commercial viability or operational readiness. Caltech SSPP research advances component and subsystem TRL, not system-level operational capability.",
-    "related_glossary_terms": ["wireless-power-transmission", "microwave-power-beaming", "phased-array-transmitter", "power-conversion-efficiency", "technology-readiness-level", "modular-solar-power-satellite"],
-    "related_questions": ["what-is-caltech-sspp", "what-did-caltech-maple-demonstrate", "what-is-phased-array-transmitter-sbsp", "what-is-trl-sbsp", "what-is-sbsp-commercial-readiness-gap"],
-    "related_technology_pages": ["phased-array-transmitter-systems", "high-efficiency-solar-cells", "modular-spacecraft-architecture", "microwave-power-transmission", "power-conversion-and-conditioning"],
+    "related_glossary_terms": [
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "phased-array-transmitter",
+      "power-conversion-efficiency",
+      "technology-readiness-level",
+      "modular-solar-power-satellite"
+    ],
+    "related_questions": [
+      "what-is-caltech-sspp",
+      "what-did-caltech-maple-demonstrate",
+      "what-is-phased-array-transmitter-sbsp",
+      "what-is-trl-sbsp",
+      "what-is-sbsp-commercial-readiness-gap"
+    ],
+    "related_technology_pages": [
+      "phased-array-transmitter-systems",
+      "high-efficiency-solar-cells",
+      "modular-spacecraft-architecture",
+      "microwave-power-transmission",
+      "power-conversion-and-conditioning"
+    ],
     "source_footer": "Based on publicly available Caltech SSPP research publications, SSPD-1 mission documentation, MAPLE experiment published results, and Caltech public announcements. All capability claims accurately reflect the published scope of the MAPLE demonstration experiment.",
-    "seoTitle": "Caltech Space Solar Power Project — MAPLE Orbital WPT Demonstration",
-    "seoDescription": "Caltech's Space Solar Power Project demonstrated wireless power transmission from orbit in 2023 via the MAPLE experiment aboard the SSPD-1 satellite, a research proof-of-concept."
+    "seoTitle": "Caltech Space Solar Power Project \u2014 MAPLE Orbital WPT Demonstration",
+    "seoDescription": "Caltech's Space Solar Power Project demonstrated wireless power transmission from orbit in 2023 via the MAPLE experiment aboard the SSPD-1 satellite, a."
   },
   {
     "id": "mit-sbsp-research",
@@ -432,12 +741,28 @@
     "technology_relationship": "MIT SBSP research engages with high-efficiency solar cells, launch economics, power conversion and conditioning, and system-level architecture analysis as primary research domains. MIT's strength in power electronics and systems analysis is particularly relevant to SBSP subsystem efficiency research.",
     "feasibility_boundary": "MIT's SBSP research is academic analysis, not a funded development programme. MIT does not operate an SBSP development facility or demonstration programme. All outputs are analytical and modelling-based assessments.",
     "claim_boundary": "MIT's SBSP research outputs should be cited as independent academic analysis of SBSP feasibility and economics. They represent analytical findings from research, not programme commitments or technology demonstrations.",
-    "related_glossary_terms": ["space-based-solar-power", "technology-readiness-level", "launch-economics", "commercial-readiness", "power-conversion-efficiency"],
-    "related_questions": ["what-is-sbsp-economic-challenge", "what-is-sbsp-commercial-readiness-gap", "what-is-trl-sbsp", "what-is-launch-economics-sbsp", "sbsp-vs-terrestrial-solar"],
-    "related_technology_pages": ["high-efficiency-solar-cells", "power-conversion-and-conditioning", "heavy-lift-launch-requirements"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "technology-readiness-level",
+      "launch-economics",
+      "commercial-readiness",
+      "power-conversion-efficiency"
+    ],
+    "related_questions": [
+      "what-is-sbsp-economic-challenge",
+      "what-is-sbsp-commercial-readiness-gap",
+      "what-is-trl-sbsp",
+      "what-is-launch-economics-sbsp",
+      "sbsp-vs-terrestrial-solar"
+    ],
+    "related_technology_pages": [
+      "high-efficiency-solar-cells",
+      "power-conversion-and-conditioning",
+      "heavy-lift-launch-requirements"
+    ],
     "source_footer": "Based on publicly available MIT Energy Initiative publications, MIT researcher publications on SBSP economics and system analysis, and MIT academic conference contributions. All findings reflect published academic research outputs.",
-    "seoTitle": "MIT Space Solar Power Research — Energy Initiative SBSP Analysis",
-    "seoDescription": "MIT's Energy Initiative contributes techno-economic feasibility analysis and technology assessment to the global academic knowledge base on space-based solar power."
+    "seoTitle": "MIT Space Solar Power Research \u2014 Energy Initiative SBSP Analysis",
+    "seoDescription": "MIT's Energy Initiative contributes techno-economic feasibility analysis and technology assessment to the global academic knowledge base on space-based."
   },
   {
     "id": "kyushu-university-sbsp",
@@ -454,12 +779,27 @@
     "technology_relationship": "Kyushu University SBSP research engages with microwave power transmission, phased array transmitter systems, beam control, and power conversion and conditioning as primary technology research domains.",
     "feasibility_boundary": "Kyushu University's SBSP research is academic research at laboratory scale. It does not constitute a development programme or demonstration of operational capability.",
     "claim_boundary": "Kyushu University research outputs should be cited as academic research contributions to SBSP technology knowledge. They represent research-phase findings, not development commitments or demonstrations of operational capability.",
-    "related_glossary_terms": ["wireless-power-transmission", "microwave-power-beaming", "phased-array-transmitter", "beam-control", "technology-readiness-level"],
-    "related_questions": ["what-is-jaxa-ssps", "which-countries-research-sbsp", "what-is-microwave-vs-laser-beaming", "how-does-beam-steering-work-sbsp"],
-    "related_technology_pages": ["microwave-power-transmission", "phased-array-transmitter-systems", "power-conversion-and-conditioning"],
+    "related_glossary_terms": [
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "phased-array-transmitter",
+      "beam-control",
+      "technology-readiness-level"
+    ],
+    "related_questions": [
+      "what-is-jaxa-ssps",
+      "which-countries-research-sbsp",
+      "what-is-microwave-vs-laser-beaming",
+      "how-does-beam-steering-work-sbsp"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "phased-array-transmitter-systems",
+      "power-conversion-and-conditioning"
+    ],
     "source_footer": "Based on publicly available Kyushu University research publications, JAXA collaboration references, and international SBSP academic literature. All research-phase findings are clearly distinguished from development capabilities.",
-    "seoTitle": "Kyushu University SBSP Research — Japan Space Solar Power Academic Programme",
-    "seoDescription": "Kyushu University is a key contributor to Japan's SBSP academic research ecosystem, advancing wireless power transmission and microwave beaming technology within the JAXA framework."
+    "seoTitle": "Kyushu University SBSP Research \u2014 Japan Space Solar Power Academic",
+    "seoDescription": "Kyushu University is a key contributor to Japan's SBSP academic research ecosystem, advancing wireless power transmission and microwave beaming technology."
   },
   {
     "id": "cambridge-sbsp",
@@ -476,12 +816,27 @@
     "technology_relationship": "Cambridge SBSP research engages with large space structure dynamics, solar array structural design, power conversion and conditioning, and spacecraft thermal control as primary technology domains relevant to Cambridge's engineering research strengths.",
     "feasibility_boundary": "Cambridge SBSP contributions are academic research and analysis. No Cambridge-led SBSP development programme or demonstration facility exists.",
     "claim_boundary": "Cambridge SBSP contributions should be cited as academic research inputs to the UK SBSP feasibility knowledge base, not as development commitments or demonstrations of operational capability.",
-    "related_glossary_terms": ["space-based-solar-power", "technology-readiness-level", "space-solar-power-system", "energy-security"],
-    "related_questions": ["what-is-uk-space-energy-initiative", "which-countries-research-sbsp", "what-are-the-three-sbsp-subsystems", "what-is-trl-sbsp"],
-    "related_technology_pages": ["large-space-structure-dynamics", "solar-array-structural-design", "power-conversion-and-conditioning", "spacecraft-thermal-control"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "technology-readiness-level",
+      "space-solar-power-system",
+      "energy-security"
+    ],
+    "related_questions": [
+      "what-is-uk-space-energy-initiative",
+      "which-countries-research-sbsp",
+      "what-are-the-three-sbsp-subsystems",
+      "what-is-trl-sbsp"
+    ],
+    "related_technology_pages": [
+      "large-space-structure-dynamics",
+      "solar-array-structural-design",
+      "power-conversion-and-conditioning",
+      "spacecraft-thermal-control"
+    ],
     "source_footer": "Based on publicly available University of Cambridge research publications, UK Space Energy Initiative academic participation references, and published UK SBSP study documentation. All research-phase outputs are clearly distinguished from development commitments.",
-    "seoTitle": "Cambridge University SBSP Research — UK Space Solar Power Academic Contributions",
-    "seoDescription": "The University of Cambridge contributes to UK space-based solar power research through technical analysis of large space structures, power systems, and SBSP architecture assessment."
+    "seoTitle": "Cambridge University SBSP Research \u2014 UK Space Solar Power Academic",
+    "seoDescription": "The University of Cambridge contributes to UK space-based solar power research through technical analysis of large space structures, power systems, and SBSP."
   },
   {
     "id": "tsinghua-sbsp",
@@ -498,12 +853,28 @@
     "technology_relationship": "Tsinghua SBSP research engages with microwave power transmission, large space structure dynamics, phased array transmitter systems, and in-space assembly as primary technology research domains.",
     "feasibility_boundary": "Tsinghua's SBSP research is academic research, not a development programme. Research outputs contribute to the Chinese national SBSP knowledge base but do not constitute development capability.",
     "claim_boundary": "Tsinghua SBSP research should be cited as academic research contributions within China's national SBSP research framework, not as development milestones or operational capability demonstrations.",
-    "related_glossary_terms": ["space-based-solar-power", "wireless-power-transmission", "microwave-power-beaming", "technology-readiness-level", "large-space-structure-dynamics"],
-    "related_questions": ["what-is-sbsp-and-china", "which-countries-research-sbsp", "what-is-trl-sbsp", "what-is-orbital-assembly-sbsp"],
-    "related_technology_pages": ["microwave-power-transmission", "large-space-structure-dynamics", "phased-array-transmitter-systems", "in-space-assembly-methods"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "technology-readiness-level",
+      "mass-to-orbit"
+    ],
+    "related_questions": [
+      "what-is-sbsp-and-china",
+      "which-countries-research-sbsp",
+      "what-is-trl-sbsp",
+      "what-is-orbital-assembly-sbsp"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "large-space-structure-dynamics",
+      "phased-array-transmitter-systems",
+      "in-space-assembly-methods"
+    ],
     "source_footer": "Based on publicly available Tsinghua University research publications, international SBSP literature citing Chinese academic contributions, and Chinese national SBSP programme survey references. All research outputs are clearly identified as academic findings.",
-    "seoTitle": "Tsinghua University SBSP Research — China Space Solar Power Academic Programme",
-    "seoDescription": "Tsinghua University is a leading academic contributor to China's national space-based solar power research programme, publishing on SBSP architecture and wireless power transmission."
+    "seoTitle": "Tsinghua University SBSP Research \u2014 China Space Solar Power",
+    "seoDescription": "Tsinghua University is a leading academic contributor to China's national space-based solar power research programme, publishing on SBSP architecture and."
   },
   {
     "id": "gatech-sbsp",
@@ -520,12 +891,27 @@
     "technology_relationship": "Georgia Tech SBSP research engages with microwave power transmission, phased array transmitter systems, modular spacecraft architecture, and in-space assembly as primary technology domains relevant to the institution's research strengths.",
     "feasibility_boundary": "Georgia Tech's SBSP research activities are academic research and analysis. No Georgia Tech-led SBSP development programme or demonstration facility exists.",
     "claim_boundary": "Georgia Tech SBSP research should be cited as academic research contributions to the US SBSP knowledge base, not as development commitments or demonstrations of operational capability.",
-    "related_glossary_terms": ["space-based-solar-power", "technology-readiness-level", "wireless-power-transmission", "modular-solar-power-satellite"],
-    "related_questions": ["what-is-trl-sbsp", "what-is-sbsp-economic-challenge", "what-are-the-three-sbsp-subsystems", "what-is-orbital-assembly-sbsp"],
-    "related_technology_pages": ["microwave-power-transmission", "phased-array-transmitter-systems", "modular-spacecraft-architecture", "in-space-assembly-methods"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "technology-readiness-level",
+      "wireless-power-transmission",
+      "modular-solar-power-satellite"
+    ],
+    "related_questions": [
+      "what-is-trl-sbsp",
+      "what-is-sbsp-economic-challenge",
+      "what-are-the-three-sbsp-subsystems",
+      "what-is-orbital-assembly-sbsp"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "phased-array-transmitter-systems",
+      "modular-spacecraft-architecture",
+      "in-space-assembly-methods"
+    ],
     "source_footer": "Based on publicly available Georgia Tech research publications, US SBSP academic literature, and published conference contributions from Georgia Tech researchers. All research-phase outputs are clearly distinguished from development commitments.",
-    "seoTitle": "Georgia Tech Space Solar Power Research — US Academic SBSP Studies",
-    "seoDescription": "Georgia Tech contributes systems architecture analysis, microwave power transmission research, and economic assessment to the US academic space-based solar power knowledge base."
+    "seoTitle": "Georgia Tech Space Solar Power Research \u2014 US Academic SBSP Studies",
+    "seoDescription": "Georgia Tech contributes systems architecture analysis, microwave power transmission research, and economic assessment to the US academic space-based solar."
   },
   {
     "id": "ihi-sbsp",
@@ -542,12 +928,27 @@
     "technology_relationship": "IHI SBSP research engages with solar array structural design, large space structure dynamics, in-space assembly, and modular spacecraft architecture as primary technology domains relevant to IHI's industrial engineering capabilities.",
     "feasibility_boundary": "IHI's SBSP activities are at research and participation phase within Japan's national framework. No IHI-led SBSP development programme or funded production commitment has been confirmed.",
     "claim_boundary": "IHI's SBSP engagement should be presented as industrial research participation, not as a development commitment or production capability. IHI's participation contributes to Japanese national SBSP research but does not constitute a programme of record.",
-    "related_glossary_terms": ["space-based-solar-power", "solar-power-satellite-array", "space-industrial-energy", "technology-readiness-level"],
-    "related_questions": ["what-is-jaxa-ssps", "which-countries-research-sbsp", "what-is-in-space-manufacturing-sbsp", "what-is-orbital-assembly-sbsp"],
-    "related_technology_pages": ["solar-array-structural-design", "large-space-structure-dynamics", "in-space-assembly-methods", "modular-spacecraft-architecture"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "solar-power-satellite-array",
+      "space-industrial-energy",
+      "technology-readiness-level"
+    ],
+    "related_questions": [
+      "what-is-jaxa-ssps",
+      "which-countries-research-sbsp",
+      "what-is-in-space-manufacturing-sbsp",
+      "what-is-orbital-assembly-sbsp"
+    ],
+    "related_technology_pages": [
+      "solar-array-structural-design",
+      "large-space-structure-dynamics",
+      "in-space-assembly-methods",
+      "modular-spacecraft-architecture"
+    ],
     "source_footer": "Based on publicly available IHI Corporation announcements, Japanese SBSP industry participation references, and METI and JAXA programme documentation citing IHI involvement. All engagement is described at research and study phase.",
-    "seoTitle": "IHI Corporation SBSP Development — Japan Space Solar Power Industry",
-    "seoDescription": "IHI Corporation participates in Japan's SBSP national research framework, contributing large structure engineering and space systems expertise to Japanese SBSP industrial development."
+    "seoTitle": "IHI Corporation SBSP Development \u2014 Japan Space Solar Power Industry",
+    "seoDescription": "IHI Corporation participates in Japan's SBSP national research framework, contributing large structure engineering and space systems expertise to Japanese."
   },
   {
     "id": "mitsubishi-electric-wpt",
@@ -564,12 +965,28 @@
     "technology_relationship": "Mitsubishi Electric SBSP-relevant research engages directly with phased array transmitter systems, microwave power transmission, beam steering, and power conversion and conditioning as primary technology domains.",
     "feasibility_boundary": "Mitsubishi Electric's WPT research is at laboratory and demonstration scale. Research outputs demonstrate subsystem-level technical progress, not operational SBSP capability. No Mitsubishi Electric SBSP product development programme has been confirmed.",
     "claim_boundary": "Mitsubishi Electric's WPT research should be cited as industry-led technology research contributing to SBSP subsystem TRL advancement, not as development of an operational WPT or SBSP product.",
-    "related_glossary_terms": ["wireless-power-transmission", "microwave-power-beaming", "phased-array-transmitter", "beam-steering", "power-conversion-efficiency"],
-    "related_questions": ["what-is-microwave-vs-laser-beaming", "what-is-phased-array-transmitter-sbsp", "how-does-beam-steering-work-sbsp", "what-is-power-conversion-efficiency-sbsp", "what-is-trl-sbsp"],
-    "related_technology_pages": ["phased-array-transmitter-systems", "microwave-power-transmission", "power-conversion-and-conditioning"],
+    "related_glossary_terms": [
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "phased-array-transmitter",
+      "beam-steering",
+      "power-conversion-efficiency"
+    ],
+    "related_questions": [
+      "what-is-microwave-vs-laser-beaming",
+      "what-is-phased-array-transmitter-sbsp",
+      "how-does-beam-steering-work-sbsp",
+      "what-is-power-conversion-efficiency-sbsp",
+      "what-is-trl-sbsp"
+    ],
+    "related_technology_pages": [
+      "phased-array-transmitter-systems",
+      "microwave-power-transmission",
+      "power-conversion-and-conditioning"
+    ],
     "source_footer": "Based on publicly available Mitsubishi Electric research publications, JAXA programme participation references, and published WPT demonstration reports. All research-phase findings are clearly distinguished from operational product capabilities.",
-    "seoTitle": "Mitsubishi Electric WPT Research — Japan SBSP Microwave Transmission Technology",
-    "seoDescription": "Mitsubishi Electric conducts phased array and microwave wireless power transmission research contributing to Japan's SBSP technology development and TRL advancement."
+    "seoTitle": "Mitsubishi Electric WPT Research \u2014 Japan SBSP Microwave",
+    "seoDescription": "Mitsubishi Electric conducts phased array and microwave wireless power transmission research contributing to Japan's SBSP technology development and TRL."
   },
   {
     "id": "airbus-sbsp",
@@ -586,12 +1003,27 @@
     "technology_relationship": "Airbus SBSP studies engage with large space structure dynamics, solar array structural design, spacecraft thermal control, modular spacecraft architecture, and microwave power transmission as primary technology domains within Airbus's existing industrial capability base.",
     "feasibility_boundary": "Airbus SBSP activities are study and assessment phase. No Airbus SBSP product development programme has been confirmed. Industrial capability assessment is distinct from a development commitment.",
     "claim_boundary": "Airbus SBSP engagement should be presented as industrial study and feasibility assessment, not as a commitment to develop or manufacture an SBSP system. Study-phase industrial engagement does not imply a near-term development decision.",
-    "related_glossary_terms": ["space-based-solar-power", "geostationary-solar-power-platform", "space-solar-power-system", "technology-readiness-level"],
-    "related_questions": ["what-is-esa-solaris", "which-countries-research-sbsp", "what-is-trl-sbsp", "what-is-sbsp-commercial-readiness-gap"],
-    "related_technology_pages": ["large-space-structure-dynamics", "solar-array-structural-design", "spacecraft-thermal-control", "modular-spacecraft-architecture"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "geostationary-solar-power-platform",
+      "space-solar-power-system",
+      "technology-readiness-level"
+    ],
+    "related_questions": [
+      "what-is-esa-solaris",
+      "which-countries-research-sbsp",
+      "what-is-trl-sbsp",
+      "what-is-sbsp-commercial-readiness-gap"
+    ],
+    "related_technology_pages": [
+      "large-space-structure-dynamics",
+      "solar-array-structural-design",
+      "spacecraft-thermal-control",
+      "modular-spacecraft-architecture"
+    ],
     "source_footer": "Based on publicly available Airbus Defence and Space communications, ESA programme documentation referencing Airbus participation, and published European SBSP study reports. All activities are described at study and assessment phase.",
-    "seoTitle": "Airbus Defence and Space SBSP Activities — European Space Solar Power Industry",
-    "seoDescription": "Airbus Defence and Space studies space-based solar power system architectures as Europe's primary large spacecraft manufacturer, contributing industrial perspective to ESA SOLARIS."
+    "seoTitle": "Airbus Defence and Space SBSP Activities \u2014 European Space Solar",
+    "seoDescription": "Airbus Defence and Space studies space-based solar power system architectures as Europe's primary large spacecraft manufacturer, contributing industrial."
   },
   {
     "id": "thales-alenia-sbsp",
@@ -608,12 +1040,27 @@
     "technology_relationship": "Thales Alenia Space SBSP studies engage with modular spacecraft architecture, large space structure dynamics, in-space assembly, spacecraft thermal control, and solar array structural design as primary technology domains within the company's existing industrial capability.",
     "feasibility_boundary": "Thales Alenia Space SBSP activities are concept study and industrial assessment phase. No Thales Alenia Space SBSP product development programme has been confirmed. Industrial concept contributions are distinct from development commitments.",
     "claim_boundary": "Thales Alenia Space SBSP concept contributions should be presented as industrial study-phase inputs, not as development commitments. The company's space station and GEO platform experience is relevant context but does not imply readiness to build an SBSP system.",
-    "related_glossary_terms": ["space-based-solar-power", "modular-solar-power-satellite", "geostationary-solar-power-platform", "space-solar-power-system"],
-    "related_questions": ["what-is-esa-solaris", "which-countries-research-sbsp", "what-is-orbital-assembly-sbsp", "what-is-trl-sbsp"],
-    "related_technology_pages": ["modular-spacecraft-architecture", "large-space-structure-dynamics", "in-space-assembly-methods", "spacecraft-thermal-control"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "modular-solar-power-satellite",
+      "geostationary-solar-power-platform",
+      "space-solar-power-system"
+    ],
+    "related_questions": [
+      "what-is-esa-solaris",
+      "which-countries-research-sbsp",
+      "what-is-orbital-assembly-sbsp",
+      "what-is-trl-sbsp"
+    ],
+    "related_technology_pages": [
+      "modular-spacecraft-architecture",
+      "large-space-structure-dynamics",
+      "in-space-assembly-methods",
+      "spacecraft-thermal-control"
+    ],
     "source_footer": "Based on publicly available Thales Alenia Space communications, ESA programme documentation referencing Thales Alenia participation, and published European SBSP study reports. All activities are described at concept study and assessment phase.",
-    "seoTitle": "Thales Alenia Space SBSP Concepts — European Space Solar Power Industry",
-    "seoDescription": "Thales Alenia Space contributes space systems integration expertise and large structure experience to European space-based solar power concept studies within the ESA SOLARIS framework."
+    "seoTitle": "Thales Alenia Space SBSP Concepts \u2014 European Space Solar Power",
+    "seoDescription": "Thales Alenia Space contributes space systems integration expertise and large structure experience to European space-based solar power concept studies."
   },
   {
     "id": "itu-sbsp-spectrum",
@@ -630,12 +1077,26 @@
     "technology_relationship": "ITU spectrum regulation is most directly relevant to microwave power transmission and phased array transmitter systems as the technology domains whose operational frequency requirements create the regulatory interface with ITU processes.",
     "feasibility_boundary": "No ITU spectrum allocation specifically for SBSP operational power beaming has been established. Spectrum regulatory pathway for SBSP remains to be defined through ITU processes that have not yet been formally initiated for this application.",
     "claim_boundary": "ITU regulatory engagement with SBSP should not be presented as spectrum clearance or regulatory approval for SBSP operations. ITU processes are long-lead regulatory requirements, not endorsements. The absence of established spectrum allocation is a genuine feasibility constraint for operational SBSP deployment.",
-    "related_glossary_terms": ["spectrum-regulation", "microwave-power-beaming", "wireless-power-transmission", "safety-boundary", "public-legitimacy"],
-    "related_questions": ["what-spectrum-does-sbsp-use", "what-is-sbsp-safety", "what-is-public-legitimacy-sbsp", "what-are-the-main-sbsp-constraints"],
-    "related_technology_pages": ["microwave-power-transmission", "phased-array-transmitter-systems"],
+    "related_glossary_terms": [
+      "spectrum-regulation",
+      "microwave-power-beaming",
+      "wireless-power-transmission",
+      "safety-boundary",
+      "public-legitimacy"
+    ],
+    "related_questions": [
+      "what-spectrum-does-sbsp-use",
+      "what-is-sbsp-safety",
+      "what-is-public-legitimacy-sbsp",
+      "what-are-the-main-sbsp-constraints"
+    ],
+    "related_technology_pages": [
+      "microwave-power-transmission",
+      "phased-array-transmitter-systems"
+    ],
     "source_footer": "Based on publicly available ITU Radio Regulations, ITU documentation on frequency allocation processes, and published SBSP research literature addressing regulatory constraints. All regulatory characterisations reflect current ITU processes and publicly documented spectrum allocation status.",
-    "seoTitle": "ITU Spectrum Regulation for SBSP — Space Power Systems Frequency Policy",
-    "seoDescription": "ITU spectrum regulatory frameworks are a critical non-technical constraint for space-based solar power, requiring internationally coordinated frequency allocation for microwave power beaming."
+    "seoTitle": "ITU Spectrum Regulation for SBSP \u2014 Space Power Systems Frequency",
+    "seoDescription": "ITU spectrum regulatory frameworks are a critical non-technical constraint for space-based solar power, requiring internationally coordinated frequency."
   },
   {
     "id": "peter-glaser-1968",
@@ -646,17 +1107,28 @@
     "program_status": "historical_reference",
     "activity_type": "historical_reference",
     "cluster": "historical-foundational",
-    "summary": "Peter Glaser's 1968 proposal, published in Science magazine, is the foundational concept document for space-based solar power. Glaser proposed collecting solar energy in geostationary orbit using large photovoltaic arrays and transmitting the energy to Earth via microwave wireless power transmission to ground-based receiving antennas. The proposal identified the core architectural elements — orbital solar collection, wireless power transmission, and ground reception — that define all subsequent SBSP concepts. Glaser's 1968 paper is the origin point of the SBSP field and is universally cited as the foundational reference in international SBSP research literature. The proposal was conceptual and no technology existed at the time to implement it.",
+    "summary": "Peter Glaser's 1968 proposal, published in Science magazine, is the foundational concept document for space-based solar power. Glaser proposed collecting solar energy in geostationary orbit using large photovoltaic arrays and transmitting the energy to Earth via microwave wireless power transmission to ground-based receiving antennas. The proposal identified the core architectural elements \u2014 orbital solar collection, wireless power transmission, and ground reception \u2014 that define all subsequent SBSP concepts. Glaser's 1968 paper is the origin point of the SBSP field and is universally cited as the foundational reference in international SBSP research literature. The proposal was conceptual and no technology existed at the time to implement it.",
     "institutional_context": "Peter Glaser was a scientist at Arthur D. Little and later associated with the Smithsonian Institution. His 1968 Science paper 'Power from the Sun: Its Future' introduced the satellite solar power station concept and stimulated subsequent US government interest that led to the 1979 NASA reference system study. Glaser's proposal emerged from 1960s thinking about long-range energy solutions and was informed by early space programme achievements that made geostationary orbit a practical operational environment.",
     "sbsp_relevance": "Glaser's 1968 proposal is the essential historical origin of the SBSP field. All subsequent SBSP architectural concepts, feasibility studies, and national programmes trace their intellectual lineage to Glaser's foundational concept. Understanding Glaser's original proposal is necessary for contextualising the subsequent history of SBSP research, including the reasons why the concept attracted NASA study in the 1970s and why it was not pursued further at that time.",
     "technology_relationship": "Glaser's 1968 proposal conceptually identified the three primary technology subsystems of SBSP: solar collection (photovoltaics), wireless power transmission (microwave beaming), and ground reception (rectenna). None of these subsystems existed at operational scale in 1968, and Glaser's proposal was a conceptual forward projection, not an engineering design based on demonstrated technology.",
     "feasibility_boundary": "Glaser's 1968 proposal was a conceptual proposal, not an engineering design or feasibility study. The technologies required for SBSP did not exist at operational scale in 1968 and remain below operational readiness today. The proposal's significance is conceptual and historical, not as evidence of technical feasibility at the time of publication.",
     "claim_boundary": "Glaser's 1968 proposal should be cited as the foundational historical concept for SBSP, not as evidence that SBSP was technically feasible in 1968 or that subsequent progress has resolved the challenges Glaser identified. The proposal identified the concept; it did not validate the technology or the economics.",
-    "related_glossary_terms": ["space-based-solar-power", "solar-power-satellite", "wireless-power-transmission", "geostationary-orbit", "rectenna"],
-    "related_questions": ["what-is-peter-glaser-proposal", "what-is-nasa-1979-study", "why-was-sbsp-not-built-in-1980s", "what-is-space-based-solar-power"],
+    "related_glossary_terms": [
+      "space-based-solar-power",
+      "solar-power-satellite",
+      "wireless-power-transmission",
+      "geostationary-orbit",
+      "rectenna"
+    ],
+    "related_questions": [
+      "what-is-peter-glaser-proposal",
+      "what-is-nasa-1979-study",
+      "why-was-sbsp-not-built-in-1980s",
+      "what-is-space-based-solar-power"
+    ],
     "related_technology_pages": [],
     "source_footer": "Based on Peter Glaser's publicly available 1968 Science paper 'Power from the Sun: Its Future', subsequent historical accounts of SBSP programme history, and the 1979 NASA reference system study's citation of Glaser's foundational work.",
-    "seoTitle": "Peter Glaser 1968 SBSP Proposal — Foundational Space Solar Power Concept",
-    "seoDescription": "Peter Glaser's 1968 Science paper introduced the satellite solar power station concept, establishing the foundational architecture for all subsequent space-based solar power research."
+    "seoTitle": "Peter Glaser 1968 SBSP Proposal \u2014 Foundational Space Solar Power",
+    "seoDescription": "Peter Glaser's 1968 Science paper introduced the satellite solar power station concept, establishing the foundational architecture for all subsequent."
   }
 ]

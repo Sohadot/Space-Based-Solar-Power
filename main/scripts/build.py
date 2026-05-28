@@ -79,7 +79,7 @@ def approved_pages(pages_data: dict) -> list:
 
 def load_seed_data() -> dict:
     """Load all seed data files keyed by ID for fast lookup."""
-    seed = {"glossary": {}, "questions": {}, "programs": {}, "technology": {}}
+    seed = {"glossary": {}, "questions": {}, "programs": {}, "technology": {}, "question_paths": {}}
 
     glossary_path = DATA_DIR / "glossary_terms.json"
     if glossary_path.exists():
@@ -116,6 +116,14 @@ def load_seed_data() -> dict:
         tech_pages = data if isinstance(data, list) else data.get("pages", [])
         for t in tech_pages:
             seed["technology"][t["id"]] = t
+
+    # v1B-D: build question ID → actual page path lookup from pages.json
+    pages_path = DATA_DIR / "pages.json"
+    if pages_path.exists():
+        data = load_json(pages_path)
+        for p in data.get("pages", []):
+            if p.get("type") == "question_answer" and p.get("seedId") and p.get("path"):
+                seed["question_paths"][p["seedId"]] = p["path"]
 
     return seed
 
@@ -522,7 +530,7 @@ def generate_question_html(question: dict, page: dict) -> str:
     return _page_shell(page, h1, body)
 
 
-def generate_program_html(program: dict, page: dict) -> str:
+def generate_program_html(program: dict, page: dict, question_paths: dict | None = None) -> str:
     """Render a program profile page. Handles both program_registry.json and program_pages.json schemas."""
     # Try richer schema fields first (program_pages.json), fall back to registry fields
     h1 = program.get("title", program.get("programName", page["title"]))
@@ -613,10 +621,10 @@ def generate_program_html(program: dict, page: dict) -> str:
             if gpath not in all_links:
                 all_links.append(gpath)
 
-    # Add question links
+    # Add question links (use actual page path from question_paths lookup if available)
     if related_questions:
         for qid in related_questions[:3]:
-            qpath = f"/questions/{qid}/"
+            qpath = (question_paths or {}).get(qid, f"/questions/{qid}/")
             if qpath not in all_links:
                 all_links.append(qpath)
 
@@ -988,7 +996,7 @@ def write_page(page: dict, content: dict | None,
         html = generate_question_html(question, page) if question else generate_html(page, content, approved_paths)
     elif seed_data and seed_source == "program" and seed_id:
         program = seed_data["programs"].get(seed_id)
-        html = generate_program_html(program, page) if program else generate_html(page, content, approved_paths)
+        html = generate_program_html(program, page, seed_data.get("question_paths")) if program else generate_html(page, content, approved_paths)
     elif seed_data and seed_source == "glossary_hub":
         html = generate_glossary_hub_html(page, seed_data, trial_manifest)
     elif seed_data and seed_source == "questions_hub":
