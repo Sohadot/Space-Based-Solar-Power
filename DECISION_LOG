@@ -1,3 +1,43 @@
+## [V1B-DL-008] - 2026-05-28: v1B-D Global Programs & Institutional Activity Expansion Initiated
+
+**Status:** INITIATED
+
+**Context:** Sprint v1B-C was merged, deployed, live-verified, and V1B-DL-007 was recorded. Sprint v1B-D begins the Global Programs & Institutional Activity Expansion layer for Space-Based-Solar-Power.com. The previous sprint established 5 published program profiles. This sprint expands the /global-programs/ reference layer to 30 governed program profiles across 6 institutional clusters.
+
+**Decisions:**
+
+1. Expand program data layer from program_registry.json (10 entries, 5 published) to a new governed program_pages.json with 30 entries using a richer institutional intelligence schema.
+2. Create V1B_PROGRAMS_EXPANSION_PLAN.md as the governing sprint plan document.
+3. Create main/data/publication_v1b_d.json inheriting v1B-A/B/C content and adding 30 program IDs.
+4. Add 25 new program page entries to main/data/pages.json, bringing approved pages from 152 to 177.
+5. Update main/data/internal_link_graph.json to strengthen global-programs hub rules (maxOutboundLinks: 200), add programClusterRules governance, and strengthen program_profile page type rules.
+6. Update main/scripts/build.py: add program cluster order constants, upgrade generate_programs_hub_html with cluster grouping, status panel, expansion note, cluster jump navigation, and source footer; update generate_program_html to handle richer program_pages.json schema; update load_seed_data to merge program_pages.json into seed.
+7. Create main/scripts/validate_programs.py as the 14th quality gate validator.
+8. Update main/scripts/quality_gate.py to 14 validators (adding validate_programs.py).
+9. Update main/static/css/main.css with program hub cluster styling.
+
+**Program Clusters Defined:**
+- national-space-agency: ESA SOLARIS, JAXA SSPS, NASA SBSP Revisit, ISRO, DLR, KARI, CNES (7 entries)
+- national-research-program: UK SEI, China SBSP, METI Japan, EU SPS, India National, CASSIOPeiA, Frazer-Nash (7 entries)
+- defense-military: AFRL SBSP, Northrop Grumman SSPIDR, NRL WPT, DoD Energy Logistics (4 entries)
+- academic-university: Caltech SSPP, MIT, Kyushu University, Cambridge, Tsinghua, Georgia Tech (6 entries)
+- industry-consortium: IHI Corporation, Mitsubishi Electric, Airbus, Thales Alenia, ITU (5 entries)
+- historical-foundational: Peter Glaser 1968 Proposal (1 entry)
+
+**Claim Boundary Posture:** All 30 program entries carry conservative claim boundaries. No entry claims SBSP is commercially deployed, operational at utility scale, or proven as a full infrastructure system. Timeline claims from program roadmaps are explicitly identified as planning targets or conditional milestones.
+
+**Constraints:**
+- v1B-E remains blocked until v1B-D is merged, deployed, live-verified, and V1B-DL-009 is recorded.
+- Google Search Console submission remains blocked.
+- WebGL remains blocked.
+- JavaScript-dependent interface changes remain blocked.
+- Manual public/ patching remains blocked.
+- Weakening validators remains blocked.
+
+**Branch:** claude/v1b-d-programs-expansion-cm4aq
+
+---
+
 ## [V1B-DL-007] - 2026-05-28: v1B-C Technology Reference Expansion Live Verification Approved
 
 **Status:** APPROVED
