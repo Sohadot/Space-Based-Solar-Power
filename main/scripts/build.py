@@ -294,6 +294,32 @@ def _render_constraint_preview(approved_paths: set) -> str:
     return "\n".join(parts)
 
 
+def _render_glossary_expansion_module(page: dict, approved_paths: set) -> str:
+    if page.get("path", "") != "/":
+        return ""
+    glossary_link = "/glossary/"
+    if glossary_link not in approved_paths:
+        return ""
+    parts = ['<div class="glossary-expansion-module">']
+    parts.append('  <div class="glossary-expansion-header">')
+    parts.append('    <span class="glossary-expansion-eyebrow">v1B — Reference Layer Expansion</span>')
+    parts.append('    <h2 class="glossary-expansion-title">Glossary Source Layer Expanded</h2>')
+    parts.append('  </div>')
+    parts.append('  <p class="glossary-expansion-desc">The SBSP Glossary has expanded from its initial publication trial into the first v1B source layer: 53 governed terms across 5 source clusters. Definitions are source-bound, claim-boundary controlled, and internally linked to the reference infrastructure.</p>')
+    parts.append('  <div class="glossary-expansion-stats">')
+    parts.append('    <div class="glossary-expansion-stat"><span class="glossary-expansion-stat-value">53</span><span class="glossary-expansion-stat-label">governed terms</span></div>')
+    parts.append('    <div class="glossary-expansion-stat"><span class="glossary-expansion-stat-value">5</span><span class="glossary-expansion-stat-label">source clusters</span></div>')
+    parts.append('    <div class="glossary-expansion-stat"><span class="glossary-expansion-stat-value">11</span><span class="glossary-expansion-stat-label">quality validators</span></div>')
+    parts.append('  </div>')
+    parts.append('  <div class="glossary-expansion-clusters">')
+    for _, label in CLUSTER_ORDER:
+        parts.append(f'    <span class="glossary-expansion-cluster-tag">{_escape_html(label)}</span>')
+    parts.append('  </div>')
+    parts.append(f'  <a href="{glossary_link}" class="glossary-expansion-cta">Browse the expanded glossary</a>')
+    parts.append('</div>')
+    return "\n".join(parts)
+
+
 def _render_source_trust_block(approved_paths: set) -> str:
     methodology_link = "/methodology/"
     sources_link = "/sources/"
@@ -339,6 +365,7 @@ def generate_home_html(page: dict, content: dict, approved_paths: set) -> str:
 
     telemetry_html = _render_telemetry_panel()
     atlas_html = _render_ref_atlas_grid(internal_links, approved_paths)
+    expansion_html = _render_glossary_expansion_module(page, approved_paths)
     constraint_html = _render_constraint_preview(approved_paths)
     trust_html = _render_source_trust_block(approved_paths)
     sections_html = render_content_sections_html(sections, approved_paths)
@@ -371,6 +398,7 @@ def generate_home_html(page: dict, content: dict, approved_paths: set) -> str:
     {hero_html}
     {telemetry_html}
     {atlas_html}
+    {expansion_html}
     {constraint_html}
     {trust_html}
     {sections_html}
@@ -505,14 +533,43 @@ def generate_glossary_hub_html(page: dict, seed_data: dict, trial_manifest: dict
             continue
         cluster = term.get("cluster", "core-infrastructure")
         terms_by_cluster.setdefault(cluster, []).append(term)
+    total_terms = sum(len(v) for v in terms_by_cluster.values())
+    active_clusters = [cid for cid, _ in CLUSTER_ORDER if terms_by_cluster.get(cid)]
+
     parts = []
     if description:
         parts.append(f'<p class="hub-intro">{description}</p>')
+
+    # Status panel
+    parts.append('<div class="glossary-status-panel">')
+    parts.append('  <div class="glossary-status-stat"><span class="glossary-status-value">{}</span><span class="glossary-status-label">governed terms</span></div>'.format(total_terms))
+    parts.append('  <div class="glossary-status-stat"><span class="glossary-status-value">{}</span><span class="glossary-status-label">source clusters</span></div>'.format(len(active_clusters)))
+    parts.append('  <div class="glossary-status-stat"><span class="glossary-status-value">Yes</span><span class="glossary-status-label">source-bound definitions</span></div>')
+    parts.append('  <div class="glossary-status-stat"><span class="glossary-status-value">Yes</span><span class="glossary-status-label">claim-boundary controlled</span></div>')
+    parts.append('</div>')
+
+    # Expansion note
+    parts.append('<div class="glossary-expansion-note">')
+    parts.append('  This glossary has expanded from the initial publication trial layer into the first v1B source layer. Terms are governed by definition, claim boundary, related terms, page links, and source and methodology discipline.')
+    parts.append('</div>')
+
+    # Cluster jump index
+    parts.append('<nav class="glossary-cluster-jump" aria-label="Jump to cluster">')
+    parts.append('  <span class="glossary-cluster-jump-label">Jump to</span>')
+    for cluster_id, cluster_label in CLUSTER_ORDER:
+        if not terms_by_cluster.get(cluster_id):
+            continue
+        anchor = f"cluster-{cluster_id}"
+        parts.append(f'  <a href="#{anchor}" class="glossary-cluster-jump-link">{_escape_html(cluster_label)}</a>')
+    parts.append('</nav>')
+
+    # Cluster sections
     for cluster_id, cluster_label in CLUSTER_ORDER:
         terms = terms_by_cluster.get(cluster_id, [])
         if not terms:
             continue
-        parts.append('<div class="hub-cluster">')
+        anchor = f"cluster-{cluster_id}"
+        parts.append(f'<div class="hub-cluster" id="{anchor}">')
         parts.append(f'  <h2 class="hub-cluster-label">{_escape_html(cluster_label)}</h2>')
         parts.append('  <ul class="glossary-index">')
         for term in terms:
@@ -526,6 +583,7 @@ def generate_glossary_hub_html(page: dict, seed_data: dict, trial_manifest: dict
             parts.append(entry)
         parts.append("  </ul>")
         parts.append("</div>")
+
     body = "\n".join(parts) + "\n" + _render_hub_source_footer()
     return _page_shell(page, h1, body)
 

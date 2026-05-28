@@ -1,3 +1,32 @@
+## [V1B-DL-002] - 2026-05-28: Glossary Expansion Surface Correction
+
+**Status:** APPROVED
+
+**Context:** Sprint v1B-A was technically successful (82 pages generated, 11/11 quality gate pass, 53 governed terms across 5 clusters), but the user-facing surface did not make the expansion visible or legible. The homepage appeared unchanged and /glossary/ opened without any signal that a significant expansion had occurred. This surface correction makes the expansion visible before any Google Search Console submission.
+
+**Authorized Changes:**
+
+1. Added `_render_glossary_expansion_module()` to the homepage: title "Glossary Source Layer Expanded", three stats (53 terms, 5 clusters, 11 validators), the 5 cluster names as tags, and a direct link to /glossary/. Rendered via `build.py`, not manually patched.
+2. Upgraded `/glossary/` top section with a status panel (53 terms, 5 clusters, source-bound, claim-boundary controlled) above the first cluster.
+3. Added a cluster jump/index nav before the cluster sections, anchored by cluster ID.
+4. Added an expansion note: "This glossary has expanded from the initial publication trial layer into the first v1B source layer."
+5. Added cluster IDs as anchor targets (`id="cluster-{cluster_id}"`) for in-page navigation.
+6. Added CSS for all new elements: `.glossary-expansion-module`, `.glossary-status-panel`, `.glossary-expansion-note`, `.glossary-cluster-jump`.
+
+**Claim Governance:** No new claims were added. All new UI copy is descriptive metadata about the reference layer, not claims about SBSP technology.
+
+**Blocked Actions (unchanged):**
+
+- Google Search Console submission: BLOCKED until explicitly authorized after staged v1B verification.
+- WebGL or JavaScript-dependent interface changes: BLOCKED.
+- Manual patching of `public/`: BLOCKED.
+- Weakening or bypassing any validator: BLOCKED.
+- v1B-B Questions Expansion: BLOCKED until this surface correction is merged and live verified.
+
+**Quality Gate Result:** 11/11 PASS
+
+---
+
 ## [V1B-DL-001] - 2026-05-28: v1B-A Glossary Source Expansion Initiated
 
 **Status:** APPROVED
