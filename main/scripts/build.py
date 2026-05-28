@@ -294,7 +294,9 @@ def _render_constraint_preview(approved_paths: set) -> str:
     return "\n".join(parts)
 
 
-def _render_glossary_expansion_module(approved_paths: set) -> str:
+def _render_glossary_expansion_module(page: dict, approved_paths: set) -> str:
+    if page.get("path", "") != "/":
+        return ""
     glossary_link = "/glossary/"
     if glossary_link not in approved_paths:
         return ""
@@ -363,7 +365,7 @@ def generate_home_html(page: dict, content: dict, approved_paths: set) -> str:
 
     telemetry_html = _render_telemetry_panel()
     atlas_html = _render_ref_atlas_grid(internal_links, approved_paths)
-    expansion_html = _render_glossary_expansion_module(approved_paths)
+    expansion_html = _render_glossary_expansion_module(page, approved_paths)
     constraint_html = _render_constraint_preview(approved_paths)
     trust_html = _render_source_trust_block(approved_paths)
     sections_html = render_content_sections_html(sections, approved_paths)
