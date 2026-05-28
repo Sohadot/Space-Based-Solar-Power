@@ -1,3 +1,36 @@
+## [V1B-DL-004] - 2026-05-28: v1B-B Questions Reference Expansion Initiated
+
+**Status:** APPROVED
+
+**Context:** Sprint v1B-B expands the governed Q&A reference layer from 8 published questions to 56 published questions across 7 question clusters. The expansion follows the governance plan in `V1B_QUESTIONS_EXPANSION_PLAN.md`. The quality gate has been extended to 12 validators by adding `validate_questions.py`. All 56 questions carry substantive answers, answerBoundary, ≥2 relatedQuestions, and ≥2 pageLinks. The questions hub has been upgraded with a status panel, expansion note, and cluster jump navigation grouped by cluster.
+
+**Authorized Actions:**
+
+1. Expand `question_bank.json` to 56 total questions (26 existing + 30 new, all with `cluster` field and `category` field).
+2. Add 48 new `approved_for_launch` question page entries in `pages.json` with `phase: "v1b_b"`.
+3. Create `publication_v1b_b.json` listing all 56 publication-eligible question IDs and inheriting 53 glossary terms from v1B-A.
+4. Update `build.py`: add `QUESTION_CLUSTER_ORDER`, update `load_trial_manifest()` to prefer v1B-B manifest, rewrite `generate_questions_hub_html()` to group by cluster with status panel and jump nav.
+5. Add CSS for `.questions-status-panel`, `.questions-expansion-note`, `.questions-cluster-jump`.
+6. Add `validate_questions.py` as the 12th quality gate validator.
+7. Regenerate public output (130 pages: 82 existing + 48 new question pages).
+
+**Claim Governance:**
+
+No question in the v1B-B expansion asserts that SBSP is commercially deployed, operational, or proven at scale. Every question carries an `answerBoundary` explicitly separating established knowledge from unproven commercial viability. The 12-validator quality gate enforces this constraint.
+
+**Blocked Actions (unchanged):**
+
+- Google Search Console submission: BLOCKED until explicitly authorized.
+- WebGL or JavaScript-dependent interface changes: BLOCKED.
+- Manual patching of `public/`: BLOCKED.
+- Weakening or bypassing any validator: BLOCKED.
+
+**Quality Gate Result:** 12/12 PASS
+
+**Generated pages:** 130 (82 existing + 48 new question pages)
+
+---
+
 ## [V1B-DL-003] - 2026-05-28: v1B-A Glossary Expansion Live Verification Approved
 
 **Status:** APPROVED
