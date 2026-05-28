@@ -1,3 +1,40 @@
+## [V1B-DL-006] - 2026-05-28: v1B-C Technology Reference Expansion Initiated
+
+**Status:** IN PROGRESS
+
+**Context:** Sprint v1B-C begins the Technology Reference layer. v1B-B was merged via PR #10, deployed, and live-verified (V1B-DL-005 recorded). Quality gate is now 13/13 with the addition of validate_technology.py.
+
+**Authorized Actions:**
+
+1. Create `main/data/technology_pages.json` with 21 governed technology reference entries across 7 engineering clusters: photovoltaics-power-generation, wireless-power-transmission, receiving-conversion-systems, orbital-assembly-structures, launch-in-space-logistics, thermal-management-systems, autonomous-operations-robotics.
+2. Add 22 `approved_for_launch` page entries to `pages.json`: 1 technology hub (`/technology/`) and 21 child pages (`/technology/{slug}/`).
+3. Create `publication_v1b_c.json` as the active manifest, inheriting 53 glossary terms and 56 questions from v1B-B and adding 21 technology page IDs.
+4. Update `build.py`: add `TECH_CLUSTER_ORDER`, extend `load_trial_manifest()` to prefer v1b_c, add `generate_technology_hub_html()` and `generate_technology_page_html()`, extend dispatch and sitemap categorization.
+5. Add `validate_technology.py` as the 13th quality gate validator.
+6. Update `internal_link_graph.json`: add `/technology/` hub definition and `technology_page` + `technology_index` rules.
+7. Add CSS for technology hub and page components.
+8. Regenerate public output: 152 approved pages, `sitemap-technology-001.xml` (21 URLs).
+
+**Technology Reference Data Model (per page):** technical definition (summary), infrastructureRole, subsystemRelationship, feasibilityBoundary, claimBoundary, ≥2 relatedGlossaryTerms, ≥2 relatedQuestions, pageLinks to /technology/, /technology-stack/, /feasibility-and-constraints/, /sources/, /methodology/.
+
+**Claim Governance:** No technology entry asserts commercial SBSP viability. Each feasibilityBoundary states current TRL range and unresolved challenges. Each claimBoundary explicitly separates documented knowledge from unverified projections.
+
+**Quality Gate Result:** 13/13 PASS
+
+**Generated pages:** 152 (130 existing + 22 new technology pages)
+
+**Technology sitemap:** `sitemap-technology-001.xml` — 21 URLs (individual pages); `/technology/` hub in `sitemap-core.xml`
+
+**Blocked Actions (unchanged):**
+
+- Google Search Console submission: BLOCKED.
+- WebGL or JavaScript-dependent interface changes: BLOCKED.
+- Manual patching of `public/`: BLOCKED.
+- Weakening or bypassing any validator: BLOCKED.
+- v1B-D: BLOCKED until v1B-C is merged, deployed, live verified, and V1B-DL-007 is recorded.
+
+---
+
 ## [V1B-DL-005] - 2026-05-28: v1B-B Questions Expansion Live Verification Approved
 
 **Status:** APPROVED

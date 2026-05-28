@@ -22,6 +22,7 @@ VALIDATORS = [
     "validate_decision_log.py",
     "validate_glossary.py",
     "validate_questions.py",
+    "validate_technology.py",
 ]
 
 

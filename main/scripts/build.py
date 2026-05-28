@@ -82,7 +82,7 @@ def approved_pages(pages_data: dict) -> list:
 
 def load_seed_data() -> dict:
     """Load all seed data files keyed by ID for fast lookup."""
-    seed = {"glossary": {}, "questions": {}, "programs": {}}
+    seed = {"glossary": {}, "questions": {}, "programs": {}, "technology": {}}
 
     glossary_path = DATA_DIR / "glossary_terms.json"
     if glossary_path.exists():
@@ -105,6 +105,13 @@ def load_seed_data() -> dict:
         for p in programs:
             seed["programs"][p["id"]] = p
 
+    technology_path = DATA_DIR / "technology_pages.json"
+    if technology_path.exists():
+        data = load_json(technology_path)
+        tech_pages = data if isinstance(data, list) else data.get("pages", [])
+        for t in tech_pages:
+            seed["technology"][t["id"]] = t
+
     return seed
 
 
@@ -126,8 +133,21 @@ QUESTION_CLUSTER_ORDER = [
     ("program-institutional", "Programs and Institutions"),
 ]
 
+TECH_CLUSTER_ORDER = [
+    ("photovoltaics-power-generation", "Photovoltaics and Power Generation"),
+    ("wireless-power-transmission", "Wireless Power Transmission"),
+    ("receiving-conversion-systems", "Receiving and Conversion Systems"),
+    ("orbital-assembly-structures", "Orbital Assembly and Structures"),
+    ("launch-in-space-logistics", "Launch and In-Space Logistics"),
+    ("thermal-management-systems", "Thermal Management Systems"),
+    ("autonomous-operations-robotics", "Autonomous Operations and Robotics"),
+]
+
 
 def load_trial_manifest() -> dict | None:
+    v1b_c_path = DATA_DIR / "publication_v1b_c.json"
+    if v1b_c_path.exists():
+        return load_json(v1b_c_path)
     v1b_b_path = DATA_DIR / "publication_v1b_b.json"
     if v1b_b_path.exists():
         return load_json(v1b_b_path)
@@ -662,6 +682,117 @@ def generate_questions_hub_html(page: dict, seed_data: dict, trial_manifest: dic
     return _page_shell(page, h1, body)
 
 
+def generate_technology_page_html(tech_page: dict, page: dict) -> str:
+    h1 = tech_page.get("title", page["title"])
+    summary = _escape_html(tech_page.get("summary", ""))
+    infra_role = _escape_html(tech_page.get("infrastructureRole", ""))
+    subsystem = _escape_html(tech_page.get("subsystemRelationship", ""))
+    feasibility = _escape_html(tech_page.get("feasibilityBoundary", ""))
+    claim = _escape_html(tech_page.get("claimBoundary", ""))
+    internal_links = page.get("requiredInternalLinks", [])
+
+    parts = ['<div class="reference-card">']
+    parts.append('  <div class="reference-card-type">Technology Reference</div>')
+    parts.append('  <div class="reference-card-body">')
+    if summary:
+        parts.append(f'    <div class="reference-card-full"><p>{summary}</p></div>')
+    parts.append('  </div>')
+    if infra_role:
+        parts.append('  <div class="reference-card-section">')
+        parts.append('    <p class="reference-card-section-label">Infrastructure Role</p>')
+        parts.append(f'    <p class="reference-card-section-body">{infra_role}</p>')
+        parts.append('  </div>')
+    if subsystem:
+        parts.append('  <div class="reference-card-section">')
+        parts.append('    <p class="reference-card-section-label">Subsystem Relationship</p>')
+        parts.append(f'    <p class="reference-card-section-body">{subsystem}</p>')
+        parts.append('  </div>')
+    if feasibility:
+        parts.append('  <div class="reference-card-section">')
+        parts.append('    <p class="reference-card-section-label">Feasibility and Readiness</p>')
+        parts.append(f'    <p class="reference-card-section-body">{feasibility}</p>')
+        parts.append('  </div>')
+    if claim:
+        parts.append('  <div class="reference-card-boundary">')
+        parts.append('    <p class="reference-card-boundary-label">Feasibility and Claim Boundary</p>')
+        parts.append(f'    <p class="reference-card-boundary-text">{claim}</p>')
+        parts.append('  </div>')
+    if internal_links:
+        parts.append('  <div class="reference-card-links">')
+        for lk in internal_links:
+            parts.append(f'    {_link_chip(lk, _path_to_label(lk))}')
+        parts.append('  </div>')
+    parts.append('  <div class="reference-card-source-links">')
+    parts.append('    <span class="reference-card-source-label">Source &amp; methodology</span>')
+    parts.append('    <a class="link-chip" href="/methodology/">Methodology</a>')
+    parts.append('    <a class="link-chip" href="/sources/">Sources</a>')
+    parts.append('  </div>')
+    parts.append('</div>')
+    body = "\n".join(parts)
+    return _page_shell(page, h1, body)
+
+
+def generate_technology_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
+    h1 = page.get("title", "SBSP Technology Reference")
+    description = _escape_html(page.get("description", ""))
+    tech_ids = (trial_manifest or {}).get("technologyPages", [])
+    tech_by_cluster: dict[str, list] = {}
+    for tid in tech_ids:
+        tp = seed_data["technology"].get(tid)
+        if not tp:
+            continue
+        cluster = tp.get("cluster", "photovoltaics-power-generation")
+        tech_by_cluster.setdefault(cluster, []).append(tp)
+    total_tech = sum(len(v) for v in tech_by_cluster.values())
+    active_clusters = [cid for cid, _ in TECH_CLUSTER_ORDER if tech_by_cluster.get(cid)]
+
+    parts = []
+    if description:
+        parts.append(f'<p class="hub-intro">{description}</p>')
+
+    # Status panel
+    parts.append('<div class="tech-status-panel">')
+    parts.append(f'  <div class="tech-status-stat"><span class="tech-status-value">{total_tech}</span><span class="tech-status-label">technology pages</span></div>')
+    parts.append(f'  <div class="tech-status-stat"><span class="tech-status-value">{len(active_clusters)}</span><span class="tech-status-label">engineering clusters</span></div>')
+    parts.append('  <div class="tech-status-stat"><span class="tech-status-value">Yes</span><span class="tech-status-label">claim boundaries</span></div>')
+    parts.append('  <div class="tech-status-stat"><span class="tech-status-value">Yes</span><span class="tech-status-label">feasibility-bounded</span></div>')
+    parts.append('</div>')
+
+    # Expansion note
+    parts.append('<div class="tech-expansion-note">')
+    parts.append('  This technology reference layer covers 21 governed entries across 7 engineering clusters. Each entry provides a technical definition, infrastructure role, subsystem relationship, feasibility boundary, and explicit claim boundary separating documented knowledge from unverified projections.')
+    parts.append('</div>')
+
+    # Cluster jump nav
+    parts.append('<nav class="tech-cluster-jump" aria-label="Jump to technology cluster">')
+    parts.append('  <span class="tech-cluster-jump-label">Jump to</span>')
+    for cluster_id, cluster_label in TECH_CLUSTER_ORDER:
+        if not tech_by_cluster.get(cluster_id):
+            continue
+        anchor = f"tcluster-{cluster_id}"
+        parts.append(f'  <a href="#{anchor}" class="tech-cluster-jump-link">{_escape_html(cluster_label)}</a>')
+    parts.append('</nav>')
+
+    # Cluster sections
+    for cluster_id, cluster_label in TECH_CLUSTER_ORDER:
+        tps = tech_by_cluster.get(cluster_id, [])
+        if not tps:
+            continue
+        anchor = f"tcluster-{cluster_id}"
+        parts.append(f'<div class="hub-cluster" id="{anchor}">')
+        parts.append(f'  <h2 class="hub-cluster-label">{_escape_html(cluster_label)}</h2>')
+        parts.append('  <ul class="tech-index">')
+        for tp in tps:
+            tp_path = tp.get("path", f"/technology/{tp.get('slug', tp.get('id'))}/")
+            tp_title = _escape_html(tp.get("title", ""))
+            parts.append(f'    <li><a href="{tp_path}">{tp_title}</a></li>')
+        parts.append('  </ul>')
+        parts.append('</div>')
+
+    body = "\n".join(parts) + "\n" + _render_hub_source_footer()
+    return _page_shell(page, h1, body)
+
+
 def generate_programs_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
     h1 = page.get("title", "SBSP Program Profiles")
     description = _escape_html(page.get("description", ""))
@@ -739,6 +870,11 @@ def write_page(page: dict, content: dict | None,
         html = generate_questions_hub_html(page, seed_data, trial_manifest)
     elif seed_data and seed_source == "programs_hub":
         html = generate_programs_hub_html(page, seed_data, trial_manifest)
+    elif seed_data and seed_source == "technology":
+        tech_page = seed_data["technology"].get(seed_id)
+        html = generate_technology_page_html(tech_page, page) if tech_page else generate_html(page, content, approved_paths)
+    elif seed_data and seed_source == "technology_hub":
+        html = generate_technology_hub_html(page, seed_data, trial_manifest)
     elif content and content.get("hero"):
         html = generate_home_html(page, content, approved_paths)
     else:
@@ -825,6 +961,7 @@ def categorize_pages(pages: list) -> dict:
         "usecases": [],
         "comparisons": [],
         "sources": [],
+        "technology": [],
     }
     for p in pages:
         path = p.get("path", "")
@@ -844,6 +981,8 @@ def categorize_pages(pages: list) -> dict:
             categories["comparisons"].append(p)
         elif path.startswith("/sources/") and path != "/sources/":
             categories["sources"].append(p)
+        elif path.startswith("/technology/") and path != "/technology/":
+            categories["technology"].append(p)
         else:
             categories["core"].append(p)
     return categories
@@ -860,7 +999,7 @@ def build_sitemaps(all_sitemap_urls: list, categories: dict) -> list:
         sitemap_files.append("sitemaps/sitemap-core.xml")
 
     for cat_name in ["glossary", "questions", "programs", "countries",
-                     "articles", "usecases", "comparisons", "sources"]:
+                     "articles", "usecases", "comparisons", "sources", "technology"]:
         cat_urls = generate_sitemap_urls(categories[cat_name])
         if not cat_urls:
             continue

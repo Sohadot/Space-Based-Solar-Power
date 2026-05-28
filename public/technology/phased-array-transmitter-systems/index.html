@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phased-Array Transmitter Systems for SBSP — Technology Reference</title>
+  <meta name="description" content="Electronically steered phased arrays for SBSP microwave beaming: beam forming, retrodirective control, phase coherence, and GEO-scale antenna challenges.">
+  <link rel="canonical" href="https://space-based-solar-power.com/technology/phased-array-transmitter-systems/">
+  <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="home-link" href="/">Space-Based Solar Power</a>
+      <div class="mission-status" aria-label="Site status">
+        <span class="mission-status-dot" aria-hidden="true"></span>
+        <span>Reference Active</span>
+      </div>
+    </nav>
+  </header>
+  <main class="page-container">
+    <h1>Phased-Array Transmitter Systems for SBSP</h1>
+    <div class="reference-card">
+  <div class="reference-card-type">Technology Reference</div>
+  <div class="reference-card-body">
+    <div class="reference-card-full"><p>Phased-array transmitter systems for space-based solar power are large antenna arrays composed of thousands to millions of individually phase-controlled transmitter elements that coherently combine their radiated power to form a steerable, high-gain microwave beam. Unlike a single large dish antenna, phased arrays have no moving parts—beam steering is achieved entirely through electronic phase shifting of individual elements, enabling rapid and precise pointing to any ground receiving station within the satellite's coverage area. For SBSP, the transmitting array must be extremely large—proposals range from hundreds of meters to several kilometers in diameter—to achieve the beam collimation needed to deliver useful power densities at the geostationary distance (~35,786 km). Phase coherence must be maintained across all elements simultaneously, requiring a highly accurate distributed timing and control system. Retrodirective beam control, where a pilot signal from the ground receiver guides the phase adjustment of the transmitter, is the leading approach for maintaining accurate pointing without requiring independent tracking systems.</p></div>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Infrastructure Role</p>
+    <p class="reference-card-section-body">The phased-array transmitter is the core component of the SBSP wireless power transmission subsystem. It converts DC electrical power from the solar collection array into a directed microwave beam and steers it toward the ground rectenna. Transmitter aperture size, element efficiency, and phase coherence determine the transmission gain and beam quality, which are primary factors in end-to-end system efficiency.</p>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Subsystem Relationship</p>
+    <p class="reference-card-section-body">The phased array receives DC power from the solar collection and power conditioning subsystems. It interfaces with the beam control and safety monitoring system, which uses retrodirective pilot signals from the ground station to maintain pointing. Thermal management of the transmitter elements is critical as solid-state power amplifiers generate significant waste heat. The array structure is physically integrated into the satellite bus.</p>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Feasibility and Readiness</p>
+    <p class="reference-card-section-body">Phased-array technology is at TRL 9 for radar, communications, and terrestrial wireless power demonstrations. The specific challenge of building and operating a phase-coherent array at SBSP dimensions (hundreds of meters to kilometers) in space has not been demonstrated. Maintaining phase coherence across millions of elements over a decades-long operational lifetime in the space environment is an open engineering problem.</p>
+  </div>
+  <div class="reference-card-boundary">
+    <p class="reference-card-boundary-label">Feasibility and Claim Boundary</p>
+    <p class="reference-card-boundary-text">This page describes phased-array transmitter technology as it applies to SBSP based on published technical literature and existing phased-array systems. It does not claim that SBSP-scale phased arrays have been built or operated, nor that the phase coherence challenges at SBSP scale have been solved. Performance projections for large SBSP phased arrays are based on modeling extrapolations and require empirical validation.</p>
+  </div>
+  <div class="reference-card-links">
+    <a class="link-chip" href="/technology/">Technology</a>
+    <a class="link-chip" href="/technology-stack/">Technology Stack</a>
+    <a class="link-chip" href="/feasibility-and-constraints/">Feasibility And Constraints</a>
+    <a class="link-chip" href="/sources/">Sources</a>
+    <a class="link-chip" href="/methodology/">Methodology</a>
+    <a class="link-chip" href="/glossary/phased-array-transmitter/">Phased Array Transmitter</a>
+    <a class="link-chip" href="/glossary/beam-steering/">Beam Steering</a>
+    <a class="link-chip" href="/questions/what-is-phased-array-transmitter-sbsp/">What Is Phased Array Transmitter Sbsp</a>
+    <a class="link-chip" href="/questions/how-does-beam-steering-work-sbsp/">How Does Beam Steering Work Sbsp</a>
+  </div>
+  <div class="reference-card-source-links">
+    <span class="reference-card-source-label">Source &amp; methodology</span>
+    <a class="link-chip" href="/methodology/">Methodology</a>
+    <a class="link-chip" href="/sources/">Sources</a>
+  </div>
+</div>
+  </main>
+</body>
+</html>

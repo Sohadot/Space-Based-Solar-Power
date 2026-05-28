@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Conversion and Conditioning in SBSP — Technology Reference</title>
+  <meta name="description" content="Power conversion stages in SBSP: satellite-side conditioning, rectenna output processing, grid inversion, wide-bandgap electronics, and end-to-end efficiency.">
+  <link rel="canonical" href="https://space-based-solar-power.com/technology/power-conversion-and-conditioning/">
+  <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="home-link" href="/">Space-Based Solar Power</a>
+      <div class="mission-status" aria-label="Site status">
+        <span class="mission-status-dot" aria-hidden="true"></span>
+        <span>Reference Active</span>
+      </div>
+    </nav>
+  </header>
+  <main class="page-container">
+    <h1>Power Conversion and Conditioning in SBSP Systems</h1>
+    <div class="reference-card">
+  <div class="reference-card-type">Technology Reference</div>
+  <div class="reference-card-body">
+    <div class="reference-card-full"><p>Power conversion and conditioning in space-based solar power systems refers to the series of electrical processing stages that transform raw DC power from solar cells or rectenna arrays into regulated, high-quality power suitable for transmission or grid delivery. On the satellite, power conditioning converts photovoltaic output—variable voltage from solar cells subject to temperature fluctuations and shadow events—into stable DC power for the microwave transmitter array. Each transmitter element may require its own local power regulation. On the ground, rectenna output is DC at microwave frequencies, which must be rectified, filtered, voltage-regulated, and inverted to grid-frequency AC power. Each conversion stage introduces losses that accumulate across the end-to-end system, making the aggregate conversion efficiency a critical performance metric. Advances in wide-bandgap power semiconductors (silicon carbide, gallium nitride) and highly efficient DC-DC and DC-AC conversion topologies are relevant to both the space and ground sides of SBSP power conditioning.</p></div>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Infrastructure Role</p>
+    <p class="reference-card-section-body">Power conversion and conditioning systems appear at multiple stages of the SBSP energy chain: solar cell output conditioning on the satellite, power feed to the transmitter array, and rectenna output conditioning and grid inversion on the ground. These systems determine a significant portion of the aggregate end-to-end efficiency of the SBSP system and represent both mass contributors on the satellite side and cost contributors on the ground side.</p>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Subsystem Relationship</p>
+    <p class="reference-card-section-body">Power conditioning interfaces between the photovoltaic collection subsystem and the wireless transmission subsystem on the satellite, and between the rectenna array and the grid interconnection on the ground. Thermal management is closely coupled to power electronics, as conversion losses manifest as heat that must be dissipated. Mass-efficient space-rated power electronics design is a constraint driven by launch cost.</p>
+  </div>
+  <div class="reference-card-section">
+    <p class="reference-card-section-label">Feasibility and Readiness</p>
+    <p class="reference-card-section-body">Advanced power conversion electronics are at TRL 9 for terrestrial and satellite applications. Space-rated wide-bandgap power electronics with the radiation tolerance and thermal performance required for SBSP are at TRL 5–7. Achieving the high efficiency targets (&gt;90% at each stage) needed to maintain acceptable end-to-end SBSP system efficiency while meeting mass and reliability requirements in the space environment remains an engineering challenge.</p>
+  </div>
+  <div class="reference-card-boundary">
+    <p class="reference-card-boundary-label">Feasibility and Claim Boundary</p>
+    <p class="reference-card-boundary-text">This page documents power conversion and conditioning technology relevant to SBSP based on published technical literature. It does not claim that all required conversion efficiency targets have been met in space-rated hardware or that end-to-end SBSP system efficiencies projected in conceptual studies have been verified experimentally. Power electronics performance figures cited reflect terrestrial state-of-the-art unless otherwise stated.</p>
+  </div>
+  <div class="reference-card-links">
+    <a class="link-chip" href="/technology/">Technology</a>
+    <a class="link-chip" href="/technology-stack/">Technology Stack</a>
+    <a class="link-chip" href="/feasibility-and-constraints/">Feasibility And Constraints</a>
+    <a class="link-chip" href="/sources/">Sources</a>
+    <a class="link-chip" href="/methodology/">Methodology</a>
+    <a class="link-chip" href="/glossary/power-conversion-efficiency/">Power Conversion Efficiency</a>
+    <a class="link-chip" href="/glossary/space-to-earth-power-transmission/">Space To Earth Power Transmission</a>
+    <a class="link-chip" href="/questions/what-is-power-conversion-efficiency-sbsp/">What Is Power Conversion Efficiency Sbsp</a>
+    <a class="link-chip" href="/questions/what-is-sbsp-energy-conversion-chain/">What Is Sbsp Energy Conversion Chain</a>
+  </div>
+  <div class="reference-card-source-links">
+    <span class="reference-card-source-label">Source &amp; methodology</span>
+    <a class="link-chip" href="/methodology/">Methodology</a>
+    <a class="link-chip" href="/sources/">Sources</a>
+  </div>
+</div>
+  </main>
+</body>
+</html>
