@@ -1,3 +1,45 @@
+## [S2-DL-001] - 2026-05-28: Strategic Launch Correction — Sprint 2 Initiated
+
+**Status:** APPROVED
+
+**Context:** The site has been successfully deployed to GitHub Pages with 39 public pages passing the full quality gate. However, the current deployment does not yet represent the strategic reference launch or the Sovereign Spatial Interface defined in the project doctrine. The current interface renders as a simplified dark template; the home page renders as a structured reference list rather than a sovereign atlas gateway; and the planned v1B expansion has no controlled cluster architecture targeting the 300–500 page threshold required for reference authority. Before proceeding with v1B expansion, these deficiencies must be corrected.
+
+**Decision:**
+
+1. **The current site is technically deployed but not yet the full strategic reference launch.**
+   - 39 pages have been published and verified through the full quality gate.
+   - The deployment confirms technical pipeline integrity: build, validation, sitemap, robots.txt, CSS delivery, and page structure.
+   - However, the 39-page baseline does not constitute the intended sovereign reference launch. It is a verified technical foundation only.
+
+2. **The baseline visual system is not the final Sovereign Spatial Interface.**
+   - The current `main/static/css/main.css` provides a functional dark orbital baseline.
+   - It does not yet implement the Sovereign Spatial Interface concept: Mission Control header, telemetry panels, orbital atlas hero, power-beaming visual metaphor, rectenna/grid sections, constraint matrix preview, reference atlas navigation grid, or the trust/source layer.
+   - The interface must embody orbital energy infrastructure system relationships — not merely display reference lists in a dark theme.
+   - Every movement and panel in the interface must explain a system relationship, not serve as decoration.
+
+3. **v1B expansion is blocked until the interface thesis and reference launch structure are upgraded.**
+   - No bulk content generation may proceed on the basis of the current interface or template system.
+   - The visual and template system must be corrected first so that new pages enter at the correct quality level from the start.
+   - Google Search Console submission is also blocked until the interface correction is reviewed and approved.
+   - The current 39-page deployment must not be treated as the strategic launch.
+
+4. **Future expansion must target a serious 300–500 page controlled reference launch, not small symbolic publication.**
+   - The Publication Trial v1A of 39 pages proved the generation engine works.
+   - The v1B expansion must be planned as a serious reference launch across defined content clusters: technology pages, constraint pages, glossary pages, question pages, program profiles, audience guides, source briefs, and tools/matrix pages.
+   - No random bulk expansion. Every cluster must have a defined target count, page type, data source file, required boundaries, internal link requirements, sitemap eligibility, validation rules, and publication trigger.
+   - Expansion must be controlled and cluster-complete before submission.
+
+5. **Sprint 2 — Interface and Reference Launch Correction — is now initiated.**
+   - Tasks: upgrade `INTERFACE_THESIS.md`; create `SPATIAL_INTERFACE_V1_PLAN.md`; create `REFERENCE_LAUNCH_V1B_PLAN.md`; upgrade `build.py` templates; expand `main/static/css/main.css` toward Sovereign Spatial Interface; update `README.md` status.
+   - Sprint 2 must pass the full quality gate before any v1B content expansion begins.
+   - All changes on branch `claude/strategic-direction-v1b-tYbVs`.
+
+**Consequences:**
+
+The 39-page deployment remains live as a verified technical foundation. Sprint 2 upgrades the interface system and template architecture toward the Sovereign Spatial Interface before v1B expansion proceeds. Future content clusters are planned for 300–500 pages under controlled release conditions. No Google Search Console submission, no random bulk expansion, no validator weakening, and no treatment of the current deployment as the final strategic launch.
+
+---
+
 ## [S1-DL-014] - 2026-05-27: Post-Deployment Verification and Presentation Activation Initiated
 
 **Status:** APPROVED
@@ -327,38 +369,3 @@ The repository branch `claude/publication-trial-v1a-P8gpb` carries the first set
 **Consequences:**
 
 The repository is now ready to move from engine stabilization into controlled publication trials. Future expansion must proceed through staged seed packs, generated output, quality-gate validation, sitemap eligibility checks, and internal-link graph governance.
-
----
-
-## [S1-DL-010] - 2026-05-27: Publication Trial v1A Initiated
-
-**Status:** APPROVED
-
-**Context:** The Sovereign Generation Engine v1 passed the full quality gate on `main`. The project now requires a controlled publication trial to confirm that seed data can produce real generated pages that pass schema, content, source, claim, SEO, sitemap, link, and internal-link graph validation.
-
-**Decision:**
-
-1. Initiated Publication Trial v1A.
-2. Approved a controlled first generated publication set:
-   - 10 glossary pages;
-   - 8 question pages;
-   - 5 program profiles.
-3. Confirmed that seed data is not automatically public content.
-4. Required all publication-trial pages to pass:
-   - schema validation;
-   - content validation;
-   - source validation;
-   - claim-boundary validation;
-   - SEO validation;
-   - sitemap eligibility;
-   - post-build link validation;
-   - internal-link graph validation.
-5. Confirmed that generated parent hubs (`/glossary/`, `/questions/`, `/programs/`) may only be published if they contain real content listing the generated trial pages.
-6. Confirmed that this stage is not bulk expansion. It is a controlled proof that the generation system can publish high-quality reference pages.
-7. Documented all ID substitutions where requested IDs did not match existing seed data IDs. No pages were invented. Every substituted ID is the closest existing equivalent with full `claimBoundary`, `sourceRef` (where applicable), and required fields.
-
-**Consequences:**
-
-The project may now test generated glossary, question, and program pages under strict governance. Future expansion to hundreds or thousands of pages remains blocked until Publication Trial v1A passes the full quality gate on the feature branch `claude/publication-trial-v1a-P8gpb`.
-
-See `PUBLICATION_TRIAL_PLAN.md` and `main/data/publication_trial_v1a.json` for complete selection and eligibility rules.
