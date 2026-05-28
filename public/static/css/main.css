@@ -461,7 +461,7 @@ h1 {
 }
 .section-links a:hover { border-color: var(--accent); }
 
-/* ---- Link chip (shared) ---- */
+/* ---- Link chip (shared by section-links, ref-card-links) ---- */
 .link-chip {
   font-size: 0.82rem;
   color: var(--accent);
