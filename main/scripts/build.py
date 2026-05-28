@@ -133,28 +133,11 @@ def _link_chip(path: str, label: str) -> str:
     return f'<a class="link-chip" href="{path}">{_escape_html(label)}</a>'
 
 
-def _build_nav_links(links: list) -> str:
-    parts = []
-    for link in links:
-        label = _path_to_label(link)
-        parts.append(f'        <li><a href="{link}">{_escape_html(label)}</a></li>')
-    return "\n".join(parts)
-
-
 def _page_shell(page: dict, h1: str, body: str) -> str:
     title = page.get("title", "")
     description = page.get("description", "")
     path = page.get("path", "/")
     canonical = f"{DOMAIN}{path}"
-    nav_links = _build_nav_links(page.get("requiredInternalLinks", []))
-    ref_nav = ""
-    if nav_links:
-        ref_nav = f"""  <nav class="ref-nav" aria-label="Related pages">
-    <p class="ref-nav-label">Related</p>
-    <ul>
-{nav_links}
-    </ul>
-  </nav>"""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -178,10 +161,19 @@ def _page_shell(page: dict, h1: str, body: str) -> str:
   <main class="page-container">
     <h1>{_escape_html(h1)}</h1>
     {body}
-{ref_nav}
   </main>
 </body>
 </html>"""
+
+
+def _render_hub_source_footer() -> str:
+    return (
+        '<div class="hub-source-links">'
+        '<span class="hub-source-label">Source &amp; methodology</span>'
+        '<a class="link-chip" href="/methodology/">Methodology</a>'
+        '<a class="link-chip" href="/sources/">Sources</a>'
+        '</div>'
+    )
 
 
 def render_content_sections_html(sections: list, approved_paths: set) -> str:
@@ -509,7 +501,9 @@ def generate_glossary_hub_html(page: dict, seed_data: dict, trial_manifest: dict
         )
     list_html = "\n".join(f"      {item}" for item in items)
     intro = f'<p class="hub-intro">{description}</p>\n' if description else ""
-    body = intro + f'<ul class="glossary-index">\n{list_html}\n    </ul>\n'
+    body = (intro
+            + f'<ul class="glossary-index">\n{list_html}\n    </ul>\n'
+            + _render_hub_source_footer())
     return _page_shell(page, h1, body)
 
 
@@ -527,7 +521,9 @@ def generate_questions_hub_html(page: dict, seed_data: dict, trial_manifest: dic
         items.append(f'<li><a href="{q_path}">{q_text}</a></li>')
     list_html = "\n".join(f"      {item}" for item in items)
     intro = f'<p class="hub-intro">{description}</p>\n' if description else ""
-    body = intro + f'<ul class="questions-index">\n{list_html}\n    </ul>\n'
+    body = (intro
+            + f'<ul class="questions-index">\n{list_html}\n    </ul>\n'
+            + _render_hub_source_footer())
     return _page_shell(page, h1, body)
 
 
@@ -550,7 +546,9 @@ def generate_programs_hub_html(page: dict, seed_data: dict, trial_manifest: dict
         )
     list_html = "\n".join(f"      {item}" for item in items)
     intro = f'<p class="hub-intro">{description}</p>\n' if description else ""
-    body = intro + f'<ul class="programs-index">\n{list_html}\n    </ul>\n'
+    body = (intro
+            + f'<ul class="programs-index">\n{list_html}\n    </ul>\n'
+            + _render_hub_source_footer())
     return _page_shell(page, h1, body)
 
 
@@ -583,6 +581,13 @@ def write_page(page: dict, content: dict | None,
 
     seed_source = page.get("seedSource")
     seed_id = page.get("seedId")
+
+    # Try content by slug as fallback when ID does not match the content filename.
+    if content is None:
+        page_slug = page.get("slug", "")
+        page_id_val = page.get("id", "")
+        if page_slug and page_slug != page_id_val:
+            content = load_page_content(page_slug)
 
     if seed_data and seed_source == "glossary_term" and seed_id:
         term = seed_data["glossary"].get(seed_id)
