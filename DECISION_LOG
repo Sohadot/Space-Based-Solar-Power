@@ -1,3 +1,37 @@
+## [V1B-DL-001] - 2026-05-28: v1B-A Glossary Source Expansion Initiated
+
+**Status:** APPROVED
+
+**Context:** Sprint v1B-A begins the controlled expansion of the governed glossary layer from 10 published terms to 53 published terms across five clusters. The expansion follows the governance plan in `V1B_GLOSSARY_EXPANSION_PLAN.md`. The quality gate has been extended to 11 validators by adding `validate_glossary.py`. All 53 terms meet the full field schema: substantive definition, claimBoundary, ≥2 relatedTerms, ≥1 pageLinks. The glossary hub has been strengthened with cluster-grouped rendering. The `publication_v1b_a.json` manifest takes precedence over v1A for all glossary rendering.
+
+**Authorized Actions:**
+
+1. Expand `glossary_terms.json` to 75 total terms (32 existing + 43 new, all with `cluster` field).
+2. Add 43 new `approved_for_launch` page entries in `pages.json` with `phase: "v1b_a"`.
+3. Create `publication_v1b_a.json` listing all 53 publication-eligible glossary term IDs.
+4. Update `build.py`: add `CLUSTER_ORDER`, update `load_trial_manifest()` to prefer v1B-A manifest, rewrite `generate_glossary_hub_html()` to group by cluster.
+5. Add `.hub-cluster` and `.hub-cluster-label` CSS for cluster group display.
+6. Add `validate_glossary.py` as the 11th quality gate validator.
+7. Regenerate public output (82 pages: 39 existing + 43 new glossary terms).
+
+**Claim Governance:**
+
+No term in the v1B-A expansion asserts that SBSP is commercially deployed, operational, or proven at scale. Every term carries a `claimBoundary` explicitly separating established research from unproven commercial viability. The 11-validator quality gate enforces this constraint.
+
+**Blocked Actions (unchanged from prior entries):**
+
+- Google Search Console submission: BLOCKED until full v1B expansion (300–500 pages) is authorized.
+- WebGL or JavaScript-dependent interface changes: BLOCKED.
+- Manual patching of `public/`: BLOCKED.
+- Weakening or bypassing any validator: BLOCKED.
+- Publishing terms with placeholder definitions or without claimBoundary: BLOCKED.
+
+**Quality Gate Result:** 11/11 PASS
+
+**Generated pages:** 82 (39 existing + 43 new glossary terms)
+
+---
+
 ## [S2B-DL-002] - 2026-05-28: Sprint 2B Post-Merge Live Verification Approved
 
 **Status:** APPROVED
