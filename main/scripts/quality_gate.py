@@ -18,6 +18,8 @@ VALIDATORS = [
     "validate_seo.py",
     "validate_sitemap.py",
     "validate_internal_link_graph.py",
+    "validate_output_integrity.py",
+    "validate_decision_log.py",
 ]
 
 
