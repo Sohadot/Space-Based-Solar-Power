@@ -116,11 +116,24 @@ CLUSTER_ORDER = [
     ("strategic-demand", "Strategic Demand and Space Industry"),
 ]
 
+QUESTION_CLUSTER_ORDER = [
+    ("foundational", "Foundational Questions"),
+    ("technology", "Technology"),
+    ("feasibility-constraints", "Feasibility and Constraints"),
+    ("safety-regulation", "Safety and Regulation"),
+    ("grid-energy-systems", "Grid and Energy Systems"),
+    ("ai-defense-strategic", "AI, Defense, and Strategic Demand"),
+    ("program-institutional", "Programs and Institutions"),
+]
+
 
 def load_trial_manifest() -> dict | None:
-    v1b_path = DATA_DIR / "publication_v1b_a.json"
-    if v1b_path.exists():
-        return load_json(v1b_path)
+    v1b_b_path = DATA_DIR / "publication_v1b_b.json"
+    if v1b_b_path.exists():
+        return load_json(v1b_b_path)
+    v1b_a_path = DATA_DIR / "publication_v1b_a.json"
+    if v1b_a_path.exists():
+        return load_json(v1b_a_path)
     path = DATA_DIR / "publication_trial_v1a.json"
     if path.exists():
         return load_json(path)
@@ -592,19 +605,60 @@ def generate_questions_hub_html(page: dict, seed_data: dict, trial_manifest: dic
     h1 = page.get("title", "SBSP Questions")
     description = _escape_html(page.get("description", ""))
     question_ids = (trial_manifest or {}).get("questions", [])
-    items = []
+    questions_by_cluster: dict[str, list] = {}
     for qid in question_ids:
         q = seed_data["questions"].get(qid)
         if not q:
             continue
-        q_path = q.get("path", f"/questions/{q.get('slug', qid)}/")
-        q_text = _escape_html(q.get("question", qid))
-        items.append(f'<li><a href="{q_path}">{q_text}</a></li>')
-    list_html = "\n".join(f"      {item}" for item in items)
-    intro = f'<p class="hub-intro">{description}</p>\n' if description else ""
-    body = (intro
-            + f'<ul class="questions-index">\n{list_html}\n    </ul>\n'
-            + _render_hub_source_footer())
+        cluster = q.get("cluster", "foundational")
+        questions_by_cluster.setdefault(cluster, []).append(q)
+    total_questions = sum(len(v) for v in questions_by_cluster.values())
+    active_clusters = [cid for cid, _ in QUESTION_CLUSTER_ORDER if questions_by_cluster.get(cid)]
+
+    parts = []
+    if description:
+        parts.append(f'<p class="hub-intro">{description}</p>')
+
+    # Status panel
+    parts.append('<div class="questions-status-panel">')
+    parts.append(f'  <div class="questions-status-stat"><span class="questions-status-value">{total_questions}</span><span class="questions-status-label">reference questions</span></div>')
+    parts.append(f'  <div class="questions-status-stat"><span class="questions-status-value">{len(active_clusters)}</span><span class="questions-status-label">question clusters</span></div>')
+    parts.append('  <div class="questions-status-stat"><span class="questions-status-value">Yes</span><span class="questions-status-label">answer boundaries</span></div>')
+    parts.append('  <div class="questions-status-stat"><span class="questions-status-value">Yes</span><span class="questions-status-label">source-disciplined</span></div>')
+    parts.append('</div>')
+
+    # Expansion note
+    parts.append('<div class="questions-expansion-note">')
+    parts.append('  This Q&amp;A layer has expanded from the initial publication trial into the first v1B reference layer. Every answer carries an explicit boundary separating established knowledge from unproven commercial claims.')
+    parts.append('</div>')
+
+    # Cluster jump nav
+    parts.append('<nav class="questions-cluster-jump" aria-label="Jump to question cluster">')
+    parts.append('  <span class="questions-cluster-jump-label">Jump to</span>')
+    for cluster_id, cluster_label in QUESTION_CLUSTER_ORDER:
+        if not questions_by_cluster.get(cluster_id):
+            continue
+        anchor = f"qcluster-{cluster_id}"
+        parts.append(f'  <a href="#{anchor}" class="questions-cluster-jump-link">{_escape_html(cluster_label)}</a>')
+    parts.append('</nav>')
+
+    # Cluster sections
+    for cluster_id, cluster_label in QUESTION_CLUSTER_ORDER:
+        qs = questions_by_cluster.get(cluster_id, [])
+        if not qs:
+            continue
+        anchor = f"qcluster-{cluster_id}"
+        parts.append(f'<div class="hub-cluster" id="{anchor}">')
+        parts.append(f'  <h2 class="hub-cluster-label">{_escape_html(cluster_label)}</h2>')
+        parts.append('  <ul class="questions-index">')
+        for q in qs:
+            q_path = q.get("path", f"/questions/{q.get('slug', q.get('id'))}/")
+            q_text = _escape_html(q.get("question", ""))
+            parts.append(f'    <li><a href="{q_path}">{q_text}</a></li>')
+        parts.append("  </ul>")
+        parts.append("</div>")
+
+    body = "\n".join(parts) + "\n" + _render_hub_source_footer()
     return _page_shell(page, h1, body)
 
 
