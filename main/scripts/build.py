@@ -79,7 +79,7 @@ def approved_pages(pages_data: dict) -> list:
 
 def load_seed_data() -> dict:
     """Load all seed data files keyed by ID for fast lookup."""
-    seed = {"glossary": {}, "questions": {}, "programs": {}, "technology": {}, "question_paths": {}}
+    seed = {"glossary": {}, "questions": {}, "programs": {}, "technology": {}, "question_paths": {}, "program_paths": {}, "articles": {}, "sources": []}
 
     glossary_path = DATA_DIR / "glossary_terms.json"
     if glossary_path.exists():
@@ -109,6 +109,9 @@ def load_seed_data() -> dict:
         prog_pages = data if isinstance(data, list) else data.get("programs", [])
         for p in prog_pages:
             seed["programs"][p["id"]] = p
+            # Index program_paths by program's own id using its path field
+            if p.get("id") and p.get("path"):
+                seed["program_paths"][p["id"]] = p["path"]
 
     technology_path = DATA_DIR / "technology_pages.json"
     if technology_path.exists():
@@ -118,12 +121,15 @@ def load_seed_data() -> dict:
             seed["technology"][t["id"]] = t
 
     # v1B-D: build question ID → actual page path lookup from pages.json
+    # v1B-F: also build program ID → actual page path lookup from pages.json and program_pages.json
     pages_path = DATA_DIR / "pages.json"
     if pages_path.exists():
         data = load_json(pages_path)
         for p in data.get("pages", []):
             if p.get("type") == "question_answer" and p.get("seedId") and p.get("path"):
                 seed["question_paths"][p["seedId"]] = p["path"]
+            if p.get("type") == "program_profile" and p.get("seedId") and p.get("path"):
+                seed["program_paths"][p["seedId"]] = p["path"]
 
     # v1B-E: load governed source registry
     seed["sources"] = []
@@ -131,6 +137,15 @@ def load_seed_data() -> dict:
     if source_registry_path.exists():
         data = load_json(source_registry_path)
         seed["sources"] = data if isinstance(data, list) else data.get("sources", [])
+
+    # v1B-F: load article pages
+    seed["articles"] = {}
+    article_pages_path = DATA_DIR / "article_pages.json"
+    if article_pages_path.exists():
+        data = load_json(article_pages_path)
+        art_list = data if isinstance(data, list) else data.get("articles", [])
+        for a in art_list:
+            seed["articles"][a["id"]] = a
 
     return seed
 
@@ -182,9 +197,20 @@ SOURCE_CLASS_ORDER = [
     ("methodology-internal", "Site Methodology and Governance"),
 ]
 
+ARTICLE_CLUSTER_ORDER = [
+    ("infrastructure-strategy", "Infrastructure Strategy"),
+    ("technology-feasibility", "Technology and Feasibility"),
+    ("institutional-programs", "Institutional Programs"),
+    ("energy-sovereignty-ai", "Energy Sovereignty and AI Demand"),
+]
+
 
 def load_trial_manifest() -> dict | None:
-    # v1B-D: check for v1b_d manifest first
+    # v1B-F: check newest manifest first
+    v1b_f_path = DATA_DIR / "publication_v1b_f.json"
+    if v1b_f_path.exists():
+        return load_json(v1b_f_path)
+    # v1B-D: check for v1b_d manifest
     v1b_d_path = DATA_DIR / "publication_v1b_d.json"
     if v1b_d_path.exists():
         return load_json(v1b_d_path)
@@ -1072,6 +1098,224 @@ def generate_sources_hub_html(page: dict, seed_data: dict) -> str:
     return _page_shell(page, h1, body)
 
 
+def generate_articles_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
+    """v1B-F: Articles hub with cluster grouping, status panel, and cluster jump nav."""
+    h1 = page.get("title", "Articles and Briefs")
+    description = _escape_html(page.get("description", ""))
+    article_ids = (trial_manifest or {}).get("articles", [])
+
+    by_cluster: dict[str, list] = {}
+    for aid in article_ids:
+        art = seed_data["articles"].get(aid)
+        if not art:
+            continue
+        cluster = art.get("cluster", "infrastructure-strategy")
+        by_cluster.setdefault(cluster, []).append(art)
+
+    total_articles = sum(len(v) for v in by_cluster.values())
+    active_clusters = [cid for cid, _ in ARTICLE_CLUSTER_ORDER if by_cluster.get(cid)]
+
+    parts = []
+    if description:
+        parts.append(f'<p class="hub-intro">{description}</p>')
+
+    # Status panel
+    parts.append('<div class="article-status-panel">')
+    parts.append(f'  <div class="article-status-stat"><span class="article-status-value">{total_articles}</span><span class="article-status-label">strategic briefs</span></div>')
+    parts.append(f'  <div class="article-status-stat"><span class="article-status-value">{len(active_clusters)}</span><span class="article-status-label">analysis clusters</span></div>')
+    parts.append('  <div class="article-status-stat"><span class="article-status-value">Yes</span><span class="article-status-label">source-disciplined</span></div>')
+    parts.append('  <div class="article-status-stat"><span class="article-status-value">Yes</span><span class="article-status-label">claim boundaries</span></div>')
+    parts.append('</div>')
+
+    # Governance note
+    parts.append('<div class="article-governance-note">')
+    parts.append(f'  <p>Each brief documents a governed analytical position on SBSP infrastructure, technology, institutional programmes, or strategic context. All claims are bounded by source tier and claim classification. No brief claims SBSP is commercially deployed or operationally available.</p>')
+    parts.append('</div>')
+
+    # Cluster jump nav
+    parts.append('<nav class="article-cluster-jump" aria-label="Jump to analysis cluster">')
+    parts.append('  <span class="article-cluster-jump-label">Jump to</span>')
+    for cluster_id, cluster_label in ARTICLE_CLUSTER_ORDER:
+        if not by_cluster.get(cluster_id):
+            continue
+        anchor = f"acluster-{cluster_id}"
+        parts.append(f'  <a href="#{anchor}" class="article-cluster-jump-link">{_escape_html(cluster_label)}</a>')
+    parts.append('</nav>')
+
+    # Cluster sections
+    for cluster_id, cluster_label in ARTICLE_CLUSTER_ORDER:
+        arts = by_cluster.get(cluster_id, [])
+        if not arts:
+            continue
+        anchor = f"acluster-{cluster_id}"
+        parts.append(f'<div class="hub-cluster" id="{anchor}">')
+        parts.append(f'  <h2 class="hub-cluster-label">{_escape_html(cluster_label)}</h2>')
+        parts.append('  <ul class="article-cluster-index">')
+        for art in arts:
+            a_path = art.get("path", f"/articles/{art.get('slug', art.get('id'))}/")
+            a_title = _escape_html(art.get("title", ""))
+            a_thesis = _escape_html(art.get("strategicThesis", "")[:120])
+            entry = f'    <li class="article-entry"><a href="{a_path}">{a_title}</a>'
+            if a_thesis:
+                entry += f'<p class="article-entry-thesis">{a_thesis}{"…" if len(art.get("strategicThesis","")) > 120 else ""}</p>'
+            entry += '</li>'
+            parts.append(entry)
+        parts.append('  </ul>')
+        parts.append('</div>')
+
+    # Footer links
+    parts.append('<div class="hub-source-links">')
+    parts.append('<span class="hub-source-label">Source &amp; methodology</span>')
+    parts.append('<a class="link-chip" href="/methodology/">Methodology</a>')
+    parts.append('<a class="link-chip" href="/sources/">Sources</a>')
+    parts.append('<a class="link-chip" href="/feasibility-and-constraints/">Feasibility</a>')
+    parts.append('<a class="link-chip" href="/strategic-importance/">Strategic Importance</a>')
+    parts.append('</div>')
+
+    body = "\n".join(parts)
+    return _page_shell(page, h1, body)
+
+
+def generate_article_page_html(article: dict, page: dict, question_paths: dict | None = None, program_paths: dict | None = None) -> str:
+    """v1B-F: Individual strategic brief page."""
+    h1 = article.get("title", "")
+    cluster = article.get("cluster", "")
+    cluster_label = dict(ARTICLE_CLUSTER_ORDER).get(cluster, cluster)
+
+    summary = _escape_html(article.get("summary", ""))
+    thesis = _escape_html(article.get("strategicThesis", ""))
+    inst_context = _escape_html(article.get("institutionalContext", ""))
+    tech_context = _escape_html(article.get("technicalContext", ""))
+    feasibility = _escape_html(article.get("feasibilityBoundary", ""))
+    claim_bdry = _escape_html(article.get("claimBoundary", ""))
+    source_bdry = _escape_html(article.get("sourceBoundary", ""))
+
+    related_glossary = article.get("relatedGlossaryTerms", [])
+    related_questions = article.get("relatedQuestions", [])
+    related_tech = article.get("relatedTechnologyPages", [])
+    related_programs = article.get("relatedPrograms", [])
+
+    parts = []
+
+    # Cluster badge
+    if cluster_label:
+        parts.append(f'<div class="article-cluster-badge">{_escape_html(cluster_label)}</div>')
+
+    # Summary
+    if summary:
+        parts.append(f'<div class="article-summary"><p>{summary}</p></div>')
+
+    # Strategic thesis
+    if thesis:
+        parts.append('<div class="article-section">')
+        parts.append('  <h2>Strategic Thesis</h2>')
+        parts.append(f'  <p>{thesis}</p>')
+        parts.append('</div>')
+
+    # Institutional context
+    if inst_context:
+        parts.append('<div class="article-section">')
+        parts.append('  <h2>Institutional Context</h2>')
+        parts.append(f'  <p>{inst_context}</p>')
+        parts.append('</div>')
+
+    # Technical context
+    if tech_context:
+        parts.append('<div class="article-section">')
+        parts.append('  <h2>Technical Context</h2>')
+        parts.append(f'  <p>{tech_context}</p>')
+        parts.append('</div>')
+
+    # Feasibility boundary
+    if feasibility:
+        parts.append('<div class="article-boundary-box article-feasibility">')
+        parts.append('  <h3>Feasibility Boundary</h3>')
+        parts.append(f'  <p>{feasibility}</p>')
+        parts.append('</div>')
+
+    # Claim boundary
+    if claim_bdry:
+        parts.append('<div class="article-boundary-box article-claim">')
+        parts.append('  <h3>Claim Boundary</h3>')
+        parts.append(f'  <p>{claim_bdry}</p>')
+        parts.append('</div>')
+
+    # Related links row
+    all_links = ["/articles/", "/methodology/", "/sources/"]
+
+    # Glossary links
+    if related_glossary:
+        parts.append('<div class="article-related-section">')
+        parts.append('  <h3>Related Glossary Terms</h3>')
+        parts.append('  <div class="article-link-chips">')
+        for gslug in related_glossary[:5]:
+            parts.append(f'    <a class="link-chip" href="/glossary/{gslug}/">{_escape_html(gslug.replace("-", " ").title())}</a>')
+            gpath = f"/glossary/{gslug}/"
+            if gpath not in all_links:
+                all_links.append(gpath)
+        parts.append('  </div>')
+        parts.append('</div>')
+
+    # Question links
+    if related_questions:
+        parts.append('<div class="article-related-section">')
+        parts.append('  <h3>Related Questions</h3>')
+        parts.append('  <div class="article-link-chips">')
+        for qid in related_questions[:4]:
+            qpath = (question_paths or {}).get(qid, f"/questions/{qid}/")
+            label = qid.replace("-", " ").replace("what is ", "").replace("how does ", "").title()
+            parts.append(f'    <a class="link-chip" href="{qpath}">{_escape_html(label)}</a>')
+            if qpath not in all_links:
+                all_links.append(qpath)
+        parts.append('  </div>')
+        parts.append('</div>')
+
+    # Technology page links
+    if related_tech:
+        parts.append('<div class="article-related-section">')
+        parts.append('  <h3>Technology References</h3>')
+        parts.append('  <div class="article-link-chips">')
+        for tpid in related_tech[:4]:
+            tpath = f"/technology/{tpid}/"
+            label = tpid.replace("-", " ").title()
+            parts.append(f'    <a class="link-chip" href="{tpath}">{_escape_html(label)}</a>')
+            if tpath not in all_links:
+                all_links.append(tpath)
+        parts.append('  </div>')
+        parts.append('</div>')
+
+    # Program links
+    if related_programs:
+        parts.append('<div class="article-related-section">')
+        parts.append('  <h3>Related Programs</h3>')
+        parts.append('  <div class="article-link-chips">')
+        for pid in related_programs[:4]:
+            ppath = (program_paths or {}).get(pid, f"/programs/{pid}/")
+            label = pid.replace("-", " ").title()
+            parts.append(f'    <a class="link-chip" href="{ppath}">{_escape_html(label)}</a>')
+            if ppath not in all_links:
+                all_links.append(ppath)
+        parts.append('  </div>')
+        parts.append('</div>')
+
+    # Source boundary footer
+    if source_bdry:
+        parts.append('<div class="article-source-footer">')
+        parts.append(f'  <span class="article-source-label">Sources used in this brief</span>')
+        parts.append(f'  <p>{source_bdry}</p>')
+        parts.append('</div>')
+
+    # Standard footer
+    parts.append('<div class="hub-source-links">')
+    for link in all_links[:6]:
+        label = link.strip("/").replace("-", " ").replace("/", "").title() or "Home"
+        parts.append(f'  <a class="link-chip" href="{link}">{_escape_html(label)}</a>')
+    parts.append('</div>')
+
+    body = "\n".join(parts)
+    return _page_shell(page, h1, body)
+
+
 def generate_html(page: dict, content: dict | None,
                   approved_paths: set | None = None) -> str:
     if approved_paths is None:
@@ -1130,6 +1374,11 @@ def write_page(page: dict, content: dict | None,
         html = generate_technology_hub_html(page, seed_data, trial_manifest)
     elif seed_data and seed_source == "sources_hub":
         html = generate_sources_hub_html(page, seed_data)
+    elif seed_data and seed_source == "articles_hub":
+        html = generate_articles_hub_html(page, seed_data, trial_manifest)
+    elif seed_data and seed_source == "article" and seed_id:
+        article = seed_data["articles"].get(seed_id)
+        html = generate_article_page_html(article, page, seed_data.get("question_paths"), seed_data.get("program_paths")) if article else generate_html(page, content, approved_paths)
     elif content and content.get("hero"):
         html = generate_home_html(page, content, approved_paths)
     else:

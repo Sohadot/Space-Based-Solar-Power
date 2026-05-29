@@ -60,7 +60,7 @@
     "/articles/": {
       "role": "analysis_hub",
       "label": "Articles",
-      "maxOutboundLinks": 100,
+      "maxOutboundLinks": 50,
       "requiredInbound": 3
     },
     "/questions/": {
@@ -494,6 +494,33 @@
       "nextStepPage": "/feasibility-and-constraints/",
       "minInternalLinks": 4,
       "v1b_d_note": "New rule: programs cluster hub at /programs/ with 6-cluster grouping and 30 profiles"
+    },
+    {
+      "pageType": "article_brief",
+      "parentHub": "/articles/",
+      "requiredOutboundLinks": [
+        "/articles/",
+        "/methodology/",
+        "/sources/"
+      ],
+      "conditionalLinks": [
+        {
+          "condition": "has_program_ref",
+          "link": "/global-programs/"
+        },
+        {
+          "condition": "has_feasibility_context",
+          "link": "/feasibility-and-constraints/"
+        },
+        {
+          "condition": "has_strategic_context",
+          "link": "/strategic-importance/"
+        }
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/feasibility-and-constraints/",
+      "minInternalLinks": 4,
+      "v1b_f_note": "Strategic analysis brief — non-generic, source-disciplined, no overclaim language"
     }
   ],
   "orphanPreventionRules": {
