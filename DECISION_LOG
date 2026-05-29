@@ -1,3 +1,50 @@
+## [V1B-DL-017] - 2026-05-29: v1B-H Post-Merge Live Verification Approved
+
+**Status:** APPROVED
+
+**Context:** PR #16 (branch `claude/v1b-h-tools-expansion-cm4aq`) was merged to main. Post-merge live verification performed on 2026-05-29 against the deployed public/ output on main (merge commit `bba5ad7`).
+
+**Verification Results:**
+
+1. **Merge commit:** `bba5ad7` — Merge pull request #16 from Sohadot/claude/v1b-h-tools-expansion-cm4aq ✓
+2. **Sovereign Quality Gate on main:** 18/18 PASS — all validators pass including validate_tools.py ✓
+3. **GitHub Actions CI:** Green on PR #16 (per user confirmation) ✓
+4. **Build output:** 195 pages generated, 195 sitemap URLs ✓
+5. **Sitemap consistency:**
+   - sitemap.xml and sitemap_index.xml reference 7 sub-sitemaps (added sitemap-tools-001.xml) ✓
+   - sitemap-tools-001.xml present, contains 6 tool page URLs ✓
+   - /tools/ hub present in sitemap-core.xml ✓
+   - sitemap.xml references https://space-based-solar-power.com/sitemaps/sitemap-tools-001.xml ✓
+6. **robots.txt:** Sitemap directive → `https://space-based-solar-power.com/sitemap.xml` ✓
+7. **/tools/ hub verified:**
+   - status panel present (tool-status-panel) ✓
+   - 6 strategic tool links present: /tools/sbsp-readiness-matrix/, /tools/claim-boundary-classifier/, /tools/program-comparison-atlas/, /tools/technology-dependency-map/, /tools/buyer-logic-matrix/, /tools/evidence-governance-dossier/ ✓
+   - governance note present (tool-governance-note) ✓
+   - methodology footer link present (/methodology/) ✓
+   - sources footer link present (/sources/) ✓
+   - legacy ref-nav: 0 ✓
+8. **All 6 tool pages verified:**
+   - tool-type-badge: 1 each ✓
+   - user audience: rendered as "Designed for:" in tool-section--meta ✓
+   - decision value: present in tool-section--meta ✓
+   - methodology boundary: rendered as tool-methodology boundary box ✓
+   - claim boundary: rendered as tool-claim boundary box ✓
+   - source boundary: rendered as tool-source-footer / tool-source-label ✓
+   - related internal links: tool-related-section + tool-link-chips present (10 each) ✓
+   - methodology footer: /methodology/ link present on all 6 pages ✓
+9. **Canonical tags:** All 7 tool-related pages (hub + 6 tool pages) have canonical matching public route ✓
+10. **Legacy ref-nav patterns:** 0 across all 195 public HTML files ✓
+11. **DECISION_LOG integrity:** S1-DL-001 through V1B-DL-016 all present, nothing removed, rewritten, compressed, or reordered ✓
+12. **Blocked actions confirmed:** GSC blocked, WebGL blocked, JS-dependent UI blocked, manual public/ patching blocked ✓
+
+**Decisions:**
+
+1. v1B-H sprint is fully closed. Strategic Tools & Buyer Logic Layer is live on production.
+2. v1B-I is now unblocked. Sprint v1B-I may proceed when authorized.
+3. Google Search Console submission remains BLOCKED until explicitly authorized.
+
+---
+
 ## [V1B-DL-016] - 2026-05-29: v1B-H Sprint Completed — Strategic Tools & Buyer Logic Layer
 
 **Status:** APPROVED — Quality gate 18/18 PASS. Ready for PR.
