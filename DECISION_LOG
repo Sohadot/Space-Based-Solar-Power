@@ -1,3 +1,38 @@
+## [V1B-DL-010] - 2026-05-29: v1B-E Source Registry & Evidence Governance Expansion Initiated
+
+**Status:** INITIATED
+
+**Context:** Sprint v1B-D was merged, deployed, live-verified, and V1B-DL-009 was recorded. Sprint v1B-E begins the Source Registry & Evidence Governance Expansion layer. The /sources/ hub is upgraded from a general source/trust page to a governed evidence registry backed by a validated data file (source_registry.json) and a new 15th quality gate validator (validate_sources_registry.py).
+
+**Decisions:**
+
+1. Create `main/data/source_registry.json` with 26 governed evidence records across 7 source classes (institutional-space-agency, government-policy, academic-research, technical-standard, industry-consortium, historical-primary, methodology-internal).
+2. Add `generate_sources_hub_html()` to build.py and route `sources_hub` seedSource through it — generating the /sources/ page from structured data, not static content only.
+3. Add `SOURCE_CLASS_ORDER` constant to build.py for ordered class rendering.
+4. Load source_registry.json in `load_seed_data()` under the `sources` key.
+5. Update pages.json sources entry: add `seedSource: "sources_hub"` and expand `requiredInternalLinks` to 10 destinations.
+6. Create `main/scripts/validate_sources_registry.py` as the 15th quality gate validator. Checks: stable IDs, unique slugs, all required fields, allowed source classes, minimum claim_scope and boundary_notes length, banned vague authority language, and coverage of all 7 source classes.
+7. Add `validate_sources_registry.py` to `main/scripts/quality_gate.py`. Validator count increases from 14 to 15.
+8. Add source hub CSS classes to `main/static/css/main.css`.
+9. Quality gate result: **15/15 PASS**.
+10. Generated pages: 177 (unchanged — /sources/ is a hub, no thin profile pages added).
+11. Sitemap URLs: 177 (unchanged).
+
+**Blocked actions (all remain in effect):**
+
+- Google Search Console submission remains BLOCKED until explicitly authorized after v1B-E live verification.
+- WebGL remains blocked.
+- JavaScript-dependent interface changes remain blocked.
+- Manual public/ patching remains blocked.
+- Weakening validators remains blocked.
+- Thin source profile pages not created — hub-only model governs this sprint.
+- No DECISION_LOG entries removed, rewritten, compressed, or reordered.
+- No overclaim language: no entry asserts SBSP is commercially deployed, operational at utility scale, or a proven full infrastructure system.
+
+**Next required step:** v1B-F remains BLOCKED until v1B-E is merged, deployed, live verified, and V1B-DL-011 is recorded.
+
+---
+
 ## [V1B-DL-009] - 2026-05-29: v1B-D Post-Merge Live Verification Approved
 
 **Status:** APPROVED

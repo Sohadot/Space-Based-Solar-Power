@@ -1101,6 +1101,144 @@ a:hover { color: var(--text); }
 }
 
 
+/* ---- Source hub styles (v1B-E) ---- */
+.source-status-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 1.75rem;
+}
+.source-status-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 7rem;
+}
+.source-status-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+.source-status-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.source-governance-note {
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1.5rem;
+  background: var(--surface-alt);
+  border-radius: 0 4px 4px 0;
+}
+.source-governance-note p,
+.source-usage-section p,
+.source-claim-boundary p {
+  font-size: 0.92rem;
+  color: var(--text-secondary, var(--text));
+  margin: 0 0 0.6rem;
+  line-height: 1.65;
+}
+.source-usage-section,
+.source-claim-boundary {
+  margin-bottom: 1.75rem;
+}
+.source-usage-section h2,
+.source-claim-boundary h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: var(--text);
+}
+.source-class-jump {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.source-class-jump-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  margin-right: 0.25rem;
+}
+.source-class-jump-link {
+  font-size: 0.78rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--accent);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.source-class-jump-link:hover {
+  background: var(--surface-alt);
+}
+.source-class-section {
+  margin-bottom: 2.5rem;
+}
+.source-class-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+.source-class-index {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.source-record {
+  padding: 1rem 1.25rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+.source-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.source-authority {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.source-claim-scope {
+  font-size: 0.85rem;
+  color: var(--text);
+  margin: 0.5rem 0 0.4rem;
+  line-height: 1.6;
+}
+.source-boundary-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0.3rem 0 0;
+  line-height: 1.55;
+  border-top: 1px solid var(--border);
+  padding-top: 0.4rem;
+}
+.source-boundary-note strong {
+  color: var(--text);
+}
+
 /* ---- Reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   *,
