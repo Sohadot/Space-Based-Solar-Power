@@ -1,0 +1,472 @@
+[
+  {
+    "id": "sbsp-as-strategic-infrastructure",
+    "slug": "sbsp-as-strategic-infrastructure",
+    "path": "/articles/sbsp-as-strategic-infrastructure/",
+    "title": "SBSP as Strategic Energy Infrastructure: Beyond Conventional Power Generation",
+    "cluster": "infrastructure-strategy",
+    "summary": "Space-based solar power is not primarily a power generation technology in the conventional sense — it is a proposed infrastructure category that would establish a new relationship between orbital systems and terrestrial energy grids. This brief examines why the strategic framing of SBSP as infrastructure matters for how feasibility is assessed, how development timelines are structured, and what institutional actors treat it as a long-term strategic asset rather than a near-term product. The infrastructure framing also explains why multiple space agencies and governments have chosen to study SBSP even while acknowledging that no deployment-ready system exists.",
+    "strategicThesis": "SBSP is better understood as a category of strategic energy infrastructure — comparable in scale and dependency to major grid investment, satellite communication systems, or nuclear energy programmes — than as a conventional power generation product. This framing shapes what feasibility means, what timelines are credible, and what institutional actors have strategic reasons to invest in it.",
+    "institutionalContext": "National space agencies and government-commissioned studies frame SBSP as a long-term infrastructure option rather than a near-term commercial product. ESA's SOLARIS assessment, the UK Frazer-Nash feasibility study, and JAXA's SSPS roadmap all treat SBSP within an infrastructure development paradigm — identifying technology development phases, regulatory groundwork, and international coordination as prerequisites rather than obstacles. This distinction between 'product readiness' and 'infrastructure development pathway' is central to understanding how programme timelines are set and why they extend across decades.",
+    "technicalContext": "Infrastructure-scale SBSP requires solving not only individual technology challenges (wireless power transmission, solar cell efficiency, in-space assembly) but also system integration at a scale that has no direct precedent. A single SBSP satellite capable of delivering gigawatt-scale power would be among the largest structures ever assembled in orbit. The infrastructure classification also implies that development costs are not recouped through a single product sale but through long-term operational capacity — which changes the economic model compared to conventional satellite programmes.",
+    "feasibilityBoundary": "No infrastructure-scale SBSP system has been built or fully costed. Feasibility assessments — including ESA SOLARIS and the Frazer-Nash study — conclude that SBSP is technically achievable but dependent on technology cost reductions (particularly launch costs and power electronics) that have not yet been realised at the required scale. Feasibility must be understood as conditional on a technology development pathway, not as an established fact.",
+    "claimBoundary": "This brief documents the institutional infrastructure framing of SBSP and its analytical implications. It does not claim that SBSP is commercially viable, that any deployment programme is funded, or that infrastructure-scale deployment is imminent. All programme timelines cited are planning assumptions from their source documents, not confirmed commitments.",
+    "sourceBoundary": "Drawn from ESA SOLARIS assessment, Frazer-Nash SBSP feasibility study (UK BEIS, 2020), JAXA SSPS conceptual study, and NASA SBSP revisit programme documentation. The infrastructure framing analysis is editorial interpretation of those institutional documents.",
+    "relatedGlossaryTerms": [
+      "space-based-solar-power",
+      "orbital-energy-reference-layer",
+      "energy-sovereignty",
+      "energy-security",
+      "baseload-power"
+    ],
+    "relatedQuestions": [
+      "what-is-space-based-solar-power",
+      "what-is-strategic-importance-sbsp",
+      "what-is-sbsp-and-energy-sovereignty",
+      "can-sbsp-provide-baseload-power"
+    ],
+    "relatedTechnologyPages": [
+      "heavy-lift-launch-requirements",
+      "in-space-assembly-methods",
+      "modular-spacecraft-architecture"
+    ],
+    "relatedPrograms": [
+      "esa-solaris",
+      "uk-space-energy-initiative",
+      "jaxa-ssps"
+    ],
+    "seoTitle": "SBSP as Strategic Energy Infrastructure",
+    "seoDescription": "Why SBSP is framed as strategic infrastructure — not a conventional power product — and what that means for feasibility and institutional investment."
+  },
+  {
+    "id": "orbital-energy-node-grid-architecture",
+    "slug": "orbital-energy-node-grid-architecture",
+    "path": "/articles/orbital-energy-node-grid-architecture/",
+    "title": "The Orbital Energy Node: SBSP and Distributed Grid Architecture",
+    "cluster": "infrastructure-strategy",
+    "summary": "If space-based solar power were deployed at infrastructure scale, it would not replace existing grid architecture — it would introduce a new class of input to energy grids that is locationally independent, continuously available, and transmissible to receiving stations outside conventional grid corridors. This brief examines the grid integration question: what receiving infrastructure is required, how ground rectenna fields connect to national grids, what the power delivery profile looks like, and where SBSP's grid integration characteristics differ from conventional generation sources.",
+    "strategicThesis": "SBSP's grid integration characteristics — continuous availability, location-flexible delivery, and independence from weather and fuel supply chains — represent a qualitatively different type of grid input rather than a marginal improvement over terrestrial renewables. This does not mean deployment is imminent or economically competitive; it means that if SBSP is eventually deployed, its grid role would be structurally different from wind and solar, closer to dispatchable baseload than to variable renewable generation.",
+    "institutionalContext": "Grid integration is treated in feasibility studies as a separate design layer from the orbital system. Frazer-Nash's UK study and ESA's SOLARIS assessment both examine ground segment requirements including rectenna field size, land use, grid connection infrastructure, and regulatory frameworks for a new category of transmission. These studies identify grid integration as technically tractable but requiring regulatory development, land allocation, and grid operator engagement that does not currently exist for SBSP.",
+    "technicalContext": "A rectenna field receiving microwave power from an SBSP satellite would convert microwave energy directly to DC electricity, which is then conditioned for grid injection. The receiving field footprint is large — estimates from feasibility studies suggest several square kilometres for a multi-gigawatt link — but the field can be located anywhere with line of sight to the satellite's transmission footprint, including outside existing grid corridors. Power conversion efficiency across the full transmission chain (DC to microwave to DC) is a key technical constraint currently under development.",
+    "feasibilityBoundary": "No SBSP-connected rectenna field has been built at grid scale. Power conversion efficiency and transmission chain losses remain subjects of active research. Grid integration feasibility is contingent on orbital system availability, which itself is not established. The grid integration analysis in feasibility studies is modelled from component performance data, not operational system data.",
+    "claimBoundary": "This brief examines the technical and regulatory characteristics of SBSP grid integration as documented in feasibility studies. It does not claim that SBSP is grid-ready, that rectenna fields are commercially feasible, or that any grid operator has committed to SBSP integration. All performance figures are from modelling studies and carry the assumptions of those studies.",
+    "sourceBoundary": "Frazer-Nash SBSP feasibility study (UK BEIS, 2020), ESA SOLARIS assessment, IEEE wireless power transfer standards literature. Grid integration modelling cited from feasibility study documentation.",
+    "relatedGlossaryTerms": [
+      "space-energy-grid",
+      "baseload-power",
+      "dispatchable-energy",
+      "island-grid",
+      "energy-security",
+      "rectenna-field"
+    ],
+    "relatedQuestions": [
+      "can-sbsp-provide-baseload-power",
+      "can-sbsp-power-remote-communities",
+      "what-is-dispatchable-energy-sbsp",
+      "what-is-rectenna-footprint-question"
+    ],
+    "relatedTechnologyPages": [
+      "ground-receiving-infrastructure",
+      "rectenna-arrays",
+      "power-conversion-and-conditioning"
+    ],
+    "relatedPrograms": [
+      "uk-space-energy-initiative",
+      "frazer-nash-sbsp-study"
+    ],
+    "seoTitle": "SBSP and Distributed Grid Architecture",
+    "seoDescription": "How SBSP would connect to national energy grids — rectenna requirements, power delivery profiles, and why SBSP's grid role differs from terrestrial renewables."
+  },
+  {
+    "id": "sbsp-development-pathway",
+    "slug": "sbsp-development-pathway",
+    "path": "/articles/sbsp-development-pathway/",
+    "title": "From Demonstration to Infrastructure: The SBSP Development Pathway",
+    "cluster": "infrastructure-strategy",
+    "summary": "Space-based solar power has existed as a concept since 1968 and as a structured institutional study since the NASA/DoE programme of the late 1970s. Yet no deployment has occurred. This brief examines what a credible development pathway from current technology demonstrations to infrastructure-scale deployment would require, why the gap between demonstration and deployment is larger for SBSP than for most technologies, and what conditions — technological, economic, regulatory, and institutional — would need to change for that pathway to become viable.",
+    "strategicThesis": "The gap between current SBSP demonstration activities and infrastructure-scale deployment is not a simple function of cost reduction or political will — it is a multi-layer system integration challenge that spans technology readiness, launch economics, regulatory precedent, grid policy, and international coordination. Understanding the development pathway means mapping these interdependencies, not just tracking individual technology metrics.",
+    "institutionalContext": "JAXA's SPS roadmap, ESA SOLARIS, NASA's SBSP revisit, and the UK study all propose multi-decade development pathways with staged technology demonstrations, incremental system scaling, and policy development running in parallel. These pathways share a common structure: component demonstration (current), subsystem integration demonstration (near-term planned), small-scale pilot (mid-term conditional), and infrastructure-scale deployment (long-term contingent). The contingencies increase at each stage.",
+    "technicalContext": "Technology readiness across SBSP subsystems is uneven. Wireless power transmission has been demonstrated in space at small scale (Caltech MAPLE, 2023). High-efficiency solar cells for space are in ongoing development. In-space assembly at SBSP-relevant scales has not been demonstrated. Heavy-lift launch at the required cadence and cost does not currently exist. Each subsystem must reach readiness thresholds before system integration testing can begin — and system integration at SBSP scale introduces challenges beyond those of individual subsystem development.",
+    "feasibilityBoundary": "No deployment pathway is funded or confirmed. All institutional roadmaps are planning documents that assume technology development, cost reduction, and policy development occurring on assumed timelines. The roadmaps are conditional, not commitments. The gap between 2023-era TRL status and deployment readiness remains large for multiple critical subsystems.",
+    "claimBoundary": "This brief documents how institutional studies frame the SBSP development pathway. It does not claim that deployment is imminent, that any specific timeline is credible without the stated conditions being met, or that current demonstration activities confirm deployment viability. All roadmap timelines cited are institutional planning assumptions.",
+    "sourceBoundary": "JAXA SSPS conceptual study, ESA SOLARIS assessment, NASA SBSP revisit programme, Frazer-Nash feasibility study. Caltech SSPP MAPLE experiment documentation. Historical context from NASA 1979 Reference System Study.",
+    "relatedGlossaryTerms": [
+      "technology-readiness-level",
+      "mass-to-orbit",
+      "launch-economics",
+      "technology-readiness",
+      "commercial-readiness",
+      "space-energy-grid"
+    ],
+    "relatedQuestions": [
+      "why-is-sbsp-not-commercially-deployed",
+      "what-is-sbsp-commercial-readiness-gap",
+      "what-is-trl-sbsp",
+      "what-are-the-three-sbsp-subsystems"
+    ],
+    "relatedTechnologyPages": [
+      "in-space-assembly-methods",
+      "heavy-lift-launch-requirements",
+      "modular-spacecraft-architecture"
+    ],
+    "relatedPrograms": [
+      "esa-solaris",
+      "jaxa-ssps",
+      "nasa-sbsp-revisit"
+    ],
+    "seoTitle": "The SBSP Development Pathway: From Demo to Infrastructure",
+    "seoDescription": "What a credible development pathway from current SBSP demonstrations to infrastructure-scale deployment would require — and why the gap remains large."
+  },
+  {
+    "id": "wireless-power-transmission-scale",
+    "slug": "wireless-power-transmission-scale",
+    "path": "/articles/wireless-power-transmission-scale/",
+    "title": "Wireless Power Transmission at Scale: Technical Thresholds and Current Progress",
+    "cluster": "technology-feasibility",
+    "summary": "Wireless power transmission is the defining technical capability of space-based solar power. It is also one of the most actively researched and most frequently misrepresented aspects of the technology. This brief examines what WPT at SBSP-relevant scale requires technically, what current demonstrations have established, what efficiency thresholds remain unresolved at system scale, and why the gap between component-level results and end-to-end transmission chain performance is significant.",
+    "strategicThesis": "WPT demonstrations including the Caltech MAPLE experiment and JAXA ground tests have confirmed that microwave power transmission is physically achievable in space-relevant conditions. They have not confirmed that end-to-end transmission efficiency, beam control at operational ranges, and power handling at gigawatt scale are simultaneously achievable. The distinction between component-level demonstration and system-level validation is analytically critical.",
+    "institutionalContext": "Multiple programmes are actively developing WPT technology for SBSP. Caltech SSPP demonstrated targeted wireless power transfer in space for the first time in 2023. Northrop Grumman's SSPIDR programme is advancing phased array transmitter technology for the US Air Force Research Laboratory. Mitsubishi Electric has conducted ground-based WPT demonstrations in Japan in support of JAXA's SSPS programme. These activities represent genuine technology development, not conceptual work.",
+    "technicalContext": "SBSP microwave WPT requires a phased array transmitter capable of forming and steering a precise beam over tens of thousands of kilometres. At the transmitter, power handling requirements are in the range of hundreds of megawatts to gigawatts for an operational system. Phased array beamforming at this scale requires coherent phase control across thousands of transmitter elements. Receiving efficiency at the rectenna depends on beam uniformity, frequency, and rectifying element performance. The full transmission chain (DC to microwave, propagation, microwave to DC) has cumulative efficiency losses at each stage. Current demonstrations operate at scales orders of magnitude below operational requirements.",
+    "feasibilityBoundary": "No end-to-end WPT system at SBSP-relevant power levels or transmission distances has been demonstrated. Component-level results are promising but cannot be directly extrapolated to system-level performance without intermediate-scale demonstrations. Regulatory status for operational microwave transmission from space to ground is unresolved. Efficiency figures from laboratory and small-scale demonstrations do not reflect system-integrated performance.",
+    "claimBoundary": "This brief documents the technical state of WPT research relevant to SBSP. It does not claim that WPT at operational scale has been demonstrated, that current efficiency results are system-representative, or that regulatory approval for space-to-ground microwave transmission is assured. All performance data cited is from the referenced study or experiment context.",
+    "sourceBoundary": "Caltech SSPP MAPLE experiment publications, Northrop Grumman SSPIDR programme documentation, Mitsubishi Electric WPT research, JAXA SSPS technical reports, IEEE WPT standards literature.",
+    "relatedGlossaryTerms": [
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "power-conversion-efficiency",
+      "phased-array-transmitter",
+      "beam-steering",
+      "beam-control"
+    ],
+    "relatedQuestions": [
+      "what-is-microwave-vs-laser-beaming",
+      "what-is-phased-array-transmitter-sbsp",
+      "how-does-beam-steering-work-sbsp",
+      "what-did-caltech-maple-demonstrate"
+    ],
+    "relatedTechnologyPages": [
+      "microwave-power-transmission",
+      "phased-array-transmitter-systems",
+      "rectenna-arrays"
+    ],
+    "relatedPrograms": [
+      "caltech-sspp",
+      "northrop-grumman-sspidr",
+      "mitsubishi-electric-wpt",
+      "jaxa-ssps"
+    ],
+    "seoTitle": "Wireless Power Transmission for SBSP: Technical Progress",
+    "seoDescription": "What WPT demonstrations have established for SBSP — and why the gap between component results and system-scale performance remains significant."
+  },
+  {
+    "id": "launch-economics-viability",
+    "slug": "launch-economics-viability",
+    "path": "/articles/launch-economics-viability/",
+    "title": "Launch Economics and SBSP Viability: The Cost Threshold Problem",
+    "cluster": "technology-feasibility",
+    "summary": "Launch cost is the single economic variable most frequently cited as the primary barrier to space-based solar power deployment. This brief examines the relationship between launch cost, mass-to-orbit requirements, and system economics for SBSP — why the launch cost threshold is where it is, how dramatically it needs to change from historical baselines for SBSP economics to close, and what recent developments in launch markets mean for the long-term trajectory of this constraint.",
+    "strategicThesis": "SBSP economics are fundamentally sensitive to launch cost because of the extreme mass that must be placed in geostationary orbit. Historical analyses set the required launch cost reduction at roughly one to two orders of magnitude from late-20th-century baselines. Reductions achieved by commercial launch providers since the 2010s have moved the threshold meaningfully but have not yet brought SBSP economics to closure for conventional business cases — the question is whether the trajectory of cost reduction continues.",
+    "institutionalContext": "Every major SBSP feasibility study from the NASA 1979 Reference System Study through to the ESA SOLARIS assessment and the Frazer-Nash study treats launch cost as a primary economic variable. The Frazer-Nash study modelled SBSP cost scenarios under various launch cost assumptions, finding that SBSP becomes economically competitive only under aggressive cost-reduction assumptions. NASA's SBSP revisit and ESA SOLARIS both note the potential impact of commercial launch cost reductions but stop short of treating current commercial launch pricing as sufficient to close the SBSP business case.",
+    "technicalContext": "SBSP satellites in geostationary orbit must be launched to approximately 36,000 km altitude. A commercially viable SBSP satellite would mass thousands of tonnes in orbit — two to three orders of magnitude heavier than conventional communication satellites. Even at current commercial launch prices (in the tens of millions of dollars per tonne to low Earth orbit), the launch cost component of SBSP capital expenditure would be enormous. Mass-to-orbit efficiency — how much usable power can be generated per kilogram in orbit — is a parallel design driver. Specific mass (W/kg) of the solar array and transmission system directly determines how much launch cost can be tolerated for a given target cost per kWh.",
+    "feasibilityBoundary": "No SBSP system has been costed with confirmed launch contracts. All economic analyses use modelled launch cost assumptions. The required launch cost for SBSP commercial viability depends on system design assumptions that are themselves unconfirmed. Current commercial launch prices represent a significant improvement over historical baselines but have not been demonstrated to close the SBSP economic case under conventional electricity market assumptions.",
+    "claimBoundary": "This brief documents the relationship between launch economics and SBSP viability as established in institutional feasibility studies. It does not claim that launch costs have reached SBSP viability thresholds, that any specific launch cost makes SBSP commercially competitive, or that future cost reductions are assured. All figures cited are from their source feasibility studies with their stated assumptions.",
+    "sourceBoundary": "NASA 1979 Reference System Study, NASA SBSP revisit, ESA SOLARIS assessment, Frazer-Nash feasibility study (UK BEIS, 2020). Launch market data from public commercial launch pricing.",
+    "relatedGlossaryTerms": [
+      "launch-economics",
+      "commercial-readiness",
+      "mass-to-orbit",
+      "space-energy-grid",
+      "technology-readiness"
+    ],
+    "relatedQuestions": [
+      "what-is-launch-economics-sbsp",
+      "what-is-mass-to-orbit-constraint-sbsp",
+      "what-is-specific-mass-sbsp",
+      "what-is-sbsp-economic-challenge"
+    ],
+    "relatedTechnologyPages": [
+      "heavy-lift-launch-requirements",
+      "solar-array-structural-design",
+      "modular-spacecraft-architecture"
+    ],
+    "relatedPrograms": [
+      "nasa-sbsp-revisit",
+      "esa-solaris",
+      "jaxa-ssps"
+    ],
+    "seoTitle": "Launch Economics and SBSP Viability",
+    "seoDescription": "How launch cost determines SBSP economics — what cost thresholds are required, how much the market has moved, and why the gap remains significant."
+  },
+  {
+    "id": "technology-readiness-feasibility-frontier",
+    "slug": "technology-readiness-feasibility-frontier",
+    "path": "/articles/technology-readiness-feasibility-frontier/",
+    "title": "Technology Readiness and the SBSP Feasibility Frontier",
+    "cluster": "technology-feasibility",
+    "summary": "Technology readiness level is a standard framework for assessing how close a technology is to operational deployment. Applied to space-based solar power, TRL analysis reveals that the key SBSP subsystems are at very different readiness stages — some components are mature, some have been demonstrated in space, and some remain at laboratory or conceptual stage. This brief maps the TRL landscape across SBSP's critical subsystems and explains what the uneven readiness profile means for the path to system integration.",
+    "strategicThesis": "SBSP is not a single technology with a single TRL — it is a system of interdependent subsystems, each with its own readiness level. System integration at SBSP scale cannot begin until all critical subsystems reach sufficient individual readiness. The bottleneck subsystems — particularly in-space assembly at scale and integrated power transmission chain performance — currently define the outer boundary of SBSP's feasibility frontier.",
+    "institutionalContext": "ESA SOLARIS, JAXA's SSPS programme, and the Caltech SSPP project have each contributed to advancing TRL in specific subsystems. The Caltech MAPLE experiment (2023) advanced the TRL of integrated phased-array WPT in space. JAXA and Mitsubishi Electric have conducted ground-based demonstrations of high-efficiency WPT components. Northrop Grumman's SSPIDR programme targets the phased array transmitter subsystem specifically. No programme has yet demonstrated full end-to-end system integration at any relevant scale.",
+    "technicalContext": "At the component level, high-efficiency multi-junction solar cells for space are at TRL 9 for conventional satellite applications. Phased array antennas for communication are mature. The SBSP-specific combination — integrated solar-transmitter tile capable of collecting and beaming simultaneously, at the required efficiency and scale — is at significantly lower readiness. In-space assembly of large structures has been demonstrated for the International Space Station, but the scale and mass of SBSP structures would require capabilities not yet validated. Robotic on-orbit servicing is in early development.",
+    "feasibilityBoundary": "No single TRL number applies to SBSP as a system. Individual component TRL figures should not be used to imply system-level readiness. The feasibility frontier is defined by the lowest-readiness critical subsystem, which for current SBSP programmes is typically in-space assembly at scale and end-to-end transmission chain performance.",
+    "claimBoundary": "This brief maps TRL status across SBSP subsystems based on published programme information and peer-reviewed research. It does not claim that any subsystem is deployment-ready or that current TRL progress implies a specific deployment timeline. TRL progress in one subsystem does not imply equivalent progress across the system.",
+    "sourceBoundary": "ESA SOLARIS assessment, JAXA SSPS technical documentation, Caltech SSPP MAPLE experiment publications, Northrop Grumman SSPIDR programme documentation. TRL definitions from NASA/ESA standard frameworks.",
+    "relatedGlossaryTerms": [
+      "technology-readiness-level",
+      "technology-readiness",
+      "beam-control",
+      "power-conversion-efficiency",
+      "mass-to-orbit"
+    ],
+    "relatedQuestions": [
+      "what-is-trl-sbsp",
+      "what-are-the-three-sbsp-subsystems",
+      "what-is-sbsp-commercial-readiness-gap",
+      "why-is-sbsp-not-commercially-deployed"
+    ],
+    "relatedTechnologyPages": [
+      "phased-array-transmitter-systems",
+      "high-efficiency-solar-cells",
+      "in-space-assembly-methods",
+      "robotic-on-orbit-servicing"
+    ],
+    "relatedPrograms": [
+      "caltech-sspp",
+      "esa-solaris",
+      "northrop-grumman-sspidr",
+      "jaxa-ssps"
+    ],
+    "seoTitle": "SBSP Technology Readiness and the Feasibility Frontier",
+    "seoDescription": "TRL analysis across SBSP subsystems — what is proven, what is demonstrated, and why in-space assembly and transmission gaps define the feasibility frontier."
+  },
+  {
+    "id": "esa-solaris-european-rationale",
+    "slug": "esa-solaris-european-rationale",
+    "path": "/articles/esa-solaris-european-rationale/",
+    "title": "ESA SOLARIS: European Strategic Rationale and Assessment Context",
+    "cluster": "institutional-programs",
+    "summary": "ESA's SOLARIS initiative is the most significant institutional commitment to SBSP assessment by a major space agency in the current era. Launched through ESA's Concurrent Design Facility, SOLARIS assessed SBSP system options, technology requirements, cost envelopes, and strategic rationale from a European perspective. This brief examines what SOLARIS concluded, how it frames the European strategic case for SBSP investment, and what it explicitly did not resolve.",
+    "strategicThesis": "SOLARIS represents a formal institutional assessment that SBSP merits continued study and targeted technology investment — not a commitment to deployment. The assessment's strategic significance lies in ESA formalising SBSP as a legitimate research priority within the European space agenda, making it eligible for structured funding and programme development rather than ad hoc research.",
+    "institutionalContext": "ESA presented SOLARIS to its member states as a potential new initiative requiring dedicated funding. The initiative was structured around three phases: a concept assessment phase (completed), a technology development phase (proposed), and a demonstration phase (conditional on technology progress). The European context includes EU energy security policy, the REPowerEU agenda, and the political salience of energy import dependence following the 2022 energy crisis. Industry players including Airbus and Thales Alenia Space have engaged with SOLARIS as a potential future market.",
+    "technicalContext": "SOLARIS assessed multiple system architectures for European SBSP, evaluating microwave transmission vs laser options, single-satellite vs constellation approaches, and European vs international launch options. The assessment identified wireless power transmission technology development as the primary near-term investment priority. The study set out specific efficiency and performance targets that would need to be met at demonstration phase before proceeding to pilot deployment.",
+    "feasibilityBoundary": "SOLARIS concluded that SBSP is technically feasible in principle but requires substantial technology development before any deployment decision. The assessment did not confirm commercial viability, funded programme approval, or a committed deployment timeline. The transition from assessment to funded technology development programme depends on ESA member state approval and budget allocation that has not been confirmed.",
+    "claimBoundary": "This brief documents the SOLARIS assessment process, conclusions, and strategic framing. It does not claim that SOLARIS confirms SBSP deployment viability, that ESA has committed to a SBSP programme, or that European industry involvement implies deployment contracts. All assessments cited reflect the study's conclusions and assumptions.",
+    "sourceBoundary": "ESA SOLARIS Concurrent Design Facility assessment documentation, ESA public communications on SOLARIS, Airbus and Thales Alenia Space public statements on SBSP activity.",
+    "relatedGlossaryTerms": [
+      "space-energy-grid",
+      "wireless-power-transmission",
+      "space-based-solar-power",
+      "energy-sovereignty",
+      "technology-readiness-level"
+    ],
+    "relatedQuestions": [
+      "what-is-esa-solaris",
+      "which-countries-research-sbsp",
+      "what-is-sbsp-and-energy-sovereignty",
+      "what-is-trl-sbsp"
+    ],
+    "relatedTechnologyPages": [
+      "microwave-power-transmission",
+      "phased-array-transmitter-systems",
+      "in-space-assembly-methods"
+    ],
+    "relatedPrograms": [
+      "esa-solaris",
+      "airbus-sbsp",
+      "thales-alenia-sbsp"
+    ],
+    "seoTitle": "ESA SOLARIS: European Strategic Rationale for SBSP",
+    "seoDescription": "What ESA's SOLARIS initiative concluded — the European strategic case for SBSP investment and what the assessment explicitly did not resolve."
+  },
+  {
+    "id": "caltech-maple-what-demonstration-means",
+    "slug": "caltech-maple-what-demonstration-means",
+    "path": "/articles/caltech-maple-what-demonstration-means/",
+    "title": "Caltech SSPP and the MAPLE Experiment: What In-Space Demonstration Establishes",
+    "cluster": "institutional-programs",
+    "summary": "The 2023 Caltech MAPLE experiment demonstrated targeted wireless power transmission in space for the first time — transmitting power between two points on the SSPD-1 satellite using a phased array transmitter, and detecting power at a receiver. This was a significant technology milestone. This brief examines precisely what MAPLE established, what it did not establish, and why the distinction matters for understanding SBSP technology progress.",
+    "strategicThesis": "MAPLE confirmed that integrated phased-array WPT in a space environment is physically achievable and technically operable — advancing the TRL of this subsystem meaningfully. It did not confirm transmission chain efficiency at SBSP-relevant power levels, space-to-ground transmission across operational distances, beam control at geostationary orbit separation, or system integration of solar collection and transmission. The experiment's significance is real but bounded.",
+    "institutionalContext": "Caltech's Space Solar Power Project was founded by philanthropic investment and represents the most significant private-sector SBSP development effort by an academic institution. SSPD-1 (Space Solar Power Demonstrator 1), launched in January 2023, carried three experiments: DOLCE (structural deployment), ALBA (photovoltaic efficiency), and MAPLE (wireless power transmission). Caltech published peer-reviewed results from MAPLE in 2023. The project has received significant media attention but has been careful in its own communications to distinguish demonstration scope from deployment claims.",
+    "technicalContext": "MAPLE demonstrated that a phased array transmitter integrated with a photovoltaic panel could receive solar power and transmit it wirelessly to two target receivers within the same satellite structure — approximately 30 centimetres apart. The demonstration confirmed that phase coherence across the transmitter array could be maintained in a space environment. The power levels demonstrated were milliwatts, not the megawatt-to-gigawatt range relevant to SBSP. Transmission distance was centimetres, not the 36,000 kilometres of a geostationary satellite to ground.",
+    "feasibilityBoundary": "MAPLE demonstrated component-level WPT in space at milliwatt power levels and centimetre distances. The gap between this demonstration and SBSP-scale operation involves many orders of magnitude in power and distance, with no intermediate-scale demonstrations yet performed. Component demonstration does not extrapolate directly to system performance — additional demonstrations at intermediate scales are required to establish the scaling pathway.",
+    "claimBoundary": "This brief documents what MAPLE demonstrated and what it did not demonstrate. It does not claim that MAPLE confirms SBSP deployment viability or commercial readiness. No overclaim framing of MAPLE as 'proving SBSP works' is appropriate — it proved a specific component technology works in a space environment at small scale.",
+    "sourceBoundary": "Caltech SSPP MAPLE experiment peer-reviewed publications (2023), Caltech SSPP project documentation. Interpretation of experiment scope and significance is editorial analysis of published results.",
+    "relatedGlossaryTerms": [
+      "wireless-power-transmission",
+      "microwave-power-beaming",
+      "technology-readiness-level",
+      "beam-control",
+      "phased-array-transmitter"
+    ],
+    "relatedQuestions": [
+      "what-did-caltech-maple-demonstrate",
+      "what-is-trl-sbsp",
+      "what-is-phased-array-transmitter-sbsp",
+      "how-does-space-based-solar-power-work"
+    ],
+    "relatedTechnologyPages": [
+      "phased-array-transmitter-systems",
+      "high-efficiency-solar-cells",
+      "microwave-power-transmission"
+    ],
+    "relatedPrograms": [
+      "caltech-sspp"
+    ],
+    "seoTitle": "Caltech MAPLE: What In-Space WPT Demonstration Establishes",
+    "seoDescription": "What the 2023 Caltech MAPLE experiment confirmed about wireless power transmission in space — and what it did not establish about SBSP deployment viability."
+  },
+  {
+    "id": "national-sbsp-programmes-comparison",
+    "slug": "national-sbsp-programmes-comparison",
+    "path": "/articles/national-sbsp-programmes-comparison/",
+    "title": "National SBSP Programmes: Comparing Institutional Approaches Across Space Agencies",
+    "cluster": "institutional-programs",
+    "summary": "Space-based solar power is being studied by national space agencies and research institutions across multiple continents, but the approaches differ significantly in strategic framing, institutional structure, technology focus, and urgency. This brief compares how NASA, ESA, JAXA, and national programmes in the UK, China, India, and South Korea approach SBSP — and what these differences reveal about how each institution frames the technology's strategic relevance.",
+    "strategicThesis": "The diversity of national SBSP approaches reflects different underlying strategic logics: ESA frames SBSP primarily as an energy security response; JAXA frames it as a long-term energy technology development programme; China frames it as a national strategic infrastructure ambition; UK and US defence-linked programmes frame it as an energy logistics solution. These framings are not interchangeable — they produce different research priorities, timelines, and institutional commitments.",
+    "institutionalContext": "ESA's SOLARIS is the most structured European assessment. JAXA's SSPS programme has the longest institutional history, with research spanning over three decades. NASA's SBSP revisit is a relatively recent re-engagement after the agency moved away from SBSP following the 1979 programme. China's national SBSP programme is the most explicitly infrastructure-ambition-driven, with goals for test facilities and satellite demonstrations expressed in national plans. The UK programme, via the Space Energy Initiative, is industry-consortium driven with government commissioning of feasibility studies. US defence-linked programmes (AFRL, Northrop Grumman SSPIDR) frame SBSP as a military energy logistics capability.",
+    "technicalContext": "Technical focus areas differ by programme. JAXA and Caltech focus heavily on WPT component development. ESA SOLARIS takes a system architecture and technology roadmap approach. China's programme has invested in large-scale ground test facilities for WPT. Northrop Grumman SSPIDR focuses specifically on phased array transmitter technology for defence applications. These different foci are partly driven by strategic framing and partly by existing institutional and industrial capabilities.",
+    "feasibilityBoundary": "No national programme has progressed beyond technology development and feasibility assessment phases. All national roadmaps include contingencies dependent on technology progress, cost reductions, and policy decisions not yet made. Programme funding in most cases is at the research and assessment level, not the development and deployment level.",
+    "claimBoundary": "This brief compares national programme structures and framing based on publicly available programme documentation. It does not claim that any national programme has committed to deployment, that programme roadmap dates are funded or confirmed, or that different national approaches imply equivalent deployment probability.",
+    "sourceBoundary": "ESA SOLARIS documentation, JAXA SSPS publications, NASA SBSP revisit documentation, Frazer-Nash UK feasibility study, public documentation on Chinese SBSP programme, ISRO and Indian programme communications, KARI and Korean programme information.",
+    "relatedGlossaryTerms": [
+      "space-based-solar-power",
+      "technology-readiness-level",
+      "energy-sovereignty",
+      "orbital-energy-reference-layer",
+      "wireless-power-transmission"
+    ],
+    "relatedQuestions": [
+      "which-countries-research-sbsp",
+      "what-is-esa-solaris",
+      "what-is-jaxa-ssps",
+      "what-did-nasa-sspp-revisit-find",
+      "what-is-sbsp-and-china"
+    ],
+    "relatedTechnologyPages": [
+      "microwave-power-transmission",
+      "in-space-assembly-methods"
+    ],
+    "relatedPrograms": [
+      "esa-solaris",
+      "jaxa-ssps",
+      "nasa-sbsp-revisit",
+      "uk-space-energy-initiative",
+      "china-sbsp-programme"
+    ],
+    "seoTitle": "National SBSP Programmes: Comparing Space Agency Approaches",
+    "seoDescription": "How NASA, ESA, JAXA, and national programmes compare in their SBSP approaches — and what different strategic framings reveal about institutional priorities."
+  },
+  {
+    "id": "ai-infrastructure-energy-demand",
+    "slug": "ai-infrastructure-energy-demand",
+    "path": "/articles/ai-infrastructure-energy-demand/",
+    "title": "AI Infrastructure and Energy Demand: The Case for Space-Based Power",
+    "cluster": "energy-sovereignty-ai",
+    "summary": "Artificial intelligence infrastructure at hyperscale — large data centres training and serving foundation models — requires continuous, high-density electrical power at a scale that is creating measurable strain on grid infrastructure in multiple countries. This brief examines the structure of AI power demand, why conventional grid expansion is constrained, and why SBSP is analytically relevant to this scenario — not as an imminent solution but as a structural option for a problem that does not have simple near-term answers.",
+    "strategicThesis": "AI data centres require dispatchable, continuous, high-density power that is locationally flexible. These characteristics match SBSP's grid profile more closely than wind or solar. The relevance of SBSP to AI power demand is not a claim that SBSP is ready — it is an observation that the characteristics of the energy demand problem make SBSP structurally relevant in a way that was less true during earlier periods of grid planning.",
+    "institutionalContext": "The connection between AI energy demand and SBSP has been noted in recent institutional communications, including UK government and industry statements in the context of the Space Energy Initiative. Hyperscale data centre operators have begun engaging with novel power sources including nuclear, geothermal, and non-grid-connected power. SBSP is not yet commercially competitive with these alternatives, but the growing emphasis on power quality, continuity, and carbon intensity has shifted the comparison environment for long-term energy infrastructure decisions.",
+    "technicalContext": "A hyperscale data centre campus may require hundreds of megawatts of continuous power. A cluster of multiple data centres in a region can demand gigawatts. Conventional grid expansion to serve these loads faces land-use, permitting, and transmission infrastructure constraints. The power demand is largely continuous and insensitive to time of day or weather — which makes variable renewable generation less naturally suited to serving it without large-scale storage. SBSP, if deployed at scale, would provide continuous, weather-independent power — a profile that matches data centre load characteristics more directly.",
+    "feasibilityBoundary": "SBSP is not commercially available and has no confirmed deployment timeline. AI power demand does not make SBSP deployable on any near-term timeline — it makes SBSP analytically relevant to the long-term energy infrastructure planning problem. Connecting AI demand to SBSP should not be read as a deployment claim.",
+    "claimBoundary": "This brief examines the structural alignment between AI power demand characteristics and SBSP's potential grid profile. It does not claim that SBSP is ready to serve AI data centres, that any technology company has contracted SBSP power, or that AI demand makes SBSP commercially viable. The strategic relevance argument is conditional on SBSP development progress that has not yet occurred.",
+    "sourceBoundary": "AI data centre power demand figures from publicly available industry sources and grid operator data. SBSP grid profile analysis drawn from ESA SOLARIS and Frazer-Nash feasibility study. UK Space Energy Initiative communications on AI and energy demand.",
+    "relatedGlossaryTerms": [
+      "critical-infrastructure-power",
+      "hyperscale-computing-power",
+      "baseload-power",
+      "energy-sovereignty",
+      "dispatchable-energy"
+    ],
+    "relatedQuestions": [
+      "can-sbsp-power-ai-data-centers",
+      "how-much-power-do-hyperscale-ai-data-centers-need",
+      "can-sbsp-provide-baseload-power",
+      "what-is-dispatchable-energy-sbsp"
+    ],
+    "relatedTechnologyPages": [
+      "ground-receiving-infrastructure",
+      "rectenna-arrays"
+    ],
+    "relatedPrograms": [
+      "uk-space-energy-initiative",
+      "esa-solaris"
+    ],
+    "seoTitle": "AI Infrastructure and Energy Demand: The SBSP Case",
+    "seoDescription": "Why AI data centre power demand makes SBSP structurally relevant — and why structural relevance is not a deployment claim."
+  },
+  {
+    "id": "energy-sovereignty-strategic-rationale",
+    "slug": "energy-sovereignty-strategic-rationale",
+    "path": "/articles/energy-sovereignty-strategic-rationale/",
+    "title": "Energy Sovereignty and the Strategic Rationale for Space-Based Solar Power",
+    "cluster": "energy-sovereignty-ai",
+    "summary": "Energy sovereignty — the capacity of a state to secure reliable, affordable energy without structural dependence on external suppliers — has re-emerged as a strategic priority following the energy market disruptions of 2021–2023. Space-based solar power is one of a small number of proposed energy technologies that could, in principle, provide import-independent baseload power at national scale. This brief examines how energy sovereignty frames the strategic case for SBSP and what it implies for how governments should evaluate SBSP investment.",
+    "strategicThesis": "Energy sovereignty framing elevates SBSP from a niche technology option to a potential strategic infrastructure investment, because SBSP's primary strategic attribute — independence from terrestrial geography, weather, and fuel supply chains — aligns directly with sovereignty objectives. This does not make SBSP the right investment choice, but it changes the decision framework compared to evaluating SBSP as a simple economic option.",
+    "institutionalContext": "The energy sovereignty rationale for SBSP is most explicit in European institutional communications. The REPowerEU agenda, motivated by dependence reduction following the 2022 energy crisis, provided political context in which ESA's SOLARIS initiative was framed. The UK Space Energy Initiative explicitly positions SBSP as contributing to UK energy security. The Indian national SBSP programme is motivated partly by India's ambition to reduce fossil fuel import dependence. These different geopolitical contexts produce different strategic weights for the same technology.",
+    "technicalContext": "SBSP's energy sovereignty claim rests on its technical characteristics: solar energy collected in space is not subject to weather, season, or terrestrial geography, meaning that any country with a rectenna field and the ability to deploy or access an SBSP satellite could receive continuous power independent of local renewable resource endowment or fossil fuel access. This characteristic is genuine but conditional on system availability — which itself depends on the orbital maintenance, launch logistics, and satellite supply chain that would underpin SBSP infrastructure.",
+    "feasibilityBoundary": "Energy sovereignty through SBSP is conditional on deployment at infrastructure scale, which requires technology development, cost reductions, regulatory frameworks, and institutional coordination not currently in place. The sovereignty argument is a motivating factor for investment in the development pathway, not a confirmation that the pathway will succeed.",
+    "claimBoundary": "This brief examines the energy sovereignty framing of SBSP and its implications for strategic investment evaluation. It does not claim that SBSP provides energy sovereignty today, that any country has achieved energy sovereignty through SBSP, or that sovereignty framing resolves the technology and economic challenges.",
+    "sourceBoundary": "ESA SOLARIS documentation, Frazer-Nash SBSP study, UK Space Energy Initiative communications, Indian SBSP programme documentation, EU REPowerEU policy context.",
+    "relatedGlossaryTerms": [
+      "energy-sovereignty",
+      "energy-security",
+      "strategic-energy-logistics",
+      "defense-energy-resilience",
+      "baseload-power"
+    ],
+    "relatedQuestions": [
+      "what-is-sbsp-and-energy-sovereignty",
+      "what-is-strategic-importance-sbsp",
+      "can-sbsp-provide-baseload-power",
+      "can-sbsp-power-remote-communities"
+    ],
+    "relatedTechnologyPages": [
+      "ground-receiving-infrastructure",
+      "heavy-lift-launch-requirements"
+    ],
+    "relatedPrograms": [
+      "uk-space-energy-initiative",
+      "esa-solaris",
+      "india-sbsp-national"
+    ],
+    "seoTitle": "Energy Sovereignty and the Strategic Case for SBSP",
+    "seoDescription": "How energy sovereignty framing changes the strategic evaluation of SBSP investment — and what it does and does not imply about deployment readiness."
+  },
+  {
+    "id": "sbsp-defense-energy-logistics",
+    "slug": "sbsp-defense-energy-logistics",
+    "path": "/articles/sbsp-defense-energy-logistics/",
+    "title": "SBSP and Defense Energy Logistics: The Military Rationale for In-Orbit Power",
+    "cluster": "energy-sovereignty-ai",
+    "summary": "Military and defence organisations have a distinct strategic rationale for studying space-based solar power that differs from the civilian energy transition case. Forward-deployed military operations face severe energy logistics constraints — fuel supply chains are vulnerable, expensive, and operationally limiting. SBSP, in the defence framing, is not primarily an electricity supply option for national grids — it is a potential power delivery system that could eliminate the logistics burden of fuel resupply in remote or contested environments.",
+    "strategicThesis": "The defence energy logistics case for SBSP rests on the strategic value of eliminating liquid fuel supply chains to forward-operating bases or remote installations. In the defence framing, the cost economics of SBSP can look very different from the civilian electricity market case — because the comparison is not against grid electricity prices but against the full delivered cost of fuel in austere or contested environments, which can be orders of magnitude higher.",
+    "institutionalContext": "US defence investment in SBSP-related technology has been sustained and structured. The Air Force Research Laboratory (AFRL) has a long-standing SBSP research programme. Northrop Grumman's SSPIDR programme, funded by AFRL, is specifically designed to advance the phased array transmitter technology needed for beamed power delivery. The Naval Research Laboratory (NRL) has conducted WPT research with defence logistics applications. The DoD's broader interest in energy resilience and forward power has provided sustained institutional support for this research direction.",
+    "technicalContext": "Defence applications of SBSP or SBSP-derived WPT technology span a range of scales — from beaming power to small forward-operating bases to providing significant power to larger installations. WPT in a defence context does not require the full orbital system at civilian grid scale — it could in principle be developed as a niche capability serving high-value, power-constrained military environments before it reaches commercial grid scale. This defence pathway may run in parallel with, and potentially ahead of, civilian SBSP development.",
+    "feasibilityBoundary": "No defence SBSP system has been deployed. SSPIDR is a technology demonstration programme validating components, not a deployed system. The defence logistics case depends on WPT technology reaching performance levels that have not yet been demonstrated at operationally relevant ranges and power levels.",
+    "claimBoundary": "This brief documents the defence energy logistics rationale for SBSP investment and the institutional research activities that reflect it. It does not claim that any defence SBSP system is operational, that SSPIDR has demonstrated operational capability, or that the defence case confirms civilian deployment viability. Defence applications context and civilian infrastructure context represent distinct deployment scenarios with different requirements.",
+    "sourceBoundary": "AFRL and DoD SBSP research documentation, Northrop Grumman SSPIDR programme documentation, Naval Research Laboratory WPT research, US DoD energy logistics strategy publications.",
+    "relatedGlossaryTerms": [
+      "energy-security",
+      "defense-energy-resilience",
+      "strategic-energy-logistics",
+      "mission-critical-power",
+      "remote-power-supply"
+    ],
+    "relatedQuestions": [
+      "what-is-sbsp-and-defense",
+      "what-is-defense-energy-resilience-sbsp",
+      "what-is-strategic-importance-sbsp"
+    ],
+    "relatedTechnologyPages": [
+      "microwave-power-transmission",
+      "ground-receiving-infrastructure",
+      "rectenna-arrays"
+    ],
+    "relatedPrograms": [
+      "afrl-sbsp",
+      "northrop-grumman-sspidr",
+      "nrl-wpt",
+      "dod-sbsp-energy-logistics"
+    ],
+    "seoTitle": "SBSP and Defense Energy Logistics",
+    "seoDescription": "The military rationale for space-based solar power — why defence energy logistics makes SBSP relevant beyond the civilian energy transition case."
+  }
+]

@@ -1,3 +1,36 @@
+## [V1B-DL-012] - 2026-05-29: v1B-F Articles & Strategic Briefs Expansion Initiated and Quality Gate Passed
+
+**Status:** APPROVED — Quality gate 16/16 PASS, build approved for PR
+
+**Context:** Sprint v1B-E was merged, deployed, live-verified, and V1B-DL-011 was recorded on main. Sprint v1B-F implements 12 governed strategic brief pages under `/articles/` across 4 thematic clusters. Feature branch: `claude/v1b-f-articles-expansion-cm4aq`.
+
+**Scope Implemented:**
+
+1. `main/data/article_pages.json` — 12 governed article records (infrastructure-strategy ×3, technology-feasibility ×3, institutional-programs ×3, energy-sovereignty-ai ×3)
+2. `main/data/publication_v1b_f.json` — Trial manifest inheriting v1b_d glossaryTerms, questions, programs, technologyPages; adds articles list
+3. `main/scripts/validate_articles.py` — 16th quality gate validator (unique IDs, required fields, cluster membership, length bounds, banned phrases, cross-reference integrity, all 4 clusters represented)
+4. `main/scripts/quality_gate.py` — VALIDATORS extended from 15 to 16
+5. `main/scripts/build.py` — Article loading, program_paths lookup (from pages.json and program_pages.json), articles hub generator, article page generator with boundary boxes
+6. `main/data/pages.json` — Articles hub entry (seedSource: articles_hub) + 12 article_brief entries (189 total approved pages)
+7. `main/data/internal_link_graph.json` — article_brief rule added with parentHub /articles/, requiredOutboundLinks, minInternalLinks 4
+8. `main/static/css/main.css` — Article hub and article page styles (boundary boxes, cluster badges, link chips)
+
+**Quality Gate Results:**
+
+- 16/16 validators PASS
+- Generated: 189 pages
+- Sitemap URLs: 189
+- Legacy ref-nav patterns: 0
+- All cross-references validated (glossary slugs, question IDs, technology page IDs, program IDs)
+
+**Decisions:**
+
+1. v1B-F sprint quality gate is cleared. PR may be opened from `claude/v1b-f-articles-expansion-cm4aq` to `main`.
+2. v1B-G remains BLOCKED until v1B-F is merged to main, GitHub Pages deployment confirmed, live verification performed, and V1B-DL-013 is recorded.
+3. Google Search Console submission remains BLOCKED until explicitly authorized.
+
+---
+
 ## [V1B-DL-011] - 2026-05-29: v1B-E Post-Merge Live Verification Approved
 
 **Status:** APPROVED
