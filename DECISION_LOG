@@ -1,3 +1,43 @@
+## [V1B-DL-015] - 2026-05-29: v1B-G Post-Merge Live Verification Approved
+
+**Status:** APPROVED
+
+**Context:** PR #15 (branch `claude/v1b-g-indexation-readiness-cm4aq`) was merged to main. Post-merge live verification performed on 2026-05-29 against the deployed public/ output on main (merge commit `f502d98`).
+
+**Verification Results:**
+
+1. **Merge commit:** `f502d98` — Merge pull request #15 from Sohadot/claude/v1b-g-indexation-readiness-cm4aq ✓
+2. **Sovereign Quality Gate on main:** 17/17 PASS — all validators pass including validate_indexation_readiness.py ✓
+3. **Build output:** 189 pages generated, 189 sitemap URLs ✓
+4. **Production URLs verified:** / /glossary/ /questions/ /technology/ /programs/ /articles/ /sources/ /methodology/ /sitemap.xml /sitemap_index.xml /robots.txt ✓
+5. **Sitemap consistency:**
+   - sitemap.xml and sitemap_index.xml reference identical 6 sub-sitemaps ✓
+   - All 6 sub-sitemap files physically exist (sitemap-core.xml, sitemap-glossary-001.xml, sitemap-questions-001.xml, sitemap-programs-001.xml, sitemap-articles-001.xml, sitemap-technology-001.xml) ✓
+   - URL counts: core=15, glossary=53, questions=57, programs=31, articles=12, technology=21 → total 189 ✓
+   - Zero duplicate URLs across all sitemaps ✓
+6. **robots.txt:** Sitemap directive → `https://space-based-solar-power.com/sitemap.xml` ✓
+7. **Canonical tags:** 0 missing, 0 wrong — all 189 pages have correct canonical matching public route ✓
+8. **noindex:** 0 approved pages carry noindex robots meta ✓
+9. **Hub footer links verified:**
+   - glossary: /methodology/=1 /sources/=1 ✓
+   - questions: /methodology/=1 /sources/=1 ✓
+   - technology: /methodology/=1 /sources/=1 ✓
+   - programs: /methodology/=1 /sources/=1 ✓
+   - sources (IS /sources/): /methodology/=2 /sources/ self-link skipped ✓
+   - articles: /methodology/=1 /sources/=1 ✓
+10. **Legacy ref-nav patterns:** 0 across all 189 files ✓
+11. **Orphan public/ pages:** 0 — every index.html corresponds to an approved_for_launch path ✓
+12. **DECISION_LOG integrity:** S1-DL-001 through V1B-DL-014 all present, nothing removed, rewritten, compressed, or reordered ✓
+13. **Blocked actions confirmed:** GSC blocked, WebGL blocked, JS-dependent UI blocked, manual public/ patching blocked ✓
+
+**Decisions:**
+
+1. v1B-G sprint is closed. Indexation readiness governance is live on production.
+2. v1B-H is now unblocked. Sprint v1B-H may proceed when authorized.
+3. Google Search Console submission remains BLOCKED until explicitly authorized.
+
+---
+
 ## [V1B-DL-014] - 2026-05-29: v1B-G Pre-GSC Indexation & Discovery Readiness Initiated
 
 **Status:** INITIATED — Quality gate 17/17 PASS, build approved for PR
