@@ -125,6 +125,13 @@ def load_seed_data() -> dict:
             if p.get("type") == "question_answer" and p.get("seedId") and p.get("path"):
                 seed["question_paths"][p["seedId"]] = p["path"]
 
+    # v1B-E: load governed source registry
+    seed["sources"] = []
+    source_registry_path = DATA_DIR / "source_registry.json"
+    if source_registry_path.exists():
+        data = load_json(source_registry_path)
+        seed["sources"] = data if isinstance(data, list) else data.get("sources", [])
+
     return seed
 
 
@@ -163,6 +170,16 @@ PROGRAM_CLUSTER_ORDER = [
     ("academic-university", "Academic and University Programs"),
     ("industry-consortium", "Industry and Consortium Programs"),
     ("historical-foundational", "Historical and Foundational References"),
+]
+
+SOURCE_CLASS_ORDER = [
+    ("institutional-space-agency", "Institutional Space Agency Sources"),
+    ("government-policy", "Government Policy and Commissioned Studies"),
+    ("academic-research", "Academic and Peer-Reviewed Research"),
+    ("technical-standard", "Technical Standards and Regulatory References"),
+    ("industry-consortium", "Industry and Consortium Sources"),
+    ("historical-primary", "Historical and Foundational References"),
+    ("methodology-internal", "Site Methodology and Governance"),
 ]
 
 
@@ -952,6 +969,109 @@ def generate_programs_hub_html(page: dict, seed_data: dict, trial_manifest: dict
     return _page_shell(page, h1, body)
 
 
+def generate_sources_hub_html(page: dict, seed_data: dict) -> str:
+    """v1B-E: Governed source registry hub with status panel, class sections, and governance explanation."""
+    h1 = page.get("title", "Sources and Claim Boundaries")
+    description = _escape_html(page.get("description", ""))
+
+    records = seed_data.get("sources", [])
+    by_class: dict[str, list] = {}
+    for rec in records:
+        sc = rec.get("source_class", "")
+        by_class.setdefault(sc, []).append(rec)
+
+    total_sources = len(records)
+    active_classes = [cid for cid, _ in SOURCE_CLASS_ORDER if by_class.get(cid)]
+
+    parts = []
+    if description:
+        parts.append(f'<p class="hub-intro">{description}</p>')
+
+    # Status panel
+    parts.append('<div class="source-status-panel">')
+    parts.append(f'  <div class="source-status-stat"><span class="source-status-value">{total_sources}</span><span class="source-status-label">governed sources</span></div>')
+    parts.append(f'  <div class="source-status-stat"><span class="source-status-value">{len(active_classes)}</span><span class="source-status-label">source classes</span></div>')
+    parts.append('  <div class="source-status-stat"><span class="source-status-value">Yes</span><span class="source-status-label">claim boundaries</span></div>')
+    parts.append('  <div class="source-status-stat"><span class="source-status-value">Yes</span><span class="source-status-label">verification posture</span></div>')
+    parts.append('</div>')
+
+    # Governance explanation
+    parts.append('<div class="source-governance-note">')
+    parts.append('  <p>This registry governs the evidence base for Space-Based-Solar-Power.com. Each source record documents authority role, claim scope, verification posture, and explicit boundary notes. Sources are classified into seven institutional categories. No source is treated as unconditional authority — all are bounded by what they can and cannot establish.</p>')
+    parts.append('</div>')
+
+    # How sources are used
+    parts.append('<div class="source-usage-section">')
+    parts.append('  <h2>How sources are used</h2>')
+    parts.append('  <p>Sources are applied according to a three-tier hierarchy. Tier 1 sources (institutional space agencies, government policy) establish the primary reference baseline. Tier 2 sources (academic research, technical standards) provide analytical and experimental grounding. Tier 3 sources (industry and consortium) are used only for documenting institutional activity and company claims — never to establish independent technical claims. Internal methodology sources govern editorial practice, not external claims.</p>')
+    parts.append('  <p>Claim boundaries on every page specify which source tier supports each category of claim, and where claims remain unresolved, contested, or dependent on assumptions. See <a href="/methodology/">Methodology</a> for the full claim classification framework.</p>')
+    parts.append('</div>')
+
+    # Claim boundary explanation
+    parts.append('<div class="source-claim-boundary">')
+    parts.append('  <h2>Source governance and claim boundaries</h2>')
+    parts.append('  <p>Every page on this site carries an explicit claim boundary statement. That statement identifies which claims are source-verified, which are institutional summaries, which are technical explanations with modelled assumptions, which are company claims requiring independent verification, and which remain genuinely unresolved.</p>')
+    parts.append('  <p>No source record in this registry is used to assert that space-based solar power is commercially deployed, operational at utility scale, or a proven full infrastructure system. The current state of SBSP is pre-deployment: technology components are at varying readiness levels, programmes are in feasibility study or early demonstration phases, and no operational system exists as of the date of this page.</p>')
+    parts.append('</div>')
+
+    # Class jump nav
+    parts.append('<nav class="source-class-jump" aria-label="Jump to source class">')
+    parts.append('  <span class="source-class-jump-label">Jump to</span>')
+    for class_id, class_label in SOURCE_CLASS_ORDER:
+        if not by_class.get(class_id):
+            continue
+        anchor = f"sclass-{class_id}"
+        parts.append(f'  <a href="#{anchor}" class="source-class-jump-link">{_escape_html(class_label)}</a>')
+    parts.append('</nav>')
+
+    # Class sections
+    for class_id, class_label in SOURCE_CLASS_ORDER:
+        recs = by_class.get(class_id, [])
+        if not recs:
+            continue
+        anchor = f"sclass-{class_id}"
+        parts.append(f'<div class="source-class-section" id="{anchor}">')
+        parts.append(f'  <h2 class="source-class-label">{_escape_html(class_label)}</h2>')
+        parts.append('  <ul class="source-class-index">')
+        for rec in recs:
+            label = _escape_html(rec.get("label", ""))
+            authority = _escape_html(rec.get("authority_role", ""))
+            parts.append(f'    <li class="source-record">')
+            parts.append(f'      <span class="source-label">{label}</span>')
+            if authority:
+                parts.append(f'      <span class="source-authority"> — {authority}</span>')
+            cs = _escape_html(rec.get("claim_scope", ""))
+            if cs:
+                parts.append(f'      <p class="source-claim-scope">{cs}</p>')
+            bn = _escape_html(rec.get("boundary_notes", ""))
+            if bn:
+                parts.append(f'      <p class="source-boundary-note"><strong>Boundary:</strong> {bn}</p>')
+            parts.append(f'    </li>')
+        parts.append('  </ul>')
+        parts.append('</div>')
+
+    # Footer links
+    footer_links = [
+        ('/methodology/', 'Methodology'),
+        ('/framework/', 'Framework'),
+        ('/feasibility-and-constraints/', 'Feasibility and Constraints'),
+        ('/strategic-importance/', 'Strategic Importance'),
+        ('/global-programs/', 'Global Programs'),
+        ('/programs/', 'Program Profiles'),
+        ('/glossary/', 'Glossary'),
+        ('/questions/', 'Questions'),
+        ('/technology/', 'Technology'),
+    ]
+    parts.append('<div class="hub-source-links">')
+    parts.append('<span class="hub-source-label">Related reference layers</span>')
+    for path, label in footer_links:
+        parts.append(f'<a class="link-chip" href="{path}">{_escape_html(label)}</a>')
+    parts.append('</div>')
+
+    body = "\n".join(parts)
+    return _page_shell(page, h1, body)
+
+
 def generate_html(page: dict, content: dict | None,
                   approved_paths: set | None = None) -> str:
     if approved_paths is None:
@@ -1008,6 +1128,8 @@ def write_page(page: dict, content: dict | None,
         html = generate_technology_page_html(tech_page, page) if tech_page else generate_html(page, content, approved_paths)
     elif seed_data and seed_source == "technology_hub":
         html = generate_technology_hub_html(page, seed_data, trial_manifest)
+    elif seed_data and seed_source == "sources_hub":
+        html = generate_sources_hub_html(page, seed_data)
     elif content and content.get("hero"):
         html = generate_home_html(page, content, approved_paths)
     else:

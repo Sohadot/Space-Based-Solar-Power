@@ -26,28 +26,28 @@
       "status": "approved"
     },
     "ar": {
-      "label": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+      "label": "العربية",
       "pathPrefix": "/ar",
       "direction": "rtl",
       "role": "Energy Sovereignty Edition",
       "status": "planned"
     },
     "zh": {
-      "label": "\u4e2d\u6587",
+      "label": "中文",
       "pathPrefix": "/zh",
       "direction": "ltr",
       "role": "Industrial Scale Edition",
       "status": "planned"
     },
     "ja": {
-      "label": "\u65e5\u672c\u8a9e",
+      "label": "日本語",
       "pathPrefix": "/ja",
       "direction": "ltr",
       "role": "Precision Technology Edition",
       "status": "planned"
     },
     "fr": {
-      "label": "Fran\u00e7ais",
+      "label": "Français",
       "pathPrefix": "/fr",
       "direction": "ltr",
       "role": "European Policy and Aerospace Edition",
@@ -61,7 +61,7 @@
       "status": "planned"
     },
     "es": {
-      "label": "Espa\u00f1ol",
+      "label": "Español",
       "pathPrefix": "/es",
       "direction": "ltr",
       "role": "Global Expansion Edition",
@@ -280,11 +280,18 @@
       "strategicRole": "Public trust layer explaining source tiers, claim classification, institutional sources, academic sources, and enterprise disclosures.",
       "requiredInternalLinks": [
         "/methodology/",
+        "/framework/",
         "/feasibility-and-constraints/",
+        "/strategic-importance/",
         "/global-programs/",
+        "/programs/",
+        "/glossary/",
+        "/questions/",
+        "/technology/",
         "/tools/"
       ],
-      "sourceBoundary": "Must distinguish source-verified facts, institutional summaries, company claims, unresolved scenarios, and strategic interpretation."
+      "sourceBoundary": "Must distinguish source-verified facts, institutional summaries, company claims, unresolved scenarios, and strategic interpretation.",
+      "seedSource": "sources_hub"
     },
     {
       "id": "tools",
@@ -1120,7 +1127,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "space-based-solar-power",
-      "title": "Space-Based Solar Power \u2014 SBSP Glossary",
+      "title": "Space-Based Solar Power — SBSP Glossary",
       "description": "Definition of space-based solar power: orbital solar collection, wireless transmission, and ground reception. Concept, history, and claim boundaries.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1143,7 +1150,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "solar-power-satellite",
-      "title": "Solar Power Satellite \u2014 SBSP Glossary",
+      "title": "Solar Power Satellite — SBSP Glossary",
       "description": "Definition of solar power satellite: an orbital spacecraft collecting sunlight and transmitting it wirelessly to Earth. History and claim boundaries.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1166,7 +1173,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "wireless-power-transmission",
-      "title": "Wireless Power Transmission \u2014 Glossary",
+      "title": "Wireless Power Transmission — Glossary",
       "description": "Definition of wireless power transmission in SBSP: using microwave or laser radiation to transfer energy from orbit to ground receivers.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1189,7 +1196,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "microwave-power-beaming",
-      "title": "Microwave Power Beaming \u2014 SBSP Glossary",
+      "title": "Microwave Power Beaming — SBSP Glossary",
       "description": "Definition of microwave power beaming: transmitting energy using microwave frequencies from an orbital source to a terrestrial rectenna array.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1212,7 +1219,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "laser-power-transmission",
-      "title": "Laser Power Transmission \u2014 SBSP Glossary",
+      "title": "Laser Power Transmission — SBSP Glossary",
       "description": "Definition of laser power transmission: using focused laser light to deliver energy wirelessly from an orbital source to a ground receiver.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1235,7 +1242,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "rectenna",
-      "title": "Rectenna \u2014 SBSP Glossary",
+      "title": "Rectenna — SBSP Glossary",
       "description": "Definition of rectenna: a rectifying antenna that converts received microwave radiation directly into DC electricity for SBSP ground stations.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1258,7 +1265,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "geostationary-orbit",
-      "title": "Geostationary Orbit \u2014 SBSP Glossary",
+      "title": "Geostationary Orbit — SBSP Glossary",
       "description": "Geostationary orbit for SBSP: the 35,786 km altitude where a satellite appears fixed above Earth, receiving near-continuous sunlight.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1281,7 +1288,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "launch-economics",
-      "title": "Launch Economics \u2014 SBSP Glossary",
+      "title": "Launch Economics — SBSP Glossary",
       "description": "Definition of launch economics in SBSP: the cost of delivering satellite mass to orbit and its role as the dominant commercial barrier.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1304,7 +1311,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "energy-sovereignty",
-      "title": "Energy Sovereignty \u2014 SBSP Glossary",
+      "title": "Energy Sovereignty — SBSP Glossary",
       "description": "Definition of energy sovereignty: a nation securing reliable energy supply independent of geopolitical disruption or fossil import dependency.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1327,7 +1334,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "technology-readiness-level",
-      "title": "Technology Readiness Level \u2014 SBSP Glossary",
+      "title": "Technology Readiness Level — SBSP Glossary",
       "description": "Definition of technology readiness level (TRL): the scale used to assess how mature a technology is relative to full operational deployment.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1659,7 +1666,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "space-solar-power-system",
-      "title": "Space Solar Power System \u2014 SBSP Glossary",
+      "title": "Space Solar Power System — SBSP Glossary",
       "description": "Definition of space solar power system: the complete integrated architecture from orbital collection to terrestrial power delivery.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1681,7 +1688,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "space-to-earth-power-transmission",
-      "title": "Space-to-Earth Power Transmission \u2014 SBSP Glossary",
+      "title": "Space-to-Earth Power Transmission — SBSP Glossary",
       "description": "Definition of space-to-earth power transmission: the energy pathway from orbital platforms to terrestrial receivers in SBSP systems.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1703,7 +1710,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "orbital-power-generation",
-      "title": "Orbital Power Generation \u2014 SBSP Glossary",
+      "title": "Orbital Power Generation — SBSP Glossary",
       "description": "Definition of orbital power generation: solar energy production by spacecraft in Earth orbit for potential transmission to terrestrial users.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1725,7 +1732,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "space-energy-grid",
-      "title": "Space Energy Grid \u2014 SBSP Glossary",
+      "title": "Space Energy Grid — SBSP Glossary",
       "description": "Definition of space energy grid: a coordinated orbital architecture for distributed energy supply from multiple solar power satellites.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1747,7 +1754,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "solar-power-satellite-array",
-      "title": "Solar Power Satellite Array \u2014 SBSP Glossary",
+      "title": "Solar Power Satellite Array — SBSP Glossary",
       "description": "Definition of solar power satellite array: multiple coordinated satellites operating as a collective SBSP collection and transmission system.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1769,7 +1776,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "modular-solar-power-satellite",
-      "title": "Modular Solar Power Satellite \u2014 SBSP Glossary",
+      "title": "Modular Solar Power Satellite — SBSP Glossary",
       "description": "Definition of modular solar power satellite: an SBSP platform built from multiple individually launched components assembled in orbit.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1791,7 +1798,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "geostationary-solar-power-platform",
-      "title": "Geostationary Solar Power Platform \u2014 SBSP Glossary",
+      "title": "Geostationary Solar Power Platform — SBSP Glossary",
       "description": "Definition of geostationary solar power platform: an SBSP system in geostationary orbit providing continuous power to a fixed terrestrial receiver.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1813,7 +1820,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "space-based-power-station",
-      "title": "Space-Based Power Station \u2014 SBSP Glossary",
+      "title": "Space-Based Power Station — SBSP Glossary",
       "description": "Definition of space-based power station: an orbital facility for large-scale solar energy collection and wireless transmission to terrestrial users.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1835,7 +1842,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "orbital-energy-reference-layer",
-      "title": "Orbital Energy Reference Layer \u2014 SBSP Glossary",
+      "title": "Orbital Energy Reference Layer — SBSP Glossary",
       "description": "Definition of orbital energy reference layer: a framework treating Earth orbit as an energy infrastructure layer for solar collection and transmission.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1857,7 +1864,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "power-beaming",
-      "title": "Power Beaming \u2014 SBSP Glossary",
+      "title": "Power Beaming — SBSP Glossary",
       "description": "Definition of power beaming: wireless transmission of electrical energy using directed microwave or laser radiation from source to receiver.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1879,7 +1886,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "microwave-transmission-pathway",
-      "title": "Microwave Transmission Pathway \u2014 SBSP Glossary",
+      "title": "Microwave Transmission Pathway — SBSP Glossary",
       "description": "Definition of microwave transmission pathway: the end-to-end microwave energy system from orbital transmitter to ground rectenna in SBSP.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1901,7 +1908,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "laser-transmission-pathway",
-      "title": "Laser Transmission Pathway \u2014 SBSP Glossary",
+      "title": "Laser Transmission Pathway — SBSP Glossary",
       "description": "Definition of laser transmission pathway: the end-to-end laser energy system from orbital platform to terrestrial photovoltaic receiver in SBSP.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1923,7 +1930,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "beam-control",
-      "title": "Beam Control \u2014 SBSP Glossary",
+      "title": "Beam Control — SBSP Glossary",
       "description": "Definition of beam control: maintaining accurate direction and intensity of power beaming transmissions toward terrestrial receivers in SBSP systems.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1945,7 +1952,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "beam-steering",
-      "title": "Beam Steering \u2014 SBSP Glossary",
+      "title": "Beam Steering — SBSP Glossary",
       "description": "Definition of beam steering: active redirection of an energy beam to track terrestrial receivers or shift power delivery in SBSP systems.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1967,7 +1974,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "phased-array-transmitter",
-      "title": "Phased Array Transmitter \u2014 SBSP Glossary",
+      "title": "Phased Array Transmitter — SBSP Glossary",
       "description": "Definition of phased array transmitter: multi-element antenna forming a steerable power beam for SBSP transmission through constructive interference.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -1989,7 +1996,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "atmospheric-attenuation",
-      "title": "Atmospheric Attenuation \u2014 SBSP Glossary",
+      "title": "Atmospheric Attenuation — SBSP Glossary",
       "description": "Definition of atmospheric attenuation: reduction of beam energy as microwave or laser radiation passes through the atmosphere in SBSP transmission.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2011,7 +2018,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "rectenna-field",
-      "title": "Rectenna Field \u2014 SBSP Glossary",
+      "title": "Rectenna Field — SBSP Glossary",
       "description": "Definition of rectenna field: the large-area terrestrial rectenna array for receiving and converting microwave power beams in SBSP systems.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2033,7 +2040,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "receiving-antenna-array",
-      "title": "Receiving Antenna Array \u2014 SBSP Glossary",
+      "title": "Receiving Antenna Array — SBSP Glossary",
       "description": "Definition of receiving antenna array: the terrestrial antenna collection system for capturing and converting microwave power beam energy in SBSP.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2055,7 +2062,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "power-conversion-efficiency",
-      "title": "Power Conversion Efficiency \u2014 SBSP Glossary",
+      "title": "Power Conversion Efficiency — SBSP Glossary",
       "description": "Definition of power conversion efficiency: the ratio of useful electrical output to energy input at each stage of the SBSP energy delivery chain.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2077,7 +2084,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "baseload-power",
-      "title": "Baseload Power \u2014 SBSP Glossary",
+      "title": "Baseload Power — SBSP Glossary",
       "description": "Definition of baseload power: continuous stable power generation meeting minimum grid demand, a potential advantage for geostationary SBSP systems.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2099,7 +2106,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "dispatchable-energy",
-      "title": "Dispatchable Energy \u2014 SBSP Glossary",
+      "title": "Dispatchable Energy — SBSP Glossary",
       "description": "Definition of dispatchable energy: controllable power generation available on demand, relevant to how SBSP is positioned relative to intermittent renewables.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2121,7 +2128,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "energy-security",
-      "title": "Energy Security \u2014 SBSP Glossary",
+      "title": "Energy Security — SBSP Glossary",
       "description": "Definition of energy security: reliable access to sufficient energy without unacceptable vulnerability, a primary strategic argument for SBSP development.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2143,7 +2150,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "remote-power-supply",
-      "title": "Remote Power Supply \u2014 SBSP Glossary",
+      "title": "Remote Power Supply — SBSP Glossary",
       "description": "Definition of remote power supply: delivering energy to locations disconnected from major grids, a potential SBSP application for isolated regions.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2165,7 +2172,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "island-grid",
-      "title": "Island Grid \u2014 SBSP Glossary",
+      "title": "Island Grid — SBSP Glossary",
       "description": "Definition of island grid: isolated electrical systems in remote regions, a potential SBSP application for continuous baseload power provision.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2187,7 +2194,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "critical-infrastructure-power",
-      "title": "Critical Infrastructure Power \u2014 SBSP Glossary",
+      "title": "Critical Infrastructure Power — SBSP Glossary",
       "description": "Definition of critical infrastructure power: energy provision for essential systems whose failure threatens public safety or national function.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2209,7 +2216,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "disaster-response-power",
-      "title": "Disaster Response Power \u2014 SBSP Glossary",
+      "title": "Disaster Response Power — SBSP Glossary",
       "description": "Definition of disaster response power: emergency electrical provision when normal infrastructure is unavailable, a proposed SBSP use case.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2231,7 +2238,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "mass-to-orbit",
-      "title": "Mass to Orbit \u2014 SBSP Glossary",
+      "title": "Mass to Orbit — SBSP Glossary",
       "description": "Definition of mass to orbit: the material that must be launched from Earth to construct SBSP systems, the primary cost constraint for the concept.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2253,7 +2260,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "space-debris-risk",
-      "title": "Space Debris Risk \u2014 SBSP Glossary",
+      "title": "Space Debris Risk — SBSP Glossary",
       "description": "Definition of space debris risk: orbital collision and debris generation risks relevant to large SBSP platform construction and operation.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2275,7 +2282,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "spectrum-regulation",
-      "title": "Spectrum Regulation \u2014 SBSP Glossary",
+      "title": "Spectrum Regulation — SBSP Glossary",
       "description": "Definition of spectrum regulation: international governance of electromagnetic frequency allocation, a legal prerequisite for SBSP microwave power beaming.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2297,7 +2304,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "public-legitimacy",
-      "title": "Public Legitimacy \u2014 SBSP Glossary",
+      "title": "Public Legitimacy — SBSP Glossary",
       "description": "Definition of public legitimacy: social and political acceptance that SBSP projects must earn from communities, regulators, and international bodies.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2319,7 +2326,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "safety-boundary",
-      "title": "Safety Boundary \u2014 SBSP Glossary",
+      "title": "Safety Boundary — SBSP Glossary",
       "description": "Definition of safety boundary: defined limits on hazard exposure from SBSP power beaming, required for regulatory approval and safe operation.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2341,7 +2348,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "land-footprint",
-      "title": "Land Footprint \u2014 SBSP Glossary",
+      "title": "Land Footprint — SBSP Glossary",
       "description": "Definition of land footprint: the terrestrial area required for SBSP receiving infrastructure, a significant siting constraint for commercial systems.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2363,7 +2370,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "commercial-readiness",
-      "title": "Commercial Readiness \u2014 SBSP Glossary",
+      "title": "Commercial Readiness — SBSP Glossary",
       "description": "Definition of commercial readiness: the technical, economic, and regulatory maturity required for SBSP to compete as a commercial energy product.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2385,7 +2392,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "technology-readiness",
-      "title": "Technology Readiness \u2014 SBSP Glossary",
+      "title": "Technology Readiness — SBSP Glossary",
       "description": "Definition of technology readiness: how mature SBSP component and system technologies are relative to commercial operational requirements.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2407,7 +2414,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "hyperscale-computing-power",
-      "title": "Hyperscale Computing Power \u2014 SBSP Glossary",
+      "title": "Hyperscale Computing Power — SBSP Glossary",
       "description": "Definition of hyperscale computing power: energy requirements of large AI and data center infrastructure, a driver of interest in SBSP power supply.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2429,7 +2436,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "defense-energy-resilience",
-      "title": "Defense Energy Resilience \u2014 SBSP Glossary",
+      "title": "Defense Energy Resilience — SBSP Glossary",
       "description": "Definition of defense energy resilience: military power supply reliability under adversarial conditions, a strategic use case for SBSP development.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2451,7 +2458,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "lunar-power-infrastructure",
-      "title": "Lunar Power Infrastructure \u2014 SBSP Glossary",
+      "title": "Lunar Power Infrastructure — SBSP Glossary",
       "description": "Definition of lunar power infrastructure: power systems for sustained lunar operations, relevant to cislunar SBSP applications and space industrial development.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2473,7 +2480,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "space-industrial-energy",
-      "title": "Space Industrial Energy \u2014 SBSP Glossary",
+      "title": "Space Industrial Energy — SBSP Glossary",
       "description": "Definition of space industrial energy: power for manufacturing and industrial operations in space, linking SBSP to the broader space economy development.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2495,7 +2502,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "orbital-manufacturing-power",
-      "title": "Orbital Manufacturing Power \u2014 SBSP Glossary",
+      "title": "Orbital Manufacturing Power — SBSP Glossary",
       "description": "Definition of orbital manufacturing power: energy for in-orbit manufacturing and fabrication, a space economy use case for SBSP infrastructure.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2517,7 +2524,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "cislunar-energy-infrastructure",
-      "title": "Cislunar Energy Infrastructure \u2014 SBSP Glossary",
+      "title": "Cislunar Energy Infrastructure — SBSP Glossary",
       "description": "Definition of cislunar energy infrastructure: power systems for the Earth-Moon region, connecting SBSP development to the evolving cislunar space economy.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2539,7 +2546,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "strategic-energy-logistics",
-      "title": "Strategic Energy Logistics \u2014 SBSP Glossary",
+      "title": "Strategic Energy Logistics — SBSP Glossary",
       "description": "Definition of strategic energy logistics: energy supply planning for security operations and long-range missions, a use case shaping SBSP strategic interest.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2561,7 +2568,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "mission-critical-power",
-      "title": "Mission Critical Power \u2014 SBSP Glossary",
+      "title": "Mission Critical Power — SBSP Glossary",
       "description": "Definition of mission critical power: essential energy provision for operations where failure would cause mission failure or unacceptable safety risk.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2583,7 +2590,7 @@
       "changefreq": "monthly",
       "seedSource": "glossary_term",
       "seedId": "long-duration-space-power",
-      "title": "Long Duration Space Power \u2014 SBSP Glossary",
+      "title": "Long Duration Space Power — SBSP Glossary",
       "description": "Definition of long duration space power: energy systems for continuous multi-year space operation, a prerequisite for viable SBSP infrastructure.",
       "requiredInternalLinks": [
         "/glossary/",
@@ -2605,7 +2612,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-jaxa-ssps",
-      "title": "What is JAXA's role in space-based solar power research \u2014 SBSP Refe...",
+      "title": "What is JAXA's role in space-based solar power research — SBSP Refe...",
       "description": "JAXA's SBSP research history, WPT demonstrations, roadmaps, and why timeline claims require current source verification.",
       "requiredInternalLinks": [
         "/questions/",
@@ -2629,7 +2636,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-did-caltech-maple-demonstrate",
-      "title": "What did the Caltech MAPLE experiment demonstrate \u2014 SBSP Reference",
+      "title": "What did the Caltech MAPLE experiment demonstrate — SBSP Reference",
       "description": "The Caltech MAPLE WPT experiment: what it demonstrated, what it did not prove, and why it is a meaningful but limited milestone in SBSP development.",
       "requiredInternalLinks": [
         "/questions/",
@@ -2653,7 +2660,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "sbsp-vs-terrestrial-solar",
-      "title": "Space-based solar power vs terrestrial solar: key differences \u2014 SBS...",
+      "title": "Space-based solar power vs terrestrial solar: key differences — SBS...",
       "description": "Comparison of SBSP and terrestrial solar: availability, land use, system complexity, and cost. Claim boundaries on economic and performance comparisons.",
       "requiredInternalLinks": [
         "/questions/",
@@ -2677,7 +2684,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "can-sbsp-power-ai-data-centers",
-      "title": "Can space-based solar power supply AI data centers \u2014 SBSP Reference",
+      "title": "Can space-based solar power supply AI data centers — SBSP Reference",
       "description": "Can SBSP power AI infrastructure? The long-horizon framing, why it cannot in any near-term horizon, and the claim boundaries on this strategic argument.",
       "requiredInternalLinks": [
         "/questions/",
@@ -2700,7 +2707,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-geostationary-orbit-for-sbsp",
-      "title": "Why is geostationary orbit preferred for space-based solar power \u2014 ...",
+      "title": "Why is geostationary orbit preferred for space-based solar power — ...",
       "description": "Why GEO is the preferred orbit for most SBSP designs: stationary positioning, near-continuous sunlight, and the launch cost trade-off.",
       "requiredInternalLinks": [
         "/questions/",
@@ -2748,7 +2755,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-orbital-assembly-sbsp",
-      "title": "What is orbital assembly and why does SBSP require it \u2014 SBSP Reference",
+      "title": "What is orbital assembly and why does SBSP require it — SBSP Reference",
       "description": "Explanation of orbital assembly for SBSP: why satellites must be assembled in orbit, scale requirements, and why this is one of the less-developed SBSP capab...",
       "requiredInternalLinks": [
         "/questions/",
@@ -2772,7 +2779,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-sbsp-safety",
-      "title": "Is space-based solar power safe? Safety considerations explained \u2014 ...",
+      "title": "Is space-based solar power safe? Safety considerations explained — ...",
       "description": "SBSP safety: microwave exposure limits, exclusion zones, aviation corridors, debris, and why design-specific regulatory frameworks are required.",
       "requiredInternalLinks": [
         "/questions/",
@@ -2795,7 +2802,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-sbsp-and-energy-sovereignty",
-      "title": "How does space-based solar power relate to energy sovereignty \u2014 SBS...",
+      "title": "How does space-based solar power relate to energy sovereignty — SBS...",
       "description": "SBSP and energy sovereignty: the strategic argument, why it is long-horizon, and the claim boundaries that prevent overstatement of current capability.",
       "requiredInternalLinks": [
         "/questions/",
@@ -2819,7 +2826,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-trl-sbsp",
-      "title": "What is the technology readiness level of space-based solar power \u2014...",
+      "title": "What is the technology readiness level of space-based solar power —...",
       "description": "TRL assessment for SBSP: why different components are at different readiness levels and why system-level TRL claims require component-specific analysis.",
       "requiredInternalLinks": [
         "/questions/",
@@ -2843,7 +2850,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "can-sbsp-operate-24-7",
-      "title": "Can space-based solar power operate 24/7 \u2014 SBSP Reference",
+      "title": "Can space-based solar power operate 24/7 — SBSP Reference",
       "description": "Whether SBSP satellites can operate continuously. GEO eclipse geometry, 99% annual availability, and the distinction between satellite uptime and ground rece...",
       "requiredInternalLinks": [
         "/questions/",
@@ -2890,7 +2897,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-sbsp-and-lunar",
-      "title": "How does space-based solar power relate to lunar infrastructure \u2014 S...",
+      "title": "How does space-based solar power relate to lunar infrastructure — S...",
       "description": "SBSP and lunar power: cis-lunar power beaming concepts, lunar resource manufacturing arguments, current readiness, and long-horizon claim framing.",
       "requiredInternalLinks": [
         "/questions/",
@@ -2913,7 +2920,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-peter-glaser-proposal",
-      "title": "Who proposed space-based solar power and when \u2014 SBSP Reference",
+      "title": "Who proposed space-based solar power and when — SBSP Reference",
       "description": "Peter Glaser proposed SBSP in 1968. History of the concept, the foundational paper, and why the original proposal must be contextualized historically.",
       "requiredInternalLinks": [
         "/questions/",
@@ -2961,7 +2968,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-strategic-importance-sbsp",
-      "title": "What is the strategic importance of space-based solar power \u2014 SBSP ...",
+      "title": "What is the strategic importance of space-based solar power — SBSP ...",
       "description": "The strategic case for SBSP: energy sovereignty, grid resilience, defense logistics, AI energy, and space-industrial development arguments with claim boundar...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3008,7 +3015,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-claim-boundary-methodology",
-      "title": "What is a claim boundary and why does this site use them \u2014 SBSP Ref...",
+      "title": "What is a claim boundary and why does this site use them — SBSP Ref...",
       "description": "Explanation of claim boundaries in SBSP analysis. Why distinguishing established facts from models, interpretations, and scenarios is essential for credible ...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3032,7 +3039,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-are-the-three-sbsp-subsystems",
-      "title": "What are the three main subsystems of an SBSP system \u2014 SBSP Reference",
+      "title": "What are the three main subsystems of an SBSP system — SBSP Reference",
       "description": "The three SBSP subsystems: space segment (solar collection), transmission segment (power beaming), and ground segment (rectenna reception).",
       "requiredInternalLinks": [
         "/questions/",
@@ -3056,7 +3063,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "why-was-sbsp-not-built-in-1980s",
-      "title": "Why was SBSP not built in the 1970s and 1980s \u2014 SBSP Reference",
+      "title": "Why was SBSP not built in the 1970s and 1980s — SBSP Reference",
       "description": "SBSP was studied but not built in the 1970s because launch costs made it economically impractical. The 1979 NASA study found technical feasibility but not ec...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3080,7 +3087,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-sbsp-energy-conversion-chain",
-      "title": "What is the energy conversion chain in an SBSP system \u2014 SBSP Reference",
+      "title": "What is the energy conversion chain in an SBSP system — SBSP Reference",
       "description": "The SBSP energy chain: sunlight to DC electricity, DC to microwave, microwave transmission, rectenna reception, DC to grid AC. Each step has efficiency losses.",
       "requiredInternalLinks": [
         "/questions/",
@@ -3104,8 +3111,8 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-sbsp-commercial-readiness-gap",
-      "title": "What would a commercially ready SBSP system require \u2014 SBSP Reference",
-      "description": "Commercial SBSP requires lower launch costs, in-orbit assembly capability, GW-scale power beaming, large rectenna fields, and new regulatory frameworks \u2014 non...",
+      "title": "What would a commercially ready SBSP system require — SBSP Reference",
+      "description": "Commercial SBSP requires lower launch costs, in-orbit assembly capability, GW-scale power beaming, large rectenna fields, and new regulatory frameworks — non...",
       "requiredInternalLinks": [
         "/questions/",
         "/sources/",
@@ -3128,7 +3135,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-phased-array-transmitter-sbsp",
-      "title": "What is a phased array transmitter in SBSP \u2014 SBSP Reference",
+      "title": "What is a phased array transmitter in SBSP — SBSP Reference",
       "description": "A phased array transmitter uses many antenna elements with controlled timing to focus and steer a microwave beam. Essential for SBSP power delivery from orbit.",
       "requiredInternalLinks": [
         "/questions/",
@@ -3152,7 +3159,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "how-does-beam-steering-work-sbsp",
-      "title": "How does beam steering work in SBSP power transmission \u2014 SBSP Refer...",
+      "title": "How does beam steering work in SBSP power transmission — SBSP Refer...",
       "description": "Beam steering in SBSP uses electronic phase control or retrodirective arrays to keep the power beam aimed at the ground receiver. Safety depends on beam accu...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3176,7 +3183,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-power-conversion-efficiency-sbsp",
-      "title": "What is power conversion efficiency in SBSP \u2014 SBSP Reference",
+      "title": "What is power conversion efficiency in SBSP — SBSP Reference",
       "description": "Power conversion efficiency in SBSP measures losses at each conversion stage. It determines system size, mass-to-orbit burden, and commercial viability.",
       "requiredInternalLinks": [
         "/questions/",
@@ -3224,7 +3231,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-in-space-manufacturing-sbsp",
-      "title": "What is in-space manufacturing and why does it matter for SBSP \u2014 SB...",
+      "title": "What is in-space manufacturing and why does it matter for SBSP — SB...",
       "description": "In-space manufacturing could allow large SBSP structures to be assembled in orbit rather than launched from Earth. Current capabilities are early-stage resea...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3248,8 +3255,8 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "how-large-is-sbsp-solar-array",
-      "title": "How large would a commercial SBSP solar array be \u2014 SBSP Reference",
-      "description": "A 2\u20135 GW SBSP solar array would span multiple square kilometres \u2014 hundreds of times larger than the ISS solar arrays \u2014 requiring new orbital assembly approac...",
+      "title": "How large would a commercial SBSP solar array be — SBSP Reference",
+      "description": "A 2–5 GW SBSP solar array would span multiple square kilometres — hundreds of times larger than the ISS solar arrays — requiring new orbital assembly approac...",
       "requiredInternalLinks": [
         "/questions/",
         "/sources/",
@@ -3272,8 +3279,8 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-mass-to-orbit-constraint-sbsp",
-      "title": "What is mass-to-orbit and why is it SBSP's primary constraint \u2014 SBS...",
-      "description": "Mass-to-orbit is the total material that must reach orbit to build SBSP. At current launch prices, it makes SBSP economically impractical \u2014 the core constraint.",
+      "title": "What is mass-to-orbit and why is it SBSP's primary constraint — SBS...",
+      "description": "Mass-to-orbit is the total material that must reach orbit to build SBSP. At current launch prices, it makes SBSP economically impractical — the core constraint.",
       "requiredInternalLinks": [
         "/questions/",
         "/sources/",
@@ -3296,7 +3303,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-specific-mass-sbsp",
-      "title": "What is specific mass in SBSP engineering analysis \u2014 SBSP Reference",
+      "title": "What is specific mass in SBSP engineering analysis — SBSP Reference",
       "description": "Specific mass (kg/kW) measures SBSP system mass per unit of delivered power. Lower specific mass reduces launch cost and improves economic viability.",
       "requiredInternalLinks": [
         "/questions/",
@@ -3320,7 +3327,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-sbsp-economic-challenge",
-      "title": "What is the economic challenge for commercial SBSP development \u2014 SB...",
+      "title": "What is the economic challenge for commercial SBSP development — SB...",
       "description": "SBSP's economic challenge: launch costs make capital investment far higher than terrestrial alternatives. Falling launch costs are improving but not resolvin...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3344,7 +3351,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-space-debris-risk-sbsp",
-      "title": "What is the space debris risk for SBSP systems \u2014 SBSP Reference",
+      "title": "What is the space debris risk for SBSP systems — SBSP Reference",
       "description": "SBSP satellites face debris collision risk due to their large size, and could contribute to the orbital debris environment. Governance frameworks are still e...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3368,7 +3375,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "is-sbsp-microwave-transmission-safe",
-      "title": "Is SBSP microwave transmission safe for people and wildlife \u2014 SBSP ...",
+      "title": "Is SBSP microwave transmission safe for people and wildlife — SBSP ...",
       "description": "SBSP designs propose microwave intensities comparable to sunlight at the rectenna centre. Safety depends on beam control keeping power within the target area.",
       "requiredInternalLinks": [
         "/questions/",
@@ -3391,7 +3398,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-safety-boundary-sbsp",
-      "title": "What is a safety boundary in SBSP power beaming \u2014 SBSP Reference",
+      "title": "What is a safety boundary in SBSP power beaming — SBSP Reference",
       "description": "An SBSP safety boundary is the perimeter around the rectenna where microwave power density must stay below public safety thresholds. Beam control enforces it.",
       "requiredInternalLinks": [
         "/questions/",
@@ -3414,7 +3421,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-spectrum-does-sbsp-use",
-      "title": "What spectrum does SBSP use and who regulates it \u2014 SBSP Reference",
+      "title": "What spectrum does SBSP use and who regulates it — SBSP Reference",
       "description": "SBSP designs use 2.45 GHz or 5.8 GHz ISM bands. Spectrum regulation is handled by the ITU and national bodies. A regulatory pathway for SBSP has not been est...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3437,8 +3444,8 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-public-legitimacy-sbsp",
-      "title": "What is public legitimacy as a constraint for SBSP \u2014 SBSP Reference",
-      "description": "Public legitimacy \u2014 community acceptance of microwave transmission and land use \u2014 is a governance constraint for SBSP alongside technical and economic barriers.",
+      "title": "What is public legitimacy as a constraint for SBSP — SBSP Reference",
+      "description": "Public legitimacy — community acceptance of microwave transmission and land use — is a governance constraint for SBSP alongside technical and economic barriers.",
       "requiredInternalLinks": [
         "/questions/",
         "/sources/",
@@ -3460,7 +3467,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "can-sbsp-provide-baseload-power",
-      "title": "Can SBSP provide baseload power to the electricity grid \u2014 SBSP Refe...",
+      "title": "Can SBSP provide baseload power to the electricity grid — SBSP Refe...",
       "description": "SBSP is theoretically capable of baseload power because GEO satellites receive near-continuous sunlight. This characteristic has not been demonstrated at gri...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3484,7 +3491,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "can-sbsp-power-remote-communities",
-      "title": "Can SBSP power remote and off-grid communities \u2014 SBSP Reference",
+      "title": "Can SBSP power remote and off-grid communities — SBSP Reference",
       "description": "SBSP could theoretically deliver power to remote locations without grid infrastructure. This is a cited strategic use case, but no SBSP remote power system e...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3508,8 +3515,8 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-dispatchable-energy-sbsp",
-      "title": "What is dispatchable energy and can SBSP deliver it \u2014 SBSP Reference",
-      "description": "Dispatchable energy can be varied on demand. SBSP could theoretically be dispatchable via beam control \u2014 but this has not been demonstrated at any scale.",
+      "title": "What is dispatchable energy and can SBSP deliver it — SBSP Reference",
+      "description": "Dispatchable energy can be varied on demand. SBSP could theoretically be dispatchable via beam control — but this has not been demonstrated at any scale.",
       "requiredInternalLinks": [
         "/questions/",
         "/sources/",
@@ -3532,7 +3539,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "can-sbsp-support-disaster-response-power",
-      "title": "Can SBSP deliver power during disasters and emergencies \u2014 SBSP Refe...",
+      "title": "Can SBSP deliver power during disasters and emergencies — SBSP Refe...",
       "description": "SBSP could theoretically beam power to portable rectennas at disaster sites. This is a cited strategic use case, but no SBSP emergency power system exists.",
       "requiredInternalLinks": [
         "/questions/",
@@ -3556,8 +3563,8 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "how-much-power-do-hyperscale-ai-data-centers-need",
-      "title": "How much power do hyperscale AI data centers require \u2014 SBSP Reference",
-      "description": "Hyperscale AI data centres need 100 MW to multiple GW of power \u2014 a demand class that matches SBSP supply characteristics, though SBSP powers no data centres ...",
+      "title": "How much power do hyperscale AI data centers require — SBSP Reference",
+      "description": "Hyperscale AI data centres need 100 MW to multiple GW of power — a demand class that matches SBSP supply characteristics, though SBSP powers no data centres ...",
       "requiredInternalLinks": [
         "/questions/",
         "/sources/",
@@ -3579,7 +3586,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-defense-energy-resilience-sbsp",
-      "title": "What is defense energy resilience and how does SBSP relate to it \u2014 ...",
+      "title": "What is defense energy resilience and how does SBSP relate to it — ...",
       "description": "Defence energy resilience requires power independent of terrestrial infrastructure. SBSP is studied as a concept for resilient defence power, but no defence ...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3603,7 +3610,7 @@
       "seedSource": "question",
       "seedId": "what-is-cislunar-energy-infrastructure-sbsp",
       "title": "What is cislunar energy infrastructure and why does SBSP matter for...",
-      "description": "Cislunar energy infrastructure powers operations between Earth and the Moon. SBSP technology \u2014 orbital solar arrays and power beaming \u2014 is foundational to th...",
+      "description": "Cislunar energy infrastructure powers operations between Earth and the Moon. SBSP technology — orbital solar arrays and power beaming — is foundational to th...",
       "requiredInternalLinks": [
         "/questions/",
         "/sources/",
@@ -3625,7 +3632,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-space-industrial-energy-sbsp",
-      "title": "What is space industrial energy and how does SBSP relate to it \u2014 SB...",
+      "title": "What is space industrial energy and how does SBSP relate to it — SB...",
       "description": "Space industrial energy powers in-orbit manufacturing and cislunar operations. SBSP technology is foundational to an emerging space power economy.",
       "requiredInternalLinks": [
         "/questions/",
@@ -3648,8 +3655,8 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-uk-space-energy-initiative",
-      "title": "What is the UK Space Energy Initiative \u2014 SBSP Reference",
-      "description": "The UK Space Energy Initiative assessed SBSP for net-zero goals. Its 2021\u20132023 Cassini reports concluded feasibility with sustained R&D investment.",
+      "title": "What is the UK Space Energy Initiative — SBSP Reference",
+      "description": "The UK Space Energy Initiative assessed SBSP for net-zero goals. Its 2021–2023 Cassini reports concluded feasibility with sustained R&D investment.",
       "requiredInternalLinks": [
         "/questions/",
         "/sources/",
@@ -3672,8 +3679,8 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-caltech-sspp",
-      "title": "What is the Caltech Space Solar Power Project \u2014 SBSP Reference",
-      "description": "Caltech SSPP launched the SSPD-1 demonstrator in 2023. Its MAPLE experiment achieved the first wireless power transmission from satellite to Earth \u2014 at milli...",
+      "title": "What is the Caltech Space Solar Power Project — SBSP Reference",
+      "description": "Caltech SSPP launched the SSPD-1 demonstrator in 2023. Its MAPLE experiment achieved the first wireless power transmission from satellite to Earth — at milli...",
       "requiredInternalLinks": [
         "/questions/",
         "/sources/",
@@ -3696,7 +3703,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-did-nasa-sspp-revisit-find",
-      "title": "What did the NASA Space Solar Power Revisit study find \u2014 SBSP Refer...",
+      "title": "What did the NASA Space Solar Power Revisit study find — SBSP Refer...",
       "description": "The 2023 NASA SSPP Revisit found SBSP is technically feasible with modern technology but not yet economically competitive. It recommended continued research,...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3720,7 +3727,7 @@
       "changefreq": "monthly",
       "seedSource": "question",
       "seedId": "what-is-sbsp-and-china",
-      "title": "What is the status of SBSP research in China \u2014 SBSP Reference",
+      "title": "What is the status of SBSP research in China — SBSP Reference",
       "description": "China has active SBSP research through CAST with stated long-term ambitions. Ground-based testing has been reported, but no orbital demonstration has been co...",
       "requiredInternalLinks": [
         "/questions/",
@@ -3788,7 +3795,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "high-efficiency-solar-cells",
-      "title": "High-Efficiency Solar Cells for SBSP \u2014 Technology Reference",
+      "title": "High-Efficiency Solar Cells for SBSP — Technology Reference",
       "description": "Multi-junction III-V solar cells for space applications: AM0 efficiency, radiation tolerance, and their role in the SBSP orbital collection subsystem.",
       "requiredInternalLinks": [
         "/technology/",
@@ -3816,7 +3823,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "concentrator-photovoltaics",
-      "title": "Concentrator Photovoltaics for SBSP \u2014 Technology Reference",
+      "title": "Concentrator Photovoltaics for SBSP — Technology Reference",
       "description": "Concentrating optics combined with high-efficiency cells for space power: architecture trade-offs, thermal challenges, and SBSP solar collection role.",
       "requiredInternalLinks": [
         "/technology/",
@@ -3844,7 +3851,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "solar-array-structural-design",
-      "title": "Solar Array Structural Design for SBSP \u2014 Technology Reference",
+      "title": "Solar Array Structural Design for SBSP — Technology Reference",
       "description": "Structural design for km-scale SBSP solar arrays: deployable structures, mass targets, in-orbit assembly requirements, and structural dynamics challenges.",
       "requiredInternalLinks": [
         "/technology/",
@@ -3872,7 +3879,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "microwave-power-transmission",
-      "title": "Microwave Power Transmission for SBSP \u2014 Technology Reference",
+      "title": "Microwave Power Transmission for SBSP — Technology Reference",
       "description": "Microwave energy transfer from GEO to ground: frequencies, phased-array transmitters, atmospheric effects, efficiency, and demonstration status.",
       "requiredInternalLinks": [
         "/technology/",
@@ -3900,7 +3907,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "laser-power-beaming",
-      "title": "Laser Power Beaming for SBSP \u2014 Technology Reference",
+      "title": "Laser Power Beaming for SBSP — Technology Reference",
       "description": "Laser-based wireless power transmission for SBSP: wavelengths, atmospheric constraints, photovoltaic receivers, and comparison with microwave beaming.",
       "requiredInternalLinks": [
         "/technology/",
@@ -3928,7 +3935,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "phased-array-transmitter-systems",
-      "title": "Phased-Array Transmitter Systems for SBSP \u2014 Technology Reference",
+      "title": "Phased-Array Transmitter Systems for SBSP — Technology Reference",
       "description": "Electronically steered phased arrays for SBSP microwave beaming: beam forming, retrodirective control, phase coherence, and GEO-scale antenna challenges.",
       "requiredInternalLinks": [
         "/technology/",
@@ -3956,7 +3963,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "rectenna-arrays",
-      "title": "Rectenna Arrays for SBSP Power Reception \u2014 Technology Reference",
+      "title": "Rectenna Arrays for SBSP Power Reception — Technology Reference",
       "description": "Ground-based rectifying antenna arrays for SBSP: microwave-to-DC conversion, element design, efficiency characteristics, and field scale requirements.",
       "requiredInternalLinks": [
         "/technology/",
@@ -3984,7 +3991,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "ground-receiving-infrastructure",
-      "title": "Ground Receiving Infrastructure for SBSP \u2014 Technology Reference",
+      "title": "Ground Receiving Infrastructure for SBSP — Technology Reference",
       "description": "Terrestrial SBSP receiving station: rectenna field siting, land footprint, grid interconnection, exclusion zones, and regulatory permitting considerations.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4012,7 +4019,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "power-conversion-and-conditioning",
-      "title": "Power Conversion and Conditioning in SBSP \u2014 Technology Reference",
+      "title": "Power Conversion and Conditioning in SBSP — Technology Reference",
       "description": "Power conversion stages in SBSP: satellite-side conditioning, rectenna output processing, grid inversion, wide-bandgap electronics, and end-to-end efficiency.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4040,7 +4047,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "in-space-assembly-methods",
-      "title": "In-Space Assembly Methods for SBSP \u2014 Technology Reference",
+      "title": "In-Space Assembly Methods for SBSP — Technology Reference",
       "description": "Robotic and autonomous construction of SBSP satellites in orbit: assembly techniques, GEO challenges, module handling, and technology readiness status.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4068,7 +4075,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "modular-spacecraft-architecture",
-      "title": "Modular Spacecraft Architecture for SBSP \u2014 Technology Reference",
+      "title": "Modular Spacecraft Architecture for SBSP — Technology Reference",
       "description": "Modular design for SBSP satellites: standardized modules, interface standards, incremental construction, mass manufacturing, and in-orbit maintenance.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4096,7 +4103,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "large-space-structure-dynamics",
-      "title": "Large Space Structure Dynamics for SBSP \u2014 Technology Reference",
+      "title": "Large Space Structure Dynamics for SBSP — Technology Reference",
       "description": "Structural dynamics of km-scale SBSP satellites: flexible body modes, GEO disturbances, attitude control coupling, and vibration control requirements.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4124,7 +4131,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "heavy-lift-launch-requirements",
-      "title": "Heavy-Lift Launch Requirements for SBSP \u2014 Technology Reference",
+      "title": "Heavy-Lift Launch Requirements for SBSP — Technology Reference",
       "description": "Launch mass and cost constraints for SBSP: GEO payload delivery, vehicle capabilities, cost-per-kg drivers, and implications for system economics.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4152,7 +4159,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "on-orbit-propulsion-systems",
-      "title": "On-Orbit Propulsion Systems for SBSP \u2014 Technology Reference",
+      "title": "On-Orbit Propulsion Systems for SBSP — Technology Reference",
       "description": "Electric and chemical propulsion for SBSP satellites: orbit raising, station-keeping, specific impulse, solar-electric trajectories, and lifetime requirements.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4180,7 +4187,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "in-space-manufacturing-systems",
-      "title": "In-Space Manufacturing for SBSP \u2014 Technology Reference",
+      "title": "In-Space Manufacturing for SBSP — Technology Reference",
       "description": "Manufacturing satellite components in orbit: additive manufacturing in microgravity, space resource utilization, TRL status, and long-term production roadmaps.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4208,7 +4215,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "spacecraft-thermal-control",
-      "title": "Spacecraft Thermal Control for SBSP \u2014 Technology Reference",
+      "title": "Spacecraft Thermal Control for SBSP — Technology Reference",
       "description": "Thermal management for SBSP orbital platforms: radiative heat rejection, temperature regulation, thermal cycling, and mass budget implications for GEO.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4236,7 +4243,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "heat-pipe-radiator-systems",
-      "title": "Heat Pipe and Radiator Systems for SBSP \u2014 Technology Reference",
+      "title": "Heat Pipe and Radiator Systems for SBSP — Technology Reference",
       "description": "Heat pipe thermal transport and radiator panels for SBSP satellites: heat rejection mechanisms, radiator sizing, and specific mass constraints.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4264,7 +4271,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "power-electronics-thermal-management",
-      "title": "Power Electronics Thermal Management for SBSP \u2014 Technology Reference",
+      "title": "Power Electronics Thermal Management for SBSP — Technology Reference",
       "description": "Thermal management of space power electronics: waste heat dissipation, wide-bandgap semiconductors, and junction temperature control for GEO operation.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4292,7 +4299,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "robotic-on-orbit-servicing",
-      "title": "Robotic On-Orbit Servicing for SBSP \u2014 Technology Reference",
+      "title": "Robotic On-Orbit Servicing for SBSP — Technology Reference",
       "description": "Autonomous robotic maintenance of SBSP satellites: module replacement, inspection systems, GEO servicing demonstrations, and operational lifetime implications.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4320,7 +4327,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "autonomous-fault-detection",
-      "title": "Autonomous Fault Detection for SBSP \u2014 Technology Reference",
+      "title": "Autonomous Fault Detection for SBSP — Technology Reference",
       "description": "Distributed health monitoring and anomaly detection for SBSP satellites: sensor networks, machine learning diagnostics, and module-level fault localization.",
       "requiredInternalLinks": [
         "/technology/",
@@ -4348,7 +4355,7 @@
       "changefreq": "monthly",
       "seedSource": "technology",
       "seedId": "coordinated-satellite-operations",
-      "title": "Coordinated Satellite Operations for SBSP \u2014 Technology Reference",
+      "title": "Coordinated Satellite Operations for SBSP — Technology Reference",
       "description": "Command, control, and coordination for SBSP satellites: beam safety, grid integration, regulatory compliance, and autonomous GEO operations management.",
       "requiredInternalLinks": [
         "/technology/",
@@ -5048,8 +5055,8 @@
       "sitemap": false,
       "navigation": false,
       "direction": "rtl",
-      "title": "\u0627\u0644\u0637\u0627\u0642\u0629 \u0627\u0644\u0634\u0645\u0633\u064a\u0629 \u0627\u0644\u0641\u0636\u0627\u0626\u064a\u0629",
-      "description": "\u0627\u0644\u0637\u0628\u0642\u0629 \u0627\u0644\u0645\u0631\u062c\u0639\u064a\u0629 \u0627\u0644\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0629 \u0644\u0644\u0637\u0627\u0642\u0629 \u0627\u0644\u0634\u0645\u0633\u064a\u0629 \u0627\u0644\u0641\u0636\u0627\u0626\u064a\u0629 \u0648\u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u0644\u0644\u0637\u0627\u0642\u0629 \u0627\u0644\u0645\u062f\u0627\u0631\u064a\u0629 \u0648\u0627\u0644\u0633\u064a\u0627\u062f\u0629 \u0627\u0644\u0637\u0627\u0642\u064a\u0629 \u0627\u0644\u0645\u0633\u062a\u0642\u0628\u0644\u064a\u0629."
+      "title": "الطاقة الشمسية الفضائية",
+      "description": "الطبقة المرجعية الاستراتيجية للطاقة الشمسية الفضائية والبنية التحتية للطاقة المدارية والسيادة الطاقية المستقبلية."
     },
     {
       "id": "ar-about",
@@ -5060,8 +5067,8 @@
       "sitemap": false,
       "navigation": false,
       "direction": "rtl",
-      "title": "\u062d\u0648\u0644 \u0627\u0644\u0623\u0635\u0644",
-      "description": "\u062a\u0639\u0631\u064a\u0641 \u0628\u0627\u0644\u0623\u0635\u0644 \u0627\u0644\u0631\u0642\u0645\u064a \u0627\u0644\u0633\u064a\u0627\u062f\u064a Space-Based-Solar-Power.com \u0648\u0645\u0646\u0647\u062c\u064a\u062a\u0647 \u0648\u0637\u0628\u0642\u062a\u0647 \u0627\u0644\u0645\u0631\u062c\u0639\u064a\u0629."
+      "title": "حول الأصل",
+      "description": "تعريف بالأصل الرقمي السيادي Space-Based-Solar-Power.com ومنهجيته وطبقته المرجعية."
     },
     {
       "id": "ar-manifesto",
@@ -5072,8 +5079,8 @@
       "sitemap": false,
       "navigation": false,
       "direction": "rtl",
-      "title": "\u0627\u0644\u0628\u064a\u0627\u0646 \u0627\u0644\u0645\u0641\u0627\u0647\u064a\u0645\u064a",
-      "description": "\u0627\u0644\u0628\u064a\u0627\u0646 \u0627\u0644\u0645\u0641\u0627\u0647\u064a\u0645\u064a \u062d\u0648\u0644 \u0646\u0642\u0644 \u0627\u0644\u0633\u064a\u0627\u062f\u0629 \u0627\u0644\u0637\u0627\u0642\u064a\u0629 \u0625\u0644\u0649 \u0645\u0627 \u0641\u0648\u0642 \u0627\u0644\u063a\u0644\u0627\u0641 \u0627\u0644\u062c\u0648\u064a."
+      "title": "البيان المفاهيمي",
+      "description": "البيان المفاهيمي حول نقل السيادة الطاقية إلى ما فوق الغلاف الجوي."
     }
   ]
 }

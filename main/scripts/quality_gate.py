@@ -24,6 +24,7 @@ VALIDATORS = [
     "validate_questions.py",
     "validate_technology.py",
     "validate_programs.py",
+    "validate_sources_registry.py",
 ]
 
 
