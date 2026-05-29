@@ -1,3 +1,39 @@
+## [V1B-DL-013] - 2026-05-29: v1B-F Post-Merge Live Verification Approved
+
+**Status:** APPROVED
+
+**Context:** PR #14 (branch `claude/v1b-f-articles-expansion-cm4aq`) was merged to main. Post-merge live verification performed on 2026-05-29 against the deployed public/ output on main (merge commit `1e66b98`).
+
+**Verification Results:**
+
+1. **Merge commit:** `1e66b98` — Merge pull request #14 from Sohadot/claude/v1b-f-articles-expansion-cm4aq ✓
+2. **Sovereign Quality Gate on main:** 16/16 PASS — all validators pass including validate_articles.py ✓
+3. **Build output:** 189 pages generated, 189 sitemap URLs ✓
+4. **/articles/ hub:** Loads successfully with all required elements ✓
+   - Status panel present (5 stat elements) ✓
+   - 4 article clusters present (infrastructure-strategy, technology-feasibility, institutional-programs, energy-sovereignty-ai) ✓
+   - 12 article links present ✓
+   - Governance/expansion note present ✓
+   - Cluster jump navigation present ✓
+   - Source and methodology footer links present ✓
+5. **Sample article pages verified across all 4 clusters:** ✓
+   - `sbsp-as-strategic-infrastructure` (infrastructure-strategy): summary ✓, strategic thesis ✓, institutional context ✓, technical context ✓, feasibility boundary ✓, claim boundary ✓, 8 glossary links ✓, 4 question links ✓, 3 technology links ✓, 3 program links ✓, source footer ✓
+   - `wireless-power-transmission-scale` (technology-feasibility): all sections present ✓, 4 program links ✓
+   - `esa-solaris-european-rationale` (institutional-programs): all sections present ✓
+   - `ai-infrastructure-energy-demand` (energy-sovereignty-ai): all sections present ✓
+6. **Article sitemap:** `public/sitemaps/sitemap-articles-001.xml` present with 12 article URLs ✓; referenced from sitemap_index.xml ✓; /articles/ hub included in sitemap.xml ✓
+7. **Legacy ref-nav patterns:** 0 occurrences across 189 HTML files ✓ (`<nav class="ref-nav"`, `aria-label="Explore"`, `aria-label="Related pages"`, `ref-nav-label` all 0)
+8. **DECISION_LOG integrity:** S1-DL-001 through V1B-DL-012 all present, nothing removed, rewritten, compressed, or reordered ✓
+9. **Blocked actions confirmed:** GSC blocked, WebGL blocked, JS-dependent UI blocked, manual public/ patching blocked ✓
+
+**Decisions:**
+
+1. v1B-F sprint is closed. 12 governed strategic brief pages are live on production under /articles/.
+2. v1B-G is now unblocked. Sprint v1B-G may proceed when authorized.
+3. Google Search Console submission remains BLOCKED until explicitly authorized.
+
+---
+
 ## [V1B-DL-012] - 2026-05-29: v1B-F Articles & Strategic Briefs Expansion Initiated and Quality Gate Passed
 
 **Status:** APPROVED — Quality gate 16/16 PASS, build approved for PR
