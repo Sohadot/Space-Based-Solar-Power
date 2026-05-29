@@ -1,3 +1,36 @@
+## [V1B-DL-009] - 2026-05-29: v1B-D Post-Merge Live Verification Approved
+
+**Status:** APPROVED
+
+**Context:** PR #12 (branch `claude/v1b-d-programs-expansion-cm4aq`) was merged to main and GitHub Pages deployment completed successfully. Post-merge live verification was performed on 2026-05-29 against the deployed public/ output on main.
+
+**Verification Results:**
+
+1. **Merge commit:** `ff80c57` — Merge pull request #12 from Sohadot/claude/v1b-d-programs-expansion-cm4aq ✓
+2. **Sovereign Quality Gate on main:** 14/14 PASS — all validators pass including validate_programs.py ✓
+3. **Build output:** 177 pages generated, 177 sitemap URLs ✓
+4. **/programs/ hub:** Loads successfully. Shows 30 program profiles, 6 institutional clusters. Status panel, expansion note, cluster jump navigation, and source/methodology footer all present ✓
+5. **/global-programs/:** Remains live. Strategic registry role confirmed. Source and methodology footer present ✓
+6. **Sample program pages (one per cluster):** All 6 samples PASS — institution, country, status, institutional context, SBSP relevance, technology relationship, feasibility boundary, claim boundary, glossary links, question links, tech links where required, source/methodology footer all verified ✓
+   - national-space-agency: ESA SOLARIS (European Space Agency)
+   - national-research-program: UK Space Energy Initiative (Consortium)
+   - defense-military: AFRL SBSP Research (Air Force Research Laboratory)
+   - academic-university: Caltech SSPP (California Institute of Technology)
+   - industry-consortium: IHI SBSP Research (IHI Corporation)
+   - historical-foundational: Peter Glaser 1968 (Arthur D. Little / Smithsonian Institution)
+7. **Sitemaps:** sitemap_index.xml valid, references 5 sub-sitemaps. sitemap-programs-001.xml confirmed with 31 URLs (/programs/ hub + 30 profiles). Total URL count: 177 ✓
+8. **Legacy nav patterns:** Zero occurrences of `<nav class="ref-nav"`, `aria-label="Explore"`, `aria-label="Related pages"`, `ref-nav-label` across all 177 HTML files ✓
+9. **DECISION_LOG integrity:** All IDs S1-DL-001 through V1B-DL-008 present (S1-DL-008 and S1-DL-013 are pre-existing numbering gaps from project origin, not deletions). No entries removed, rewritten, compressed, or reordered ✓
+10. **Blocked actions remain in effect:** GSC submission blocked, WebGL blocked, JavaScript-dependent interface changes blocked, manual public/ patching blocked, weakening validators blocked ✓
+
+**Decisions:**
+
+1. v1B-D sprint is closed. The 30-program governed registry is live on production.
+2. v1B-E is now unblocked. Sprint v1B-E may proceed when authorized.
+3. Google Search Console submission remains BLOCKED until explicitly authorized.
+
+---
+
 ## [V1B-DL-008] - 2026-05-28: v1B-D Global Programs & Institutional Activity Expansion Initiated
 
 **Status:** INITIATED
