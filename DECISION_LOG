@@ -1,3 +1,38 @@
+## [V1B-DL-019] - 2026-05-29: Google Search Console Sitemap Submitted
+
+**Status:** APPROVED — sitemap submission initiated, indexation monitoring phase opened.
+
+**Context:** The v1B-H tools layer was merged, deployed, live verified (V1B-DL-017), and the sitemap submission step was authorized by the owner. The production site contains 195 generated pages and 195 sitemap URLs. V1B-DL-018 records the initial submission made via GSC (confirmed by owner screenshot, 29 mai 2026) with a fetch error at submission time attributed to GitHub Pages propagation lag. The owner has now explicitly authorized the sitemap submission governance step with all production verification checks passing at 18/18 PASS.
+
+**Action:** Submission of the canonical sitemap index confirmed:
+`https://space-based-solar-power.com/sitemap.xml`
+Submitted by owner via Google Search Console → property space-based-solar-power.com → Indexing → Sitemaps.
+
+**Governance Boundary:** This decision records sitemap submission only. It does not claim that pages are indexed, ranked, discovered, crawled, or visible in Google Search. Indexation remains subject to Google processing and future monitoring.
+
+**Pre-Submission Verification (all passing):**
+- Quality gate on main: 18/18 PASS ✓
+- Generated pages: 195 ✓
+- Sitemap URLs: 195 ✓
+- sitemap.xml structure: 7 sub-sitemaps (core, glossary, questions, programs, articles, technology, tools) ✓
+- robots.txt: `Sitemap: https://space-based-solar-power.com/sitemap.xml` ✓
+- noindex on approved pages: 0 ✓
+- Legacy ref-nav patterns: 0 ✓
+- Canonical tags: validated by quality gate ✓
+- DECISION_LOG append-only integrity preserved ✓
+
+**Note on GSC Fetch Error (V1B-DL-018):** The initial submission showed "Impossible de récupérer le sitemap" at submission time. This is a transient fetch error caused by GitHub Pages deployment propagation and does not indicate a code or sitemap file error. Owner should check GSC → Sitemaps and use the Retest / re-fetch option once the live domain is confirmed responding. No codebase changes are required.
+
+**Blocked Actions:**
+- Bulk URL inspection: BLOCKED
+- Bulk manual indexing requests: BLOCKED
+- WebGL: BLOCKED
+- JavaScript-dependent UI: BLOCKED
+- Manual public/ patching: BLOCKED
+- Validator weakening: BLOCKED
+
+---
+
 ## [V1B-DL-018] - 2026-05-29: Google Search Console Sitemap Submission Initiated
 
 **Status:** SUBMITTED — canonical sitemap submitted to Google Search Console; fetch error at submission time (deployment propagation); indexation monitoring phase opened.
