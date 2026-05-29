@@ -1,3 +1,38 @@
+## [V1B-DL-020] - 2026-05-29: GSC Sitemap Fetch Successful and 195 Pages Discovered
+
+**Status:** APPROVED — Google Search Console successfully fetched the canonical sitemap index and discovered 195 pages, matching the governed build state exactly.
+
+**Context:** Following the sitemap submission recorded in V1B-DL-018 and V1B-DL-019, the initial fetch had returned an error due to GitHub Pages propagation lag. The owner has now confirmed from Google Search Console that the sitemap fetch is successful and 195 pages have been discovered.
+
+**GSC Confirmed State (owner-reported):**
+- Sitemap URL: `https://space-based-solar-power.com/sitemap.xml`
+- Type: Sitemap index
+- Status: Operation successful / Opération effectuée ✓
+- Last read: 29 May 2026
+- Discovered pages: **195**
+
+**Governed Build State (verified locally):**
+- Quality gate: 18/18 PASS ✓
+- Generated pages: 195 ✓
+- Sitemap URLs: 195 ✓
+- sitemap.xml: 7 sub-sitemaps (core, glossary, questions, programs, articles, technology, tools) ✓
+- robots.txt: `Sitemap: https://space-based-solar-power.com/sitemap.xml` ✓
+- DECISION_LOG append-only integrity preserved ✓
+
+**Match:** Discovered pages (195) = Generated pages (195) = Sitemap URLs (195) — exact match ✓
+
+**Boundary:** This decision records that Google has successfully read the sitemap and counted the URLs it contains. It does not claim that any page has been crawled, indexed, ranked, or is visible in Google Search. Actual crawling and indexation remain subject to Google processing over time.
+
+**Blocked Actions:**
+- Bulk URL inspection: BLOCKED
+- Bulk manual indexing requests: BLOCKED
+- WebGL: BLOCKED
+- JavaScript-dependent UI: BLOCKED
+- Manual public/ patching: BLOCKED
+- Validator weakening: BLOCKED
+
+---
+
 ## [V1B-DL-019] - 2026-05-29: Google Search Console Sitemap Submitted
 
 **Status:** APPROVED — sitemap submission initiated, indexation monitoring phase opened.
