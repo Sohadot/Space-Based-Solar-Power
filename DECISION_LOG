@@ -1,3 +1,44 @@
+## [V1B-DL-014] - 2026-05-29: v1B-G Pre-GSC Indexation & Discovery Readiness Initiated
+
+**Status:** INITIATED — Quality gate 17/17 PASS, build approved for PR
+
+**Context:** Sprint v1B-F was merged, deployed, live-verified, and V1B-DL-013 was recorded on main (merge commit `1e66b98`, post-merge commit `eeefff1`). Sprint v1B-G adds structural indexation governance with no new content pages. Feature branch: `claude/v1b-g-indexation-readiness-cm4aq`.
+
+**Scope Implemented:**
+
+1. `main/scripts/validate_indexation_readiness.py` — 17th quality gate validator covering:
+   - sitemap.xml and sitemap_index.xml consistency and file existence
+   - total sitemap URL count equals generated HTML page count
+   - no duplicate URLs across sitemap files
+   - every sitemap URL resolves to a generated public HTML file
+   - approved sitemap paths and sitemap URL paths in exact agreement
+   - robots.txt points to canonical sitemap URL
+   - every generated HTML page has a correct canonical tag
+   - no noindex robots meta on approved public pages
+   - all 6 major hubs exist and contain methodology/sources footer links
+   - zero legacy ref-nav patterns across all generated pages
+   - no orphan public pages outside the approved generation system
+2. `main/scripts/quality_gate.py` — VALIDATORS extended from 16 to 17
+
+**Quality Gate Results:**
+
+- 17/17 validators PASS
+- Generated pages: 189
+- Sitemap URLs: 189
+- Page count matches sitemap count ✓
+- 0 orphan pages ✓
+- 0 legacy ref-nav patterns ✓
+- 0 noindex on approved pages ✓
+- All 6 hubs verified with correct footer links ✓
+
+**Decisions:**
+
+1. v1B-G sprint quality gate is cleared. PR may be opened from `claude/v1b-g-indexation-readiness-cm4aq` to `main`.
+2. v1B-H remains BLOCKED until v1B-G is merged to main, GitHub Pages deployment confirmed, live verification performed, and V1B-DL-015 is recorded.
+3. Google Search Console submission remains BLOCKED until explicitly authorized.
+
+---
+
 ## [V1B-DL-013] - 2026-05-29: v1B-F Post-Merge Live Verification Approved
 
 **Status:** APPROVED
