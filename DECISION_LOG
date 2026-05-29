@@ -1,3 +1,40 @@
+## [V1B-DL-018] - 2026-05-29: Google Search Console Sitemap Submission Initiated
+
+**Status:** SUBMITTED — canonical sitemap submitted to Google Search Console; fetch error at submission time (deployment propagation); indexation monitoring phase opened.
+
+**Context:** The space-based-solar-power.com property was already added to Google Search Console by the owner. After v1B-H, the site contains 195 generated pages and 195 sitemap URLs, with validated canonical tags, robots.txt, sitemap structure, and indexation readiness (18/18 quality gate PASS). The owner authorized the controlled sitemap submission step.
+
+**Action:** Owner submitted the canonical sitemap index at:
+`https://space-based-solar-power.com/sitemap.xml`
+via Google Search Console → property space-based-solar-power.com → Indexing → Sitemaps → Submit.
+
+**GSC Status at Submission Time:** `Impossible de récupérer le sitemap` (Could not fetch the sitemap) — Type: Unknown, Pages discovered: 0, Date: 29 mai 2026. This error indicates Google attempted to fetch the sitemap immediately after submission but could not reach the live URL. This is consistent with GitHub Pages deployment propagation lag, not a code or sitemap file error. The sitemap file is valid and verified locally. No codebase changes are required.
+
+**Required Follow-up:** Once GitHub Pages deployment is confirmed live, owner should return to GSC → Sitemaps → click the submitted sitemap → request re-fetch. Google will then attempt to read the sitemap again. A successful re-fetch will change the status from error to "Success" and begin populating discovered URLs.
+
+**Pre-Submission Verification Results:**
+- Quality gate on main: 18/18 PASS ✓
+- Generated pages: 195 ✓
+- Sitemap URLs: 195 ✓
+- sitemap.xml structure: 7 sub-sitemaps (core, glossary, questions, programs, articles, technology, tools) ✓
+- robots.txt: `Sitemap: https://space-based-solar-power.com/sitemap.xml` ✓
+- noindex on approved pages: 0 ✓
+- Legacy ref-nav patterns: 0 ✓
+- Canonical tags: validated by quality gate ✓
+- DECISION_LOG append-only integrity preserved ✓
+
+**Boundary:** This decision records sitemap submission only. It does not claim that Google has indexed, ranked, crawled, discovered, or approved any page. Indexation remains subject to Google processing and must be monitored over time.
+
+**Still Blocked:**
+- Bulk URL inspection: BLOCKED
+- Bulk manual indexing requests: BLOCKED
+- WebGL: BLOCKED
+- JavaScript-dependent UI: BLOCKED
+- Manual public/ patching: BLOCKED
+- Validator weakening: BLOCKED
+
+---
+
 ## [V1B-DL-017] - 2026-05-29: v1B-H Post-Merge Live Verification Approved
 
 **Status:** APPROVED
