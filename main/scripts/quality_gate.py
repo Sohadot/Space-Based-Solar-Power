@@ -27,6 +27,7 @@ VALIDATORS = [
     "validate_sources_registry.py",
     "validate_articles.py",
     "validate_indexation_readiness.py",
+    "validate_tools.py",
 ]
 
 

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBSP Readiness Matrix</title>
+  <meta name="description" content="TRL status and deployment gaps across SBSP subsystems — from solar cells to end-to-end system integration.">
+  <link rel="canonical" href="https://space-based-solar-power.com/tools/sbsp-readiness-matrix/">
+  <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="home-link" href="/">Space-Based Solar Power</a>
+      <div class="mission-status" aria-label="Site status">
+        <span class="mission-status-dot" aria-hidden="true"></span>
+        <span>Reference Active</span>
+      </div>
+    </nav>
+  </header>
+  <main class="page-container">
+    <h1>SBSP Readiness Matrix</h1>
+    <div class="tool-type-badge tool-type-badge--page">Readiness Matrix</div>
+<div class="tool-section">
+  <h2>Strategic Purpose</h2>
+  <p>A structured reference grid mapping Technology Readiness Level estimates and readiness classification across the critical subsystems of a space-based solar power architecture. The matrix provides a governed, source-anchored snapshot of where SBSP development stands across the interdependent components that must all reach sufficient readiness before system integration at deployment scale becomes feasible.</p>
+</div>
+<div class="tool-section tool-section--meta">
+  <p><strong>Designed for:</strong> technology researchers, government programme analysts, technology investors, strategic communications professionals</p>
+  <p><strong>Decision value:</strong> The matrix surfaces which SBSP subsystems are component-mature but system-unproven, which are at active demonstration stage, and which remain at conceptual or pre-demonstration stage. It enables structured comparison of readiness across the system rather than relying on the single highest-TRL subsystem as a proxy for overall system readiness.</p>
+</div>
+<div class="tool-section">
+  <h2>Reference Data</h2>
+  <div class="tool-matrix-wrapper">
+  <table class="tool-matrix-table">
+    <thead><tr>
+      <th>Subsystem</th>
+      <th>TRL Range</th>
+      <th>Readiness Class</th>
+      <th>Key Demonstration</th>
+      <th>Deployment Gap</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+      <td>Space Solar Collection — Heritage Components</td>
+      <td>TRL 8–9</td>
+      <td>Component-mature</td>
+      <td>High-efficiency GaAs and multi-junction solar cells operational in commercial and government satellite programmes. Cell efficiencies exceed 30% in flight-qualified configurations. SSPD-1 ALBA array (Caltech, 2023) tested 32 photovoltaic architectures in orbit.</td>
+      <td>Heritage cells are designed for low-mass communication satellite power budgets. SBSP-scale arrays require orders-of-magnitude higher total area. Individual cell TRL does not imply array-at-scale TRL.</td>
+    </tr>
+    <tr>
+      <td>Integrated Solar-WPT Tile (SBSP-specific)</td>
+      <td>TRL 3–4</td>
+      <td>Early demonstration</td>
+      <td>Caltech SSPD-1 MAPLE experiment (2023) demonstrated integrated collection and wireless transmission from a single tile structure in a space environment at milliwatt power levels.</td>
+      <td>Demonstrated at milliwatt scale and centimetre distances. Operational systems require megawatt-to-gigawatt scale and 36,000 km transmission. Efficiency, thermal management, and scalability at operational parameters undemonstrated.</td>
+    </tr>
+    <tr>
+      <td>Phased Array WPT Transmitter</td>
+      <td>TRL 4–5</td>
+      <td>Subsystem demonstration</td>
+      <td>Caltech MAPLE confirmed phased array beam control in a space environment. Northrop Grumman SSPIDR programme advancing phased array transmitter technology for AFRL. JAXA and Mitsubishi Electric have conducted ground-based WPT demonstrations.</td>
+      <td>Demonstrations operate at power levels and distances far below operational SBSP requirements. Coherent phase control at operational array sizes (covering potentially square kilometres) has not been demonstrated.</td>
+    </tr>
+    <tr>
+      <td>Microwave Space-to-Ground Transmission</td>
+      <td>TRL 3–4</td>
+      <td>Concept and component demonstration</td>
+      <td>Ground-to-ground WPT demonstrated at relevant frequencies (2.45 GHz, 5.8 GHz). JAXA conducted ground-based 1.8 kW WPT demonstration in 2015. Regulatory framework for space-to-ground transmission does not exist.</td>
+      <td>No space-to-ground transmission demonstrated at any power level. Atmospheric propagation modelling exists but operational validation across 36,000 km GEO-to-ground path has not been performed. Regulatory status unresolved.</td>
+    </tr>
+    <tr>
+      <td>In-Space Assembly at SBSP Scale</td>
+      <td>TRL 2–3</td>
+      <td>Conceptual / early research</td>
+      <td>ISS assembly has demonstrated large structure deployment in orbit, but used human-rated methods with timescales and mass budgets not applicable to SBSP. Robotic assembly research is in early development at multiple institutions. Caltech SSPD-1 DOLCE experiment demonstrated structural deployment.</td>
+      <td>An operational SBSP satellite could require thousands of tonnes in orbit, assembled robotically from many launches. No autonomous large-structure assembly system at this scale or complexity has been demonstrated.</td>
+    </tr>
+    <tr>
+      <td>Heavy-Lift Launch (Cadence and Cost)</td>
+      <td>TRL 7–8 (vehicle capability); TRL 2–3 (economics and cadence for SBSP)</td>
+      <td>Capability exists; economics unresolved</td>
+      <td>SpaceX Starship, NASA SLS, and other heavy-lift vehicles are in development or operation. Commercial launch prices have fallen significantly from 1990s baselines. Reusability is advancing.</td>
+      <td>SBSP economic analyses require launch costs to fall one to two orders of magnitude from historical baselines. Current commercial pricing is improved but has not been demonstrated to close the SBSP economic case. SBSP-required launch cadence (potentially hundreds of launches per GW-scale satellite) has no operational precedent.</td>
+    </tr>
+    <tr>
+      <td>Rectenna Ground Receiver</td>
+      <td>TRL 5–6</td>
+      <td>Component-demonstrated; grid-scale not built</td>
+      <td>Rectenna components (rectifying antenna elements, diode arrays, power conditioning) have been demonstrated in laboratory and ground WPT experiments at efficiencies above 80% at component level. Large rectenna arrays have been proposed and modelled.</td>
+      <td>No grid-scale rectenna field has been constructed. Land use, power conditioning at GW scale, grid interconnection, and planning/regulatory frameworks for large rectenna installations do not exist.</td>
+    </tr>
+    <tr>
+      <td>End-to-End System Integration</td>
+      <td>TRL 2</td>
+      <td>Conceptual only</td>
+      <td>System integration studies (ESA SOLARIS, Frazer-Nash, NASA Revisit) have modelled integrated system performance from component and subsystem data. No integrated SBSP system — even at small scale — has been built and operated.</td>
+      <td>Full end-to-end integration must be demonstrated before deployment-scale systems are credible. This requires intermediate-scale demonstrators that do not yet exist. System integration introduces failure modes not captured by individual subsystem testing.</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+<div class="tool-section">
+  <h2>How to Read This Tool</h2>
+  <p>The matrix should be read as a system-level readiness profile, not as a collection of independent assessments. The deployment-relevant constraint is the lowest-TRL critical subsystem, not the highest. End-to-end system integration at TRL 2 constrains the overall system regardless of component-level readiness in any individual subsystem. Progress in one subsystem does not imply equivalent progress across the system.</p>
+</div>
+<div class="tool-boundary-box tool-methodology">
+  <h3>Methodology Boundary</h3>
+  <p>TRL estimates are derived from published programme documentation, peer-reviewed research outputs, and institutional feasibility study assessments. The TRL values cited reflect the referenced sources' assessments as of the time of publication; they do not represent an independent technical evaluation by this site. Heritage TRL values (e.g. solar cell TRL for communications satellites) are well-established; SBSP-specific integrated system TRL values involve editorial interpretation of source material. Where sources disagree, the more conservative estimate is used.</p>
+</div>
+<div class="tool-boundary-box tool-claim">
+  <h3>Claim Boundary</h3>
+  <p>This matrix documents current readiness status as documented in referenced sources. It does not predict when any subsystem will reach deployment readiness, does not imply that a development pathway exists on any specific timeline, and does not claim that readiness progress in one subsystem implies equivalent progress across the system. TRL numbers reflect the referenced assessment context, not an absolute scale.</p>
+</div>
+<div class="tool-related-section">
+  <h3>Related Glossary Terms</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/glossary/technology-readiness-level/">Technology Readiness Level</a>
+    <a class="link-chip" href="/glossary/technology-readiness/">Technology Readiness</a>
+    <a class="link-chip" href="/glossary/mass-to-orbit/">Mass To Orbit</a>
+    <a class="link-chip" href="/glossary/phased-array-transmitter/">Phased Array Transmitter</a>
+    <a class="link-chip" href="/glossary/launch-economics/">Launch Economics</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Related Questions</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/questions/technology-readiness-level-sbsp/">Trl Sbsp</a>
+    <a class="link-chip" href="/questions/what-are-the-three-sbsp-subsystems/">What Are The Three Sbsp Subsystems</a>
+    <a class="link-chip" href="/questions/what-is-sbsp-commercial-readiness-gap/">Sbsp Commercial Readiness Gap</a>
+    <a class="link-chip" href="/questions/what-did-caltech-maple-demonstrate/">What Did Caltech Maple Demonstrate</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Technology References</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/technology/high-efficiency-solar-cells/">High Efficiency Solar Cells</a>
+    <a class="link-chip" href="/technology/phased-array-transmitter-systems/">Phased Array Transmitter Systems</a>
+    <a class="link-chip" href="/technology/in-space-assembly-methods/">In Space Assembly Methods</a>
+    <a class="link-chip" href="/technology/heavy-lift-launch-requirements/">Heavy Lift Launch Requirements</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Related Programs</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/programs/caltech-sspp/">Caltech Sspp</a>
+    <a class="link-chip" href="/programs/northrop-grumman-sspidr/">Northrop Grumman Sspidr</a>
+    <a class="link-chip" href="/programs/esa-solaris/">Esa Solaris</a>
+    <a class="link-chip" href="/programs/jaxa-ssps/">Jaxa Ssps</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Related Briefs</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/articles/technology-readiness-feasibility-frontier/">Technology Readiness Feasibility Frontier</a>
+    <a class="link-chip" href="/articles/wireless-power-transmission-scale/">Wireless Power Transmission Scale</a>
+    <a class="link-chip" href="/articles/launch-economics-viability/">Launch Economics Viability</a>
+  </div>
+</div>
+<div class="tool-source-footer">
+  <span class="tool-source-label">Sources used in this tool</span>
+  <p>ESA SOLARIS assessment, JAXA SSPS technical documentation, Caltech SSPP published experiment results (MAPLE 2023), Northrop Grumman SSPIDR programme documentation, NASA SBSP revisit study, Frazer-Nash feasibility study (UK BEIS, 2020). TRL framework definitions from NASA Technology Readiness Level guidance and ESA TRL definitions.</p>
+</div>
+<div class="hub-source-links">
+<a class="link-chip" href="/tools/">All Tools</a>
+<a class="link-chip" href="/methodology/">Methodology</a>
+<a class="link-chip" href="/sources/">Sources</a>
+<a class="link-chip" href="/framework/">Framework</a>
+</div>
+<nav class="internal-refs" aria-hidden="true">
+<a href="/tools/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/methodology/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/sources/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/framework/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/technology-readiness-level/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/technology-readiness/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/mass-to-orbit/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/phased-array-transmitter/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/launch-economics/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/technology-readiness-level-sbsp/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/what-are-the-three-sbsp-subsystems/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/what-is-sbsp-commercial-readiness-gap/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/what-did-caltech-maple-demonstrate/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/technology/high-efficiency-solar-cells/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/technology/phased-array-transmitter-systems/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/technology/in-space-assembly-methods/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/technology/heavy-lift-launch-requirements/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/caltech-sspp/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/northrop-grumman-sspidr/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/esa-solaris/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/jaxa-ssps/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/articles/technology-readiness-feasibility-frontier/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/articles/wireless-power-transmission-scale/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/articles/launch-economics-viability/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+</nav>
+  </main>
+</body>
+</html>

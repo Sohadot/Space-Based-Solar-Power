@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Dependency Map</title>
+  <meta name="description" content="Reference map of SBSP subsystem technology dependencies across four development tiers — from foundation technologies to deployment prerequisites.">
+  <link rel="canonical" href="https://space-based-solar-power.com/tools/technology-dependency-map/">
+  <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="home-link" href="/">Space-Based Solar Power</a>
+      <div class="mission-status" aria-label="Site status">
+        <span class="mission-status-dot" aria-hidden="true"></span>
+        <span>Reference Active</span>
+      </div>
+    </nav>
+  </header>
+  <main class="page-container">
+    <h1>Technology Dependency Map</h1>
+    <div class="tool-type-badge tool-type-badge--page">Dependency Reference</div>
+<div class="tool-section">
+  <h2>Strategic Purpose</h2>
+  <p>A reference map of the interdependency relationships between SBSP technology subsystems, organised into dependency tiers that show which technologies must reach readiness before others can be meaningfully developed at SBSP-relevant scale. The map identifies critical path constraints — the sequencing of technology development that determines the minimum time to system integration.</p>
+</div>
+<div class="tool-section tool-section--meta">
+  <p><strong>Designed for:</strong> technology programme managers, researchers, government technology advisors, institutional investors</p>
+  <p><strong>Decision value:</strong> Technology development cannot be optimally sequenced without understanding which subsystems are prerequisites for others. The dependency map prevents the common error of funding parallel development across all subsystems while the critical path bottlenecks remain unresolved. It identifies which technology investments unlock the most subsequent development steps.</p>
+</div>
+<div class="tool-section">
+  <h2>Reference Data</h2>
+  <div class="tool-matrix-wrapper">
+  <table class="tool-matrix-table">
+    <thead><tr>
+      <th>Tier</th>
+      <th>Description</th>
+      <th>Components</th>
+      <th>Current Status</th>
+      <th>Unlocks</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+      <td>Tier 1 — Foundation Technologies (No internal SBSP dependencies)</td>
+      <td>Technologies that must reach sufficient readiness before SBSP-specific development can proceed at scale. Progress in these technologies is necessary but not sufficient for SBSP viability.</td>
+      <td>Launch vehicle economics (heavy-lift cost reduction); Orbital logistics infrastructure (refuelling, servicing); Space-grade power electronics manufacturing scale; Spectrum regulatory framework for space-to-ground microwave transmission</td>
+      <td>Launch economics improving but not at SBSP-required threshold. Orbital servicing in early development. Space power electronics improving. Spectrum regulatory framework does not currently exist for operational SBSP.</td>
+      <td>System integration testing at meaningful scale; economic viability modelling with confirmed assumptions</td>
+    </tr>
+    <tr>
+      <td>Tier 2 — Core Subsystem Technologies (Depend on Tier 1)</td>
+      <td>The primary functional subsystems of SBSP that must each reach sufficient TRL before integrated system testing is feasible. Each has specific Tier 1 dependencies.</td>
+      <td>Solar collection array at SBSP tile scale; Phased array WPT transmitter at required power density; In-space structural assembly system; Rectenna ground receiver at grid-connection scale</td>
+      <td>Solar collection: heritage components mature, SBSP tile integration at TRL 3-4. WPT transmitter: component demonstrated (TRL 4-5), operational-scale undemonstrated. In-space assembly: conceptual for SBSP scale (TRL 2-3). Rectenna: components tested, grid-scale not built (TRL 5-6).</td>
+      <td>Subsystem integration testing; demonstration satellite development; intermediate-scale system prototyping</td>
+    </tr>
+    <tr>
+      <td>Tier 3 — Integration Technologies (Depend on Tier 2)</td>
+      <td>Technologies that integrate Tier 2 subsystems into a functional system. These cannot be meaningfully developed until the subsystems they integrate reach sufficient readiness.</td>
+      <td>Beam control and steering across operational GEO-to-ground path; Thermal management for combined solar collection and WPT operation; Power conditioning chain from array DC through microwave to rectenna DC; System operations and fault detection at orbital scale</td>
+      <td>Beam control: component-demonstrated in laboratory and MAPLE; operational-range steering not demonstrated. Thermal management: modelled at system level, not tested at SBSP scale. Power conditioning: components mature in isolation, integrated chain efficiency at SBSP scale not demonstrated. Operations: simulation and planning only.</td>
+      <td>End-to-end system testing; pilot demonstration programme</td>
+    </tr>
+    <tr>
+      <td>Tier 4 — Deployment-Prerequisite Technologies (Depend on Tier 3)</td>
+      <td>Technologies and capabilities that must be in place before deployment-scale systems can be operated. These are the final layer before grid-connected SBSP becomes operationally feasible.</td>
+      <td>End-to-end system performance validation across full transmission chain; Grid integration infrastructure and regulatory approval; Safety certification for microwave transmission footprint; Commercial framework for SBSP power purchase or infrastructure investment</td>
+      <td>End-to-end system: not yet attempted even at small scale. Grid integration: regulatory and infrastructure framework does not exist. Safety certification: frameworks being studied; operational precedent does not exist. Commercial framework: no SBSP power purchase agreement has been executed.</td>
+      <td>Deployment-scale investment decision; operational SBSP system</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+<div class="tool-section">
+  <h2>How to Read This Tool</h2>
+  <p>Read the map from Tier 1 upward. A programme that is advancing Tier 3 technologies while Tier 1 prerequisites remain unresolved is advancing in a context where the enabling foundations are not yet confirmed. The critical path bottleneck is the Tier 1 technology with the longest remaining development runway — currently launch economics and spectrum regulatory framework. Investment in Tier 2 and Tier 3 technologies is not wasted (component TRL development accumulates), but system integration cannot proceed until the lowest Tier 1 component is sufficiently mature.</p>
+</div>
+<div class="tool-boundary-box tool-methodology">
+  <h3>Methodology Boundary</h3>
+  <p>Dependency relationships are derived from systems engineering analysis of SBSP architecture as documented in major feasibility studies. The tier structure and dependency arrows represent editorial synthesis of multiple source documents, not a single authoritative systems engineering breakdown. Dependency relationships represent technical logic (A must work before B can be tested meaningfully) rather than organisational or funding sequence.</p>
+</div>
+<div class="tool-boundary-box tool-claim">
+  <h3>Claim Boundary</h3>
+  <p>This dependency map documents technical dependency logic for SBSP system development. It does not claim that resolving critical path dependencies will lead to deployment, that any specific timeline applies, or that the dependency structure is complete. Novel failure modes at the intersection of subsystems may introduce additional dependencies not captured here.</p>
+</div>
+<div class="tool-related-section">
+  <h3>Related Glossary Terms</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/glossary/technology-readiness-level/">Technology Readiness Level</a>
+    <a class="link-chip" href="/glossary/wireless-power-transmission/">Wireless Power Transmission</a>
+    <a class="link-chip" href="/glossary/mass-to-orbit/">Mass To Orbit</a>
+    <a class="link-chip" href="/glossary/beam-control/">Beam Control</a>
+    <a class="link-chip" href="/glossary/power-conversion-efficiency/">Power Conversion Efficiency</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Related Questions</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/questions/what-are-the-three-sbsp-subsystems/">What Are The Three Sbsp Subsystems</a>
+    <a class="link-chip" href="/questions/technology-readiness-level-sbsp/">Trl Sbsp</a>
+    <a class="link-chip" href="/questions/what-is-in-space-manufacturing-sbsp/">In Space Manufacturing Sbsp</a>
+    <a class="link-chip" href="/questions/what-is-mass-to-orbit-constraint-sbsp/">Mass To Orbit Constraint Sbsp</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Technology References</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/technology/phased-array-transmitter-systems/">Phased Array Transmitter Systems</a>
+    <a class="link-chip" href="/technology/in-space-assembly-methods/">In Space Assembly Methods</a>
+    <a class="link-chip" href="/technology/rectenna-arrays/">Rectenna Arrays</a>
+    <a class="link-chip" href="/technology/power-conversion-and-conditioning/">Power Conversion And Conditioning</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Related Programs</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/programs/esa-solaris/">Esa Solaris</a>
+    <a class="link-chip" href="/programs/northrop-grumman-sspidr/">Northrop Grumman Sspidr</a>
+    <a class="link-chip" href="/programs/caltech-sspp/">Caltech Sspp</a>
+    <a class="link-chip" href="/programs/jaxa-ssps/">Jaxa Ssps</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Related Briefs</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/articles/technology-readiness-feasibility-frontier/">Technology Readiness Feasibility Frontier</a>
+    <a class="link-chip" href="/articles/wireless-power-transmission-scale/">Wireless Power Transmission Scale</a>
+    <a class="link-chip" href="/articles/sbsp-development-pathway/">Sbsp Development Pathway</a>
+  </div>
+</div>
+<div class="tool-source-footer">
+  <span class="tool-source-label">Sources used in this tool</span>
+  <p>Dependency structure derived from ESA SOLARIS technical architecture documentation, JAXA SSPS system design documentation, NASA SBSP revisit system analysis, Frazer-Nash feasibility study technical annex. Systems engineering dependency logic is editorial synthesis of these sources.</p>
+</div>
+<div class="hub-source-links">
+<a class="link-chip" href="/tools/">All Tools</a>
+<a class="link-chip" href="/methodology/">Methodology</a>
+<a class="link-chip" href="/sources/">Sources</a>
+<a class="link-chip" href="/framework/">Framework</a>
+</div>
+<nav class="internal-refs" aria-hidden="true">
+<a href="/tools/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/methodology/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/sources/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/framework/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/technology-readiness-level/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/wireless-power-transmission/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/mass-to-orbit/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/beam-control/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/power-conversion-efficiency/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/what-are-the-three-sbsp-subsystems/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/technology-readiness-level-sbsp/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/what-is-in-space-manufacturing-sbsp/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/what-is-mass-to-orbit-constraint-sbsp/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/technology/phased-array-transmitter-systems/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/technology/in-space-assembly-methods/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/technology/rectenna-arrays/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/technology/power-conversion-and-conditioning/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/esa-solaris/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/northrop-grumman-sspidr/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/caltech-sspp/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/jaxa-ssps/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/articles/technology-readiness-feasibility-frontier/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/articles/wireless-power-transmission-scale/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/articles/sbsp-development-pathway/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+</nav>
+  </main>
+</body>
+</html>

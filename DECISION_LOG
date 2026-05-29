@@ -1,3 +1,78 @@
+## [V1B-DL-016] - 2026-05-29: v1B-H Sprint Completed — Strategic Tools & Buyer Logic Layer
+
+**Status:** APPROVED — Quality gate 18/18 PASS. Ready for PR.
+
+**Context:** Sprint v1B-H executed on branch `claude/v1b-h-tools-expansion-cm4aq`. Objective: upgrade /tools/ into a governed static strategic tools layer with 6 reference-grade tool pages. No JavaScript, no fake interactivity, no placeholder content.
+
+**Deliverables:**
+
+1. **`main/data/tool_pages.json`** — 6 fully populated tool records:
+   - `sbsp-readiness-matrix` (readiness-matrix)
+   - `claim-boundary-classifier` (classification-reference)
+   - `program-comparison-atlas` (comparison-reference)
+   - `technology-dependency-map` (dependency-reference)
+   - `buyer-logic-matrix` (strategic-positioning)
+   - `evidence-governance-dossier` (evidence-reference)
+   All records pass REQUIRED_FIELDS, banned phrase, cross-reference, and length checks.
+
+2. **`main/data/publication_v1b_h.json`** — New trial manifest, inherits v1b_f, totalPages=195, adds `tools` array with 6 IDs.
+
+3. **`main/data/pages.json`** — Updated /tools/ hub (type=tools_hub, seedSource=tools_hub) + 6 new tool_page entries (seedSource=tool, status=approved_for_launch, phase=publication_v1b_h). Total pages: 211 entries, 195 approved_for_launch.
+
+4. **`main/scripts/build.py`** — Added TOOL_TYPE_LABELS constant, tools loading in load_seed_data(), tools category in categorize_pages(), tools category in build_sitemaps(), generate_tools_hub_html() and generate_tool_page_html() generators, routing in write_page() for tools_hub and tool seedSources.
+
+5. **`main/scripts/validate_tools.py`** — 18th quality gate validator. Checks required fields, allowed toolTypes, minimum text lengths, banned phrases, cross-references, and path prefix.
+
+6. **`main/scripts/quality_gate.py`** — Updated VALIDATORS list from 17 → 18 entries (added validate_tools.py).
+
+7. **`main/static/css/main.css`** — Added tool hub and tool page component styles: .tool-status-panel, .tool-status-stat, .tool-status-value, .tool-status-label, .tool-governance-note, .tool-type-badge, .tool-hub-grid, .tool-entry, .tool-entry-link, .tool-entry-title, .tool-entry-purpose, .tool-entry-value, .tool-section, .tool-section--meta, .tool-matrix-wrapper, .tool-matrix-table, .tool-boundary-box, .tool-methodology, .tool-claim, .tool-related-section, .tool-link-chips, .tool-source-footer, .tool-source-label.
+
+8. **`V1B_TOOLS_EXPANSION_PLAN.md`** — Sprint plan document.
+
+**Quality Gate Results:**
+
+- validate_schema.py: PASS
+- validate_content.py: PASS
+- validate_links.py: PASS
+- validate_sources.py: PASS
+- validate_claims.py: PASS
+- validate_seo.py: PASS
+- validate_sitemap.py: PASS
+- validate_internal_link_graph.py: PASS
+- validate_output_integrity.py: PASS
+- validate_decision_log.py: PASS
+- validate_glossary.py: PASS
+- validate_questions.py: PASS
+- validate_technology.py: PASS
+- validate_programs.py: PASS
+- validate_sources_registry.py: PASS
+- validate_articles.py: PASS
+- validate_indexation_readiness.py: PASS
+- validate_tools.py: PASS
+- **Total: 18/18 PASS — Build: APPROVED**
+
+**Build Output:**
+
+- Generated: 195 pages
+- Sitemap URLs: 195
+- Trial manifest: publication_v1b_h (195 pages)
+
+**Fixes Applied During Sprint:**
+
+1. Shortened two `description` fields in pages.json that exceeded 160-char SEO limit:
+   - `tools` hub: 178 → 154 chars
+   - `tool-buyer-logic-matrix`: 188 → 158 chars
+
+**Decisions:**
+
+1. v1B-H sprint is complete. All deliverables built and validated at 18/18 PASS.
+2. Branch `claude/v1b-h-tools-expansion-cm4aq` is ready for PR.
+3. v1B-I remains BLOCKED until v1B-H is merged, deployed, live verified, and V1B-DL-017 is recorded.
+4. Google Search Console submission remains BLOCKED until explicitly authorized.
+5. All prohibitions remain in force: no JavaScript-dependent UI, no WebGL, no fake interactivity, no "coming soon", no placeholder tools, no manual public/ patching, no validator weakening.
+
+---
+
 ## [V1B-DL-015] - 2026-05-29: v1B-G Post-Merge Live Verification Approved
 
 **Status:** APPROVED
