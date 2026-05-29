@@ -1,3 +1,36 @@
+## [V1B-DL-011] - 2026-05-29: v1B-E Post-Merge Live Verification Approved
+
+**Status:** APPROVED
+
+**Context:** PR #13 (branch `claude/v1b-e-sources-expansion-cm4aq`) was merged to main and GitHub Pages deployment completed. Post-merge live verification performed on 2026-05-29 against the deployed public/ output on main (merge commit `c41c32b`).
+
+**Verification Results:**
+
+1. **Merge commit:** `c41c32b` — Merge pull request #13 from Sohadot/claude/v1b-e-sources-expansion-cm4aq ✓
+2. **Sovereign Quality Gate on main:** 15/15 PASS — all validators pass including validate_sources_registry.py ✓
+3. **Build output:** 177 pages generated, 177 sitemap URLs (unchanged from v1B-D) ✓
+4. **/sources/ hub:** Loads successfully with all required elements ✓
+   - Status panel: 26 governed sources, 7 source classes ✓
+   - Governance explanation present ✓
+   - "How sources are used" section present ✓
+   - Claim boundary explanation present ✓
+   - Source class jump navigation present ✓
+   - All 7 class sections rendered (institutional-space-agency, government-policy, academic-research, technical-standard, industry-consortium, historical-primary, methodology-internal) ✓
+   - Footer links to methodology, framework, feasibility, strategic importance, global programs, programs, glossary, questions, technology ✓
+5. **Source registry integrity:** 26 records, 7/7 classes covered ✓
+6. **Sitemaps:** 5 sub-sitemaps, total 177 URLs — unchanged ✓
+7. **Legacy nav patterns:** 0 occurrences across 177 HTML files ✓
+8. **DECISION_LOG integrity:** S1-DL-001 through V1B-DL-010 all present, nothing removed ✓
+9. **Blocked actions confirmed:** GSC blocked, WebGL blocked, JS-dependent UI blocked, manual public/ patching blocked, no thin source profile pages ✓
+
+**Decisions:**
+
+1. v1B-E sprint is closed. The governed source registry is live on production.
+2. v1B-F is now unblocked. Sprint v1B-F may proceed when authorized.
+3. Google Search Console submission remains BLOCKED until explicitly authorized.
+
+---
+
 ## [V1B-DL-010] - 2026-05-29: v1B-E Source Registry & Evidence Governance Expansion Initiated
 
 **Status:** INITIATED
