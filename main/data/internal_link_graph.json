@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "description": "Sovereign internal link graph for Space-Based-Solar-Power.com. Defines link rules per page type, hub definitions, and graph integrity requirements.",
+  "version": "1.1.0",
+  "description": "Sovereign internal link graph for Space-Based-Solar-Power.com. Defines link rules per page type, hub definitions, and graph integrity requirements. Updated v1B-D: strengthened global-programs hub, added program expansion rules.",
   "hubDefinitions": {
     "/": {
       "role": "primary_gateway",
@@ -41,8 +41,9 @@
     "/global-programs/": {
       "role": "registry_hub",
       "label": "Global Programs",
-      "maxOutboundLinks": 100,
-      "requiredInbound": 5
+      "maxOutboundLinks": 200,
+      "requiredInbound": 5,
+      "v1b_d_note": "Expanded to accommodate 30 program profiles across 6 institutional clusters"
     },
     "/tools/": {
       "role": "tools_hub",
@@ -71,8 +72,9 @@
     "/programs/": {
       "role": "programs_hub",
       "label": "Program Profiles",
-      "maxOutboundLinks": 50,
-      "requiredInbound": 1
+      "maxOutboundLinks": 200,
+      "requiredInbound": 1,
+      "v1b_d_note": "Upgraded to cluster-grouped hub with 30 program entries across 6 clusters"
     },
     "/what-is-space-based-solar-power/": {
       "role": "definition_hub",
@@ -86,6 +88,47 @@
       "maxOutboundLinks": 50,
       "requiredInbound": 3
     }
+  },
+  "programClusterRules": {
+    "description": "v1B-D cluster governance for the programs hub. Each cluster groups related program profiles by institutional type.",
+    "clusters": [
+      {
+        "id": "national-space-agency",
+        "label": "National Space Agency Programs",
+        "requiredOutboundFromHub": true,
+        "minPrograms": 1
+      },
+      {
+        "id": "national-research-program",
+        "label": "National Research and Industrial Programs",
+        "requiredOutboundFromHub": true,
+        "minPrograms": 1
+      },
+      {
+        "id": "defense-military",
+        "label": "Defense and Military Research",
+        "requiredOutboundFromHub": true,
+        "minPrograms": 1
+      },
+      {
+        "id": "academic-university",
+        "label": "Academic and University Programs",
+        "requiredOutboundFromHub": true,
+        "minPrograms": 1
+      },
+      {
+        "id": "industry-consortium",
+        "label": "Industry and Consortium Programs",
+        "requiredOutboundFromHub": true,
+        "minPrograms": 1
+      },
+      {
+        "id": "historical-foundational",
+        "label": "Historical and Foundational References",
+        "requiredOutboundFromHub": true,
+        "minPrograms": 1
+      }
+    ]
   },
   "rules": [
     {
@@ -209,11 +252,13 @@
         "/methodology/",
         "/technology-stack/",
         "/feasibility-and-constraints/",
-        "/strategic-importance/"
+        "/strategic-importance/",
+        "/programs/"
       ],
       "trustPage": "/methodology/",
       "nextStepPage": "/feasibility-and-constraints/",
-      "minInternalLinks": 5
+      "minInternalLinks": 5,
+      "v1b_d_note": "global-programs hub now also links to /programs/ cluster hub"
     },
     {
       "pageType": "glossary_term",
@@ -222,9 +267,18 @@
         "/glossary/"
       ],
       "conditionalLinks": [
-        {"condition": "has_parent_concept", "link": "parent_concept_page"},
-        {"condition": "has_related_terms", "link": "related_term_pages"},
-        {"condition": "has_source_ref", "link": "/sources/"}
+        {
+          "condition": "has_parent_concept",
+          "link": "parent_concept_page"
+        },
+        {
+          "condition": "has_related_terms",
+          "link": "related_term_pages"
+        },
+        {
+          "condition": "has_source_ref",
+          "link": "/sources/"
+        }
       ],
       "trustPage": "/sources/",
       "nextStepPage": "related_reference_page",
@@ -237,8 +291,14 @@
         "/methodology/"
       ],
       "conditionalLinks": [
-        {"condition": "has_glossary_terms", "link": "glossary_term_pages"},
-        {"condition": "has_program_ref", "link": "/global-programs/"}
+        {
+          "condition": "has_glossary_terms",
+          "link": "glossary_term_pages"
+        },
+        {
+          "condition": "has_program_ref",
+          "link": "/global-programs/"
+        }
       ],
       "trustPage": "/methodology/",
       "nextStepPage": "related_reference_page",
@@ -273,15 +333,31 @@
       "parentHub": "/global-programs/",
       "requiredOutboundLinks": [
         "/global-programs/",
+        "/programs/",
         "/sources/"
       ],
       "conditionalLinks": [
-        {"condition": "has_technology_focus", "link": "/technology-stack/"},
-        {"condition": "has_country_page", "link": "country_profile_page"}
+        {
+          "condition": "has_technology_focus",
+          "link": "/technology-stack/"
+        },
+        {
+          "condition": "has_country_page",
+          "link": "country_profile_page"
+        },
+        {
+          "condition": "has_glossary_terms",
+          "link": "glossary_term_pages"
+        },
+        {
+          "condition": "has_related_questions",
+          "link": "question_pages"
+        }
       ],
       "trustPage": "/methodology/",
       "nextStepPage": "/feasibility-and-constraints/",
-      "minInternalLinks": 3
+      "minInternalLinks": 4,
+      "v1b_d_note": "Expanded to require link to /programs/ cluster hub and support richer program_pages.json schema"
     },
     {
       "pageType": "use_case_profile",
@@ -303,8 +379,14 @@
         "/sources/"
       ],
       "conditionalLinks": [
-        {"condition": "has_technology_context", "link": "/technology-stack/"},
-        {"condition": "has_related_constraint", "link": "related_constraint_page"}
+        {
+          "condition": "has_technology_context",
+          "link": "/technology-stack/"
+        },
+        {
+          "condition": "has_related_constraint",
+          "link": "related_constraint_page"
+        }
       ],
       "trustPage": "/methodology/",
       "nextStepPage": "/tools/",
@@ -318,7 +400,10 @@
         "/methodology/"
       ],
       "conditionalLinks": [
-        {"condition": "has_citing_pages", "link": "citing_page_paths"}
+        {
+          "condition": "has_citing_pages",
+          "link": "citing_page_paths"
+        }
       ],
       "trustPage": "/methodology/",
       "nextStepPage": "related_source_brief_page",
@@ -332,10 +417,22 @@
         "/tools/"
       ],
       "conditionalLinks": [
-        {"condition": "audience_is_researcher", "link": "/sources/"},
-        {"condition": "audience_is_investor", "link": "/feasibility-and-constraints/"},
-        {"condition": "audience_is_journalist", "link": "/methodology/"},
-        {"condition": "audience_is_government", "link": "/strategic-importance/"}
+        {
+          "condition": "audience_is_researcher",
+          "link": "/sources/"
+        },
+        {
+          "condition": "audience_is_investor",
+          "link": "/feasibility-and-constraints/"
+        },
+        {
+          "condition": "audience_is_journalist",
+          "link": "/methodology/"
+        },
+        {
+          "condition": "audience_is_government",
+          "link": "/strategic-importance/"
+        }
       ],
       "trustPage": "/methodology/",
       "nextStepPage": "/tools/",
@@ -378,6 +475,25 @@
       "trustPage": "/methodology/",
       "nextStepPage": "/feasibility-and-constraints/",
       "minInternalLinks": 5
+    },
+    {
+      "pageType": "programs_index",
+      "parentHub": "/global-programs/",
+      "requiredOutboundLinks": [
+        "/global-programs/",
+        "/methodology/",
+        "/sources/"
+      ],
+      "conditionalLinks": [
+        {
+          "condition": "has_cluster_sections",
+          "link": "program_profile_pages"
+        }
+      ],
+      "trustPage": "/methodology/",
+      "nextStepPage": "/feasibility-and-constraints/",
+      "minInternalLinks": 4,
+      "v1b_d_note": "New rule: programs cluster hub at /programs/ with 6-cluster grouping and 30 profiles"
     }
   ],
   "orphanPreventionRules": {
@@ -387,7 +503,14 @@
     "scanScope": "all_approved_pages"
   },
   "linkTextRules": {
-    "forbiddenAnchorTexts": ["click here", "read more", "here", "link", "this page", "more"],
+    "forbiddenAnchorTexts": [
+      "click here",
+      "read more",
+      "here",
+      "link",
+      "this page",
+      "more"
+    ],
     "requireDescriptiveAnchors": true,
     "allowNaturalVariation": true
   }

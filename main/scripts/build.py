@@ -5,6 +5,8 @@ Sprint 2: Interface and Reference Launch Correction.
 Upgraded templates: home page renders sovereign atlas gateway;
 foundation pages use reference section cards;
 glossary/question/program pages use governed reference card structure.
+Sprint v1B-D: Program hub upgraded with cluster grouping, status panel,
+expansion note, and richer program profile rendering.
 """
 
 import json
@@ -26,9 +28,6 @@ APPROVED_STATUSES = {"approved_for_launch"}
 SITEMAP_BATCH_SIZE = 10_000
 DOMAIN = "https://space-based-solar-power.com"
 
-# Seven core infrastructure layers for the telemetry panel.
-# Phase labels represent documented research/program state.
-# Do not modify without a DECISION_LOG entry.
 TELEMETRY_LAYERS = [
     {"label": "Orbital Core", "value": "Solar Collection Array", "phase": "Research Phase"},
     {"label": "Power Beaming Vector", "value": "Microwave / Laser Transmission", "phase": "Demonstration Phase"},
@@ -39,7 +38,6 @@ TELEMETRY_LAYERS = [
     {"label": "Lunar &amp; Space-Industrial", "value": "Off-Earth Infrastructure", "phase": "Concept Phase"},
 ]
 
-# Primary active constraints shown in the home page constraint matrix preview.
 CONSTRAINT_PREVIEW = [
     {"name": "Launch Economics", "status": "Active Constraint"},
     {"name": "Orbital Assembly at Scale", "status": "Active Constraint"},
@@ -48,7 +46,6 @@ CONSTRAINT_PREVIEW = [
     {"name": "Safety and Regulatory Acceptance", "status": "Active Constraint"},
 ]
 
-# Reference atlas card descriptions keyed by path.
 REF_ATLAS_DESCS = {
     "/about/": ("Asset Identity", "What this asset is and what it is not."),
     "/methodology/": ("Evaluation Framework", "How claims, sources, and constraints are evaluated."),
@@ -82,7 +79,7 @@ def approved_pages(pages_data: dict) -> list:
 
 def load_seed_data() -> dict:
     """Load all seed data files keyed by ID for fast lookup."""
-    seed = {"glossary": {}, "questions": {}, "programs": {}, "technology": {}}
+    seed = {"glossary": {}, "questions": {}, "programs": {}, "technology": {}, "question_paths": {}}
 
     glossary_path = DATA_DIR / "glossary_terms.json"
     if glossary_path.exists():
@@ -105,12 +102,28 @@ def load_seed_data() -> dict:
         for p in programs:
             seed["programs"][p["id"]] = p
 
+    # v1B-D: also load program_pages.json — overrides/extends program_registry entries
+    program_pages_path = DATA_DIR / "program_pages.json"
+    if program_pages_path.exists():
+        data = load_json(program_pages_path)
+        prog_pages = data if isinstance(data, list) else data.get("programs", [])
+        for p in prog_pages:
+            seed["programs"][p["id"]] = p
+
     technology_path = DATA_DIR / "technology_pages.json"
     if technology_path.exists():
         data = load_json(technology_path)
         tech_pages = data if isinstance(data, list) else data.get("pages", [])
         for t in tech_pages:
             seed["technology"][t["id"]] = t
+
+    # v1B-D: build question ID → actual page path lookup from pages.json
+    pages_path = DATA_DIR / "pages.json"
+    if pages_path.exists():
+        data = load_json(pages_path)
+        for p in data.get("pages", []):
+            if p.get("type") == "question_answer" and p.get("seedId") and p.get("path"):
+                seed["question_paths"][p["seedId"]] = p["path"]
 
     return seed
 
@@ -143,8 +156,21 @@ TECH_CLUSTER_ORDER = [
     ("autonomous-operations-robotics", "Autonomous Operations and Robotics"),
 ]
 
+PROGRAM_CLUSTER_ORDER = [
+    ("national-space-agency", "National Space Agency Programs"),
+    ("national-research-program", "National Research and Industrial Programs"),
+    ("defense-military", "Defense and Military Research"),
+    ("academic-university", "Academic and University Programs"),
+    ("industry-consortium", "Industry and Consortium Programs"),
+    ("historical-foundational", "Historical and Foundational References"),
+]
+
 
 def load_trial_manifest() -> dict | None:
+    # v1B-D: check for v1b_d manifest first
+    v1b_d_path = DATA_DIR / "publication_v1b_d.json"
+    if v1b_d_path.exists():
+        return load_json(v1b_d_path)
     v1b_c_path = DATA_DIR / "publication_v1b_c.json"
     if v1b_c_path.exists():
         return load_json(v1b_c_path)
@@ -222,7 +248,6 @@ def _render_hub_source_footer() -> str:
 
 
 def render_content_sections_html(sections: list, approved_paths: set) -> str:
-    """Render content sections as plain sections (fallback for pages without structured sections)."""
     html_parts = []
     for section in sections:
         heading = _escape_html(section.get("heading", ""))
@@ -247,7 +272,6 @@ def render_content_sections_html(sections: list, approved_paths: set) -> str:
 
 
 def render_reference_cards_html(sections: list, approved_paths: set) -> str:
-    """Render content sections as governed reference section cards."""
     html_parts = []
     for section in sections:
         heading = _escape_html(section.get("heading", ""))
@@ -267,7 +291,6 @@ def render_reference_cards_html(sections: list, approved_paths: set) -> str:
         if visible_links:
             parts.append('  <div class="reference-section-links">')
             for lk in visible_links:
-                label = _escape_html(lk.get("label", lk.get("path", "")))
                 parts.append(f'    {_link_chip(lk["path"], lk.get("label", lk.get("path", "")))}')
             parts.append('  </div>')
         parts.append('</div>')
@@ -342,7 +365,7 @@ def _render_glossary_expansion_module(page: dict, approved_paths: set) -> str:
     parts.append('  <div class="glossary-expansion-stats">')
     parts.append('    <div class="glossary-expansion-stat"><span class="glossary-expansion-stat-value">53</span><span class="glossary-expansion-stat-label">governed terms</span></div>')
     parts.append('    <div class="glossary-expansion-stat"><span class="glossary-expansion-stat-value">5</span><span class="glossary-expansion-stat-label">source clusters</span></div>')
-    parts.append('    <div class="glossary-expansion-stat"><span class="glossary-expansion-stat-value">11</span><span class="glossary-expansion-stat-label">quality validators</span></div>')
+    parts.append('    <div class="glossary-expansion-stat"><span class="glossary-expansion-stat-value">14</span><span class="glossary-expansion-stat-label">quality validators</span></div>')
     parts.append('  </div>')
     parts.append('  <div class="glossary-expansion-clusters">')
     for _, label in CLUSTER_ORDER:
@@ -507,46 +530,121 @@ def generate_question_html(question: dict, page: dict) -> str:
     return _page_shell(page, h1, body)
 
 
-def generate_program_html(program: dict, page: dict) -> str:
-    h1 = program.get("programName", page["title"])
+def generate_program_html(program: dict, page: dict, question_paths: dict | None = None) -> str:
+    """Render a program profile page. Handles both program_registry.json and program_pages.json schemas."""
+    # Try richer schema fields first (program_pages.json), fall back to registry fields
+    h1 = program.get("title", program.get("programName", page["title"]))
     institution = _escape_html(program.get("institution", ""))
-    country = _escape_html(program.get("country", ""))
+    country = _escape_html(program.get("country_or_region", program.get("country", "")))
     start_year = program.get("startYear", "")
-    status = _escape_html(program.get("status", "").replace("_", " "))
-    description = _escape_html(program.get("description", ""))
-    claim = _escape_html(program.get("claimBoundary", ""))
+    status_raw = program.get("program_status", program.get("status", ""))
+    status = _escape_html(status_raw.replace("_", " "))
+    activity_type = _escape_html(program.get("activity_type", "").replace("_", " "))
+    cluster = program.get("cluster", "")
+
+    # Rich fields from program_pages.json
+    summary = _escape_html(program.get("summary", program.get("description", "")))
+    institutional_context = _escape_html(program.get("institutional_context", ""))
+    sbsp_relevance = _escape_html(program.get("sbsp_relevance", ""))
+    technology_relationship = _escape_html(program.get("technology_relationship", ""))
+    feasibility_boundary = _escape_html(program.get("feasibility_boundary", ""))
+    claim = _escape_html(program.get("claim_boundary", program.get("claimBoundary", "")))
+    source_footer = _escape_html(program.get("source_footer", ""))
+
+    # Links
+    related_glossary_terms = program.get("related_glossary_terms", [])
+    related_questions = program.get("related_questions", [])
+    related_technology_pages = program.get("related_technology_pages", [])
     internal_links = page.get("requiredInternalLinks", [])
 
     meta_rows = []
     if institution:
         meta_rows.append(f'<dt>Institution</dt><dd>{institution}</dd>')
     if country:
-        meta_rows.append(f'<dt>Country</dt><dd>{country}</dd>')
+        meta_rows.append(f'<dt>Country / Region</dt><dd>{country}</dd>')
     if start_year:
         meta_rows.append(f'<dt>Start year</dt><dd>{start_year}</dd>')
     if status:
         meta_rows.append(f'<dt>Status</dt><dd>{status}</dd>')
+    if activity_type:
+        meta_rows.append(f'<dt>Activity type</dt><dd>{activity_type}</dd>')
+    if cluster:
+        meta_rows.append(f'<dt>Programme cluster</dt><dd>{_escape_html(cluster.replace("-", " ").title())}</dd>')
 
     parts = ['<div class="reference-card">']
     parts.append('  <div class="reference-card-type">Program Profile</div>')
     if meta_rows:
         parts.append('  <dl class="program-meta">' + "".join(meta_rows) + '</dl>')
     parts.append('  <div class="reference-card-body">')
-    if description:
-        parts.append(f'    <div class="reference-card-full"><p>{description}</p></div>')
+    if summary:
+        parts.append(f'    <div class="reference-card-full"><p>{summary}</p></div>')
     parts.append('  </div>')
+
+    if institutional_context:
+        parts.append('  <div class="program-field-section">')
+        parts.append('    <p class="program-field-label">Institutional Context</p>')
+        parts.append(f'    <p class="program-field-body">{institutional_context}</p>')
+        parts.append('  </div>')
+
+    if sbsp_relevance:
+        parts.append('  <div class="program-field-section">')
+        parts.append('    <p class="program-field-label">SBSP Relevance</p>')
+        parts.append(f'    <p class="program-field-body">{sbsp_relevance}</p>')
+        parts.append('  </div>')
+
+    if technology_relationship:
+        parts.append('  <div class="program-field-section">')
+        parts.append('    <p class="program-field-label">Technology Relationship</p>')
+        parts.append(f'    <p class="program-field-body">{technology_relationship}</p>')
+        parts.append('  </div>')
+
+    if feasibility_boundary:
+        parts.append('  <div class="program-field-section">')
+        parts.append('    <p class="program-field-label">Feasibility Boundary</p>')
+        parts.append(f'    <p class="program-field-body">{feasibility_boundary}</p>')
+        parts.append('  </div>')
+
     if claim:
         parts.append('  <div class="reference-card-boundary">')
         parts.append('    <p class="reference-card-boundary-label">Claim Boundary</p>')
         parts.append(f'    <p class="reference-card-boundary-text">{claim}</p>')
         parts.append('  </div>')
-    if internal_links:
+
+    # Internal links from page config
+    all_links = list(internal_links)
+
+    # Add glossary term links
+    if related_glossary_terms:
+        for slug in related_glossary_terms[:4]:
+            gpath = f"/glossary/{slug}/"
+            label = slug.replace("-", " ").title()
+            if gpath not in all_links:
+                all_links.append(gpath)
+
+    # Add question links (use actual page path from question_paths lookup if available)
+    if related_questions:
+        for qid in related_questions[:3]:
+            qpath = (question_paths or {}).get(qid, f"/questions/{qid}/")
+            if qpath not in all_links:
+                all_links.append(qpath)
+
+    # Add technology page links
+    if related_technology_pages:
+        for tpid in related_technology_pages[:2]:
+            tpath = f"/technology/{tpid}/"
+            if tpath not in all_links:
+                all_links.append(tpath)
+
+    if all_links:
         parts.append('  <div class="reference-card-links">')
-        for lk in internal_links:
+        for lk in all_links:
             parts.append(f'    {_link_chip(lk, _path_to_label(lk))}')
         parts.append('  </div>')
+
     parts.append('  <div class="reference-card-source-links">')
     parts.append('    <span class="reference-card-source-label">Source &amp; methodology</span>')
+    if source_footer:
+        parts.append(f'    <span class="reference-card-source-label" style="font-style:italic;opacity:0.7">{source_footer}</span>')
     parts.append('    <a class="link-chip" href="/methodology/">Methodology</a>')
     parts.append('    <a class="link-chip" href="/sources/">Sources</a>')
     parts.append('  </div>')
@@ -573,7 +671,6 @@ def generate_glossary_hub_html(page: dict, seed_data: dict, trial_manifest: dict
     if description:
         parts.append(f'<p class="hub-intro">{description}</p>')
 
-    # Status panel
     parts.append('<div class="glossary-status-panel">')
     parts.append('  <div class="glossary-status-stat"><span class="glossary-status-value">{}</span><span class="glossary-status-label">governed terms</span></div>'.format(total_terms))
     parts.append('  <div class="glossary-status-stat"><span class="glossary-status-value">{}</span><span class="glossary-status-label">source clusters</span></div>'.format(len(active_clusters)))
@@ -581,12 +678,10 @@ def generate_glossary_hub_html(page: dict, seed_data: dict, trial_manifest: dict
     parts.append('  <div class="glossary-status-stat"><span class="glossary-status-value">Yes</span><span class="glossary-status-label">claim-boundary controlled</span></div>')
     parts.append('</div>')
 
-    # Expansion note
     parts.append('<div class="glossary-expansion-note">')
     parts.append('  This glossary has expanded from the initial publication trial layer into the first v1B source layer. Terms are governed by definition, claim boundary, related terms, page links, and source and methodology discipline.')
     parts.append('</div>')
 
-    # Cluster jump index
     parts.append('<nav class="glossary-cluster-jump" aria-label="Jump to cluster">')
     parts.append('  <span class="glossary-cluster-jump-label">Jump to</span>')
     for cluster_id, cluster_label in CLUSTER_ORDER:
@@ -596,7 +691,6 @@ def generate_glossary_hub_html(page: dict, seed_data: dict, trial_manifest: dict
         parts.append(f'  <a href="#{anchor}" class="glossary-cluster-jump-link">{_escape_html(cluster_label)}</a>')
     parts.append('</nav>')
 
-    # Cluster sections
     for cluster_id, cluster_label in CLUSTER_ORDER:
         terms = terms_by_cluster.get(cluster_id, [])
         if not terms:
@@ -639,7 +733,6 @@ def generate_questions_hub_html(page: dict, seed_data: dict, trial_manifest: dic
     if description:
         parts.append(f'<p class="hub-intro">{description}</p>')
 
-    # Status panel
     parts.append('<div class="questions-status-panel">')
     parts.append(f'  <div class="questions-status-stat"><span class="questions-status-value">{total_questions}</span><span class="questions-status-label">reference questions</span></div>')
     parts.append(f'  <div class="questions-status-stat"><span class="questions-status-value">{len(active_clusters)}</span><span class="questions-status-label">question clusters</span></div>')
@@ -647,12 +740,10 @@ def generate_questions_hub_html(page: dict, seed_data: dict, trial_manifest: dic
     parts.append('  <div class="questions-status-stat"><span class="questions-status-value">Yes</span><span class="questions-status-label">source-disciplined</span></div>')
     parts.append('</div>')
 
-    # Expansion note
     parts.append('<div class="questions-expansion-note">')
     parts.append('  This Q&amp;A layer has expanded from the initial publication trial into the first v1B reference layer. Every answer carries an explicit boundary separating established knowledge from unproven commercial claims.')
     parts.append('</div>')
 
-    # Cluster jump nav
     parts.append('<nav class="questions-cluster-jump" aria-label="Jump to question cluster">')
     parts.append('  <span class="questions-cluster-jump-label">Jump to</span>')
     for cluster_id, cluster_label in QUESTION_CLUSTER_ORDER:
@@ -662,7 +753,6 @@ def generate_questions_hub_html(page: dict, seed_data: dict, trial_manifest: dic
         parts.append(f'  <a href="#{anchor}" class="questions-cluster-jump-link">{_escape_html(cluster_label)}</a>')
     parts.append('</nav>')
 
-    # Cluster sections
     for cluster_id, cluster_label in QUESTION_CLUSTER_ORDER:
         qs = questions_by_cluster.get(cluster_id, [])
         if not qs:
@@ -750,7 +840,6 @@ def generate_technology_hub_html(page: dict, seed_data: dict, trial_manifest: di
     if description:
         parts.append(f'<p class="hub-intro">{description}</p>')
 
-    # Status panel
     parts.append('<div class="tech-status-panel">')
     parts.append(f'  <div class="tech-status-stat"><span class="tech-status-value">{total_tech}</span><span class="tech-status-label">technology pages</span></div>')
     parts.append(f'  <div class="tech-status-stat"><span class="tech-status-value">{len(active_clusters)}</span><span class="tech-status-label">engineering clusters</span></div>')
@@ -758,12 +847,10 @@ def generate_technology_hub_html(page: dict, seed_data: dict, trial_manifest: di
     parts.append('  <div class="tech-status-stat"><span class="tech-status-value">Yes</span><span class="tech-status-label">feasibility-bounded</span></div>')
     parts.append('</div>')
 
-    # Expansion note
     parts.append('<div class="tech-expansion-note">')
     parts.append('  This technology reference layer covers 21 governed entries across 7 engineering clusters. Each entry provides a technical definition, infrastructure role, subsystem relationship, feasibility boundary, and explicit claim boundary separating documented knowledge from unverified projections.')
     parts.append('</div>')
 
-    # Cluster jump nav
     parts.append('<nav class="tech-cluster-jump" aria-label="Jump to technology cluster">')
     parts.append('  <span class="tech-cluster-jump-label">Jump to</span>')
     for cluster_id, cluster_label in TECH_CLUSTER_ORDER:
@@ -773,7 +860,6 @@ def generate_technology_hub_html(page: dict, seed_data: dict, trial_manifest: di
         parts.append(f'  <a href="#{anchor}" class="tech-cluster-jump-link">{_escape_html(cluster_label)}</a>')
     parts.append('</nav>')
 
-    # Cluster sections
     for cluster_id, cluster_label in TECH_CLUSTER_ORDER:
         tps = tech_by_cluster.get(cluster_id, [])
         if not tps:
@@ -794,27 +880,75 @@ def generate_technology_hub_html(page: dict, seed_data: dict, trial_manifest: di
 
 
 def generate_programs_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
+    """v1B-D: Upgraded program hub with cluster grouping, status panel, expansion note, cluster jump nav."""
     h1 = page.get("title", "SBSP Program Profiles")
     description = _escape_html(page.get("description", ""))
     program_ids = (trial_manifest or {}).get("programs", [])
-    items = []
+
+    programs_by_cluster: dict[str, list] = {}
     for pid in program_ids:
         prog = seed_data["programs"].get(pid)
         if not prog:
             continue
-        p_path = prog.get("path", f"/programs/{prog.get('slug', pid)}/")
-        p_name = _escape_html(prog.get("programName", pid))
-        p_inst = _escape_html(prog.get("institution", ""))
-        items.append(
-            f'<li><a href="{p_path}">{p_name}</a>'
-            + (f' — {p_inst}' if p_inst else '')
-            + '</li>'
-        )
-    list_html = "\n".join(f"      {item}" for item in items)
-    intro = f'<p class="hub-intro">{description}</p>\n' if description else ""
-    body = (intro
-            + f'<ul class="programs-index">\n{list_html}\n    </ul>\n'
-            + _render_hub_source_footer())
+        cluster = prog.get("cluster", "national-space-agency")
+        programs_by_cluster.setdefault(cluster, []).append(prog)
+
+    total_programs = sum(len(v) for v in programs_by_cluster.values())
+    active_clusters = [cid for cid, _ in PROGRAM_CLUSTER_ORDER if programs_by_cluster.get(cid)]
+
+    parts = []
+    if description:
+        parts.append(f'<p class="hub-intro">{description}</p>')
+
+    # Status panel
+    parts.append('<div class="program-status-panel">')
+    parts.append(f'  <div class="program-status-stat"><span class="program-status-value">{total_programs}</span><span class="program-status-label">program profiles</span></div>')
+    parts.append(f'  <div class="program-status-stat"><span class="program-status-value">{len(active_clusters)}</span><span class="program-status-label">institutional clusters</span></div>')
+    parts.append('  <div class="program-status-stat"><span class="program-status-value">Yes</span><span class="program-status-label">claim boundaries</span></div>')
+    parts.append('  <div class="program-status-stat"><span class="program-status-value">Yes</span><span class="program-status-label">source-disciplined</span></div>')
+    parts.append('</div>')
+
+    # Expansion note
+    parts.append('<div class="program-expansion-note">')
+    parts.append(f'  This institutional intelligence layer covers {total_programs} governed program profiles across {len(active_clusters)} clusters. Each entry documents agency, programme, or research activity context, SBSP relevance, technology relationship, feasibility boundary, and explicit claim boundary. Timelines from programme roadmaps are identified as planning targets, not funded commitments.')
+    parts.append('</div>')
+
+    # Cluster jump nav
+    parts.append('<nav class="program-cluster-jump" aria-label="Jump to program cluster">')
+    parts.append('  <span class="program-cluster-jump-label">Jump to</span>')
+    for cluster_id, cluster_label in PROGRAM_CLUSTER_ORDER:
+        if not programs_by_cluster.get(cluster_id):
+            continue
+        anchor = f"pcluster-{cluster_id}"
+        parts.append(f'  <a href="#{anchor}" class="program-cluster-jump-link">{_escape_html(cluster_label)}</a>')
+    parts.append('</nav>')
+
+    # Cluster sections
+    for cluster_id, cluster_label in PROGRAM_CLUSTER_ORDER:
+        progs = programs_by_cluster.get(cluster_id, [])
+        if not progs:
+            continue
+        anchor = f"pcluster-{cluster_id}"
+        parts.append(f'<div class="hub-cluster" id="{anchor}">')
+        parts.append(f'  <h2 class="hub-cluster-label">{_escape_html(cluster_label)}</h2>')
+        parts.append('  <ul class="programs-cluster-index">')
+        for prog in progs:
+            p_path = prog.get("path", f"/programs/{prog.get('slug', prog.get('id'))}/")
+            p_title = _escape_html(prog.get("title", prog.get("programName", "")))
+            p_inst = _escape_html(prog.get("institution", ""))
+            p_country = _escape_html(prog.get("country_or_region", prog.get("country", "")))
+            entry = f'    <li><a href="{p_path}">{p_title}</a>'
+            if p_inst:
+                entry += f'<span class="prog-institution"> — {p_inst}'
+                if p_country:
+                    entry += f' ({p_country})'
+                entry += '</span>'
+            entry += '</li>'
+            parts.append(entry)
+        parts.append('  </ul>')
+        parts.append('</div>')
+
+    body = "\n".join(parts) + "\n" + _render_hub_source_footer()
     return _page_shell(page, h1, body)
 
 
@@ -848,7 +982,6 @@ def write_page(page: dict, content: dict | None,
     seed_source = page.get("seedSource")
     seed_id = page.get("seedId")
 
-    # Try content by slug as fallback when ID does not match the content filename.
     if content is None:
         page_slug = page.get("slug", "")
         page_id_val = page.get("id", "")
@@ -863,7 +996,7 @@ def write_page(page: dict, content: dict | None,
         html = generate_question_html(question, page) if question else generate_html(page, content, approved_paths)
     elif seed_data and seed_source == "program" and seed_id:
         program = seed_data["programs"].get(seed_id)
-        html = generate_program_html(program, page) if program else generate_html(page, content, approved_paths)
+        html = generate_program_html(program, page, seed_data.get("question_paths")) if program else generate_html(page, content, approved_paths)
     elif seed_data and seed_source == "glossary_hub":
         html = generate_glossary_hub_html(page, seed_data, trial_manifest)
     elif seed_data and seed_source == "questions_hub":
@@ -989,7 +1122,6 @@ def categorize_pages(pages: list) -> dict:
 
 
 def build_sitemaps(all_sitemap_urls: list, categories: dict) -> list:
-    """Generate sitemap files. Returns list of sitemap relative paths."""
     sitemap_files = []
 
     core_urls = generate_sitemap_urls(categories["core"])

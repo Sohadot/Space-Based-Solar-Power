@@ -23,6 +23,7 @@ VALIDATORS = [
     "validate_glossary.py",
     "validate_questions.py",
     "validate_technology.py",
+    "validate_programs.py",
 ]
 
 
