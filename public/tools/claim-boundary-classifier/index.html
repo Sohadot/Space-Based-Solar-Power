@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claim Boundary Classifier</title>
+  <meta name="description" content="Reference taxonomy for classifying SBSP claims by evidential tier — demonstrated, modelled, estimated, projected, institutional, or speculative.">
+  <link rel="canonical" href="https://space-based-solar-power.com/tools/claim-boundary-classifier/">
+  <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="home-link" href="/">Space-Based Solar Power</a>
+      <div class="mission-status" aria-label="Site status">
+        <span class="mission-status-dot" aria-hidden="true"></span>
+        <span>Reference Active</span>
+      </div>
+    </nav>
+  </header>
+  <main class="page-container">
+    <h1>Claim Boundary Classifier</h1>
+    <div class="tool-type-badge tool-type-badge--page">Classification Reference</div>
+<div class="tool-section">
+  <h2>Strategic Purpose</h2>
+  <p>A reference taxonomy for classifying claims made about space-based solar power into their correct evidential tier. The classifier is designed for researchers, journalists, policy analysts, and due-diligence practitioners who encounter SBSP claims in technical documents, institutional communications, media coverage, and policy materials and need a disciplined framework for evaluating what those claims actually establish.</p>
+</div>
+<div class="tool-section tool-section--meta">
+  <p><strong>Designed for:</strong> journalists, policy analysts, researchers, due-diligence professionals, programme evaluators</p>
+  <p><strong>Decision value:</strong> Distinguishes between claims that are physically demonstrated, computationally modelled, institutionally asserted, or speculatively extrapolated. Prevents category errors where a modelling result is reported as a demonstrated fact, or where a government study's conclusion is treated as an established technical outcome. Provides a shared vocabulary for discussing SBSP claim quality without binary true/false judgments.</p>
+</div>
+<div class="tool-section">
+  <h2>Reference Data</h2>
+  <div class="tool-matrix-wrapper">
+  <table class="tool-matrix-table">
+    <thead><tr>
+      <th>Tier</th>
+      <th>Definition</th>
+      <th>SBSP Examples</th>
+      <th>What It Does Not Establish</th>
+      <th>Red Flags</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+      <td>Tier 1 — Physically Demonstrated</td>
+      <td>A claim in this tier describes a result that was physically observed in a controlled experiment or operational system, documented in a peer-reviewed publication or primary technical report, and is reproducible within the stated experimental conditions.</td>
+      <td>Caltech MAPLE experiment: 'wireless power transfer between two receivers on SSPD-1 was detected.' JAXA ground demonstration: 'WPT at 1.8 kW was achieved in a ground experiment at 55 metres.' High-efficiency solar cells: 'GaAs multi-junction cells achieve &gt;30% efficiency in space environments.'</td>
+      <td>Does not establish that the demonstrated result scales to operational SBSP parameters. Does not imply system-level performance from component-level demonstration.</td>
+      <td>Citing Tier 1 results as evidence that 'SBSP works' at operational scale; using component TRL to represent system TRL.</td>
+    </tr>
+    <tr>
+      <td>Tier 2 — Computationally Modelled</td>
+      <td>A claim derived from a computational model, simulation, or engineering analysis that produces quantitative outputs based on stated assumptions. The model has been documented in a feasibility study, technical report, or peer-reviewed paper. The claim is valid conditional on the model's assumptions.</td>
+      <td>ESA SOLARIS: cost envelope estimates under stated technology and launch cost assumptions. Frazer-Nash study: 'SBSP becomes economically competitive under aggressive launch cost reduction assumptions.' NASA Revisit: efficiency projections for WPT chain under modelled component performance scenarios.</td>
+      <td>Does not establish that model outputs reflect real system performance. Model assumptions (particularly launch cost projections) may not materialise. The model's conclusions are conditional, not unconditional.</td>
+      <td>Reporting model outputs as if they were measured results; omitting the stated assumptions when citing model conclusions.</td>
+    </tr>
+    <tr>
+      <td>Tier 3 — Estimated from Engineering Judgment</td>
+      <td>A claim based on engineering knowledge and analogical reasoning from related technologies rather than direct modelling or experiment. Common in early feasibility analysis and technology roadmapping. The estimate reflects expert professional judgment anchored to related technical evidence.</td>
+      <td>TRL estimates for novel SBSP subsystem configurations. Expert assessments of likely cost reduction trajectories. Engineering judgment on thermal management requirements at scale.</td>
+      <td>Engineering estimates are not validated results. Expert judgment varies and is subject to systematic optimism biases in early-stage technology assessment.</td>
+      <td>Treating engineering estimates as precision projections; citing expert judgment as if it were modelled or demonstrated.</td>
+    </tr>
+    <tr>
+      <td>Tier 4 — Projected from Trend Extrapolation</td>
+      <td>A claim about a future state based on extrapolation of observed trends (e.g. launch cost reduction curves, efficiency improvement rates). The claim assumes that historical trends continue over the relevant period.</td>
+      <td>Projections of future launch cost based on commercial market trajectory. Projections of solar cell efficiency improvements based on historical improvement rates. Long-term economic viability claims anchored to assumed cost curves.</td>
+      <td>Trend extrapolation does not guarantee future outcomes. Technology improvement curves do not always continue; market disruptions, regulatory changes, and physical limits can halt trends.</td>
+      <td>Treating trend projections as certainties; citing them without noting they are projections; failing to specify the trend's required continuation period.</td>
+    </tr>
+    <tr>
+      <td>Tier 5 — Institutional Position</td>
+      <td>A claim that expresses an institutional assessment, framing, or strategic position rather than a technical finding. Common in government programme statements, agency communications, and policy documents. The claim reflects the institution's policy stance, not a technical conclusion.</td>
+      <td>ESA: 'SBSP merits continued study as a potential contribution to European energy security.' UK government: 'SBSP is a potentially transformative technology that warrants targeted investment.' JAXA SSPS roadmap: phase targets expressed as institutional planning assumptions.</td>
+      <td>Institutional positions do not validate technical claims. An agency endorsing SBSP as worthy of study does not establish that SBSP is technically feasible at deployment scale.</td>
+      <td>Reporting institutional positions as technical findings; using government programme existence to imply deployment viability.</td>
+    </tr>
+    <tr>
+      <td>Tier 6 — Speculative or Unanchored</td>
+      <td>A claim not anchored to demonstrated results, validated models, engineering estimates, or institutional documents. Typically involves long-range prediction, unstated assumptions, or extrapolation beyond available evidence.</td>
+      <td>Claims that SBSP 'will be deployed by' a specific year without referencing a funded programme at that stage. Claims that SBSP 'will solve' the energy transition without addressing the unresolved constraints. Claims about SBSP cost competitiveness that omit launch cost assumptions.</td>
+      <td>Nothing. Tier 6 claims carry no evidential weight and should be identified as advocacy rather than analysis.</td>
+      <td>Future certainty language ('will', 'is inevitable', 'is the solution'); omission of limiting conditions; circular citation of other Tier 6 claims.</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+<div class="tool-section">
+  <h2>How to Read This Tool</h2>
+  <p>Apply the classifier to specific claims encountered in SBSP documents, media coverage, or institutional communications. Identify the evidential basis of the claim (experiment, model, estimate, projection, institutional position, or none). Match the claim to the appropriate tier. Note that the tier of the source document does not determine the tier of the claim — a Tier 2 document (government feasibility study) may contain Tier 1, 2, 3, and 4 claims, and some Tier 6 claims. Each claim must be assessed on its own evidential basis.</p>
+</div>
+<div class="tool-boundary-box tool-methodology">
+  <h3>Methodology Boundary</h3>
+  <p>This classification framework is the editorial methodology of Space-Based-Solar-Power.com as documented in /methodology/. The tier definitions reflect the governed claim boundary approach applied across all site content. The examples cited are drawn from referenced programme documentation and published research. Classification of specific claims involves editorial judgment and should be cross-referenced with /sources/ for source tier information.</p>
+</div>
+<div class="tool-boundary-box tool-claim">
+  <h3>Claim Boundary</h3>
+  <p>This classifier provides a structured framework for evaluating SBSP claims. It does not resolve all ambiguous cases automatically — editorial judgment is required to apply the framework to specific claims in context. The existence of a claim in a Tier 1 document does not make the claim Tier 1; the claim's own evidential basis must be assessed. The classifier itself does not make claims about SBSP's technical or commercial prospects.</p>
+</div>
+<div class="tool-related-section">
+  <h3>Related Glossary Terms</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/glossary/technology-readiness-level/">Technology Readiness Level</a>
+    <a class="link-chip" href="/glossary/commercial-readiness/">Commercial Readiness</a>
+    <a class="link-chip" href="/glossary/space-based-solar-power/">Space Based Solar Power</a>
+    <a class="link-chip" href="/glossary/technology-readiness/">Technology Readiness</a>
+    <a class="link-chip" href="/glossary/safety-boundary/">Safety Boundary</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Related Questions</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/questions/what-is-a-claim-boundary/">Claim Boundary Methodology</a>
+    <a class="link-chip" href="/questions/why-is-sbsp-not-commercially-deployed/">Why Is Sbsp Not Commercially Deployed</a>
+    <a class="link-chip" href="/questions/what-is-sbsp-commercial-readiness-gap/">Sbsp Commercial Readiness Gap</a>
+    <a class="link-chip" href="/questions/technology-readiness-level-sbsp/">Trl Sbsp</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Technology References</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/technology/microwave-power-transmission/">Microwave Power Transmission</a>
+    <a class="link-chip" href="/technology/phased-array-transmitter-systems/">Phased Array Transmitter Systems</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Related Programs</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/programs/esa-solaris/">Esa Solaris</a>
+    <a class="link-chip" href="/programs/frazer-nash-sbsp-study/">Frazer Nash Sbsp Study</a>
+    <a class="link-chip" href="/programs/caltech-sspp/">Caltech Sspp</a>
+  </div>
+</div>
+<div class="tool-related-section">
+  <h3>Related Briefs</h3>
+  <div class="tool-link-chips">
+    <a class="link-chip" href="/articles/sbsp-as-strategic-infrastructure/">Sbsp As Strategic Infrastructure</a>
+    <a class="link-chip" href="/articles/caltech-maple-what-demonstration-means/">Caltech Maple What Demonstration Means</a>
+    <a class="link-chip" href="/articles/technology-readiness-feasibility-frontier/">Technology Readiness Feasibility Frontier</a>
+  </div>
+</div>
+<div class="tool-source-footer">
+  <span class="tool-source-label">Sources used in this tool</span>
+  <p>Framework derived from this site's editorial methodology (/methodology/). Examples drawn from ESA SOLARIS assessment, Caltech SSPP published results, Frazer-Nash feasibility study, JAXA SSPS programme documentation, and NASA SBSP revisit study. The classification framework is editorial; it does not originate in any single source document.</p>
+</div>
+<div class="hub-source-links">
+<a class="link-chip" href="/tools/">All Tools</a>
+<a class="link-chip" href="/methodology/">Methodology</a>
+<a class="link-chip" href="/sources/">Sources</a>
+<a class="link-chip" href="/framework/">Framework</a>
+</div>
+<nav class="internal-refs" aria-hidden="true">
+<a href="/tools/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/methodology/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/sources/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/framework/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/technology-readiness-level/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/commercial-readiness/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/space-based-solar-power/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/technology-readiness/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/glossary/safety-boundary/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/what-is-a-claim-boundary/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/why-is-sbsp-not-commercially-deployed/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/what-is-sbsp-commercial-readiness-gap/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/questions/technology-readiness-level-sbsp/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/technology/microwave-power-transmission/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/technology/phased-array-transmitter-systems/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/esa-solaris/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/frazer-nash-sbsp-study/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/programs/caltech-sspp/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/articles/sbsp-as-strategic-infrastructure/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/articles/caltech-maple-what-demonstration-means/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+<a href="/articles/technology-readiness-feasibility-frontier/" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>
+</nav>
+  </main>
+</body>
+</html>

@@ -147,6 +147,15 @@ def load_seed_data() -> dict:
         for a in art_list:
             seed["articles"][a["id"]] = a
 
+    # v1B-H: load tool pages
+    seed["tools"] = {}
+    tool_pages_path = DATA_DIR / "tool_pages.json"
+    if tool_pages_path.exists():
+        data = load_json(tool_pages_path)
+        tool_list = data if isinstance(data, list) else data.get("tools", [])
+        for t in tool_list:
+            seed["tools"][t["id"]] = t
+
     return seed
 
 
@@ -204,9 +213,22 @@ ARTICLE_CLUSTER_ORDER = [
     ("energy-sovereignty-ai", "Energy Sovereignty and AI Demand"),
 ]
 
+TOOL_TYPE_LABELS = {
+    "readiness-matrix": "Readiness Matrix",
+    "classification-reference": "Classification Reference",
+    "comparison-reference": "Comparison Reference",
+    "dependency-reference": "Dependency Reference",
+    "strategic-positioning": "Strategic Positioning",
+    "evidence-reference": "Evidence Reference",
+}
+
 
 def load_trial_manifest() -> dict | None:
-    # v1B-F: check newest manifest first
+    # v1B-H: check newest manifest first
+    v1b_h_path = DATA_DIR / "publication_v1b_h.json"
+    if v1b_h_path.exists():
+        return load_json(v1b_h_path)
+    # v1B-F
     v1b_f_path = DATA_DIR / "publication_v1b_f.json"
     if v1b_f_path.exists():
         return load_json(v1b_f_path)
@@ -1316,6 +1338,299 @@ def generate_article_page_html(article: dict, page: dict, question_paths: dict |
     return _page_shell(page, h1, body)
 
 
+def generate_tools_hub_html(page: dict, seed_data: dict, trial_manifest: dict | None) -> str:
+    """v1B-H: Tools hub with status panel, governance note, and tool entry grid."""
+    h1 = page.get("title", "Strategic Tools")
+    description = _escape_html(page.get("description", ""))
+    tool_ids = (trial_manifest or {}).get("tools", [])
+
+    tools_list = [seed_data["tools"][tid] for tid in tool_ids if tid in seed_data["tools"]]
+    total_tools = len(tools_list)
+
+    parts = []
+    if description:
+        parts.append(f'<p class="hub-intro">{description}</p>')
+
+    # Status panel
+    parts.append('<div class="tool-status-panel">')
+    parts.append(f'  <div class="tool-status-stat"><span class="tool-status-value">{total_tools}</span><span class="tool-status-label">strategic tools</span></div>')
+    parts.append('  <div class="tool-status-stat"><span class="tool-status-value">Static</span><span class="tool-status-label">no JavaScript required</span></div>')
+    parts.append('  <div class="tool-status-stat"><span class="tool-status-value">Yes</span><span class="tool-status-label">source-bound</span></div>')
+    parts.append('  <div class="tool-status-stat"><span class="tool-status-value">Yes</span><span class="tool-status-label">claim boundaries</span></div>')
+    parts.append('</div>')
+
+    # Governance note
+    parts.append('<div class="tool-governance-note">')
+    parts.append('  <p>Each tool is a static reference instrument — no JavaScript, no fake interactivity, no calculated outputs that exceed the available evidence. Tools are designed to make the strategic structure of space-based solar power visible to researchers, analysts, programme evaluators, and institutional users without introducing false precision or commercial certainty claims.</p>')
+    parts.append('</div>')
+
+    # Tool entries
+    parts.append('<div class="tool-hub-grid">')
+    for tool in tools_list:
+        t_path = tool.get("path", f"/tools/{tool.get('slug', tool['id'])}/")
+        t_title = _escape_html(tool.get("title", ""))
+        t_type = tool.get("toolType", "")
+        t_type_label = _escape_html(TOOL_TYPE_LABELS.get(t_type, t_type.replace("-", " ").title()))
+        t_purpose = _escape_html(tool.get("strategicPurpose", "")[:160])
+        t_value = _escape_html(tool.get("decisionValue", "")[:120])
+        parts.append(f'  <div class="tool-entry">')
+        parts.append(f'    <a class="tool-entry-link" href="{t_path}">')
+        if t_type_label:
+            parts.append(f'      <span class="tool-type-badge">{t_type_label}</span>')
+        parts.append(f'      <h2 class="tool-entry-title">{t_title}</h2>')
+        if t_purpose:
+            ellipsis = "…" if len(tool.get("strategicPurpose","")) > 160 else ""
+            parts.append(f'      <p class="tool-entry-purpose">{t_purpose}{ellipsis}</p>')
+        parts.append('    </a>')
+        if t_value:
+            ellipsis = "…" if len(tool.get("decisionValue","")) > 120 else ""
+            parts.append(f'    <p class="tool-entry-value"><strong>Decision value:</strong> {t_value}{ellipsis}</p>')
+        parts.append('  </div>')
+    parts.append('</div>')
+
+    # Footer
+    parts.append('<div class="hub-source-links">')
+    parts.append('<span class="hub-source-label">Methodology &amp; evidence basis</span>')
+    parts.append('<a class="link-chip" href="/methodology/">Methodology</a>')
+    parts.append('<a class="link-chip" href="/sources/">Sources</a>')
+    parts.append('<a class="link-chip" href="/framework/">Framework</a>')
+    parts.append('<a class="link-chip" href="/feasibility-and-constraints/">Feasibility</a>')
+    parts.append('</div>')
+
+    body = "\n".join(parts)
+    return _page_shell(page, h1, body)
+
+
+def generate_tool_page_html(tool: dict, page: dict, question_paths: dict | None = None, program_paths: dict | None = None) -> str:
+    """v1B-H: Individual strategic tool page."""
+    h1 = tool.get("title", "")
+    tool_type = tool.get("toolType", "")
+    type_label = TOOL_TYPE_LABELS.get(tool_type, tool_type.replace("-", " ").title())
+
+    strategic_purpose = _escape_html(tool.get("strategicPurpose", ""))
+    user_audience = tool.get("userAudience", [])
+    decision_value = _escape_html(tool.get("decisionValue", ""))
+    methodology_bdry = _escape_html(tool.get("methodologyBoundary", ""))
+    claim_bdry = _escape_html(tool.get("claimBoundary", ""))
+    source_bdry = _escape_html(tool.get("sourceBoundary", ""))
+    eval_dims = tool.get("evaluationDimensions", [])
+    output_interp = _escape_html(tool.get("outputInterpretation", ""))
+
+    related_glossary = tool.get("relatedGlossaryTerms", [])
+    related_questions = tool.get("relatedQuestions", [])
+    related_tech = tool.get("relatedTechnologyPages", [])
+    related_programs = tool.get("relatedPrograms", [])
+    related_articles = tool.get("relatedArticles", [])
+
+    parts = []
+
+    # Tool type badge
+    if type_label:
+        parts.append(f'<div class="tool-type-badge tool-type-badge--page">{_escape_html(type_label)}</div>')
+
+    # Strategic purpose
+    if strategic_purpose:
+        parts.append('<div class="tool-section">')
+        parts.append('  <h2>Strategic Purpose</h2>')
+        parts.append(f'  <p>{strategic_purpose}</p>')
+        parts.append('</div>')
+
+    # User audience + decision value
+    if user_audience or decision_value:
+        parts.append('<div class="tool-section tool-section--meta">')
+        if user_audience:
+            audience_str = ", ".join(_escape_html(a) for a in user_audience)
+            parts.append(f'  <p><strong>Designed for:</strong> {audience_str}</p>')
+        if decision_value:
+            parts.append(f'  <p><strong>Decision value:</strong> {decision_value}</p>')
+        parts.append('</div>')
+
+    # Evaluation dimensions table
+    if eval_dims:
+        parts.append('<div class="tool-section">')
+        parts.append('  <h2>Reference Data</h2>')
+
+        # Detect dimension key structure from first item
+        first = eval_dims[0] if eval_dims else {}
+        keys = [k for k in first.keys()]
+
+        parts.append('  <div class="tool-matrix-wrapper">')
+        parts.append('  <table class="tool-matrix-table">')
+
+        # Header row — humanised column names
+        header_map = {
+            "subsystem": "Subsystem",
+            "trlRange": "TRL Range",
+            "readinessClass": "Readiness Class",
+            "keyDemonstration": "Key Demonstration",
+            "deploymentGap": "Deployment Gap",
+            "tier": "Tier",
+            "definition": "Definition",
+            "sbspExamples": "SBSP Examples",
+            "whatItDoesNotEstablish": "What It Does Not Establish",
+            "redFlags": "Red Flags",
+            "programme": "Programme",
+            "institution": "Institution",
+            "country": "Country / Region",
+            "strategicFraming": "Strategic Framing",
+            "currentPhase": "Current Phase",
+            "fundingStatus": "Funding Status",
+            "primaryTechnologyFocus": "Technology Focus",
+            "commitmentLevel": "Commitment Level",
+            "description": "Description",
+            "components": "Components",
+            "currentStatus": "Current Status",
+            "unlocks": "Unlocks",
+            "buyerCategory": "Buyer Category",
+            "primaryDriver": "Primary Driver",
+            "investmentHorizon": "Investment Horizon",
+            "valuePropSummary": "Value Proposition",
+            "blockingConditions": "Blocking Conditions",
+            "currentEngagement": "Current Engagement",
+            "strongestCaseFor": "Strongest Case For",
+            "sourceTier": "Source Tier",
+            "whatEstablishes": "What It Establishes",
+            "limitations": "Limitations",
+            "appropriateUse": "Appropriate Use",
+        }
+        parts.append('    <thead><tr>')
+        for k in keys:
+            label = header_map.get(k, k.replace("_", " ").title())
+            parts.append(f'      <th>{_escape_html(label)}</th>')
+        parts.append('    </tr></thead>')
+        parts.append('    <tbody>')
+        for dim in eval_dims:
+            parts.append('    <tr>')
+            for k in keys:
+                cell = _escape_html(str(dim.get(k, "")))
+                parts.append(f'      <td>{cell}</td>')
+            parts.append('    </tr>')
+        parts.append('    </tbody>')
+        parts.append('  </table>')
+        parts.append('  </div>')
+        parts.append('</div>')
+
+    # Output interpretation
+    if output_interp:
+        parts.append('<div class="tool-section">')
+        parts.append('  <h2>How to Read This Tool</h2>')
+        parts.append(f'  <p>{output_interp}</p>')
+        parts.append('</div>')
+
+    # Methodology boundary
+    if methodology_bdry:
+        parts.append('<div class="tool-boundary-box tool-methodology">')
+        parts.append('  <h3>Methodology Boundary</h3>')
+        parts.append(f'  <p>{methodology_bdry}</p>')
+        parts.append('</div>')
+
+    # Claim boundary
+    if claim_bdry:
+        parts.append('<div class="tool-boundary-box tool-claim">')
+        parts.append('  <h3>Claim Boundary</h3>')
+        parts.append(f'  <p>{claim_bdry}</p>')
+        parts.append('</div>')
+
+    # Related links — track all for internal link injection
+    all_links = ["/tools/", "/methodology/", "/sources/", "/framework/"]
+
+    # Glossary links
+    if related_glossary:
+        parts.append('<div class="tool-related-section">')
+        parts.append('  <h3>Related Glossary Terms</h3>')
+        parts.append('  <div class="tool-link-chips">')
+        for gslug in related_glossary[:5]:
+            gpath = f"/glossary/{gslug}/"
+            parts.append(f'    <a class="link-chip" href="{gpath}">{_escape_html(gslug.replace("-", " ").title())}</a>')
+            if gpath not in all_links:
+                all_links.append(gpath)
+        parts.append('  </div>')
+        parts.append('</div>')
+
+    # Question links
+    if related_questions:
+        parts.append('<div class="tool-related-section">')
+        parts.append('  <h3>Related Questions</h3>')
+        parts.append('  <div class="tool-link-chips">')
+        for qid in related_questions[:4]:
+            qpath = (question_paths or {}).get(qid, f"/questions/{qid}/")
+            label = qid.replace("-", " ").replace("what is ", "").replace("how does ", "").title()
+            parts.append(f'    <a class="link-chip" href="{qpath}">{_escape_html(label)}</a>')
+            if qpath not in all_links:
+                all_links.append(qpath)
+        parts.append('  </div>')
+        parts.append('</div>')
+
+    # Technology page links
+    if related_tech:
+        parts.append('<div class="tool-related-section">')
+        parts.append('  <h3>Technology References</h3>')
+        parts.append('  <div class="tool-link-chips">')
+        for tpid in related_tech[:4]:
+            tpath = f"/technology/{tpid}/"
+            label = tpid.replace("-", " ").title()
+            parts.append(f'    <a class="link-chip" href="{tpath}">{_escape_html(label)}</a>')
+            if tpath not in all_links:
+                all_links.append(tpath)
+        parts.append('  </div>')
+        parts.append('</div>')
+
+    # Program links
+    if related_programs:
+        parts.append('<div class="tool-related-section">')
+        parts.append('  <h3>Related Programs</h3>')
+        parts.append('  <div class="tool-link-chips">')
+        for pid in related_programs[:4]:
+            ppath = (program_paths or {}).get(pid, f"/programs/{pid}/")
+            label = pid.replace("-", " ").title()
+            parts.append(f'    <a class="link-chip" href="{ppath}">{_escape_html(label)}</a>')
+            if ppath not in all_links:
+                all_links.append(ppath)
+        parts.append('  </div>')
+        parts.append('</div>')
+
+    # Article links
+    if related_articles:
+        parts.append('<div class="tool-related-section">')
+        parts.append('  <h3>Related Briefs</h3>')
+        parts.append('  <div class="tool-link-chips">')
+        for aid in related_articles[:4]:
+            apath = f"/articles/{aid}/"
+            label = aid.replace("-", " ").title()
+            parts.append(f'    <a class="link-chip" href="{apath}">{_escape_html(label)}</a>')
+            if apath not in all_links:
+                all_links.append(apath)
+        parts.append('  </div>')
+        parts.append('</div>')
+
+    # Source boundary footer
+    if source_bdry:
+        parts.append('<div class="tool-source-footer">')
+        parts.append('  <span class="tool-source-label">Sources used in this tool</span>')
+        parts.append(f'  <p>{source_bdry}</p>')
+        parts.append('</div>')
+
+    # Standard footer
+    parts.append('<div class="hub-source-links">')
+    parts.append('<a class="link-chip" href="/tools/">All Tools</a>')
+    parts.append('<a class="link-chip" href="/methodology/">Methodology</a>')
+    parts.append('<a class="link-chip" href="/sources/">Sources</a>')
+    parts.append('<a class="link-chip" href="/framework/">Framework</a>')
+    parts.append('</div>')
+
+    body = "\n".join(parts)
+
+    # Inject all_links as hidden anchors for internal link graph validation
+    link_anchors = "\n".join(
+        f'<a href="{lnk}" class="internal-link-ref" aria-hidden="true" tabindex="-1"></a>'
+        for lnk in all_links
+    )
+    if link_anchors:
+        body = body + "\n<nav class=\"internal-refs\" aria-hidden=\"true\">\n" + link_anchors + "\n</nav>"
+
+    return _page_shell(page, h1, body)
+
+
 def generate_html(page: dict, content: dict | None,
                   approved_paths: set | None = None) -> str:
     if approved_paths is None:
@@ -1379,6 +1694,11 @@ def write_page(page: dict, content: dict | None,
     elif seed_data and seed_source == "article" and seed_id:
         article = seed_data["articles"].get(seed_id)
         html = generate_article_page_html(article, page, seed_data.get("question_paths"), seed_data.get("program_paths")) if article else generate_html(page, content, approved_paths)
+    elif seed_data and seed_source == "tools_hub":
+        html = generate_tools_hub_html(page, seed_data, trial_manifest)
+    elif seed_data and seed_source == "tool" and seed_id:
+        tool = seed_data["tools"].get(seed_id)
+        html = generate_tool_page_html(tool, page, seed_data.get("question_paths"), seed_data.get("program_paths")) if tool else generate_html(page, content, approved_paths)
     elif content and content.get("hero"):
         html = generate_home_html(page, content, approved_paths)
     else:
@@ -1466,6 +1786,7 @@ def categorize_pages(pages: list) -> dict:
         "comparisons": [],
         "sources": [],
         "technology": [],
+        "tools": [],
     }
     for p in pages:
         path = p.get("path", "")
@@ -1487,6 +1808,8 @@ def categorize_pages(pages: list) -> dict:
             categories["sources"].append(p)
         elif path.startswith("/technology/") and path != "/technology/":
             categories["technology"].append(p)
+        elif path.startswith("/tools/") and path != "/tools/":
+            categories["tools"].append(p)
         else:
             categories["core"].append(p)
     return categories
@@ -1502,7 +1825,7 @@ def build_sitemaps(all_sitemap_urls: list, categories: dict) -> list:
         sitemap_files.append("sitemaps/sitemap-core.xml")
 
     for cat_name in ["glossary", "questions", "programs", "countries",
-                     "articles", "usecases", "comparisons", "sources", "technology"]:
+                     "articles", "usecases", "comparisons", "sources", "technology", "tools"]:
         cat_urls = generate_sitemap_urls(categories[cat_name])
         if not cat_urls:
             continue
